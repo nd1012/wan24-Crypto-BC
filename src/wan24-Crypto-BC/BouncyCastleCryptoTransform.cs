@@ -41,7 +41,7 @@ namespace wan24.Crypto.BC
         {
             using RentedArray<byte> outputBuffer = new(OutputBlockSize);
             int used = TransformBlock(inputBuffer, inputOffset, inputCount, outputBuffer, 0);
-            return outputBuffer.Span[..used].ToArray();
+            return used == 0 ? Array.Empty<byte>() : outputBuffer.Span[..used].ToArray();
         }
 
         /// <inheritdoc/>

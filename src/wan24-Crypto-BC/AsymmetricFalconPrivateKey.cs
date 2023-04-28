@@ -1,17 +1,16 @@
 ﻿using Org.BouncyCastle.Crypto;
-using Org.BouncyCastle.Pqc.Crypto.Crystals.Kyber;
+using Org.BouncyCastle.Pqc.Crypto.Falcon;
 using Org.BouncyCastle.Pqc.Crypto.Utilities;
 using Org.BouncyCastle.Security;
-using System.Security.Cryptography;
 using wan24.Core;
 using wan24.StreamSerializerExtensions;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// CRYSTALS-Kyber asymmetric private key
+    /// Asymmetric FALCON private key
     /// </summary>
-    public sealed class AsymmetricKyberPrivateKey : AsymmetricPrivateKeyBase<AsymmetricKyberPublicKey, AsymmetricKyberPrivateKey>, IKeyExchangePrivateKey
+    public sealed class AsymmetricFalconPrivateKey : AsymmetricPrivateKeyBase<AsymmetricFalconPublicKey, AsymmetricFalconPrivateKey>, ISignaturePrivateKey
     {
         /// <summary>
         /// Keys
@@ -21,25 +20,25 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricKyberPrivateKey() : base(AsymmetricKyberAlgorithm.ALGORITHM_NAME) { }
+        public AsymmetricFalconPrivateKey() : base(AsymmetricFalconAlgorithm.ALGORITHM_NAME) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="keyData">Key data</param>
-        public AsymmetricKyberPrivateKey(byte[] keyData) : this() => KeyData = new(keyData);
+        public AsymmetricFalconPrivateKey(byte[] keyData) : this() => KeyData = new(keyData);
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="keys">Keys</param>
-        public AsymmetricKyberPrivateKey(AsymmetricCipherKeyPair keys) : this()
+        public AsymmetricFalconPrivateKey(AsymmetricCipherKeyPair keys) : this()
         {
             try
             {
                 Keys = keys;
-                if (keys.Public is not KyberPublicKeyParameters) throw new ArgumentException("No CRYSTALS-Kyber public key parameters", nameof(keys));
-                if (keys.Private is not KyberPrivateKeyParameters) throw new ArgumentException("No CRYSTALS-Kyber private key parameters", nameof(keys));
+                if (keys.Public is not FalconPublicKeyParameters) throw new ArgumentException("No FALCON public key parameters", nameof(keys));
+                if (keys.Private is not FalconPrivateKeyParameters) throw new ArgumentException("No FALCON private key parameters", nameof(keys));
                 KeyData = new(SerializeKeyData());
             }
             catch (CryptographicException)
@@ -55,7 +54,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Private key
         /// </summary>
-        public KyberPrivateKeyParameters PrivateKey
+        public FalconPrivateKeyParameters PrivateKey
         {
             get
             {
@@ -63,7 +62,7 @@ namespace wan24.Crypto.BC
                 {
                     EnsureUndisposed();
                     if (Keys == null) DeserializeKeyData();
-                    return (KyberPrivateKeyParameters)Keys!.Private;
+                    return (FalconPrivateKeyParameters)Keys!.Private;
                 }
                 catch (CryptographicException)
                 {
@@ -77,7 +76,7 @@ namespace wan24.Crypto.BC
         }
 
         /// <inheritdoc/>
-        public override AsymmetricKyberPublicKey PublicKey
+        public override AsymmetricFalconPublicKey PublicKey
         {
             get
             {
@@ -85,7 +84,7 @@ namespace wan24.Crypto.BC
                 {
                     EnsureUndisposed();
                     if (Keys == null) throw new InvalidOperationException();
-                    return _PublicKey ??= new((KyberPublicKeyParameters)Keys.Public);
+                    return _PublicKey ??= new((FalconPublicKeyParameters)Keys.Public);
                 }
                 catch (CryptographicException)
                 {
@@ -99,27 +98,23 @@ namespace wan24.Crypto.BC
         }
 
         /// <inheritdoc/>
-        public override int Bits => PublicKey.Bits;
-
-        /// <inheritdoc/>
-        public override (byte[] Key, byte[] KeyExchangeData) GetKeyExchangeData(IAsymmetricPublicKey? publicKey = null, CryptoOptions? options = null)
+        public override byte[] SignHashRaw(byte[] hash)
         {
             try
             {
                 EnsureUndisposed();
-                publicKey ??= options?.PublicKey ?? options?.PrivateKey?.PublicKey ?? PublicKey;
-                if (publicKey is not AsymmetricKyberPublicKey key) throw new ArgumentException("Missing valid CRYSTALS-Kyber public key", nameof(publicKey));
-                ISecretWithEncapsulation secret = new KyberKemGenerator(new SecureRandom(new BC.RandomGenerator())).GenerateEncapsulated(key.PublicKey);
-                return (secret.GetSecret(), secret.GetEncapsulation());
+                FalconSigner signer = new();
+                signer.Init(forSigning: true, PrivateKey);
+                return signer.GenerateSignature(hash);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw CryptographicException.From(ex);
             }
         }
 
         /// <inheritdoc/>
-        public override byte[] DeriveKey(byte[] keyExchangeData) => IfUndisposed(() => new KyberKemExtractor(PrivateKey).ExtractSecret(keyExchangeData));
+        public override int Bits => PublicKey.Bits;
 
         /// <inheritdoc/>
         protected override void Dispose(bool disposing) { }//TODO Clear all keys
@@ -136,12 +131,12 @@ namespace wan24.Crypto.BC
                 if (Keys == null) throw new InvalidOperationException();
                 using MemoryStream ms = new();//TODO Use secure memory stream
                 ms.WriteNumber(StreamSerializer.VERSION);
-                byte[] keyInfo = PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo((KyberPrivateKeyParameters)Keys.Private).PrivateKeyData.GetEncoded();
+                byte[] keyInfo = PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo((FalconPrivateKeyParameters)Keys.Private).PrivateKeyData.GetEncoded();
                 try
                 {
                     ms.WriteBytes(keyInfo);
                     keyInfo.Clear();
-                    keyInfo = PqcSubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo((KyberPublicKeyParameters)Keys.Public).GetEncoded();
+                    keyInfo = PqcSubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo((FalconPublicKeyParameters)Keys.Public).GetEncoded();
                     ms.WriteBytes(keyInfo);
                     keyInfo.Clear();
                 }
@@ -159,7 +154,7 @@ namespace wan24.Crypto.BC
             {
                 throw;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw CryptographicException.From(ex);
             }
@@ -170,19 +165,19 @@ namespace wan24.Crypto.BC
         /// </summary>
         private void DeserializeKeyData()
         {
-            EnsureUndisposed();
-            using MemoryStream ms = new(KeyData.Array);//TODO Use secure memory stream
             try
             {
+                EnsureUndisposed();
+                using MemoryStream ms = new(KeyData.Array);//TODO Use secure memory stream
                 int serializerVersion = ms.ReadNumber<int>();
                 if (serializerVersion < 1 || serializerVersion > StreamSerializer.VERSION) throw new SerializerException($"Invalid serializer version {serializerVersion}");
                 byte[] keyInfo = ms.ReadBytes(serializerVersion, minLen: 1, maxLen: ushort.MaxValue).Value;
                 try
                 {
-                    KyberPrivateKeyParameters privateKey = (KyberPrivateKeyParameters)PrivateKeyFactory.CreateKey(keyInfo);
+                    FalconPrivateKeyParameters privateKey = (FalconPrivateKeyParameters)PrivateKeyFactory.CreateKey(keyInfo);
                     keyInfo.Clear();
                     keyInfo = ms.ReadBytes(serializerVersion, minLen: 1, maxLen: ushort.MaxValue).Value;
-                    KyberPublicKeyParameters publicKey = (KyberPublicKeyParameters)PublicKeyFactory.CreateKey(keyInfo);
+                    FalconPublicKeyParameters publicKey = (FalconPublicKeyParameters)PublicKeyFactory.CreateKey(keyInfo);
                     keyInfo.Clear();
                     Keys = new(publicKey, privateKey);
                 }
@@ -199,7 +194,7 @@ namespace wan24.Crypto.BC
             {
                 throw;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw CryptographicException.From(ex);
             }

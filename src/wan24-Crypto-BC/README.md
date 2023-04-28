@@ -96,3 +96,8 @@ options.SetCounterPrivateKey(yourDilithiumPrivateKey);
 // Sign using the options and your normal private key
 SignatureContainer signature = dataToSign.Sign(yourNormalPrivateKey, options: options);
 ```
+
+## Algorithm parameters used
+
+For CRYSTALS-Kyber and CRYSTALS-Dilithium the AES parameters are being used. 
+When using SPHINCS+, the Haraka F hashing parameters will be used.

@@ -1,4 +1,4 @@
-﻿using Org.BouncyCastle.Pqc.Crypto.Crystals.Kyber;
+﻿using Org.BouncyCastle.Pqc.Crypto.SphincsPlus;
 using Org.BouncyCastle.Security;
 using System.Collections.ObjectModel;
 using wan24.Core;
@@ -6,26 +6,26 @@ using wan24.Core;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// CRYSTALS-Kyber asymmetric algorithm
+    /// SPHINCS+ asymmetric algorithm
     /// </summary>
-    public sealed class AsymmetricKyberAlgorithm : AsymmetricAlgorithmBase<AsymmetricKyberPublicKey, AsymmetricKyberPrivateKey>
+    public sealed class AsymmetricSphincsPlusAlgorithm : AsymmetricAlgorithmBase<AsymmetricSphincsPlusPublicKey, AsymmetricSphincsPlusPrivateKey>
     {
         /// <summary>
         /// Algorithm name
         /// </summary>
-        public const string ALGORITHM_NAME = "CRYSTALSKYBER";
+        public const string ALGORITHM_NAME = "SPHINCSPLUS";
         /// <summary>
         /// Algorithm value
         /// </summary>
-        public const int ALGORITHM_VALUE = 2;
+        public const int ALGORITHM_VALUE = 5;
         /// <summary>
         /// Default key size in bits
         /// </summary>
-        public const int DEFAULT_KEY_SIZE = 1024;
+        public const int DEFAULT_KEY_SIZE = 256;
         /// <summary>
         /// Algorithm usages
         /// </summary>
-        public const AsymmetricAlgorithmUsages USAGES = AsymmetricAlgorithmUsages.KeyExchange;
+        public const AsymmetricAlgorithmUsages USAGES = AsymmetricAlgorithmUsages.Signature;
 
         /// <summary>
         /// Allowed key sizes in bits
@@ -35,13 +35,13 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Static constructor
         /// </summary>
-        static AsymmetricKyberAlgorithm()
+        static AsymmetricSphincsPlusAlgorithm()
         {
             _AllowedKeySizes = new List<int>()
             {
-                512,
-                768,
-                1024
+                128,
+                192,
+                256
             }.AsReadOnly();
             Instance = new();
         }
@@ -49,12 +49,12 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricKyberAlgorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) => _DefaultOptions.AsymmetricKeyBits = DefaultKeySize = DEFAULT_KEY_SIZE;
+        public AsymmetricSphincsPlusAlgorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) => _DefaultOptions.AsymmetricKeyBits = DefaultKeySize = DEFAULT_KEY_SIZE;
 
         /// <summary>
         /// Singleton instance
         /// </summary>
-        public static AsymmetricKyberAlgorithm Instance { get; }
+        public static AsymmetricSphincsPlusAlgorithm Instance { get; }
 
         /// <inheritdoc/>
         public override AsymmetricAlgorithmUsages Usages => USAGES;
@@ -69,15 +69,15 @@ namespace wan24.Crypto.BC
         public override bool IsPostQuantum => true;
 
         /// <inheritdoc/>
-        public override AsymmetricKyberPrivateKey CreateKeyPair(CryptoOptions? options = null)
+        public override AsymmetricSphincsPlusPrivateKey CreateKeyPair(CryptoOptions? options = null)
         {
             try
             {
                 options ??= DefaultOptions;
                 options = AsymmetricHelper.GetDefaultKeyExchangeOptions(options);
                 if (!options.AsymmetricKeyBits.In(AllowedKeySizes)) throw new ArgumentException("Invalid key size", nameof(options));
-                KyberKeyPairGenerator keyGen = new();
-                keyGen.Init(new KyberKeyGenerationParameters(new SecureRandom(new RandomGenerator()), AsymmetricKyberHelper.GetParameters(options.AsymmetricKeyBits)));
+                SphincsPlusKeyPairGenerator keyGen = new();
+                keyGen.Init(new SphincsPlusKeyGenerationParameters(new SecureRandom(new RandomGenerator()), AsymmetricSphincsPlusHelper.GetParameters(options.AsymmetricKeyBits)));
                 return new(keyGen.GenerateKeyPair());
             }
             catch (CryptographicException)

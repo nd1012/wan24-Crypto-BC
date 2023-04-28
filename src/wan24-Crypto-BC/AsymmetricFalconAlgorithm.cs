@@ -1,4 +1,4 @@
-﻿using Org.BouncyCastle.Pqc.Crypto.Crystals.Kyber;
+﻿using Org.BouncyCastle.Pqc.Crypto.Falcon;
 using Org.BouncyCastle.Security;
 using System.Collections.ObjectModel;
 using wan24.Core;
@@ -6,18 +6,18 @@ using wan24.Core;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// CRYSTALS-Kyber asymmetric algorithm
+    /// FALCON asymmetric algorithm
     /// </summary>
-    public sealed class AsymmetricKyberAlgorithm : AsymmetricAlgorithmBase<AsymmetricKyberPublicKey, AsymmetricKyberPrivateKey>
+    public sealed class AsymmetricFalconAlgorithm : AsymmetricAlgorithmBase<AsymmetricFalconPublicKey, AsymmetricFalconPrivateKey>
     {
         /// <summary>
         /// Algorithm name
         /// </summary>
-        public const string ALGORITHM_NAME = "CRYSTALSKYBER";
+        public const string ALGORITHM_NAME = "FALCON";
         /// <summary>
         /// Algorithm value
         /// </summary>
-        public const int ALGORITHM_VALUE = 2;
+        public const int ALGORITHM_VALUE = 4;
         /// <summary>
         /// Default key size in bits
         /// </summary>
@@ -25,7 +25,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Algorithm usages
         /// </summary>
-        public const AsymmetricAlgorithmUsages USAGES = AsymmetricAlgorithmUsages.KeyExchange;
+        public const AsymmetricAlgorithmUsages USAGES = AsymmetricAlgorithmUsages.Signature;
 
         /// <summary>
         /// Allowed key sizes in bits
@@ -35,12 +35,11 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Static constructor
         /// </summary>
-        static AsymmetricKyberAlgorithm()
+        static AsymmetricFalconAlgorithm()
         {
             _AllowedKeySizes = new List<int>()
             {
                 512,
-                768,
                 1024
             }.AsReadOnly();
             Instance = new();
@@ -49,12 +48,12 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricKyberAlgorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) => _DefaultOptions.AsymmetricKeyBits = DefaultKeySize = DEFAULT_KEY_SIZE;
+        public AsymmetricFalconAlgorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) => _DefaultOptions.AsymmetricKeyBits = DefaultKeySize = DEFAULT_KEY_SIZE;
 
         /// <summary>
         /// Singleton instance
         /// </summary>
-        public static AsymmetricKyberAlgorithm Instance { get; }
+        public static AsymmetricFalconAlgorithm Instance { get; }
 
         /// <inheritdoc/>
         public override AsymmetricAlgorithmUsages Usages => USAGES;
@@ -69,15 +68,15 @@ namespace wan24.Crypto.BC
         public override bool IsPostQuantum => true;
 
         /// <inheritdoc/>
-        public override AsymmetricKyberPrivateKey CreateKeyPair(CryptoOptions? options = null)
+        public override AsymmetricFalconPrivateKey CreateKeyPair(CryptoOptions? options = null)
         {
             try
             {
                 options ??= DefaultOptions;
                 options = AsymmetricHelper.GetDefaultKeyExchangeOptions(options);
                 if (!options.AsymmetricKeyBits.In(AllowedKeySizes)) throw new ArgumentException("Invalid key size", nameof(options));
-                KyberKeyPairGenerator keyGen = new();
-                keyGen.Init(new KyberKeyGenerationParameters(new SecureRandom(new RandomGenerator()), AsymmetricKyberHelper.GetParameters(options.AsymmetricKeyBits)));
+                FalconKeyPairGenerator keyGen = new();
+                keyGen.Init(new FalconKeyGenerationParameters(new SecureRandom(new RandomGenerator()), AsymmetricFalconHelper.GetParameters(options.AsymmetricKeyBits)));
                 return new(keyGen.GenerateKeyPair());
             }
             catch (CryptographicException)

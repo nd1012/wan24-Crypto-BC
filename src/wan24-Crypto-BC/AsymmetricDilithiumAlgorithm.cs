@@ -1,4 +1,4 @@
-﻿using Org.BouncyCastle.Pqc.Crypto.Crystals.Kyber;
+﻿using Org.BouncyCastle.Pqc.Crypto.Crystals.Dilithium;
 using Org.BouncyCastle.Security;
 using System.Collections.ObjectModel;
 using wan24.Core;
@@ -6,18 +6,18 @@ using wan24.Core;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// CRYSTALS-Kyber asymmetric algorithm
+    /// CRYSTALS-Dilithium asymmetric algorithm
     /// </summary>
-    public sealed class AsymmetricKyberAlgorithm : AsymmetricAlgorithmBase<AsymmetricKyberPublicKey, AsymmetricKyberPrivateKey>
+    public sealed class AsymmetricDilithiumAlgorithm : AsymmetricAlgorithmBase<AsymmetricDilithiumPublicKey, AsymmetricDilithiumPrivateKey>
     {
         /// <summary>
         /// Algorithm name
         /// </summary>
-        public const string ALGORITHM_NAME = "CRYSTALSKYBER";
+        public const string ALGORITHM_NAME = "CRYSTALSDILITHIUM";
         /// <summary>
         /// Algorithm value
         /// </summary>
-        public const int ALGORITHM_VALUE = 2;
+        public const int ALGORITHM_VALUE = 3;
         /// <summary>
         /// Default key size in bits
         /// </summary>
@@ -25,7 +25,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Algorithm usages
         /// </summary>
-        public const AsymmetricAlgorithmUsages USAGES = AsymmetricAlgorithmUsages.KeyExchange;
+        public const AsymmetricAlgorithmUsages USAGES = AsymmetricAlgorithmUsages.Signature;
 
         /// <summary>
         /// Allowed key sizes in bits
@@ -35,7 +35,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Static constructor
         /// </summary>
-        static AsymmetricKyberAlgorithm()
+        static AsymmetricDilithiumAlgorithm()
         {
             _AllowedKeySizes = new List<int>()
             {
@@ -49,12 +49,12 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricKyberAlgorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) => _DefaultOptions.AsymmetricKeyBits = DefaultKeySize = DEFAULT_KEY_SIZE;
+        public AsymmetricDilithiumAlgorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) => _DefaultOptions.AsymmetricKeyBits = DefaultKeySize = DEFAULT_KEY_SIZE;
 
         /// <summary>
         /// Singleton instance
         /// </summary>
-        public static AsymmetricKyberAlgorithm Instance { get; }
+        public static AsymmetricDilithiumAlgorithm Instance { get; }
 
         /// <inheritdoc/>
         public override AsymmetricAlgorithmUsages Usages => USAGES;
@@ -69,22 +69,22 @@ namespace wan24.Crypto.BC
         public override bool IsPostQuantum => true;
 
         /// <inheritdoc/>
-        public override AsymmetricKyberPrivateKey CreateKeyPair(CryptoOptions? options = null)
+        public override AsymmetricDilithiumPrivateKey CreateKeyPair(CryptoOptions? options = null)
         {
             try
             {
                 options ??= DefaultOptions;
                 options = AsymmetricHelper.GetDefaultKeyExchangeOptions(options);
                 if (!options.AsymmetricKeyBits.In(AllowedKeySizes)) throw new ArgumentException("Invalid key size", nameof(options));
-                KyberKeyPairGenerator keyGen = new();
-                keyGen.Init(new KyberKeyGenerationParameters(new SecureRandom(new RandomGenerator()), AsymmetricKyberHelper.GetParameters(options.AsymmetricKeyBits)));
+                DilithiumKeyPairGenerator keyGen = new();
+                keyGen.Init(new DilithiumKeyGenerationParameters(new SecureRandom(new RandomGenerator()), AsymmetricDilithiumHelper.GetParameters(options.AsymmetricKeyBits)));
                 return new(keyGen.GenerateKeyPair());
             }
             catch (CryptographicException)
             {
                 throw;
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 throw CryptographicException.From(ex);
             }

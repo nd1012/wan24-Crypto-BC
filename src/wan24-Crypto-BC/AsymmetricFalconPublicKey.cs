@@ -1,4 +1,4 @@
-﻿using Org.BouncyCastle.Pqc.Crypto.Crystals.Kyber;
+﻿using Org.BouncyCastle.Pqc.Crypto.Falcon;
 using Org.BouncyCastle.Pqc.Crypto.Utilities;
 using wan24.Core;
 using wan24.StreamSerializerExtensions;
@@ -6,31 +6,31 @@ using wan24.StreamSerializerExtensions;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// CRYSTALS-Kyber asymmetric public key
+    /// Asymmetric FALCON public key
     /// </summary>
-    public sealed class AsymmetricKyberPublicKey : AsymmetricPublicKeyBase
+    public sealed class AsymmetricFalconPublicKey : AsymmetricPublicKeyBase, ISignaturePublicKey
     {
         /// <summary>
         /// Public key
         /// </summary>
-        private KyberPublicKeyParameters? _PublicKey = null;
+        private FalconPublicKeyParameters? _PublicKey = null;
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricKyberPublicKey() : base(AsymmetricKyberAlgorithm.ALGORITHM_NAME) { }
+        public AsymmetricFalconPublicKey() : base(AsymmetricFalconAlgorithm.ALGORITHM_NAME) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="keyData">Key data</param>
-        public AsymmetricKyberPublicKey(byte[] keyData) : this() => KeyData = new(keyData);
+        public AsymmetricFalconPublicKey(byte[] keyData) : this() => KeyData = new(keyData);
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="publicKey">Public key</param>
-        public AsymmetricKyberPublicKey(KyberPublicKeyParameters publicKey) : this()
+        public AsymmetricFalconPublicKey(FalconPublicKeyParameters publicKey) : this()
         {
             try
             {
@@ -41,7 +41,7 @@ namespace wan24.Crypto.BC
             {
                 throw;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw CryptographicException.From(ex);
             }
@@ -50,7 +50,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Public key
         /// </summary>
-        public KyberPublicKeyParameters PublicKey
+        public FalconPublicKeyParameters PublicKey
         {
             get
             {
@@ -64,7 +64,7 @@ namespace wan24.Crypto.BC
                 {
                     throw;
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     throw CryptographicException.From(ex);
                 }
@@ -98,7 +98,45 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
-                return new AsymmetricKyberPublicKey((byte[])KeyData.Array.Clone());
+                return new AsymmetricFalconPublicKey((byte[])KeyData.Array.Clone());
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
+        /// <inheritdoc/>
+        public override bool ValidateSignatureRaw(byte[] signature, byte[] signedHash, bool throwOnError = true)
+        {
+            try
+            {
+                EnsureUndisposed();
+                FalconSigner signer = new();
+                signer.Init(forSigning: false, PublicKey);
+                bool res = signer.VerifySignature(signedHash, signature);
+                if (!res && throwOnError) throw new InvalidDataException("Signature validation failed");
+                return res;
+            }
+            catch (CryptographicException)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
+        /// <inheritdoc/>
+        protected override bool ValidateSignatureInt(SignatureContainer signature, bool throwOnError = true)
+        {
+            try
+            {
+                EnsureUndisposed();
+                bool res = ValidateSignatureRaw(signature.Signature, signature.CreateSignatureHash());
+                if (!res && throwOnError) throw new InvalidDataException("Signature validation failed");
+                return res;
             }
             catch (CryptographicException)
             {
@@ -120,13 +158,13 @@ namespace wan24.Crypto.BC
             {
                 EnsureUndisposed();
                 using MemoryStream ms = new();
-                ms.WriteNumber(StreamSerializer.VERSION);
                 byte[] keyInfo = PqcSubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(_PublicKey).GetEncoded();
                 try
                 {
-                    ms.WriteBytes(keyInfo);
+                    ms.WriteNumber(StreamSerializer.VERSION);
+                    ms.WriteBytes(PqcSubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(_PublicKey).GetEncoded());
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     throw CryptographicException.From(ex);
                 }
@@ -157,7 +195,19 @@ namespace wan24.Crypto.BC
                 using MemoryStream ms = new(KeyData.Array);
                 int serializerVersion = ms.ReadNumber<int>();
                 if (serializerVersion < 1 || serializerVersion > StreamSerializer.VERSION) throw new SerializerException($"Invalid serializer version {serializerVersion}");
-                _PublicKey = (KyberPublicKeyParameters)PqcPublicKeyFactory.CreateKey(ms.ReadBytes(serializerVersion, minLen: 1, maxLen: ushort.MaxValue).Value);
+                byte[] keyInfo = ms.ReadBytes(serializerVersion, minLen: 1, maxLen: ushort.MaxValue).Value;
+                try
+                {
+                    _PublicKey = (FalconPublicKeyParameters)PqcPublicKeyFactory.CreateKey(keyInfo);
+                }
+                catch (Exception ex)
+                {
+                    throw CryptographicException.From(ex);
+                }
+                finally
+                {
+                    keyInfo.Clear();
+                }
             }
             catch (CryptographicException)
             {

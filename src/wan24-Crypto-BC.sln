@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33617.297
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wan24-Crypto-BC", "wan24-Crypto-BC\wan24-Crypto-BC.csproj", "{38A09813-9820-44BC-9189-7BE69DDEBC1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wan24-Crypto-BC", "wan24-Crypto-BC\wan24-Crypto-BC.csproj", "{38A09813-9820-44BC-9189-7BE69DDEBC1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wan24-Crypto-BC Docs", "wan24-Crypto-BC Docs\wan24-Crypto-BC Docs.csproj", "{C7BB5735-B468-4162-ADE3-D6D090C39A3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wan24-Crypto-BC Tests", "wan24-Crypto-BC Tests\wan24-Crypto-BC Tests.csproj", "{19293508-BC9C-4429-AB47-270C3C7ACE78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wan24-Crypto-BC Tests", "wan24-Crypto-BC Tests\wan24-Crypto-BC Tests.csproj", "{BAFD3BAC-47EE-4435-AE78-740A69DB6323}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wan24-Crypto-BC Docs", "wan24-Crypto-BC Docs\wan24-Crypto-BC Docs.csproj", "{02DC0681-9170-4421-AC4E-801AF746388F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{38A09813-9820-44BC-9189-7BE69DDEBC1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38A09813-9820-44BC-9189-7BE69DDEBC1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38A09813-9820-44BC-9189-7BE69DDEBC1B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7BB5735-B468-4162-ADE3-D6D090C39A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7BB5735-B468-4162-ADE3-D6D090C39A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7BB5735-B468-4162-ADE3-D6D090C39A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7BB5735-B468-4162-ADE3-D6D090C39A3C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BAFD3BAC-47EE-4435-AE78-740A69DB6323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BAFD3BAC-47EE-4435-AE78-740A69DB6323}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BAFD3BAC-47EE-4435-AE78-740A69DB6323}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BAFD3BAC-47EE-4435-AE78-740A69DB6323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19293508-BC9C-4429-AB47-270C3C7ACE78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19293508-BC9C-4429-AB47-270C3C7ACE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19293508-BC9C-4429-AB47-270C3C7ACE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19293508-BC9C-4429-AB47-270C3C7ACE78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02DC0681-9170-4421-AC4E-801AF746388F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02DC0681-9170-4421-AC4E-801AF746388F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02DC0681-9170-4421-AC4E-801AF746388F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02DC0681-9170-4421-AC4E-801AF746388F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
