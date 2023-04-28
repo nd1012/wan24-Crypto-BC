@@ -6,7 +6,10 @@
           "files": [
             "**.csproj"
           ],
-          "src": "D:\\P\\wan24-Crypto-BC\\src\\wan24-Crypto-BC Docs"
+          "exclude": [
+            "**/*Tests.csproj"
+          ],
+          "src": ".."
         }
       ],
       "dest": "api",
@@ -41,16 +44,21 @@
     "overwrite": [
       {
         "files": [
-          "apidoc/**.md"
         ],
         "exclude": [
-          "obj/**",
-          "_site/**"
+          "obj/**"
         ]
       }
     ],
-    "dest": "_site",
+    "dest": "../../docs",
     "globalMetadataFiles": [],
+    "globalMetadata": {
+      "_appTitle": "wan24-Crypto-BC",
+      "_appFooter": "(c) 2023 Andreas Zimmermann, wan24.de",
+      //"_appLogoPath": "custom/logo.png",
+      //"_appFaviconPath": "custom/favicon.ico",
+      "_enableNewTab": true
+    },
     "fileMetadataFiles": [],
     "template": [
       "default"

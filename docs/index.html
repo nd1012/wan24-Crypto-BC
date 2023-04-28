@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>wan24-Crypto-BC | wan24-Crypto-BC </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="wan24-Crypto-BC | wan24-Crypto-BC ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="wan24-crypto-bc">wan24-Crypto-BC</h1>
+
+<p>This library adopts
+<a href="https://github.com/bcgit/bc-csharp">The Bouncy Castle Cryptography Library For .NET</a>
+to <a href="https://www.nuget.org/packages/wan24-Crypto/">wan24-Crypto</a> and extends
+the <code>wan24-Crypto</code> library with these algorithms:</p>
+<table>
+<thead>
+<tr>
+<th>Algorithm</th>
+<th>ID</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Asymmetric</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CRYSTALS-Kyber</td>
+<td>2</td>
+<td>CRYSTALSKYBER</td>
+</tr>
+<tr>
+<td>CRYSTALS-Dilithium</td>
+<td>3</td>
+<td>CRYSTALSDILITHIUM</td>
+</tr>
+<tr>
+<td>FALCON</td>
+<td>4</td>
+<td>FALCON</td>
+</tr>
+<tr>
+<td>SPHINCS+</td>
+<td>5</td>
+<td>SPHINCSPLUS</td>
+</tr>
+</tbody>
+</table>
+<p><strong>CAUTION</strong>: The underlaying Bouncy Castle library is
+<a href="https://github.com/nd1012/bc-csharp">forked</a> from its original GitHub
+repository, and it's using the main branch. The main branch is not yet
+released! So this library should be seen as experimental and not being used in
+a productive environment! The Bouncy Castle build will be updated from time to
+time. As soon as the official NuGet package has PQC support, this library will
+switch to the NuGet package.</p>
+<h2 id="how-to-get-it">How to get it</h2>
+<p>This library is available as
+<a href="https://www.nuget.org/packages/wan24-Crypto-BC/">NuGet package</a>.</p>
+<h2 id="usage">Usage</h2>
+<p>In case you don't use the <code>wan24-Core</code> bootstrapper logic, you need to
+initialize the Bouncy Castle extension first, before you can use it:</p>
+<pre><code class="lang-cs">wan24.Crypo.BC.Bootstrapper.Boot();
+</code></pre>
+<p>This will register the algorithms to the <code>wan24-Crypto</code> library.</p>
+<h2 id="post-quantum-safety">Post quantum safety</h2>
+<p>These algorithms are designed for post quantum cryptography:</p>
+<ul>
+<li>CRYSTALS-Kyber (key exchange)</li>
+<li>CRYSTALS-Dilithium (signature)</li>
+<li>FALCON (signature)</li>
+<li>SPHINCS+ (signature)</li>
+</ul>
+<p>Normally you want to use them in hybrid mode as counter algorithm for
+extending a default algorithm of the <code>wan24-Crypto</code> package. To do this per
+default:</p>
+<pre><code class="lang-cs">// Enable the post quantum algorithms as counter-defaults
+CryptoHelper.ForcePostQuantumSafety();
+</code></pre>
+<p>This will use these algorithms as counter algorithms for asymmetric
+cryptography, in case you didn't define other post quantum algorithms already:</p>
+<ul>
+<li>CRYSTALS-Kyber (key exchange)</li>
+<li>CRYSTALS-Dilithium (signature)</li>
+</ul>
+<p>For using FALCON or SPHINCS+ for signature instead:</p>
+<pre><code class="lang-cs">// FALCON
+HybridAlgorithmHelper.SignatureAlgorithm = 
+    AsymmetricHelper.GetAlgorithm(AsymmetricFalconAlgorithm.ALGORITHM_NAME);
+
+// SPHINCS+
+HybridAlgorithmHelper.SignatureAlgorithm = 
+    AsymmetricHelper.GetAlgorithm(AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME);
+</code></pre>
+<p>The counter algorithm will come in effect, if you use asymmetric keys for
+encryption:</p>
+<pre><code class="lang-cs">// Create options having a counter private key
+CryptoOptions options = EncryptionHelper.GetDefaultOptions();
+options.SetCounterPrivateKey(yourKyberPrivateKey);
+
+// Encrypt using the options and your normal private key
+byte[] cipherData = rawData.Encrypt(yourNormalPrivateKey, options);
+rawData = cipherData.Decrypt(yourNormalPrivateKey, options);
+</code></pre>
+<p>And for signature:</p>
+<pre><code class="lang-cs">// Create options having a counter private key
+CryptoOptions options = AsymmetricHelper.GetDefaultSignatureOptions();
+options.SetCounterPrivateKey(yourDilithiumPrivateKey);
+
+// Sign using the options and your normal private key
+SignatureContainer signature = dataToSign.Sign(yourNormalPrivateKey, options: options);
+</code></pre>
+<h2 id="algorithm-parameters-used">Algorithm parameters used</h2>
+<p>For CRYSTALS-Kyber and CRYSTALS-Dilithium the AES parameters are being used.
+When using SPHINCS+, the Haraka F hashing parameters will be used.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC Docs/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            (c) 2023 Andreas Zimmermann, wan24.de
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

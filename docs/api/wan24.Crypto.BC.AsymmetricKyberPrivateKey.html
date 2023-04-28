@@ -1,0 +1,656 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AsymmetricKyberPrivateKey
+   | wan24-Crypto-BC </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AsymmetricKyberPrivateKey
+   | wan24-Crypto-BC ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey">
+  
+  
+  <h1 id="wan24_Crypto_BC_AsymmetricKyberPrivateKey" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey" class="text-break">Class AsymmetricKyberPrivateKey
+  </h1>
+  <div class="markdown level0 summary"><p>CRYSTALS-Kyber asymmetric private key</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">wan24.Core.DisposableBase</span></div>
+    <div class="level2"><span class="xref">wan24.Crypto.AsymmetricKeyBase</span></div>
+    <div class="level3"><span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase</span>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricKyberPublicKey.html">AsymmetricKyberPublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricKyberPrivateKey.html">AsymmetricKyberPrivateKey</a>&gt;</div>
+    <div class="level4"><span class="xref">AsymmetricKyberPrivateKey</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">wan24.Crypto.IKeyExchangePrivateKey</span></div>
+    <div><span class="xref">wan24.Crypto.IAsymmetricPrivateKey</span></div>
+    <div><span class="xref">wan24.Crypto.IAsymmetricKey</span></div>
+    <div><span class="xref">wan24.Core.IDisposableObject</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.IAsyncDisposable</span></div>
+    <div><span class="xref">wan24.StreamSerializerExtensions.IStreamSerializerVersion</span></div>
+    <div><span class="xref">wan24.StreamSerializerExtensions.IStreamSerializer</span></div>
+    <div><span class="xref">System.ICloneable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;._PublicKey</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.GetCopy()</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.Clone()</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.SignData(System.Byte[], System.String, wan24.Crypto.CryptoOptions)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.SignData(System.IO.Stream, System.String, wan24.Crypto.CryptoOptions)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.SignDataAsync(System.IO.Stream, System.String, wan24.Crypto.CryptoOptions, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.SignHash(System.Byte[], System.String, wan24.Crypto.CryptoOptions)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.SignHashRaw(System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.GetKeyExchangeData(wan24.Crypto.IAsymmetricPublicKey, wan24.Crypto.CryptoOptions)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.DeriveKey(System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.PublicKey</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.ID</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.wan24.Crypto.IAsymmetricPrivateKey.PublicKey</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.VERSION</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase._SerializedObjectVersion</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.Clone()</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.Serialize(System.IO.Stream)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.SerializeAsync(System.IO.Stream, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.Deserialize(System.IO.Stream, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.DeserializeAsync(System.IO.Stream, System.Int32, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.wan24.StreamSerializerExtensions.IStreamSerializer.Serialize(System.IO.Stream)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.wan24.StreamSerializerExtensions.IStreamSerializer.SerializeAsync(System.IO.Stream, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.wan24.StreamSerializerExtensions.IStreamSerializer.Deserialize(System.IO.Stream, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.wan24.StreamSerializerExtensions.IStreamSerializer.DeserializeAsync(System.IO.Stream, System.Int32, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.ID</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.Algorithm</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.KeyData</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.wan24.StreamSerializerExtensions.IStreamSerializerVersion.ObjectVersion</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.wan24.StreamSerializerExtensions.IStreamSerializerVersion.SerializedObjectVersion</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Core.DisposableBase.DisposeSyncObject</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Core.DisposableBase.EnsureUndisposed(System.Boolean, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Core.DisposableBase.IfUndisposed&lt;T&gt;(T, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Core.DisposableBase.IfUndisposed(System.Action, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Core.DisposableBase.IfUndisposed&lt;T&gt;(System.Func&lt;T&gt;, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Core.DisposableBase.IfUndisposedNullable&lt;T&gt;(System.Func&lt;T&gt;, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Core.DisposableBase.DisposeCore()</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Core.DisposableBase.DisposeAttributes()</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Core.DisposableBase.DisposeAttributesAsync()</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Core.DisposableBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Core.DisposableBase.DisposeAsync()</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Core.DisposableBase.IsDisposing</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Core.DisposableBase.IsDisposed</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Core.DisposableBase.OnDisposing</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Core.DisposableBase.OnDisposed</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="wan24.Crypto.BC.html">wan24.Crypto.BC</a></h6>
+  <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
+  <h5 id="wan24_Crypto_BC_AsymmetricKyberPrivateKey_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class AsymmetricKyberPrivateKey : AsymmetricPrivateKeyBase&lt;AsymmetricKyberPublicKey, AsymmetricKyberPrivateKey&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, ICloneable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricKyberPrivateKey__ctor.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricKyberPrivateKey.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricKyberPrivateKey.cs/#L24">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricKyberPrivateKey__ctor_" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.#ctor*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricKyberPrivateKey__ctor" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.#ctor">AsymmetricKyberPrivateKey()</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsymmetricKyberPrivateKey()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricKyberPrivateKey__ctor_Org_BouncyCastle_Crypto_AsymmetricCipherKeyPair_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricKyberPrivateKey.%23ctor(Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricKyberPrivateKey.cs/#L36">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricKyberPrivateKey__ctor_" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.#ctor*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricKyberPrivateKey__ctor_Org_BouncyCastle_Crypto_AsymmetricCipherKeyPair_" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.#ctor(Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair)">AsymmetricKyberPrivateKey(AsymmetricCipherKeyPair)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsymmetricKyberPrivateKey(AsymmetricCipherKeyPair keys)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair</span></td>
+        <td><span class="parametername">keys</span></td>
+        <td><p>Keys</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricKyberPrivateKey__ctor_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricKyberPrivateKey.%23ctor(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricKyberPrivateKey.cs/#L30">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricKyberPrivateKey__ctor_" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.#ctor*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricKyberPrivateKey__ctor_System_Byte___" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.#ctor(System.Byte[])">AsymmetricKyberPrivateKey(Byte[])</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsymmetricKyberPrivateKey(byte[] keyData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">keyData</span></td>
+        <td><p>Key data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricKyberPrivateKey_Bits.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricKyberPrivateKey.Bits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricKyberPrivateKey.cs/#L102">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricKyberPrivateKey_Bits_" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.Bits*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricKyberPrivateKey_Bits" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.Bits">Bits</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Bits { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.AsymmetricKeyBase.Bits</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricKyberPrivateKey_PrivateKey.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricKyberPrivateKey.PrivateKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricKyberPrivateKey.cs/#L58">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricKyberPrivateKey_PrivateKey_" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.PrivateKey*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricKyberPrivateKey_PrivateKey" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.PrivateKey">PrivateKey</h4>
+  <div class="markdown level1 summary"><p>Private key</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KyberPrivateKeyParameters PrivateKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Org.BouncyCastle.Pqc.Crypto.Crystals.Kyber.KyberPrivateKeyParameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricKyberPrivateKey_PublicKey.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricKyberPrivateKey.PublicKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricKyberPrivateKey.cs/#L80">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricKyberPrivateKey_PublicKey_" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.PublicKey*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricKyberPrivateKey_PublicKey" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.PublicKey">PublicKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override AsymmetricKyberPublicKey PublicKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="wan24.Crypto.BC.AsymmetricKyberPublicKey.html">AsymmetricKyberPublicKey</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.PublicKey</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricKyberPrivateKey_DeriveKey_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricKyberPrivateKey.DeriveKey(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricKyberPrivateKey.cs/#L122">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricKyberPrivateKey_DeriveKey_" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.DeriveKey*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricKyberPrivateKey_DeriveKey_System_Byte___" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.DeriveKey(System.Byte[])">DeriveKey(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override byte[] DeriveKey(byte[] keyExchangeData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">keyExchangeData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.DeriveKey(System.Byte[])</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricKyberPrivateKey_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricKyberPrivateKey.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricKyberPrivateKey.cs/#L125">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricKyberPrivateKey_Dispose_" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.Dispose*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricKyberPrivateKey_Dispose_System_Boolean_" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.Dispose(System.Boolean)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricKyberPrivateKey_GetKeyExchangeData_wan24_Crypto_IAsymmetricPublicKey_wan24_Crypto_CryptoOptions_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricKyberPrivateKey.GetKeyExchangeData(wan24.Crypto.IAsymmetricPublicKey%2Cwan24.Crypto.CryptoOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricKyberPrivateKey.cs/#L105">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricKyberPrivateKey_GetKeyExchangeData_" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.GetKeyExchangeData*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricKyberPrivateKey_GetKeyExchangeData_wan24_Crypto_IAsymmetricPublicKey_wan24_Crypto_CryptoOptions_" data-uid="wan24.Crypto.BC.AsymmetricKyberPrivateKey.GetKeyExchangeData(wan24.Crypto.IAsymmetricPublicKey,wan24.Crypto.CryptoOptions)">GetKeyExchangeData(IAsymmetricPublicKey, CryptoOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override (byte[] Key, byte[] KeyExchangeData) GetKeyExchangeData(IAsymmetricPublicKey publicKey = null, CryptoOptions options = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">wan24.Crypto.IAsymmetricPublicKey</span></td>
+        <td><span class="parametername">publicKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">wan24.Crypto.CryptoOptions</span></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Byte</span>[], <span class="xref">System.Byte</span>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricKyberPublicKey, wan24.Crypto.BC.AsymmetricKyberPrivateKey&gt;.GetKeyExchangeData(wan24.Crypto.IAsymmetricPublicKey, wan24.Crypto.CryptoOptions)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">wan24.Crypto.IKeyExchangePrivateKey</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.IAsymmetricPrivateKey</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.IAsymmetricKey</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IDisposableObject</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">System.IAsyncDisposable</span>
+  </div>
+  <div>
+      <span class="xref">wan24.StreamSerializerExtensions.IStreamSerializerVersion</span>
+  </div>
+  <div>
+      <span class="xref">wan24.StreamSerializerExtensions.IStreamSerializer</span>
+  </div>
+  <div>
+      <span class="xref">System.ICloneable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricKyberPrivateKey.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricKyberPrivateKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricKyberPrivateKey.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            (c) 2023 Andreas Zimmermann, wan24.de
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
