@@ -100,6 +100,26 @@ the <code>wan24-Crypto</code> library with these algorithms:</p>
 <td>5</td>
 <td>SPHINCSPLUS</td>
 </tr>
+<tr>
+<td>FrodoKEM</td>
+<td>6</td>
+<td>FRODOKEM</td>
+</tr>
+<tr>
+<td><strong>Symmetric</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ChaCha20</td>
+<td>1</td>
+<td>CHACHA20</td>
+</tr>
+<tr>
+<td>XSalsa20</td>
+<td>2</td>
+<td>XSALSA20</td>
+</tr>
 </tbody>
 </table>
 <p><strong>CAUTION</strong>: The underlaying Bouncy Castle library is
@@ -109,6 +129,8 @@ released! So this library should be seen as experimental and not being used in
 a productive environment! The Bouncy Castle build will be updated from time to
 time. As soon as the official NuGet package has PQC support, this library will
 switch to the NuGet package.</p>
+<p><strong>NOTE</strong>: FrodoKEM is currently disabled, 'cause there seems to be a bug
+(missing code) in the Bouncy Castle library for FrodoKEM.</p>
 <h2 id="how-to-get-it">How to get it</h2>
 <p>This library is available as
 <a href="https://www.nuget.org/packages/wan24-Crypto-BC/">NuGet package</a>.</p>
@@ -125,6 +147,7 @@ initialize the Bouncy Castle extension first, before you can use it:</p>
 <li>CRYSTALS-Dilithium (signature)</li>
 <li>FALCON (signature)</li>
 <li>SPHINCS+ (signature)</li>
+<li>FrodoKEM (key exchange)</li>
 </ul>
 <p>Normally you want to use them in hybrid mode as counter algorithm for
 extending a default algorithm of the <code>wan24-Crypto</code> package. To do this per
@@ -138,7 +161,7 @@ cryptography, in case you didn't define other post quantum algorithms already:</
 <li>CRYSTALS-Kyber (key exchange)</li>
 <li>CRYSTALS-Dilithium (signature)</li>
 </ul>
-<p>For using FALCON or SPHINCS+ for signature instead:</p>
+<p>For using other algorithms instead:</p>
 <pre><code class="lang-cs">// FALCON
 HybridAlgorithmHelper.SignatureAlgorithm = 
     AsymmetricHelper.GetAlgorithm(AsymmetricFalconAlgorithm.ALGORITHM_NAME);
@@ -146,6 +169,10 @@ HybridAlgorithmHelper.SignatureAlgorithm =
 // SPHINCS+
 HybridAlgorithmHelper.SignatureAlgorithm = 
     AsymmetricHelper.GetAlgorithm(AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME);
+
+// FrodoKEM
+HybridAlgorithmHelper.KeyExchangeAlgorithm = 
+    AsymmetricHelper.GetAlgorithm(AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME);
 </code></pre>
 <p>The counter algorithm will come in effect, if you use asymmetric keys for
 encryption:</p>
@@ -167,7 +194,8 @@ SignatureContainer signature = dataToSign.Sign(yourNormalPrivateKey, options: op
 </code></pre>
 <h2 id="algorithm-parameters-used">Algorithm parameters used</h2>
 <p>For CRYSTALS-Kyber and CRYSTALS-Dilithium the AES parameters are being used.
-When using SPHINCS+, the Haraka F hashing parameters will be used.</p>
+When using SPHINCS+, the Haraka F hashing parameters will be used. For
+FrodoKEM the AE parameters will be used.</p>
 </article>
           </div>
           
@@ -176,7 +204,7 @@ When using SPHINCS+, the Haraka F hashing parameters will be used.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC Docs/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/dev/src/wan24-Crypto-BC Docs/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

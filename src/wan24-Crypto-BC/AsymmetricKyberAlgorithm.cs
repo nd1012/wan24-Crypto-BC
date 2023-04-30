@@ -1,14 +1,22 @@
 ﻿using Org.BouncyCastle.Pqc.Crypto.Crystals.Kyber;
-using Org.BouncyCastle.Security;
 using System.Collections.ObjectModel;
-using wan24.Core;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
     /// CRYSTALS-Kyber asymmetric algorithm
     /// </summary>
-    public sealed class AsymmetricKyberAlgorithm : AsymmetricAlgorithmBase<AsymmetricKyberPublicKey, AsymmetricKyberPrivateKey>
+    public sealed class AsymmetricKyberAlgorithm
+        : BouncyCastleAsymmetricAlgorithmBase<
+            AsymmetricKyberPublicKey, 
+            AsymmetricKyberPrivateKey, 
+            KyberKeyPairGenerator, 
+            KyberKeyGenerationParameters, 
+            KyberParameters, 
+            KyberPublicKeyParameters, 
+            KyberPrivateKeyParameters, 
+            AsymmetricKyberAlgorithm
+            >
     {
         /// <summary>
         /// Algorithm name
@@ -35,59 +43,21 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Static constructor
         /// </summary>
-        static AsymmetricKyberAlgorithm()
+        static AsymmetricKyberAlgorithm() => _AllowedKeySizes = new List<int>()
         {
-            _AllowedKeySizes = new List<int>()
-            {
-                512,
-                768,
-                1024
-            }.AsReadOnly();
-            Instance = new();
-        }
+            512,
+            768,
+            1024
+        }.AsReadOnly();
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricKyberAlgorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) => _DefaultOptions.AsymmetricKeyBits = DefaultKeySize = DEFAULT_KEY_SIZE;
-
-        /// <summary>
-        /// Singleton instance
-        /// </summary>
-        public static AsymmetricKyberAlgorithm Instance { get; }
+        public AsymmetricKyberAlgorithm()
+            : base(ALGORITHM_NAME, ALGORITHM_VALUE, USAGES, isEllipticCurveAlgorithm: false, _AllowedKeySizes, isPostQuantum: true, DEFAULT_KEY_SIZE)
+        { }
 
         /// <inheritdoc/>
-        public override AsymmetricAlgorithmUsages Usages => USAGES;
-
-        /// <inheritdoc/>
-        public override bool IsEllipticCurveAlgorithm => false;
-
-        /// <inheritdoc/>
-        public override ReadOnlyCollection<int> AllowedKeySizes => _AllowedKeySizes;
-
-        /// <inheritdoc/>
-        public override bool IsPostQuantum => true;
-
-        /// <inheritdoc/>
-        public override AsymmetricKyberPrivateKey CreateKeyPair(CryptoOptions? options = null)
-        {
-            try
-            {
-                options ??= DefaultOptions;
-                options = AsymmetricHelper.GetDefaultKeyExchangeOptions(options);
-                if (!options.AsymmetricKeyBits.In(AllowedKeySizes)) throw new ArgumentException("Invalid key size", nameof(options));
-                KyberKeyPairGenerator keyGen = new();
-                keyGen.Init(new KyberKeyGenerationParameters(new SecureRandom(new RandomGenerator()), AsymmetricKyberHelper.GetParameters(options.AsymmetricKeyBits)));
-                return new(keyGen.GenerateKeyPair());
-            }
-            catch (CryptographicException)
-            {
-                throw;
-            }
-            catch (Exception ex)
-            {
-                throw CryptographicException.From(ex);
-            }
-        }
+        protected override KyberParameters GetEngineParameters(CryptoOptions options) => AsymmetricKyberHelper.GetParameters(options.AsymmetricKeyBits);
     }
 }
