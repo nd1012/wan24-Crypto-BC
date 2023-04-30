@@ -6,12 +6,12 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// Random number generator for Bouncy Castle, which adopts <see cref="RandomNumberGenerator"/>
     /// </summary>
-    public sealed class RandomGenerator : IRandomGenerator
+    public sealed class BouncyCastleRandomGenerator : IRandomGenerator
     {
         /// <summary>
         /// Constructor
         /// </summary>
-        public RandomGenerator() { }
+        public BouncyCastleRandomGenerator() { }
 
         /// <inheritdoc/>
         public void AddSeedMaterial(byte[] seed) { }

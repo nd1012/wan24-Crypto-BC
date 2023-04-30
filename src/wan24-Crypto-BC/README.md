@@ -12,6 +12,10 @@ the `wan24-Crypto` library with these algorithms:
 | CRYSTALS-Dilithium | 3 | CRYSTALSDILITHIUM |
 | FALCON | 4 | FALCON |
 | SPHINCS+ | 5 | SPHINCSPLUS |
+| FrodoKEM | 6 | FRODOKEM |
+| **Symmetric** |  |  |
+| ChaCha20 | 1 | CHACHA20 |
+| XSalsa20 | 2 | XSALSA20 |
 
 **CAUTION**: The underlaying Bouncy Castle library is 
 [forked](https://github.com/nd1012/bc-csharp) from its original GitHub 
@@ -100,4 +104,5 @@ SignatureContainer signature = dataToSign.Sign(yourNormalPrivateKey, options: op
 ## Algorithm parameters used
 
 For CRYSTALS-Kyber and CRYSTALS-Dilithium the AES parameters are being used. 
-When using SPHINCS+, the Haraka F hashing parameters will be used.
+When using SPHINCS+, the Haraka F hashing parameters will be used. For 
+FrodoKEM the AE parameters will be used.
