@@ -54,7 +54,7 @@ namespace wan24.Crypto.BC
         /// Constructor
         /// </summary>
         public AsymmetricFrodoKemAlgorithm()
-            : base(ALGORITHM_NAME, ALGORITHM_VALUE, AsymmetricAlgorithmUsages.KeyExchange, isEllipticCurveAlgorithm: false, _AllowedKeySizes, isPostQuantum: true, DEFAULT_KEY_SIZE)
+            : base(ALGORITHM_NAME, ALGORITHM_VALUE, USAGES, isEllipticCurveAlgorithm: false, _AllowedKeySizes, isPostQuantum: true, DEFAULT_KEY_SIZE)
         { }
 
         /// <inheritdoc/>

@@ -25,6 +25,9 @@ a productive environment! The Bouncy Castle build will be updated from time to
 time. As soon as the official NuGet package has PQC support, this library will 
 switch to the NuGet package.
 
+**NOTE**: FrodoKEM is currently disabled, 'cause there seems to be a bug 
+(missing code) in the Bouncy Castle library for FrodoKEM.
+
 ## How to get it
 
 This library is available as 

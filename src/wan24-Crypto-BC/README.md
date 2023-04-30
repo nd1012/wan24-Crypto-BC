@@ -49,6 +49,7 @@ These algorithms are designed for post quantum cryptography:
 - CRYSTALS-Dilithium (signature)
 - FALCON (signature)
 - SPHINCS+ (signature)
+- FrodoKEM (key exchange)
 
 Normally you want to use them in hybrid mode as counter algorithm for 
 extending a default algorithm of the `wan24-Crypto` package. To do this per 
@@ -65,7 +66,7 @@ cryptography, in case you didn't define other post quantum algorithms already:
 - CRYSTALS-Kyber (key exchange)
 - CRYSTALS-Dilithium (signature)
 
-For using FALCON or SPHINCS+ for signature instead:
+For using other algorithms instead:
 
 ```cs
 // FALCON
@@ -75,6 +76,10 @@ HybridAlgorithmHelper.SignatureAlgorithm =
 // SPHINCS+
 HybridAlgorithmHelper.SignatureAlgorithm = 
     AsymmetricHelper.GetAlgorithm(AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME);
+
+// FrodoKEM
+HybridAlgorithmHelper.KeyExchangeAlgorithm = 
+    AsymmetricHelper.GetAlgorithm(AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME);
 ```
 
 The counter algorithm will come in effect, if you use asymmetric keys for 

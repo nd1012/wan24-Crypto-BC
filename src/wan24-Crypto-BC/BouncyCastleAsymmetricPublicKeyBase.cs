@@ -32,7 +32,11 @@ namespace wan24.Crypto.BC
         /// </summary>
         /// <param name="algorithm">Algorithm name</param>
         /// <param name="keyData">Key data</param>
-        protected BouncyCastleAsymmetricPublicKeyBase(string algorithm, byte[] keyData) : this(algorithm) => KeyData = new(keyData);
+        protected BouncyCastleAsymmetricPublicKeyBase(string algorithm, byte[] keyData) : this(algorithm)
+        {
+            KeyData = new(keyData);
+            DeserializeKeyData();
+        }
 
         /// <summary>
         /// Constructor
@@ -86,7 +90,8 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
-                return (Activator.CreateInstance(typeof(tFinal), (byte[])KeyData.Array.Clone()) as IAsymmetricPublicKey)!;
+                return Activator.CreateInstance(typeof(tFinal), (byte[])KeyData.Array.Clone()) as IAsymmetricPublicKey
+                    ?? throw new InvalidProgramException($"Failed to instance {typeof(tFinal)}");
             }
             catch (Exception ex)
             {

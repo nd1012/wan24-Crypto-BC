@@ -85,8 +85,11 @@ namespace wan24.Crypto.BC
                 options = AsymmetricHelper.GetDefaultKeyExchangeOptions(options);
                 if (!options.AsymmetricKeyBits.In(AllowedKeySizes)) throw new ArgumentException("Invalid key size", nameof(options));
                 tKeyGen keyGen = new();
-                keyGen.Init((Activator.CreateInstance(typeof(tKeyGenParam), new SecureRandom(new BouncyCastleRandomGenerator()), GetEngineParameters(options)) as tKeyGenParam)!);
-                return (Activator.CreateInstance(typeof(tPrivate), keyGen.GenerateKeyPair()) as tPrivate)!;
+                keyGen.Init(
+                    Activator.CreateInstance(typeof(tKeyGenParam), new SecureRandom(new BouncyCastleRandomGenerator()), GetEngineParameters(options)) as tKeyGenParam
+                        ?? throw new InvalidProgramException($"Failed to instance {typeof(tKeyGenParam)}")
+                    );
+                return Activator.CreateInstance(typeof(tPrivate), keyGen.GenerateKeyPair()) as tPrivate ?? throw new InvalidProgramException($"Failed to instance {typeof(tPrivate)}");
             }
             catch (CryptographicException)
             {

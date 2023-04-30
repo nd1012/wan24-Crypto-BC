@@ -96,7 +96,8 @@ namespace wan24.Crypto.BC
                 {
                     EnsureUndisposed();
                     if (Keys == null) throw new InvalidOperationException();
-                    return _PublicKey ??= (Activator.CreateInstance(typeof(tPublic), (tPublicKey)Keys.Public) as tPublic)!;
+                    return _PublicKey ??= Activator.CreateInstance(typeof(tPublic), (tPublicKey)Keys.Public) as tPublic
+                        ?? throw new InvalidProgramException($"Failed to instance {typeof(tPublic)}");
                 }
                 catch (CryptographicException)
                 {
