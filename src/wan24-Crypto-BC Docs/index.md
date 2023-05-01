@@ -113,4 +113,4 @@ SignatureContainer signature = dataToSign.Sign(yourNormalPrivateKey, options: op
 
 For CRYSTALS-Kyber and CRYSTALS-Dilithium the AES parameters are being used. 
 When using SPHINCS+, the Haraka F hashing parameters will be used. For 
-FrodoKEM the AE parameters will be used.
+FrodoKEM the AES parameters will be used.

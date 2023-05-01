@@ -51,7 +51,7 @@ namespace wan24.Crypto.BC
                 EnsureUndisposed();
                 publicKey ??= options?.PublicKey ?? options?.PrivateKey?.PublicKey ?? PublicKey;
                 if (publicKey is not tPublic key) throw new ArgumentException("Missing valid public key", nameof(publicKey));
-                tGenerator generator = Activator.CreateInstance(typeof(tGenerator), new SecureRandom(new BouncyCastleRandomGenerator())) as tGenerator
+                tGenerator generator = Activator.CreateInstance(typeof(tGenerator), new SecureRandom(BouncyCastleRandomGenerator.Instance())) as tGenerator
                     ?? throw new InvalidProgramException($"Failed to instance {typeof(tGenerator)}");
                 ISecretWithEncapsulation secret = generator.GenerateEncapsulated(key.PublicKey);
                 return (secret.GetSecret(), secret.GetEncapsulation());

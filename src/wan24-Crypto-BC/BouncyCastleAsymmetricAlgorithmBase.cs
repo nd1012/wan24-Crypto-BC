@@ -21,7 +21,6 @@ namespace wan24.Crypto.BC
         where tPrivate : BouncyCastleAsymmetricPrivateKeyBase<tPublic, tFinal, tPublicKey, tPrivateKey, tPrivate>, new()
         where tKeyGen : IAsymmetricCipherKeyPairGenerator, new()
         where tKeyGenParam : KeyGenerationParameters
-        where tParam : ICipherParameters
         where tPublicKey : AsymmetricKeyParameter, ICipherParameters
         where tPrivateKey : AsymmetricKeyParameter
         where tFinal : BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>, new()
@@ -85,11 +84,9 @@ namespace wan24.Crypto.BC
                 options = AsymmetricHelper.GetDefaultKeyExchangeOptions(options);
                 if (!options.AsymmetricKeyBits.In(AllowedKeySizes)) throw new ArgumentException("Invalid key size", nameof(options));
                 tKeyGen keyGen = new();
-                keyGen.Init(
-                    Activator.CreateInstance(typeof(tKeyGenParam), new SecureRandom(new BouncyCastleRandomGenerator()), GetEngineParameters(options)) as tKeyGenParam
-                        ?? throw new InvalidProgramException($"Failed to instance {typeof(tKeyGenParam)}")
-                    );
-                return Activator.CreateInstance(typeof(tPrivate), keyGen.GenerateKeyPair()) as tPrivate ?? throw new InvalidProgramException($"Failed to instance {typeof(tPrivate)}");
+                keyGen.Init(CreateKeyGenParameters(new SecureRandom(BouncyCastleRandomGenerator.Instance()), GetEngineParameters(options), options));
+                return Activator.CreateInstance(typeof(tPrivate), keyGen.GenerateKeyPair()) as tPrivate
+                    ?? throw new InvalidProgramException($"Failed to instance asymmetric private key {typeof(tPrivate)}");
             }
             catch (CryptographicException)
             {
@@ -107,5 +104,16 @@ namespace wan24.Crypto.BC
         /// <param name="options">Options</param>
         /// <returns>Parameters</returns>
         protected abstract tParam GetEngineParameters(CryptoOptions options);
+
+        /// <summary>
+        /// Create key generatpr parameters
+        /// </summary>
+        /// <param name="random">Random</param>
+        /// <param name="parameters">Engine parameters</param>
+        /// <param name="options">Options</param>
+        /// <returns>Key generator parameters</returns>
+        protected virtual tKeyGenParam CreateKeyGenParameters(SecureRandom random, tParam parameters, CryptoOptions options)
+            => Activator.CreateInstance(typeof(tKeyGenParam), random, parameters) as tKeyGenParam
+                ?? throw new InvalidProgramException($"Failed to instance key generation parameters {typeof(tKeyGenParam)}");
     }
 }

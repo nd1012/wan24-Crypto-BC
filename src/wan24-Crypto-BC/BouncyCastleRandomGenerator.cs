@@ -9,9 +9,19 @@ namespace wan24.Crypto.BC
     public sealed class BouncyCastleRandomGenerator : IRandomGenerator
     {
         /// <summary>
+        /// Instance
+        /// </summary>
+        private static readonly BouncyCastleRandomGenerator _Instance = new();
+
+        /// <summary>
         /// Constructor
         /// </summary>
         public BouncyCastleRandomGenerator() { }
+
+        /// <summary>
+        /// Instance factory
+        /// </summary>
+        public static Func<IRandomGenerator> Instance { get; set; } = () => _Instance;
 
         /// <inheritdoc/>
         public void AddSeedMaterial(byte[] seed) { }

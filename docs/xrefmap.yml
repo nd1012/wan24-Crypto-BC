@@ -915,6 +915,23 @@ references:
   fullName.vb: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal).AllowedKeySizes
   nameWithType: BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>.AllowedKeySizes
   nameWithType.vb: BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal).AllowedKeySizes
+- uid: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`8.CreateKeyGenParameters(Org.BouncyCastle.Security.SecureRandom,`4,wan24.Crypto.CryptoOptions)
+  name: CreateKeyGenParameters(SecureRandom, tParam, CryptoOptions)
+  href: api/wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_8_CreateKeyGenParameters_Org_BouncyCastle_Security_SecureRandom__4_wan24_Crypto_CryptoOptions_
+  commentId: M:wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`8.CreateKeyGenParameters(Org.BouncyCastle.Security.SecureRandom,`4,wan24.Crypto.CryptoOptions)
+  fullName: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>.CreateKeyGenParameters(Org.BouncyCastle.Security.SecureRandom, tParam, wan24.Crypto.CryptoOptions)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal).CreateKeyGenParameters(Org.BouncyCastle.Security.SecureRandom, tParam, wan24.Crypto.CryptoOptions)
+  nameWithType: BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>.CreateKeyGenParameters(SecureRandom, tParam, CryptoOptions)
+  nameWithType.vb: BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal).CreateKeyGenParameters(SecureRandom, tParam, CryptoOptions)
+- uid: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`8.CreateKeyGenParameters*
+  name: CreateKeyGenParameters
+  href: api/wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_8_CreateKeyGenParameters_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`8.CreateKeyGenParameters
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>.CreateKeyGenParameters
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal).CreateKeyGenParameters
+  nameWithType: BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>.CreateKeyGenParameters
+  nameWithType.vb: BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal).CreateKeyGenParameters
 - uid: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`8.CreateKeyPair(wan24.Crypto.CryptoOptions)
   name: CreateKeyPair(CryptoOptions)
   href: api/wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_8_CreateKeyPair_wan24_Crypto_CryptoOptions_
@@ -1646,6 +1663,18 @@ references:
   commentId: M:wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor(Org.BouncyCastle.Crypto.IBlockCipher)
   fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.BouncyCastleCryptoTransform(Org.BouncyCastle.Crypto.IBlockCipher)
   nameWithType: BouncyCastleCryptoTransform.BouncyCastleCryptoTransform(IBlockCipher)
+- uid: wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor(Org.BouncyCastle.Crypto.IDigest)
+  name: BouncyCastleCryptoTransform(IDigest)
+  href: api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html#wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_IDigest_
+  commentId: M:wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor(Org.BouncyCastle.Crypto.IDigest)
+  fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.BouncyCastleCryptoTransform(Org.BouncyCastle.Crypto.IDigest)
+  nameWithType: BouncyCastleCryptoTransform.BouncyCastleCryptoTransform(IDigest)
+- uid: wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor(Org.BouncyCastle.Crypto.IMac)
+  name: BouncyCastleCryptoTransform(IMac)
+  href: api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html#wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_IMac_
+  commentId: M:wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor(Org.BouncyCastle.Crypto.IMac)
+  fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.BouncyCastleCryptoTransform(Org.BouncyCastle.Crypto.IMac)
+  nameWithType: BouncyCastleCryptoTransform.BouncyCastleCryptoTransform(IMac)
 - uid: wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor(Org.BouncyCastle.Crypto.IStreamCipher)
   name: BouncyCastleCryptoTransform(IStreamCipher)
   href: api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html#wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_IStreamCipher_
@@ -1659,6 +1688,12 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.BouncyCastleCryptoTransform
   nameWithType: BouncyCastleCryptoTransform.BouncyCastleCryptoTransform
+- uid: wan24.Crypto.BC.BouncyCastleCryptoTransform.BlockCipher
+  name: BlockCipher
+  href: api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html#wan24_Crypto_BC_BouncyCastleCryptoTransform_BlockCipher
+  commentId: F:wan24.Crypto.BC.BouncyCastleCryptoTransform.BlockCipher
+  fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.BlockCipher
+  nameWithType: BouncyCastleCryptoTransform.BlockCipher
 - uid: wan24.Crypto.BC.BouncyCastleCryptoTransform.CanReuseTransform
   name: CanReuseTransform
   href: api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html#wan24_Crypto_BC_BouncyCastleCryptoTransform_CanReuseTransform
@@ -1685,6 +1720,12 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.CanTransformMultipleBlocks
   nameWithType: BouncyCastleCryptoTransform.CanTransformMultipleBlocks
+- uid: wan24.Crypto.BC.BouncyCastleCryptoTransform.Digest
+  name: Digest
+  href: api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html#wan24_Crypto_BC_BouncyCastleCryptoTransform_Digest
+  commentId: F:wan24.Crypto.BC.BouncyCastleCryptoTransform.Digest
+  fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.Digest
+  nameWithType: BouncyCastleCryptoTransform.Digest
 - uid: wan24.Crypto.BC.BouncyCastleCryptoTransform.Dispose(System.Boolean)
   name: Dispose(Boolean)
   href: api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html#wan24_Crypto_BC_BouncyCastleCryptoTransform_Dispose_System_Boolean_
@@ -1711,6 +1752,12 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.InputBlockSize
   nameWithType: BouncyCastleCryptoTransform.InputBlockSize
+- uid: wan24.Crypto.BC.BouncyCastleCryptoTransform.Mac
+  name: Mac
+  href: api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html#wan24_Crypto_BC_BouncyCastleCryptoTransform_Mac
+  commentId: F:wan24.Crypto.BC.BouncyCastleCryptoTransform.Mac
+  fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.Mac
+  nameWithType: BouncyCastleCryptoTransform.Mac
 - uid: wan24.Crypto.BC.BouncyCastleCryptoTransform.OutputBlockSize
   name: OutputBlockSize
   href: api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html#wan24_Crypto_BC_BouncyCastleCryptoTransform_OutputBlockSize
@@ -1724,6 +1771,12 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.OutputBlockSize
   nameWithType: BouncyCastleCryptoTransform.OutputBlockSize
+- uid: wan24.Crypto.BC.BouncyCastleCryptoTransform.StreamCipher
+  name: StreamCipher
+  href: api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html#wan24_Crypto_BC_BouncyCastleCryptoTransform_StreamCipher
+  commentId: F:wan24.Crypto.BC.BouncyCastleCryptoTransform.StreamCipher
+  fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.StreamCipher
+  nameWithType: BouncyCastleCryptoTransform.StreamCipher
 - uid: wan24.Crypto.BC.BouncyCastleCryptoTransform.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)
   name: TransformBlock(Byte[], Int32, Int32, Byte[], Int32)
   href: api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html#wan24_Crypto_BC_BouncyCastleCryptoTransform_TransformBlock_System_Byte___System_Int32_System_Int32_System_Byte___System_Int32_
@@ -1806,6 +1859,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeedMaterial
   nameWithType: BouncyCastleRandomGenerator.AddSeedMaterial
+- uid: wan24.Crypto.BC.BouncyCastleRandomGenerator.Instance
+  name: Instance
+  href: api/wan24.Crypto.BC.BouncyCastleRandomGenerator.html#wan24_Crypto_BC_BouncyCastleRandomGenerator_Instance
+  commentId: P:wan24.Crypto.BC.BouncyCastleRandomGenerator.Instance
+  fullName: wan24.Crypto.BC.BouncyCastleRandomGenerator.Instance
+  nameWithType: BouncyCastleRandomGenerator.Instance
+- uid: wan24.Crypto.BC.BouncyCastleRandomGenerator.Instance*
+  name: Instance
+  href: api/wan24.Crypto.BC.BouncyCastleRandomGenerator.html#wan24_Crypto_BC_BouncyCastleRandomGenerator_Instance_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleRandomGenerator.Instance
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleRandomGenerator.Instance
+  nameWithType: BouncyCastleRandomGenerator.Instance
 - uid: wan24.Crypto.BC.BouncyCastleRandomGenerator.NextBytes(Span{System.Byte})
   name: NextBytes(Span<Byte>)
   href: api/wan24.Crypto.BC.BouncyCastleRandomGenerator.html#wan24_Crypto_BC_BouncyCastleRandomGenerator_NextBytes_Span_System_Byte__
