@@ -55,18 +55,15 @@ namespace wan24.Crypto.BC
         /// <inheritdoc/>
         public int TransformBlock(byte[] inputBuffer, int inputOffset, int inputCount, byte[] outputBuffer, int outputOffset)
         {
-            if (BlockCipher == null)
-            {
-                StreamCipher!.ProcessBytes(inputBuffer, inputOffset, inputCount, outputBuffer, outputOffset);
-                return inputCount;
-            }
-            return BlockCipher.ProcessBlock(inputBuffer, inputOffset, outputBuffer, outputOffset);
+            StreamCipher?.ProcessBytes(inputBuffer, inputOffset, inputCount, outputBuffer, outputOffset);
+            return BlockCipher?.ProcessBlock(inputBuffer, inputOffset, outputBuffer, outputOffset) ?? inputCount;
         }
 
         /// <inheritdoc/>
         public byte[] TransformFinalBlock(byte[] inputBuffer, int inputOffset, int inputCount)
         {
-            using RentedArray<byte> outputBuffer = new(OutputBlockSize);
+            if (inputCount == 0) return Array.Empty<byte>();
+            using RentedArray<byte> outputBuffer = new(StreamCipher == null ? OutputBlockSize : inputCount);
             int used = TransformBlock(inputBuffer, inputOffset, inputCount, outputBuffer, 0);
             return used == 0 ? Array.Empty<byte>() : outputBuffer.Span[..used].ToArray();
         }
