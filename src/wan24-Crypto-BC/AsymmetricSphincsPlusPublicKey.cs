@@ -45,5 +45,11 @@ namespace wan24.Crypto.BC
                 }
             }
         }
+
+        /// <summary>
+        /// Cast from serialized data
+        /// </summary>
+        /// <param name="data">Data</param>
+        public static explicit operator AsymmetricSphincsPlusPublicKey(byte[] data) => Import<AsymmetricSphincsPlusPublicKey>(data);
     }
 }

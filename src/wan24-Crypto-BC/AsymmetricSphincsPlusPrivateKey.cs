@@ -32,5 +32,17 @@ namespace wan24.Crypto.BC
         /// </summary>
         /// <param name="keys">Keys</param>
         public AsymmetricSphincsPlusPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME, keys) { }
+
+        /// <summary>
+        /// Cast to public key
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        public static implicit operator AsymmetricSphincsPlusPublicKey(AsymmetricSphincsPlusPrivateKey privateKey) => privateKey.PublicKey;
+
+        /// <summary>
+        /// Cast from serialized data
+        /// </summary>
+        /// <param name="data">Data</param>
+        public static explicit operator AsymmetricSphincsPlusPrivateKey(byte[] data) => Import<AsymmetricSphincsPlusPrivateKey>(data);
     }
 }

@@ -34,6 +34,10 @@ namespace wan24.Crypto.BC
         /// Algorithm usages
         /// </summary>
         public const AsymmetricAlgorithmUsages USAGES = AsymmetricAlgorithmUsages.Signature;
+        /// <summary>
+        /// Display name
+        /// </summary>
+        public const string DISPLAY_NAME = "FALCON";
 
         /// <summary>
         /// Allowed key sizes in bits
@@ -55,6 +59,9 @@ namespace wan24.Crypto.BC
         public AsymmetricFalconAlgorithm()
             : base(ALGORITHM_NAME, ALGORITHM_VALUE, USAGES, isEllipticCurveAlgorithm: false, _AllowedKeySizes, isPostQuantum: true, DEFAULT_KEY_SIZE)
         { }
+
+        /// <inheritdoc/>
+        public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
         protected override FalconParameters GetEngineParameters(CryptoOptions options) => AsymmetricFalconHelper.GetParameters(options.AsymmetricKeyBits);

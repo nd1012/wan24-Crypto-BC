@@ -44,6 +44,25 @@ references:
   commentId: F:wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.DEFAULT_KEY_SIZE
   fullName: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.DEFAULT_KEY_SIZE
   nameWithType: AsymmetricDilithiumAlgorithm.DEFAULT_KEY_SIZE
+- uid: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.DISPLAY_NAME
+  name: DISPLAY_NAME
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html#wan24_Crypto_BC_AsymmetricDilithiumAlgorithm_DISPLAY_NAME
+  commentId: F:wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.DISPLAY_NAME
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.DISPLAY_NAME
+  nameWithType: AsymmetricDilithiumAlgorithm.DISPLAY_NAME
+- uid: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.DisplayName
+  name: DisplayName
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html#wan24_Crypto_BC_AsymmetricDilithiumAlgorithm_DisplayName
+  commentId: P:wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.DisplayName
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.DisplayName
+  nameWithType: AsymmetricDilithiumAlgorithm.DisplayName
+- uid: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.DisplayName*
+  name: DisplayName
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html#wan24_Crypto_BC_AsymmetricDilithiumAlgorithm_DisplayName_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.DisplayName
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.DisplayName
+  nameWithType: AsymmetricDilithiumAlgorithm.DisplayName
 - uid: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.GetEngineParameters(wan24.Crypto.CryptoOptions)
   name: GetEngineParameters(CryptoOptions)
   href: api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html#wan24_Crypto_BC_AsymmetricDilithiumAlgorithm_GetEngineParameters_wan24_Crypto_CryptoOptions_
@@ -129,6 +148,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.AsymmetricDilithiumPrivateKey
   nameWithType: AsymmetricDilithiumPrivateKey.AsymmetricDilithiumPrivateKey
+- uid: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricDilithiumPrivateKey
+  name: Explicit(Byte[] to AsymmetricDilithiumPrivateKey)
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.html#wan24_Crypto_BC_AsymmetricDilithiumPrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricDilithiumPrivateKey
+  commentId: M:wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricDilithiumPrivateKey
+  name.vb: Narrowing(Byte() to AsymmetricDilithiumPrivateKey)
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.Explicit(System.Byte[] to wan24.Crypto.BC.AsymmetricDilithiumPrivateKey)
+  fullName.vb: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.Narrowing(System.Byte() to wan24.Crypto.BC.AsymmetricDilithiumPrivateKey)
+  nameWithType: AsymmetricDilithiumPrivateKey.Explicit(Byte[] to AsymmetricDilithiumPrivateKey)
+  nameWithType.vb: AsymmetricDilithiumPrivateKey.Narrowing(Byte() to AsymmetricDilithiumPrivateKey)
+- uid: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.op_Explicit*
+  name: Explicit
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.html#wan24_Crypto_BC_AsymmetricDilithiumPrivateKey_op_Explicit_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.Explicit
+  fullName.vb: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.Narrowing
+  nameWithType: AsymmetricDilithiumPrivateKey.Explicit
+  nameWithType.vb: AsymmetricDilithiumPrivateKey.Narrowing
+- uid: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricDilithiumPrivateKey)~wan24.Crypto.BC.AsymmetricDilithiumPublicKey
+  name: Implicit(AsymmetricDilithiumPrivateKey to AsymmetricDilithiumPublicKey)
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.html#wan24_Crypto_BC_AsymmetricDilithiumPrivateKey_op_Implicit_wan24_Crypto_BC_AsymmetricDilithiumPrivateKey__wan24_Crypto_BC_AsymmetricDilithiumPublicKey
+  commentId: M:wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricDilithiumPrivateKey)~wan24.Crypto.BC.AsymmetricDilithiumPublicKey
+  name.vb: Widening(AsymmetricDilithiumPrivateKey to AsymmetricDilithiumPublicKey)
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.Implicit(wan24.Crypto.BC.AsymmetricDilithiumPrivateKey to wan24.Crypto.BC.AsymmetricDilithiumPublicKey)
+  fullName.vb: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.Widening(wan24.Crypto.BC.AsymmetricDilithiumPrivateKey to wan24.Crypto.BC.AsymmetricDilithiumPublicKey)
+  nameWithType: AsymmetricDilithiumPrivateKey.Implicit(AsymmetricDilithiumPrivateKey to AsymmetricDilithiumPublicKey)
+  nameWithType.vb: AsymmetricDilithiumPrivateKey.Widening(AsymmetricDilithiumPrivateKey to AsymmetricDilithiumPublicKey)
+- uid: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.op_Implicit*
+  name: Implicit
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.html#wan24_Crypto_BC_AsymmetricDilithiumPrivateKey_op_Implicit_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.Implicit
+  fullName.vb: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.Widening
+  nameWithType: AsymmetricDilithiumPrivateKey.Implicit
+  nameWithType.vb: AsymmetricDilithiumPrivateKey.Widening
 - uid: wan24.Crypto.BC.AsymmetricDilithiumPublicKey
   name: AsymmetricDilithiumPublicKey
   href: api/wan24.Crypto.BC.AsymmetricDilithiumPublicKey.html
@@ -176,6 +233,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricDilithiumPublicKey.Bits
   nameWithType: AsymmetricDilithiumPublicKey.Bits
+- uid: wan24.Crypto.BC.AsymmetricDilithiumPublicKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricDilithiumPublicKey
+  name: Explicit(Byte[] to AsymmetricDilithiumPublicKey)
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumPublicKey.html#wan24_Crypto_BC_AsymmetricDilithiumPublicKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricDilithiumPublicKey
+  commentId: M:wan24.Crypto.BC.AsymmetricDilithiumPublicKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricDilithiumPublicKey
+  name.vb: Narrowing(Byte() to AsymmetricDilithiumPublicKey)
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumPublicKey.Explicit(System.Byte[] to wan24.Crypto.BC.AsymmetricDilithiumPublicKey)
+  fullName.vb: wan24.Crypto.BC.AsymmetricDilithiumPublicKey.Narrowing(System.Byte() to wan24.Crypto.BC.AsymmetricDilithiumPublicKey)
+  nameWithType: AsymmetricDilithiumPublicKey.Explicit(Byte[] to AsymmetricDilithiumPublicKey)
+  nameWithType.vb: AsymmetricDilithiumPublicKey.Narrowing(Byte() to AsymmetricDilithiumPublicKey)
+- uid: wan24.Crypto.BC.AsymmetricDilithiumPublicKey.op_Explicit*
+  name: Explicit
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumPublicKey.html#wan24_Crypto_BC_AsymmetricDilithiumPublicKey_op_Explicit_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricDilithiumPublicKey.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumPublicKey.Explicit
+  fullName.vb: wan24.Crypto.BC.AsymmetricDilithiumPublicKey.Narrowing
+  nameWithType: AsymmetricDilithiumPublicKey.Explicit
+  nameWithType.vb: AsymmetricDilithiumPublicKey.Narrowing
 - uid: wan24.Crypto.BC.AsymmetricFalconAlgorithm
   name: AsymmetricFalconAlgorithm
   href: api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html
@@ -213,6 +289,25 @@ references:
   commentId: F:wan24.Crypto.BC.AsymmetricFalconAlgorithm.DEFAULT_KEY_SIZE
   fullName: wan24.Crypto.BC.AsymmetricFalconAlgorithm.DEFAULT_KEY_SIZE
   nameWithType: AsymmetricFalconAlgorithm.DEFAULT_KEY_SIZE
+- uid: wan24.Crypto.BC.AsymmetricFalconAlgorithm.DISPLAY_NAME
+  name: DISPLAY_NAME
+  href: api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html#wan24_Crypto_BC_AsymmetricFalconAlgorithm_DISPLAY_NAME
+  commentId: F:wan24.Crypto.BC.AsymmetricFalconAlgorithm.DISPLAY_NAME
+  fullName: wan24.Crypto.BC.AsymmetricFalconAlgorithm.DISPLAY_NAME
+  nameWithType: AsymmetricFalconAlgorithm.DISPLAY_NAME
+- uid: wan24.Crypto.BC.AsymmetricFalconAlgorithm.DisplayName
+  name: DisplayName
+  href: api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html#wan24_Crypto_BC_AsymmetricFalconAlgorithm_DisplayName
+  commentId: P:wan24.Crypto.BC.AsymmetricFalconAlgorithm.DisplayName
+  fullName: wan24.Crypto.BC.AsymmetricFalconAlgorithm.DisplayName
+  nameWithType: AsymmetricFalconAlgorithm.DisplayName
+- uid: wan24.Crypto.BC.AsymmetricFalconAlgorithm.DisplayName*
+  name: DisplayName
+  href: api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html#wan24_Crypto_BC_AsymmetricFalconAlgorithm_DisplayName_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricFalconAlgorithm.DisplayName
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricFalconAlgorithm.DisplayName
+  nameWithType: AsymmetricFalconAlgorithm.DisplayName
 - uid: wan24.Crypto.BC.AsymmetricFalconAlgorithm.GetEngineParameters(wan24.Crypto.CryptoOptions)
   name: GetEngineParameters(CryptoOptions)
   href: api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html#wan24_Crypto_BC_AsymmetricFalconAlgorithm_GetEngineParameters_wan24_Crypto_CryptoOptions_
@@ -298,6 +393,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricFalconPrivateKey.AsymmetricFalconPrivateKey
   nameWithType: AsymmetricFalconPrivateKey.AsymmetricFalconPrivateKey
+- uid: wan24.Crypto.BC.AsymmetricFalconPrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricFalconPrivateKey
+  name: Explicit(Byte[] to AsymmetricFalconPrivateKey)
+  href: api/wan24.Crypto.BC.AsymmetricFalconPrivateKey.html#wan24_Crypto_BC_AsymmetricFalconPrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricFalconPrivateKey
+  commentId: M:wan24.Crypto.BC.AsymmetricFalconPrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricFalconPrivateKey
+  name.vb: Narrowing(Byte() to AsymmetricFalconPrivateKey)
+  fullName: wan24.Crypto.BC.AsymmetricFalconPrivateKey.Explicit(System.Byte[] to wan24.Crypto.BC.AsymmetricFalconPrivateKey)
+  fullName.vb: wan24.Crypto.BC.AsymmetricFalconPrivateKey.Narrowing(System.Byte() to wan24.Crypto.BC.AsymmetricFalconPrivateKey)
+  nameWithType: AsymmetricFalconPrivateKey.Explicit(Byte[] to AsymmetricFalconPrivateKey)
+  nameWithType.vb: AsymmetricFalconPrivateKey.Narrowing(Byte() to AsymmetricFalconPrivateKey)
+- uid: wan24.Crypto.BC.AsymmetricFalconPrivateKey.op_Explicit*
+  name: Explicit
+  href: api/wan24.Crypto.BC.AsymmetricFalconPrivateKey.html#wan24_Crypto_BC_AsymmetricFalconPrivateKey_op_Explicit_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricFalconPrivateKey.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: wan24.Crypto.BC.AsymmetricFalconPrivateKey.Explicit
+  fullName.vb: wan24.Crypto.BC.AsymmetricFalconPrivateKey.Narrowing
+  nameWithType: AsymmetricFalconPrivateKey.Explicit
+  nameWithType.vb: AsymmetricFalconPrivateKey.Narrowing
+- uid: wan24.Crypto.BC.AsymmetricFalconPrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricFalconPrivateKey)~wan24.Crypto.BC.AsymmetricFalconPublicKey
+  name: Implicit(AsymmetricFalconPrivateKey to AsymmetricFalconPublicKey)
+  href: api/wan24.Crypto.BC.AsymmetricFalconPrivateKey.html#wan24_Crypto_BC_AsymmetricFalconPrivateKey_op_Implicit_wan24_Crypto_BC_AsymmetricFalconPrivateKey__wan24_Crypto_BC_AsymmetricFalconPublicKey
+  commentId: M:wan24.Crypto.BC.AsymmetricFalconPrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricFalconPrivateKey)~wan24.Crypto.BC.AsymmetricFalconPublicKey
+  name.vb: Widening(AsymmetricFalconPrivateKey to AsymmetricFalconPublicKey)
+  fullName: wan24.Crypto.BC.AsymmetricFalconPrivateKey.Implicit(wan24.Crypto.BC.AsymmetricFalconPrivateKey to wan24.Crypto.BC.AsymmetricFalconPublicKey)
+  fullName.vb: wan24.Crypto.BC.AsymmetricFalconPrivateKey.Widening(wan24.Crypto.BC.AsymmetricFalconPrivateKey to wan24.Crypto.BC.AsymmetricFalconPublicKey)
+  nameWithType: AsymmetricFalconPrivateKey.Implicit(AsymmetricFalconPrivateKey to AsymmetricFalconPublicKey)
+  nameWithType.vb: AsymmetricFalconPrivateKey.Widening(AsymmetricFalconPrivateKey to AsymmetricFalconPublicKey)
+- uid: wan24.Crypto.BC.AsymmetricFalconPrivateKey.op_Implicit*
+  name: Implicit
+  href: api/wan24.Crypto.BC.AsymmetricFalconPrivateKey.html#wan24_Crypto_BC_AsymmetricFalconPrivateKey_op_Implicit_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricFalconPrivateKey.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: wan24.Crypto.BC.AsymmetricFalconPrivateKey.Implicit
+  fullName.vb: wan24.Crypto.BC.AsymmetricFalconPrivateKey.Widening
+  nameWithType: AsymmetricFalconPrivateKey.Implicit
+  nameWithType.vb: AsymmetricFalconPrivateKey.Widening
 - uid: wan24.Crypto.BC.AsymmetricFalconPublicKey
   name: AsymmetricFalconPublicKey
   href: api/wan24.Crypto.BC.AsymmetricFalconPublicKey.html
@@ -345,6 +478,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricFalconPublicKey.Bits
   nameWithType: AsymmetricFalconPublicKey.Bits
+- uid: wan24.Crypto.BC.AsymmetricFalconPublicKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricFalconPublicKey
+  name: Explicit(Byte[] to AsymmetricFalconPublicKey)
+  href: api/wan24.Crypto.BC.AsymmetricFalconPublicKey.html#wan24_Crypto_BC_AsymmetricFalconPublicKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricFalconPublicKey
+  commentId: M:wan24.Crypto.BC.AsymmetricFalconPublicKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricFalconPublicKey
+  name.vb: Narrowing(Byte() to AsymmetricFalconPublicKey)
+  fullName: wan24.Crypto.BC.AsymmetricFalconPublicKey.Explicit(System.Byte[] to wan24.Crypto.BC.AsymmetricFalconPublicKey)
+  fullName.vb: wan24.Crypto.BC.AsymmetricFalconPublicKey.Narrowing(System.Byte() to wan24.Crypto.BC.AsymmetricFalconPublicKey)
+  nameWithType: AsymmetricFalconPublicKey.Explicit(Byte[] to AsymmetricFalconPublicKey)
+  nameWithType.vb: AsymmetricFalconPublicKey.Narrowing(Byte() to AsymmetricFalconPublicKey)
+- uid: wan24.Crypto.BC.AsymmetricFalconPublicKey.op_Explicit*
+  name: Explicit
+  href: api/wan24.Crypto.BC.AsymmetricFalconPublicKey.html#wan24_Crypto_BC_AsymmetricFalconPublicKey_op_Explicit_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricFalconPublicKey.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: wan24.Crypto.BC.AsymmetricFalconPublicKey.Explicit
+  fullName.vb: wan24.Crypto.BC.AsymmetricFalconPublicKey.Narrowing
+  nameWithType: AsymmetricFalconPublicKey.Explicit
+  nameWithType.vb: AsymmetricFalconPublicKey.Narrowing
 - uid: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm
   name: AsymmetricFrodoKemAlgorithm
   href: api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html
@@ -382,6 +534,25 @@ references:
   commentId: F:wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.DEFAULT_KEY_SIZE
   fullName: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.DEFAULT_KEY_SIZE
   nameWithType: AsymmetricFrodoKemAlgorithm.DEFAULT_KEY_SIZE
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.DISPLAY_NAME
+  name: DISPLAY_NAME
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html#wan24_Crypto_BC_AsymmetricFrodoKemAlgorithm_DISPLAY_NAME
+  commentId: F:wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.DISPLAY_NAME
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.DISPLAY_NAME
+  nameWithType: AsymmetricFrodoKemAlgorithm.DISPLAY_NAME
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.DisplayName
+  name: DisplayName
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html#wan24_Crypto_BC_AsymmetricFrodoKemAlgorithm_DisplayName
+  commentId: P:wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.DisplayName
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.DisplayName
+  nameWithType: AsymmetricFrodoKemAlgorithm.DisplayName
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.DisplayName*
+  name: DisplayName
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html#wan24_Crypto_BC_AsymmetricFrodoKemAlgorithm_DisplayName_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.DisplayName
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.DisplayName
+  nameWithType: AsymmetricFrodoKemAlgorithm.DisplayName
 - uid: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.GetEngineParameters(wan24.Crypto.CryptoOptions)
   name: GetEngineParameters(CryptoOptions)
   href: api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html#wan24_Crypto_BC_AsymmetricFrodoKemAlgorithm_GetEngineParameters_wan24_Crypto_CryptoOptions_
@@ -467,6 +638,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.AsymmetricFrodoKemPrivateKey
   nameWithType: AsymmetricFrodoKemPrivateKey.AsymmetricFrodoKemPrivateKey
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey
+  name: Explicit(Byte[] to AsymmetricFrodoKemPrivateKey)
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.html#wan24_Crypto_BC_AsymmetricFrodoKemPrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricFrodoKemPrivateKey
+  commentId: M:wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey
+  name.vb: Narrowing(Byte() to AsymmetricFrodoKemPrivateKey)
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.Explicit(System.Byte[] to wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey)
+  fullName.vb: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.Narrowing(System.Byte() to wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey)
+  nameWithType: AsymmetricFrodoKemPrivateKey.Explicit(Byte[] to AsymmetricFrodoKemPrivateKey)
+  nameWithType.vb: AsymmetricFrodoKemPrivateKey.Narrowing(Byte() to AsymmetricFrodoKemPrivateKey)
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.op_Explicit*
+  name: Explicit
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.html#wan24_Crypto_BC_AsymmetricFrodoKemPrivateKey_op_Explicit_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.Explicit
+  fullName.vb: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.Narrowing
+  nameWithType: AsymmetricFrodoKemPrivateKey.Explicit
+  nameWithType.vb: AsymmetricFrodoKemPrivateKey.Narrowing
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey)~wan24.Crypto.BC.AsymmetricFrodoKemPublicKey
+  name: Implicit(AsymmetricFrodoKemPrivateKey to AsymmetricFrodoKemPublicKey)
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.html#wan24_Crypto_BC_AsymmetricFrodoKemPrivateKey_op_Implicit_wan24_Crypto_BC_AsymmetricFrodoKemPrivateKey__wan24_Crypto_BC_AsymmetricFrodoKemPublicKey
+  commentId: M:wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey)~wan24.Crypto.BC.AsymmetricFrodoKemPublicKey
+  name.vb: Widening(AsymmetricFrodoKemPrivateKey to AsymmetricFrodoKemPublicKey)
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.Implicit(wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey to wan24.Crypto.BC.AsymmetricFrodoKemPublicKey)
+  fullName.vb: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.Widening(wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey to wan24.Crypto.BC.AsymmetricFrodoKemPublicKey)
+  nameWithType: AsymmetricFrodoKemPrivateKey.Implicit(AsymmetricFrodoKemPrivateKey to AsymmetricFrodoKemPublicKey)
+  nameWithType.vb: AsymmetricFrodoKemPrivateKey.Widening(AsymmetricFrodoKemPrivateKey to AsymmetricFrodoKemPublicKey)
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.op_Implicit*
+  name: Implicit
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.html#wan24_Crypto_BC_AsymmetricFrodoKemPrivateKey_op_Implicit_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.Implicit
+  fullName.vb: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.Widening
+  nameWithType: AsymmetricFrodoKemPrivateKey.Implicit
+  nameWithType.vb: AsymmetricFrodoKemPrivateKey.Widening
 - uid: wan24.Crypto.BC.AsymmetricFrodoKemPublicKey
   name: AsymmetricFrodoKemPublicKey
   href: api/wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.html
@@ -514,6 +723,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.Bits
   nameWithType: AsymmetricFrodoKemPublicKey.Bits
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricFrodoKemPublicKey
+  name: Explicit(Byte[] to AsymmetricFrodoKemPublicKey)
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.html#wan24_Crypto_BC_AsymmetricFrodoKemPublicKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricFrodoKemPublicKey
+  commentId: M:wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricFrodoKemPublicKey
+  name.vb: Narrowing(Byte() to AsymmetricFrodoKemPublicKey)
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.Explicit(System.Byte[] to wan24.Crypto.BC.AsymmetricFrodoKemPublicKey)
+  fullName.vb: wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.Narrowing(System.Byte() to wan24.Crypto.BC.AsymmetricFrodoKemPublicKey)
+  nameWithType: AsymmetricFrodoKemPublicKey.Explicit(Byte[] to AsymmetricFrodoKemPublicKey)
+  nameWithType.vb: AsymmetricFrodoKemPublicKey.Narrowing(Byte() to AsymmetricFrodoKemPublicKey)
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.op_Explicit*
+  name: Explicit
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.html#wan24_Crypto_BC_AsymmetricFrodoKemPublicKey_op_Explicit_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.Explicit
+  fullName.vb: wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.Narrowing
+  nameWithType: AsymmetricFrodoKemPublicKey.Explicit
+  nameWithType.vb: AsymmetricFrodoKemPublicKey.Narrowing
 - uid: wan24.Crypto.BC.AsymmetricKyberAlgorithm
   name: AsymmetricKyberAlgorithm
   href: api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html
@@ -551,6 +779,25 @@ references:
   commentId: F:wan24.Crypto.BC.AsymmetricKyberAlgorithm.DEFAULT_KEY_SIZE
   fullName: wan24.Crypto.BC.AsymmetricKyberAlgorithm.DEFAULT_KEY_SIZE
   nameWithType: AsymmetricKyberAlgorithm.DEFAULT_KEY_SIZE
+- uid: wan24.Crypto.BC.AsymmetricKyberAlgorithm.DISPLAY_NAME
+  name: DISPLAY_NAME
+  href: api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html#wan24_Crypto_BC_AsymmetricKyberAlgorithm_DISPLAY_NAME
+  commentId: F:wan24.Crypto.BC.AsymmetricKyberAlgorithm.DISPLAY_NAME
+  fullName: wan24.Crypto.BC.AsymmetricKyberAlgorithm.DISPLAY_NAME
+  nameWithType: AsymmetricKyberAlgorithm.DISPLAY_NAME
+- uid: wan24.Crypto.BC.AsymmetricKyberAlgorithm.DisplayName
+  name: DisplayName
+  href: api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html#wan24_Crypto_BC_AsymmetricKyberAlgorithm_DisplayName
+  commentId: P:wan24.Crypto.BC.AsymmetricKyberAlgorithm.DisplayName
+  fullName: wan24.Crypto.BC.AsymmetricKyberAlgorithm.DisplayName
+  nameWithType: AsymmetricKyberAlgorithm.DisplayName
+- uid: wan24.Crypto.BC.AsymmetricKyberAlgorithm.DisplayName*
+  name: DisplayName
+  href: api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html#wan24_Crypto_BC_AsymmetricKyberAlgorithm_DisplayName_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricKyberAlgorithm.DisplayName
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricKyberAlgorithm.DisplayName
+  nameWithType: AsymmetricKyberAlgorithm.DisplayName
 - uid: wan24.Crypto.BC.AsymmetricKyberAlgorithm.GetEngineParameters(wan24.Crypto.CryptoOptions)
   name: GetEngineParameters(CryptoOptions)
   href: api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html#wan24_Crypto_BC_AsymmetricKyberAlgorithm_GetEngineParameters_wan24_Crypto_CryptoOptions_
@@ -636,6 +883,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricKyberPrivateKey.AsymmetricKyberPrivateKey
   nameWithType: AsymmetricKyberPrivateKey.AsymmetricKyberPrivateKey
+- uid: wan24.Crypto.BC.AsymmetricKyberPrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricKyberPrivateKey
+  name: Explicit(Byte[] to AsymmetricKyberPrivateKey)
+  href: api/wan24.Crypto.BC.AsymmetricKyberPrivateKey.html#wan24_Crypto_BC_AsymmetricKyberPrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricKyberPrivateKey
+  commentId: M:wan24.Crypto.BC.AsymmetricKyberPrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricKyberPrivateKey
+  name.vb: Narrowing(Byte() to AsymmetricKyberPrivateKey)
+  fullName: wan24.Crypto.BC.AsymmetricKyberPrivateKey.Explicit(System.Byte[] to wan24.Crypto.BC.AsymmetricKyberPrivateKey)
+  fullName.vb: wan24.Crypto.BC.AsymmetricKyberPrivateKey.Narrowing(System.Byte() to wan24.Crypto.BC.AsymmetricKyberPrivateKey)
+  nameWithType: AsymmetricKyberPrivateKey.Explicit(Byte[] to AsymmetricKyberPrivateKey)
+  nameWithType.vb: AsymmetricKyberPrivateKey.Narrowing(Byte() to AsymmetricKyberPrivateKey)
+- uid: wan24.Crypto.BC.AsymmetricKyberPrivateKey.op_Explicit*
+  name: Explicit
+  href: api/wan24.Crypto.BC.AsymmetricKyberPrivateKey.html#wan24_Crypto_BC_AsymmetricKyberPrivateKey_op_Explicit_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricKyberPrivateKey.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: wan24.Crypto.BC.AsymmetricKyberPrivateKey.Explicit
+  fullName.vb: wan24.Crypto.BC.AsymmetricKyberPrivateKey.Narrowing
+  nameWithType: AsymmetricKyberPrivateKey.Explicit
+  nameWithType.vb: AsymmetricKyberPrivateKey.Narrowing
+- uid: wan24.Crypto.BC.AsymmetricKyberPrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricKyberPrivateKey)~wan24.Crypto.BC.AsymmetricKyberPublicKey
+  name: Implicit(AsymmetricKyberPrivateKey to AsymmetricKyberPublicKey)
+  href: api/wan24.Crypto.BC.AsymmetricKyberPrivateKey.html#wan24_Crypto_BC_AsymmetricKyberPrivateKey_op_Implicit_wan24_Crypto_BC_AsymmetricKyberPrivateKey__wan24_Crypto_BC_AsymmetricKyberPublicKey
+  commentId: M:wan24.Crypto.BC.AsymmetricKyberPrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricKyberPrivateKey)~wan24.Crypto.BC.AsymmetricKyberPublicKey
+  name.vb: Widening(AsymmetricKyberPrivateKey to AsymmetricKyberPublicKey)
+  fullName: wan24.Crypto.BC.AsymmetricKyberPrivateKey.Implicit(wan24.Crypto.BC.AsymmetricKyberPrivateKey to wan24.Crypto.BC.AsymmetricKyberPublicKey)
+  fullName.vb: wan24.Crypto.BC.AsymmetricKyberPrivateKey.Widening(wan24.Crypto.BC.AsymmetricKyberPrivateKey to wan24.Crypto.BC.AsymmetricKyberPublicKey)
+  nameWithType: AsymmetricKyberPrivateKey.Implicit(AsymmetricKyberPrivateKey to AsymmetricKyberPublicKey)
+  nameWithType.vb: AsymmetricKyberPrivateKey.Widening(AsymmetricKyberPrivateKey to AsymmetricKyberPublicKey)
+- uid: wan24.Crypto.BC.AsymmetricKyberPrivateKey.op_Implicit*
+  name: Implicit
+  href: api/wan24.Crypto.BC.AsymmetricKyberPrivateKey.html#wan24_Crypto_BC_AsymmetricKyberPrivateKey_op_Implicit_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricKyberPrivateKey.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: wan24.Crypto.BC.AsymmetricKyberPrivateKey.Implicit
+  fullName.vb: wan24.Crypto.BC.AsymmetricKyberPrivateKey.Widening
+  nameWithType: AsymmetricKyberPrivateKey.Implicit
+  nameWithType.vb: AsymmetricKyberPrivateKey.Widening
 - uid: wan24.Crypto.BC.AsymmetricKyberPublicKey
   name: AsymmetricKyberPublicKey
   href: api/wan24.Crypto.BC.AsymmetricKyberPublicKey.html
@@ -683,6 +968,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricKyberPublicKey.Bits
   nameWithType: AsymmetricKyberPublicKey.Bits
+- uid: wan24.Crypto.BC.AsymmetricKyberPublicKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricKyberPublicKey
+  name: Explicit(Byte[] to AsymmetricKyberPublicKey)
+  href: api/wan24.Crypto.BC.AsymmetricKyberPublicKey.html#wan24_Crypto_BC_AsymmetricKyberPublicKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricKyberPublicKey
+  commentId: M:wan24.Crypto.BC.AsymmetricKyberPublicKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricKyberPublicKey
+  name.vb: Narrowing(Byte() to AsymmetricKyberPublicKey)
+  fullName: wan24.Crypto.BC.AsymmetricKyberPublicKey.Explicit(System.Byte[] to wan24.Crypto.BC.AsymmetricKyberPublicKey)
+  fullName.vb: wan24.Crypto.BC.AsymmetricKyberPublicKey.Narrowing(System.Byte() to wan24.Crypto.BC.AsymmetricKyberPublicKey)
+  nameWithType: AsymmetricKyberPublicKey.Explicit(Byte[] to AsymmetricKyberPublicKey)
+  nameWithType.vb: AsymmetricKyberPublicKey.Narrowing(Byte() to AsymmetricKyberPublicKey)
+- uid: wan24.Crypto.BC.AsymmetricKyberPublicKey.op_Explicit*
+  name: Explicit
+  href: api/wan24.Crypto.BC.AsymmetricKyberPublicKey.html#wan24_Crypto_BC_AsymmetricKyberPublicKey_op_Explicit_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricKyberPublicKey.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: wan24.Crypto.BC.AsymmetricKyberPublicKey.Explicit
+  fullName.vb: wan24.Crypto.BC.AsymmetricKyberPublicKey.Narrowing
+  nameWithType: AsymmetricKyberPublicKey.Explicit
+  nameWithType.vb: AsymmetricKyberPublicKey.Narrowing
 - uid: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm
   name: AsymmetricSphincsPlusAlgorithm
   href: api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html
@@ -720,6 +1024,25 @@ references:
   commentId: F:wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.DEFAULT_KEY_SIZE
   fullName: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.DEFAULT_KEY_SIZE
   nameWithType: AsymmetricSphincsPlusAlgorithm.DEFAULT_KEY_SIZE
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.DISPLAY_NAME
+  name: DISPLAY_NAME
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html#wan24_Crypto_BC_AsymmetricSphincsPlusAlgorithm_DISPLAY_NAME
+  commentId: F:wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.DISPLAY_NAME
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.DISPLAY_NAME
+  nameWithType: AsymmetricSphincsPlusAlgorithm.DISPLAY_NAME
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.DisplayName
+  name: DisplayName
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html#wan24_Crypto_BC_AsymmetricSphincsPlusAlgorithm_DisplayName
+  commentId: P:wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.DisplayName
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.DisplayName
+  nameWithType: AsymmetricSphincsPlusAlgorithm.DisplayName
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.DisplayName*
+  name: DisplayName
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html#wan24_Crypto_BC_AsymmetricSphincsPlusAlgorithm_DisplayName_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.DisplayName
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.DisplayName
+  nameWithType: AsymmetricSphincsPlusAlgorithm.DisplayName
 - uid: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.GetEngineParameters(wan24.Crypto.CryptoOptions)
   name: GetEngineParameters(CryptoOptions)
   href: api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html#wan24_Crypto_BC_AsymmetricSphincsPlusAlgorithm_GetEngineParameters_wan24_Crypto_CryptoOptions_
@@ -805,6 +1128,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.AsymmetricSphincsPlusPrivateKey
   nameWithType: AsymmetricSphincsPlusPrivateKey.AsymmetricSphincsPlusPrivateKey
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey
+  name: Explicit(Byte[] to AsymmetricSphincsPlusPrivateKey)
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.html#wan24_Crypto_BC_AsymmetricSphincsPlusPrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricSphincsPlusPrivateKey
+  commentId: M:wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey
+  name.vb: Narrowing(Byte() to AsymmetricSphincsPlusPrivateKey)
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.Explicit(System.Byte[] to wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey)
+  fullName.vb: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.Narrowing(System.Byte() to wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey)
+  nameWithType: AsymmetricSphincsPlusPrivateKey.Explicit(Byte[] to AsymmetricSphincsPlusPrivateKey)
+  nameWithType.vb: AsymmetricSphincsPlusPrivateKey.Narrowing(Byte() to AsymmetricSphincsPlusPrivateKey)
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.op_Explicit*
+  name: Explicit
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.html#wan24_Crypto_BC_AsymmetricSphincsPlusPrivateKey_op_Explicit_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.Explicit
+  fullName.vb: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.Narrowing
+  nameWithType: AsymmetricSphincsPlusPrivateKey.Explicit
+  nameWithType.vb: AsymmetricSphincsPlusPrivateKey.Narrowing
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey)~wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey
+  name: Implicit(AsymmetricSphincsPlusPrivateKey to AsymmetricSphincsPlusPublicKey)
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.html#wan24_Crypto_BC_AsymmetricSphincsPlusPrivateKey_op_Implicit_wan24_Crypto_BC_AsymmetricSphincsPlusPrivateKey__wan24_Crypto_BC_AsymmetricSphincsPlusPublicKey
+  commentId: M:wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey)~wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey
+  name.vb: Widening(AsymmetricSphincsPlusPrivateKey to AsymmetricSphincsPlusPublicKey)
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.Implicit(wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey to wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey)
+  fullName.vb: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.Widening(wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey to wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey)
+  nameWithType: AsymmetricSphincsPlusPrivateKey.Implicit(AsymmetricSphincsPlusPrivateKey to AsymmetricSphincsPlusPublicKey)
+  nameWithType.vb: AsymmetricSphincsPlusPrivateKey.Widening(AsymmetricSphincsPlusPrivateKey to AsymmetricSphincsPlusPublicKey)
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.op_Implicit*
+  name: Implicit
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.html#wan24_Crypto_BC_AsymmetricSphincsPlusPrivateKey_op_Implicit_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.Implicit
+  fullName.vb: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.Widening
+  nameWithType: AsymmetricSphincsPlusPrivateKey.Implicit
+  nameWithType.vb: AsymmetricSphincsPlusPrivateKey.Widening
 - uid: wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey
   name: AsymmetricSphincsPlusPublicKey
   href: api/wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.html
@@ -852,6 +1213,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.Bits
   nameWithType: AsymmetricSphincsPlusPublicKey.Bits
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey
+  name: Explicit(Byte[] to AsymmetricSphincsPlusPublicKey)
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.html#wan24_Crypto_BC_AsymmetricSphincsPlusPublicKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricSphincsPlusPublicKey
+  commentId: M:wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey
+  name.vb: Narrowing(Byte() to AsymmetricSphincsPlusPublicKey)
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.Explicit(System.Byte[] to wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey)
+  fullName.vb: wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.Narrowing(System.Byte() to wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey)
+  nameWithType: AsymmetricSphincsPlusPublicKey.Explicit(Byte[] to AsymmetricSphincsPlusPublicKey)
+  nameWithType.vb: AsymmetricSphincsPlusPublicKey.Narrowing(Byte() to AsymmetricSphincsPlusPublicKey)
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.op_Explicit*
+  name: Explicit
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.html#wan24_Crypto_BC_AsymmetricSphincsPlusPublicKey_op_Explicit_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.op_Explicit
+  isSpec: "True"
+  name.vb: Narrowing
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.Explicit
+  fullName.vb: wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.Narrowing
+  nameWithType: AsymmetricSphincsPlusPublicKey.Explicit
+  nameWithType.vb: AsymmetricSphincsPlusPublicKey.Narrowing
 - uid: wan24.Crypto.BC.Bootstrap
   name: Bootstrap
   href: api/wan24.Crypto.BC.Bootstrap.html
