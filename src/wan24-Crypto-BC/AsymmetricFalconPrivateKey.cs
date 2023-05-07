@@ -32,5 +32,17 @@ namespace wan24.Crypto.BC
         /// </summary>
         /// <param name="keys">Keys</param>
         public AsymmetricFalconPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricFalconAlgorithm.ALGORITHM_NAME, keys) { }
+
+        /// <summary>
+        /// Cast to public key
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        public static implicit operator AsymmetricFalconPublicKey(AsymmetricFalconPrivateKey privateKey) => privateKey.PublicKey;
+
+        /// <summary>
+        /// Cast from serialized data
+        /// </summary>
+        /// <param name="data">Data</param>
+        public static explicit operator AsymmetricFalconPrivateKey(byte[] data) => Import<AsymmetricFalconPrivateKey>(data);
     }
 }

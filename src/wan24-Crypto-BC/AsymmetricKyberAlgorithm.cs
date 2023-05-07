@@ -34,6 +34,10 @@ namespace wan24.Crypto.BC
         /// Algorithm usages
         /// </summary>
         public const AsymmetricAlgorithmUsages USAGES = AsymmetricAlgorithmUsages.KeyExchange;
+        /// <summary>
+        /// Display name
+        /// </summary>
+        public const string DISPLAY_NAME = "CRYSTALS-Kyber";
 
         /// <summary>
         /// Allowed key sizes in bits
@@ -56,6 +60,9 @@ namespace wan24.Crypto.BC
         public AsymmetricKyberAlgorithm()
             : base(ALGORITHM_NAME, ALGORITHM_VALUE, USAGES, isEllipticCurveAlgorithm: false, _AllowedKeySizes, isPostQuantum: true, DEFAULT_KEY_SIZE)
         { }
+
+        /// <inheritdoc/>
+        public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
         protected override KyberParameters GetEngineParameters(CryptoOptions options) => AsymmetricKyberHelper.GetParameters(options.AsymmetricKeyBits);

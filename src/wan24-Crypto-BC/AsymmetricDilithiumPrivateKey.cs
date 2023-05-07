@@ -32,5 +32,17 @@ namespace wan24.Crypto.BC
         /// </summary>
         /// <param name="keys">Keys</param>
         public AsymmetricDilithiumPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricDilithiumAlgorithm.ALGORITHM_NAME, keys) { }
+
+        /// <summary>
+        /// Cast to public key
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        public static implicit operator AsymmetricDilithiumPublicKey(AsymmetricDilithiumPrivateKey privateKey) => privateKey.PublicKey;
+
+        /// <summary>
+        /// Cast from serialized data
+        /// </summary>
+        /// <param name="data">Data</param>
+        public static explicit operator AsymmetricDilithiumPrivateKey(byte[] data) => Import<AsymmetricDilithiumPrivateKey>(data);
     }
 }

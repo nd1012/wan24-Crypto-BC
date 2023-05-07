@@ -90,6 +90,8 @@
   </div>
   <div class="implements">
     <h5>Implements</h5>
+    <div><span class="xref">wan24.ObjectValidation.IObjectValidatable</span></div>
+    <div><span class="xref">System.ComponentModel.DataAnnotations.IValidatableObject</span></div>
     <div><span class="xref">wan24.Crypto.IKeyExchangePrivateKey</span></div>
     <div><span class="xref">wan24.Crypto.IAsymmetricPrivateKey</span></div>
     <div><span class="xref">wan24.Crypto.IAsymmetricKey</span></div>
@@ -172,6 +174,9 @@
       <span class="xref">wan24.Crypto.AsymmetricKeyBase.Clone()</span>
     </div>
     <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.Export()</span>
+    </div>
+    <div>
       <span class="xref">wan24.Crypto.AsymmetricKeyBase.Serialize(System.IO.Stream)</span>
     </div>
     <div>
@@ -187,6 +192,12 @@
       <span class="xref">wan24.Crypto.AsymmetricKeyBase.Dispose(System.Boolean)</span>
     </div>
     <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.Import&lt;T&gt;(System.Byte[])</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.AsymmetricKeyBase.Import(System.Byte[])</span>
+    </div>
+    <div>
       <span class="xref">wan24.Crypto.AsymmetricKeyBase.ID</span>
     </div>
     <div>
@@ -197,6 +208,9 @@
     </div>
     <div>
       <span class="xref">wan24.Crypto.AsymmetricKeyBase.KeyData</span>
+    </div>
+    <div>
+      <span class="xref">wan24.StreamSerializerExtensions.DisposableStreamSerializerBase.BASE_VERSION</span>
     </div>
     <div>
       <span class="xref">wan24.StreamSerializerExtensions.DisposableStreamSerializerBase.wan24.StreamSerializerExtensions.IStreamSerializer.Serialize(System.IO.Stream)</span>
@@ -211,10 +225,16 @@
       <span class="xref">wan24.StreamSerializerExtensions.DisposableStreamSerializerBase.wan24.StreamSerializerExtensions.IStreamSerializer.DeserializeAsync(System.IO.Stream, System.Int32, System.Threading.CancellationToken)</span>
     </div>
     <div>
+      <span class="xref">wan24.StreamSerializerExtensions.DisposableStreamSerializerBase.System.ComponentModel.DataAnnotations.IValidatableObject.Validate(System.ComponentModel.DataAnnotations.ValidationContext)</span>
+    </div>
+    <div>
       <span class="xref">wan24.StreamSerializerExtensions.DisposableStreamSerializerBase.wan24.StreamSerializerExtensions.IStreamSerializerVersion.ObjectVersion</span>
     </div>
     <div>
       <span class="xref">wan24.StreamSerializerExtensions.DisposableStreamSerializerBase.wan24.StreamSerializerExtensions.IStreamSerializerVersion.SerializedObjectVersion</span>
+    </div>
+    <div>
+      <span class="xref">wan24.StreamSerializerExtensions.DisposableStreamSerializerBase.wan24.StreamSerializerExtensions.IStreamSerializerVersion.SerializerVersion</span>
     </div>
     <div>
       <span class="xref">wan24.Core.DisposableBase.DisposeSyncObject</span>
@@ -287,7 +307,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyExchangeKeyBase_7_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class BouncyCastleAsymmetricPrivateKeyExchangeKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal&gt; : BouncyCastleAsymmetricPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, ICloneable where tPublic : BouncyCastleAsymmetricPublicKeyBase&lt;tAlgo, tPublicKey, tPublic&gt;, new()
+    <pre><code class="lang-csharp hljs">public abstract class BouncyCastleAsymmetricPrivateKeyExchangeKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal&gt; : BouncyCastleAsymmetricPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;, IObjectValidatable, IValidatableObject, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, ICloneable where tPublic : BouncyCastleAsymmetricPublicKeyBase&lt;tAlgo, tPublicKey, tPublic&gt;, new()
     where tAlgo : IAsymmetricAlgorithm, new()
     where tPublicKey : AsymmetricKeyParameter, ICipherParameters where tPrivateKey : AsymmetricKeyParameter where tGenerator : class, IEncapsulatedSecretGenerator where tExtractor : class, IEncapsulatedSecretExtractor where tFinal : BouncyCastleAsymmetricPrivateKeyExchangeKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal&gt;, new()</code></pre>
   </div>
@@ -559,6 +579,12 @@
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;tPublic, tFinal&gt;.GetKeyExchangeData(wan24.Crypto.IAsymmetricPublicKey, wan24.Crypto.CryptoOptions)</span></div>
   <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">wan24.ObjectValidation.IObjectValidatable</span>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.DataAnnotations.IValidatableObject</span>
+  </div>
   <div>
       <span class="xref">wan24.Crypto.IKeyExchangePrivateKey</span>
   </div>

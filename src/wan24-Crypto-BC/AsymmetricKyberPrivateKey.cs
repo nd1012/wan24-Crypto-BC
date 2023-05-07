@@ -33,5 +33,17 @@ namespace wan24.Crypto.BC
         /// </summary>
         /// <param name="keys">Keys</param>
         public AsymmetricKyberPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricKyberAlgorithm.ALGORITHM_NAME, keys) { }
+
+        /// <summary>
+        /// Cast to public key
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        public static implicit operator AsymmetricKyberPublicKey(AsymmetricKyberPrivateKey privateKey) => privateKey.PublicKey;
+
+        /// <summary>
+        /// Cast from serialized data
+        /// </summary>
+        /// <param name="data">Data</param>
+        public static explicit operator AsymmetricKyberPrivateKey(byte[] data) => Import<AsymmetricKyberPrivateKey>(data);
     }
 }
