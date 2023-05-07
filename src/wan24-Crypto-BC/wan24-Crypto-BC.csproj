@@ -9,7 +9,7 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageId>wan24-Crypto-BC</PackageId>
     <Title>wan24-Crypto-BC</Title>
-    <Version>1.3.0</Version>
+    <Version>1.4.0</Version>
     <Authors>nd1012</Authors>
     <Company>Andreas Zimmermann, wan24.de</Company>
     <Product>wan24-Crypto-BC</Product>
@@ -51,6 +51,14 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Content Include="$(ProjectDir)..\..\bin\BouncyCastle.Cryptography.dll">
+      <Pack>true</Pack>
+      <PackagePath>lib/net6.0</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
