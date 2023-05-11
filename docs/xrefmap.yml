@@ -2490,6 +2490,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.CreateCipher
   nameWithType: EncryptionChaCha20Algorithm.CreateCipher
+- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.DISPLAY_NAME
+  name: DISPLAY_NAME
+  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_DISPLAY_NAME
+  commentId: F:wan24.Crypto.BC.EncryptionChaCha20Algorithm.DISPLAY_NAME
+  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.DISPLAY_NAME
+  nameWithType: EncryptionChaCha20Algorithm.DISPLAY_NAME
+- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.DisplayName
+  name: DisplayName
+  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_DisplayName
+  commentId: P:wan24.Crypto.BC.EncryptionChaCha20Algorithm.DisplayName
+  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.DisplayName
+  nameWithType: EncryptionChaCha20Algorithm.DisplayName
+- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.DisplayName*
+  name: DisplayName
+  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_DisplayName_
+  commentId: Overload:wan24.Crypto.BC.EncryptionChaCha20Algorithm.DisplayName
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.DisplayName
+  nameWithType: EncryptionChaCha20Algorithm.DisplayName
 - uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.IsPostQuantum
   name: IsPostQuantum
   href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_IsPostQuantum
@@ -2630,6 +2649,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.CreateXSalsa20
   nameWithType: EncryptionXSalsa20Algorithm.CreateXSalsa20
+- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.DISPLAY_NAME
+  name: DISPLAY_NAME
+  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_DISPLAY_NAME
+  commentId: F:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.DISPLAY_NAME
+  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.DISPLAY_NAME
+  nameWithType: EncryptionXSalsa20Algorithm.DISPLAY_NAME
+- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.DisplayName
+  name: DisplayName
+  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_DisplayName
+  commentId: P:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.DisplayName
+  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.DisplayName
+  nameWithType: EncryptionXSalsa20Algorithm.DisplayName
+- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.DisplayName*
+  name: DisplayName
+  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_DisplayName_
+  commentId: Overload:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.DisplayName
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.DisplayName
+  nameWithType: EncryptionXSalsa20Algorithm.DisplayName
 - uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.IsPostQuantum
   name: IsPostQuantum
   href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_IsPostQuantum
