@@ -28,6 +28,10 @@ namespace wan24.Crypto.BC
         /// Block size in bytes
         /// </summary>
         public const int BLOCK_SIZE = 1;
+        /// <summary>
+        /// Display name
+        /// </summary>
+        public const string DISPLAY_NAME = "ChaCha20";
 
         /// <summary>
         /// Constructor
@@ -48,6 +52,9 @@ namespace wan24.Crypto.BC
 
         /// <inheritdoc/>
         public override bool IsPostQuantum => true;
+
+        /// <inheritdoc/>
+        public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
         protected override IStreamCipher CreateCipher(bool forEncryption, CryptoOptions options) => CreateChaCha(options);
