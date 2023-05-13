@@ -17,14 +17,6 @@ the `wan24-Crypto` library with these algorithms:
 | ChaCha20 | 1 | CHACHA20 |
 | XSalsa20 | 2 | XSALSA20 |
 
-**CAUTION**: The underlaying Bouncy Castle library is 
-[forked](https://github.com/nd1012/bc-csharp) from its original GitHub 
-repository, and it's using the main branch. The main branch is not yet 
-released! So this library should be seen as experimental and not being used in 
-a productive environment! The Bouncy Castle build will be updated from time to 
-time. As soon as the official NuGet package has PQC support, this library will 
-switch to the NuGet package.
-
 **NOTE**: FrodoKEM is currently disabled, 'cause there seems to be a bug 
 (missing code) in the Bouncy Castle library for FrodoKEM.
 
