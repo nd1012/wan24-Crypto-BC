@@ -1,16 +1,19 @@
-﻿using wan24.ObjectValidation;
+﻿using Microsoft.Extensions.Logging;
+using wan24.Core;
+using wan24.ObjectValidation;
 
 namespace wan24_Crypto_BC_Tests
 {
     [TestClass]
     public class A_Initialization
     {
-        public A_Initialization() => ValidateObject.Logger = (message) => Console.WriteLine(message);
-
-        [TestMethod]
-        public void Logger_Test()
+        [AssemblyInitialize]
+        public static void Init(TestContext tc)
         {
-            ValidateObject.Logger("wan24-Crypto-BC initialized");
+            Logging.Logger = LoggerFactory.Create(b => b.AddConsole()).CreateLogger("Tests");
+            ValidateObject.Logger = (message) => Logging.WriteDebug(message);
+            Bootstrap.Async().Wait();
+            Logging.WriteDebug("wan24-Crypto-BC Tests initialized");
         }
     }
 }
