@@ -32,6 +32,10 @@ namespace wan24.Crypto.BC
         /// Display name
         /// </summary>
         public const string DISPLAY_NAME = "XSalsa20";
+        /// <summary>
+        /// XSalsa20 raw (without header) and uncompressed profile key
+        /// </summary>
+        public const string PROFILE_XSALSA20_RAW = "XSALSA20_RAW";
 
         /// <summary>
         /// Constructor

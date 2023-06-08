@@ -405,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html",
-          "hash": "LAwsdKBIx8T2U3u0tOtyZurrtdKg08XvC1+9vmPGZ9o="
+          "hash": "HlsN6qjPY/c7vWk5evHtxi4p8+aLdjpzP4uaHME9VLY="
         }
       },
       "is_incremental": false,
@@ -417,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html",
-          "hash": "4I5/q8PFFbgE1undczYfjqbJmvrYE8ASoEJpVpTW6Zw="
+          "hash": "ej25vhd3Ah7+3LIA26CFcnkc4qBJiAB2uheLV1l4tFk="
         }
       },
       "is_incremental": false,

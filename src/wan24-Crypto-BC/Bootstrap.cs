@@ -21,7 +21,15 @@ namespace wan24.Crypto.BC
             AsymmetricHelper.Algorithms[AsymmetricFalconAlgorithm.ALGORITHM_NAME] = AsymmetricFalconAlgorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME] = AsymmetricSphincsPlusAlgorithm.Instance;
             EncryptionHelper.Algorithms[EncryptionChaCha20Algorithm.ALGORITHM_NAME] = EncryptionChaCha20Algorithm.Instance;
+            CryptoProfiles.Registered[EncryptionChaCha20Algorithm.PROFILE_CHACHA20_RAW] = new CryptoOptions()
+                .IncludeNothing()
+                .WithoutCompression()
+                .WithEncryptionAlgorithm(EncryptionChaCha20Algorithm.ALGORITHM_NAME);
             EncryptionHelper.Algorithms[EncryptionXSalsa20Algorithm.ALGORITHM_NAME] = EncryptionXSalsa20Algorithm.Instance;
+            CryptoProfiles.Registered[EncryptionXSalsa20Algorithm.PROFILE_XSALSA20_RAW] = new CryptoOptions()
+                .IncludeNothing()
+                .WithoutCompression()
+                .WithEncryptionAlgorithm(EncryptionXSalsa20Algorithm.ALGORITHM_NAME);
             CryptoHelper.OnForcePostQuantum += (e) =>
             {
                 if (!EncryptionHelper.DefaultAlgorithm.IsPostQuantum)
@@ -36,9 +44,9 @@ namespace wan24.Crypto.BC
                 else
                 {
                     if (!(HybridAlgorithmHelper.KeyExchangeAlgorithm?.IsPostQuantum ?? false))
-                        HybridAlgorithmHelper.KeyExchangeAlgorithm = AsymmetricHelper.GetAlgorithm(AsymmetricKyberAlgorithm.ALGORITHM_NAME);
+                        HybridAlgorithmHelper.KeyExchangeAlgorithm = AsymmetricKyberAlgorithm.Instance;
                     if (!(HybridAlgorithmHelper.SignatureAlgorithm?.IsPostQuantum ?? false))
-                        HybridAlgorithmHelper.SignatureAlgorithm = AsymmetricHelper.GetAlgorithm(AsymmetricDilithiumAlgorithm.ALGORITHM_NAME);
+                        HybridAlgorithmHelper.SignatureAlgorithm = AsymmetricDilithiumAlgorithm.Instance;
                 }
             };
         }
