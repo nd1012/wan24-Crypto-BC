@@ -32,6 +32,10 @@ namespace wan24.Crypto.BC
         /// Display name
         /// </summary>
         public const string DISPLAY_NAME = "ChaCha20";
+        /// <summary>
+        /// ChaCha20 raw (without header) and uncompressed profile key
+        /// </summary>
+        public const string PROFILE_CHACHA20_RAW = "CHACHA20_RAW";
 
         /// <summary>
         /// Constructor

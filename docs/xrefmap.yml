@@ -2560,6 +2560,12 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.KeySize
   nameWithType: EncryptionChaCha20Algorithm.KeySize
+- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.PROFILE_CHACHA20_RAW
+  name: PROFILE_CHACHA20_RAW
+  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_PROFILE_CHACHA20_RAW
+  commentId: F:wan24.Crypto.BC.EncryptionChaCha20Algorithm.PROFILE_CHACHA20_RAW
+  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.PROFILE_CHACHA20_RAW
+  nameWithType: EncryptionChaCha20Algorithm.PROFILE_CHACHA20_RAW
 - uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.RequireMacAuthentication
   name: RequireMacAuthentication
   href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_RequireMacAuthentication
@@ -2719,6 +2725,12 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.KeySize
   nameWithType: EncryptionXSalsa20Algorithm.KeySize
+- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.PROFILE_XSALSA20_RAW
+  name: PROFILE_XSALSA20_RAW
+  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_PROFILE_XSALSA20_RAW
+  commentId: F:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.PROFILE_XSALSA20_RAW
+  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.PROFILE_XSALSA20_RAW
+  nameWithType: EncryptionXSalsa20Algorithm.PROFILE_XSALSA20_RAW
 - uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.RequireMacAuthentication
   name: RequireMacAuthentication
   href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_RequireMacAuthentication
