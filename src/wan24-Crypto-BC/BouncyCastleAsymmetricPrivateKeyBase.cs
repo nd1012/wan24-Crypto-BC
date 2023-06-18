@@ -113,9 +113,6 @@ namespace wan24.Crypto.BC
         /// <inheritdoc/>
         public sealed override int Bits => PublicKey.Bits;
 
-        /// <inheritdoc/>
-        protected override void Dispose(bool disposing) { }//TODO Clear all keys
-
         /// <summary>
         /// Serialize the key data
         /// </summary>

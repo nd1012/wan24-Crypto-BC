@@ -148,6 +148,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.AsymmetricDilithiumPrivateKey
   nameWithType: AsymmetricDilithiumPrivateKey.AsymmetricDilithiumPrivateKey
+- uid: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.html#wan24_Crypto_BC_AsymmetricDilithiumPrivateKey_Dispose_System_Boolean_
+  commentId: M:wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.Dispose(System.Boolean)
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.Dispose(System.Boolean)
+  nameWithType: AsymmetricDilithiumPrivateKey.Dispose(Boolean)
+- uid: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.Dispose*
+  name: Dispose
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.html#wan24_Crypto_BC_AsymmetricDilithiumPrivateKey_Dispose_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.Dispose
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.Dispose
+  nameWithType: AsymmetricDilithiumPrivateKey.Dispose
 - uid: wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricDilithiumPrivateKey
   name: Explicit(Byte[] to AsymmetricDilithiumPrivateKey)
   href: api/wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.html#wan24_Crypto_BC_AsymmetricDilithiumPrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricDilithiumPrivateKey
@@ -393,6 +406,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricFalconPrivateKey.AsymmetricFalconPrivateKey
   nameWithType: AsymmetricFalconPrivateKey.AsymmetricFalconPrivateKey
+- uid: wan24.Crypto.BC.AsymmetricFalconPrivateKey.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/wan24.Crypto.BC.AsymmetricFalconPrivateKey.html#wan24_Crypto_BC_AsymmetricFalconPrivateKey_Dispose_System_Boolean_
+  commentId: M:wan24.Crypto.BC.AsymmetricFalconPrivateKey.Dispose(System.Boolean)
+  fullName: wan24.Crypto.BC.AsymmetricFalconPrivateKey.Dispose(System.Boolean)
+  nameWithType: AsymmetricFalconPrivateKey.Dispose(Boolean)
+- uid: wan24.Crypto.BC.AsymmetricFalconPrivateKey.Dispose*
+  name: Dispose
+  href: api/wan24.Crypto.BC.AsymmetricFalconPrivateKey.html#wan24_Crypto_BC_AsymmetricFalconPrivateKey_Dispose_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricFalconPrivateKey.Dispose
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricFalconPrivateKey.Dispose
+  nameWithType: AsymmetricFalconPrivateKey.Dispose
 - uid: wan24.Crypto.BC.AsymmetricFalconPrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricFalconPrivateKey
   name: Explicit(Byte[] to AsymmetricFalconPrivateKey)
   href: api/wan24.Crypto.BC.AsymmetricFalconPrivateKey.html#wan24_Crypto_BC_AsymmetricFalconPrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricFalconPrivateKey
@@ -638,6 +664,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.AsymmetricFrodoKemPrivateKey
   nameWithType: AsymmetricFrodoKemPrivateKey.AsymmetricFrodoKemPrivateKey
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.html#wan24_Crypto_BC_AsymmetricFrodoKemPrivateKey_Dispose_System_Boolean_
+  commentId: M:wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.Dispose(System.Boolean)
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.Dispose(System.Boolean)
+  nameWithType: AsymmetricFrodoKemPrivateKey.Dispose(Boolean)
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.Dispose*
+  name: Dispose
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.html#wan24_Crypto_BC_AsymmetricFrodoKemPrivateKey_Dispose_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.Dispose
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.Dispose
+  nameWithType: AsymmetricFrodoKemPrivateKey.Dispose
 - uid: wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey
   name: Explicit(Byte[] to AsymmetricFrodoKemPrivateKey)
   href: api/wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.html#wan24_Crypto_BC_AsymmetricFrodoKemPrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricFrodoKemPrivateKey
@@ -883,6 +922,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricKyberPrivateKey.AsymmetricKyberPrivateKey
   nameWithType: AsymmetricKyberPrivateKey.AsymmetricKyberPrivateKey
+- uid: wan24.Crypto.BC.AsymmetricKyberPrivateKey.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/wan24.Crypto.BC.AsymmetricKyberPrivateKey.html#wan24_Crypto_BC_AsymmetricKyberPrivateKey_Dispose_System_Boolean_
+  commentId: M:wan24.Crypto.BC.AsymmetricKyberPrivateKey.Dispose(System.Boolean)
+  fullName: wan24.Crypto.BC.AsymmetricKyberPrivateKey.Dispose(System.Boolean)
+  nameWithType: AsymmetricKyberPrivateKey.Dispose(Boolean)
+- uid: wan24.Crypto.BC.AsymmetricKyberPrivateKey.Dispose*
+  name: Dispose
+  href: api/wan24.Crypto.BC.AsymmetricKyberPrivateKey.html#wan24_Crypto_BC_AsymmetricKyberPrivateKey_Dispose_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricKyberPrivateKey.Dispose
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricKyberPrivateKey.Dispose
+  nameWithType: AsymmetricKyberPrivateKey.Dispose
 - uid: wan24.Crypto.BC.AsymmetricKyberPrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricKyberPrivateKey
   name: Explicit(Byte[] to AsymmetricKyberPrivateKey)
   href: api/wan24.Crypto.BC.AsymmetricKyberPrivateKey.html#wan24_Crypto_BC_AsymmetricKyberPrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricKyberPrivateKey
@@ -1128,6 +1180,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.AsymmetricSphincsPlusPrivateKey
   nameWithType: AsymmetricSphincsPlusPrivateKey.AsymmetricSphincsPlusPrivateKey
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.html#wan24_Crypto_BC_AsymmetricSphincsPlusPrivateKey_Dispose_System_Boolean_
+  commentId: M:wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.Dispose(System.Boolean)
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.Dispose(System.Boolean)
+  nameWithType: AsymmetricSphincsPlusPrivateKey.Dispose(Boolean)
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.Dispose*
+  name: Dispose
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.html#wan24_Crypto_BC_AsymmetricSphincsPlusPrivateKey_Dispose_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.Dispose
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.Dispose
+  nameWithType: AsymmetricSphincsPlusPrivateKey.Dispose
 - uid: wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey
   name: Explicit(Byte[] to AsymmetricSphincsPlusPrivateKey)
   href: api/wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.html#wan24_Crypto_BC_AsymmetricSphincsPlusPrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricSphincsPlusPrivateKey
@@ -1491,23 +1556,6 @@ references:
   fullName.vb: wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase(Of tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal).DeserializeKeyData
   nameWithType: BouncyCastleAsymmetricPrivateKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal>.DeserializeKeyData
   nameWithType.vb: BouncyCastleAsymmetricPrivateKeyBase(Of tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal).DeserializeKeyData
-- uid: wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase`5.Dispose(System.Boolean)
-  name: Dispose(Boolean)
-  href: api/wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html#wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyBase_5_Dispose_System_Boolean_
-  commentId: M:wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase`5.Dispose(System.Boolean)
-  fullName: wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal>.Dispose(System.Boolean)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase(Of tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal).Dispose(System.Boolean)
-  nameWithType: BouncyCastleAsymmetricPrivateKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal>.Dispose(Boolean)
-  nameWithType.vb: BouncyCastleAsymmetricPrivateKeyBase(Of tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal).Dispose(Boolean)
-- uid: wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase`5.Dispose*
-  name: Dispose
-  href: api/wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html#wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyBase_5_Dispose_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase`5.Dispose
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal>.Dispose
-  fullName.vb: wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase(Of tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal).Dispose
-  nameWithType: BouncyCastleAsymmetricPrivateKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal>.Dispose
-  nameWithType.vb: BouncyCastleAsymmetricPrivateKeyBase(Of tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal).Dispose
 - uid: wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase`5.Keys
   name: Keys
   href: api/wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html#wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyBase_5_Keys

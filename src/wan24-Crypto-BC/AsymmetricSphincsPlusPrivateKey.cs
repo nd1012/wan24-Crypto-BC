@@ -33,6 +33,14 @@ namespace wan24.Crypto.BC
         /// <param name="keys">Keys</param>
         public AsymmetricSphincsPlusPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME, keys) { }
 
+        /// <inheritdoc/>
+        protected override void Dispose(bool disposing)
+        {
+            base.Dispose(disposing);
+            if (Keys == null) return;
+            Keys.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
+        }
+
         /// <summary>
         /// Cast to public key
         /// </summary>

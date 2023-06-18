@@ -15,7 +15,7 @@ namespace wan24.Crypto.BC
         public static void Boot()
         {
             AsymmetricHelper.Algorithms[AsymmetricKyberAlgorithm.ALGORITHM_NAME] = AsymmetricKyberAlgorithm.Instance;
-            //FIXME PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo doesn't support FrodoPrivateKeyParameters !?
+            //FIXME PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo doesn't support FrodoPrivateKeyParameters !? (waiting for an update of the NuGet package at present)
             //AsymmetricHelper.Algorithms[AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME] = AsymmetricFrodoKemAlgorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricDilithiumAlgorithm.ALGORITHM_NAME] = AsymmetricDilithiumAlgorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricFalconAlgorithm.ALGORITHM_NAME] = AsymmetricFalconAlgorithm.Instance;
