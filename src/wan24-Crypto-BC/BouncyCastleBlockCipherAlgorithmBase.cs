@@ -35,7 +35,7 @@ namespace wan24.Crypto.BC
             {
                 IBlockCipher cipher = CreateCipher(forEncryption: true, options);
                 byte[] iv = CreateIvBytes();
-                cipher.Init(forEncryption: true, new ParametersWithIV(new KeyParameter(options.Password ?? throw new ArgumentException("Missing password", nameof(options))), iv));
+                cipher.Init(forEncryption: true, CreateParameters(iv, options));
                 cipherData.Write(iv);
                 return new BouncyCastleCryptoTransform(cipher);
             }
@@ -56,7 +56,7 @@ namespace wan24.Crypto.BC
             {
                 IBlockCipher cipher = CreateCipher(forEncryption: true, options);
                 byte[] iv = CreateIvBytes();
-                cipher.Init(forEncryption: true, new ParametersWithIV(new KeyParameter(options.Password ?? throw new ArgumentException("Missing password", nameof(options))), iv));
+                cipher.Init(forEncryption: true, CreateParameters(iv, options));
                 await cipherData.WriteAsync(iv, cancellationToken).DynamicContext();
                 return new BouncyCastleCryptoTransform(cipher);
             }
@@ -77,7 +77,7 @@ namespace wan24.Crypto.BC
             {
                 byte[] iv = ReadFixedIvBytes(cipherData, options);
                 IBlockCipher cipher = CreateCipher(forEncryption: false, options);
-                cipher.Init(forEncryption: false, new ParametersWithIV(new KeyParameter(options.Password ?? throw new ArgumentException("Missing password", nameof(options))), iv));
+                cipher.Init(forEncryption: false, CreateParameters(iv, options));
                 return new BouncyCastleCryptoTransform(cipher);
             }
             catch (CryptographicException)
@@ -97,7 +97,7 @@ namespace wan24.Crypto.BC
             {
                 byte[] iv = await ReadFixedIvBytesAsync(cipherData, options, cancellationToken).DynamicContext();
                 IBlockCipher cipher = CreateCipher(forEncryption: false, options);
-                cipher.Init(forEncryption: false, new ParametersWithIV(new KeyParameter(options.Password ?? throw new ArgumentException("Missing password", nameof(options))), iv));
+                cipher.Init(forEncryption: false, CreateParameters(iv, options));
                 return new BouncyCastleCryptoTransform(cipher);
             }
             catch (CryptographicException)
@@ -117,5 +117,14 @@ namespace wan24.Crypto.BC
         /// <param name="options">Options</param>
         /// <returns>Block cipher</returns>
         protected abstract IBlockCipher CreateCipher(bool forEncryption, CryptoOptions options);
+
+        /// <summary>
+        /// Create cipher parameters
+        /// </summary>
+        /// <param name="iv">IV bytes</param>
+        /// <param name="options">Options</param>
+        /// <returns>Parameters</returns>
+        protected virtual ICipherParameters CreateParameters(byte[] iv, CryptoOptions options)
+            => new ParametersWithIV(new KeyParameter(options.Password ?? throw new ArgumentException("Missing password", nameof(options))), iv);
     }
 }

@@ -30,6 +30,11 @@ namespace wan24.Crypto.BC
                 .IncludeNothing()
                 .WithoutCompression()
                 .WithEncryptionAlgorithm(EncryptionXSalsa20Algorithm.ALGORITHM_NAME);
+            EncryptionHelper.Algorithms[EncryptionAes256GcmAlgorithm.ALGORITHM_NAME] = EncryptionAes256GcmAlgorithm.Instance;
+            CryptoProfiles.Registered[EncryptionAes256GcmAlgorithm.PROFILE_AES256GCM_RAW] = new CryptoOptions()
+                .IncludeNothing()
+                .WithoutCompression()
+                .WithEncryptionAlgorithm(EncryptionAes256GcmAlgorithm.ALGORITHM_NAME);
             CryptoHelper.OnForcePostQuantum += (e) =>
             {
                 if (!EncryptionHelper.DefaultAlgorithm.IsPostQuantum)

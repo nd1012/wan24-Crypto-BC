@@ -2,8 +2,6 @@
 using System.Reflection;
 using wan24.Core;
 
-//TODO Use reflection cache
-
 namespace wan24.Crypto.BC
 {
     /// <summary>

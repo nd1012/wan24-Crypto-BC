@@ -123,7 +123,10 @@ namespace wan24.Crypto.BC
             {
                 EnsureUndisposed();
                 if (Keys == null) throw new InvalidOperationException();
-                using MemoryStream ms = new();//TODO Use secure memory stream
+                using MemoryPoolStream ms = new()
+                {
+                    CleanReturned = true
+                };
                 ms.WriteNumber(StreamSerializer.VERSION);
                 byte[] keyInfo = PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo((tPrivateKey)Keys.Private).PrivateKeyData.GetEncoded();
                 try
@@ -162,7 +165,12 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
-                using MemoryStream ms = new(KeyData.Array);//TODO Use secure memory stream
+                using MemoryPoolStream ms = new()
+                {
+                    CleanReturned = true
+                };
+                ms.Write(KeyData.Array);
+                ms.Position = 0;
                 int serializerVersion = ms.ReadNumber<int>();
                 if (serializerVersion < 1 || serializerVersion > StreamSerializer.VERSION) throw new SerializerException($"Invalid serializer version {serializerVersion}");
                 byte[] keyInfo = ms.ReadBytes(serializerVersion, minLen: 1, maxLen: ushort.MaxValue).Value;
