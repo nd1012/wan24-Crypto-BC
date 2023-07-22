@@ -1316,6 +1316,152 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.Bootstrap.Boot
   nameWithType: Bootstrap.Boot
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1
+  name: BouncyCastleAeadStreamCipherAlgorithmBase<T>
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html
+  commentId: T:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1
+  name.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T)
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T)
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T)
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.#ctor(System.String,System.Int32)
+  name: BouncyCastleAeadStreamCipherAlgorithmBase(String, Int32)
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1__ctor_System_String_System_Int32_
+  commentId: M:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.#ctor(System.String,System.Int32)
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.BouncyCastleAeadStreamCipherAlgorithmBase(System.String, System.Int32)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).BouncyCastleAeadStreamCipherAlgorithmBase(System.String, System.Int32)
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.BouncyCastleAeadStreamCipherAlgorithmBase(String, Int32)
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).BouncyCastleAeadStreamCipherAlgorithmBase(String, Int32)
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.#ctor*
+  name: BouncyCastleAeadStreamCipherAlgorithmBase
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1__ctor_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.#ctor
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.BouncyCastleAeadStreamCipherAlgorithmBase
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).BouncyCastleAeadStreamCipherAlgorithmBase
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.BouncyCastleAeadStreamCipherAlgorithmBase
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).BouncyCastleAeadStreamCipherAlgorithmBase
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.CreateCipher(System.Boolean,wan24.Crypto.CryptoOptions)
+  name: CreateCipher(Boolean, CryptoOptions)
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_CreateCipher_System_Boolean_wan24_Crypto_CryptoOptions_
+  commentId: M:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.CreateCipher(System.Boolean,wan24.Crypto.CryptoOptions)
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.CreateCipher(System.Boolean, wan24.Crypto.CryptoOptions)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).CreateCipher(System.Boolean, wan24.Crypto.CryptoOptions)
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.CreateCipher(Boolean, CryptoOptions)
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).CreateCipher(Boolean, CryptoOptions)
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.CreateCipher*
+  name: CreateCipher
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_CreateCipher_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.CreateCipher
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.CreateCipher
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).CreateCipher
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.CreateCipher
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).CreateCipher
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.CreateParameters(System.Byte[],wan24.Crypto.CryptoOptions)
+  name: CreateParameters(Byte[], CryptoOptions)
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_CreateParameters_System_Byte___wan24_Crypto_CryptoOptions_
+  commentId: M:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.CreateParameters(System.Byte[],wan24.Crypto.CryptoOptions)
+  name.vb: CreateParameters(Byte(), CryptoOptions)
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.CreateParameters(System.Byte[], wan24.Crypto.CryptoOptions)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).CreateParameters(System.Byte(), wan24.Crypto.CryptoOptions)
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.CreateParameters(Byte[], CryptoOptions)
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).CreateParameters(Byte(), CryptoOptions)
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.CreateParameters*
+  name: CreateParameters
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_CreateParameters_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.CreateParameters
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.CreateParameters
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).CreateParameters
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.CreateParameters
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).CreateParameters
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetDecryptor(Stream,wan24.Crypto.CryptoOptions)
+  name: GetDecryptor(Stream, CryptoOptions)
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_GetDecryptor_Stream_wan24_Crypto_CryptoOptions_
+  commentId: M:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetDecryptor(Stream,wan24.Crypto.CryptoOptions)
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetDecryptor(Stream, wan24.Crypto.CryptoOptions)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetDecryptor(Stream, wan24.Crypto.CryptoOptions)
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetDecryptor(Stream, CryptoOptions)
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetDecryptor(Stream, CryptoOptions)
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetDecryptor*
+  name: GetDecryptor
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_GetDecryptor_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetDecryptor
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetDecryptor
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetDecryptor
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetDecryptor
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetDecryptor
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetDecryptorAsync(Stream,wan24.Crypto.CryptoOptions,CancellationToken)
+  name: GetDecryptorAsync(Stream, CryptoOptions, CancellationToken)
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_GetDecryptorAsync_Stream_wan24_Crypto_CryptoOptions_CancellationToken_
+  commentId: M:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetDecryptorAsync(Stream,wan24.Crypto.CryptoOptions,CancellationToken)
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetDecryptorAsync(Stream, wan24.Crypto.CryptoOptions, CancellationToken)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetDecryptorAsync(Stream, wan24.Crypto.CryptoOptions, CancellationToken)
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetDecryptorAsync(Stream, CryptoOptions, CancellationToken)
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetDecryptorAsync(Stream, CryptoOptions, CancellationToken)
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetDecryptorAsync*
+  name: GetDecryptorAsync
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_GetDecryptorAsync_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetDecryptorAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetDecryptorAsync
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetDecryptorAsync
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetDecryptorAsync
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetDecryptorAsync
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetEncryptor(Stream,wan24.Crypto.CryptoOptions)
+  name: GetEncryptor(Stream, CryptoOptions)
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_GetEncryptor_Stream_wan24_Crypto_CryptoOptions_
+  commentId: M:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetEncryptor(Stream,wan24.Crypto.CryptoOptions)
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetEncryptor(Stream, wan24.Crypto.CryptoOptions)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetEncryptor(Stream, wan24.Crypto.CryptoOptions)
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetEncryptor(Stream, CryptoOptions)
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetEncryptor(Stream, CryptoOptions)
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetEncryptor*
+  name: GetEncryptor
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_GetEncryptor_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetEncryptor
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetEncryptor
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetEncryptor
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetEncryptor
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetEncryptor
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetEncryptorAsync(Stream,wan24.Crypto.CryptoOptions,CancellationToken)
+  name: GetEncryptorAsync(Stream, CryptoOptions, CancellationToken)
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_GetEncryptorAsync_Stream_wan24_Crypto_CryptoOptions_CancellationToken_
+  commentId: M:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetEncryptorAsync(Stream,wan24.Crypto.CryptoOptions,CancellationToken)
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetEncryptorAsync(Stream, wan24.Crypto.CryptoOptions, CancellationToken)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetEncryptorAsync(Stream, wan24.Crypto.CryptoOptions, CancellationToken)
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetEncryptorAsync(Stream, CryptoOptions, CancellationToken)
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetEncryptorAsync(Stream, CryptoOptions, CancellationToken)
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetEncryptorAsync*
+  name: GetEncryptorAsync
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_GetEncryptorAsync_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetEncryptorAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetEncryptorAsync
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetEncryptorAsync
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetEncryptorAsync
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetEncryptorAsync
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.Instance
+  name: Instance
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_Instance
+  commentId: P:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.Instance
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.Instance
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).Instance
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.Instance
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).Instance
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.Instance*
+  name: Instance
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_Instance_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.Instance
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.Instance
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).Instance
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.Instance
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).Instance
 - uid: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`8
   name: BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>
   href: api/wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html
@@ -1994,6 +2140,24 @@ references:
   fullName.vb: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase(Of T).CreateCipher
   nameWithType: BouncyCastleBlockCipherAlgorithmBase<T>.CreateCipher
   nameWithType.vb: BouncyCastleBlockCipherAlgorithmBase(Of T).CreateCipher
+- uid: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase`1.CreateParameters(System.Byte[],wan24.Crypto.CryptoOptions)
+  name: CreateParameters(Byte[], CryptoOptions)
+  href: api/wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleBlockCipherAlgorithmBase_1_CreateParameters_System_Byte___wan24_Crypto_CryptoOptions_
+  commentId: M:wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase`1.CreateParameters(System.Byte[],wan24.Crypto.CryptoOptions)
+  name.vb: CreateParameters(Byte(), CryptoOptions)
+  fullName: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase<T>.CreateParameters(System.Byte[], wan24.Crypto.CryptoOptions)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase(Of T).CreateParameters(System.Byte(), wan24.Crypto.CryptoOptions)
+  nameWithType: BouncyCastleBlockCipherAlgorithmBase<T>.CreateParameters(Byte[], CryptoOptions)
+  nameWithType.vb: BouncyCastleBlockCipherAlgorithmBase(Of T).CreateParameters(Byte(), CryptoOptions)
+- uid: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase`1.CreateParameters*
+  name: CreateParameters
+  href: api/wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleBlockCipherAlgorithmBase_1_CreateParameters_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase`1.CreateParameters
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase<T>.CreateParameters
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase(Of T).CreateParameters
+  nameWithType: BouncyCastleBlockCipherAlgorithmBase<T>.CreateParameters
+  nameWithType.vb: BouncyCastleBlockCipherAlgorithmBase(Of T).CreateParameters
 - uid: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase`1.GetDecryptor(Stream,wan24.Crypto.CryptoOptions)
   name: GetDecryptor(Stream, CryptoOptions)
   href: api/wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleBlockCipherAlgorithmBase_1_GetDecryptor_Stream_wan24_Crypto_CryptoOptions_
@@ -2109,6 +2273,12 @@ references:
   commentId: M:wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor(Org.BouncyCastle.Crypto.IStreamCipher)
   fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.BouncyCastleCryptoTransform(Org.BouncyCastle.Crypto.IStreamCipher)
   nameWithType: BouncyCastleCryptoTransform.BouncyCastleCryptoTransform(IStreamCipher)
+- uid: wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor(Org.BouncyCastle.Crypto.Modes.IAeadBlockCipher)
+  name: BouncyCastleCryptoTransform(IAeadBlockCipher)
+  href: api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html#wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_Modes_IAeadBlockCipher_
+  commentId: M:wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor(Org.BouncyCastle.Crypto.Modes.IAeadBlockCipher)
+  fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.BouncyCastleCryptoTransform(Org.BouncyCastle.Crypto.Modes.IAeadBlockCipher)
+  nameWithType: BouncyCastleCryptoTransform.BouncyCastleCryptoTransform(IAeadBlockCipher)
 - uid: wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor*
   name: BouncyCastleCryptoTransform
   href: api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html#wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_
@@ -2116,6 +2286,12 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.BouncyCastleCryptoTransform
   nameWithType: BouncyCastleCryptoTransform.BouncyCastleCryptoTransform
+- uid: wan24.Crypto.BC.BouncyCastleCryptoTransform.AeadStreamCipher
+  name: AeadStreamCipher
+  href: api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html#wan24_Crypto_BC_BouncyCastleCryptoTransform_AeadStreamCipher
+  commentId: F:wan24.Crypto.BC.BouncyCastleCryptoTransform.AeadStreamCipher
+  fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.AeadStreamCipher
+  nameWithType: BouncyCastleCryptoTransform.AeadStreamCipher
 - uid: wan24.Crypto.BC.BouncyCastleCryptoTransform.BlockCipher
   name: BlockCipher
   href: api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html#wan24_Crypto_BC_BouncyCastleCryptoTransform_BlockCipher
@@ -2377,6 +2553,24 @@ references:
   fullName.vb: wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase(Of T).CreateCipher
   nameWithType: BouncyCastleStreamCipherAlgorithmBase<T>.CreateCipher
   nameWithType.vb: BouncyCastleStreamCipherAlgorithmBase(Of T).CreateCipher
+- uid: wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase`1.CreateParameters(System.Byte[],wan24.Crypto.CryptoOptions)
+  name: CreateParameters(Byte[], CryptoOptions)
+  href: api/wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleStreamCipherAlgorithmBase_1_CreateParameters_System_Byte___wan24_Crypto_CryptoOptions_
+  commentId: M:wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase`1.CreateParameters(System.Byte[],wan24.Crypto.CryptoOptions)
+  name.vb: CreateParameters(Byte(), CryptoOptions)
+  fullName: wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase<T>.CreateParameters(System.Byte[], wan24.Crypto.CryptoOptions)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase(Of T).CreateParameters(System.Byte(), wan24.Crypto.CryptoOptions)
+  nameWithType: BouncyCastleStreamCipherAlgorithmBase<T>.CreateParameters(Byte[], CryptoOptions)
+  nameWithType.vb: BouncyCastleStreamCipherAlgorithmBase(Of T).CreateParameters(Byte(), CryptoOptions)
+- uid: wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase`1.CreateParameters*
+  name: CreateParameters
+  href: api/wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleStreamCipherAlgorithmBase_1_CreateParameters_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase`1.CreateParameters
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase<T>.CreateParameters
+  fullName.vb: wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase(Of T).CreateParameters
+  nameWithType: BouncyCastleStreamCipherAlgorithmBase<T>.CreateParameters
+  nameWithType.vb: BouncyCastleStreamCipherAlgorithmBase(Of T).CreateParameters
 - uid: wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase`1.GetDecryptor(Stream,wan24.Crypto.CryptoOptions)
   name: GetDecryptor(Stream, CryptoOptions)
   href: api/wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleStreamCipherAlgorithmBase_1_GetDecryptor_Stream_wan24_Crypto_CryptoOptions_
@@ -2462,6 +2656,171 @@ references:
   fullName.vb: wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase(Of T).Instance
   nameWithType: BouncyCastleStreamCipherAlgorithmBase<T>.Instance
   nameWithType.vb: BouncyCastleStreamCipherAlgorithmBase(Of T).Instance
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm
+  name: EncryptionAes256GcmAlgorithm
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html
+  commentId: T:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm
+  nameWithType: EncryptionAes256GcmAlgorithm
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.#ctor
+  name: EncryptionAes256GcmAlgorithm()
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm__ctor
+  commentId: M:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.#ctor
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.EncryptionAes256GcmAlgorithm()
+  nameWithType: EncryptionAes256GcmAlgorithm.EncryptionAes256GcmAlgorithm()
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.#ctor*
+  name: EncryptionAes256GcmAlgorithm
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm__ctor_
+  commentId: Overload:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.#ctor
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.EncryptionAes256GcmAlgorithm
+  nameWithType: EncryptionAes256GcmAlgorithm.EncryptionAes256GcmAlgorithm
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.ALGORITHM_NAME
+  name: ALGORITHM_NAME
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_ALGORITHM_NAME
+  commentId: F:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.ALGORITHM_NAME
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.ALGORITHM_NAME
+  nameWithType: EncryptionAes256GcmAlgorithm.ALGORITHM_NAME
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.ALGORITHM_VALUE
+  name: ALGORITHM_VALUE
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_ALGORITHM_VALUE
+  commentId: F:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.ALGORITHM_VALUE
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.ALGORITHM_VALUE
+  nameWithType: EncryptionAes256GcmAlgorithm.ALGORITHM_VALUE
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.BLOCK_SIZE
+  name: BLOCK_SIZE
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_BLOCK_SIZE
+  commentId: F:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.BLOCK_SIZE
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.BLOCK_SIZE
+  nameWithType: EncryptionAes256GcmAlgorithm.BLOCK_SIZE
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.BlockSize
+  name: BlockSize
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_BlockSize
+  commentId: P:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.BlockSize
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.BlockSize
+  nameWithType: EncryptionAes256GcmAlgorithm.BlockSize
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.BlockSize*
+  name: BlockSize
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_BlockSize_
+  commentId: Overload:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.BlockSize
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.BlockSize
+  nameWithType: EncryptionAes256GcmAlgorithm.BlockSize
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateAes(wan24.Crypto.CryptoOptions)
+  name: CreateAes(CryptoOptions)
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_CreateAes_wan24_Crypto_CryptoOptions_
+  commentId: M:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateAes(wan24.Crypto.CryptoOptions)
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateAes(wan24.Crypto.CryptoOptions)
+  nameWithType: EncryptionAes256GcmAlgorithm.CreateAes(CryptoOptions)
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateAes*
+  name: CreateAes
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_CreateAes_
+  commentId: Overload:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateAes
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateAes
+  nameWithType: EncryptionAes256GcmAlgorithm.CreateAes
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateCipher(System.Boolean,wan24.Crypto.CryptoOptions)
+  name: CreateCipher(Boolean, CryptoOptions)
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_CreateCipher_System_Boolean_wan24_Crypto_CryptoOptions_
+  commentId: M:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateCipher(System.Boolean,wan24.Crypto.CryptoOptions)
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateCipher(System.Boolean, wan24.Crypto.CryptoOptions)
+  nameWithType: EncryptionAes256GcmAlgorithm.CreateCipher(Boolean, CryptoOptions)
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateCipher*
+  name: CreateCipher
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_CreateCipher_
+  commentId: Overload:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateCipher
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateCipher
+  nameWithType: EncryptionAes256GcmAlgorithm.CreateCipher
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.DISPLAY_NAME
+  name: DISPLAY_NAME
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_DISPLAY_NAME
+  commentId: F:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.DISPLAY_NAME
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.DISPLAY_NAME
+  nameWithType: EncryptionAes256GcmAlgorithm.DISPLAY_NAME
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.DisplayName
+  name: DisplayName
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_DisplayName
+  commentId: P:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.DisplayName
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.DisplayName
+  nameWithType: EncryptionAes256GcmAlgorithm.DisplayName
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.DisplayName*
+  name: DisplayName
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_DisplayName_
+  commentId: Overload:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.DisplayName
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.DisplayName
+  nameWithType: EncryptionAes256GcmAlgorithm.DisplayName
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsPostQuantum
+  name: IsPostQuantum
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IsPostQuantum
+  commentId: P:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsPostQuantum
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsPostQuantum
+  nameWithType: EncryptionAes256GcmAlgorithm.IsPostQuantum
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsPostQuantum*
+  name: IsPostQuantum
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IsPostQuantum_
+  commentId: Overload:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsPostQuantum
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsPostQuantum
+  nameWithType: EncryptionAes256GcmAlgorithm.IsPostQuantum
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IV_SIZE
+  name: IV_SIZE
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IV_SIZE
+  commentId: F:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IV_SIZE
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IV_SIZE
+  nameWithType: EncryptionAes256GcmAlgorithm.IV_SIZE
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IvSize
+  name: IvSize
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IvSize
+  commentId: P:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IvSize
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IvSize
+  nameWithType: EncryptionAes256GcmAlgorithm.IvSize
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IvSize*
+  name: IvSize
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IvSize_
+  commentId: Overload:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IvSize
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IvSize
+  nameWithType: EncryptionAes256GcmAlgorithm.IvSize
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.KEY_SIZE
+  name: KEY_SIZE
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_KEY_SIZE
+  commentId: F:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.KEY_SIZE
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.KEY_SIZE
+  nameWithType: EncryptionAes256GcmAlgorithm.KEY_SIZE
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.KeySize
+  name: KeySize
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_KeySize
+  commentId: P:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.KeySize
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.KeySize
+  nameWithType: EncryptionAes256GcmAlgorithm.KeySize
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.KeySize*
+  name: KeySize
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_KeySize_
+  commentId: Overload:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.KeySize
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.KeySize
+  nameWithType: EncryptionAes256GcmAlgorithm.KeySize
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.PROFILE_AES256GCM_RAW
+  name: PROFILE_AES256GCM_RAW
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_PROFILE_AES256GCM_RAW
+  commentId: F:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.PROFILE_AES256GCM_RAW
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.PROFILE_AES256GCM_RAW
+  nameWithType: EncryptionAes256GcmAlgorithm.PROFILE_AES256GCM_RAW
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.RequireMacAuthentication
+  name: RequireMacAuthentication
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_RequireMacAuthentication
+  commentId: P:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.RequireMacAuthentication
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.RequireMacAuthentication
+  nameWithType: EncryptionAes256GcmAlgorithm.RequireMacAuthentication
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.RequireMacAuthentication*
+  name: RequireMacAuthentication
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_RequireMacAuthentication_
+  commentId: Overload:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.RequireMacAuthentication
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.RequireMacAuthentication
+  nameWithType: EncryptionAes256GcmAlgorithm.RequireMacAuthentication
 - uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm
   name: EncryptionChaCha20Algorithm
   href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html
