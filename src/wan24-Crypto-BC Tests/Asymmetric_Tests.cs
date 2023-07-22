@@ -5,8 +5,6 @@ namespace wan24_Crypto_Tests
     [TestClass]
     public class Asymmetric_Tests
     {
-        public Asymmetric_Tests() => wan24.Crypto.BC.Bootstrap.Boot();
-
         [TestMethod]
         public void AllAlgo_Tests() => AsymmetricTests.TestAllAlgorithms();
     }

@@ -1,4 +1,5 @@
 ﻿using Org.BouncyCastle.Crypto;
+using Org.BouncyCastle.Crypto.Modes;
 using System.Security.Cryptography;
 using wan24.Core;
 
@@ -21,6 +22,10 @@ namespace wan24.Crypto.BC
         /// Stream cipher
         /// </summary>
         public readonly IStreamCipher? StreamCipher = null;
+        /// <summary>
+        /// AEAD Stream cipher
+        /// </summary>
+        public readonly IAeadBlockCipher? AeadStreamCipher = null;
         /// <summary>
         /// Digest
         /// </summary>
@@ -48,6 +53,18 @@ namespace wan24.Crypto.BC
         public BouncyCastleCryptoTransform(IStreamCipher cipher) : base()
         {
             StreamCipher = cipher;
+            OutputBlockSize = InputBlockSize = 1;
+            CanTransformMultipleBlocks = true;
+            CanReuseTransform = true;
+        }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="cipher">Cipher</param>
+        public BouncyCastleCryptoTransform(IAeadBlockCipher cipher) : base()
+        {
+            AeadStreamCipher = cipher;
             OutputBlockSize = InputBlockSize = 1;
             CanTransformMultipleBlocks = true;
             CanReuseTransform = true;
@@ -99,6 +116,11 @@ namespace wan24.Crypto.BC
                 StreamCipher.ProcessBytes(inputBuffer.AsSpan(inputOffset, inputCount), outputBuffer.AsSpan(outputOffset));
                 return inputCount;
             }
+            if (AeadStreamCipher != null)
+            {
+                AeadStreamCipher.ProcessBytes(inputBuffer.AsSpan(inputOffset, inputCount), outputBuffer.AsSpan(outputOffset));
+                return inputCount;
+            }
             if (BlockCipher != null) return BlockCipher.ProcessBlock(inputBuffer.AsSpan(inputOffset, inputCount), outputBuffer.AsSpan(outputOffset));
             if (Digest != null)
             {
@@ -125,6 +147,15 @@ namespace wan24.Crypto.BC
                 int used = TransformBlock(inputBuffer, inputOffset, inputCount, outputBuffer, 0);
                 byte[] res = used == 0 ? Array.Empty<byte>() : outputBuffer.Span[..used].ToArray();
                 StreamCipher.Reset();
+                return res;
+            }
+            if (AeadStreamCipher != null)
+            {
+                if (inputCount == 0) return Array.Empty<byte>();
+                using RentedArray<byte> outputBuffer = new(inputCount);
+                int used = TransformBlock(inputBuffer, inputOffset, inputCount, outputBuffer, 0);
+                byte[] res = used == 0 ? Array.Empty<byte>() : outputBuffer.Span[..used].ToArray();
+                AeadStreamCipher.Reset();
                 return res;
             }
             if (BlockCipher != null)

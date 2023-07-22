@@ -1,4 +1,5 @@
 ﻿using Org.BouncyCastle.Crypto;
+using Org.BouncyCastle.Crypto.Modes;
 using Org.BouncyCastle.Crypto.Parameters;
 using System.Security.Cryptography;
 using wan24.Core;
@@ -6,22 +7,22 @@ using wan24.Core;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// Base class for a Bouncy Castle stream cipher
+    /// Base class for a Bouncy Castle AEAD stream cipher
     /// </summary>
     /// <typeparam name="T">Final type</typeparam>
-    public abstract class BouncyCastleStreamCipherAlgorithmBase<T> : EncryptionAlgorithmBase where T : BouncyCastleStreamCipherAlgorithmBase<T>, new()
+    public abstract class BouncyCastleAeadStreamCipherAlgorithmBase<T> : EncryptionAlgorithmBase where T : BouncyCastleAeadStreamCipherAlgorithmBase<T>, new()
     {
         /// <summary>
         /// Static constructor
         /// </summary>
-        static BouncyCastleStreamCipherAlgorithmBase() => Instance = new();
+        static BouncyCastleAeadStreamCipherAlgorithmBase() => Instance = new();
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="name">Algorithm name</param>
         /// <param name="value">Agorithm value</param>
-        protected BouncyCastleStreamCipherAlgorithmBase(string name, int value) : base(name, value) { }
+        protected BouncyCastleAeadStreamCipherAlgorithmBase(string name, int value) : base(name, value) { }
 
         /// <summary>
         /// Instance
@@ -33,7 +34,7 @@ namespace wan24.Crypto.BC
         {
             try
             {
-                IStreamCipher cipher = CreateCipher(forEncryption: true, options);
+                IAeadBlockCipher cipher = CreateCipher(forEncryption: true, options);
                 byte[] iv = CreateIvBytes();
                 cipher.Init(forEncryption: true, CreateParameters(iv, options));
                 cipherData.Write(iv);
@@ -54,7 +55,7 @@ namespace wan24.Crypto.BC
         {
             try
             {
-                IStreamCipher cipher = CreateCipher(forEncryption: true, options);
+                IAeadBlockCipher cipher = CreateCipher(forEncryption: true, options);
                 byte[] iv = CreateIvBytes();
                 cipher.Init(forEncryption: true, CreateParameters(iv, options));
                 await cipherData.WriteAsync(iv, cancellationToken).DynamicContext();
@@ -76,7 +77,7 @@ namespace wan24.Crypto.BC
             try
             {
                 byte[] iv = ReadFixedIvBytes(cipherData, options);
-                IStreamCipher cipher = CreateCipher(forEncryption: false, options);
+                IAeadBlockCipher cipher = CreateCipher(forEncryption: false, options);
                 cipher.Init(forEncryption: false, CreateParameters(iv, options));
                 return new BouncyCastleCryptoTransform(cipher);
             }
@@ -96,7 +97,7 @@ namespace wan24.Crypto.BC
             try
             {
                 byte[] iv = await ReadFixedIvBytesAsync(cipherData, options, cancellationToken).DynamicContext();
-                IStreamCipher cipher = CreateCipher(forEncryption: false, options);
+                IAeadBlockCipher cipher = CreateCipher(forEncryption: false, options);
                 cipher.Init(forEncryption: false, CreateParameters(iv, options));
                 return new BouncyCastleCryptoTransform(cipher);
             }
@@ -116,7 +117,7 @@ namespace wan24.Crypto.BC
         /// <param name="forEncryption">For encryption?</param>
         /// <param name="options">Options</param>
         /// <returns>Stream cipher</returns>
-        protected abstract IStreamCipher CreateCipher(bool forEncryption, CryptoOptions options);
+        protected abstract IAeadBlockCipher CreateCipher(bool forEncryption, CryptoOptions options);
 
         /// <summary>
         /// Create cipher parameters
@@ -125,6 +126,6 @@ namespace wan24.Crypto.BC
         /// <param name="options">Options</param>
         /// <returns>Parameters</returns>
         protected virtual ICipherParameters CreateParameters(byte[] iv, CryptoOptions options)
-            => new ParametersWithIV(new KeyParameter(options.Password ?? throw new ArgumentException("Missing password", nameof(options))), iv);
+            => new AeadParameters(new KeyParameter(options.Password ?? throw new ArgumentException("Missing password", nameof(options))), macSize: 128, iv);
     }
 }

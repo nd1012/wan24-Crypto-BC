@@ -16,6 +16,7 @@ the `wan24-Crypto` library with these algorithms:
 | **Symmetric** |  |  |
 | ChaCha20 | 1 | CHACHA20 |
 | XSalsa20 | 2 | XSALSA20 |
+| AES-256-GCM AEAD (128 bit MAC) | 3 | AES256GCM |
 
 **NOTE**: FrodoKEM is currently disabled, 'cause there seems to be a bug 
 (missing code) in the Bouncy Castle library for FrodoKEM.

@@ -1,5 +1,6 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Pqc.Crypto.Crystals.Dilithium;
+using wan24.Core;
 
 namespace wan24.Crypto.BC
 {
@@ -32,6 +33,21 @@ namespace wan24.Crypto.BC
         /// </summary>
         /// <param name="keys">Keys</param>
         public AsymmetricDilithiumPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricDilithiumAlgorithm.ALGORITHM_NAME, keys) { }
+
+        /// <inheritdoc/>
+        protected override void Dispose(bool disposing)
+        {
+            base.Dispose(disposing);
+            if (Keys == null) return;
+            DilithiumPrivateKeyParameters privateKey = (DilithiumPrivateKeyParameters)Keys.Private;
+            privateKey.K.Clear();
+            privateKey.Rho.Clear();
+            privateKey.S1.Clear();
+            privateKey.S2.Clear();
+            privateKey.T0.Clear();
+            privateKey.T1.Clear();
+            privateKey.Tr.Clear();
+        }
 
         /// <summary>
         /// Cast to public key
