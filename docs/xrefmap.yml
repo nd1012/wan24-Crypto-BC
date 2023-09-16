@@ -2751,6 +2751,35 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.DisplayName
   nameWithType: EncryptionAes256GcmAlgorithm.DisplayName
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.EnsureValidKeyLength(System.Byte[])
+  name: EnsureValidKeyLength(Byte[])
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_EnsureValidKeyLength_System_Byte___
+  commentId: M:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.EnsureValidKeyLength(System.Byte[])
+  name.vb: EnsureValidKeyLength(Byte())
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.EnsureValidKeyLength(System.Byte[])
+  fullName.vb: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.EnsureValidKeyLength(System.Byte())
+  nameWithType: EncryptionAes256GcmAlgorithm.EnsureValidKeyLength(Byte[])
+  nameWithType.vb: EncryptionAes256GcmAlgorithm.EnsureValidKeyLength(Byte())
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.EnsureValidKeyLength*
+  name: EnsureValidKeyLength
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_EnsureValidKeyLength_
+  commentId: Overload:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.EnsureValidKeyLength
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.EnsureValidKeyLength
+  nameWithType: EncryptionAes256GcmAlgorithm.EnsureValidKeyLength
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsKeyLengthValid(System.Int32)
+  name: IsKeyLengthValid(Int32)
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IsKeyLengthValid_System_Int32_
+  commentId: M:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsKeyLengthValid(System.Int32)
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsKeyLengthValid(System.Int32)
+  nameWithType: EncryptionAes256GcmAlgorithm.IsKeyLengthValid(Int32)
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsKeyLengthValid*
+  name: IsKeyLengthValid
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IsKeyLengthValid_
+  commentId: Overload:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsKeyLengthValid
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsKeyLengthValid
+  nameWithType: EncryptionAes256GcmAlgorithm.IsKeyLengthValid
 - uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsPostQuantum
   name: IsPostQuantum
   href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IsPostQuantum
@@ -2916,6 +2945,35 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.DisplayName
   nameWithType: EncryptionChaCha20Algorithm.DisplayName
+- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.EnsureValidKeyLength(System.Byte[])
+  name: EnsureValidKeyLength(Byte[])
+  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_EnsureValidKeyLength_System_Byte___
+  commentId: M:wan24.Crypto.BC.EncryptionChaCha20Algorithm.EnsureValidKeyLength(System.Byte[])
+  name.vb: EnsureValidKeyLength(Byte())
+  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.EnsureValidKeyLength(System.Byte[])
+  fullName.vb: wan24.Crypto.BC.EncryptionChaCha20Algorithm.EnsureValidKeyLength(System.Byte())
+  nameWithType: EncryptionChaCha20Algorithm.EnsureValidKeyLength(Byte[])
+  nameWithType.vb: EncryptionChaCha20Algorithm.EnsureValidKeyLength(Byte())
+- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.EnsureValidKeyLength*
+  name: EnsureValidKeyLength
+  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_EnsureValidKeyLength_
+  commentId: Overload:wan24.Crypto.BC.EncryptionChaCha20Algorithm.EnsureValidKeyLength
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.EnsureValidKeyLength
+  nameWithType: EncryptionChaCha20Algorithm.EnsureValidKeyLength
+- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.IsKeyLengthValid(System.Int32)
+  name: IsKeyLengthValid(Int32)
+  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_IsKeyLengthValid_System_Int32_
+  commentId: M:wan24.Crypto.BC.EncryptionChaCha20Algorithm.IsKeyLengthValid(System.Int32)
+  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.IsKeyLengthValid(System.Int32)
+  nameWithType: EncryptionChaCha20Algorithm.IsKeyLengthValid(Int32)
+- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.IsKeyLengthValid*
+  name: IsKeyLengthValid
+  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_IsKeyLengthValid_
+  commentId: Overload:wan24.Crypto.BC.EncryptionChaCha20Algorithm.IsKeyLengthValid
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.IsKeyLengthValid
+  nameWithType: EncryptionChaCha20Algorithm.IsKeyLengthValid
 - uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.IsPostQuantum
   name: IsPostQuantum
   href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_IsPostQuantum
@@ -3081,6 +3139,35 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.DisplayName
   nameWithType: EncryptionXSalsa20Algorithm.DisplayName
+- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.EnsureValidKeyLength(System.Byte[])
+  name: EnsureValidKeyLength(Byte[])
+  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_EnsureValidKeyLength_System_Byte___
+  commentId: M:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.EnsureValidKeyLength(System.Byte[])
+  name.vb: EnsureValidKeyLength(Byte())
+  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.EnsureValidKeyLength(System.Byte[])
+  fullName.vb: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.EnsureValidKeyLength(System.Byte())
+  nameWithType: EncryptionXSalsa20Algorithm.EnsureValidKeyLength(Byte[])
+  nameWithType.vb: EncryptionXSalsa20Algorithm.EnsureValidKeyLength(Byte())
+- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.EnsureValidKeyLength*
+  name: EnsureValidKeyLength
+  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_EnsureValidKeyLength_
+  commentId: Overload:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.EnsureValidKeyLength
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.EnsureValidKeyLength
+  nameWithType: EncryptionXSalsa20Algorithm.EnsureValidKeyLength
+- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.IsKeyLengthValid(System.Int32)
+  name: IsKeyLengthValid(Int32)
+  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_IsKeyLengthValid_System_Int32_
+  commentId: M:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.IsKeyLengthValid(System.Int32)
+  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.IsKeyLengthValid(System.Int32)
+  nameWithType: EncryptionXSalsa20Algorithm.IsKeyLengthValid(Int32)
+- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.IsKeyLengthValid*
+  name: IsKeyLengthValid
+  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_IsKeyLengthValid_
+  commentId: Overload:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.IsKeyLengthValid
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.IsKeyLengthValid
+  nameWithType: EncryptionXSalsa20Algorithm.IsKeyLengthValid
 - uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.IsPostQuantum
   name: IsPostQuantum
   href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_IsPostQuantum
