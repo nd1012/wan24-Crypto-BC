@@ -61,6 +61,12 @@ namespace wan24.Crypto.BC
         public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
+        public override bool IsKeyLengthValid(int len) => len == KEY_SIZE;
+
+        /// <inheritdoc/>
+        public override byte[] EnsureValidKeyLength(byte[] key) => GetValidLengthKey(key, KEY_SIZE);
+
+        /// <inheritdoc/>
         protected override IAeadBlockCipher CreateCipher(bool forEncryption, CryptoOptions options) => new GcmBlockCipher(CreateAes(options));
 
         /// <summary>
