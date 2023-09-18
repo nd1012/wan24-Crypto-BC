@@ -1,6 +1,7 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Security;
 using System.Collections.ObjectModel;
+using System.Security.Cryptography;
 using wan24.Core;
 
 namespace wan24.Crypto.BC
@@ -115,5 +116,10 @@ namespace wan24.Crypto.BC
         protected virtual tKeyGenParam CreateKeyGenParameters(SecureRandom random, tParam parameters, CryptoOptions options)
             => Activator.CreateInstance(typeof(tKeyGenParam), random, parameters) as tKeyGenParam
                 ?? throw new InvalidProgramException($"Failed to instance key generation parameters {typeof(tKeyGenParam)}");
+
+        /// <summary>
+        /// Register the algorithm to the <see cref="CryptoConfig"/>
+        /// </summary>
+        public static void Register() => CryptoConfig.AddAlgorithm(typeof(tFinal), Instance.Name);
     }
 }

@@ -126,5 +126,10 @@ namespace wan24.Crypto.BC
         /// <returns>Parameters</returns>
         protected virtual ICipherParameters CreateParameters(byte[] iv, CryptoOptions options)
             => new ParametersWithIV(new KeyParameter(options.Password ?? throw new ArgumentException("Missing password", nameof(options))), iv);
+
+        /// <summary>
+        /// Register the algorithm to the <see cref="CryptoConfig"/>
+        /// </summary>
+        public static void Register() => CryptoConfig.AddAlgorithm(typeof(T), Instance.Name);
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace wan24.Crypto.BC
+﻿using System.Security.Cryptography;
+
+namespace wan24.Crypto.BC
 {
     /// <summary>
     /// Base class for a BouncyCastle MAC algorithm
@@ -22,5 +24,10 @@
         /// Instance
         /// </summary>
         public static T Instance { get; }
+
+        /// <summary>
+        /// Register the algorithm to the <see cref="CryptoConfig"/>
+        /// </summary>
+        public static void Register() => CryptoConfig.AddAlgorithm(typeof(T), Instance.Name);
     }
 }
