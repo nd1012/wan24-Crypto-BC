@@ -35,6 +35,12 @@ namespace wan24.Crypto.BC
                 .IncludeNothing()
                 .WithoutCompression()
                 .WithEncryptionAlgorithm(EncryptionAes256GcmAlgorithm.ALGORITHM_NAME);
+            HashHelper.Algorithms[HashSha3_256Algorithm.ALGORITHM_NAME] = HashSha3_256Algorithm.Instance;
+            HashHelper.Algorithms[HashSha3_384Algorithm.ALGORITHM_NAME] = HashSha3_384Algorithm.Instance;
+            HashHelper.Algorithms[HashSha3_512Algorithm.ALGORITHM_NAME] = HashSha3_512Algorithm.Instance;
+            MacHelper.Algorithms[MacHmacSha3_256Algorithm.ALGORITHM_NAME] = MacHmacSha3_256Algorithm.Instance;
+            MacHelper.Algorithms[MacHmacSha3_384Algorithm.ALGORITHM_NAME] = MacHmacSha3_384Algorithm.Instance;
+            MacHelper.Algorithms[MacHmacSha3_512Algorithm.ALGORITHM_NAME] = MacHmacSha3_512Algorithm.Instance;
             CryptoHelper.OnForcePostQuantum += (e) =>
             {
                 if (!EncryptionHelper.DefaultAlgorithm.IsPostQuantum)
