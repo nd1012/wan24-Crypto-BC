@@ -50,10 +50,10 @@ namespace wan24.Crypto.BC
             {
                 EnsureUndisposed();
                 publicKey ??= options?.PublicKey ?? options?.PrivateKey?.PublicKey ?? PublicKey;
-                if (publicKey is not tPublic key) throw new ArgumentException("Missing valid public key", nameof(publicKey));
+                if (publicKey is not tPublic key) throw new ArgumentException($"Public {Algorithm.Name} key required", nameof(publicKey));
                 tGenerator generator = Activator.CreateInstance(typeof(tGenerator), new SecureRandom(BouncyCastleRandomGenerator.Instance())) as tGenerator
                     ?? throw new InvalidProgramException($"Failed to instance {typeof(tGenerator)}");
-                ISecretWithEncapsulation secret = generator.GenerateEncapsulated(key.PublicKey);
+                using ISecretWithEncapsulation secret = generator.GenerateEncapsulated(key.PublicKey);
                 return (secret.GetSecret(), secret.GetEncapsulation());
             }
             catch (Exception ex)
@@ -71,6 +71,24 @@ namespace wan24.Crypto.BC
                 tExtractor extractor = Activator.CreateInstance(typeof(tExtractor), PrivateKey) as tExtractor
                     ?? throw new InvalidProgramException($"Failed to instance {typeof(tExtractor)}");
                 return extractor.ExtractSecret(keyExchangeData);
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
+        /// <inheritdoc/>
+        public override byte[] DeriveKey(IAsymmetricPublicKey publicKey)
+        {
+            try
+            {
+                EnsureUndisposed();
+                if (publicKey is not tPublic key) throw new ArgumentException($"Public {Algorithm.Name} key required", nameof(publicKey));
+                tGenerator generator = Activator.CreateInstance(typeof(tGenerator), new SecureRandom(BouncyCastleRandomGenerator.Instance())) as tGenerator
+                    ?? throw new InvalidProgramException($"Failed to instance {typeof(tGenerator)}");
+                using ISecretWithEncapsulation secret = generator.GenerateEncapsulated(key.PublicKey);
+                return secret.GetSecret();
             }
             catch (Exception ex)
             {

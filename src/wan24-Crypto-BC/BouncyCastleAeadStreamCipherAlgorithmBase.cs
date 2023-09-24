@@ -30,6 +30,18 @@ namespace wan24.Crypto.BC
         public static T Instance { get; }
 
         /// <inheritdoc/>
+        protected override byte[] GetValidLengthKey(byte[] key, int len)
+            => key.Length == len ? key.CloneArray() : len switch
+            {
+                HashMd5Algorithm.HASH_LENGTH => HashMd5Algorithm.Instance.Hash(key),
+                HashSha1Algorithm.HASH_LENGTH => HashSha1Algorithm.Instance.Hash(key),
+                HashSha3_256Algorithm.HASH_LENGTH => HashSha3_256Algorithm.Instance.Hash(key),
+                HashSha3_384Algorithm.HASH_LENGTH => HashSha3_384Algorithm.Instance.Hash(key),
+                HashSha3_512Algorithm.HASH_LENGTH => HashSha3_512Algorithm.Instance.Hash(key),
+                _ => throw CryptographicException.From($"Can't process for desired key length {len} bytes", new NotSupportedException())
+            };
+
+        /// <inheritdoc/>
         protected sealed override ICryptoTransform GetEncryptor(Stream cipherData, CryptoOptions options)
         {
             try
@@ -126,7 +138,23 @@ namespace wan24.Crypto.BC
         /// <param name="options">Options</param>
         /// <returns>Parameters</returns>
         protected virtual ICipherParameters CreateParameters(byte[] iv, CryptoOptions options)
-            => new AeadParameters(new KeyParameter(options.Password ?? throw new ArgumentException("Missing password", nameof(options))), macSize: 128, iv);
+        {
+            byte[] pwd = options.Password?.CloneArray() ?? throw new ArgumentException("Missing password", nameof(options));
+            try
+            {
+                if (!IsKeyLengthValid(pwd.Length))
+                {
+                    byte[] temp = EnsureValidKeyLength(pwd);
+                    pwd.Clear();
+                    pwd = temp;
+                }
+                return new AeadParameters(new KeyParameter(pwd), macSize: 128, iv);
+            }
+            finally
+            {
+                pwd.Clear();
+            }
+        }
 
         /// <summary>
         /// Register the algorithm to the <see cref="CryptoConfig"/>
