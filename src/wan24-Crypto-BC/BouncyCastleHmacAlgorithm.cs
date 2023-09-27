@@ -4,9 +4,9 @@ using System.Security.Cryptography;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// BouncyCastle HMAC algorithm
+    /// Bouncy Castle HMAC algorithm
     /// </summary>
-    internal sealed class BouncyCastleHmacAlgorithm : KeyedHashAlgorithm
+    public sealed class BouncyCastleHmacAlgorithm : KeyedHashAlgorithm
     {
         /// <summary>
         /// MAC
