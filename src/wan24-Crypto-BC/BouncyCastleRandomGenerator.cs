@@ -1,10 +1,9 @@
 ﻿using Org.BouncyCastle.Crypto.Prng;
-using System.Security.Cryptography;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// Random number generator for Bouncy Castle, which adopts <see cref="RandomNumberGenerator"/>
+    /// Random number generator for Bouncy Castle, which adopts <see cref="RND"/>
     /// </summary>
     public sealed class BouncyCastleRandomGenerator : IRandomGenerator
     {
@@ -33,12 +32,12 @@ namespace wan24.Crypto.BC
         public void AddSeedMaterial(long seed) { }
 
         /// <inheritdoc/>
-        public void NextBytes(byte[] bytes) => RandomNumberGenerator.Fill(bytes);
+        public void NextBytes(byte[] bytes) => RND.FillBytes(bytes);
 
         /// <inheritdoc/>
-        public void NextBytes(byte[] bytes, int start, int len) => RandomNumberGenerator.Fill(bytes.AsSpan(start, len));
+        public void NextBytes(byte[] bytes, int start, int len) => RND.FillBytes(bytes.AsSpan(start, len));
 
         /// <inheritdoc/>
-        public void NextBytes(Span<byte> bytes) => RandomNumberGenerator.Fill(bytes);
+        public void NextBytes(Span<byte> bytes) => RND.FillBytes(bytes);
     }
 }

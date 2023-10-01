@@ -3,7 +3,7 @@
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// Base class for a BouncyCastle hash algorithm
+    /// Base class for a Bouncy Castle hash algorithm
     /// </summary>
     /// <typeparam name="T">Final type</typeparam>
     public abstract class BouncyCastleHashAlgorithmBase<T> : HashAlgorithmBase where T : BouncyCastleHashAlgorithmBase<T>, new()

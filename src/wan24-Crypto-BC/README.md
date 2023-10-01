@@ -45,6 +45,15 @@ wan24.Crypto.BC.Bootstrapper.Boot();
 
 This will register the algorithms to the `wan24-Crypto` library.
 
+To set Bouncy Castle defaults as `wan24-Crypto` defaults:
+
+```cs
+BouncyCastle.SetDefaults();
+```
+
+Per default the current `wan24-Crypto` default will be set as counter 
+algorithms to `HybridAlgorithmHelper`.
+
 ## Post quantum safety
 
 These algorithms are designed for post quantum cryptography:

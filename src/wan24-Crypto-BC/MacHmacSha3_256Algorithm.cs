@@ -37,7 +37,7 @@ namespace wan24.Crypto.BC
         public override int MacLength => MAC_LENGTH;
 
         /// <inheritdoc/>
-        public override bool IsPostQuantum => true;
+        public override bool IsPostQuantum => false;
 
         /// <inheritdoc/>
         public override string DisplayName => DISPLAY_NAME;

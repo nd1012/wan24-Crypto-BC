@@ -4,9 +4,9 @@ using System.Security.Cryptography;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// BouncyCastle hash algorithm
+    /// Bouncy Castle hash algorithm
     /// </summary>
-    internal sealed class BouncyCastleHashAlgorithm : HashAlgorithm
+    public sealed class BouncyCastleHashAlgorithm : HashAlgorithm
     {
         /// <summary>
         /// Digest
@@ -25,6 +25,7 @@ namespace wan24.Crypto.BC
         /// <inheritdoc/>
         protected override void HashCore(byte[] array, int ibStart, int cbSize) => Digest.BlockUpdate(array.AsSpan(ibStart, cbSize));
 
+        /// <inheritdoc/>
         protected override void HashCore(ReadOnlySpan<byte> source) => Digest.BlockUpdate(source);
 
         /// <inheritdoc/>
