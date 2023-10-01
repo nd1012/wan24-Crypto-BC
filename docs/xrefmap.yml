@@ -1316,6 +1316,28 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.Bootstrap.Boot
   nameWithType: Bootstrap.Boot
+- uid: wan24.Crypto.BC.BouncyCastle
+  name: BouncyCastle
+  href: api/wan24.Crypto.BC.BouncyCastle.html
+  commentId: T:wan24.Crypto.BC.BouncyCastle
+  fullName: wan24.Crypto.BC.BouncyCastle
+  nameWithType: BouncyCastle
+- uid: wan24.Crypto.BC.BouncyCastle.SetDefaults(System.Boolean@)
+  name: SetDefaults(in Boolean)
+  href: api/wan24.Crypto.BC.BouncyCastle.html#wan24_Crypto_BC_BouncyCastle_SetDefaults_System_Boolean__
+  commentId: M:wan24.Crypto.BC.BouncyCastle.SetDefaults(System.Boolean@)
+  name.vb: SetDefaults(ByRef Boolean)
+  fullName: wan24.Crypto.BC.BouncyCastle.SetDefaults(in System.Boolean)
+  fullName.vb: wan24.Crypto.BC.BouncyCastle.SetDefaults(ByRef System.Boolean)
+  nameWithType: BouncyCastle.SetDefaults(in Boolean)
+  nameWithType.vb: BouncyCastle.SetDefaults(ByRef Boolean)
+- uid: wan24.Crypto.BC.BouncyCastle.SetDefaults*
+  name: SetDefaults
+  href: api/wan24.Crypto.BC.BouncyCastle.html#wan24_Crypto_BC_BouncyCastle_SetDefaults_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastle.SetDefaults
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastle.SetDefaults
+  nameWithType: BouncyCastle.SetDefaults
 - uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1
   name: BouncyCastleAeadStreamCipherAlgorithmBase<T>
   href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html
@@ -1445,6 +1467,24 @@ references:
   fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetEncryptorAsync
   nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetEncryptorAsync
   nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetEncryptorAsync
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetValidLengthKey(System.Byte[],System.Int32)
+  name: GetValidLengthKey(Byte[], Int32)
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_GetValidLengthKey_System_Byte___System_Int32_
+  commentId: M:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetValidLengthKey(System.Byte[],System.Int32)
+  name.vb: GetValidLengthKey(Byte(), Int32)
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetValidLengthKey(System.Byte[], System.Int32)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetValidLengthKey(System.Byte(), System.Int32)
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetValidLengthKey(Byte[], Int32)
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetValidLengthKey(Byte(), Int32)
+- uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetValidLengthKey*
+  name: GetValidLengthKey
+  href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_GetValidLengthKey_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.GetValidLengthKey
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetValidLengthKey
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetValidLengthKey
+  nameWithType: BouncyCastleAeadStreamCipherAlgorithmBase<T>.GetValidLengthKey
+  nameWithType.vb: BouncyCastleAeadStreamCipherAlgorithmBase(Of T).GetValidLengthKey
 - uid: wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase`1.Instance
   name: Instance
   href: api/wan24.Crypto.BC.BouncyCastleAeadStreamCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleAeadStreamCipherAlgorithmBase_1_Instance
@@ -1847,6 +1887,14 @@ references:
   fullName.vb: wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyExchangeKeyBase(Of tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal).DeriveKey(System.Byte())
   nameWithType: BouncyCastleAsymmetricPrivateKeyExchangeKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal>.DeriveKey(Byte[])
   nameWithType.vb: BouncyCastleAsymmetricPrivateKeyExchangeKeyBase(Of tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal).DeriveKey(Byte())
+- uid: wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyExchangeKeyBase`7.DeriveKey(wan24.Crypto.IAsymmetricPublicKey)
+  name: DeriveKey(IAsymmetricPublicKey)
+  href: api/wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyExchangeKeyBase-7.html#wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyExchangeKeyBase_7_DeriveKey_wan24_Crypto_IAsymmetricPublicKey_
+  commentId: M:wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyExchangeKeyBase`7.DeriveKey(wan24.Crypto.IAsymmetricPublicKey)
+  fullName: wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyExchangeKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal>.DeriveKey(wan24.Crypto.IAsymmetricPublicKey)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyExchangeKeyBase(Of tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal).DeriveKey(wan24.Crypto.IAsymmetricPublicKey)
+  nameWithType: BouncyCastleAsymmetricPrivateKeyExchangeKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal>.DeriveKey(IAsymmetricPublicKey)
+  nameWithType.vb: BouncyCastleAsymmetricPrivateKeyExchangeKeyBase(Of tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal).DeriveKey(IAsymmetricPublicKey)
 - uid: wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyExchangeKeyBase`7.DeriveKey*
   name: DeriveKey
   href: api/wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyExchangeKeyBase-7.html#wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyExchangeKeyBase_7_DeriveKey_
@@ -2260,6 +2308,24 @@ references:
   fullName.vb: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase(Of T).GetEncryptorAsync
   nameWithType: BouncyCastleBlockCipherAlgorithmBase<T>.GetEncryptorAsync
   nameWithType.vb: BouncyCastleBlockCipherAlgorithmBase(Of T).GetEncryptorAsync
+- uid: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase`1.GetValidLengthKey(System.Byte[],System.Int32)
+  name: GetValidLengthKey(Byte[], Int32)
+  href: api/wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleBlockCipherAlgorithmBase_1_GetValidLengthKey_System_Byte___System_Int32_
+  commentId: M:wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase`1.GetValidLengthKey(System.Byte[],System.Int32)
+  name.vb: GetValidLengthKey(Byte(), Int32)
+  fullName: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase<T>.GetValidLengthKey(System.Byte[], System.Int32)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase(Of T).GetValidLengthKey(System.Byte(), System.Int32)
+  nameWithType: BouncyCastleBlockCipherAlgorithmBase<T>.GetValidLengthKey(Byte[], Int32)
+  nameWithType.vb: BouncyCastleBlockCipherAlgorithmBase(Of T).GetValidLengthKey(Byte(), Int32)
+- uid: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase`1.GetValidLengthKey*
+  name: GetValidLengthKey
+  href: api/wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleBlockCipherAlgorithmBase_1_GetValidLengthKey_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase`1.GetValidLengthKey
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase<T>.GetValidLengthKey
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase(Of T).GetValidLengthKey
+  nameWithType: BouncyCastleBlockCipherAlgorithmBase<T>.GetValidLengthKey
+  nameWithType.vb: BouncyCastleBlockCipherAlgorithmBase(Of T).GetValidLengthKey
 - uid: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase`1.Instance
   name: Instance
   href: api/wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleBlockCipherAlgorithmBase_1_Instance
@@ -2464,6 +2530,105 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.TransformFinalBlock
   nameWithType: BouncyCastleCryptoTransform.TransformFinalBlock
+- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm
+  name: BouncyCastleHashAlgorithm
+  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html
+  commentId: T:wan24.Crypto.BC.BouncyCastleHashAlgorithm
+  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm
+  nameWithType: BouncyCastleHashAlgorithm
+- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.#ctor(Org.BouncyCastle.Crypto.IDigest)
+  name: BouncyCastleHashAlgorithm(IDigest)
+  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm__ctor_Org_BouncyCastle_Crypto_IDigest_
+  commentId: M:wan24.Crypto.BC.BouncyCastleHashAlgorithm.#ctor(Org.BouncyCastle.Crypto.IDigest)
+  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.BouncyCastleHashAlgorithm(Org.BouncyCastle.Crypto.IDigest)
+  nameWithType: BouncyCastleHashAlgorithm.BouncyCastleHashAlgorithm(IDigest)
+- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.#ctor*
+  name: BouncyCastleHashAlgorithm
+  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm__ctor_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleHashAlgorithm.#ctor
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.BouncyCastleHashAlgorithm
+  nameWithType: BouncyCastleHashAlgorithm.BouncyCastleHashAlgorithm
+- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_Dispose_System_Boolean_
+  commentId: M:wan24.Crypto.BC.BouncyCastleHashAlgorithm.Dispose(System.Boolean)
+  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Dispose(System.Boolean)
+  nameWithType: BouncyCastleHashAlgorithm.Dispose(Boolean)
+- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Dispose*
+  name: Dispose
+  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_Dispose_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleHashAlgorithm.Dispose
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Dispose
+  nameWithType: BouncyCastleHashAlgorithm.Dispose
+- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(ReadOnlySpan{System.Byte})
+  name: HashCore(ReadOnlySpan<Byte>)
+  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_HashCore_ReadOnlySpan_System_Byte__
+  commentId: M:wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(ReadOnlySpan{System.Byte})
+  name.vb: HashCore(ReadOnlySpan(Of Byte))
+  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(ReadOnlySpan<System.Byte>)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(ReadOnlySpan(Of System.Byte))
+  nameWithType: BouncyCastleHashAlgorithm.HashCore(ReadOnlySpan<Byte>)
+  nameWithType.vb: BouncyCastleHashAlgorithm.HashCore(ReadOnlySpan(Of Byte))
+- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(System.Byte[],System.Int32,System.Int32)
+  name: HashCore(Byte[], Int32, Int32)
+  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_HashCore_System_Byte___System_Int32_System_Int32_
+  commentId: M:wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(System.Byte[],System.Int32,System.Int32)
+  name.vb: HashCore(Byte(), Int32, Int32)
+  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(System.Byte(), System.Int32, System.Int32)
+  nameWithType: BouncyCastleHashAlgorithm.HashCore(Byte[], Int32, Int32)
+  nameWithType.vb: BouncyCastleHashAlgorithm.HashCore(Byte(), Int32, Int32)
+- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore*
+  name: HashCore
+  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_HashCore_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore
+  nameWithType: BouncyCastleHashAlgorithm.HashCore
+- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashFinal
+  name: HashFinal()
+  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_HashFinal
+  commentId: M:wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashFinal
+  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashFinal()
+  nameWithType: BouncyCastleHashAlgorithm.HashFinal()
+- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashFinal*
+  name: HashFinal
+  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_HashFinal_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashFinal
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashFinal
+  nameWithType: BouncyCastleHashAlgorithm.HashFinal
+- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Initialize
+  name: Initialize()
+  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_Initialize
+  commentId: M:wan24.Crypto.BC.BouncyCastleHashAlgorithm.Initialize
+  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Initialize()
+  nameWithType: BouncyCastleHashAlgorithm.Initialize()
+- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Initialize*
+  name: Initialize
+  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_Initialize_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleHashAlgorithm.Initialize
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Initialize
+  nameWithType: BouncyCastleHashAlgorithm.Initialize
+- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.TryHashFinal(Span{System.Byte},System.Int32@)
+  name: TryHashFinal(Span<Byte>, out Int32)
+  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_TryHashFinal_Span_System_Byte__System_Int32__
+  commentId: M:wan24.Crypto.BC.BouncyCastleHashAlgorithm.TryHashFinal(Span{System.Byte},System.Int32@)
+  name.vb: TryHashFinal(Span(Of Byte), ByRef Int32)
+  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.TryHashFinal(Span<System.Byte>, out System.Int32)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleHashAlgorithm.TryHashFinal(Span(Of System.Byte), ByRef System.Int32)
+  nameWithType: BouncyCastleHashAlgorithm.TryHashFinal(Span<Byte>, out Int32)
+  nameWithType.vb: BouncyCastleHashAlgorithm.TryHashFinal(Span(Of Byte), ByRef Int32)
+- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.TryHashFinal*
+  name: TryHashFinal
+  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_TryHashFinal_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleHashAlgorithm.TryHashFinal
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.TryHashFinal
+  nameWithType: BouncyCastleHashAlgorithm.TryHashFinal
 - uid: wan24.Crypto.BC.BouncyCastleHashAlgorithmBase`1
   name: BouncyCastleHashAlgorithmBase<T>
   href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithmBase-1.html
@@ -2524,6 +2689,105 @@ references:
   fullName.vb: wan24.Crypto.BC.BouncyCastleHashAlgorithmBase(Of T).Register
   nameWithType: BouncyCastleHashAlgorithmBase<T>.Register
   nameWithType.vb: BouncyCastleHashAlgorithmBase(Of T).Register
+- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm
+  name: BouncyCastleHmacAlgorithm
+  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html
+  commentId: T:wan24.Crypto.BC.BouncyCastleHmacAlgorithm
+  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm
+  nameWithType: BouncyCastleHmacAlgorithm
+- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.#ctor(Org.BouncyCastle.Crypto.IMac)
+  name: BouncyCastleHmacAlgorithm(IMac)
+  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm__ctor_Org_BouncyCastle_Crypto_IMac_
+  commentId: M:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.#ctor(Org.BouncyCastle.Crypto.IMac)
+  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.BouncyCastleHmacAlgorithm(Org.BouncyCastle.Crypto.IMac)
+  nameWithType: BouncyCastleHmacAlgorithm.BouncyCastleHmacAlgorithm(IMac)
+- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.#ctor*
+  name: BouncyCastleHmacAlgorithm
+  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm__ctor_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.#ctor
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.BouncyCastleHmacAlgorithm
+  nameWithType: BouncyCastleHmacAlgorithm.BouncyCastleHmacAlgorithm
+- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_Dispose_System_Boolean_
+  commentId: M:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Dispose(System.Boolean)
+  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Dispose(System.Boolean)
+  nameWithType: BouncyCastleHmacAlgorithm.Dispose(Boolean)
+- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Dispose*
+  name: Dispose
+  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_Dispose_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Dispose
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Dispose
+  nameWithType: BouncyCastleHmacAlgorithm.Dispose
+- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(ReadOnlySpan{System.Byte})
+  name: HashCore(ReadOnlySpan<Byte>)
+  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_HashCore_ReadOnlySpan_System_Byte__
+  commentId: M:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(ReadOnlySpan{System.Byte})
+  name.vb: HashCore(ReadOnlySpan(Of Byte))
+  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(ReadOnlySpan<System.Byte>)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(ReadOnlySpan(Of System.Byte))
+  nameWithType: BouncyCastleHmacAlgorithm.HashCore(ReadOnlySpan<Byte>)
+  nameWithType.vb: BouncyCastleHmacAlgorithm.HashCore(ReadOnlySpan(Of Byte))
+- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(System.Byte[],System.Int32,System.Int32)
+  name: HashCore(Byte[], Int32, Int32)
+  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_HashCore_System_Byte___System_Int32_System_Int32_
+  commentId: M:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(System.Byte[],System.Int32,System.Int32)
+  name.vb: HashCore(Byte(), Int32, Int32)
+  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(System.Byte[], System.Int32, System.Int32)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(System.Byte(), System.Int32, System.Int32)
+  nameWithType: BouncyCastleHmacAlgorithm.HashCore(Byte[], Int32, Int32)
+  nameWithType.vb: BouncyCastleHmacAlgorithm.HashCore(Byte(), Int32, Int32)
+- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore*
+  name: HashCore
+  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_HashCore_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore
+  nameWithType: BouncyCastleHmacAlgorithm.HashCore
+- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashFinal
+  name: HashFinal()
+  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_HashFinal
+  commentId: M:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashFinal
+  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashFinal()
+  nameWithType: BouncyCastleHmacAlgorithm.HashFinal()
+- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashFinal*
+  name: HashFinal
+  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_HashFinal_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashFinal
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashFinal
+  nameWithType: BouncyCastleHmacAlgorithm.HashFinal
+- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Initialize
+  name: Initialize()
+  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_Initialize
+  commentId: M:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Initialize
+  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Initialize()
+  nameWithType: BouncyCastleHmacAlgorithm.Initialize()
+- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Initialize*
+  name: Initialize
+  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_Initialize_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Initialize
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Initialize
+  nameWithType: BouncyCastleHmacAlgorithm.Initialize
+- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.TryHashFinal(Span{System.Byte},System.Int32@)
+  name: TryHashFinal(Span<Byte>, out Int32)
+  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_TryHashFinal_Span_System_Byte__System_Int32__
+  commentId: M:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.TryHashFinal(Span{System.Byte},System.Int32@)
+  name.vb: TryHashFinal(Span(Of Byte), ByRef Int32)
+  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.TryHashFinal(Span<System.Byte>, out System.Int32)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.TryHashFinal(Span(Of System.Byte), ByRef System.Int32)
+  nameWithType: BouncyCastleHmacAlgorithm.TryHashFinal(Span<Byte>, out Int32)
+  nameWithType.vb: BouncyCastleHmacAlgorithm.TryHashFinal(Span(Of Byte), ByRef Int32)
+- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.TryHashFinal*
+  name: TryHashFinal
+  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_TryHashFinal_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.TryHashFinal
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.TryHashFinal
+  nameWithType: BouncyCastleHmacAlgorithm.TryHashFinal
 - uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithmBase`1
   name: BouncyCastleHmacAlgorithmBase<T>
   href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithmBase-1.html

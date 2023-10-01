@@ -178,6 +178,11 @@ initialize the Bouncy Castle extension first, before you can use it:</p>
 <pre><code class="lang-cs">wan24.Crypto.BC.Bootstrapper.Boot();
 </code></pre>
 <p>This will register the algorithms to the <code>wan24-Crypto</code> library.</p>
+<p>To set Bouncy Castle defaults as <code>wan24-Crypto</code> defaults:</p>
+<pre><code class="lang-cs">BouncyCastle.SetDefaults();
+</code></pre>
+<p>Per default the current <code>wan24-Crypto</code> default will be set as counter
+algorithms to <code>HybridAlgorithmHelper</code>.</p>
 <h2 id="post-quantum-safety">Post quantum safety</h2>
 <p>These algorithms are designed for post quantum cryptography:</p>
 <ul>
