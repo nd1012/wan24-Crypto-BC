@@ -26,8 +26,10 @@ namespace wan24.Crypto.BC
             MacHelper.DefaultAlgorithm = MacHmacSha3_512Algorithm.Instance;
             Pake.DefaultOptions = Pake.DefaultOptions
                 .WithMac(MacHmacSha3_512Algorithm.Instance.Name, included: false);
-            Pake.DefaultCryptoOptions = Pake.DefaultCryptoOptions
+            CryptoOptions pakeCryptoOptions = Pake.DefaultCryptoOptions
                 .WithEncryptionAlgorithm(EncryptionAes256GcmAlgorithm.Instance.Name);
+            if (pakeCryptoOptions.MacAlgorithm is not null) pakeCryptoOptions.WithMac(MacHmacSha3_512Algorithm.Instance.Name);
+            Pake.DefaultCryptoOptions = pakeCryptoOptions;
         }
     }
 }
