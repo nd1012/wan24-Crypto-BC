@@ -79,66 +79,15 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">wan24.Core.DisposableBase</span></div>
-    <div class="level2"><span class="xref">BouncyCastleCryptoTransform</span></div>
+    <div class="level1"><span class="xref">BouncyCastleCryptoTransform</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><span class="xref">wan24.Core.IDisposableObject</span></div>
-    <div><span class="xref">System.IAsyncDisposable</span></div>
     <div><span class="xref">System.Security.Cryptography.ICryptoTransform</span></div>
     <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.DisposeSyncObject</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.AsyncDisposing</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.EnsureUndisposed(System.Boolean, System.Boolean)</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.IfUndisposed&lt;T&gt;(T, System.Boolean)</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.IfUndisposed(System.Action, System.Boolean)</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.IfUndisposed&lt;T&gt;(System.Func&lt;T&gt;, System.Boolean)</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.IfUndisposedNullable&lt;T&gt;(System.Func&lt;T&gt;, System.Boolean)</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.DisposeCore()</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.DisposeAttributes()</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.DisposeAttributesAsync()</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.DisposeAsync()</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.IsDisposing</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.IsDisposed</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.OnDisposing</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Core.DisposableBase.OnDisposed</span>
-    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
@@ -165,7 +114,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_BouncyCastleCryptoTransform_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class BouncyCastleCryptoTransform : DisposableBase, IDisposableObject, IAsyncDisposable, ICryptoTransform, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class BouncyCastleCryptoTransform : ICryptoTransform, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -174,7 +123,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_IBlockCipher_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.%23ctor(Org.BouncyCastle.Crypto.IBlockCipher)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L42">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L37">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor*"></a>
   <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_IBlockCipher_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor(Org.BouncyCastle.Crypto.IBlockCipher)">BouncyCastleCryptoTransform(IBlockCipher)</h4>
@@ -205,10 +154,44 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_IBufferedCipher_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.%23ctor(Org.BouncyCastle.Crypto.IBufferedCipher)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L59">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_IBufferedCipher_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor(Org.BouncyCastle.Crypto.IBufferedCipher)">BouncyCastleCryptoTransform(IBufferedCipher)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BouncyCastleCryptoTransform(IBufferedCipher cipher)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Org.BouncyCastle.Crypto.IBufferedCipher</span></td>
+        <td><span class="parametername">cipher</span></td>
+        <td><p>Cipher</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_IDigest_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.%23ctor(Org.BouncyCastle.Crypto.IDigest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L77">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L70">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor*"></a>
   <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_IDigest_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor(Org.BouncyCastle.Crypto.IDigest)">BouncyCastleCryptoTransform(IDigest)</h4>
@@ -242,7 +225,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_IMac_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.%23ctor(Org.BouncyCastle.Crypto.IMac)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L90">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L82">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor*"></a>
   <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_IMac_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor(Org.BouncyCastle.Crypto.IMac)">BouncyCastleCryptoTransform(IMac)</h4>
@@ -276,7 +259,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_IStreamCipher_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.%23ctor(Org.BouncyCastle.Crypto.IStreamCipher)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L53">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L48">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor*"></a>
   <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_IStreamCipher_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor(Org.BouncyCastle.Crypto.IStreamCipher)">BouncyCastleCryptoTransform(IStreamCipher)</h4>
@@ -305,78 +288,14 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_Modes_IAeadBlockCipher_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.%23ctor(Org.BouncyCastle.Crypto.Modes.IAeadBlockCipher)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L65">View Source</a>
-  </span>
-  <a id="wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform__ctor_Org_BouncyCastle_Crypto_Modes_IAeadBlockCipher_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.#ctor(Org.BouncyCastle.Crypto.Modes.IAeadBlockCipher)">BouncyCastleCryptoTransform(IAeadBlockCipher)</h4>
-  <div class="markdown level1 summary"><p>Constructor</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BouncyCastleCryptoTransform(IAeadBlockCipher cipher)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Org.BouncyCastle.Crypto.Modes.IAeadBlockCipher</span></td>
-        <td><span class="parametername">cipher</span></td>
-        <td><p>Cipher</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="fields">Fields
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform_AeadStreamCipher.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.AeadStreamCipher%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L28">View Source</a>
-  </span>
-  <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform_AeadStreamCipher" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.AeadStreamCipher">AeadStreamCipher</h4>
-  <div class="markdown level1 summary"><p>AEAD Stream cipher</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly IAeadBlockCipher AeadStreamCipher</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Org.BouncyCastle.Crypto.Modes.IAeadBlockCipher</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform_BlockCipher.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.BlockCipher%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L20">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L15">View Source</a>
   </span>
   <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform_BlockCipher" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.BlockCipher">BlockCipher</h4>
   <div class="markdown level1 summary"><p>Block cipher</p>
@@ -403,10 +322,40 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform_BufferedCipher.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.BufferedCipher%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L23">View Source</a>
+  </span>
+  <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform_BufferedCipher" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.BufferedCipher">BufferedCipher</h4>
+  <div class="markdown level1 summary"><p>Stream cipher</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly IBufferedCipher BufferedCipher</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Org.BouncyCastle.Crypto.IBufferedCipher</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform_Digest.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.Digest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L32">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L27">View Source</a>
   </span>
   <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform_Digest" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.Digest">Digest</h4>
   <div class="markdown level1 summary"><p>Digest</p>
@@ -436,7 +385,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform_Mac.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.Mac%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L36">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L31">View Source</a>
   </span>
   <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform_Mac" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.Mac">Mac</h4>
   <div class="markdown level1 summary"><p>MAC</p>
@@ -466,7 +415,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform_StreamCipher.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.StreamCipher%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L24">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L19">View Source</a>
   </span>
   <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform_StreamCipher" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.StreamCipher">StreamCipher</h4>
   <div class="markdown level1 summary"><p>Stream cipher</p>
@@ -498,7 +447,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform_CanReuseTransform.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.CanReuseTransform%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L99">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L90">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_BouncyCastleCryptoTransform_CanReuseTransform_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.CanReuseTransform*"></a>
   <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform_CanReuseTransform" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.CanReuseTransform">CanReuseTransform</h4>
@@ -528,7 +477,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform_CanTransformMultipleBlocks.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.CanTransformMultipleBlocks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L102">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L93">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_BouncyCastleCryptoTransform_CanTransformMultipleBlocks_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.CanTransformMultipleBlocks*"></a>
   <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform_CanTransformMultipleBlocks" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.CanTransformMultipleBlocks">CanTransformMultipleBlocks</h4>
@@ -558,7 +507,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform_InputBlockSize.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.InputBlockSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L105">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L96">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_BouncyCastleCryptoTransform_InputBlockSize_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.InputBlockSize*"></a>
   <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform_InputBlockSize" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.InputBlockSize">InputBlockSize</h4>
@@ -588,7 +537,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform_OutputBlockSize.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.OutputBlockSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L108">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L99">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_BouncyCastleCryptoTransform_OutputBlockSize_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.OutputBlockSize*"></a>
   <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform_OutputBlockSize" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.OutputBlockSize">OutputBlockSize</h4>
@@ -617,44 +566,25 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform_Dispose.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L191">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L175">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_BouncyCastleCryptoTransform_Dispose_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.Dispose*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform_Dispose_System_Boolean_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform_Dispose" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.Dispose">Dispose()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">disposing</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">wan24.Core.DisposableBase.Dispose(System.Boolean)</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform_TransformBlock_System_Byte___System_Int32_System_Int32_System_Byte___System_Int32_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.TransformBlock(System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Byte%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L111">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L102">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_BouncyCastleCryptoTransform_TransformBlock_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.TransformBlock*"></a>
   <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform_TransformBlock_System_Byte___System_Int32_System_Int32_System_Byte___System_Int32_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)">TransformBlock(Byte[], Int32, Int32, Byte[], Int32)</h4>
@@ -721,7 +651,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform_TransformFinalBlock_System_Byte___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform.TransformFinalBlock(System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L139">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L127">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_BouncyCastleCryptoTransform_TransformFinalBlock_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.TransformFinalBlock*"></a>
   <h4 id="wan24_Crypto_BC_BouncyCastleCryptoTransform_TransformFinalBlock_System_Byte___System_Int32_System_Int32_" data-uid="wan24.Crypto.BC.BouncyCastleCryptoTransform.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)">TransformFinalBlock(Byte[], Int32, Int32)</h4>
@@ -775,12 +705,6 @@
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">wan24.Core.IDisposableObject</span>
-  </div>
-  <div>
-      <span class="xref">System.IAsyncDisposable</span>
-  </div>
-  <div>
       <span class="xref">System.Security.Cryptography.ICryptoTransform</span>
   </div>
   <div>
@@ -797,7 +721,7 @@
                     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleCryptoTransform.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleCryptoTransform%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleCryptoTransform.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -126,6 +126,26 @@ the <code>wan24-Crypto</code> library with these algorithms:</p>
 <td>AES256GCM</td>
 </tr>
 <tr>
+<td>Serpent 256 CBC (ISO10126 padding)</td>
+<td>5</td>
+<td>SERPENT256CBC</td>
+</tr>
+<tr>
+<td>Serpent 256 GCM AEAD (128 bit MAC)</td>
+<td>6</td>
+<td>SERPENT256GCM</td>
+</tr>
+<tr>
+<td>Twofish 256 CBC (ISO10126 padding)</td>
+<td>7</td>
+<td>TWOFISH256CBC</td>
+</tr>
+<tr>
+<td>Twofish 256 GCM AEAD (128 bit MAC)</td>
+<td>8</td>
+<td>TWOFISH256GCM</td>
+</tr>
+<tr>
 <td><strong>Hashing</strong></td>
 <td></td>
 <td></td>
@@ -183,6 +203,25 @@ initialize the Bouncy Castle extension first, before you can use it:</p>
 </code></pre>
 <p>Per default the current <code>wan24-Crypto</code> default will be set as counter
 algorithms to <code>HybridAlgorithmHelper</code>.</p>
+<p>Some algorithms of the <code>wan24-Crypto</code> library are not available on some
+platforms, that's why they need to be replaced in order to be used:</p>
+<table>
+<thead>
+<tr>
+<th><code>wan24-Crypto</code></th>
+<th><code>wan24-Crypto-BC</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EncryptionAes256CbcAlgorithm</code></td>
+<td><code>EncryptionBcAes256CbcAlgorithm</code></td>
+</tr>
+</tbody>
+</table>
+<p>To replace all of them:</p>
+<pre><code class="lang-cs">BouncyCastle.ReplaceNetAlgorithms();
+</code></pre>
 <h2 id="post-quantum-safety">Post quantum safety</h2>
 <p>These algorithms are designed for post quantum cryptography:</p>
 <ul>
