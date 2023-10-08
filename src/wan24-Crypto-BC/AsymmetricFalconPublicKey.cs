@@ -5,7 +5,7 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// Asymmetric FALCON public key
     /// </summary>
-    public sealed class AsymmetricFalconPublicKey : BouncyCastleAsymmetricPublicSignatureKeyBase<AsymmetricFalconAlgorithm, FalconPublicKeyParameters, FalconSigner, AsymmetricFalconPublicKey>
+    public sealed record class AsymmetricFalconPublicKey : BouncyCastleAsymmetricPublicSignatureKeyBase<AsymmetricFalconAlgorithm, FalconPublicKeyParameters, FalconSigner, AsymmetricFalconPublicKey>
     {
         /// <summary>
         /// Constructor

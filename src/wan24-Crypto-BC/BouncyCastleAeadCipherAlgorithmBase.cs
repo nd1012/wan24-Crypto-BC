@@ -6,34 +6,32 @@ using wan24.Core;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// Base class for a Bouncy Castle stream cipher
+    /// Base class for a Bouncy Castle AEAD stream cipher
     /// </summary>
     /// <typeparam name="T">Final type</typeparam>
-    public abstract record class BouncyCastleStreamCipherAlgorithmBase<T> : EncryptionAlgorithmBase where T : BouncyCastleStreamCipherAlgorithmBase<T>, new()
+    public abstract record class BouncyCastleAeadCipherAlgorithmBase<T> : BouncyCastleCipherAlgorithmBase<T> where T : BouncyCastleAeadCipherAlgorithmBase<T>, new()
     {
-        /// <summary>
-        /// Static constructor
-        /// </summary>
-        static BouncyCastleStreamCipherAlgorithmBase() => Instance = new();
-
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="name">Algorithm name</param>
         /// <param name="value">Agorithm value</param>
-        protected BouncyCastleStreamCipherAlgorithmBase(string name, int value) : base(name, value) { }
+        protected BouncyCastleAeadCipherAlgorithmBase(string name, int value) : base(name, value) { }
 
         /// <summary>
-        /// Instance
+        /// Create the cipher engine
         /// </summary>
-        public static T Instance { get; }
+        /// <param name="forEncryption">For encryption?</param>
+        /// <param name="options">Options</param>
+        /// <returns>Stream cipher</returns>
+        protected abstract IBufferedCipher CreateCipher(bool forEncryption, CryptoOptions options);
 
         /// <inheritdoc/>
         protected sealed override ICryptoTransform GetEncryptor(Stream cipherData, CryptoOptions options)
         {
             try
             {
-                IStreamCipher cipher = CreateCipher(forEncryption: true, options);
+                IBufferedCipher cipher = CreateCipher(forEncryption: true, options);
                 byte[] iv = CreateIvBytes();
                 cipher.Init(forEncryption: true, CreateParameters(iv, options));
                 cipherData.Write(iv);
@@ -54,7 +52,7 @@ namespace wan24.Crypto.BC
         {
             try
             {
-                IStreamCipher cipher = CreateCipher(forEncryption: true, options);
+                IBufferedCipher cipher = CreateCipher(forEncryption: true, options);
                 byte[] iv = CreateIvBytes();
                 cipher.Init(forEncryption: true, CreateParameters(iv, options));
                 await cipherData.WriteAsync(iv, cancellationToken).DynamicContext();
@@ -76,7 +74,7 @@ namespace wan24.Crypto.BC
             try
             {
                 byte[] iv = ReadFixedIvBytes(cipherData, options);
-                IStreamCipher cipher = CreateCipher(forEncryption: false, options);
+                IBufferedCipher cipher = CreateCipher(forEncryption: false, options);
                 cipher.Init(forEncryption: false, CreateParameters(iv, options));
                 return new BouncyCastleCryptoTransform(cipher);
             }
@@ -96,7 +94,7 @@ namespace wan24.Crypto.BC
             try
             {
                 byte[] iv = await ReadFixedIvBytesAsync(cipherData, options, cancellationToken).DynamicContext();
-                IStreamCipher cipher = CreateCipher(forEncryption: false, options);
+                IBufferedCipher cipher = CreateCipher(forEncryption: false, options);
                 cipher.Init(forEncryption: false, CreateParameters(iv, options));
                 return new BouncyCastleCryptoTransform(cipher);
             }
@@ -110,26 +108,24 @@ namespace wan24.Crypto.BC
             }
         }
 
-        /// <summary>
-        /// Create the cipher engine
-        /// </summary>
-        /// <param name="forEncryption">For encryption?</param>
-        /// <param name="options">Options</param>
-        /// <returns>Stream cipher</returns>
-        protected abstract IStreamCipher CreateCipher(bool forEncryption, CryptoOptions options);
-
-        /// <summary>
-        /// Create cipher parameters
-        /// </summary>
-        /// <param name="iv">IV bytes</param>
-        /// <param name="options">Options</param>
-        /// <returns>Parameters</returns>
-        protected virtual ICipherParameters CreateParameters(byte[] iv, CryptoOptions options)
-            => new ParametersWithIV(new KeyParameter(options.Password ?? throw new ArgumentException("Missing password", nameof(options))), iv);
-
-        /// <summary>
-        /// Register the algorithm to the <see cref="CryptoConfig"/>
-        /// </summary>
-        public static void Register() => CryptoConfig.AddAlgorithm(typeof(T), Instance.Name);
+        /// <inheritdoc/>
+        protected sealed override ICipherParameters CreateParameters(byte[] iv, CryptoOptions options)
+        {
+            byte[] pwd = options.Password?.CloneArray() ?? throw new ArgumentException("Missing password", nameof(options));
+            try
+            {
+                if (!IsKeyLengthValid(pwd.Length))
+                {
+                    byte[] temp = EnsureValidKeyLength(pwd);
+                    pwd.Clear();
+                    pwd = temp;
+                }
+                return new AeadParameters(new KeyParameter(pwd), macSize: 128, iv);
+            }
+            finally
+            {
+                pwd.Clear();
+            }
+        }
     }
 }

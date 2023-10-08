@@ -6,7 +6,7 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// FALCON asymmetric algorithm
     /// </summary>
-    public sealed class AsymmetricFalconAlgorithm
+    public sealed record class AsymmetricFalconAlgorithm
         : BouncyCastleAsymmetricAlgorithmBase<
             AsymmetricFalconPublicKey, 
             AsymmetricFalconPrivateKey, 

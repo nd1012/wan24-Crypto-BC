@@ -6,7 +6,7 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// CRYSTALS-Kyber asymmetric algorithm
     /// </summary>
-    public sealed class AsymmetricKyberAlgorithm
+    public sealed record class AsymmetricKyberAlgorithm
         : BouncyCastleAsymmetricAlgorithmBase<
             AsymmetricKyberPublicKey, 
             AsymmetricKyberPrivateKey, 

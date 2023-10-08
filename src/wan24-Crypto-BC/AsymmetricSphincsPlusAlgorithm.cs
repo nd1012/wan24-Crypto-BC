@@ -6,7 +6,7 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// SPHINCS+ asymmetric algorithm
     /// </summary>
-    public sealed class AsymmetricSphincsPlusAlgorithm
+    public sealed record class AsymmetricSphincsPlusAlgorithm
         : BouncyCastleAsymmetricAlgorithmBase<
             AsymmetricSphincsPlusPublicKey, 
             AsymmetricSphincsPlusPrivateKey, 

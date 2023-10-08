@@ -6,7 +6,7 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// FrodoKEM asymmetric algorithm
     /// </summary>
-    public sealed class AsymmetricFrodoKemAlgorithm
+    public sealed record class AsymmetricFrodoKemAlgorithm
         : BouncyCastleAsymmetricAlgorithmBase<
             AsymmetricFrodoKemPublicKey,
             AsymmetricFrodoKemPrivateKey,

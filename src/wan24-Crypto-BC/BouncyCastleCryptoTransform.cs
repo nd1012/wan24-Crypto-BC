@@ -1,5 +1,4 @@
 ﻿using Org.BouncyCastle.Crypto;
-using Org.BouncyCastle.Crypto.Modes;
 using System.Security.Cryptography;
 using wan24.Core;
 
@@ -8,12 +7,8 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// Bouncy Castle crypto transform
     /// </summary>
-    public sealed class BouncyCastleCryptoTransform : DisposableBase, ICryptoTransform
+    public sealed class BouncyCastleCryptoTransform : ICryptoTransform
     {
-        /// <summary>
-        /// Has the final block been transformed?
-        /// </summary>
-        private bool FinalBlockTransformed = false;
         /// <summary>
         /// Block cipher
         /// </summary>
@@ -23,9 +18,9 @@ namespace wan24.Crypto.BC
         /// </summary>
         public readonly IStreamCipher? StreamCipher = null;
         /// <summary>
-        /// AEAD Stream cipher
+        /// Stream cipher
         /// </summary>
-        public readonly IAeadBlockCipher? AeadStreamCipher = null;
+        public readonly IBufferedCipher? BufferedCipher = null;
         /// <summary>
         /// Digest
         /// </summary>
@@ -39,7 +34,7 @@ namespace wan24.Crypto.BC
         /// Constructor
         /// </summary>
         /// <param name="cipher">Cipher</param>
-        public BouncyCastleCryptoTransform(IBlockCipher cipher) : base()
+        public BouncyCastleCryptoTransform(IBlockCipher cipher)
         {
             BlockCipher = cipher;
             OutputBlockSize = InputBlockSize = cipher.GetBlockSize();
@@ -50,56 +45,52 @@ namespace wan24.Crypto.BC
         /// Constructor
         /// </summary>
         /// <param name="cipher">Cipher</param>
-        public BouncyCastleCryptoTransform(IStreamCipher cipher) : base()
+        public BouncyCastleCryptoTransform(IStreamCipher cipher)
         {
             StreamCipher = cipher;
             OutputBlockSize = InputBlockSize = 1;
             CanTransformMultipleBlocks = true;
-            CanReuseTransform = true;
         }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="cipher">Cipher</param>
-        public BouncyCastleCryptoTransform(IAeadBlockCipher cipher) : base()
+        public BouncyCastleCryptoTransform(IBufferedCipher cipher)
         {
-            AeadStreamCipher = cipher;
-            OutputBlockSize = InputBlockSize = 1;
+            BufferedCipher = cipher;
+            OutputBlockSize = InputBlockSize = cipher.GetBlockSize();
             CanTransformMultipleBlocks = true;
-            CanReuseTransform = true;
         }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="digest">Digest</param>
-        public BouncyCastleCryptoTransform(IDigest digest) : base()
+        public BouncyCastleCryptoTransform(IDigest digest)
         {
             Digest = digest;
             InputBlockSize = digest.GetByteLength();
             OutputBlockSize = digest.GetDigestSize();
             CanTransformMultipleBlocks = false;
-            CanReuseTransform = true;
         }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="mac">MAC</param>
-        public BouncyCastleCryptoTransform(IMac mac) : base()
+        public BouncyCastleCryptoTransform(IMac mac)
         {
             Mac = mac;
             OutputBlockSize = InputBlockSize = mac.GetMacSize();
             CanTransformMultipleBlocks = false;
-            CanReuseTransform = true;
         }
 
         /// <inheritdoc/>
-        public bool CanReuseTransform { get; }
+        public bool CanReuseTransform => false;
 
         /// <inheritdoc/>
-        public bool CanTransformMultipleBlocks { get; }
+        public bool CanTransformMultipleBlocks { get; }//TODO Determine how to transform multiple blocks
 
         /// <inheritdoc/>
         public int InputBlockSize { get; }
@@ -110,26 +101,23 @@ namespace wan24.Crypto.BC
         /// <inheritdoc/>
         public int TransformBlock(byte[] inputBuffer, int inputOffset, int inputCount, byte[] outputBuffer, int outputOffset)
         {
-            EnsureUndisposed();
-            if (StreamCipher != null)
+            if (StreamCipher is not null)
             {
                 StreamCipher.ProcessBytes(inputBuffer.AsSpan(inputOffset, inputCount), outputBuffer.AsSpan(outputOffset));
                 return inputCount;
             }
-            if (AeadStreamCipher != null)
-            {
-                AeadStreamCipher.ProcessBytes(inputBuffer.AsSpan(inputOffset, inputCount), outputBuffer.AsSpan(outputOffset));
-                return inputCount;
-            }
-            if (BlockCipher != null) return BlockCipher.ProcessBlock(inputBuffer.AsSpan(inputOffset, inputCount), outputBuffer.AsSpan(outputOffset));
-            if (Digest != null)
+            if (BlockCipher is not null) return BlockCipher.ProcessBlock(inputBuffer.AsSpan(inputOffset, inputCount), outputBuffer.AsSpan(outputOffset));
+            if (BufferedCipher is not null) return BufferedCipher.ProcessBytes(inputBuffer.AsSpan(inputOffset, inputCount), outputBuffer.AsSpan(outputOffset));
+            if (Digest is not null)
             {
                 Digest.BlockUpdate(inputBuffer.AsSpan(inputOffset, inputCount));
+                inputBuffer.AsSpan(inputOffset, inputCount).CopyTo(outputBuffer.AsSpan(outputOffset));
                 return inputCount;
             }
-            if (Mac != null)
+            if (Mac is not null)
             {
                 Mac.BlockUpdate(inputBuffer.AsSpan(inputOffset, inputCount));
+                inputBuffer.AsSpan(inputOffset, inputCount).CopyTo(outputBuffer.AsSpan(outputOffset));
                 return inputCount;
             }
             throw new InvalidProgramException();
@@ -138,59 +126,52 @@ namespace wan24.Crypto.BC
         /// <inheritdoc/>
         public byte[] TransformFinalBlock(byte[] inputBuffer, int inputOffset, int inputCount)
         {
-            EnsureUndisposed(allowDisposing: true);
-            if (FinalBlockTransformed) throw new InvalidOperationException();
-            if (StreamCipher != null)
+            try
             {
-                if (inputCount == 0) return Array.Empty<byte>();
-                using RentedArray<byte> outputBuffer = new(inputCount);
-                int used = TransformBlock(inputBuffer, inputOffset, inputCount, outputBuffer, 0);
-                byte[] res = used == 0 ? Array.Empty<byte>() : outputBuffer.Span[..used].ToArray();
-                StreamCipher.Reset();
-                return res;
+                if (StreamCipher is not null)
+                {
+                    if (inputCount == 0) return Array.Empty<byte>();
+                    using RentedArrayRefStruct<byte> outputBuffer = new(inputCount, clean: false)
+                    {
+                        Clear = true
+                    };
+                    int used = TransformBlock(inputBuffer, inputOffset, inputCount, outputBuffer.Array, 0);
+                    return used == 0 ? Array.Empty<byte>() : outputBuffer.Span[..used].ToArray();
+                }
+                if (BlockCipher is not null)
+                {
+                    if (inputCount == 0) return Array.Empty<byte>();
+                    using RentedArrayRefStruct<byte> outputBuffer = new(Math.Max(inputCount, OutputBlockSize), clean: false)
+                    {
+                        Clear = true
+                    };
+                    int used = TransformBlock(inputBuffer, inputOffset, inputCount, outputBuffer.Array, 0);
+                    return used == 0 ? Array.Empty<byte>() : outputBuffer.Span[..used].ToArray();
+                }
+                if (BufferedCipher is not null) return BufferedCipher.DoFinal(inputBuffer, inputOffset, inputCount);
+                if (Digest is not null)
+                {
+                    TransformBlock(inputBuffer, inputOffset, inputCount, Array.Empty<byte>(), 0);
+                    byte[] res = new byte[OutputBlockSize];
+                    Digest.DoFinal(res);
+                    return res;
+                }
+                if (Mac is not null)
+                {
+                    TransformBlock(inputBuffer, inputOffset, inputCount, Array.Empty<byte>(), 0);
+                    byte[] res = new byte[OutputBlockSize];
+                    Mac.DoFinal(res);
+                    return res;
+                }
             }
-            if (AeadStreamCipher != null)
+            finally
             {
-                if (inputCount == 0) return Array.Empty<byte>();
-                using RentedArray<byte> outputBuffer = new(inputCount);
-                int used = TransformBlock(inputBuffer, inputOffset, inputCount, outputBuffer, 0);
-                byte[] res = used == 0 ? Array.Empty<byte>() : outputBuffer.Span[..used].ToArray();
-                AeadStreamCipher.Reset();
-                return res;
-            }
-            if (BlockCipher != null)
-            {
-                if (inputCount == 0) return Array.Empty<byte>();
-                using RentedArray<byte> outputBuffer = new(OutputBlockSize);
-                int used = TransformBlock(inputBuffer, inputOffset, inputCount, outputBuffer, 0);
-                byte[] res = used == 0 ? Array.Empty<byte>() : outputBuffer.Span[..used].ToArray();
-                FinalBlockTransformed = true;
                 Dispose();
-                return res;
-            }
-            if (Digest != null)
-            {
-                TransformBlock(inputBuffer, inputOffset, inputCount, Array.Empty<byte>(), 0);
-                byte[] res = new byte[OutputBlockSize];
-                Digest.DoFinal(res);
-                Digest.Reset();
-                return res;
-            }
-            if (Mac != null)
-            {
-                TransformBlock(inputBuffer, inputOffset, inputCount, Array.Empty<byte>(), 0);
-                byte[] res = new byte[OutputBlockSize];
-                Mac.DoFinal(res);
-                Mac.Reset();
-                return res;
             }
             throw new InvalidProgramException();
         }
 
         /// <inheritdoc/>
-        protected override void Dispose(bool disposing)
-        {
-            if (!FinalBlockTransformed) TransformFinalBlock(Array.Empty<byte>(), 0, 0);
-        }
+        public void Dispose() { }
     }
 }

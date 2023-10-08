@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using wan24.Core;
+using wan24.Crypto.BC;
 using wan24.ObjectValidation;
 
 namespace wan24_Crypto_BC_Tests
@@ -13,7 +14,8 @@ namespace wan24_Crypto_BC_Tests
             Logging.Logger = LoggerFactory.Create(b => b.AddConsole()).CreateLogger("Tests");
             ValidateObject.Logger = (message) => Logging.WriteDebug(message);
             TypeHelper.Instance.AddAssemblies(typeof(wan24.Crypto.BC.Bootstrap).Assembly);
-            Bootstrap.Async().Wait();
+            wan24.Core.Bootstrap.Async().Wait();
+            BouncyCastle.ReplaceNetAlgorithms();
             Logging.WriteDebug("wan24-Crypto-BC Tests initialized");
         }
     }

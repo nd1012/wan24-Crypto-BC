@@ -6,7 +6,7 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// SHA3-384 hash algorithm
     /// </summary>
-    public sealed class HashSha3_384Algorithm : BouncyCastleHashAlgorithmBase<HashSha3_384Algorithm>
+    public sealed record class HashSha3_384Algorithm : BouncyCastleHashAlgorithmBase<HashSha3_384Algorithm>
     {
         /// <summary>
         /// Algorithm name

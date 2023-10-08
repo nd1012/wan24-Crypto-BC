@@ -10,7 +10,7 @@ namespace wan24.Crypto.BC
     /// <typeparam name="tPublicKey">Internal public key type</typeparam>
     /// <typeparam name="tSigner">Signer type</typeparam>
     /// <typeparam name="tFinal">Final type</typeparam>
-    public abstract class BouncyCastleAsymmetricPublicSignatureKeyBase<tAlgo, tPublicKey, tSigner, tFinal>
+    public abstract record class BouncyCastleAsymmetricPublicSignatureKeyBase<tAlgo, tPublicKey, tSigner, tFinal>
         : BouncyCastleAsymmetricPublicKeyBase<tAlgo, tPublicKey, tFinal>, ISignaturePublicKey
         where tAlgo : IAsymmetricAlgorithm, new()
         where tPublicKey : AsymmetricKeyParameter, ICipherParameters

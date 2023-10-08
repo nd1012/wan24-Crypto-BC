@@ -13,7 +13,7 @@ namespace wan24.Crypto.BC
     /// <typeparam name="tGenerator">Key generator type</typeparam>
     /// <typeparam name="tExtractor">Key extractor type</typeparam>
     /// <typeparam name="tFinal">Final type</typeparam>
-    public abstract class BouncyCastleAsymmetricPrivateKeyExchangeKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal>
+    public abstract record class BouncyCastleAsymmetricPrivateKeyExchangeKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal>
         : BouncyCastleAsymmetricPrivateKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal>, IKeyExchangePrivateKey
         where tPublic : BouncyCastleAsymmetricPublicKeyBase<tAlgo, tPublicKey, tPublic>, new()
         where tAlgo : IAsymmetricAlgorithm, new()
