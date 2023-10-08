@@ -1,21 +1,23 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Crypto.Engines;
+using Org.BouncyCastle.Crypto.Modes;
+using Org.BouncyCastle.Crypto.Paddings;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// ChaCha20 symmetric encryption algorithm (using 256 bit key)
+    /// AES-256-CBC symmetric encryption algorithm (using ISO10126 padding; may be used as replacement, if the .NET algorithm isn't available on the current platform)
     /// </summary>
-    public sealed record class EncryptionChaCha20Algorithm : BouncyCastleStreamCipherAlgorithmBase<EncryptionChaCha20Algorithm>
+    public sealed record class EncryptionBcAes256CbcAlgorithm : BouncyCastleBufferedCipherAlgorithmBase<EncryptionBcAes256CbcAlgorithm>
     {
         /// <summary>
         /// Algorithm name
         /// </summary>
-        public const string ALGORITHM_NAME = "CHACHA20";
+        public const string ALGORITHM_NAME = "AES256CBC";
         /// <summary>
         /// Algorithm value
         /// </summary>
-        public const int ALGORITHM_VALUE = 1;
+        public const int ALGORITHM_VALUE = 0;
         /// <summary>
         /// Key size in bytes
         /// </summary>
@@ -23,24 +25,20 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// IV size in bytes
         /// </summary>
-        public const int IV_SIZE = 8;
+        public const int IV_SIZE = 16;
         /// <summary>
         /// Block size in bytes
         /// </summary>
-        public const int BLOCK_SIZE = 1;
+        public const int BLOCK_SIZE = 16;
         /// <summary>
         /// Display name
         /// </summary>
-        public const string DISPLAY_NAME = "ChaCha20";
-        /// <summary>
-        /// ChaCha20 raw (without header) and uncompressed profile key
-        /// </summary>
-        public const string PROFILE_CHACHA20_RAW = "CHACHA20_RAW";
+        public const string DISPLAY_NAME = "AES-256-CBC";
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public EncryptionChaCha20Algorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
+        public EncryptionBcAes256CbcAlgorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
 
         /// <inheritdoc/>
         public override int KeySize => KEY_SIZE;
@@ -52,7 +50,7 @@ namespace wan24.Crypto.BC
         public override int BlockSize => BLOCK_SIZE;
 
         /// <inheritdoc/>
-        public override bool RequireMacAuthentication => false;
+        public override bool RequireMacAuthentication => true;
 
         /// <inheritdoc/>
         public override bool IsPostQuantum => true;
@@ -67,14 +65,15 @@ namespace wan24.Crypto.BC
         public override byte[] EnsureValidKeyLength(byte[] key) => GetValidLengthKey(key, KEY_SIZE);
 
         /// <inheritdoc/>
-        protected override IStreamCipher CreateCipher(bool forEncryption, CryptoOptions options) => CreateChaCha(options);
+        protected override IBufferedCipher CreateCipher(bool forEncryption, CryptoOptions options)
+            => new PaddedBufferedBlockCipher(new CbcBlockCipher(CreateAes(options)), new ISO10126d2Padding());
 
         /// <summary>
-        /// Create the ChaCha engine
+        /// Create the AES engine
         /// </summary>
         /// <param name="options">Options</param>
-        /// <returns>ChaCha instance (not yet initialized)</returns>
-        public static ChaChaEngine CreateChaCha(CryptoOptions options)
+        /// <returns>AES instance (not yet initialized)</returns>
+        public static AesEngine CreateAes(CryptoOptions options)
         {
             EncryptionHelper.GetDefaultOptions(options);
             try

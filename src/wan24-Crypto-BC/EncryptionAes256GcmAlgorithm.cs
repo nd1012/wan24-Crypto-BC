@@ -1,12 +1,13 @@
-﻿using Org.BouncyCastle.Crypto.Engines;
+﻿using Org.BouncyCastle.Crypto;
+using Org.BouncyCastle.Crypto.Engines;
 using Org.BouncyCastle.Crypto.Modes;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// AES-256-GCM AEAD symmetric encryption algorithm (using 256 bit key and 128 bit MAC)
+    /// AES-256-GCM AEAD symmetric encryption algorithm (using 128 bit MAC)
     /// </summary>
-    public sealed class EncryptionAes256GcmAlgorithm : BouncyCastleAeadStreamCipherAlgorithmBase<EncryptionAes256GcmAlgorithm>
+    public sealed record class EncryptionAes256GcmAlgorithm : BouncyCastleAeadCipherAlgorithmBase<EncryptionAes256GcmAlgorithm>
     {
         /// <summary>
         /// Algorithm name
@@ -67,13 +68,13 @@ namespace wan24.Crypto.BC
         public override byte[] EnsureValidKeyLength(byte[] key) => GetValidLengthKey(key, KEY_SIZE);
 
         /// <inheritdoc/>
-        protected override IAeadBlockCipher CreateCipher(bool forEncryption, CryptoOptions options) => new GcmBlockCipher(CreateAes(options));
+        protected override IBufferedCipher CreateCipher(bool forEncryption, CryptoOptions options) => new BufferedAeadBlockCipher(new GcmBlockCipher(CreateAes(options)));
 
         /// <summary>
-        /// Create the ChaCha engine
+        /// Create the AES engine
         /// </summary>
         /// <param name="options">Options</param>
-        /// <returns>ChaCha instance (not yet initialized)</returns>
+        /// <returns>AES instance (not yet initialized)</returns>
         public static AesEngine CreateAes(CryptoOptions options)
         {
             EncryptionHelper.GetDefaultOptions(options);

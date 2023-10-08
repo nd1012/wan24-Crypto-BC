@@ -9,7 +9,7 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// HMAC-SHA3-256 MAC algorithm
     /// </summary>
-    public sealed class MacHmacSha3_256Algorithm : BouncyCastleHmacAlgorithmBase<MacHmacSha3_256Algorithm>
+    public sealed record class MacHmacSha3_256Algorithm : BouncyCastleHmacAlgorithmBase<MacHmacSha3_256Algorithm>
     {
         /// <summary>
         /// Algorithm name

@@ -6,7 +6,7 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// XSalsa20 symmetric encryption algorithm (using 256 bit key)
     /// </summary>
-    public sealed class EncryptionXSalsa20Algorithm : BouncyCastleStreamCipherAlgorithmBase<EncryptionXSalsa20Algorithm>
+    public sealed record class EncryptionXSalsa20Algorithm : BouncyCastleStreamCipherAlgorithmBase<EncryptionXSalsa20Algorithm>
     {
         /// <summary>
         /// Algorithm name

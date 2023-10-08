@@ -17,6 +17,10 @@ the `wan24-Crypto` library with these algorithms:
 | ChaCha20 | 1 | CHACHA20 |
 | XSalsa20 | 2 | XSALSA20 |
 | AES-256-GCM AEAD (128 bit MAC) | 3 | AES256GCM |
+| Serpent 256 CBC (ISO10126 padding) | 5 | SERPENT256CBC |
+| Serpent 256 GCM AEAD (128 bit MAC) | 6 | SERPENT256GCM |
+| Twofish 256 CBC (ISO10126 padding) | 7 | TWOFISH256CBC |
+| Twofish 256 GCM AEAD (128 bit MAC) | 8 | TWOFISH256GCM |
 | **Hashing** |  |  |
 | SHA3-256 | 5 | SHA3-256 |
 | SHA3-384 | 6 | SHA3-384 |
@@ -53,6 +57,19 @@ BouncyCastle.SetDefaults();
 
 Per default the current `wan24-Crypto` default will be set as counter 
 algorithms to `HybridAlgorithmHelper`.
+
+Some algorithms of the `wan24-Crypto` library are not available on some 
+platforms, that's why they need to be replaced in order to be used:
+
+| `wan24-Crypto` | `wan24-Crypto-BC` |
+| -------------- | ----------------- |
+| `EncryptionAes256CbcAlgorithm` | `EncryptionBcAes256CbcAlgorithm` |
+
+To replace all of them:
+
+```cs
+BouncyCastle.ReplaceNetAlgorithms();
+```
 
 ## Post quantum safety
 

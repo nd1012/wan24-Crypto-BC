@@ -11,7 +11,7 @@ namespace wan24.Crypto.BC
     /// <typeparam name="tAlgo">Algorithm type</typeparam>
     /// <typeparam name="tPublicKey">Internal public key type</typeparam>
     /// <typeparam name="tFinal">Final type</typeparam>
-    public abstract class BouncyCastleAsymmetricPublicKeyBase<tAlgo, tPublicKey, tFinal> : AsymmetricPublicKeyBase
+    public abstract record class BouncyCastleAsymmetricPublicKeyBase<tAlgo, tPublicKey, tFinal> : AsymmetricPublicKeyBase
         where tAlgo : IAsymmetricAlgorithm, new()
         where tPublicKey : AsymmetricKeyParameter, ICipherParameters
         where tFinal : BouncyCastleAsymmetricPublicKeyBase<tAlgo, tPublicKey, tFinal>, new()

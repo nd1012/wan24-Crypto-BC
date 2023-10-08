@@ -21,9 +21,26 @@ namespace wan24.Crypto.BC
             }
             AsymmetricHelper.DefaultKeyExchangeAlgorithm = AsymmetricKyberAlgorithm.Instance;
             AsymmetricHelper.DefaultSignatureAlgorithm = AsymmetricDilithiumAlgorithm.Instance;
-            EncryptionHelper.DefaultAlgorithm = EncryptionAes256GcmAlgorithm.Instance;
+            EncryptionHelper.DefaultAlgorithm = EncryptionSerpent256CbcAlgorithm.Instance;
             HashHelper.DefaultAlgorithm = HashSha3_512Algorithm.Instance;
             MacHelper.DefaultAlgorithm = MacHmacSha3_512Algorithm.Instance;
+            Pake.DefaultOptions = Pake.DefaultOptions
+                .WithMac(MacHmacSha3_512Algorithm.Instance.Name, included: false);
+            CryptoOptions pakeCryptoOptions = Pake.DefaultCryptoOptions
+                .WithEncryptionAlgorithm(EncryptionAes256GcmAlgorithm.Instance.Name);
+            if (pakeCryptoOptions.MacAlgorithm is not null) pakeCryptoOptions.WithMac(MacHmacSha3_512Algorithm.Instance.Name);
+            Pake.DefaultCryptoOptions = pakeCryptoOptions;
+        }
+
+        /// <summary>
+        /// Replace .NET algorithms which may not be available on all platforms
+        /// </summary>
+        public static void ReplaceNetAlgorithms()
+        {
+            EncryptionHelper.Algorithms[EncryptionAes256CbcAlgorithm.ALGORITHM_NAME] = EncryptionBcAes256CbcAlgorithm.Instance;
+            if (EncryptionHelper.DefaultAlgorithm.Value == EncryptionAes256CbcAlgorithm.ALGORITHM_VALUE)
+                EncryptionHelper.DefaultAlgorithm = EncryptionBcAes256CbcAlgorithm.Instance;
+            //TODO Replace other .NET algorithms
         }
     }
 }

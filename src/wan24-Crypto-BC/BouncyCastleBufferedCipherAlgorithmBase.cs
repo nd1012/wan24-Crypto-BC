@@ -1,52 +1,28 @@
 ﻿using Org.BouncyCastle.Crypto;
-using Org.BouncyCastle.Crypto.Modes;
-using Org.BouncyCastle.Crypto.Parameters;
 using System.Security.Cryptography;
 using wan24.Core;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// Base class for a Bouncy Castle AEAD stream cipher
+    /// Base class for a Bouncy Castle buffered block cipher
     /// </summary>
     /// <typeparam name="T">Final type</typeparam>
-    public abstract class BouncyCastleAeadStreamCipherAlgorithmBase<T> : EncryptionAlgorithmBase where T : BouncyCastleAeadStreamCipherAlgorithmBase<T>, new()
+    public abstract record class BouncyCastleBufferedCipherAlgorithmBase<T> : BouncyCastleCipherAlgorithmBase<T> where T : BouncyCastleBufferedCipherAlgorithmBase<T>, new()
     {
-        /// <summary>
-        /// Static constructor
-        /// </summary>
-        static BouncyCastleAeadStreamCipherAlgorithmBase() => Instance = new();
-
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="name">Algorithm name</param>
         /// <param name="value">Agorithm value</param>
-        protected BouncyCastleAeadStreamCipherAlgorithmBase(string name, int value) : base(name, value) { }
-
-        /// <summary>
-        /// Instance
-        /// </summary>
-        public static T Instance { get; }
-
-        /// <inheritdoc/>
-        protected override byte[] GetValidLengthKey(byte[] key, int len)
-            => key.Length == len ? key.CloneArray() : len switch
-            {
-                HashMd5Algorithm.HASH_LENGTH => HashMd5Algorithm.Instance.Hash(key),
-                HashSha1Algorithm.HASH_LENGTH => HashSha1Algorithm.Instance.Hash(key),
-                HashSha3_256Algorithm.HASH_LENGTH => HashSha3_256Algorithm.Instance.Hash(key),
-                HashSha3_384Algorithm.HASH_LENGTH => HashSha3_384Algorithm.Instance.Hash(key),
-                HashSha3_512Algorithm.HASH_LENGTH => HashSha3_512Algorithm.Instance.Hash(key),
-                _ => throw CryptographicException.From($"Can't process for desired key length {len} bytes", new NotSupportedException())
-            };
+        protected BouncyCastleBufferedCipherAlgorithmBase(string name, int value) : base(name, value) { }
 
         /// <inheritdoc/>
         protected sealed override ICryptoTransform GetEncryptor(Stream cipherData, CryptoOptions options)
         {
             try
             {
-                IAeadBlockCipher cipher = CreateCipher(forEncryption: true, options);
+                IBufferedCipher cipher = CreateCipher(forEncryption: true, options);
                 byte[] iv = CreateIvBytes();
                 cipher.Init(forEncryption: true, CreateParameters(iv, options));
                 cipherData.Write(iv);
@@ -67,7 +43,7 @@ namespace wan24.Crypto.BC
         {
             try
             {
-                IAeadBlockCipher cipher = CreateCipher(forEncryption: true, options);
+                IBufferedCipher cipher = CreateCipher(forEncryption: true, options);
                 byte[] iv = CreateIvBytes();
                 cipher.Init(forEncryption: true, CreateParameters(iv, options));
                 await cipherData.WriteAsync(iv, cancellationToken).DynamicContext();
@@ -89,7 +65,7 @@ namespace wan24.Crypto.BC
             try
             {
                 byte[] iv = ReadFixedIvBytes(cipherData, options);
-                IAeadBlockCipher cipher = CreateCipher(forEncryption: false, options);
+                IBufferedCipher cipher = CreateCipher(forEncryption: false, options);
                 cipher.Init(forEncryption: false, CreateParameters(iv, options));
                 return new BouncyCastleCryptoTransform(cipher);
             }
@@ -109,7 +85,7 @@ namespace wan24.Crypto.BC
             try
             {
                 byte[] iv = await ReadFixedIvBytesAsync(cipherData, options, cancellationToken).DynamicContext();
-                IAeadBlockCipher cipher = CreateCipher(forEncryption: false, options);
+                IBufferedCipher cipher = CreateCipher(forEncryption: false, options);
                 cipher.Init(forEncryption: false, CreateParameters(iv, options));
                 return new BouncyCastleCryptoTransform(cipher);
             }
@@ -128,37 +104,7 @@ namespace wan24.Crypto.BC
         /// </summary>
         /// <param name="forEncryption">For encryption?</param>
         /// <param name="options">Options</param>
-        /// <returns>Stream cipher</returns>
-        protected abstract IAeadBlockCipher CreateCipher(bool forEncryption, CryptoOptions options);
-
-        /// <summary>
-        /// Create cipher parameters
-        /// </summary>
-        /// <param name="iv">IV bytes</param>
-        /// <param name="options">Options</param>
-        /// <returns>Parameters</returns>
-        protected virtual ICipherParameters CreateParameters(byte[] iv, CryptoOptions options)
-        {
-            byte[] pwd = options.Password?.CloneArray() ?? throw new ArgumentException("Missing password", nameof(options));
-            try
-            {
-                if (!IsKeyLengthValid(pwd.Length))
-                {
-                    byte[] temp = EnsureValidKeyLength(pwd);
-                    pwd.Clear();
-                    pwd = temp;
-                }
-                return new AeadParameters(new KeyParameter(pwd), macSize: 128, iv);
-            }
-            finally
-            {
-                pwd.Clear();
-            }
-        }
-
-        /// <summary>
-        /// Register the algorithm to the <see cref="CryptoConfig"/>
-        /// </summary>
-        public static void Register() => CryptoConfig.AddAlgorithm(typeof(T), Instance.Name);
+        /// <returns>Block cipher</returns>
+        protected abstract IBufferedCipher CreateCipher(bool forEncryption, CryptoOptions options);
     }
 }

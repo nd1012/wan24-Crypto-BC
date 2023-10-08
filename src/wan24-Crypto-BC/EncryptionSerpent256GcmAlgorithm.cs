@@ -1,21 +1,22 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Crypto.Engines;
+using Org.BouncyCastle.Crypto.Modes;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// ChaCha20 symmetric encryption algorithm (using 256 bit key)
+    /// Serpent 256 GCM symmetric encryption algorithm (using 128 bit MAC)
     /// </summary>
-    public sealed record class EncryptionChaCha20Algorithm : BouncyCastleStreamCipherAlgorithmBase<EncryptionChaCha20Algorithm>
+    public sealed record class EncryptionSerpent256GcmAlgorithm : BouncyCastleAeadCipherAlgorithmBase<EncryptionSerpent256GcmAlgorithm>
     {
         /// <summary>
         /// Algorithm name
         /// </summary>
-        public const string ALGORITHM_NAME = "CHACHA20";
+        public const string ALGORITHM_NAME = "SERPENT256GCM";
         /// <summary>
         /// Algorithm value
         /// </summary>
-        public const int ALGORITHM_VALUE = 1;
+        public const int ALGORITHM_VALUE = 6;
         /// <summary>
         /// Key size in bytes
         /// </summary>
@@ -23,24 +24,24 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// IV size in bytes
         /// </summary>
-        public const int IV_SIZE = 8;
+        public const int IV_SIZE = 16;
         /// <summary>
         /// Block size in bytes
         /// </summary>
-        public const int BLOCK_SIZE = 1;
+        public const int BLOCK_SIZE = 16;
         /// <summary>
         /// Display name
         /// </summary>
-        public const string DISPLAY_NAME = "ChaCha20";
+        public const string DISPLAY_NAME = "Serpent 256 bit GCM";
         /// <summary>
-        /// ChaCha20 raw (without header) and uncompressed profile key
+        /// Serpent 256 GCM raw (without header) and uncompressed profile key
         /// </summary>
-        public const string PROFILE_CHACHA20_RAW = "CHACHA20_RAW";
+        public const string PROFILE_SERPENT256GCM_RAW = "SERPENT256GCM_RAW";
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public EncryptionChaCha20Algorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
+        public EncryptionSerpent256GcmAlgorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
 
         /// <inheritdoc/>
         public override int KeySize => KEY_SIZE;
@@ -67,14 +68,14 @@ namespace wan24.Crypto.BC
         public override byte[] EnsureValidKeyLength(byte[] key) => GetValidLengthKey(key, KEY_SIZE);
 
         /// <inheritdoc/>
-        protected override IStreamCipher CreateCipher(bool forEncryption, CryptoOptions options) => CreateChaCha(options);
+        protected override IBufferedCipher CreateCipher(bool forEncryption, CryptoOptions options) => new BufferedAeadBlockCipher(new GcmBlockCipher(CreateSerpent(options)));
 
         /// <summary>
-        /// Create the ChaCha engine
+        /// Create the Serpent engine
         /// </summary>
         /// <param name="options">Options</param>
-        /// <returns>ChaCha instance (not yet initialized)</returns>
-        public static ChaChaEngine CreateChaCha(CryptoOptions options)
+        /// <returns>Serpent instance (not yet initialized)</returns>
+        public static SerpentEngine CreateSerpent(CryptoOptions options)
         {
             EncryptionHelper.GetDefaultOptions(options);
             try
