@@ -12,7 +12,7 @@ the `wan24-Crypto` library with these algorithms:
 | CRYSTALS-Dilithium | 3 | CRYSTALSDILITHIUM |
 | FALCON | 4 | FALCON |
 | SPHINCS+ | 5 | SPHINCSPLUS |
-| FrodoKEM | 6 | FRODOKEM |
+| FrodoKEM* | 6 | FRODOKEM |
 | **Symmetric** |  |  |
 | ChaCha20 | 1 | CHACHA20 |
 | XSalsa20 | 2 | XSALSA20 |
@@ -141,3 +141,22 @@ SignatureContainer signature = dataToSign.Sign(yourNormalPrivateKey, options: op
 For CRYSTALS-Kyber and CRYSTALS-Dilithium the AES parameters are being used. 
 When using SPHINCS+, the Haraka F hashing parameters will be used. For 
 FrodoKEM the AES parameters will be used.
+
+## Random data provider
+
+The `RandomDataProvider` is a `RandomDataGenerator` which provides added seed 
+data to `OnSeed` attached event handlers. It uses the `VmpcRandomGenerator` of 
+Bouncy Castle in combination with `RND` of `wan24-Crypto` to produce 
+cryptographic secure random data. An instance may be set as `RND.Generator` 
+singleton random data generator for all consumers (like key generators etc.).
+
+`RandomDataProvider` can be customized by extending the type. Pregnant methods 
+are virtual and can be overridden. Since the type is a `HostedServiceBase`, it 
+can be used in modern .NET app environment. And since it implements the 
+`IRandomGenerator` interface of Bouncy Castle, it can be used as secure random 
+data source for all Bouncy Castle algorithms also.
+
+By calling the `CreateFork(Async)` method, you can create an attached 
+instance, which will consume the provided seeds automatically.
+
+**NOTE**: Don't forget to dispose an unused `RandomDataProvider` instance!

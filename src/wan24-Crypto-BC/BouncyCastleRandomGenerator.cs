@@ -1,5 +1,7 @@
 ﻿using Org.BouncyCastle.Crypto.Prng;
 
+//TODO Forward seed to RND
+
 namespace wan24.Crypto.BC
 {
     /// <summary>
