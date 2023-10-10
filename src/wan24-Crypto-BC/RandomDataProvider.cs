@@ -2,6 +2,7 @@
 using wan24.Core;
 
 //TODO Provide added seed
+//TODO Implement ISeedableRng in ChaCha20Rng, RandomDataProvider and BouncyCastleRandomGenerator
 
 namespace wan24.Crypto.BC
 {
@@ -13,7 +14,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Random number generator
         /// </summary>
-        protected readonly VmpcRandomGenerator RNG = new();
+        protected readonly IRandomGenerator RNG;
         /// <summary>
         /// RNG synchronization
         /// </summary>
@@ -22,6 +23,14 @@ namespace wan24.Crypto.BC
         /// Seed provider
         /// </summary>
         protected readonly RandomDataProvider? SeedProvider;
+        /// <summary>
+        /// Raised when seeded
+        /// </summary>
+        protected readonly AsyncEvent<RandomDataProvider, SeedEventArgs> _OnSeedAsync;
+        /// <summary>
+        /// Did initialize?
+        /// </summary>
+        protected bool DidInit = false;
 
         /// <summary>
         /// Constructor
@@ -30,7 +39,15 @@ namespace wan24.Crypto.BC
         /// <param name="rdp">Random data provider to attach to (will be used for seeding, if available - otherwise fallback to <see cref="RND"/>)</param>
         /// <param name="seed">Initial seed length in bytes</param>
         /// <param name="workerBufferSize">Worker buffer size in bytes</param>
-        public RandomDataProvider(in int capacity, in RandomDataProvider? rdp = null, in int? seed = null, in int? workerBufferSize = null) : this(rdp, capacity, workerBufferSize)
+        /// <param name="rng">RNG to use</param>
+        public RandomDataProvider(
+            in int capacity, 
+            in RandomDataProvider? rdp = null, 
+            in int? seed = null, 
+            in int? workerBufferSize = null,
+            in IRandomGenerator? rng = null
+            )
+            : this(rdp, capacity, workerBufferSize, rng)
         {
             if (seed.HasValue && seed.Value < 1) throw new ArgumentOutOfRangeException(nameof(seed));
             InitialSeed(seed ?? Settings.BufferSize);
@@ -42,18 +59,30 @@ namespace wan24.Crypto.BC
         /// <param name="capacity">Buffer capacity in bytes</param>
         /// <param name="rdp">Random data provider to attach to (will be used for seeding, if available - otherwise fallback to <see cref="RND"/>)</param>
         /// <param name="workerBufferSize">Worker buffer size in bytes</param>
-        protected RandomDataProvider(in RandomDataProvider? rdp, in int capacity, in int? workerBufferSize) : base(capacity)
+        /// <param name="rng">RNG to use (will be disposed, if possible)</param>
+        protected RandomDataProvider(in RandomDataProvider? rdp, in int capacity, in int? workerBufferSize, in IRandomGenerator? rng = null) : base(capacity)
         {
             if (workerBufferSize.HasValue && workerBufferSize.Value < 1) throw new ArgumentOutOfRangeException(nameof(workerBufferSize));
+            RNG = rng ?? new ChaCha20Rng(new VmpcRandomGenerator(), byte.MaxValue);
+            _OnSeedAsync = new(this);
             WorkerBufferSize = workerBufferSize ?? Settings.BufferSize;
             UseFallback = false;
             UseDevUrandom = false;
             SeedProvider = rdp;
             if (rdp is not null)
             {
-                rdp.OnSeed += HandleSeed;
+                rdp.OnSeedAsync += HandleSeedAsync;
                 rdp.OnDisposing += HandleSeedProviderDisposing;
             }
+        }
+
+        /// <summary>
+        /// Raised when seeded
+        /// </summary>
+        public AsyncEvent<RandomDataProvider, SeedEventArgs> OnSeedAsync
+        {
+            get => _OnSeedAsync;
+            set { }
         }
 
         /// <summary>
@@ -67,11 +96,12 @@ namespace wan24.Crypto.BC
         /// <param name="capacity">Buffer capacity in bytes</param>
         /// <param name="seed">Initial seed length in bytes</param>
         /// <param name="workerBufferSize">Worker buffer size in bytes</param>
+        /// <param name="rng">RNG to use (the RNG of this instance won't be used in the fork!)</param>
         /// <returns>Fork (service is not started yet; don't forget to dispose!)</returns>
-        public virtual RandomDataProvider CreateFork(in int? capacity = null, in int? seed = null, in int? workerBufferSize = null)
+        public virtual RandomDataProvider CreateFork(in int? capacity = null, in int? seed = null, in int? workerBufferSize = null, in IRandomGenerator? rng = null)
         {
             EnsureUndisposed();
-            return new(capacity ?? RandomData.BufferSize, this, seed, workerBufferSize ?? WorkerBufferSize);
+            return new(capacity ?? RandomData.BufferSize, this, seed, workerBufferSize ?? WorkerBufferSize, rng);
         }
 
         /// <summary>
@@ -80,12 +110,18 @@ namespace wan24.Crypto.BC
         /// <param name="capacity">Buffer capacity in bytes</param>
         /// <param name="seed">Initial seed length in bytes</param>
         /// <param name="workerBufferSize">Worker buffer size in bytes</param>
+        /// <param name="rng">RNG to use (the RNG of this instance won't be used in the fork!)</param>
         /// <param name="cancellationToken">Cancellation token</param>
         /// <returns>Fork (service is not started yet; don't forget to dispose!)</returns>
-        public virtual Task<RandomDataProvider> CreateForkAsync(int? capacity = null, int? seed = null, in int? workerBufferSize = null, CancellationToken cancellationToken = default)
+        public virtual Task<RandomDataProvider> CreateForkAsync(
+            int? capacity = null, 
+            int? seed = null, 
+            int? workerBufferSize = null,
+            IRandomGenerator? rng = null,
+            CancellationToken cancellationToken = default)
         {
             EnsureUndisposed();
-            return CreateAsync(capacity ?? RandomData.BufferSize, this, seed, workerBufferSize ?? WorkerBufferSize, cancellationToken);
+            return CreateAsync(capacity ?? RandomData.BufferSize, this, seed, workerBufferSize ?? WorkerBufferSize, rng, cancellationToken);
         }
 
         /// <inheritdoc/>
@@ -116,19 +152,30 @@ namespace wan24.Crypto.BC
         void IRandomGenerator.NextBytes(Span<byte> bytes) => Fill(bytes);
 
         /// <summary>
-        /// Handle seed
+        /// Handle seed from the parent
         /// </summary>
         /// <param name="rnp">Random number provider</param>
         /// <param name="e">Arguments</param>
-        protected virtual void HandleSeed(RandomDataProvider rnp, SeedEventArgs e) => RngSync.ExecuteAsync(() =>
+        /// <param name="cancellationToken">Cancellation token</param>
+        protected virtual async Task HandleSeedAsync(RandomDataProvider rnp, SeedEventArgs e, CancellationToken cancellationToken)
         {
-            if (!EnsureUndisposed(throwException: false)) return Task.CompletedTask;
-            RNG.AddSeedMaterial(e.Seed.Span);
-            return Task.CompletedTask;
-        });
+            if (!DidInit) return;
+            try
+            {
+                throw new NotImplementedException();//TODO
+            }
+            catch (Exception ex)
+            {
+                ErrorHandling.Handle(new(
+                    $"Failed to seed a {GetType()} instance (\"{Name}\") from seed provider {rnp.GetType()} (\"{rnp.Name}\")",
+                    ex,
+                    Constants.CRYPTO_ERROR_SOURCE
+                    ));
+            }
+        }
 
         /// <summary>
-        /// Hande a disposing seed provider
+        /// Handle a disposing seed provider
         /// </summary>
         /// <param name="sender">Sender</param>
         /// <param name="e">Arguments</param>
@@ -150,6 +197,7 @@ namespace wan24.Crypto.BC
                 SeedProvider.FillBytes(buffer.Span);
             }
             RNG.AddSeedMaterial(buffer.Span);
+            DidInit = true;
         }
 
         /// <summary>
@@ -169,6 +217,7 @@ namespace wan24.Crypto.BC
                 await SeedProvider.FillBytesAsync(buffer.Memory, cancellationToken).DynamicContext();
             }
             RNG.AddSeedMaterial(buffer.Span);
+            DidInit = true;
         }
 
         /// <inheritdoc/>
@@ -198,8 +247,10 @@ namespace wan24.Crypto.BC
             if (SeedProvider is not null)
             {
                 SeedProvider!.OnDisposing -= HandleSeedProviderDisposing;
-                SeedProvider.OnSeed -= HandleSeed;
+                SeedProvider.OnSeedAsync -= HandleSeedAsync;
             }
+            RngSync.Dispose();
+            RNG.TryDispose();
         }
 
         /// <inheritdoc/>
@@ -209,8 +260,10 @@ namespace wan24.Crypto.BC
             if (SeedProvider is not null)
             {
                 SeedProvider!.OnDisposing -= HandleSeedProviderDisposing;
-                SeedProvider.OnSeed -= HandleSeed;
+                SeedProvider.OnSeedAsync -= HandleSeedAsync;
             }
+            await RngSync.DisposeAsync().DynamicContext();
+            RNG.TryDispose();
         }
 
         /// <summary>
@@ -227,7 +280,25 @@ namespace wan24.Crypto.BC
         /// Raise the <see cref="OnSeed"/> event
         /// </summary>
         /// <param name="seed">Seed</param>
-        protected virtual void RaiseOnSeed(byte[] seed) => OnSeed?.Invoke(this, new(seed));
+        protected virtual void RaiseOnSeed(ReadOnlyMemory<byte> seed)
+        {
+            SeedEventArgs e = new(seed);
+            Task task = OnSeedAsync.Abstract.RaiseEventAsync(this, e, cancellationToken: CancelToken);
+            OnSeed?.Invoke(this, e);
+            task.Wait();
+        }
+        /// <summary>
+        /// Raise the <see cref="OnSeed"/> event
+        /// </summary>
+        /// <param name="seed">Seed</param>
+        /// <param name="cancellationToken">Cancellation token</param>
+        protected virtual async void RaiseOnSeedAsync(ReadOnlyMemory<byte> seed, CancellationToken cancellationToken)
+        {
+            SeedEventArgs e = new(seed);
+            Task task = OnSeedAsync.Abstract.RaiseEventAsync(this, e, cancellationToken: CancelToken);
+            OnSeed?.Invoke(this, e);
+            await task.DynamicContext();
+        }
 
         /// <summary>
         /// Create an instance
@@ -236,6 +307,7 @@ namespace wan24.Crypto.BC
         /// <param name="rdp">Random data provider to attach to (will be used for seeding, if available - otherwise fallback to <see cref="RND"/>)</param>
         /// <param name="seed">Initial seed length in bytes</param>
         /// <param name="workerBufferSize">Worker buffer size in bytes</param>
+        /// <param name="rng">RNG to use</param>
         /// <param name="cancellationToken">Cancellation token</param>
         /// <returns>Instance (service is not started yet; don't forget to dispose!)</returns>
         public static async Task<RandomDataProvider> CreateAsync(
@@ -243,11 +315,13 @@ namespace wan24.Crypto.BC
             RandomDataProvider? rdp = null,
             int? seed = null,
             int? workerBufferSize = null,
+            IRandomGenerator? rng = null,
             CancellationToken cancellationToken = default
             )
         {
             if (seed.HasValue && seed.Value < 1) throw new ArgumentOutOfRangeException(nameof(seed));
-            RandomDataProvider res = new(rdp, capacity, workerBufferSize);
+            if (workerBufferSize.HasValue && workerBufferSize.Value < 1) throw new ArgumentOutOfRangeException(nameof(workerBufferSize));
+            RandomDataProvider res = new(rdp, capacity, workerBufferSize, rng);
             try
             {
                 await res.InitialSeedAsync(seed ?? Settings.BufferSize, cancellationToken).DynamicContext();
@@ -268,13 +342,18 @@ namespace wan24.Crypto.BC
             /// <summary>
             /// Constructor
             /// </summary>
+            public SeedEventArgs() : base() { }
+
+            /// <summary>
+            /// Constructor
+            /// </summary>
             /// <param name="seed">Seed</param>
-            public SeedEventArgs(ReadOnlyMemory<byte> seed) : base() => Seed = seed;
+            public SeedEventArgs(ReadOnlyMemory<byte> seed) : this() => Seed = seed;
 
             /// <summary>
             /// Seed
             /// </summary>
-            public ReadOnlyMemory<byte> Seed { get; }
+            public ReadOnlyMemory<byte> Seed { get; } = null!;
         }
     }
 }
