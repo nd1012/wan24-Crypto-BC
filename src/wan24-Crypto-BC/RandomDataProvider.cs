@@ -2,7 +2,7 @@
 using wan24.Core;
 
 //TODO Provide added seed
-//TODO Implement ISeedableRng in ChaCha20Rng, RandomDataProvider and BouncyCastleRandomGenerator
+//TODO Implement IRng and ISeedableRng in StreamCipherRng, RandomDataProvider and BouncyCastleRandomGenerator
 
 namespace wan24.Crypto.BC
 {
@@ -14,7 +14,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Random number generator
         /// </summary>
-        protected readonly IRandomGenerator RNG;
+        protected readonly IRandomGenerator RNG;//TODO Support ISeedableRng
         /// <summary>
         /// RNG synchronization
         /// </summary>

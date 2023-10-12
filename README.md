@@ -188,3 +188,41 @@ You may use R/EaaS in regions and for data which is being communicated in
 regions where the patent doesn't have an effect, and switch back to classical 
 P/CSRNG for communications with any patent affected regions - or use the 
 patent holders hard- and software (from within that regions).
+
+## Stream cipher RNG
+
+The `StreamCipherRng` uses any stream cipher to encrypt the generated random 
+bytes of an underlaying PRNG using a random key. The result is a CSRNG. These 
+stream ciphers are available with `wan24-Crypto-BC`, but you could use any 
+other stream cipher (but not AEAD implementations!) also:
+
+- ChaCha20 - `ChaCha20Rng`
+- XSalsa20 - `XSalsa20Rng`
+
+If you didn't specify an underlaying PRNG, Bouncy Castle's 
+`VmpcRandomGenerator` will be used and seeded using 256 bytes from `RND`.
+
+The final CSRNG implements `IRandomGenerator` for use with Bouncy Castle, and 
+also `ISeedableRng` for use with `RND` (as seed consumer, for example).
+
+**NOTE**: A `StreamCipherRng` needs to be disposed after use!
+
+You can use the resulting CSRNG as default RNG for `RND`:
+
+```cs
+ChaCha20Rng csrng = new();
+
+// Enable automatic seeding
+RND.SeedConsumer = csrng;
+
+// Use as default CSRNG
+RND.FillBytes = csrng.GetBytes;
+RND.FillBytesAsync = csrng.GetBytesAsync;
+```
+
+**NOTE**: When setting the `RND.FillBytes(Async)` callbacks, they may not be 
+used, if `/dev/urandom` was preferred. To disable `/dev/urandom`, set 
+`RND.UseDevUrandom` and `RND.RequireDevUrandom` to `false` also.
+
+**NOTE**: Currently only stream ciphers are supported, because the cipher RNG 
+implementation doesn't buffer pre-generated random data.
