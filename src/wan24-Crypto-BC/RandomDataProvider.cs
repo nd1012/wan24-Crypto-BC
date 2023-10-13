@@ -3,6 +3,7 @@ using wan24.Core;
 
 //TODO Provide added seed
 //TODO Implement IRng and ISeedableRng in StreamCipherRng, RandomDataProvider and BouncyCastleRandomGenerator
+//TODO Add IBouncyCastleRng which combines ISeedableRng and IRandomGenerator
 
 namespace wan24.Crypto.BC
 {
@@ -223,8 +224,14 @@ namespace wan24.Crypto.BC
         /// <inheritdoc/>
         protected override async Task WorkerAsync()
         {
-            using RentedArrayStructSimple<byte> buffer1 = new(WorkerBufferSize, clean: false);
-            using RentedArrayStructSimple<byte> buffer2 = new(WorkerBufferSize, clean: false);
+            using RentedArrayStructSimple<byte> buffer1 = new(WorkerBufferSize, clean: false)
+            {
+                Clear = true
+            };
+            using RentedArrayStructSimple<byte> buffer2 = new(WorkerBufferSize, clean: false)
+            {
+                Clear = true
+            };
             for (; !CancelToken.IsCancellationRequested;)
             {
                 await RngSync.ExecuteAsync(() =>

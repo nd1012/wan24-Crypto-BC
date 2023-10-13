@@ -81,16 +81,15 @@ These algorithms are designed for post quantum cryptography:
 - SPHINCS+ (signature)
 - FrodoKEM (key exchange)
 
-Normally you want to use them in hybrid mode as counter algorithm for 
-extending a default algorithm of the `wan24-Crypto` package. To do this per 
-default:
+Normally you want to use them in hybrid mode and use classical algorithms of 
+the `wan24-Crypto` package as counter algorithm. To do this per default:
 
 ```cs
-// Enable the post quantum algorithms as counter-defaults
+// Enable the post quantum algorithms as (counter-)defaults
 CryptoHelper.ForcePostQuantumSafety();
 ```
 
-This will use these algorithms as counter algorithms for asymmetric 
+This will use these algorithms as (counter) algorithms for asymmetric 
 cryptography, in case you didn't define other post quantum algorithms already:
 
 - CRYSTALS-Kyber (key exchange)

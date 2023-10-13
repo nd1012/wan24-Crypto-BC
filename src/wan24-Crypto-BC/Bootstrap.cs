@@ -84,16 +84,44 @@ namespace wan24.Crypto.BC
                 if (CryptoHelper.StrictPostQuantumSafety)
                 {
                     if (!AsymmetricHelper.DefaultKeyExchangeAlgorithm.IsPostQuantum)
+                    {
                         AsymmetricHelper.DefaultKeyExchangeAlgorithm = AsymmetricKyberAlgorithm.Instance;
+                    }
+                    else if(!(HybridAlgorithmHelper.KeyExchangeAlgorithm?.IsPostQuantum ?? true))
+                    {
+                        HybridAlgorithmHelper.KeyExchangeAlgorithm = AsymmetricKyberAlgorithm.Instance;
+                    }
                     if (!AsymmetricHelper.DefaultSignatureAlgorithm.IsPostQuantum)
+                    {
                         AsymmetricHelper.DefaultSignatureAlgorithm = AsymmetricDilithiumAlgorithm.Instance;
+                    }
+                    else if (!(HybridAlgorithmHelper.SignatureAlgorithm?.IsPostQuantum ?? true))
+                    {
+                        HybridAlgorithmHelper.SignatureAlgorithm = AsymmetricDilithiumAlgorithm.Instance;
+                    }
                 }
                 else
                 {
-                    if (!(HybridAlgorithmHelper.KeyExchangeAlgorithm?.IsPostQuantum ?? false))
+                    if(AsymmetricHelper.DefaultKeyExchangeAlgorithm.IsPostQuantum && !(HybridAlgorithmHelper.KeyExchangeAlgorithm?.IsPostQuantum ?? false))
+                    {
                         HybridAlgorithmHelper.KeyExchangeAlgorithm = AsymmetricKyberAlgorithm.Instance;
-                    if (!(HybridAlgorithmHelper.SignatureAlgorithm?.IsPostQuantum ?? false))
+                    }
+                    else if (!AsymmetricHelper.DefaultKeyExchangeAlgorithm.IsPostQuantum)
+                    {
+                        if (!(HybridAlgorithmHelper.KeyExchangeAlgorithm?.IsPostQuantum ?? false))
+                            HybridAlgorithmHelper.KeyExchangeAlgorithm = AsymmetricHelper.DefaultKeyExchangeAlgorithm;
+                        AsymmetricHelper.DefaultKeyExchangeAlgorithm = AsymmetricKyberAlgorithm.Instance;
+                    }
+                    if (AsymmetricHelper.DefaultSignatureAlgorithm.IsPostQuantum && !(HybridAlgorithmHelper.SignatureAlgorithm?.IsPostQuantum ?? false))
+                    {
                         HybridAlgorithmHelper.SignatureAlgorithm = AsymmetricDilithiumAlgorithm.Instance;
+                    }
+                    else if (!AsymmetricHelper.DefaultSignatureAlgorithm.IsPostQuantum)
+                    {
+                        if (!(HybridAlgorithmHelper.SignatureAlgorithm?.IsPostQuantum ?? false))
+                            HybridAlgorithmHelper.SignatureAlgorithm = AsymmetricHelper.DefaultSignatureAlgorithm;
+                        AsymmetricHelper.DefaultSignatureAlgorithm = AsymmetricDilithiumAlgorithm.Instance;
+                    }
                 }
             };
         }
