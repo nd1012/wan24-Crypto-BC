@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class BouncyCastleRandomGenerator
+    <title>Class BouncyCastleRngWrapper
    | wan24-Crypto-BC </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class BouncyCastleRandomGenerator
+    <meta name="title" content="Class BouncyCastleRngWrapper
    | wan24-Crypto-BC ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -68,18 +68,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator">
+            <article class="content wrap" id="_content" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper">
   
   
-  <h1 id="wan24_Crypto_BC_BouncyCastleRandomGenerator" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator" class="text-break">Class BouncyCastleRandomGenerator
+  <h1 id="wan24_Crypto_BC_BouncyCastleRngWrapper" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper" class="text-break">Class BouncyCastleRngWrapper
   </h1>
-  <div class="markdown level0 summary"><p>Random number generator for Bouncy Castle, which adopts <span class="xref">wan24.Crypto.RND</span></p>
+  <div class="markdown level0 summary"><p>Bouncy Castle RNG wrapper for <code>wan24-Crypto</code></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">BouncyCastleRandomGenerator</span></div>
+    <div class="level1"><span class="xref">BouncyCastleRngWrapper</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -114,45 +114,63 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="wan24.Crypto.BC.html">wan24.Crypto.BC</a></h6>
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
-  <h5 id="wan24_Crypto_BC_BouncyCastleRandomGenerator_syntax">Syntax</h5>
+  <h5 id="wan24_Crypto_BC_BouncyCastleRngWrapper_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class BouncyCastleRandomGenerator : IBouncyCastleRng, IRandomGenerator, ISeedableRng, IRng</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class BouncyCastleRngWrapper : IBouncyCastleRng, IRandomGenerator, ISeedableRng, IRng</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRandomGenerator__ctor.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRandomGenerator.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRngWrapper__ctor_Org_BouncyCastle_Crypto_Prng_IRandomGenerator__.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRngWrapper.%23ctor(Org.BouncyCastle.Crypto.Prng.IRandomGenerator%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRandomGenerator.cs/#L19">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRngWrapper.cs/#L14">View Source</a>
   </span>
-  <a id="wan24_Crypto_BC_BouncyCastleRandomGenerator__ctor_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.#ctor*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleRandomGenerator__ctor" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.#ctor">BouncyCastleRandomGenerator()</h4>
+  <a id="wan24_Crypto_BC_BouncyCastleRngWrapper__ctor_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.#ctor*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleRngWrapper__ctor_Org_BouncyCastle_Crypto_Prng_IRandomGenerator__" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.#ctor(Org.BouncyCastle.Crypto.Prng.IRandomGenerator@)">BouncyCastleRngWrapper(in IRandomGenerator)</h4>
   <div class="markdown level1 summary"><p>Constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BouncyCastleRandomGenerator()</code></pre>
+    <pre><code class="lang-csharp hljs">public BouncyCastleRngWrapper(in IRandomGenerator rng)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Org.BouncyCastle.Crypto.Prng.IRandomGenerator</span></td>
+        <td><span class="parametername">rng</span></td>
+        <td><p>RNG</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRandomGenerator_Instance.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRandomGenerator.Instance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRngWrapper_RNG.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRngWrapper.RNG%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRandomGenerator.cs/#L24">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRngWrapper.cs/#L19">View Source</a>
   </span>
-  <a id="wan24_Crypto_BC_BouncyCastleRandomGenerator_Instance_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.Instance*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleRandomGenerator_Instance" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.Instance">Instance</h4>
-  <div class="markdown level1 summary"><p>Instance factory</p>
+  <a id="wan24_Crypto_BC_BouncyCastleRngWrapper_RNG_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.RNG*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleRngWrapper_RNG" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.RNG">RNG</h4>
+  <div class="markdown level1 summary"><p>Wrapped RNG</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Func&lt;IRandomGenerator&gt; Instance { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IRandomGenerator RNG { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -164,7 +182,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Func</span>&lt;<span class="xref">Org.BouncyCastle.Crypto.Prng.IRandomGenerator</span>&gt;</td>
+        <td><span class="xref">Org.BouncyCastle.Crypto.Prng.IRandomGenerator</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -173,13 +191,13 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRandomGenerator_AddSeed_ReadOnlySpan_System_Byte__.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeed(ReadOnlySpan%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeed_ReadOnlySpan_System_Byte__.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeed(ReadOnlySpan%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRandomGenerator.cs/#L27">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRngWrapper.cs/#L22">View Source</a>
   </span>
-  <a id="wan24_Crypto_BC_BouncyCastleRandomGenerator_AddSeed_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeed*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleRandomGenerator_AddSeed_ReadOnlySpan_System_Byte__" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeed(ReadOnlySpan{System.Byte})">AddSeed(ReadOnlySpan&lt;Byte&gt;)</h4>
+  <a id="wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeed_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeed*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeed_ReadOnlySpan_System_Byte__" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeed(ReadOnlySpan{System.Byte})">AddSeed(ReadOnlySpan&lt;Byte&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -205,13 +223,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRandomGenerator_AddSeedAsync_ReadOnlyMemory_System_Byte__CancellationToken_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeedAsync(ReadOnlyMemory%7BSystem.Byte%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedAsync_ReadOnlyMemory_System_Byte__CancellationToken_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedAsync(ReadOnlyMemory%7BSystem.Byte%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRandomGenerator.cs/#L30">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRngWrapper.cs/#L25">View Source</a>
   </span>
-  <a id="wan24_Crypto_BC_BouncyCastleRandomGenerator_AddSeedAsync_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeedAsync*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleRandomGenerator_AddSeedAsync_ReadOnlyMemory_System_Byte__CancellationToken_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeedAsync(ReadOnlyMemory{System.Byte},CancellationToken)">AddSeedAsync(ReadOnlyMemory&lt;Byte&gt;, CancellationToken)</h4>
+  <a id="wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedAsync_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedAsync*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedAsync_ReadOnlyMemory_System_Byte__CancellationToken_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedAsync(ReadOnlyMemory{System.Byte},CancellationToken)">AddSeedAsync(ReadOnlyMemory&lt;Byte&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -257,13 +275,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRandomGenerator_AddSeedMaterial_ReadOnlySpan_System_Byte__.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeedMaterial(ReadOnlySpan%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedMaterial_ReadOnlySpan_System_Byte__.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(ReadOnlySpan%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRandomGenerator.cs/#L36">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRngWrapper.cs/#L35">View Source</a>
   </span>
-  <a id="wan24_Crypto_BC_BouncyCastleRandomGenerator_AddSeedMaterial_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeedMaterial*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleRandomGenerator_AddSeedMaterial_ReadOnlySpan_System_Byte__" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeedMaterial(ReadOnlySpan{System.Byte})">AddSeedMaterial(ReadOnlySpan&lt;Byte&gt;)</h4>
+  <a id="wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedMaterial_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedMaterial_ReadOnlySpan_System_Byte__" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(ReadOnlySpan{System.Byte})">AddSeedMaterial(ReadOnlySpan&lt;Byte&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -289,13 +307,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRandomGenerator_AddSeedMaterial_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeedMaterial(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedMaterial_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRandomGenerator.cs/#L33">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRngWrapper.cs/#L32">View Source</a>
   </span>
-  <a id="wan24_Crypto_BC_BouncyCastleRandomGenerator_AddSeedMaterial_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeedMaterial*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleRandomGenerator_AddSeedMaterial_System_Byte___" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeedMaterial(System.Byte[])">AddSeedMaterial(Byte[])</h4>
+  <a id="wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedMaterial_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedMaterial_System_Byte___" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(System.Byte[])">AddSeedMaterial(Byte[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -321,13 +339,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRandomGenerator_AddSeedMaterial_System_Int64_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeedMaterial(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedMaterial_System_Int64_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRandomGenerator.cs/#L39">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRngWrapper.cs/#L38">View Source</a>
   </span>
-  <a id="wan24_Crypto_BC_BouncyCastleRandomGenerator_AddSeedMaterial_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeedMaterial*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleRandomGenerator_AddSeedMaterial_System_Int64_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.AddSeedMaterial(System.Int64)">AddSeedMaterial(Int64)</h4>
+  <a id="wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedMaterial_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedMaterial_System_Int64_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(System.Int64)">AddSeedMaterial(Int64)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -353,13 +371,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRandomGenerator_FillBytes_Span_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRandomGenerator.FillBytes(Span%7BSystem.Byte%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRngWrapper_FillBytes_Span_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytes(Span%7BSystem.Byte%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRandomGenerator.cs/#L47">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRngWrapper.cs/#L41">View Source</a>
   </span>
-  <a id="wan24_Crypto_BC_BouncyCastleRandomGenerator_FillBytes_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.FillBytes*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleRandomGenerator_FillBytes_Span_System_Byte___" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.FillBytes(Span{System.Byte}@)">FillBytes(in Span&lt;Byte&gt;)</h4>
+  <a id="wan24_Crypto_BC_BouncyCastleRngWrapper_FillBytes_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytes*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleRngWrapper_FillBytes_Span_System_Byte___" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytes(Span{System.Byte}@)">FillBytes(in Span&lt;Byte&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -400,18 +418,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRandomGenerator_FillBytesAsync_Memory_System_Byte__CancellationToken_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRandomGenerator.FillBytesAsync(Memory%7BSystem.Byte%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRngWrapper_FillBytesAsync_Memory_System_Byte__CancellationToken_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytesAsync(Memory%7BSystem.Byte%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRandomGenerator.cs/#L54">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRngWrapper.cs/#L48">View Source</a>
   </span>
-  <a id="wan24_Crypto_BC_BouncyCastleRandomGenerator_FillBytesAsync_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.FillBytesAsync*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleRandomGenerator_FillBytesAsync_Memory_System_Byte__CancellationToken_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.FillBytesAsync(Memory{System.Byte},CancellationToken)">FillBytesAsync(Memory&lt;Byte&gt;, CancellationToken)</h4>
+  <a id="wan24_Crypto_BC_BouncyCastleRngWrapper_FillBytesAsync_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytesAsync*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleRngWrapper_FillBytesAsync_Memory_System_Byte__CancellationToken_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytesAsync(Memory{System.Byte},CancellationToken)">FillBytesAsync(Memory&lt;Byte&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;Memory&lt;byte&gt;&gt; FillBytesAsync(Memory&lt;byte&gt; buffer, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;Memory&lt;byte&gt;&gt; FillBytesAsync(Memory&lt;byte&gt; buffer, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -452,13 +470,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRandomGenerator_GetBytes_System_Int32__.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRandomGenerator.GetBytes(System.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRngWrapper_GetBytes_System_Int32__.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytes(System.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRandomGenerator.cs/#L61">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRngWrapper.cs/#L55">View Source</a>
   </span>
-  <a id="wan24_Crypto_BC_BouncyCastleRandomGenerator_GetBytes_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.GetBytes*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleRandomGenerator_GetBytes_System_Int32__" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.GetBytes(System.Int32@)">GetBytes(in Int32)</h4>
+  <a id="wan24_Crypto_BC_BouncyCastleRngWrapper_GetBytes_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytes*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleRngWrapper_GetBytes_System_Int32__" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytes(System.Int32@)">GetBytes(in Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -499,13 +517,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRandomGenerator_GetBytesAsync_System_Int32_CancellationToken_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRandomGenerator.GetBytesAsync(System.Int32%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRngWrapper_GetBytesAsync_System_Int32_CancellationToken_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytesAsync(System.Int32%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRandomGenerator.cs/#L64">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRngWrapper.cs/#L63">View Source</a>
   </span>
-  <a id="wan24_Crypto_BC_BouncyCastleRandomGenerator_GetBytesAsync_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.GetBytesAsync*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleRandomGenerator_GetBytesAsync_System_Int32_CancellationToken_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.GetBytesAsync(System.Int32,CancellationToken)">GetBytesAsync(Int32, CancellationToken)</h4>
+  <a id="wan24_Crypto_BC_BouncyCastleRngWrapper_GetBytesAsync_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytesAsync*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleRngWrapper_GetBytesAsync_System_Int32_CancellationToken_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytesAsync(System.Int32,CancellationToken)">GetBytesAsync(Int32, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -551,13 +569,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRandomGenerator_NextBytes_Span_System_Byte__.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRandomGenerator.NextBytes(Span%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRngWrapper_NextBytes_Span_System_Byte__.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(Span%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRandomGenerator.cs/#L73">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRngWrapper.cs/#L78">View Source</a>
   </span>
-  <a id="wan24_Crypto_BC_BouncyCastleRandomGenerator_NextBytes_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.NextBytes*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleRandomGenerator_NextBytes_Span_System_Byte__" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.NextBytes(Span{System.Byte})">NextBytes(Span&lt;Byte&gt;)</h4>
+  <a id="wan24_Crypto_BC_BouncyCastleRngWrapper_NextBytes_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleRngWrapper_NextBytes_Span_System_Byte__" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(Span{System.Byte})">NextBytes(Span&lt;Byte&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -583,13 +601,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRandomGenerator_NextBytes_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRandomGenerator.NextBytes(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRngWrapper_NextBytes_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRandomGenerator.cs/#L67">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRngWrapper.cs/#L72">View Source</a>
   </span>
-  <a id="wan24_Crypto_BC_BouncyCastleRandomGenerator_NextBytes_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.NextBytes*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleRandomGenerator_NextBytes_System_Byte___" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.NextBytes(System.Byte[])">NextBytes(Byte[])</h4>
+  <a id="wan24_Crypto_BC_BouncyCastleRngWrapper_NextBytes_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleRngWrapper_NextBytes_System_Byte___" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(System.Byte[])">NextBytes(Byte[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -615,13 +633,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRandomGenerator_NextBytes_System_Byte___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRandomGenerator.NextBytes(System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRngWrapper_NextBytes_System_Byte___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRandomGenerator.cs/#L70">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRngWrapper.cs/#L75">View Source</a>
   </span>
-  <a id="wan24_Crypto_BC_BouncyCastleRandomGenerator_NextBytes_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.NextBytes*"></a>
-  <h4 id="wan24_Crypto_BC_BouncyCastleRandomGenerator_NextBytes_System_Byte___System_Int32_System_Int32_" data-uid="wan24.Crypto.BC.BouncyCastleRandomGenerator.NextBytes(System.Byte[],System.Int32,System.Int32)">NextBytes(Byte[], Int32, Int32)</h4>
+  <a id="wan24_Crypto_BC_BouncyCastleRngWrapper_NextBytes_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleRngWrapper_NextBytes_System_Byte___System_Int32_System_Int32_" data-uid="wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(System.Byte[],System.Int32,System.Int32)">NextBytes(Byte[], Int32, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -676,10 +694,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRandomGenerator.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRandomGenerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleRngWrapper.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleRngWrapper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRandomGenerator.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleRngWrapper.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
