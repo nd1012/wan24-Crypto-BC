@@ -1,39 +1,39 @@
 ﻿using Org.BouncyCastle.Crypto;
-using Org.BouncyCastle.Pqc.Crypto.Crystals.Kyber;
+using Org.BouncyCastle.Pqc.Crypto.Ntru;
 using wan24.Core;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// CRYSTALS-Kyber asymmetric private key
+    /// NTRUEncrypt asymmetric private key
     /// </summary>
-    public sealed record class AsymmetricKyberPrivateKey
+    public sealed record class AsymmetricNtruEncryptPrivateKey
         : BouncyCastleAsymmetricPrivateKeyExchangeKeyBase<
-            AsymmetricKyberPublicKey, 
-            AsymmetricKyberAlgorithm, 
-            KyberPublicKeyParameters, 
-            KyberPrivateKeyParameters, 
-            KyberKemGenerator, 
-            KyberKemExtractor, 
-            AsymmetricKyberPrivateKey
+            AsymmetricNtruEncryptPublicKey,
+            AsymmetricNtruEncryptAlgorithm,
+            NtruPublicKeyParameters,
+            NtruPrivateKeyParameters,
+            NtruKemGenerator,
+            NtruKemExtractor,
+            AsymmetricNtruEncryptPrivateKey
             >
     {
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricKyberPrivateKey() : base(AsymmetricKyberAlgorithm.ALGORITHM_NAME) { }
+        public AsymmetricNtruEncryptPrivateKey() : base(AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="keyData">Key data</param>
-        public AsymmetricKyberPrivateKey(byte[] keyData) : base(AsymmetricKyberAlgorithm.ALGORITHM_NAME, keyData) { }
+        public AsymmetricNtruEncryptPrivateKey(byte[] keyData) : base(AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME, keyData) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="keys">Keys</param>
-        public AsymmetricKyberPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricKyberAlgorithm.ALGORITHM_NAME, keys) { }
+        public AsymmetricNtruEncryptPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME, keys) { }
 
         /// <inheritdoc/>
         protected override void Dispose(bool disposing)
@@ -55,12 +55,12 @@ namespace wan24.Crypto.BC
         /// Cast to public key
         /// </summary>
         /// <param name="privateKey">Private key</param>
-        public static implicit operator AsymmetricKyberPublicKey(AsymmetricKyberPrivateKey privateKey) => privateKey.PublicKey;
+        public static implicit operator AsymmetricNtruEncryptPublicKey(AsymmetricNtruEncryptPrivateKey privateKey) => privateKey.PublicKey;
 
         /// <summary>
         /// Cast from serialized data
         /// </summary>
         /// <param name="data">Data</param>
-        public static explicit operator AsymmetricKyberPrivateKey(byte[] data) => Import<AsymmetricKyberPrivateKey>(data);
+        public static explicit operator AsymmetricNtruEncryptPrivateKey(byte[] data) => Import<AsymmetricNtruEncryptPrivateKey>(data);
     }
 }

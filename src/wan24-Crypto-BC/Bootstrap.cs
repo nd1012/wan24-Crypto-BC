@@ -21,6 +21,8 @@ namespace wan24.Crypto.BC
             AsymmetricHelper.Algorithms[AsymmetricDilithiumAlgorithm.ALGORITHM_NAME] = AsymmetricDilithiumAlgorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricFalconAlgorithm.ALGORITHM_NAME] = AsymmetricFalconAlgorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME] = AsymmetricSphincsPlusAlgorithm.Instance;
+            //FIXME PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo doesn't support NtruPrivateKeyParameters !? (waiting for a fix and an update of the NuGet package at present)
+            //AsymmetricHelper.Algorithms[AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME] = AsymmetricNtruEncryptAlgorithm.Instance;
             // ChaCha20
             EncryptionHelper.Algorithms[EncryptionChaCha20Algorithm.ALGORITHM_NAME] = EncryptionChaCha20Algorithm.Instance;
             CryptoProfiles.Registered[EncryptionChaCha20Algorithm.PROFILE_CHACHA20_RAW] = new CryptoOptions()
@@ -71,6 +73,7 @@ namespace wan24.Crypto.BC
                 .WithoutMac()
                 .WithEncryptionAlgorithm(EncryptionTwofish256GcmAlgorithm.ALGORITHM_NAME);
             // Hash
+            //TODO .NET 8: SHA3
             HashHelper.Algorithms[HashSha3_256Algorithm.ALGORITHM_NAME] = HashSha3_256Algorithm.Instance;
             HashHelper.Algorithms[HashSha3_384Algorithm.ALGORITHM_NAME] = HashSha3_384Algorithm.Instance;
             HashHelper.Algorithms[HashSha3_512Algorithm.ALGORITHM_NAME] = HashSha3_512Algorithm.Instance;
@@ -81,19 +84,48 @@ namespace wan24.Crypto.BC
             // PQ
             CryptoHelper.OnForcePostQuantum += (e) =>
             {
+                //TODO Implement NTRU encryption as new default algorithm for key exchange in v2
                 if (CryptoHelper.StrictPostQuantumSafety)
                 {
                     if (!AsymmetricHelper.DefaultKeyExchangeAlgorithm.IsPostQuantum)
+                    {
                         AsymmetricHelper.DefaultKeyExchangeAlgorithm = AsymmetricKyberAlgorithm.Instance;
+                    }
+                    else if(!(HybridAlgorithmHelper.KeyExchangeAlgorithm?.IsPostQuantum ?? true))
+                    {
+                        HybridAlgorithmHelper.KeyExchangeAlgorithm = AsymmetricKyberAlgorithm.Instance;
+                    }
                     if (!AsymmetricHelper.DefaultSignatureAlgorithm.IsPostQuantum)
+                    {
                         AsymmetricHelper.DefaultSignatureAlgorithm = AsymmetricDilithiumAlgorithm.Instance;
+                    }
+                    else if (!(HybridAlgorithmHelper.SignatureAlgorithm?.IsPostQuantum ?? true))
+                    {
+                        HybridAlgorithmHelper.SignatureAlgorithm = AsymmetricDilithiumAlgorithm.Instance;
+                    }
                 }
                 else
                 {
-                    if (!(HybridAlgorithmHelper.KeyExchangeAlgorithm?.IsPostQuantum ?? false))
+                    if(AsymmetricHelper.DefaultKeyExchangeAlgorithm.IsPostQuantum && !(HybridAlgorithmHelper.KeyExchangeAlgorithm?.IsPostQuantum ?? false))
+                    {
                         HybridAlgorithmHelper.KeyExchangeAlgorithm = AsymmetricKyberAlgorithm.Instance;
-                    if (!(HybridAlgorithmHelper.SignatureAlgorithm?.IsPostQuantum ?? false))
+                    }
+                    else if (!AsymmetricHelper.DefaultKeyExchangeAlgorithm.IsPostQuantum)
+                    {
+                        if (!(HybridAlgorithmHelper.KeyExchangeAlgorithm?.IsPostQuantum ?? false))
+                            HybridAlgorithmHelper.KeyExchangeAlgorithm = AsymmetricHelper.DefaultKeyExchangeAlgorithm;
+                        AsymmetricHelper.DefaultKeyExchangeAlgorithm = AsymmetricKyberAlgorithm.Instance;
+                    }
+                    if (AsymmetricHelper.DefaultSignatureAlgorithm.IsPostQuantum && !(HybridAlgorithmHelper.SignatureAlgorithm?.IsPostQuantum ?? false))
+                    {
                         HybridAlgorithmHelper.SignatureAlgorithm = AsymmetricDilithiumAlgorithm.Instance;
+                    }
+                    else if (!AsymmetricHelper.DefaultSignatureAlgorithm.IsPostQuantum)
+                    {
+                        if (!(HybridAlgorithmHelper.SignatureAlgorithm?.IsPostQuantum ?? false))
+                            HybridAlgorithmHelper.SignatureAlgorithm = AsymmetricHelper.DefaultSignatureAlgorithm;
+                        AsymmetricHelper.DefaultSignatureAlgorithm = AsymmetricDilithiumAlgorithm.Instance;
+                    }
                 }
             };
         }

@@ -1,5 +1,6 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Pqc.Crypto.Frodo;
+using wan24.Core;
 
 namespace wan24.Crypto.BC
 {
@@ -38,6 +39,14 @@ namespace wan24.Crypto.BC
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);
+            if (Keys == null) return;
+            Keys.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
+        }
+
+        /// <inheritdoc/>
+        protected override async Task DisposeCore()
+        {
+            await base.DisposeCore().DynamicContext();
             if (Keys == null) return;
             Keys.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
         }

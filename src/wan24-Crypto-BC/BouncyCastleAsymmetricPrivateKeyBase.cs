@@ -128,12 +128,12 @@ namespace wan24.Crypto.BC
                     CleanReturned = true
                 };
                 ms.WriteNumber(StreamSerializer.VERSION);
-                byte[] keyInfo = PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo((tPrivateKey)Keys.Private).PrivateKeyData.GetEncoded();
+                byte[] keyInfo = PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo(Keys.Private).PrivateKeyData.GetEncoded();
                 try
                 {
                     ms.WriteBytes(keyInfo);
                     keyInfo.Clear();
-                    keyInfo = PqcSubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo((tPublicKey)Keys.Public).GetEncoded();
+                    keyInfo = PqcSubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(Keys.Public).GetEncoded();
                     ms.WriteBytes(keyInfo);
                     keyInfo.Clear();
                 }
