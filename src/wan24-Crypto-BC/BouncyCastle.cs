@@ -1,6 +1,4 @@
-﻿//TODO Implement ECDH, ECDSA to replace wan24-Crypto algoritms
-
-namespace wan24.Crypto.BC
+﻿namespace wan24.Crypto.BC
 {
     /// <summary>
     /// Bouncy Castle helper
@@ -13,6 +11,7 @@ namespace wan24.Crypto.BC
         /// <param name="useCurrentDefaultAsCounterAlgorithms">Use the current <c>wan24-Crypto</c> defaults as counter algorithms?</param>
         public static void SetDefaults(in bool useCurrentDefaultAsCounterAlgorithms = true)
         {
+            //TODO In v2 use NTRU as default asymmetric algorithm for key exchange
             if (useCurrentDefaultAsCounterAlgorithms)
             {
                 HybridAlgorithmHelper.KeyExchangeAlgorithm = AsymmetricHelper.DefaultKeyExchangeAlgorithm;
@@ -40,7 +39,7 @@ namespace wan24.Crypto.BC
             EncryptionHelper.Algorithms[EncryptionAes256CbcAlgorithm.ALGORITHM_NAME] = EncryptionBcAes256CbcAlgorithm.Instance;
             if (EncryptionHelper.DefaultAlgorithm.Value == EncryptionAes256CbcAlgorithm.ALGORITHM_VALUE)
                 EncryptionHelper.DefaultAlgorithm = EncryptionBcAes256CbcAlgorithm.Instance;
-            //TODO Replace other .NET algorithms
+            //TODO Implement ECDH, ECDSA to replace wan24-Crypto algoritms
         }
     }
 }

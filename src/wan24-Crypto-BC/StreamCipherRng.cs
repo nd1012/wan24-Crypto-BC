@@ -6,7 +6,7 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// Stream cipher CSRNG
     /// </summary>
-    public class StreamCipherRng : DisposableBase, IRandomGenerator//TODO What about ISeedableRng?
+    public class StreamCipherRng : DisposableSeedableRngBase, IBouncyCastleRng
     {
         /// <summary>
         /// RNG synchronization
@@ -23,7 +23,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Internal RNG to use
         /// </summary>
-        protected readonly IRandomGenerator RNG = null!;
+        protected readonly ISeedableRng RNG = null!;
 
         /// <summary>
         /// Constructor
@@ -34,7 +34,7 @@ namespace wan24.Crypto.BC
         /// <param name="seedLength">Seed the given RNG with N byte from <see cref="RND"/> (skipped, if <see langword="null"/> or <c>&lt;1</c>)</param>
         public StreamCipherRng(
             in EncryptionAlgorithmBase algorithm, 
-            IRandomGenerator? rng = null, //TODO Support ISeedableRng
+            ISeedableRng? rng = null,
             in int? bufferSize = null, 
             in int? seedLength = 256
             )
@@ -46,7 +46,7 @@ namespace wan24.Crypto.BC
                 if (algorithm.BlockSize != 1) throw new ArgumentException("Stream cipher required", nameof(algorithm));
                 if (bufferSize.HasValue && bufferSize.Value < Algorithm.IvSize)
                     throw new ArgumentOutOfRangeException(nameof(bufferSize), $"Min. buffer size for {algorithm.DisplayName} is {algorithm.IvSize} byte");
-                rng ??= new VmpcRandomGenerator();
+                rng ??= new BouncyCastleRngWrapper(new VmpcRandomGenerator());
                 // Create a buffer for chunking random sequences
                 Buffer = new(bufferSize ?? Settings.BufferSize, clear: true);
                 // Seed the RNG
@@ -57,11 +57,11 @@ namespace wan24.Crypto.BC
                     })
                     {
                         RND.FillBytes(seed.Span);
-                        rng.AddSeedMaterial(seed.Span);
+                        rng.AddSeed(seed.Span);
                     }
                 // Create a random key
                 using SecureByteArrayRefStruct key = new(algorithm.KeySize);
-                rng.NextBytes(key.Span);
+                rng.FillBytes(key.Span);
                 // Create encryption options
                 CryptoOptions options = new CryptoOptions()
                 {
@@ -110,11 +110,22 @@ namespace wan24.Crypto.BC
         public EncryptionAlgorithmBase Algorithm { get; }
 
         /// <inheritdoc/>
+        public override void AddSeed(ReadOnlySpan<byte> seed) => AddSeedMaterial(seed);
+
+        /// <inheritdoc/>
+        public override async Task AddSeedAsync(ReadOnlyMemory<byte> seed, CancellationToken cancellationToken = default)
+        {
+            EnsureUndisposed();
+            using SemaphoreSyncContext ssc = await RngSync.SyncContextAsync(cancellationToken).DynamicContext();
+            await RNG.AddSeedAsync(seed, cancellationToken).DynamicContext();
+        }
+
+        /// <inheritdoc/>
         public virtual void AddSeedMaterial(byte[] seed)
         {
             EnsureUndisposed();
             using SemaphoreSyncContext ssc = RngSync;
-            RNG.AddSeedMaterial(seed);
+            RNG.AddSeed(seed);
         }
 
         /// <inheritdoc/>
@@ -122,7 +133,7 @@ namespace wan24.Crypto.BC
         {
             EnsureUndisposed();
             using SemaphoreSyncContext ssc = RngSync;
-            RNG.AddSeedMaterial(seed);
+            RNG.AddSeed(seed);
         }
 
         /// <inheritdoc/>
@@ -130,7 +141,23 @@ namespace wan24.Crypto.BC
         {
             EnsureUndisposed();
             using SemaphoreSyncContext ssc = RngSync;
-            RNG.AddSeedMaterial(seed);
+            using RentedArrayRefStruct<byte> buffer = new(sizeof(long));
+            seed.GetBytes(buffer.Span);
+            RNG.AddSeed(buffer.Span);
+        }
+
+        /// <inheritdoc/>
+        public override Span<byte> FillBytes(in Span<byte> buffer)
+        {
+            NextBytes(buffer);
+            return buffer;
+        }
+
+        /// <inheritdoc/>
+        public override Task<Memory<byte>> FillBytesAsync(Memory<byte> buffer, CancellationToken cancellationToken = default)
+        {
+            NextBytes(buffer.Span);
+            return Task.FromResult(buffer);
         }
 
         /// <inheritdoc/>
@@ -148,7 +175,7 @@ namespace wan24.Crypto.BC
             for (int write; bytes.Length != 0; bytes = bytes[write..])
             {
                 write = Math.Min(bytes.Length, Buffer.BufferSize);
-                RNG.NextBytes(bytes[..write]);
+                RNG.FillBytes(bytes[..write]);
                 Encryption.CryptoStream.Write(bytes[..write]);
                 Encryption.CryptoStream.Flush();
                 if (Buffer.Read(bytes[..write]) != write)

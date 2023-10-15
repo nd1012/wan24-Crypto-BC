@@ -49,6 +49,21 @@ namespace wan24.Crypto.BC
             privateKey.Tr.Clear();
         }
 
+        /// <inheritdoc/>
+        protected override async Task DisposeCore()
+        {
+            await base.DisposeCore().DynamicContext();
+            if (Keys == null) return;
+            DilithiumPrivateKeyParameters privateKey = (DilithiumPrivateKeyParameters)Keys.Private;
+            privateKey.K.Clear();
+            privateKey.Rho.Clear();
+            privateKey.S1.Clear();
+            privateKey.S2.Clear();
+            privateKey.T0.Clear();
+            privateKey.T1.Clear();
+            privateKey.Tr.Clear();
+        }
+
         /// <summary>
         /// Cast to public key
         /// </summary>

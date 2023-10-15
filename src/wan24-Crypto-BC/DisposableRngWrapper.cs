@@ -6,7 +6,7 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// Bouncy Castle disposable RNG wrapper for <c>wan24-Crypto</c>
     /// </summary>
-    public sealed class DisposableRngWrapper : DisposableBase, IRandomGenerator//TODO Extend DisposableSeedableRngBase
+    public sealed class DisposableRngWrapper : DisposableSeedableRngBase, IRandomGenerator
     {
         /// <summary>
         /// Constructor
@@ -20,6 +20,16 @@ namespace wan24.Crypto.BC
         public IRandomGenerator RNG { get; }
 
         /// <inheritdoc/>
+        public override void AddSeed(ReadOnlySpan<byte> seed) => AddSeedMaterial(seed);
+
+        /// <inheritdoc/>
+        public override Task AddSeedAsync(ReadOnlyMemory<byte> seed, CancellationToken cancellationToken = default)
+        {
+            AddSeedMaterial(seed.Span);
+            return Task.CompletedTask;
+        }
+
+        /// <inheritdoc/>
         public void AddSeedMaterial(byte[] seed) => RNG.AddSeedMaterial(seed);
 
         /// <inheritdoc/>
@@ -27,6 +37,20 @@ namespace wan24.Crypto.BC
 
         /// <inheritdoc/>
         public void AddSeedMaterial(long seed) => RNG.AddSeedMaterial(seed);
+
+        /// <inheritdoc/>
+        public override Span<byte> FillBytes(in Span<byte> buffer)
+        {
+            NextBytes(buffer);
+            return buffer;
+        }
+
+        /// <inheritdoc/>
+        public override Task<Memory<byte>> FillBytesAsync(Memory<byte> buffer, CancellationToken cancellationToken = default)
+        {
+            NextBytes(buffer.Span);
+            return Task.FromResult(buffer);
+        }
 
         /// <inheritdoc/>
         public void NextBytes(byte[] bytes) => RNG.NextBytes(bytes);

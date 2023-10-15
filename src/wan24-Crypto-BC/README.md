@@ -13,6 +13,7 @@ the `wan24-Crypto` library with these algorithms:
 | FALCON | 4 | FALCON |
 | SPHINCS+ | 5 | SPHINCSPLUS |
 | FrodoKEM* | 6 | FRODOKEM |
+| NTRUEncrypt* | 7 | NTRUENCRYPT |
 | **Symmetric** |  |  |
 | ChaCha20 | 1 | CHACHA20 |
 | XSalsa20 | 2 | XSALSA20 |
@@ -30,8 +31,13 @@ the `wan24-Crypto` library with these algorithms:
 | HMAC-SHA3-384 | 5 | HMAC-SHA3-384 |
 | HMAC-SHA3-512 | 6 | HMAC-SHA3-512 |
 
-**NOTE**: FrodoKEM is currently disabled, 'cause there seems to be a bug 
-(missing code) in the Bouncy Castle library for FrodoKEM.
+**NOTE**: FrodoKEM and NTRUEncrypt are currently disabled, 'cause there seems 
+to be a bug (missing code) in the Bouncy Castle library for 
+exporting/importing private keys (at last).
+
+NTRUSign is currently not implemented, 'cause it'd require the using code to 
+be GPL licensed. This algorithm may be included in a separate package which is 
+licensed using the GPL license (to avoid misunderstandings) in the future.
 
 ## How to get it
 
@@ -81,16 +87,15 @@ These algorithms are designed for post quantum cryptography:
 - SPHINCS+ (signature)
 - FrodoKEM (key exchange)
 
-Normally you want to use them in hybrid mode as counter algorithm for 
-extending a default algorithm of the `wan24-Crypto` package. To do this per 
-default:
+Normally you want to use them in hybrid mode and use classical algorithms of 
+the `wan24-Crypto` package as counter algorithm. To do this per default:
 
 ```cs
-// Enable the post quantum algorithms as counter-defaults
+// Enable the post quantum algorithms as (counter-)defaults
 CryptoHelper.ForcePostQuantumSafety();
 ```
 
-This will use these algorithms as counter algorithms for asymmetric 
+This will use these algorithms as (counter) algorithms for asymmetric 
 cryptography, in case you didn't define other post quantum algorithms already:
 
 - CRYSTALS-Kyber (key exchange)
@@ -145,7 +150,7 @@ FrodoKEM the AES parameters will be used.
 ## Random data provider
 
 The `RandomDataProvider` is a `RandomDataGenerator` which provides added seed 
-data to `OnSeed` attached event handlers. It uses the `ChaCha20Rng` in 
+data to `OnSeed(Async)` attached event handlers. It uses the `ChaCha20Rng` in 
 combination with `RND` of `wan24-Crypto` to produce cryptographic secure 
 random data (CSRNG). An instance may be set as `RND.Generator` singleton 
 random data generator for all consumers (like key generators etc.).
@@ -163,31 +168,9 @@ instance and consumes the provided seeds from the parent automatically.
 **NOTE**: Don't forget to dispose an unused `RandomDataProvider` instance!
 
 **CAUTION**: There is a patent (US10402172B1) which comes into play, if you 
-plan to create a Random or Entrophy as a Service (R/EaaS) application, 
-especially when using QRNG entrophy or sequences. Read that document carefully 
-to avoid disappointments. The patent can't forbid to create and run an 
-internal R/EaaS application, but it can deny any distribution of R/EaaS 
-appliances, their generated random sequences, and even keys (for a PKI, for 
-example) which have been generated using such random sequences, even those 
-have been aggregated with a PRNG, CSRNG or any other RNG or enthrophy source. 
-Sad (in my opinion), but fact: All network communicated random based sequences 
-in any R/EaaS manner are denied by this patent. Only local usage on a single 
-mashine is still possible, but any data which comes in touch with a random 
-sequence in any way, is denied to be extracted from that system over a 
-network. The only way to get around that is to use a quantum physical 
-hardware, which is linked to another quantum physical hardware at another 
-location, and doesn't require classical network communication for exchanging 
-information (QKD). To sum that mess up: You may use the `RandomDataProvider` 
-on a local system **_only_**, unless you use quantum physical hardware as 
-described. Fortunately the patent holder (which has a past in the CIA) offers 
-everything to go, and seems to stay the only source until at last the year 
-2039, if the patent offices or curts won't undo that big mistake to confirm 
-that patent in the published form.
-
-You may use R/EaaS in regions and for data which is being communicated in 
-regions where the patent doesn't have an effect, and switch back to classical 
-P/CSRNG for communications with any patent affected regions - or use the 
-patent holders hard- and software (from within that regions).
+plan to create a Random or Entropy as a Service (R/EaaS) application, 
+especially when using QRNG entropy. Read that document carefully to avoid 
+disappointments.
 
 ## Stream cipher RNG
 
