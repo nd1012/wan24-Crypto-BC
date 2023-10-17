@@ -204,8 +204,8 @@ RND.FillBytesAsync = csrng.GetBytesAsync;
 ```
 
 **NOTE**: When setting the `RND.FillBytes(Async)` callbacks, they may not be 
-used, if `/dev/urandom` was preferred. To disable `/dev/urandom`, set 
-`RND.UseDevUrandom` and `RND.RequireDevUrandom` to `false` also.
+used, if `/dev/random` was preferred. To disable `/dev/random`, set 
+`RND.UseDevRandom` and `RND.RequireDevRandom` to `false` also.
 
 **NOTE**: Currently only stream ciphers are supported, because the cipher RNG 
 implementation doesn't buffer pre-generated random data.

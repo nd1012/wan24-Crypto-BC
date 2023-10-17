@@ -236,12 +236,11 @@ namespace wan24.Crypto.BC
         /// <inheritdoc/>
         protected override async Task WorkerAsync()
         {
-            bool isDefaultRng = RND.Generator == this;
             using RentedArrayStructSimple<byte> buffer1 = new(WorkerBufferSize, clean: false)
             {
                 Clear = true
             };
-            if (isDefaultRng)// Avoids an endless recursion when using this instance as RND.Generator
+            if (RND.Generator == this)// Avoids an endless recursion when using this instance as RND.Generator
             {
                 for (; !CancelToken.IsCancellationRequested;)
                 {

@@ -1,6 +1,4 @@
-﻿using Org.BouncyCastle.Crypto.Prng;
-
-namespace wan24.Crypto.BC
+﻿namespace wan24.Crypto.BC
 {
     /// <summary>
     /// XSalsa20 CSRNG
