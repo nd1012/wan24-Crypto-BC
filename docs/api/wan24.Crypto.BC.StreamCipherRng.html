@@ -95,6 +95,7 @@
     <div><span class="xref">Org.BouncyCastle.Crypto.Prng.IRandomGenerator</span></div>
     <div><span class="xref">wan24.Crypto.ISeedableRng</span></div>
     <div><span class="xref">wan24.Crypto.IRng</span></div>
+    <div><span class="xref">wan24.Crypto.ISeedConsumer</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -202,7 +203,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_StreamCipherRng_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class StreamCipherRng : DisposableSeedableRngBase, IDisposableObject, IDisposable, IAsyncDisposable, IBouncyCastleRng, IRandomGenerator, ISeedableRng, IRng</code></pre>
+    <pre><code class="lang-csharp hljs">public class StreamCipherRng : DisposableSeedableRngBase, IDisposableObject, IDisposable, IAsyncDisposable, IBouncyCastleRng, IRandomGenerator, ISeedableRng, IRng, ISeedConsumer</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -600,7 +601,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_StreamCipherRng_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.StreamCipherRng.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/StreamCipherRng.cs/#L187">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/StreamCipherRng.cs/#L190">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_StreamCipherRng_Dispose_" data-uid="wan24.Crypto.BC.StreamCipherRng.Dispose*"></a>
   <h4 id="wan24_Crypto_BC_StreamCipherRng_Dispose_System_Boolean_" data-uid="wan24.Crypto.BC.StreamCipherRng.Dispose(System.Boolean)">Dispose(Boolean)</h4>
@@ -634,7 +635,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_StreamCipherRng_FillBytes_Span_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.StreamCipherRng.FillBytes(Span%7BSystem.Byte%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/StreamCipherRng.cs/#L150">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/StreamCipherRng.cs/#L153">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_StreamCipherRng_FillBytes_" data-uid="wan24.Crypto.BC.StreamCipherRng.FillBytes*"></a>
   <h4 id="wan24_Crypto_BC_StreamCipherRng_FillBytes_Span_System_Byte___" data-uid="wan24.Crypto.BC.StreamCipherRng.FillBytes(Span{System.Byte}@)">FillBytes(in Span&lt;Byte&gt;)</h4>
@@ -681,7 +682,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_StreamCipherRng_FillBytesAsync_Memory_System_Byte__CancellationToken_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.StreamCipherRng.FillBytesAsync(Memory%7BSystem.Byte%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/StreamCipherRng.cs/#L157">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/StreamCipherRng.cs/#L160">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_StreamCipherRng_FillBytesAsync_" data-uid="wan24.Crypto.BC.StreamCipherRng.FillBytesAsync*"></a>
   <h4 id="wan24_Crypto_BC_StreamCipherRng_FillBytesAsync_Memory_System_Byte__CancellationToken_" data-uid="wan24.Crypto.BC.StreamCipherRng.FillBytesAsync(Memory{System.Byte},CancellationToken)">FillBytesAsync(Memory&lt;Byte&gt;, CancellationToken)</h4>
@@ -733,7 +734,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_StreamCipherRng_NextBytes_Span_System_Byte__.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.StreamCipherRng.NextBytes(Span%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/StreamCipherRng.cs/#L170">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/StreamCipherRng.cs/#L173">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_StreamCipherRng_NextBytes_" data-uid="wan24.Crypto.BC.StreamCipherRng.NextBytes*"></a>
   <h4 id="wan24_Crypto_BC_StreamCipherRng_NextBytes_Span_System_Byte__" data-uid="wan24.Crypto.BC.StreamCipherRng.NextBytes(Span{System.Byte})">NextBytes(Span&lt;Byte&gt;)</h4>
@@ -765,7 +766,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_StreamCipherRng_NextBytes_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.StreamCipherRng.NextBytes(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/StreamCipherRng.cs/#L164">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/StreamCipherRng.cs/#L167">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_StreamCipherRng_NextBytes_" data-uid="wan24.Crypto.BC.StreamCipherRng.NextBytes*"></a>
   <h4 id="wan24_Crypto_BC_StreamCipherRng_NextBytes_System_Byte___" data-uid="wan24.Crypto.BC.StreamCipherRng.NextBytes(System.Byte[])">NextBytes(Byte[])</h4>
@@ -797,7 +798,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_StreamCipherRng_NextBytes_System_Byte___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.StreamCipherRng.NextBytes(System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/StreamCipherRng.cs/#L167">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/StreamCipherRng.cs/#L170">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_StreamCipherRng_NextBytes_" data-uid="wan24.Crypto.BC.StreamCipherRng.NextBytes*"></a>
   <h4 id="wan24_Crypto_BC_StreamCipherRng_NextBytes_System_Byte___System_Int32_System_Int32_" data-uid="wan24.Crypto.BC.StreamCipherRng.NextBytes(System.Byte[],System.Int32,System.Int32)">NextBytes(Byte[], Int32, Int32)</h4>
@@ -855,6 +856,9 @@
   </div>
   <div>
       <span class="xref">wan24.Crypto.IRng</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.ISeedConsumer</span>
   </div>
 </article>
           </div>

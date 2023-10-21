@@ -94,6 +94,7 @@
     <div><span class="xref">Org.BouncyCastle.Crypto.Prng.IRandomGenerator</span></div>
     <div><span class="xref">wan24.Crypto.ISeedableRng</span></div>
     <div><span class="xref">wan24.Crypto.IRng</span></div>
+    <div><span class="xref">wan24.Crypto.ISeedConsumer</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -249,7 +250,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_ChaCha20Rng_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class ChaCha20Rng : StreamCipherRng, IDisposableObject, IDisposable, IAsyncDisposable, IBouncyCastleRng, IRandomGenerator, ISeedableRng, IRng</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class ChaCha20Rng : StreamCipherRng, IDisposableObject, IDisposable, IAsyncDisposable, IBouncyCastleRng, IRandomGenerator, ISeedableRng, IRng, ISeedConsumer</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -320,6 +321,9 @@
   </div>
   <div>
       <span class="xref">wan24.Crypto.IRng</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.ISeedConsumer</span>
   </div>
 </article>
           </div>

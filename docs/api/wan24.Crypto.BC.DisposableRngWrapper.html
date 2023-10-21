@@ -91,6 +91,7 @@
     <div><span class="xref">System.IAsyncDisposable</span></div>
     <div><span class="xref">wan24.Crypto.ISeedableRng</span></div>
     <div><span class="xref">wan24.Crypto.IRng</span></div>
+    <div><span class="xref">wan24.Crypto.ISeedConsumer</span></div>
     <div><span class="xref">Org.BouncyCastle.Crypto.Prng.IRandomGenerator</span></div>
   </div>
   <div class="inheritedMembers">
@@ -196,7 +197,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_DisposableRngWrapper_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class DisposableRngWrapper : DisposableSeedableRngBase, IDisposableObject, IDisposable, IAsyncDisposable, ISeedableRng, IRng, IRandomGenerator</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class DisposableRngWrapper : DisposableSeedableRngBase, IDisposableObject, IDisposable, IAsyncDisposable, ISeedableRng, IRng, ISeedConsumer, IRandomGenerator</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -735,6 +736,9 @@
   </div>
   <div>
       <span class="xref">wan24.Crypto.IRng</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.ISeedConsumer</span>
   </div>
   <div>
       <span class="xref">Org.BouncyCastle.Crypto.Prng.IRandomGenerator</span>

@@ -97,12 +97,6 @@
       <span class="xref">Org.BouncyCastle.Crypto.Prng.IRandomGenerator.NextBytes(System.Span&lt;System.Byte&gt;)</span>
     </div>
     <div>
-      <span class="xref">wan24.Crypto.ISeedableRng.AddSeed(System.ReadOnlySpan&lt;System.Byte&gt;)</span>
-    </div>
-    <div>
-      <span class="xref">wan24.Crypto.ISeedableRng.AddSeedAsync(System.ReadOnlyMemory&lt;System.Byte&gt;, System.Threading.CancellationToken)</span>
-    </div>
-    <div>
       <span class="xref">wan24.Crypto.IRng.GetBytes(System.Int32)</span>
     </div>
     <div>
@@ -114,12 +108,18 @@
     <div>
       <span class="xref">wan24.Crypto.IRng.FillBytesAsync(System.Memory&lt;System.Byte&gt;, System.Threading.CancellationToken)</span>
     </div>
+    <div>
+      <span class="xref">wan24.Crypto.ISeedConsumer.AddSeed(System.ReadOnlySpan&lt;System.Byte&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">wan24.Crypto.ISeedConsumer.AddSeedAsync(System.ReadOnlyMemory&lt;System.Byte&gt;, System.Threading.CancellationToken)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="wan24.Crypto.BC.html">wan24.Crypto.BC</a></h6>
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_IBouncyCastleRng_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IBouncyCastleRng : IRandomGenerator, ISeedableRng, IRng</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IBouncyCastleRng : IRandomGenerator, ISeedableRng, IRng, ISeedConsumer</code></pre>
   </div>
 </article>
           </div>
