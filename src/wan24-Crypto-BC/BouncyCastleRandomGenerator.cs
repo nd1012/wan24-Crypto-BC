@@ -38,7 +38,10 @@ namespace wan24.Crypto.BC
         /// <inheritdoc/>
         public void AddSeedMaterial(long seed)
         {
-            using RentedArrayRefStruct<byte> buffer = new(sizeof(long));
+            using RentedArrayRefStruct<byte> buffer = new(sizeof(long), clean: false)
+            {
+                Clear = true
+            };
             seed.GetBytes(buffer.Span);
             RND.AddSeed(buffer.Span);
         }

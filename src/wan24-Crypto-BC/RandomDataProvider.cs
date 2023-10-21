@@ -9,7 +9,7 @@ namespace wan24.Crypto.BC
     public class RandomDataProvider : RandomDataGenerator, IBouncyCastleRng // Note for myself: Do not try to move this to wan24-Crypto - it won't work...
     {
         /// <summary>
-        /// Random number generator
+        /// Random number generator (will be disposed)
         /// </summary>
         protected readonly ISeedableRng RNG;
         /// <summary>
@@ -36,7 +36,7 @@ namespace wan24.Crypto.BC
         /// <param name="rdp">Random data provider to attach to (will be used for seeding, if available - otherwise fallback to <see cref="RND"/>)</param>
         /// <param name="seed">Initial seed length in bytes</param>
         /// <param name="workerBufferSize">Worker buffer size in bytes</param>
-        /// <param name="rng">RNG to use</param>
+        /// <param name="rng">RNG to use (will be disposed)</param>
         public RandomDataProvider(
             in int capacity, 
             in RandomDataProvider? rdp = null, 
@@ -64,7 +64,7 @@ namespace wan24.Crypto.BC
             _OnSeedAsync = new(this);
             WorkerBufferSize = workerBufferSize ?? Settings.BufferSize;
             UseFallback = false;
-            UseDevUrandom = false;
+            UseDevRandom = false;
             SeedProvider = rdp;
             if (rdp is not null)
             {
@@ -236,12 +236,11 @@ namespace wan24.Crypto.BC
         /// <inheritdoc/>
         protected override async Task WorkerAsync()
         {
-            bool isDefaultRng = RND.Generator == this;
             using RentedArrayStructSimple<byte> buffer1 = new(WorkerBufferSize, clean: false)
             {
                 Clear = true
             };
-            if (isDefaultRng)// Avoids an endless recursion when using this instance as RND.Generator
+            if (RND.Generator == this)// Avoids an endless recursion when using this instance as RND.Generator
             {
                 for (; !CancelToken.IsCancellationRequested;)
                 {

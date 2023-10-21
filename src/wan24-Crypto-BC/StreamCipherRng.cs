@@ -141,7 +141,10 @@ namespace wan24.Crypto.BC
         {
             EnsureUndisposed();
             using SemaphoreSyncContext ssc = RngSync;
-            using RentedArrayRefStruct<byte> buffer = new(sizeof(long));
+            using RentedArrayRefStruct<byte> buffer = new(sizeof(long), clean: false)
+            {
+                Clear = true
+            };
             seed.GetBytes(buffer.Span);
             RNG.AddSeed(buffer.Span);
         }

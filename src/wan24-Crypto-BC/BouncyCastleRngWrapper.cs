@@ -60,6 +60,7 @@ namespace wan24.Crypto.BC
             return res;
         }
 
+        /// <inheritdoc/>
         public Task<byte[]> GetBytesAsync(int count, CancellationToken cancellationToken = default)
         {
             if (count < 1) return Task.FromResult(Array.Empty<byte>());
