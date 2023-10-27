@@ -138,7 +138,7 @@ namespace wan24.Crypto.BC
             EnsureUndisposed();
             if (seed.Length == 0) return;
             await RNG.AddSeedAsync(seed, cancellationToken).DynamicContext();
-            await RaiseOnSeedAsync(seed,cancellationToken).DynamicContext();
+            await RaiseOnSeedAsync(seed, cancellationToken).DynamicContext();
         }
 
         /// <inheritdoc/>
@@ -200,7 +200,10 @@ namespace wan24.Crypto.BC
         /// <param name="len">Initial seed length in bytes</param>
         protected virtual void InitialSeed(in int len)
         {
-            using RentedArrayRefStruct<byte> buffer = new(len);
+            using RentedArrayRefStruct<byte> buffer = new(len, clean: false)
+            {
+                Clear = true
+            };
             if (SeedProvider is null)
             {
                 RND.FillBytes(buffer.Span);
@@ -220,7 +223,10 @@ namespace wan24.Crypto.BC
         /// <param name="cancellationToken">Cancellation token</param>
         protected virtual async Task InitialSeedAsync(int len, CancellationToken cancellationToken = default)
         {
-            using RentedArrayStructSimple<byte> buffer = new(len);
+            using RentedArrayStructSimple<byte> buffer = new(len, clean: false)
+            {
+                Clear = true
+            };
             if (SeedProvider is null)
             {
                 await RND.FillBytesAsync(buffer.Memory).DynamicContext();
@@ -240,38 +246,18 @@ namespace wan24.Crypto.BC
             {
                 Clear = true
             };
-            if (RND.Generator == this)// Avoids an endless recursion when using this instance as RND.Generator
+            using RentedArrayStructSimple<byte> buffer2 = new(WorkerBufferSize, clean: false)
             {
-                for (; !CancelToken.IsCancellationRequested;)
-                {
-                    await RngSync.ExecuteAsync(async () =>
-                    {
-                        await RNG.FillBytesAsync(buffer1.Memory, CancelToken).DynamicContext();
-                        return Task.CompletedTask;
-                    }, CancelToken).DynamicContext();
-                    CancelToken.ThrowIfCancellationRequested();
-                    await RandomData.WriteAsync(buffer1.Memory, CancelToken).DynamicContext();
-                }
-            }
-            else
+                Clear = true
+            };
+            for (; !CancelToken.IsCancellationRequested;)//TODO After update use EnsureNotCanceled()
             {
-                using RentedArrayStructSimple<byte> buffer2 = new(WorkerBufferSize, clean: false)
-                {
-                    Clear = true
-                };
-                for (; !CancelToken.IsCancellationRequested;)
-                {
-                    await RngSync.ExecuteAsync(async () =>
-                    {
-                        await RNG.FillBytesAsync(buffer1.Memory, CancelToken).DynamicContext();
-                        return Task.CompletedTask;
-                    }, CancelToken).DynamicContext();
-                    CancelToken.ThrowIfCancellationRequested();
-                    await RND.DefaultRngAsync(buffer2.Memory).DynamicContext();
-                    CancelToken.ThrowIfCancellationRequested();
-                    buffer1.Span.Xor(buffer2.Span);
-                    await RandomData.WriteAsync(buffer1.Memory, CancelToken).DynamicContext();
-                }
+                await RngSync.ExecuteAsync(async () => await RNG.FillBytesAsync(buffer1.Memory, CancelToken).DynamicContext(), CancelToken).DynamicContext();
+                CancelToken.ThrowIfCancellationRequested();
+                await RND.DefaultRngAsync(buffer2.Memory).DynamicContext();
+                CancelToken.ThrowIfCancellationRequested();
+                buffer1.Span.Xor(buffer2.Span);
+                await RandomData.WriteAsync(buffer1.Memory, CancelToken).DynamicContext();
             }
         }
 
@@ -281,7 +267,7 @@ namespace wan24.Crypto.BC
             base.Dispose(disposing);
             if (SeedProvider is not null)
             {
-                SeedProvider!.OnDisposing -= HandleSeedProviderDisposing;
+                SeedProvider.OnDisposing -= HandleSeedProviderDisposing;
                 SeedProvider.OnSeedAsync -= HandleSeedAsync;
             }
             RngSync.Dispose();
@@ -294,7 +280,7 @@ namespace wan24.Crypto.BC
             await base.DisposeCore().DynamicContext();
             if (SeedProvider is not null)
             {
-                SeedProvider!.OnDisposing -= HandleSeedProviderDisposing;
+                SeedProvider.OnDisposing -= HandleSeedProviderDisposing;
                 SeedProvider.OnSeedAsync -= HandleSeedAsync;
             }
             await RngSync.DisposeAsync().DynamicContext();
