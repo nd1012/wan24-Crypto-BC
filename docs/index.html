@@ -204,7 +204,7 @@ licensed using the GPL license (to avoid misunderstandings) in the future.</p>
 <h2 id="usage">Usage</h2>
 <p>In case you don't use the <code>wan24-Core</code> bootstrapper logic, you need to
 initialize the Bouncy Castle extension first, before you can use it:</p>
-<pre><code class="lang-cs">wan24.Crypto.BC.Bootstrapper.Boot();
+<pre><code class="lang-cs">wan24.Crypto.BC.Bootstrap.Boot();
 </code></pre>
 <p>This will register the algorithms to the <code>wan24-Crypto</code> library.</p>
 <p>To set Bouncy Castle defaults as <code>wan24-Crypto</code> defaults:</p>

@@ -50,7 +50,7 @@ In case you don't use the `wan24-Core` bootstrapper logic, you need to
 initialize the Bouncy Castle extension first, before you can use it:
 
 ```cs
-wan24.Crypto.BC.Bootstrapper.Boot();
+wan24.Crypto.BC.Bootstrap.Boot();
 ```
 
 This will register the algorithms to the `wan24-Crypto` library.
