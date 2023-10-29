@@ -250,7 +250,7 @@ namespace wan24.Crypto.BC
             {
                 Clear = true
             };
-            for (; !CancelToken.IsCancellationRequested;)//TODO After update use EnsureNotCanceled()
+            while (EnsureNotCanceled())
             {
                 await RngSync.ExecuteAsync(async () => await RNG.FillBytesAsync(buffer1.Memory, CancelToken).DynamicContext(), CancelToken).DynamicContext();
                 CancelToken.ThrowIfCancellationRequested();
