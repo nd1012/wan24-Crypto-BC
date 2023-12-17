@@ -72,19 +72,10 @@ namespace wan24.Crypto.BC
                 .WithoutCompression()
                 .WithoutMac()
                 .WithEncryptionAlgorithm(EncryptionTwofish256GcmAlgorithm.ALGORITHM_NAME);
-            // Hash
-            //TODO .NET 8: SHA3
-            HashHelper.Algorithms[HashSha3_256Algorithm.ALGORITHM_NAME] = HashSha3_256Algorithm.Instance;
-            HashHelper.Algorithms[HashSha3_384Algorithm.ALGORITHM_NAME] = HashSha3_384Algorithm.Instance;
-            HashHelper.Algorithms[HashSha3_512Algorithm.ALGORITHM_NAME] = HashSha3_512Algorithm.Instance;
-            // MAC
-            MacHelper.Algorithms[MacHmacSha3_256Algorithm.ALGORITHM_NAME] = MacHmacSha3_256Algorithm.Instance;
-            MacHelper.Algorithms[MacHmacSha3_384Algorithm.ALGORITHM_NAME] = MacHmacSha3_384Algorithm.Instance;
-            MacHelper.Algorithms[MacHmacSha3_512Algorithm.ALGORITHM_NAME] = MacHmacSha3_512Algorithm.Instance;
             // PQ
             CryptoHelper.OnForcePostQuantum += (e) =>
             {
-                //TODO Implement NTRU encryption as new default algorithm for key exchange in v2
+                //TODO Implement NTRU encryption as new default algorithm for key exchange
                 if (CryptoHelper.StrictPostQuantumSafety)
                 {
                     if (!AsymmetricHelper.DefaultKeyExchangeAlgorithm.IsPostQuantum)

@@ -6,7 +6,7 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// SHA3-512 hash algorithm
     /// </summary>
-    public sealed record class HashSha3_512Algorithm : BouncyCastleHashAlgorithmBase<HashSha3_512Algorithm>
+    public sealed record class HashBcSha3_512Algorithm : BouncyCastleHashAlgorithmBase<HashBcSha3_512Algorithm>
     {
         /// <summary>
         /// Algorithm name
@@ -28,7 +28,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Constructor
         /// </summary>
-        public HashSha3_512Algorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
+        public HashBcSha3_512Algorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
 
         /// <inheritdoc/>
         public override int HashLength => HASH_LENGTH;

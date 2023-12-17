@@ -6,18 +6,16 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// Bouncy Castle disposable RNG wrapper for <c>wan24-Crypto</c>
     /// </summary>
-    public sealed class DisposableRngWrapper : DisposableSeedableRngBase, IRandomGenerator
+    /// <remarks>
+    /// Constructor
+    /// </remarks>
+    /// <param name="rng">RNG</param>
+    public sealed class DisposableRngWrapper(IRandomGenerator rng) : DisposableSeedableRngBase(), IRandomGenerator
     {
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="rng">RNG</param>
-        public DisposableRngWrapper(IRandomGenerator rng) : base() => RNG = rng;
-
         /// <summary>
         /// Wrapped RNG
         /// </summary>
-        public IRandomGenerator RNG { get; }
+        public IRandomGenerator RNG { get; } = rng;
 
         /// <inheritdoc/>
         public override void AddSeed(ReadOnlySpan<byte> seed) => AddSeedMaterial(seed);

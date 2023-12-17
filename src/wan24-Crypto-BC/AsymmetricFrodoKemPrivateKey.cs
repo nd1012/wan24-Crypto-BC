@@ -5,7 +5,7 @@ using wan24.Core;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// FrodoKEMasymmetric private key
+    /// FrodoKEM asymmetric private key
     /// </summary>
     public sealed record class AsymmetricFrodoKemPrivateKey
         : BouncyCastleAsymmetricPrivateKeyExchangeKeyBase<

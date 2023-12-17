@@ -5,18 +5,16 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// Bouncy Castle RNG wrapper for <c>wan24-Crypto</c>
     /// </summary>
-    public sealed class BouncyCastleRngWrapper : IBouncyCastleRng
+    /// <remarks>
+    /// Constructor
+    /// </remarks>
+    /// <param name="rng">RNG</param>
+    public sealed class BouncyCastleRngWrapper(in IRandomGenerator rng) : IBouncyCastleRng
     {
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="rng">RNG</param>
-        public BouncyCastleRngWrapper(in IRandomGenerator rng) => RNG = rng;
-
         /// <summary>
         /// Wrapped RNG
         /// </summary>
-        public IRandomGenerator RNG { get; }
+        public IRandomGenerator RNG { get; } = rng;
 
         /// <inheritdoc/>
         public void AddSeed(ReadOnlySpan<byte> seed) => AddSeedMaterial(seed);
@@ -54,7 +52,7 @@ namespace wan24.Crypto.BC
         /// <inheritdoc/>
         public byte[] GetBytes(in int count)
         {
-            if (count < 1) return Array.Empty<byte>();
+            if (count < 1) return [];
             byte[] res = new byte[count];
             NextBytes(res);
             return res;

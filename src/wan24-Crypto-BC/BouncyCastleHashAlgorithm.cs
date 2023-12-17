@@ -6,18 +6,16 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// Bouncy Castle hash algorithm
     /// </summary>
-    public sealed class BouncyCastleHashAlgorithm : HashAlgorithm
+    /// <remarks>
+    /// Constructor
+    /// </remarks>
+    /// <param name="digest">Digest</param>
+    public sealed class BouncyCastleHashAlgorithm(IDigest digest) : HashAlgorithm()
     {
         /// <summary>
         /// Digest
         /// </summary>
-        private readonly IDigest Digest;
-
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="digest">Digest</param>
-        public BouncyCastleHashAlgorithm(IDigest digest) : base() => Digest = digest;
+        private readonly IDigest Digest = digest;
 
         /// <inheritdoc/>
         public override void Initialize() => Digest.Reset();

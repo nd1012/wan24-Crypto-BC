@@ -130,35 +130,35 @@ namespace wan24.Crypto.BC
             {
                 if (StreamCipher is not null)
                 {
-                    if (inputCount == 0) return Array.Empty<byte>();
+                    if (inputCount == 0) return [];
                     using RentedArrayRefStruct<byte> outputBuffer = new(inputCount, clean: false)
                     {
                         Clear = true
                     };
                     int used = TransformBlock(inputBuffer, inputOffset, inputCount, outputBuffer.Array, 0);
-                    return used == 0 ? Array.Empty<byte>() : outputBuffer.Span[..used].ToArray();
+                    return used == 0 ? [] : outputBuffer.Span[..used].ToArray();
                 }
                 if (BlockCipher is not null)
                 {
-                    if (inputCount == 0) return Array.Empty<byte>();
+                    if (inputCount == 0) return [];
                     using RentedArrayRefStruct<byte> outputBuffer = new(Math.Max(inputCount, OutputBlockSize), clean: false)
                     {
                         Clear = true
                     };
                     int used = TransformBlock(inputBuffer, inputOffset, inputCount, outputBuffer.Array, 0);
-                    return used == 0 ? Array.Empty<byte>() : outputBuffer.Span[..used].ToArray();
+                    return used == 0 ? [] : outputBuffer.Span[..used].ToArray();
                 }
                 if (BufferedCipher is not null) return BufferedCipher.DoFinal(inputBuffer, inputOffset, inputCount);
                 if (Digest is not null)
                 {
-                    TransformBlock(inputBuffer, inputOffset, inputCount, Array.Empty<byte>(), 0);
+                    TransformBlock(inputBuffer, inputOffset, inputCount, [], 0);
                     byte[] res = new byte[OutputBlockSize];
                     Digest.DoFinal(res);
                     return res;
                 }
                 if (Mac is not null)
                 {
-                    TransformBlock(inputBuffer, inputOffset, inputCount, Array.Empty<byte>(), 0);
+                    TransformBlock(inputBuffer, inputOffset, inputCount, [], 0);
                     byte[] res = new byte[OutputBlockSize];
                     Mac.DoFinal(res);
                     return res;

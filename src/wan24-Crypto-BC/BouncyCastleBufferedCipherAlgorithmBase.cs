@@ -14,7 +14,7 @@ namespace wan24.Crypto.BC
         /// Constructor
         /// </summary>
         /// <param name="name">Algorithm name</param>
-        /// <param name="value">Agorithm value</param>
+        /// <param name="value">Algorithm value</param>
         protected BouncyCastleBufferedCipherAlgorithmBase(string name, int value) : base(name, value) { }
 
         /// <inheritdoc/>

@@ -35,7 +35,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Constructor
         /// </summary>
-        /// <param name="name">Algorthm name</param>
+        /// <param name="name">Algorithm name</param>
         /// <param name="value">Algorithm value</param>
         /// <param name="usages">Algorithm usages</param>
         /// <param name="isEllipticCurveAlgorithm">Is an elliptic curve algorithm?</param>
@@ -108,7 +108,7 @@ namespace wan24.Crypto.BC
         protected abstract tParam GetEngineParameters(CryptoOptions options);
 
         /// <summary>
-        /// Create key generatpr parameters
+        /// Create key generator parameters
         /// </summary>
         /// <param name="random">Random</param>
         /// <param name="parameters">Engine parameters</param>
