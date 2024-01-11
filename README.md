@@ -68,12 +68,18 @@ platforms, that's why they need to be replaced in order to be used:
 | `MacHmacSha3_256Algorithm` | `MacBcHmacSha3_256Algorithm` |
 | `MacHmacSha3_384Algorithm` | `MacBcHmacSha3_384Algorithm` |
 | `MacHmacSha3_512Algorithm` | `MacBcHmacSha3_512Algorithm` |
+| `HashShake128Algorithm` | `HashBcShake128Algorithm` |
+| `HashShake256Algorithm` | `HashBcShake256Algorithm` |
 
 To replace all of them:
 
 ```cs
 BouncyCastle.ReplaceNetAlgorithms();
 ```
+
+**NOTE**: The Shake128/256 replacements don't support variable output length 
+and use the default output length of the `wan24-Crypto` implementations 
+instead.
 
 ## Post quantum safety
 
@@ -84,6 +90,7 @@ These algorithms are designed for post quantum cryptography:
 - FALCON (signature)
 - SPHINCS+ (signature)
 - FrodoKEM (key exchange)
+- NTRU (key exchange)
 
 Normally you want to use them in hybrid mode and use classical algorithms of 
 the `wan24-Crypto` package as counter algorithm. To do this per default:

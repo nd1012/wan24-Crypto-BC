@@ -22,14 +22,6 @@ the `wan24-Crypto` library with these algorithms:
 | Serpent 256 GCM AEAD (128 bit MAC) | 6 | SERPENT256GCM |
 | Twofish 256 CBC (ISO10126 padding) | 7 | TWOFISH256CBC |
 | Twofish 256 GCM AEAD (128 bit MAC) | 8 | TWOFISH256GCM |
-| **Hashing** |  |  |
-| SHA3-256 | 5 | SHA3-256 |
-| SHA3-384 | 6 | SHA3-384 |
-| SHA3-512 | 7 | SHA3-512 |
-| **MAC** |  |  |
-| HMAC-SHA3-256 | 4 | HMAC-SHA3-256 |
-| HMAC-SHA3-384 | 5 | HMAC-SHA3-384 |
-| HMAC-SHA3-512 | 6 | HMAC-SHA3-512 |
 
 **NOTE**: FrodoKEM and NTRUEncrypt are currently disabled, 'cause there seems 
 to be a bug (missing code) in the Bouncy Castle library for 
@@ -70,12 +62,24 @@ platforms, that's why they need to be replaced in order to be used:
 | `wan24-Crypto` | `wan24-Crypto-BC` |
 | -------------- | ----------------- |
 | `EncryptionAes256CbcAlgorithm` | `EncryptionBcAes256CbcAlgorithm` |
+| `HashSha3_256Algorithm` | `HashBcSha3_256Algorithm` |
+| `HashSha3_384Algorithm` | `HashBcSha3_384Algorithm` |
+| `HashSha3_512Algorithm` | `HashBcSha3_512Algorithm` |
+| `MacHmacSha3_256Algorithm` | `MacBcHmacSha3_256Algorithm` |
+| `MacHmacSha3_384Algorithm` | `MacBcHmacSha3_384Algorithm` |
+| `MacHmacSha3_512Algorithm` | `MacBcHmacSha3_512Algorithm` |
+| `HashShake128Algorithm` | `HashBcShake128Algorithm` |
+| `HashShake256Algorithm` | `HashBcShake256Algorithm` |
 
 To replace all of them:
 
 ```cs
 BouncyCastle.ReplaceNetAlgorithms();
 ```
+
+**NOTE**: The Shake128/256 replacements don't support variable output length 
+and use the default output length of the `wan24-Crypto` implementations 
+instead.
 
 ## Post quantum safety
 

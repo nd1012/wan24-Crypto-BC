@@ -18,6 +18,9 @@ namespace wan24.Crypto.BC
         private readonly IDigest Digest = digest;
 
         /// <inheritdoc/>
+        public override int HashSize => Digest.GetDigestSize() << 3;
+
+        /// <inheritdoc/>
         public override void Initialize() => Digest.Reset();
 
         /// <inheritdoc/>

@@ -36,6 +36,8 @@
             HashHelper.Algorithms[HashBcSha3_256Algorithm.ALGORITHM_NAME] = HashBcSha3_256Algorithm.Instance;
             HashHelper.Algorithms[HashBcSha3_384Algorithm.ALGORITHM_NAME] = HashBcSha3_384Algorithm.Instance;
             HashHelper.Algorithms[HashBcSha3_512Algorithm.ALGORITHM_NAME] = HashBcSha3_512Algorithm.Instance;
+            HashHelper.Algorithms[HashBcShake128Algorithm.ALGORITHM_NAME] = HashBcShake128Algorithm.Instance;
+            HashHelper.Algorithms[HashBcShake256Algorithm.ALGORITHM_NAME] = HashBcShake256Algorithm.Instance;
             switch (HashHelper.DefaultAlgorithm.Value)
             {
                 case HashBcSha3_256Algorithm.ALGORITHM_VALUE:
