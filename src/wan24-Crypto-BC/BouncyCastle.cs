@@ -30,9 +30,11 @@
         /// </summary>
         public static void ReplaceNetAlgorithms()
         {
+            // Encryption
             EncryptionHelper.Algorithms[EncryptionAes256CbcAlgorithm.ALGORITHM_NAME] = EncryptionBcAes256CbcAlgorithm.Instance;
             if (EncryptionHelper.DefaultAlgorithm.Value == EncryptionAes256CbcAlgorithm.ALGORITHM_VALUE)
                 EncryptionHelper.DefaultAlgorithm = EncryptionBcAes256CbcAlgorithm.Instance;
+            // Hashing
             HashHelper.Algorithms[HashBcSha3_256Algorithm.ALGORITHM_NAME] = HashBcSha3_256Algorithm.Instance;
             HashHelper.Algorithms[HashBcSha3_384Algorithm.ALGORITHM_NAME] = HashBcSha3_384Algorithm.Instance;
             HashHelper.Algorithms[HashBcSha3_512Algorithm.ALGORITHM_NAME] = HashBcSha3_512Algorithm.Instance;
@@ -49,7 +51,14 @@
                 case HashBcSha3_512Algorithm.ALGORITHM_VALUE:
                     HashHelper.DefaultAlgorithm = HashBcSha3_512Algorithm.Instance;
                     break;
+                case HashBcShake128Algorithm.ALGORITHM_VALUE:
+                    HashHelper.DefaultAlgorithm = HashBcShake128Algorithm.Instance;
+                    break;
+                case HashBcShake256Algorithm.ALGORITHM_VALUE:
+                    HashHelper.DefaultAlgorithm = HashBcShake256Algorithm.Instance;
+                    break;
             }
+            // MAC
             MacHelper.Algorithms[MacBcHmacSha3_256Algorithm.ALGORITHM_NAME] = MacBcHmacSha3_256Algorithm.Instance;
             MacHelper.Algorithms[MacBcHmacSha3_384Algorithm.ALGORITHM_NAME] = MacBcHmacSha3_384Algorithm.Instance;
             MacHelper.Algorithms[MacBcHmacSha3_512Algorithm.ALGORITHM_NAME] = MacBcHmacSha3_512Algorithm.Instance;
