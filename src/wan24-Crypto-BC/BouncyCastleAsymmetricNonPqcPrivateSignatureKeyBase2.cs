@@ -1,0 +1,61 @@
+﻿using Org.BouncyCastle.Crypto;
+
+namespace wan24.Crypto.BC
+{
+    /// <summary>
+    /// Base class for a Bouncy Castle asymmetric non-PQC private signature key (which requires a context constructor parameter)
+    /// </summary>
+    /// <typeparam name="tPublic">Public key type</typeparam>
+    /// <typeparam name="tAlgo">Algorithm type</typeparam>
+    /// <typeparam name="tPublicKey">Internal public key type</typeparam>
+    /// <typeparam name="tPrivateKey">Internal private key type</typeparam>
+    /// <typeparam name="tSigner">Signer type</typeparam>
+    /// <typeparam name="tFinal">Final type</typeparam>
+    public abstract record class BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2<tPublic, tAlgo, tPublicKey, tPrivateKey, tSigner, tFinal>
+        : BouncyCastleAsymmetricNonPqcPrivateKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal>, ISignaturePrivateKey
+        where tPublic : BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase2<tAlgo, tPublicKey, tSigner, tPublic>, new()
+        where tAlgo : IAsymmetricAlgorithm, new()
+        where tPublicKey : AsymmetricKeyParameter, ICipherParameters
+        where tPrivateKey : AsymmetricKeyParameter
+        where tSigner : class, ISigner
+        where tFinal : BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2<tPublic, tAlgo, tPublicKey, tPrivateKey, tSigner, tFinal>, new()
+    {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="algorithm">Algorithm name</param>
+        protected BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2(string algorithm) : base(algorithm) { }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="algorithm">Algorithm name</param>
+        /// <param name="keyData">Key data</param>
+        protected BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2(string algorithm, byte[] keyData) : base(algorithm, keyData) { }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="algorithm">Algorithm name</param>
+        /// <param name="keys">Keys</param>
+        protected BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2(string algorithm, AsymmetricCipherKeyPair keys) : base(algorithm, keys) { }
+
+        /// <inheritdoc/>
+        public sealed override byte[] SignHashRaw(byte[] hash)
+        {
+            try
+            {
+                EnsureUndisposed();
+                tSigner signer = Activator.CreateInstance(typeof(tSigner), Array.Empty<byte>()) as tSigner
+                    ?? throw CryptographicException.From(new InvalidProgramException($"Failed to instance {typeof(tSigner)}"));
+                signer.Init(forSigning: true, PrivateKey);
+                signer.BlockUpdate(hash);
+                return signer.GenerateSignature();
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+    }
+}

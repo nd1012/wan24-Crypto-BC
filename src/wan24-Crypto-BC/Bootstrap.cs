@@ -23,6 +23,8 @@ namespace wan24.Crypto.BC
             AsymmetricHelper.Algorithms[AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME] = AsymmetricSphincsPlusAlgorithm.Instance;
             //FIXME PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo doesn't support NtruPrivateKeyParameters !? (waiting for a fix and an update of the NuGet package at present)
             //AsymmetricHelper.Algorithms[AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME] = AsymmetricNtruEncryptAlgorithm.Instance;
+            AsymmetricHelper.Algorithms[AsymmetricEd25519Algorithm.ALGORITHM_NAME] = AsymmetricEd25519Algorithm.Instance;
+            AsymmetricHelper.Algorithms[AsymmetricEd448Algorithm.ALGORITHM_NAME] = AsymmetricEd448Algorithm.Instance;
             // ChaCha20
             EncryptionHelper.Algorithms[EncryptionChaCha20Algorithm.ALGORITHM_NAME] = EncryptionChaCha20Algorithm.Instance;
             CryptoProfiles.Registered[EncryptionChaCha20Algorithm.PROFILE_CHACHA20_RAW] = new CryptoOptions()

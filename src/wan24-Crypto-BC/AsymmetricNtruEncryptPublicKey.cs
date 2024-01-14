@@ -6,7 +6,7 @@ namespace wan24.Crypto.BC
     /// NTRUEncrypt asymmetric public key
     /// </summary>
     public sealed record class AsymmetricNtruEncryptPublicKey
-        : BouncyCastleAsymmetricPublicKeyBase<AsymmetricNtruEncryptAlgorithm, NtruPublicKeyParameters, AsymmetricNtruEncryptPublicKey>
+        : BouncyCastleAsymmetricPqcPublicKeyBase<AsymmetricNtruEncryptAlgorithm, NtruPublicKeyParameters, AsymmetricNtruEncryptPublicKey>
     {
         /// <summary>
         /// Constructor

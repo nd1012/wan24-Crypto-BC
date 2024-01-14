@@ -14,6 +14,8 @@ the `wan24-Crypto` library with these algorithms:
 | SPHINCS+ | 5 | SPHINCSPLUS |
 | FrodoKEM* | 6 | FRODOKEM |
 | NTRUEncrypt* | 7 | NTRUENCRYPT |
+| Ed25519 | 8 | ED25519 |
+| Ed448 | 9 | ED448 |
 | **Symmetric** |  |  |
 | ChaCha20 | 1 | CHACHA20 |
 | XSalsa20 | 2 | XSALSA20 |
@@ -90,6 +92,7 @@ These algorithms are designed for post quantum cryptography:
 - FALCON (signature)
 - SPHINCS+ (signature)
 - FrodoKEM (key exchange)
+- NTRU (key exchange)
 
 Normally you want to use them in hybrid mode and use classical algorithms of 
 the `wan24-Crypto` package as counter algorithm. To do this per default:

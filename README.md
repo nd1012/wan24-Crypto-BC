@@ -14,6 +14,8 @@ the `wan24-Crypto` library with these algorithms:
 | SPHINCS+ | 5 | SPHINCSPLUS |
 | FrodoKEM* | 6 | FRODOKEM |
 | NTRUEncrypt* | 7 | NTRUENCRYPT |
+| Ed25519 | 8 | ED25519 |
+| Ed448 | 9 | ED448 |
 | **Symmetric** |  |  |
 | ChaCha20 | 1 | CHACHA20 |
 | XSalsa20 | 2 | XSALSA20 |
@@ -214,3 +216,16 @@ used, if `/dev/random` was preferred. To disable `/dev/random`, set
 
 **NOTE**: Currently only stream ciphers are supported, because the cipher RNG 
 implementation doesn't buffer pre-generated random data.
+
+## Ed448
+
+Just a short note on edwards448: Private and public keys have a different key 
+size: The private key has 456 bit, while the public key has 448 bit. Both key 
+sizes are supported for key generation and result in the same key sizes for 
+the private (456 bit) and the public (448 bit) key. The private key of a key 
+pair will always identify with 456 bit, while the public key will always 
+identify with 448 bit - no matter which key size was chosen for key pair 
+generation.
+
+The Ed448 signature is context based, but currently only an empty byte array 
+is being used as context data.

@@ -8,7 +8,7 @@ namespace wan24.Crypto.BC
     /// CRYSTALS-Dilithium asymmetric private key
     /// </summary>
     public sealed record class AsymmetricDilithiumPrivateKey
-        : BouncyCastleAsymmetricPrivateSignatureKeyBase<
+        : BouncyCastleAsymmetricPqcPrivateSignatureKeyBase<
             AsymmetricDilithiumPublicKey,
             AsymmetricDilithiumAlgorithm,
             DilithiumPublicKeyParameters,

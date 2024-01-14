@@ -1,28 +1,30 @@
-﻿using Org.BouncyCastle.Pqc.Crypto.Crystals.Kyber;
+﻿using Org.BouncyCastle.Crypto.Parameters;
+using Org.BouncyCastle.Crypto.Signers;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// CRYSTALS-Kyber asymmetric public key
+    /// Ed25519 asymmetric public key
     /// </summary>
-    public sealed record class AsymmetricKyberPublicKey : BouncyCastleAsymmetricPqcPublicKeyBase<AsymmetricKyberAlgorithm, KyberPublicKeyParameters, AsymmetricKyberPublicKey>
+    public sealed record class AsymmetricEd25519PublicKey
+        : BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase<AsymmetricEd25519Algorithm, Ed25519PublicKeyParameters, Ed25519Signer, AsymmetricEd25519PublicKey>
     {
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricKyberPublicKey() : base(AsymmetricKyberAlgorithm.ALGORITHM_NAME) { }
+        public AsymmetricEd25519PublicKey() : base(AsymmetricEd25519Algorithm.ALGORITHM_NAME) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="keyData">Key data</param>
-        public AsymmetricKyberPublicKey(byte[] keyData) : base(AsymmetricKyberAlgorithm.ALGORITHM_NAME, keyData) { }
+        public AsymmetricEd25519PublicKey(byte[] keyData) : base(AsymmetricEd25519Algorithm.ALGORITHM_NAME, keyData) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="publicKey">Public key</param>
-        public AsymmetricKyberPublicKey(KyberPublicKeyParameters publicKey) : base(AsymmetricKyberAlgorithm.ALGORITHM_NAME, publicKey) { }
+        public AsymmetricEd25519PublicKey(Ed25519PublicKeyParameters publicKey) : base(AsymmetricEd25519Algorithm.ALGORITHM_NAME, publicKey) { }
 
         /// <inheritdoc/>
         public override int Bits
@@ -32,7 +34,7 @@ namespace wan24.Crypto.BC
                 try
                 {
                     EnsureUndisposed();
-                    return _PublicKey?.Parameters.GetKeySize() ?? throw new InvalidOperationException();
+                    return 256;
                 }
                 catch (CryptographicException)
                 {
@@ -49,6 +51,6 @@ namespace wan24.Crypto.BC
         /// Cast from serialized data
         /// </summary>
         /// <param name="data">Data</param>
-        public static explicit operator AsymmetricKyberPublicKey(byte[] data) => Import<AsymmetricKyberPublicKey>(data);
+        public static explicit operator AsymmetricEd25519PublicKey(byte[] data) => Import<AsymmetricEd25519PublicKey>(data);
     }
 }

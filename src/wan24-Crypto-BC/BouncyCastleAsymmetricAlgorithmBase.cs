@@ -78,7 +78,7 @@ namespace wan24.Crypto.BC
         public sealed override bool IsPostQuantum { get; }
 
         /// <inheritdoc/>
-        public sealed override tPrivate CreateKeyPair(CryptoOptions? options = null)
+        public override tPrivate CreateKeyPair(CryptoOptions? options = null)
         {
             try
             {
