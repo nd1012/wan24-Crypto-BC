@@ -217,7 +217,7 @@ used, if `/dev/random` was preferred. To disable `/dev/random`, set
 **NOTE**: Currently only stream ciphers are supported, because the cipher RNG 
 implementation doesn't buffer pre-generated random data.
 
-## Ed448
+## Ed448-Goldilocks
 
 Just a short note on edwards448: Private and public keys have a different key 
 size: The private key has 456 bit, while the public key has 448 bit. Both key 
@@ -228,4 +228,7 @@ identify with 448 bit - no matter which key size was chosen for key pair
 generation.
 
 The Ed448 signature is context based, but currently only an empty byte array 
-is being used as context data.
+is being used as context data. Ed25519 uses SHA-512 for hashing, Ed448 uses 
+Shake256. Anyway, since you can define the hash algorithm to use using the 
+`CryptoOptions`, there'll always be a hash of a hash (from `CryptoOptions`) 
+which is going to be signed, finally.

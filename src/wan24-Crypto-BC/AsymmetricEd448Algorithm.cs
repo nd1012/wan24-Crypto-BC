@@ -41,7 +41,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Display name
         /// </summary>
-        public const string DISPLAY_NAME = "edwards448";
+        public const string DISPLAY_NAME = "edwards448-Goldilocks";
 
         /// <summary>
         /// Allowed key sizes in bits
