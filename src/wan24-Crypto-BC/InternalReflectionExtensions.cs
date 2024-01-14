@@ -23,8 +23,9 @@ namespace wan24.Crypto.BC
             Type type = obj.GetType();
             if (!Fields.TryGetValue(type, out FieldInfo[]? fields))
             {
+                Type baType = typeof(byte[]);
                 fields = (from fi in type.GetFieldsCached(BindingFlags.Instance | BindingFlags.NonPublic)
-                          where fi.FieldType == typeof(byte[])
+                          where fi.FieldType == baType
                           select fi).ToArray();
                 Fields.TryAdd(type, fields);
             }
