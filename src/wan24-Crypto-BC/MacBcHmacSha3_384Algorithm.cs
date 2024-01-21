@@ -44,7 +44,7 @@ namespace wan24.Crypto.BC
         /// <inheritdoc/>
         protected override KeyedHashAlgorithm GetMacAlgorithmInt(byte[] pwd, CryptoOptions? options)
         {
-            HMac mac = new(new KeccakDigest(MAC_LENGTH << 3));
+            HMac mac = new(new Sha3Digest(MAC_LENGTH << 3));
             mac.Init(new KeyParameter(pwd));
             return new BouncyCastleHmacAlgorithm(mac);
         }

@@ -52,18 +52,27 @@ namespace wan24_Crypto_Tests
         public void Sha3_Tests()
         {
             if (!Shake128.IsSupported) return;
+            byte[] a, b;
             foreach (HashAlgorithmBase[] algos in new HashAlgorithmBase[][]{
                 [HashSha3_256Algorithm.Instance, HashBcSha3_256Algorithm.Instance],
                 [HashSha3_384Algorithm.Instance, HashBcSha3_384Algorithm.Instance],
                 [HashSha3_512Algorithm.Instance, HashBcSha3_512Algorithm.Instance],
                 })
-                Assert.IsTrue(algos[0].Hash(TestData).SequenceEqual(algos[1].Hash(TestData)), algos[0].GetType().ToString());
+            {
+                a = algos[0].Hash(TestData);
+                b = algos[1].Hash(TestData);
+                Assert.IsTrue(a.SequenceEqual(b), $"{algos[0].GetType()} ({a.Length}/{b.Length})");
+            }
             foreach (MacAlgorithmBase[] algos in new MacAlgorithmBase[][]{
                 [MacHmacSha3_256Algorithm.Instance, MacBcHmacSha3_256Algorithm.Instance],
                 [MacHmacSha3_384Algorithm.Instance, MacBcHmacSha3_384Algorithm.Instance],
                 [MacHmacSha3_512Algorithm.Instance, MacBcHmacSha3_512Algorithm.Instance],
                 })
-                Assert.IsTrue(algos[0].Mac(TestData, TestData).SequenceEqual(algos[1].Mac(TestData, TestData)), algos[0].GetType().ToString());
+            {
+                a = algos[0].Mac(TestData, TestData);
+                b = algos[1].Mac(TestData, TestData);
+                Assert.IsTrue(a.SequenceEqual(b), $"{algos[0].GetType()} ({a.Length}/{b.Length})");
+            }
         }
     }
 }
