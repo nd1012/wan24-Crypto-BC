@@ -26,7 +26,7 @@ namespace wan24.Crypto.BC
         /// </summary>
         /// <param name="algorithm">Algorithm name</param>
         /// <param name="keyData">Key data</param>
-        protected BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase(string algorithm, byte[] keyData) : base(algorithm, keyData) => KeyData = new(keyData);
+        protected BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase(string algorithm, byte[] keyData) : base(algorithm, keyData) { }
 
         /// <summary>
         /// Constructor

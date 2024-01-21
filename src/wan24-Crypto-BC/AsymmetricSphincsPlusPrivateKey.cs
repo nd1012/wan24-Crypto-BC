@@ -1,5 +1,7 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Pqc.Crypto.SphincsPlus;
+using Org.BouncyCastle.Pqc.Crypto.Utilities;
+using System.Reflection;
 using wan24.Core;
 
 namespace wan24.Crypto.BC
@@ -35,19 +37,26 @@ namespace wan24.Crypto.BC
         public AsymmetricSphincsPlusPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME, keys) { }
 
         /// <inheritdoc/>
+        protected override SphincsPlusPublicKeyParameters GetPublicKey(SphincsPlusPrivateKeyParameters privateKey) => new(privateKey.Parameters, privateKey.GetPublicKey());
+
+        /// <inheritdoc/>
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);
-            if (Keys == null) return;
-            Keys.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
+            if (Keys is null) return;
+            //TODO All parameter fields are private :(
+            typeof(SphincsPlusPrivateKeyParameters).GetFieldCached("m_sk", BindingFlags.Instance | BindingFlags.NonPublic)!.GetValue(Keys.Private)!.ClearPrivateByteArrayFields();
+            typeof(SphincsPlusPrivateKeyParameters).GetFieldCached("m_pk", BindingFlags.Instance | BindingFlags.NonPublic)!.GetValue(Keys.Private)!.ClearPrivateByteArrayFields();
         }
 
         /// <inheritdoc/>
         protected override async Task DisposeCore()
         {
             await base.DisposeCore().DynamicContext();
-            if (Keys == null) return;
-            Keys.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
+            if (Keys is null) return;
+            //TODO All parameter fields are private :(
+            typeof(SphincsPlusPrivateKeyParameters).GetFieldCached("m_sk", BindingFlags.Instance | BindingFlags.NonPublic)!.GetValue(Keys.Private)!.ClearPrivateByteArrayFields();
+            typeof(SphincsPlusPrivateKeyParameters).GetFieldCached("m_pk", BindingFlags.Instance | BindingFlags.NonPublic)!.GetValue(Keys.Private)!.ClearPrivateByteArrayFields();
         }
 
         /// <summary>

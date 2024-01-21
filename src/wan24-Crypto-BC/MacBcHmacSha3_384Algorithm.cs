@@ -1,5 +1,4 @@
-﻿using Org.BouncyCastle.Crypto;
-using Org.BouncyCastle.Crypto.Digests;
+﻿using Org.BouncyCastle.Crypto.Digests;
 using Org.BouncyCastle.Crypto.Macs;
 using Org.BouncyCastle.Crypto.Parameters;
 using System.Security.Cryptography;
@@ -7,7 +6,7 @@ using System.Security.Cryptography;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// HMAC-SHA3-384 MAC algorithm
+    /// HMAC-SHA3-384 MAC algorithm (may be used as replacement, if the .NET algorithm isn't available on the current platform)
     /// </summary>
     public sealed record class MacBcHmacSha3_384Algorithm : BouncyCastleHmacAlgorithmBase<MacBcHmacSha3_384Algorithm>
     {

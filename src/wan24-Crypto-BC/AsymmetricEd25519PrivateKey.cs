@@ -36,6 +36,9 @@ namespace wan24.Crypto.BC
         public AsymmetricEd25519PrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricEd25519Algorithm.ALGORITHM_NAME, keys) { }
 
         /// <inheritdoc/>
+        protected override Ed25519PublicKeyParameters GetPublicKey(Ed25519PrivateKeyParameters privateKey) => privateKey.GeneratePublicKey();
+
+        /// <inheritdoc/>
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);

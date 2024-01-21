@@ -41,7 +41,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Display name
         /// </summary>
-        public const string DISPLAY_NAME = "edwards25519";
+        public const string DISPLAY_NAME = "Ed25519";
 
         /// <summary>
         /// Allowed key sizes in bits
@@ -70,7 +70,6 @@ namespace wan24.Crypto.BC
             try
             {
                 options ??= DefaultOptions;
-                options = AsymmetricHelper.GetDefaultKeyExchangeOptions(options);
                 if (!options.AsymmetricKeyBits.In(AllowedKeySizes)) throw new ArgumentException("Invalid key size", nameof(options));
                 Ed25519KeyPairGenerator keyGen = new();
                 keyGen.Init(new Ed25519KeyGenerationParameters(new SecureRandom(BouncyCastleRandomGenerator.Instance())));

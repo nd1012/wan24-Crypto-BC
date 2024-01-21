@@ -11,17 +11,16 @@
         /// <param name="useCurrentDefaultAsCounterAlgorithms">Use the current <c>wan24-Crypto</c> defaults as counter algorithms?</param>
         public static void SetDefaults(in bool useCurrentDefaultAsCounterAlgorithms = true)
         {
-            //TODO Use NTRU as default asymmetric algorithm for key exchange
             if (useCurrentDefaultAsCounterAlgorithms)
             {
                 HybridAlgorithmHelper.KeyExchangeAlgorithm = AsymmetricHelper.DefaultKeyExchangeAlgorithm;
                 HybridAlgorithmHelper.SignatureAlgorithm = AsymmetricHelper.DefaultSignatureAlgorithm;
             }
-            AsymmetricHelper.DefaultKeyExchangeAlgorithm = AsymmetricKyberAlgorithm.Instance;
+            AsymmetricHelper.DefaultKeyExchangeAlgorithm = AsymmetricNtruEncryptAlgorithm.Instance;
             AsymmetricHelper.DefaultSignatureAlgorithm = AsymmetricDilithiumAlgorithm.Instance;
             EncryptionHelper.DefaultAlgorithm = EncryptionSerpent256CbcAlgorithm.Instance;
             CryptoOptions pakeCryptoOptions = Pake.DefaultCryptoOptions
-                .WithEncryptionAlgorithm(EncryptionAes256GcmAlgorithm.Instance.Name);
+                .WithEncryptionAlgorithm(EncryptionSerpent256GcmAlgorithm.ALGORITHM_NAME);
             Pake.DefaultCryptoOptions = pakeCryptoOptions;
         }
 
@@ -32,8 +31,12 @@
         {
             // Encryption
             EncryptionHelper.Algorithms[EncryptionAes256CbcAlgorithm.ALGORITHM_NAME] = EncryptionBcAes256CbcAlgorithm.Instance;
-            if (EncryptionHelper.DefaultAlgorithm.Value == EncryptionAes256CbcAlgorithm.ALGORITHM_VALUE)
-                EncryptionHelper.DefaultAlgorithm = EncryptionBcAes256CbcAlgorithm.Instance;
+            switch (EncryptionHelper.DefaultAlgorithm.Value)
+            {
+                case EncryptionAes256CbcAlgorithm.ALGORITHM_VALUE:
+                    EncryptionHelper.DefaultAlgorithm = EncryptionBcAes256CbcAlgorithm.Instance;
+                    break;
+            }
             // Hashing
             HashHelper.Algorithms[HashBcSha3_256Algorithm.ALGORITHM_NAME] = HashBcSha3_256Algorithm.Instance;
             HashHelper.Algorithms[HashBcSha3_384Algorithm.ALGORITHM_NAME] = HashBcSha3_384Algorithm.Instance;
@@ -74,7 +77,21 @@
                     MacHelper.DefaultAlgorithm = MacBcHmacSha3_512Algorithm.Instance;
                     break;
             }
-            //TODO Implement ECDH, ECDSA to replace wan24-Crypto algorithms
+            // Asymmetric
+            AsymmetricHelper.Algorithms[AsymmetricBcEcDiffieHellmanAlgorithm.ALGORITHM_NAME] = AsymmetricBcEcDiffieHellmanAlgorithm.Instance;
+            AsymmetricHelper.Algorithms[AsymmetricBcEcDsaAlgorithm.ALGORITHM_NAME] = AsymmetricBcEcDsaAlgorithm.Instance;
+            switch (AsymmetricHelper.DefaultSignatureAlgorithm.Value)
+            {
+                case AsymmetricBcEcDsaAlgorithm.ALGORITHM_VALUE:
+                    AsymmetricHelper.DefaultSignatureAlgorithm = AsymmetricBcEcDsaAlgorithm.Instance;
+                    break;
+            }
+            switch (AsymmetricHelper.DefaultKeyExchangeAlgorithm.Value)
+            {
+                case AsymmetricBcEcDiffieHellmanAlgorithm.ALGORITHM_VALUE:
+                    AsymmetricHelper.DefaultKeyExchangeAlgorithm = AsymmetricBcEcDiffieHellmanAlgorithm.Instance;
+                    break;
+            }
         }
     }
 }

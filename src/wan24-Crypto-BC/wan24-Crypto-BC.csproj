@@ -33,8 +33,8 @@
 
   <ItemGroup>
     <PackageReference Include="BouncyCastle.Cryptography" Version="2.2.1" />
-    <PackageReference Include="wan24-Core" Version="2.0.0" Condition="'$(Configuration)' != 'Trunk'" />
-    <PackageReference Include="wan24-Crypto" Version="1.26.1" Condition="'$(Configuration)' != 'Trunk'" />
+    <PackageReference Include="wan24-Core" Version="2.2.0" Condition="'$(Configuration)' != 'Trunk'" />
+    <PackageReference Include="wan24-Crypto" Version="2.0.0" Condition="'$(Configuration)' != 'Trunk'" />
 	<ProjectReference Include="..\..\..\wan24-Core\src\Wan24-Core\Wan24-Core.csproj" Condition="'$(Configuration)' == 'Trunk'" />
 	<ProjectReference Include="..\..\..\wan24-Crypto\src\wan24-Crypto\wan24-Crypto.csproj" Condition="'$(Configuration)' == 'Trunk'" />
   </ItemGroup>

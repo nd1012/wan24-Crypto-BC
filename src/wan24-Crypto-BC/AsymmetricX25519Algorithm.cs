@@ -8,40 +8,40 @@ using wan24.Core;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// Ed448 asymmetric algorithm
+    /// X25519 asymmetric algorithm
     /// </summary>
-    public sealed record class AsymmetricEd448Algorithm
-         : BouncyCastleAsymmetricAlgorithmBase<
-            AsymmetricEd448PublicKey,
-            AsymmetricEd448PrivateKey,
-            Ed448KeyPairGenerator,
-            Ed448KeyGenerationParameters,
+    public sealed record class AsymmetricX25519Algorithm
+        : BouncyCastleAsymmetricAlgorithmBase<
+            AsymmetricX25519PublicKey,
+            AsymmetricX25519PrivateKey,
+            X25519KeyPairGenerator,
+            X25519KeyGenerationParameters,
             AsymmetricKeyParameter,
-            Ed448PublicKeyParameters,
-            Ed448PrivateKeyParameters,
-            AsymmetricEd448Algorithm
+            X25519PublicKeyParameters,
+            X25519PrivateKeyParameters,
+            AsymmetricX25519Algorithm
             >
     {
         /// <summary>
         /// Algorithm name
         /// </summary>
-        public const string ALGORITHM_NAME = "ED448";
+        public const string ALGORITHM_NAME = "X25519";
         /// <summary>
         /// Algorithm value
         /// </summary>
-        public const int ALGORITHM_VALUE = 9;
+        public const int ALGORITHM_VALUE = 10;
         /// <summary>
         /// Default key size in bits
         /// </summary>
-        public const int DEFAULT_KEY_SIZE = 456;
+        public const int DEFAULT_KEY_SIZE = 256;
         /// <summary>
         /// Algorithm usages
         /// </summary>
-        public const AsymmetricAlgorithmUsages USAGES = AsymmetricAlgorithmUsages.Signature;
+        public const AsymmetricAlgorithmUsages USAGES = AsymmetricAlgorithmUsages.KeyExchange;
         /// <summary>
         /// Display name
         /// </summary>
-        public const string DISPLAY_NAME = "edwards448-Goldilocks";
+        public const string DISPLAY_NAME = "X25519";
 
         /// <summary>
         /// Allowed key sizes in bits
@@ -51,29 +51,27 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Static constructor
         /// </summary>
-        static AsymmetricEd448Algorithm() => _AllowedKeySizes = new List<int>()
+        static AsymmetricX25519Algorithm() => _AllowedKeySizes = new List<int>()
         {
-            448,
-            456
+            256
         }.AsReadOnly();
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricEd448Algorithm()
+        public AsymmetricX25519Algorithm()
             : base(ALGORITHM_NAME, ALGORITHM_VALUE, USAGES, isEllipticCurveAlgorithm: true, _AllowedKeySizes, isPostQuantum: false, DEFAULT_KEY_SIZE)
         { }
 
-
         /// <inheritdoc/>
-        public override AsymmetricEd448PrivateKey CreateKeyPair(CryptoOptions? options = null)
+        public override AsymmetricX25519PrivateKey CreateKeyPair(CryptoOptions? options = null)
         {
             try
             {
                 options ??= DefaultOptions;
                 if (!options.AsymmetricKeyBits.In(AllowedKeySizes)) throw new ArgumentException("Invalid key size", nameof(options));
-                Ed448KeyPairGenerator keyGen = new();
-                keyGen.Init(new Ed448KeyGenerationParameters(new SecureRandom(BouncyCastleRandomGenerator.Instance())));
+                X25519KeyPairGenerator keyGen = new();
+                keyGen.Init(new X25519KeyGenerationParameters(new SecureRandom(BouncyCastleRandomGenerator.Instance())));
                 return new(keyGen.GenerateKeyPair());
             }
             catch (CryptographicException)

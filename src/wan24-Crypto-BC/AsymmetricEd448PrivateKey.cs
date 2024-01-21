@@ -1,6 +1,7 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Crypto.Signers;
+using Org.BouncyCastle.Tls.Crypto;
 using wan24.Core;
 
 namespace wan24.Crypto.BC
@@ -55,6 +56,9 @@ namespace wan24.Crypto.BC
                 }
             }
         }
+
+        /// <inheritdoc/>
+        protected override Ed448PublicKeyParameters GetPublicKey(Ed448PrivateKeyParameters privateKey) => privateKey.GeneratePublicKey();
 
         /// <inheritdoc/>
         protected override void Dispose(bool disposing)

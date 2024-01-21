@@ -1,8 +1,6 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Security;
 using Org.BouncyCastle.X509;
-using wan24.Core;
-using wan24.StreamSerializerExtensions;
 
 namespace wan24.Crypto.BC
 {
@@ -43,22 +41,8 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
-                using MemoryStream ms = new();
-                byte[] keyInfo = SubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(_PublicKey).GetEncoded();
-                try
-                {
-                    ms.WriteNumber(StreamSerializer.VERSION);
-                    ms.WriteBytes(SubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(_PublicKey).GetEncoded());
-                }
-                catch (Exception ex)
-                {
-                    throw CryptographicException.From(ex);
-                }
-                finally
-                {
-                    keyInfo.Clear();
-                }
-                return ms.ToArray();
+                if (_PublicKey == null) throw new InvalidOperationException();
+                return SubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(_PublicKey).GetDerEncoded();
             }
             catch (CryptographicException)
             {
@@ -76,22 +60,7 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
-                using MemoryStream ms = new(KeyData.Array);
-                int serializerVersion = ms.ReadNumber<int>();
-                if (serializerVersion < 1 || serializerVersion > StreamSerializer.VERSION) throw new SerializerException($"Invalid serializer version {serializerVersion}");
-                byte[] keyInfo = ms.ReadBytes(serializerVersion, minLen: 1, maxLen: ushort.MaxValue).Value;
-                try
-                {
-                    _PublicKey = (tPublicKey)PublicKeyFactory.CreateKey(keyInfo);
-                }
-                catch (Exception ex)
-                {
-                    throw CryptographicException.From(ex);
-                }
-                finally
-                {
-                    keyInfo.Clear();
-                }
+                _PublicKey = (tPublicKey)PublicKeyFactory.CreateKey(KeyData.Array);
             }
             catch (CryptographicException)
             {

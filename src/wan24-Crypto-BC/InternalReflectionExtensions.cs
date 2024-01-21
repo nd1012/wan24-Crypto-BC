@@ -10,9 +10,9 @@ namespace wan24.Crypto.BC
     internal static class InternalReflectionExtensions
     {
         /// <summary>
-        /// Private byte array fields (key is the type)
+        /// Private byte array fields (key is the type hash code)
         /// </summary>
-        private static readonly ConcurrentDictionary<Type, FieldInfo[]> Fields = new();
+        private static readonly ConcurrentDictionary<int, FieldInfo[]> Fields = new();
 
         /// <summary>
         /// Clear all private byte array fields
@@ -21,13 +21,14 @@ namespace wan24.Crypto.BC
         internal static void ClearPrivateByteArrayFields(this object obj)
         {
             Type type = obj.GetType();
-            if (!Fields.TryGetValue(type, out FieldInfo[]? fields))
+            int hashCode = type.GetHashCode();
+            if (!Fields.TryGetValue(hashCode, out FieldInfo[]? fields))
             {
                 Type baType = typeof(byte[]);
                 fields = (from fi in type.GetFieldsCached(BindingFlags.Instance | BindingFlags.NonPublic)
                           where fi.FieldType == baType
                           select fi).ToArray();
-                Fields.TryAdd(type, fields);
+                Fields.TryAdd(hashCode, fields);
             }
             for (int i = 0, len = fields.Length; i < len; (fields[i].GetValue(obj) as byte[])?.Clear(), i++) ;
         }

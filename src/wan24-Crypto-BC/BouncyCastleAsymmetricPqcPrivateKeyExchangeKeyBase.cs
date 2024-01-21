@@ -1,5 +1,6 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Security;
+using wan24.Core;
 
 namespace wan24.Crypto.BC
 {
@@ -54,7 +55,7 @@ namespace wan24.Crypto.BC
                 tGenerator generator = Activator.CreateInstance(typeof(tGenerator), new SecureRandom(BouncyCastleRandomGenerator.Instance())) as tGenerator
                     ?? throw new InvalidProgramException($"Failed to instance {typeof(tGenerator)}");
                 using ISecretWithEncapsulation secret = generator.GenerateEncapsulated(key.PublicKey);
-                return (secret.GetSecret(), secret.GetEncapsulation());
+                return (secret.GetSecret().CloneArray(), secret.GetEncapsulation().CloneArray());
             }
             catch (Exception ex)
             {
@@ -88,7 +89,7 @@ namespace wan24.Crypto.BC
                 tGenerator generator = Activator.CreateInstance(typeof(tGenerator), new SecureRandom(BouncyCastleRandomGenerator.Instance())) as tGenerator
                     ?? throw new InvalidProgramException($"Failed to instance {typeof(tGenerator)}");
                 using ISecretWithEncapsulation secret = generator.GenerateEncapsulated(key.PublicKey);
-                return secret.GetSecret();
+                return secret.GetSecret().CloneArray();
             }
             catch (Exception ex)
             {

@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// HMAC-SHA3-512 MAC algorithm
+    /// HMAC-SHA3-512 MAC algorithm (may be used as replacement, if the .NET algorithm isn't available on the current platform)
     /// </summary>
     public sealed record class MacBcHmacSha3_512Algorithm : BouncyCastleHmacAlgorithmBase<MacBcHmacSha3_512Algorithm>
     {

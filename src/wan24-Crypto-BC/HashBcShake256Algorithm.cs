@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// Shake256 hash algorithm
+    /// Shake256 hash algorithm (may be used as replacement, if the .NET algorithm isn't available on the current platform)
     /// </summary>
     public sealed record class HashBcShake256Algorithm : BouncyCastleHashAlgorithmBase<HashBcShake256Algorithm>
     {

@@ -40,8 +40,58 @@ namespace wan24.Crypto.BC
         /// <param name="keys">Keys</param>
         protected BouncyCastleAsymmetricPqcPrivateKeyBase(string algorithm, AsymmetricCipherKeyPair keys) : base(algorithm, keys) { }
 
-        /// <inheritdoc/>>
+        /// <inheritdoc/>
         protected override byte[] SerializeKeyData()
+        {
+            try
+            {
+                EnsureUndisposed();
+                if (Keys == null) throw new InvalidOperationException();
+                return PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo(Keys.Private).GetDerEncoded();
+            }
+            catch (CryptographicException)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
+        /// <inheritdoc/>
+        protected override void DeserializeKeyData()
+        {
+            try
+            {
+                EnsureUndisposed();
+                tPrivateKey? privateKey = null;
+                tPublicKey? publicKey = null;
+                try
+                {
+                    privateKey = (tPrivateKey)PqcPrivateKeyFactory.CreateKey(KeyData.Array);
+                    publicKey = GetPublicKey(privateKey);
+                    Keys = new(publicKey, privateKey);
+                }
+                catch
+                {
+                    privateKey?.ClearPrivateByteArrayFields();
+                    publicKey?.ClearPrivateByteArrayFields();
+                    throw;
+                }
+            }
+            catch (CryptographicException)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
+        /// <inheritdoc/>
+        protected override byte[] SerializeFullKeyData()
         {
             try
             {
@@ -51,24 +101,9 @@ namespace wan24.Crypto.BC
                 {
                     CleanReturned = true
                 };
-                ms.WriteNumber(StreamSerializer.VERSION);
-                byte[] keyInfo = PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo(Keys.Private).PrivateKeyData.GetEncoded();
-                try
-                {
-                    ms.WriteBytes(keyInfo);
-                    keyInfo.Clear();
-                    keyInfo = PqcSubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(Keys.Public).GetEncoded();
-                    ms.WriteBytes(keyInfo);
-                    keyInfo.Clear();
-                }
-                catch (Exception ex)
-                {
-                    throw CryptographicException.From(ex);
-                }
-                finally
-                {
-                    keyInfo.Clear();
-                }
+                ms.WriteSerializerVersion()
+                    .WriteBytes(PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo(Keys.Private).GetDerEncoded())
+                    .WriteBytes(PqcSubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(Keys.Public).GetDerEncoded());
                 return ms.ToArray();
             }
             catch (CryptographicException)
@@ -81,37 +116,27 @@ namespace wan24.Crypto.BC
             }
         }
 
-        /// <inheritdoc/>>
-        protected override void DeserializeKeyData()
+        /// <inheritdoc/>
+        protected override void DeserializeFullKeyData()
         {
             try
             {
                 EnsureUndisposed();
-                using MemoryPoolStream ms = new()
-                {
-                    CleanReturned = true
-                };
-                ms.Write(KeyData.Array);
-                ms.Position = 0;
-                int serializerVersion = ms.ReadNumber<int>();
-                if (serializerVersion < 1 || serializerVersion > StreamSerializer.VERSION) throw new SerializerException($"Invalid serializer version {serializerVersion}");
-                byte[] keyInfo = ms.ReadBytes(serializerVersion, minLen: 1, maxLen: ushort.MaxValue).Value;
+                tPrivateKey? privateKey = null;
+                tPublicKey? publicKey = null;
                 try
                 {
-                    tPrivateKey privateKey = (tPrivateKey)PqcPrivateKeyFactory.CreateKey(keyInfo);
-                    keyInfo.Clear();
-                    keyInfo = ms.ReadBytes(serializerVersion, minLen: 1, maxLen: ushort.MaxValue).Value;
-                    tPublicKey publicKey = (tPublicKey)PqcPublicKeyFactory.CreateKey(keyInfo);
-                    keyInfo.Clear();
+                    using MemoryStream ms = new(KeyData.Array);
+                    int ssv = ms.ReadSerializerVersion();
+                    privateKey = (tPrivateKey)PqcPrivateKeyFactory.CreateKey(ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    publicKey = (tPublicKey)PqcPublicKeyFactory.CreateKey(ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
                     Keys = new(publicKey, privateKey);
                 }
-                catch (Exception ex)
+                catch
                 {
-                    throw CryptographicException.From(ex);
-                }
-                finally
-                {
-                    keyInfo.Clear();
+                    privateKey?.ClearPrivateByteArrayFields();
+                    publicKey?.ClearPrivateByteArrayFields();
+                    throw;
                 }
             }
             catch (CryptographicException)

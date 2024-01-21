@@ -50,29 +50,7 @@ namespace wan24.Crypto.BC
             {
                 EnsureUndisposed();
                 if (Keys == null) throw new InvalidOperationException();
-                using MemoryPoolStream ms = new()
-                {
-                    CleanReturned = true
-                };
-                ms.WriteNumber(StreamSerializer.VERSION);
-                byte[] keyInfo = PrivateKeyInfoFactory.CreatePrivateKeyInfo(Keys.Private).PrivateKeyData.GetEncoded();
-                try
-                {
-                    ms.WriteBytes(keyInfo);
-                    keyInfo.Clear();
-                    keyInfo = SubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(Keys.Public).GetEncoded();
-                    ms.WriteBytes(keyInfo);
-                    keyInfo.Clear();
-                }
-                catch (Exception ex)
-                {
-                    throw CryptographicException.From(ex);
-                }
-                finally
-                {
-                    keyInfo.Clear();
-                }
-                return ms.ToArray();
+                return PrivateKeyInfoFactory.CreatePrivateKeyInfo(Keys.Private).GetDerEncoded();
             }
             catch (CryptographicException)
             {
@@ -90,31 +68,87 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
+                tPrivateKey? privateKey = null;
+                tPublicKey? publicKey = null;
+                try
+                {
+                    privateKey = (tPrivateKey)PrivateKeyFactory.CreateKey(KeyData.Array);
+                    publicKey = GetPublicKey(privateKey);
+                    Keys = new(publicKey, privateKey);
+                }
+                catch
+                {
+                    privateKey?.ClearPrivateByteArrayFields();
+                    publicKey?.ClearPrivateByteArrayFields();
+                    throw;
+                }
+            }
+            catch (CryptographicException)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
+        /// <inheritdoc/>
+        protected override byte[] SerializeFullKeyData()
+        {
+            try
+            {
+                EnsureUndisposed();
+                if (Keys == null) throw new InvalidOperationException();
                 using MemoryPoolStream ms = new()
                 {
                     CleanReturned = true
                 };
-                ms.Write(KeyData.Array);
-                ms.Position = 0;
-                int serializerVersion = ms.ReadNumber<int>();
-                if (serializerVersion < 1 || serializerVersion > StreamSerializer.VERSION) throw new SerializerException($"Invalid serializer version {serializerVersion}");
-                byte[] keyInfo = ms.ReadBytes(serializerVersion, minLen: 1, maxLen: ushort.MaxValue).Value;
+                ms.WriteSerializerVersion()
+                    .WriteBytes(PrivateKeyInfoFactory.CreatePrivateKeyInfo(Keys.Private).GetDerEncoded())
+                    .WriteBytes(SubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(Keys.Public).GetDerEncoded());
+                return ms.ToArray();
+            }
+            catch (CryptographicException)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
+        /// <inheritdoc/>
+        protected override void DeserializeFullKeyData()
+        {
+            try
+            {
+                EnsureUndisposed();
+                byte[]? privateKeyInfo = null,
+                    publicKeyInfo = null;
+                tPrivateKey? privateKey = null;
+                tPublicKey? publicKey = null;
                 try
                 {
-                    tPrivateKey privateKey = (tPrivateKey)PrivateKeyFactory.CreateKey(keyInfo);
-                    keyInfo.Clear();
-                    keyInfo = ms.ReadBytes(serializerVersion, minLen: 1, maxLen: ushort.MaxValue).Value;
-                    tPublicKey publicKey = (tPublicKey)PublicKeyFactory.CreateKey(keyInfo);
-                    keyInfo.Clear();
+                    using MemoryStream ms = new(KeyData.Array);
+                    int ssv = ms.ReadSerializerVersion();
+                    privateKeyInfo = ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value;
+                    privateKey = (tPrivateKey)PrivateKeyFactory.CreateKey(privateKeyInfo);
+                    publicKeyInfo = ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value;
+                    publicKey = (tPublicKey)PublicKeyFactory.CreateKey(publicKeyInfo);
                     Keys = new(publicKey, privateKey);
                 }
-                catch (Exception ex)
+                catch
                 {
-                    throw CryptographicException.From(ex);
+                    privateKey?.ClearPrivateByteArrayFields();
+                    publicKey?.ClearPrivateByteArrayFields();
+                    throw;
                 }
                 finally
                 {
-                    keyInfo.Clear();
+                    privateKeyInfo?.Clear();
+                    publicKeyInfo?.Clear();
                 }
             }
             catch (CryptographicException)

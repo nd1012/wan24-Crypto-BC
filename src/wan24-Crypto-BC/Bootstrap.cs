@@ -17,14 +17,16 @@ namespace wan24.Crypto.BC
             // Asymmetric
             AsymmetricHelper.Algorithms[AsymmetricKyberAlgorithm.ALGORITHM_NAME] = AsymmetricKyberAlgorithm.Instance;
             //FIXME PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo doesn't support FrodoPrivateKeyParameters !? (waiting for an update of the NuGet package at present)
-            //AsymmetricHelper.Algorithms[AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME] = AsymmetricFrodoKemAlgorithm.Instance;
+            AsymmetricHelper.Algorithms[AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME] = AsymmetricFrodoKemAlgorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricDilithiumAlgorithm.ALGORITHM_NAME] = AsymmetricDilithiumAlgorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricFalconAlgorithm.ALGORITHM_NAME] = AsymmetricFalconAlgorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME] = AsymmetricSphincsPlusAlgorithm.Instance;
             //FIXME PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo doesn't support NtruPrivateKeyParameters !? (waiting for a fix and an update of the NuGet package at present)
-            //AsymmetricHelper.Algorithms[AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME] = AsymmetricNtruEncryptAlgorithm.Instance;
+            AsymmetricHelper.Algorithms[AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME] = AsymmetricNtruEncryptAlgorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricEd25519Algorithm.ALGORITHM_NAME] = AsymmetricEd25519Algorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricEd448Algorithm.ALGORITHM_NAME] = AsymmetricEd448Algorithm.Instance;
+            AsymmetricHelper.Algorithms[AsymmetricX25519Algorithm.ALGORITHM_NAME] = AsymmetricX25519Algorithm.Instance;
+            AsymmetricHelper.Algorithms[AsymmetricX448Algorithm.ALGORITHM_NAME] = AsymmetricX448Algorithm.Instance;
             // ChaCha20
             EncryptionHelper.Algorithms[EncryptionChaCha20Algorithm.ALGORITHM_NAME] = EncryptionChaCha20Algorithm.Instance;
             CryptoProfiles.Registered[EncryptionChaCha20Algorithm.PROFILE_CHACHA20_RAW] = new CryptoOptions()
@@ -77,16 +79,15 @@ namespace wan24.Crypto.BC
             // PQ
             CryptoHelper.OnForcePostQuantum += (e) =>
             {
-                //TODO Implement NTRU encryption as new default algorithm for key exchange
                 if (CryptoHelper.StrictPostQuantumSafety)
                 {
                     if (!AsymmetricHelper.DefaultKeyExchangeAlgorithm.IsPostQuantum)
                     {
-                        AsymmetricHelper.DefaultKeyExchangeAlgorithm = AsymmetricKyberAlgorithm.Instance;
+                        AsymmetricHelper.DefaultKeyExchangeAlgorithm = AsymmetricNtruEncryptAlgorithm.Instance;
                     }
                     else if(!(HybridAlgorithmHelper.KeyExchangeAlgorithm?.IsPostQuantum ?? true))
                     {
-                        HybridAlgorithmHelper.KeyExchangeAlgorithm = AsymmetricKyberAlgorithm.Instance;
+                        HybridAlgorithmHelper.KeyExchangeAlgorithm = AsymmetricNtruEncryptAlgorithm.Instance;
                     }
                     if (!AsymmetricHelper.DefaultSignatureAlgorithm.IsPostQuantum)
                     {
@@ -101,13 +102,13 @@ namespace wan24.Crypto.BC
                 {
                     if(AsymmetricHelper.DefaultKeyExchangeAlgorithm.IsPostQuantum && !(HybridAlgorithmHelper.KeyExchangeAlgorithm?.IsPostQuantum ?? false))
                     {
-                        HybridAlgorithmHelper.KeyExchangeAlgorithm = AsymmetricKyberAlgorithm.Instance;
+                        HybridAlgorithmHelper.KeyExchangeAlgorithm = AsymmetricNtruEncryptAlgorithm.Instance;
                     }
                     else if (!AsymmetricHelper.DefaultKeyExchangeAlgorithm.IsPostQuantum)
                     {
                         if (!(HybridAlgorithmHelper.KeyExchangeAlgorithm?.IsPostQuantum ?? false))
                             HybridAlgorithmHelper.KeyExchangeAlgorithm = AsymmetricHelper.DefaultKeyExchangeAlgorithm;
-                        AsymmetricHelper.DefaultKeyExchangeAlgorithm = AsymmetricKyberAlgorithm.Instance;
+                        AsymmetricHelper.DefaultKeyExchangeAlgorithm = AsymmetricNtruEncryptAlgorithm.Instance;
                     }
                     if (AsymmetricHelper.DefaultSignatureAlgorithm.IsPostQuantum && !(HybridAlgorithmHelper.SignatureAlgorithm?.IsPostQuantum ?? false))
                     {

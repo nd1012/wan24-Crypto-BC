@@ -1,6 +1,7 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Pqc.Crypto.Ntru;
 using wan24.Core;
+using wan24.StreamSerializerExtensions;
 
 namespace wan24.Crypto.BC
 {
@@ -36,19 +37,83 @@ namespace wan24.Crypto.BC
         public AsymmetricNtruEncryptPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME, keys) { }
 
         /// <inheritdoc/>
+        protected override byte[] SerializeKeyData()
+        {
+            try
+            {
+                EnsureUndisposed();
+                if (Keys == null) throw new InvalidOperationException();
+                using MemoryPoolStream ms = new()
+                {
+                    CleanReturned = true
+                };
+                using SecureByteArray privateKey = new((Keys.Private as NtruPrivateKeyParameters)!.PrivateKey);
+                using SecureByteArray publicKey = new((Keys.Public as NtruPublicKeyParameters)!.PublicKey);
+                ms.WriteSerializerVersion()
+                    .WriteNumber(Bits)
+                    .WriteBytes(privateKey.Array)
+                    .WriteBytes(publicKey.Array);
+                return ms.ToArray();
+            }
+            catch (CryptographicException)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
+        /// <inheritdoc/>
+        protected override void DeserializeKeyData()
+        {
+            try
+            {
+                EnsureUndisposed();
+                NtruPrivateKeyParameters? privateKey = null;
+                NtruPublicKeyParameters? publicKey = null;
+                try
+                {
+                    using MemoryStream ms = new(KeyData.Array);
+                    int ssv = ms.ReadSerializerVersion();
+                    NtruParameters param = AsymmetricNtruHelper.GetParameters(ms.ReadNumber<int>(ssv));
+                    privateKey = new(param, ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    publicKey = new(param, ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    Keys = new(publicKey, privateKey);
+                }
+                catch
+                {
+                    privateKey?.ClearPrivateByteArrayFields();
+                    publicKey?.ClearPrivateByteArrayFields();
+                    throw;
+                }
+            }
+            catch (CryptographicException)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
+        /// <inheritdoc/>
+        protected override NtruPublicKeyParameters GetPublicKey(NtruPrivateKeyParameters privateKey) => throw new NotSupportedException();
+
+        /// <inheritdoc/>
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);
-            if (Keys == null) return;
-            Keys.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
+            Keys?.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
         }
 
         /// <inheritdoc/>
         protected override async Task DisposeCore()
         {
             await base.DisposeCore().DynamicContext();
-            if (Keys == null) return;
-            Keys.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
+            Keys?.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
         }
 
         /// <summary>

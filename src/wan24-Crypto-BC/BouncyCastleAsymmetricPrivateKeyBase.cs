@@ -33,7 +33,11 @@ namespace wan24.Crypto.BC
         /// </summary>
         /// <param name="algorithm">Algorithm name</param>
         /// <param name="keyData">Key data</param>
-        protected BouncyCastleAsymmetricPrivateKeyBase(string algorithm, byte[] keyData) : this(algorithm) => KeyData = new(keyData);
+        protected BouncyCastleAsymmetricPrivateKeyBase(string algorithm, byte[] keyData) : base(algorithm)
+        {
+            KeyData = new(keyData);
+            DeserializeKeyData();
+        }
 
         /// <summary>
         /// Constructor
@@ -69,7 +73,7 @@ namespace wan24.Crypto.BC
                 try
                 {
                     EnsureUndisposed();
-                    if (Keys == null) DeserializeKeyData();
+                    if (Keys is null) DeserializeKeyData();
                     return (tPrivateKey)Keys!.Private;
                 }
                 catch (CryptographicException)
@@ -91,8 +95,8 @@ namespace wan24.Crypto.BC
                 try
                 {
                     EnsureUndisposed();
-                    if (Keys == null) throw new InvalidOperationException();
-                    return _PublicKey ??= Activator.CreateInstance(typeof(tPublic), (tPublicKey)Keys.Public) as tPublic
+                    if (Keys is null) throw new InvalidOperationException();
+                    return _PublicKey ??= Activator.CreateInstance(typeof(tPublic), Keys.Public) as tPublic
                         ?? throw new InvalidProgramException($"Failed to instance {typeof(tPublic)}");
                 }
                 catch (CryptographicException)
@@ -119,5 +123,23 @@ namespace wan24.Crypto.BC
         /// Deserialize the key data
         /// </summary>
         protected abstract void DeserializeKeyData();
+
+        /// <summary>
+        /// Serialize the full key data (private and public key)
+        /// </summary>
+        /// <returns>Serialized key data</returns>
+        protected abstract byte[] SerializeFullKeyData();
+
+        /// <summary>
+        /// Deserialize the full key data (private and public key)
+        /// </summary>
+        protected abstract void DeserializeFullKeyData();
+
+        /// <summary>
+        /// Get the public key from a private key
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        /// <returns>Public key</returns>
+        protected abstract tPublicKey GetPublicKey(tPrivateKey privateKey);
     }
 }
