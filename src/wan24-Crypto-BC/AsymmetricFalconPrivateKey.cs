@@ -1,5 +1,6 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Pqc.Crypto.Falcon;
+using Org.BouncyCastle.Pqc.Crypto.Utilities;
 using wan24.Core;
 
 namespace wan24.Crypto.BC
@@ -8,7 +9,7 @@ namespace wan24.Crypto.BC
     /// Asymmetric FALCON private key
     /// </summary>
     public sealed record class AsymmetricFalconPrivateKey
-        : BouncyCastleAsymmetricPrivateSignatureKeyBase<
+        : BouncyCastleAsymmetricPqcPrivateSignatureKeyBase<
             AsymmetricFalconPublicKey, 
             AsymmetricFalconAlgorithm, 
             FalconPublicKeyParameters, 
@@ -35,19 +36,20 @@ namespace wan24.Crypto.BC
         public AsymmetricFalconPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricFalconAlgorithm.ALGORITHM_NAME, keys) { }
 
         /// <inheritdoc/>
+        protected override FalconPublicKeyParameters GetPublicKey(FalconPrivateKeyParameters privateKey) => new(privateKey.Parameters, privateKey.GetPublicKey());
+
+        /// <inheritdoc/>
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);
-            if (Keys == null) return;
-            Keys.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
+            Keys?.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
         }
 
         /// <inheritdoc/>
         protected override async Task DisposeCore()
         {
             await base.DisposeCore().DynamicContext();
-            if (Keys == null) return;
-            Keys.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
+            Keys?.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
         }
 
         /// <summary>

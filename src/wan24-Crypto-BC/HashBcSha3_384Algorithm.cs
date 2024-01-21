@@ -4,9 +4,9 @@ using System.Security.Cryptography;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// SHA3-384 hash algorithm
+    /// SHA3-384 hash algorithm (may be used as replacement, if the .NET algorithm isn't available on the current platform)
     /// </summary>
-    public sealed record class HashSha3_384Algorithm : BouncyCastleHashAlgorithmBase<HashSha3_384Algorithm>
+    public sealed record class HashBcSha3_384Algorithm : BouncyCastleHashAlgorithmBase<HashBcSha3_384Algorithm>
     {
         /// <summary>
         /// Algorithm name
@@ -28,7 +28,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Constructor
         /// </summary>
-        public HashSha3_384Algorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
+        public HashBcSha3_384Algorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
 
         /// <inheritdoc/>
         public override int HashLength => HASH_LENGTH;

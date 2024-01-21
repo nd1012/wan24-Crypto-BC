@@ -73,7 +73,7 @@ namespace wan24.Crypto.BC
             => new PaddedBufferedBlockCipher(new CbcBlockCipher(CreateSerpent(options)), new ISO10126d2Padding());
 
         /// <inheritdoc/>
-        protected override ICipherParameters CreateParameters(byte[] iv, CryptoOptions options) => CreateKeyParameters(iv, options, HashSha3_256Algorithm.Instance);
+        protected override ICipherParameters CreateParameters(byte[] iv, CryptoOptions options) => CreateKeyParameters(iv, options, HashBcSha3_256Algorithm.Instance);
 
         /// <summary>
         /// Create the Serpent engine

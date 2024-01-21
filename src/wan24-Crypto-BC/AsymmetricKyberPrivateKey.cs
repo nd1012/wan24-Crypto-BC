@@ -8,7 +8,7 @@ namespace wan24.Crypto.BC
     /// CRYSTALS-Kyber asymmetric private key
     /// </summary>
     public sealed record class AsymmetricKyberPrivateKey
-        : BouncyCastleAsymmetricPrivateKeyExchangeKeyBase<
+        : BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase<
             AsymmetricKyberPublicKey, 
             AsymmetricKyberAlgorithm, 
             KyberPublicKeyParameters, 
@@ -36,19 +36,26 @@ namespace wan24.Crypto.BC
         public AsymmetricKyberPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricKyberAlgorithm.ALGORITHM_NAME, keys) { }
 
         /// <inheritdoc/>
+        protected override byte[] SerializeKeyData() => SerializeFullKeyData();
+
+        /// <inheritdoc/>
+        protected override void DeserializeKeyData() => DeserializeFullKeyData();
+
+        /// <inheritdoc/>
+        protected override KyberPublicKeyParameters GetPublicKey(KyberPrivateKeyParameters privateKey) => throw new NotSupportedException();
+
+        /// <inheritdoc/>
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);
-            if (Keys == null) return;
-            Keys.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
+            Keys?.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
         }
 
         /// <inheritdoc/>
         protected override async Task DisposeCore()
         {
             await base.DisposeCore().DynamicContext();
-            if (Keys == null) return;
-            Keys.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
+            Keys?.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
         }
 
         /// <summary>

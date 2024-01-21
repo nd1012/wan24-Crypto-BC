@@ -1,8 +1,4 @@
 ﻿using Org.BouncyCastle.Crypto;
-using Org.BouncyCastle.Pqc.Crypto.Utilities;
-using Org.BouncyCastle.Security;
-using wan24.Core;
-using wan24.StreamSerializerExtensions;
 
 namespace wan24.Crypto.BC
 {
@@ -18,7 +14,7 @@ namespace wan24.Crypto.BC
         where tPublic : BouncyCastleAsymmetricPublicKeyBase<tAlgo, tPublicKey, tPublic>, new()
         where tAlgo : IAsymmetricAlgorithm, new()
         where tPublicKey : AsymmetricKeyParameter, ICipherParameters
-        where tPrivateKey: AsymmetricKeyParameter
+        where tPrivateKey : AsymmetricKeyParameter
         where tFinal : BouncyCastleAsymmetricPrivateKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal>, new()
     {
         /// <summary>
@@ -37,7 +33,11 @@ namespace wan24.Crypto.BC
         /// </summary>
         /// <param name="algorithm">Algorithm name</param>
         /// <param name="keyData">Key data</param>
-        protected BouncyCastleAsymmetricPrivateKeyBase(string algorithm, byte[] keyData) : this(algorithm) => KeyData = new(keyData);
+        protected BouncyCastleAsymmetricPrivateKeyBase(string algorithm, byte[] keyData) : base(algorithm)
+        {
+            KeyData = new(keyData);
+            DeserializeKeyData();
+        }
 
         /// <summary>
         /// Constructor
@@ -73,7 +73,7 @@ namespace wan24.Crypto.BC
                 try
                 {
                     EnsureUndisposed();
-                    if (Keys == null) DeserializeKeyData();
+                    if (Keys is null) DeserializeKeyData();
                     return (tPrivateKey)Keys!.Private;
                 }
                 catch (CryptographicException)
@@ -95,8 +95,8 @@ namespace wan24.Crypto.BC
                 try
                 {
                     EnsureUndisposed();
-                    if (Keys == null) throw new InvalidOperationException();
-                    return _PublicKey ??= Activator.CreateInstance(typeof(tPublic), (tPublicKey)Keys.Public) as tPublic
+                    if (Keys is null) throw new InvalidOperationException();
+                    return _PublicKey ??= Activator.CreateInstance(typeof(tPublic), Keys.Public) as tPublic
                         ?? throw new InvalidProgramException($"Failed to instance {typeof(tPublic)}");
                 }
                 catch (CryptographicException)
@@ -111,95 +111,35 @@ namespace wan24.Crypto.BC
         }
 
         /// <inheritdoc/>
-        public sealed override int Bits => PublicKey.Bits;
+        public override int Bits => PublicKey.Bits;
 
         /// <summary>
         /// Serialize the key data
         /// </summary>
         /// <returns>Serialized key data</returns>
-        protected byte[] SerializeKeyData()
-        {
-            try
-            {
-                EnsureUndisposed();
-                if (Keys == null) throw new InvalidOperationException();
-                using MemoryPoolStream ms = new()
-                {
-                    CleanReturned = true
-                };
-                ms.WriteNumber(StreamSerializer.VERSION);
-                byte[] keyInfo = PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo(Keys.Private).PrivateKeyData.GetEncoded();
-                try
-                {
-                    ms.WriteBytes(keyInfo);
-                    keyInfo.Clear();
-                    keyInfo = PqcSubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(Keys.Public).GetEncoded();
-                    ms.WriteBytes(keyInfo);
-                    keyInfo.Clear();
-                }
-                catch (Exception ex)
-                {
-                    throw CryptographicException.From(ex);
-                }
-                finally
-                {
-                    keyInfo.Clear();
-                }
-                return ms.ToArray();
-            }
-            catch (CryptographicException)
-            {
-                throw;
-            }
-            catch (Exception ex)
-            {
-                throw CryptographicException.From(ex);
-            }
-        }
+        protected abstract byte[] SerializeKeyData();
 
         /// <summary>
         /// Deserialize the key data
         /// </summary>
-        protected void DeserializeKeyData()
-        {
-            try
-            {
-                EnsureUndisposed();
-                using MemoryPoolStream ms = new()
-                {
-                    CleanReturned = true
-                };
-                ms.Write(KeyData.Array);
-                ms.Position = 0;
-                int serializerVersion = ms.ReadNumber<int>();
-                if (serializerVersion < 1 || serializerVersion > StreamSerializer.VERSION) throw new SerializerException($"Invalid serializer version {serializerVersion}");
-                byte[] keyInfo = ms.ReadBytes(serializerVersion, minLen: 1, maxLen: ushort.MaxValue).Value;
-                try
-                {
-                    tPrivateKey privateKey = (tPrivateKey)PrivateKeyFactory.CreateKey(keyInfo);
-                    keyInfo.Clear();
-                    keyInfo = ms.ReadBytes(serializerVersion, minLen: 1, maxLen: ushort.MaxValue).Value;
-                    tPublicKey publicKey = (tPublicKey)PublicKeyFactory.CreateKey(keyInfo);
-                    keyInfo.Clear();
-                    Keys = new(publicKey, privateKey);
-                }
-                catch (Exception ex)
-                {
-                    throw CryptographicException.From(ex);
-                }
-                finally
-                {
-                    keyInfo.Clear();
-                }
-            }
-            catch (CryptographicException)
-            {
-                throw;
-            }
-            catch (Exception ex)
-            {
-                throw CryptographicException.From(ex);
-            }
-        }
+        protected abstract void DeserializeKeyData();
+
+        /// <summary>
+        /// Serialize the full key data (private and public key)
+        /// </summary>
+        /// <returns>Serialized key data</returns>
+        protected abstract byte[] SerializeFullKeyData();
+
+        /// <summary>
+        /// Deserialize the full key data (private and public key)
+        /// </summary>
+        protected abstract void DeserializeFullKeyData();
+
+        /// <summary>
+        /// Get the public key from a private key
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        /// <returns>Public key</returns>
+        protected abstract tPublicKey GetPublicKey(tPrivateKey privateKey);
     }
 }

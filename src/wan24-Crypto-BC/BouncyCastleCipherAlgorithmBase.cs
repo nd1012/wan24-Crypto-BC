@@ -20,7 +20,7 @@ namespace wan24.Crypto.BC
         /// Constructor
         /// </summary>
         /// <param name="name">Algorithm name</param>
-        /// <param name="value">Agorithm value</param>
+        /// <param name="value">Algorithm value</param>
         protected BouncyCastleCipherAlgorithmBase(string name, int value) : base(name, value) { }
 
         /// <summary>
@@ -34,9 +34,9 @@ namespace wan24.Crypto.BC
             {
                 HashMd5Algorithm.HASH_LENGTH => HashMd5Algorithm.Instance.Hash(key),
                 HashSha1Algorithm.HASH_LENGTH => HashSha1Algorithm.Instance.Hash(key),
-                HashSha3_256Algorithm.HASH_LENGTH => HashSha3_256Algorithm.Instance.Hash(key),
-                HashSha3_384Algorithm.HASH_LENGTH => HashSha3_384Algorithm.Instance.Hash(key),
-                HashSha3_512Algorithm.HASH_LENGTH => HashSha3_512Algorithm.Instance.Hash(key),
+                HashBcSha3_256Algorithm.HASH_LENGTH => HashBcSha3_256Algorithm.Instance.Hash(key),
+                HashBcSha3_384Algorithm.HASH_LENGTH => HashBcSha3_384Algorithm.Instance.Hash(key),
+                HashBcSha3_512Algorithm.HASH_LENGTH => HashBcSha3_512Algorithm.Instance.Hash(key),
                 _ => throw CryptographicException.From($"Can't process for desired key length {len} bytes", new NotSupportedException())
             };
 

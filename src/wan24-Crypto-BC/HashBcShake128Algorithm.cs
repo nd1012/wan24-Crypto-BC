@@ -4,31 +4,31 @@ using System.Security.Cryptography;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// SHA3-512 hash algorithm
+    /// Shake128 hash algorithm (may be used as replacement, if the .NET algorithm isn't available on the current platform)
     /// </summary>
-    public sealed record class HashSha3_512Algorithm : BouncyCastleHashAlgorithmBase<HashSha3_512Algorithm>
+    public sealed record class HashBcShake128Algorithm : BouncyCastleHashAlgorithmBase<HashBcShake128Algorithm>
     {
         /// <summary>
         /// Algorithm name
         /// </summary>
-        public const string ALGORITHM_NAME = "SHA3-512";
+        public const string ALGORITHM_NAME = "SHAKE128";
         /// <summary>
         /// Algorithm value
         /// </summary>
-        public const int ALGORITHM_VALUE = 7;
+        public const int ALGORITHM_VALUE = 8;
         /// <summary>
         /// Hash length in bytes
         /// </summary>
-        public const int HASH_LENGTH = 64;
+        public const int HASH_LENGTH = 32;
         /// <summary>
         /// Display name
         /// </summary>
-        public const string DISPLAY_NAME = ALGORITHM_NAME;
+        public const string DISPLAY_NAME = "Shake128";
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public HashSha3_512Algorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
+        public HashBcShake128Algorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
 
         /// <inheritdoc/>
         public override int HashLength => HASH_LENGTH;
@@ -40,6 +40,6 @@ namespace wan24.Crypto.BC
         public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
-        protected override HashAlgorithm GetHashAlgorithmInt(CryptoOptions? options) => new BouncyCastleHashAlgorithm(new Sha3Digest(HASH_LENGTH << 3));
+        protected override HashAlgorithm GetHashAlgorithmInt(CryptoOptions? options) => new BouncyCastleHashAlgorithm(new ShakeDigest(128));
     }
 }

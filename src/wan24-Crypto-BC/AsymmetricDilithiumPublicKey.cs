@@ -6,7 +6,7 @@ namespace wan24.Crypto.BC
     /// CRYSTALS-Dilithium asymmetric public key
     /// </summary>
     public sealed record class AsymmetricDilithiumPublicKey
-        : BouncyCastleAsymmetricPublicSignatureKeyBase<AsymmetricDilithiumAlgorithm, DilithiumPublicKeyParameters, DilithiumSigner, AsymmetricDilithiumPublicKey>
+        : BouncyCastleAsymmetricPqcPublicSignatureKeyBase<AsymmetricDilithiumAlgorithm, DilithiumPublicKeyParameters, DilithiumSigner, AsymmetricDilithiumPublicKey>
     {
         /// <summary>
         /// Constructor

@@ -1,10 +1,11 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Security;
+using wan24.Core;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// Base class for a Bouncy Castle asymmetric private key exchange key
+    /// Base class for a Bouncy Castle asymmetric PQC private key exchange key
     /// </summary>
     /// <typeparam name="tPublic">Public key type</typeparam>
     /// <typeparam name="tAlgo">Algorithm type</typeparam>
@@ -13,35 +14,35 @@ namespace wan24.Crypto.BC
     /// <typeparam name="tGenerator">Key generator type</typeparam>
     /// <typeparam name="tExtractor">Key extractor type</typeparam>
     /// <typeparam name="tFinal">Final type</typeparam>
-    public abstract record class BouncyCastleAsymmetricPrivateKeyExchangeKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal>
-        : BouncyCastleAsymmetricPrivateKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal>, IKeyExchangePrivateKey
-        where tPublic : BouncyCastleAsymmetricPublicKeyBase<tAlgo, tPublicKey, tPublic>, new()
+    public abstract record class BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal>
+        : BouncyCastleAsymmetricPqcPrivateKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal>, IKeyExchangePrivateKey
+        where tPublic : BouncyCastleAsymmetricPqcPublicKeyBase<tAlgo, tPublicKey, tPublic>, new()
         where tAlgo : IAsymmetricAlgorithm, new()
         where tPublicKey : AsymmetricKeyParameter, ICipherParameters
         where tPrivateKey : AsymmetricKeyParameter
         where tGenerator : class, IEncapsulatedSecretGenerator
         where tExtractor : class, IEncapsulatedSecretExtractor
-        where tFinal : BouncyCastleAsymmetricPrivateKeyExchangeKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal>, new()
+        where tFinal : BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal>, new()
     {
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="algorithm">Algorithm name</param>
-        protected BouncyCastleAsymmetricPrivateKeyExchangeKeyBase(string algorithm) : base(algorithm) { }
+        protected BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase(string algorithm) : base(algorithm) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="algorithm">Algorithm name</param>
         /// <param name="keyData">Key data</param>
-        protected BouncyCastleAsymmetricPrivateKeyExchangeKeyBase(string algorithm, byte[] keyData) : base(algorithm, keyData) { }
+        protected BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase(string algorithm, byte[] keyData) : base(algorithm, keyData) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="algorithm">Algorithm name</param>
         /// <param name="keys">Keys</param>
-        protected BouncyCastleAsymmetricPrivateKeyExchangeKeyBase(string algorithm, AsymmetricCipherKeyPair keys) : base(algorithm, keys) { }
+        protected BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase(string algorithm, AsymmetricCipherKeyPair keys) : base(algorithm, keys) { }
 
         /// <inheritdoc/>
         public override (byte[] Key, byte[] KeyExchangeData) GetKeyExchangeData(IAsymmetricPublicKey? publicKey = null, CryptoOptions? options = null)
@@ -54,7 +55,7 @@ namespace wan24.Crypto.BC
                 tGenerator generator = Activator.CreateInstance(typeof(tGenerator), new SecureRandom(BouncyCastleRandomGenerator.Instance())) as tGenerator
                     ?? throw new InvalidProgramException($"Failed to instance {typeof(tGenerator)}");
                 using ISecretWithEncapsulation secret = generator.GenerateEncapsulated(key.PublicKey);
-                return (secret.GetSecret(), secret.GetEncapsulation());
+                return (secret.GetSecret().CloneArray(), secret.GetEncapsulation().CloneArray());
             }
             catch (Exception ex)
             {
@@ -88,7 +89,7 @@ namespace wan24.Crypto.BC
                 tGenerator generator = Activator.CreateInstance(typeof(tGenerator), new SecureRandom(BouncyCastleRandomGenerator.Instance())) as tGenerator
                     ?? throw new InvalidProgramException($"Failed to instance {typeof(tGenerator)}");
                 using ISecretWithEncapsulation secret = generator.GenerateEncapsulated(key.PublicKey);
-                return secret.GetSecret();
+                return secret.GetSecret().CloneArray();
             }
             catch (Exception ex)
             {

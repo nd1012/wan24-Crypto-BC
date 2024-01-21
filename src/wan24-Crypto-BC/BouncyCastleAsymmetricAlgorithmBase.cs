@@ -35,7 +35,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Constructor
         /// </summary>
-        /// <param name="name">Algorthm name</param>
+        /// <param name="name">Algorithm name</param>
         /// <param name="value">Algorithm value</param>
         /// <param name="usages">Algorithm usages</param>
         /// <param name="isEllipticCurveAlgorithm">Is an elliptic curve algorithm?</param>
@@ -78,12 +78,11 @@ namespace wan24.Crypto.BC
         public sealed override bool IsPostQuantum { get; }
 
         /// <inheritdoc/>
-        public sealed override tPrivate CreateKeyPair(CryptoOptions? options = null)
+        public override tPrivate CreateKeyPair(CryptoOptions? options = null)
         {
             try
             {
                 options ??= DefaultOptions;
-                options = AsymmetricHelper.GetDefaultKeyExchangeOptions(options);
                 if (!options.AsymmetricKeyBits.In(AllowedKeySizes)) throw new ArgumentException("Invalid key size", nameof(options));
                 tKeyGen keyGen = new();
                 keyGen.Init(CreateKeyGenParameters(new SecureRandom(BouncyCastleRandomGenerator.Instance()), GetEngineParameters(options), options));
@@ -100,6 +99,9 @@ namespace wan24.Crypto.BC
             }
         }
 
+        /// <inheritdoc/>
+        public override tPrivate DeserializePrivateKeyV1(byte[] keyData) => throw new NotSupportedException();
+
         /// <summary>
         /// Get the cipher engine parameters
         /// </summary>
@@ -108,7 +110,7 @@ namespace wan24.Crypto.BC
         protected abstract tParam GetEngineParameters(CryptoOptions options);
 
         /// <summary>
-        /// Create key generatpr parameters
+        /// Create key generator parameters
         /// </summary>
         /// <param name="random">Random</param>
         /// <param name="parameters">Engine parameters</param>

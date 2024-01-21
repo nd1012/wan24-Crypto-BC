@@ -5,7 +5,7 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// CRYSTALS-Kyber asymmetric public key
     /// </summary>
-    public sealed record class AsymmetricKyberPublicKey : BouncyCastleAsymmetricPublicKeyBase<AsymmetricKyberAlgorithm, KyberPublicKeyParameters, AsymmetricKyberPublicKey>
+    public sealed record class AsymmetricKyberPublicKey : BouncyCastleAsymmetricPqcPublicKeyBase<AsymmetricKyberAlgorithm, KyberPublicKeyParameters, AsymmetricKyberPublicKey>
     {
         /// <summary>
         /// Constructor

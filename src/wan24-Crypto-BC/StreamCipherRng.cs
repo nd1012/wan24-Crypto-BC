@@ -181,8 +181,7 @@ namespace wan24.Crypto.BC
                 RNG.FillBytes(bytes[..write]);
                 Encryption.CryptoStream.Write(bytes[..write]);
                 Encryption.CryptoStream.Flush();
-                if (Buffer.Read(bytes[..write]) != write)
-                    throw CryptographicException.From("Failed to read all random data from the buffer", new InvalidProgramException());
+                Buffer.ReadExactly(bytes[..write]);
             }
         }
 

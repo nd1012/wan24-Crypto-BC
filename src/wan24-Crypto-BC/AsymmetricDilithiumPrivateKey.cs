@@ -8,7 +8,7 @@ namespace wan24.Crypto.BC
     /// CRYSTALS-Dilithium asymmetric private key
     /// </summary>
     public sealed record class AsymmetricDilithiumPrivateKey
-        : BouncyCastleAsymmetricPrivateSignatureKeyBase<
+        : BouncyCastleAsymmetricPqcPrivateSignatureKeyBase<
             AsymmetricDilithiumPublicKey,
             AsymmetricDilithiumAlgorithm,
             DilithiumPublicKeyParameters,
@@ -35,33 +35,20 @@ namespace wan24.Crypto.BC
         public AsymmetricDilithiumPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricDilithiumAlgorithm.ALGORITHM_NAME, keys) { }
 
         /// <inheritdoc/>
+        protected override DilithiumPublicKeyParameters GetPublicKey(DilithiumPrivateKeyParameters privateKey) => new(privateKey.Parameters, privateKey.Rho, privateKey.T1);
+
+        /// <inheritdoc/>
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);
-            if (Keys == null) return;
-            DilithiumPrivateKeyParameters privateKey = (DilithiumPrivateKeyParameters)Keys.Private;
-            privateKey.K.Clear();
-            privateKey.Rho.Clear();
-            privateKey.S1.Clear();
-            privateKey.S2.Clear();
-            privateKey.T0.Clear();
-            privateKey.T1.Clear();
-            privateKey.Tr.Clear();
+            Keys?.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
         }
 
         /// <inheritdoc/>
         protected override async Task DisposeCore()
         {
             await base.DisposeCore().DynamicContext();
-            if (Keys == null) return;
-            DilithiumPrivateKeyParameters privateKey = (DilithiumPrivateKeyParameters)Keys.Private;
-            privateKey.K.Clear();
-            privateKey.Rho.Clear();
-            privateKey.S1.Clear();
-            privateKey.S2.Clear();
-            privateKey.T0.Clear();
-            privateKey.T1.Clear();
-            privateKey.Tr.Clear();
+            Keys?.Private.ClearPrivateByteArrayFields();//TODO All parameter fields are private :(
         }
 
         /// <summary>

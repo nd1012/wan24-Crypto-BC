@@ -6,18 +6,16 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// Bouncy Castle HMAC algorithm
     /// </summary>
-    public sealed class BouncyCastleHmacAlgorithm : KeyedHashAlgorithm
+    /// <remarks>
+    /// Constructor
+    /// </remarks>
+    /// <param name="mac">MAC</param>
+    public sealed class BouncyCastleHmacAlgorithm(IMac mac) : KeyedHashAlgorithm()
     {
         /// <summary>
         /// MAC
         /// </summary>
-        private readonly IMac Mac;
-
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="mac">MAC</param>
-        public BouncyCastleHmacAlgorithm(IMac mac) : base() => Mac = mac;
+        private readonly IMac Mac = mac;
 
         /// <inheritdoc/>
         public override void Initialize() => Mac.Reset();
