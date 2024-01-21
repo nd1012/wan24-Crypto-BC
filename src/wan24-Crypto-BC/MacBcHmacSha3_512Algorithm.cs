@@ -21,7 +21,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// MAC length in bytes
         /// </summary>
-        public const int MAC_LENGTH = 48;
+        public const int MAC_LENGTH = 64;
         /// <summary>
         /// Display name
         /// </summary>
