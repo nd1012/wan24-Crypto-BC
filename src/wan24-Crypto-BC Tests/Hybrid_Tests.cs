@@ -14,14 +14,12 @@ namespace wan24_Crypto_Tests
         [TestMethod]
         public void Sync_Encryption_Tests()
         {
-            return;
             HybridTests.AllSyncEncryptionTests();
         }
 
         [TestMethod]
         public async Task Async_Encryption_Tests()
         {
-            return;
             await HybridTests.AllAsyncEncryptionTests();
         }
     }
