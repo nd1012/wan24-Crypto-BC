@@ -111,6 +111,26 @@ the <code>wan24-Crypto</code> library with these algorithms:</p>
 <td>NTRUENCRYPT</td>
 </tr>
 <tr>
+<td>Ed25519</td>
+<td>8</td>
+<td>ED25519</td>
+</tr>
+<tr>
+<td>Ed448</td>
+<td>9</td>
+<td>ED448</td>
+</tr>
+<tr>
+<td>X25519</td>
+<td>10</td>
+<td>X25519</td>
+</tr>
+<tr>
+<td>X448</td>
+<td>11</td>
+<td>X448</td>
+</tr>
+<tr>
 <td><strong>Symmetric</strong></td>
 <td></td>
 <td></td>
@@ -150,46 +170,6 @@ the <code>wan24-Crypto</code> library with these algorithms:</p>
 <td>8</td>
 <td>TWOFISH256GCM</td>
 </tr>
-<tr>
-<td><strong>Hashing</strong></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>SHA3-256</td>
-<td>5</td>
-<td>SHA3-256</td>
-</tr>
-<tr>
-<td>SHA3-384</td>
-<td>6</td>
-<td>SHA3-384</td>
-</tr>
-<tr>
-<td>SHA3-512</td>
-<td>7</td>
-<td>SHA3-512</td>
-</tr>
-<tr>
-<td><strong>MAC</strong></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>HMAC-SHA3-256</td>
-<td>4</td>
-<td>HMAC-SHA3-256</td>
-</tr>
-<tr>
-<td>HMAC-SHA3-384</td>
-<td>5</td>
-<td>HMAC-SHA3-384</td>
-</tr>
-<tr>
-<td>HMAC-SHA3-512</td>
-<td>6</td>
-<td>HMAC-SHA3-512</td>
-</tr>
 </tbody>
 </table>
 <p><strong>NOTE</strong>: FrodoKEM and NTRUEncrypt are currently disabled, 'cause there seems
@@ -212,6 +192,13 @@ initialize the Bouncy Castle extension first, before you can use it:</p>
 </code></pre>
 <p>Per default the current <code>wan24-Crypto</code> default will be set as counter
 algorithms to <code>HybridAlgorithmHelper</code>.</p>
+<p>Current Bouncy Castle default algorithms are:</p>
+<ul>
+<li>Key exchange: NTRUEncrypt</li>
+<li>Signature: CRYSTALS-Dilithium</li>
+<li>Encryption: Serpent 256 bit CBC</li>
+<li>PAKE encryption: Serpent 256 bit GCM</li>
+</ul>
 <p>Some algorithms of the <code>wan24-Crypto</code> library are not available on some
 platforms, that's why they need to be replaced in order to be used:</p>
 <table>
@@ -223,22 +210,66 @@ platforms, that's why they need to be replaced in order to be used:</p>
 </thead>
 <tbody>
 <tr>
+<td><code>AsymmetricEcDiffieHellmanAlgorithm</code></td>
+<td><code>AsymmetricBcEcDiffieHellmanAlgorithm</code></td>
+</tr>
+<tr>
+<td><code>AsymmetricEcDsaAlgorithm</code></td>
+<td><code>AsymmetricBcEcDsaAlgorithm</code></td>
+</tr>
+<tr>
 <td><code>EncryptionAes256CbcAlgorithm</code></td>
 <td><code>EncryptionBcAes256CbcAlgorithm</code></td>
+</tr>
+<tr>
+<td><code>HashShake128Algorithm</code></td>
+<td><code>HashBcShake128Algorithm</code></td>
+</tr>
+<tr>
+<td><code>HashShake256Algorithm</code></td>
+<td><code>HashBcShake256Algorithm</code></td>
+</tr>
+<tr>
+<td><code>HashSha3_256Algorithm</code></td>
+<td><code>HashBcSha3_256Algorithm</code></td>
+</tr>
+<tr>
+<td><code>HashSha3_384Algorithm</code></td>
+<td><code>HashBcSha3_384Algorithm</code></td>
+</tr>
+<tr>
+<td><code>HashSha3_512Algorithm</code></td>
+<td><code>HashBcSha3_512Algorithm</code></td>
+</tr>
+<tr>
+<td><code>MacHmacSha3_256Algorithm</code></td>
+<td><code>MacBcHmacSha3_256Algorithm</code></td>
+</tr>
+<tr>
+<td><code>MacHmacSha3_384Algorithm</code></td>
+<td><code>MacBcHmacSha3_384Algorithm</code></td>
+</tr>
+<tr>
+<td><code>MacHmacSha3_512Algorithm</code></td>
+<td><code>MacBcHmacSha3_512Algorithm</code></td>
 </tr>
 </tbody>
 </table>
 <p>To replace all of them:</p>
 <pre><code class="lang-cs">BouncyCastle.ReplaceNetAlgorithms();
 </code></pre>
+<p><strong>NOTE</strong>: The Shake128/256 replacements don't support variable output length
+and use the default output length of the <code>wan24-Crypto</code> implementations
+instead.</p>
 <h2 id="post-quantum-safety">Post quantum safety</h2>
-<p>These algorithms are designed for post quantum cryptography:</p>
+<p>These asymmetric algorithms are designed for post quantum cryptography:</p>
 <ul>
 <li>CRYSTALS-Kyber (key exchange)</li>
 <li>CRYSTALS-Dilithium (signature)</li>
 <li>FALCON (signature)</li>
 <li>SPHINCS+ (signature)</li>
 <li>FrodoKEM (key exchange)</li>
+<li>NTRUEncrypt (key exchange)</li>
 </ul>
 <p>Normally you want to use them in hybrid mode and use classical algorithms of
 the <code>wan24-Crypto</code> package as counter algorithm. To do this per default:</p>
@@ -248,11 +279,15 @@ CryptoHelper.ForcePostQuantumSafety();
 <p>This will use these algorithms as (counter) algorithms for asymmetric
 cryptography, in case you didn't define other post quantum algorithms already:</p>
 <ul>
-<li>CRYSTALS-Kyber (key exchange)</li>
+<li>NTRUEncrypt (key exchange)</li>
 <li>CRYSTALS-Dilithium (signature)</li>
 </ul>
 <p>For using other algorithms instead:</p>
-<pre><code class="lang-cs">// FALCON
+<pre><code class="lang-cs">// CRYSTALS-Kyber
+HybridAlgorithmHelper.SignatureAlgorithm = 
+    AsymmetricHelper.GetAlgorithm(AsymmetricKyberAlgorithm.ALGORITHM_NAME);
+
+// FALCON
 HybridAlgorithmHelper.SignatureAlgorithm = 
     AsymmetricHelper.GetAlgorithm(AsymmetricFalconAlgorithm.ALGORITHM_NAME);
 
@@ -268,7 +303,7 @@ HybridAlgorithmHelper.KeyExchangeAlgorithm =
 encryption:</p>
 <pre><code class="lang-cs">// Create options having a counter private key
 CryptoOptions options = EncryptionHelper.GetDefaultOptions();
-options.SetCounterPrivateKey(yourKyberPrivateKey);
+options.SetCounterPrivateKey(yourNtruPrivateKey);
 
 // Encrypt using the options and your normal private key
 byte[] cipherData = rawData.Encrypt(yourNormalPrivateKey, options);
@@ -334,6 +369,17 @@ used, if <code>/dev/random</code> was preferred. To disable <code>/dev/random</c
 <code>RND.UseDevRandom</code> and <code>RND.RequireDevRandom</code> to <code>false</code> also.</p>
 <p><strong>NOTE</strong>: Currently only stream ciphers are supported, because the cipher RNG
 implementation doesn't buffer pre-generated random data.</p>
+<h2 id="xed448-goldilocks-and-xed25519">X/Ed448-Goldilocks and X/Ed25519</h2>
+<p>Just a short note on Curve448: Private and public keys have a different key
+size: The private key has 456 bit, while the public key has 448 bit. Both key
+sizes are supported for key generation and result in the same key sizes for
+the private (456 bit) and the public (448 bit) key. The private key of a key
+pair will always identify with 456 bit, while the public key will always
+identify with 448 bit - no matter which key size was chosen for key pair
+generation.</p>
+<p>The Ed448 signature is context based, but currently only an empty byte array
+is being used as context data. Instead of a context you should use the purpose
+free text, which can be given to the signature methods of <code>wan24-Crypto</code>.</p>
 </article>
           </div>
           

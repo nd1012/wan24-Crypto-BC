@@ -204,6 +204,56 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricSphincsPlusHelper.GetParameters
   nameWithType: AsymmetricSphincsPlusHelper.GetParameters
+- uid: wan24.Crypto.BC.BcEllipticCurves
+  name: BcEllipticCurves
+  href: api/wan24.Crypto.BC.BcEllipticCurves.html
+  commentId: T:wan24.Crypto.BC.BcEllipticCurves
+  fullName: wan24.Crypto.BC.BcEllipticCurves
+  nameWithType: BcEllipticCurves
+- uid: wan24.Crypto.BC.BcEllipticCurves.GetCurve(System.Int32)
+  name: GetCurve(Int32)
+  href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_GetCurve_System_Int32_
+  commentId: M:wan24.Crypto.BC.BcEllipticCurves.GetCurve(System.Int32)
+  fullName: wan24.Crypto.BC.BcEllipticCurves.GetCurve(System.Int32)
+  nameWithType: BcEllipticCurves.GetCurve(Int32)
+- uid: wan24.Crypto.BC.BcEllipticCurves.GetCurve*
+  name: GetCurve
+  href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_GetCurve_
+  commentId: Overload:wan24.Crypto.BC.BcEllipticCurves.GetCurve
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BcEllipticCurves.GetCurve
+  nameWithType: BcEllipticCurves.GetCurve
+- uid: wan24.Crypto.BC.BcEllipticCurves.GetKeySize(Org.BouncyCastle.Crypto.Parameters.ECDomainParameters)
+  name: GetKeySize(ECDomainParameters)
+  href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_GetKeySize_Org_BouncyCastle_Crypto_Parameters_ECDomainParameters_
+  commentId: M:wan24.Crypto.BC.BcEllipticCurves.GetKeySize(Org.BouncyCastle.Crypto.Parameters.ECDomainParameters)
+  fullName: wan24.Crypto.BC.BcEllipticCurves.GetKeySize(Org.BouncyCastle.Crypto.Parameters.ECDomainParameters)
+  nameWithType: BcEllipticCurves.GetKeySize(ECDomainParameters)
+- uid: wan24.Crypto.BC.BcEllipticCurves.GetKeySize*
+  name: GetKeySize
+  href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_GetKeySize_
+  commentId: Overload:wan24.Crypto.BC.BcEllipticCurves.GetKeySize
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BcEllipticCurves.GetKeySize
+  nameWithType: BcEllipticCurves.GetKeySize
+- uid: wan24.Crypto.BC.BcEllipticCurves.SECP256R1_CURVE
+  name: SECP256R1_CURVE
+  href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_SECP256R1_CURVE
+  commentId: F:wan24.Crypto.BC.BcEllipticCurves.SECP256R1_CURVE
+  fullName: wan24.Crypto.BC.BcEllipticCurves.SECP256R1_CURVE
+  nameWithType: BcEllipticCurves.SECP256R1_CURVE
+- uid: wan24.Crypto.BC.BcEllipticCurves.SECP384R1_CURVE
+  name: SECP384R1_CURVE
+  href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_SECP384R1_CURVE
+  commentId: F:wan24.Crypto.BC.BcEllipticCurves.SECP384R1_CURVE
+  fullName: wan24.Crypto.BC.BcEllipticCurves.SECP384R1_CURVE
+  nameWithType: BcEllipticCurves.SECP384R1_CURVE
+- uid: wan24.Crypto.BC.BcEllipticCurves.SECP521R1_CURVE
+  name: SECP521R1_CURVE
+  href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_SECP521R1_CURVE
+  commentId: F:wan24.Crypto.BC.BcEllipticCurves.SECP521R1_CURVE
+  fullName: wan24.Crypto.BC.BcEllipticCurves.SECP521R1_CURVE
+  nameWithType: BcEllipticCurves.SECP521R1_CURVE
 - uid: wan24.Crypto.BC.Bootstrap
   name: Bootstrap
   href: api/wan24.Crypto.BC.Bootstrap.html
@@ -434,198 +484,12 @@ references:
   commentId: T:wan24.Crypto.BC.BouncyCastleHashAlgorithm
   fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm
   nameWithType: BouncyCastleHashAlgorithm
-- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.#ctor(Org.BouncyCastle.Crypto.IDigest)
-  name: BouncyCastleHashAlgorithm(IDigest)
-  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm__ctor_Org_BouncyCastle_Crypto_IDigest_
-  commentId: M:wan24.Crypto.BC.BouncyCastleHashAlgorithm.#ctor(Org.BouncyCastle.Crypto.IDigest)
-  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.BouncyCastleHashAlgorithm(Org.BouncyCastle.Crypto.IDigest)
-  nameWithType: BouncyCastleHashAlgorithm.BouncyCastleHashAlgorithm(IDigest)
-- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.#ctor*
-  name: BouncyCastleHashAlgorithm
-  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleHashAlgorithm.#ctor
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.BouncyCastleHashAlgorithm
-  nameWithType: BouncyCastleHashAlgorithm.BouncyCastleHashAlgorithm
-- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Dispose(System.Boolean)
-  name: Dispose(Boolean)
-  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_Dispose_System_Boolean_
-  commentId: M:wan24.Crypto.BC.BouncyCastleHashAlgorithm.Dispose(System.Boolean)
-  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Dispose(System.Boolean)
-  nameWithType: BouncyCastleHashAlgorithm.Dispose(Boolean)
-- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Dispose*
-  name: Dispose
-  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_Dispose_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleHashAlgorithm.Dispose
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Dispose
-  nameWithType: BouncyCastleHashAlgorithm.Dispose
-- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(ReadOnlySpan{System.Byte})
-  name: HashCore(ReadOnlySpan<Byte>)
-  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_HashCore_ReadOnlySpan_System_Byte__
-  commentId: M:wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(ReadOnlySpan{System.Byte})
-  name.vb: HashCore(ReadOnlySpan(Of Byte))
-  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(ReadOnlySpan<System.Byte>)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(ReadOnlySpan(Of System.Byte))
-  nameWithType: BouncyCastleHashAlgorithm.HashCore(ReadOnlySpan<Byte>)
-  nameWithType.vb: BouncyCastleHashAlgorithm.HashCore(ReadOnlySpan(Of Byte))
-- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(System.Byte[],System.Int32,System.Int32)
-  name: HashCore(Byte[], Int32, Int32)
-  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_HashCore_System_Byte___System_Int32_System_Int32_
-  commentId: M:wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(System.Byte[],System.Int32,System.Int32)
-  name.vb: HashCore(Byte(), Int32, Int32)
-  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(System.Byte[], System.Int32, System.Int32)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore(System.Byte(), System.Int32, System.Int32)
-  nameWithType: BouncyCastleHashAlgorithm.HashCore(Byte[], Int32, Int32)
-  nameWithType.vb: BouncyCastleHashAlgorithm.HashCore(Byte(), Int32, Int32)
-- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore*
-  name: HashCore
-  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_HashCore_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashCore
-  nameWithType: BouncyCastleHashAlgorithm.HashCore
-- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashFinal
-  name: HashFinal()
-  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_HashFinal
-  commentId: M:wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashFinal
-  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashFinal()
-  nameWithType: BouncyCastleHashAlgorithm.HashFinal()
-- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashFinal*
-  name: HashFinal
-  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_HashFinal_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashFinal
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.HashFinal
-  nameWithType: BouncyCastleHashAlgorithm.HashFinal
-- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Initialize
-  name: Initialize()
-  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_Initialize
-  commentId: M:wan24.Crypto.BC.BouncyCastleHashAlgorithm.Initialize
-  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Initialize()
-  nameWithType: BouncyCastleHashAlgorithm.Initialize()
-- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Initialize*
-  name: Initialize
-  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_Initialize_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleHashAlgorithm.Initialize
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Initialize
-  nameWithType: BouncyCastleHashAlgorithm.Initialize
-- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.TryHashFinal(Span{System.Byte},System.Int32@)
-  name: TryHashFinal(Span<Byte>, out Int32)
-  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_TryHashFinal_Span_System_Byte__System_Int32__
-  commentId: M:wan24.Crypto.BC.BouncyCastleHashAlgorithm.TryHashFinal(Span{System.Byte},System.Int32@)
-  name.vb: TryHashFinal(Span(Of Byte), ByRef Int32)
-  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.TryHashFinal(Span<System.Byte>, out System.Int32)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleHashAlgorithm.TryHashFinal(Span(Of System.Byte), ByRef System.Int32)
-  nameWithType: BouncyCastleHashAlgorithm.TryHashFinal(Span<Byte>, out Int32)
-  nameWithType.vb: BouncyCastleHashAlgorithm.TryHashFinal(Span(Of Byte), ByRef Int32)
-- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.TryHashFinal*
-  name: TryHashFinal
-  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_TryHashFinal_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleHashAlgorithm.TryHashFinal
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.TryHashFinal
-  nameWithType: BouncyCastleHashAlgorithm.TryHashFinal
 - uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm
   name: BouncyCastleHmacAlgorithm
   href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html
   commentId: T:wan24.Crypto.BC.BouncyCastleHmacAlgorithm
   fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm
   nameWithType: BouncyCastleHmacAlgorithm
-- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.#ctor(Org.BouncyCastle.Crypto.IMac)
-  name: BouncyCastleHmacAlgorithm(IMac)
-  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm__ctor_Org_BouncyCastle_Crypto_IMac_
-  commentId: M:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.#ctor(Org.BouncyCastle.Crypto.IMac)
-  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.BouncyCastleHmacAlgorithm(Org.BouncyCastle.Crypto.IMac)
-  nameWithType: BouncyCastleHmacAlgorithm.BouncyCastleHmacAlgorithm(IMac)
-- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.#ctor*
-  name: BouncyCastleHmacAlgorithm
-  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.#ctor
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.BouncyCastleHmacAlgorithm
-  nameWithType: BouncyCastleHmacAlgorithm.BouncyCastleHmacAlgorithm
-- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Dispose(System.Boolean)
-  name: Dispose(Boolean)
-  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_Dispose_System_Boolean_
-  commentId: M:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Dispose(System.Boolean)
-  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Dispose(System.Boolean)
-  nameWithType: BouncyCastleHmacAlgorithm.Dispose(Boolean)
-- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Dispose*
-  name: Dispose
-  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_Dispose_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Dispose
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Dispose
-  nameWithType: BouncyCastleHmacAlgorithm.Dispose
-- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(ReadOnlySpan{System.Byte})
-  name: HashCore(ReadOnlySpan<Byte>)
-  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_HashCore_ReadOnlySpan_System_Byte__
-  commentId: M:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(ReadOnlySpan{System.Byte})
-  name.vb: HashCore(ReadOnlySpan(Of Byte))
-  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(ReadOnlySpan<System.Byte>)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(ReadOnlySpan(Of System.Byte))
-  nameWithType: BouncyCastleHmacAlgorithm.HashCore(ReadOnlySpan<Byte>)
-  nameWithType.vb: BouncyCastleHmacAlgorithm.HashCore(ReadOnlySpan(Of Byte))
-- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(System.Byte[],System.Int32,System.Int32)
-  name: HashCore(Byte[], Int32, Int32)
-  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_HashCore_System_Byte___System_Int32_System_Int32_
-  commentId: M:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(System.Byte[],System.Int32,System.Int32)
-  name.vb: HashCore(Byte(), Int32, Int32)
-  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(System.Byte[], System.Int32, System.Int32)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore(System.Byte(), System.Int32, System.Int32)
-  nameWithType: BouncyCastleHmacAlgorithm.HashCore(Byte[], Int32, Int32)
-  nameWithType.vb: BouncyCastleHmacAlgorithm.HashCore(Byte(), Int32, Int32)
-- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore*
-  name: HashCore
-  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_HashCore_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashCore
-  nameWithType: BouncyCastleHmacAlgorithm.HashCore
-- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashFinal
-  name: HashFinal()
-  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_HashFinal
-  commentId: M:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashFinal
-  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashFinal()
-  nameWithType: BouncyCastleHmacAlgorithm.HashFinal()
-- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashFinal*
-  name: HashFinal
-  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_HashFinal_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashFinal
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.HashFinal
-  nameWithType: BouncyCastleHmacAlgorithm.HashFinal
-- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Initialize
-  name: Initialize()
-  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_Initialize
-  commentId: M:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Initialize
-  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Initialize()
-  nameWithType: BouncyCastleHmacAlgorithm.Initialize()
-- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Initialize*
-  name: Initialize
-  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_Initialize_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Initialize
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Initialize
-  nameWithType: BouncyCastleHmacAlgorithm.Initialize
-- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.TryHashFinal(Span{System.Byte},System.Int32@)
-  name: TryHashFinal(Span<Byte>, out Int32)
-  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_TryHashFinal_Span_System_Byte__System_Int32__
-  commentId: M:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.TryHashFinal(Span{System.Byte},System.Int32@)
-  name.vb: TryHashFinal(Span(Of Byte), ByRef Int32)
-  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.TryHashFinal(Span<System.Byte>, out System.Int32)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.TryHashFinal(Span(Of System.Byte), ByRef System.Int32)
-  nameWithType: BouncyCastleHmacAlgorithm.TryHashFinal(Span<Byte>, out Int32)
-  nameWithType.vb: BouncyCastleHmacAlgorithm.TryHashFinal(Span(Of Byte), ByRef Int32)
-- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.TryHashFinal*
-  name: TryHashFinal
-  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_TryHashFinal_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.TryHashFinal
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.TryHashFinal
-  nameWithType: BouncyCastleHmacAlgorithm.TryHashFinal
 - uid: wan24.Crypto.BC.BouncyCastleRandomGenerator
   name: BouncyCastleRandomGenerator
   href: api/wan24.Crypto.BC.BouncyCastleRandomGenerator.html
@@ -822,402 +686,18 @@ references:
   commentId: T:wan24.Crypto.BC.BouncyCastleRngWrapper
   fullName: wan24.Crypto.BC.BouncyCastleRngWrapper
   nameWithType: BouncyCastleRngWrapper
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.#ctor(Org.BouncyCastle.Crypto.Prng.IRandomGenerator@)
-  name: BouncyCastleRngWrapper(in IRandomGenerator)
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper__ctor_Org_BouncyCastle_Crypto_Prng_IRandomGenerator__
-  commentId: M:wan24.Crypto.BC.BouncyCastleRngWrapper.#ctor(Org.BouncyCastle.Crypto.Prng.IRandomGenerator@)
-  name.vb: BouncyCastleRngWrapper(ByRef IRandomGenerator)
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.BouncyCastleRngWrapper(in Org.BouncyCastle.Crypto.Prng.IRandomGenerator)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleRngWrapper.BouncyCastleRngWrapper(ByRef Org.BouncyCastle.Crypto.Prng.IRandomGenerator)
-  nameWithType: BouncyCastleRngWrapper.BouncyCastleRngWrapper(in IRandomGenerator)
-  nameWithType.vb: BouncyCastleRngWrapper.BouncyCastleRngWrapper(ByRef IRandomGenerator)
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.#ctor*
-  name: BouncyCastleRngWrapper
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper__ctor_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleRngWrapper.#ctor
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.BouncyCastleRngWrapper
-  nameWithType: BouncyCastleRngWrapper.BouncyCastleRngWrapper
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeed(ReadOnlySpan{System.Byte})
-  name: AddSeed(ReadOnlySpan<Byte>)
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeed_ReadOnlySpan_System_Byte__
-  commentId: M:wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeed(ReadOnlySpan{System.Byte})
-  name.vb: AddSeed(ReadOnlySpan(Of Byte))
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeed(ReadOnlySpan<System.Byte>)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeed(ReadOnlySpan(Of System.Byte))
-  nameWithType: BouncyCastleRngWrapper.AddSeed(ReadOnlySpan<Byte>)
-  nameWithType.vb: BouncyCastleRngWrapper.AddSeed(ReadOnlySpan(Of Byte))
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeed*
-  name: AddSeed
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeed_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeed
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeed
-  nameWithType: BouncyCastleRngWrapper.AddSeed
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedAsync(ReadOnlyMemory{System.Byte},CancellationToken)
-  name: AddSeedAsync(ReadOnlyMemory<Byte>, CancellationToken)
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedAsync_ReadOnlyMemory_System_Byte__CancellationToken_
-  commentId: M:wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedAsync(ReadOnlyMemory{System.Byte},CancellationToken)
-  name.vb: AddSeedAsync(ReadOnlyMemory(Of Byte), CancellationToken)
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedAsync(ReadOnlyMemory<System.Byte>, CancellationToken)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedAsync(ReadOnlyMemory(Of System.Byte), CancellationToken)
-  nameWithType: BouncyCastleRngWrapper.AddSeedAsync(ReadOnlyMemory<Byte>, CancellationToken)
-  nameWithType.vb: BouncyCastleRngWrapper.AddSeedAsync(ReadOnlyMemory(Of Byte), CancellationToken)
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedAsync*
-  name: AddSeedAsync
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedAsync_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedAsync
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedAsync
-  nameWithType: BouncyCastleRngWrapper.AddSeedAsync
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(ReadOnlySpan{System.Byte})
-  name: AddSeedMaterial(ReadOnlySpan<Byte>)
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedMaterial_ReadOnlySpan_System_Byte__
-  commentId: M:wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(ReadOnlySpan{System.Byte})
-  name.vb: AddSeedMaterial(ReadOnlySpan(Of Byte))
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(ReadOnlySpan<System.Byte>)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(ReadOnlySpan(Of System.Byte))
-  nameWithType: BouncyCastleRngWrapper.AddSeedMaterial(ReadOnlySpan<Byte>)
-  nameWithType.vb: BouncyCastleRngWrapper.AddSeedMaterial(ReadOnlySpan(Of Byte))
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(System.Byte[])
-  name: AddSeedMaterial(Byte[])
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedMaterial_System_Byte___
-  commentId: M:wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(System.Byte[])
-  name.vb: AddSeedMaterial(Byte())
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(System.Byte[])
-  fullName.vb: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(System.Byte())
-  nameWithType: BouncyCastleRngWrapper.AddSeedMaterial(Byte[])
-  nameWithType.vb: BouncyCastleRngWrapper.AddSeedMaterial(Byte())
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(System.Int64)
-  name: AddSeedMaterial(Int64)
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedMaterial_System_Int64_
-  commentId: M:wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(System.Int64)
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial(System.Int64)
-  nameWithType: BouncyCastleRngWrapper.AddSeedMaterial(Int64)
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial*
-  name: AddSeedMaterial
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_AddSeedMaterial_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.AddSeedMaterial
-  nameWithType: BouncyCastleRngWrapper.AddSeedMaterial
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytes(Span{System.Byte}@)
-  name: FillBytes(in Span<Byte>)
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_FillBytes_Span_System_Byte___
-  commentId: M:wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytes(Span{System.Byte}@)
-  name.vb: FillBytes(ByRef Span(Of Byte))
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytes(in Span<System.Byte>)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytes(ByRef Span(Of System.Byte))
-  nameWithType: BouncyCastleRngWrapper.FillBytes(in Span<Byte>)
-  nameWithType.vb: BouncyCastleRngWrapper.FillBytes(ByRef Span(Of Byte))
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytes*
-  name: FillBytes
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_FillBytes_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytes
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytes
-  nameWithType: BouncyCastleRngWrapper.FillBytes
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytesAsync(Memory{System.Byte},CancellationToken)
-  name: FillBytesAsync(Memory<Byte>, CancellationToken)
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_FillBytesAsync_Memory_System_Byte__CancellationToken_
-  commentId: M:wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytesAsync(Memory{System.Byte},CancellationToken)
-  name.vb: FillBytesAsync(Memory(Of Byte), CancellationToken)
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytesAsync(Memory<System.Byte>, CancellationToken)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytesAsync(Memory(Of System.Byte), CancellationToken)
-  nameWithType: BouncyCastleRngWrapper.FillBytesAsync(Memory<Byte>, CancellationToken)
-  nameWithType.vb: BouncyCastleRngWrapper.FillBytesAsync(Memory(Of Byte), CancellationToken)
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytesAsync*
-  name: FillBytesAsync
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_FillBytesAsync_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytesAsync
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.FillBytesAsync
-  nameWithType: BouncyCastleRngWrapper.FillBytesAsync
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytes(System.Int32@)
-  name: GetBytes(in Int32)
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_GetBytes_System_Int32__
-  commentId: M:wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytes(System.Int32@)
-  name.vb: GetBytes(ByRef Int32)
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytes(in System.Int32)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytes(ByRef System.Int32)
-  nameWithType: BouncyCastleRngWrapper.GetBytes(in Int32)
-  nameWithType.vb: BouncyCastleRngWrapper.GetBytes(ByRef Int32)
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytes*
-  name: GetBytes
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_GetBytes_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytes
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytes
-  nameWithType: BouncyCastleRngWrapper.GetBytes
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytesAsync(System.Int32,CancellationToken)
-  name: GetBytesAsync(Int32, CancellationToken)
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_GetBytesAsync_System_Int32_CancellationToken_
-  commentId: M:wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytesAsync(System.Int32,CancellationToken)
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytesAsync(System.Int32, CancellationToken)
-  nameWithType: BouncyCastleRngWrapper.GetBytesAsync(Int32, CancellationToken)
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytesAsync*
-  name: GetBytesAsync
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_GetBytesAsync_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytesAsync
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.GetBytesAsync
-  nameWithType: BouncyCastleRngWrapper.GetBytesAsync
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(Span{System.Byte})
-  name: NextBytes(Span<Byte>)
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_NextBytes_Span_System_Byte__
-  commentId: M:wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(Span{System.Byte})
-  name.vb: NextBytes(Span(Of Byte))
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(Span<System.Byte>)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(Span(Of System.Byte))
-  nameWithType: BouncyCastleRngWrapper.NextBytes(Span<Byte>)
-  nameWithType.vb: BouncyCastleRngWrapper.NextBytes(Span(Of Byte))
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(System.Byte[])
-  name: NextBytes(Byte[])
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_NextBytes_System_Byte___
-  commentId: M:wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(System.Byte[])
-  name.vb: NextBytes(Byte())
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(System.Byte[])
-  fullName.vb: wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(System.Byte())
-  nameWithType: BouncyCastleRngWrapper.NextBytes(Byte[])
-  nameWithType.vb: BouncyCastleRngWrapper.NextBytes(Byte())
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(System.Byte[],System.Int32,System.Int32)
-  name: NextBytes(Byte[], Int32, Int32)
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_NextBytes_System_Byte___System_Int32_System_Int32_
-  commentId: M:wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(System.Byte[],System.Int32,System.Int32)
-  name.vb: NextBytes(Byte(), Int32, Int32)
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(System.Byte[], System.Int32, System.Int32)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes(System.Byte(), System.Int32, System.Int32)
-  nameWithType: BouncyCastleRngWrapper.NextBytes(Byte[], Int32, Int32)
-  nameWithType.vb: BouncyCastleRngWrapper.NextBytes(Byte(), Int32, Int32)
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes*
-  name: NextBytes
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_NextBytes_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.NextBytes
-  nameWithType: BouncyCastleRngWrapper.NextBytes
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.RNG
-  name: RNG
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_RNG
-  commentId: P:wan24.Crypto.BC.BouncyCastleRngWrapper.RNG
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.RNG
-  nameWithType: BouncyCastleRngWrapper.RNG
-- uid: wan24.Crypto.BC.BouncyCastleRngWrapper.RNG*
-  name: RNG
-  href: api/wan24.Crypto.BC.BouncyCastleRngWrapper.html#wan24_Crypto_BC_BouncyCastleRngWrapper_RNG_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastleRngWrapper.RNG
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastleRngWrapper.RNG
-  nameWithType: BouncyCastleRngWrapper.RNG
 - uid: wan24.Crypto.BC.ChaCha20Rng
   name: ChaCha20Rng
   href: api/wan24.Crypto.BC.ChaCha20Rng.html
   commentId: T:wan24.Crypto.BC.ChaCha20Rng
   fullName: wan24.Crypto.BC.ChaCha20Rng
   nameWithType: ChaCha20Rng
-- uid: wan24.Crypto.BC.ChaCha20Rng.#ctor(wan24.Crypto.ISeedableRng@,System.Nullable{System.Int32}@,System.Nullable{System.Int32}@)
-  name: ChaCha20Rng(in ISeedableRng, in Nullable<Int32>, in Nullable<Int32>)
-  href: api/wan24.Crypto.BC.ChaCha20Rng.html#wan24_Crypto_BC_ChaCha20Rng__ctor_wan24_Crypto_ISeedableRng__System_Nullable_System_Int32___System_Nullable_System_Int32___
-  commentId: M:wan24.Crypto.BC.ChaCha20Rng.#ctor(wan24.Crypto.ISeedableRng@,System.Nullable{System.Int32}@,System.Nullable{System.Int32}@)
-  name.vb: ChaCha20Rng(ByRef ISeedableRng, ByRef Nullable(Of Int32), ByRef Nullable(Of Int32))
-  fullName: wan24.Crypto.BC.ChaCha20Rng.ChaCha20Rng(in wan24.Crypto.ISeedableRng, in System.Nullable<System.Int32>, in System.Nullable<System.Int32>)
-  fullName.vb: wan24.Crypto.BC.ChaCha20Rng.ChaCha20Rng(ByRef wan24.Crypto.ISeedableRng, ByRef System.Nullable(Of System.Int32), ByRef System.Nullable(Of System.Int32))
-  nameWithType: ChaCha20Rng.ChaCha20Rng(in ISeedableRng, in Nullable<Int32>, in Nullable<Int32>)
-  nameWithType.vb: ChaCha20Rng.ChaCha20Rng(ByRef ISeedableRng, ByRef Nullable(Of Int32), ByRef Nullable(Of Int32))
-- uid: wan24.Crypto.BC.ChaCha20Rng.#ctor*
-  name: ChaCha20Rng
-  href: api/wan24.Crypto.BC.ChaCha20Rng.html#wan24_Crypto_BC_ChaCha20Rng__ctor_
-  commentId: Overload:wan24.Crypto.BC.ChaCha20Rng.#ctor
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.ChaCha20Rng.ChaCha20Rng
-  nameWithType: ChaCha20Rng.ChaCha20Rng
 - uid: wan24.Crypto.BC.DisposableRngWrapper
   name: DisposableRngWrapper
   href: api/wan24.Crypto.BC.DisposableRngWrapper.html
   commentId: T:wan24.Crypto.BC.DisposableRngWrapper
   fullName: wan24.Crypto.BC.DisposableRngWrapper
   nameWithType: DisposableRngWrapper
-- uid: wan24.Crypto.BC.DisposableRngWrapper.#ctor(Org.BouncyCastle.Crypto.Prng.IRandomGenerator)
-  name: DisposableRngWrapper(IRandomGenerator)
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper__ctor_Org_BouncyCastle_Crypto_Prng_IRandomGenerator_
-  commentId: M:wan24.Crypto.BC.DisposableRngWrapper.#ctor(Org.BouncyCastle.Crypto.Prng.IRandomGenerator)
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.DisposableRngWrapper(Org.BouncyCastle.Crypto.Prng.IRandomGenerator)
-  nameWithType: DisposableRngWrapper.DisposableRngWrapper(IRandomGenerator)
-- uid: wan24.Crypto.BC.DisposableRngWrapper.#ctor*
-  name: DisposableRngWrapper
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper__ctor_
-  commentId: Overload:wan24.Crypto.BC.DisposableRngWrapper.#ctor
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.DisposableRngWrapper
-  nameWithType: DisposableRngWrapper.DisposableRngWrapper
-- uid: wan24.Crypto.BC.DisposableRngWrapper.AddSeed(ReadOnlySpan{System.Byte})
-  name: AddSeed(ReadOnlySpan<Byte>)
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_AddSeed_ReadOnlySpan_System_Byte__
-  commentId: M:wan24.Crypto.BC.DisposableRngWrapper.AddSeed(ReadOnlySpan{System.Byte})
-  name.vb: AddSeed(ReadOnlySpan(Of Byte))
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.AddSeed(ReadOnlySpan<System.Byte>)
-  fullName.vb: wan24.Crypto.BC.DisposableRngWrapper.AddSeed(ReadOnlySpan(Of System.Byte))
-  nameWithType: DisposableRngWrapper.AddSeed(ReadOnlySpan<Byte>)
-  nameWithType.vb: DisposableRngWrapper.AddSeed(ReadOnlySpan(Of Byte))
-- uid: wan24.Crypto.BC.DisposableRngWrapper.AddSeed*
-  name: AddSeed
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_AddSeed_
-  commentId: Overload:wan24.Crypto.BC.DisposableRngWrapper.AddSeed
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.AddSeed
-  nameWithType: DisposableRngWrapper.AddSeed
-- uid: wan24.Crypto.BC.DisposableRngWrapper.AddSeedAsync(ReadOnlyMemory{System.Byte},CancellationToken)
-  name: AddSeedAsync(ReadOnlyMemory<Byte>, CancellationToken)
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_AddSeedAsync_ReadOnlyMemory_System_Byte__CancellationToken_
-  commentId: M:wan24.Crypto.BC.DisposableRngWrapper.AddSeedAsync(ReadOnlyMemory{System.Byte},CancellationToken)
-  name.vb: AddSeedAsync(ReadOnlyMemory(Of Byte), CancellationToken)
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.AddSeedAsync(ReadOnlyMemory<System.Byte>, CancellationToken)
-  fullName.vb: wan24.Crypto.BC.DisposableRngWrapper.AddSeedAsync(ReadOnlyMemory(Of System.Byte), CancellationToken)
-  nameWithType: DisposableRngWrapper.AddSeedAsync(ReadOnlyMemory<Byte>, CancellationToken)
-  nameWithType.vb: DisposableRngWrapper.AddSeedAsync(ReadOnlyMemory(Of Byte), CancellationToken)
-- uid: wan24.Crypto.BC.DisposableRngWrapper.AddSeedAsync*
-  name: AddSeedAsync
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_AddSeedAsync_
-  commentId: Overload:wan24.Crypto.BC.DisposableRngWrapper.AddSeedAsync
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.AddSeedAsync
-  nameWithType: DisposableRngWrapper.AddSeedAsync
-- uid: wan24.Crypto.BC.DisposableRngWrapper.AddSeedMaterial(ReadOnlySpan{System.Byte})
-  name: AddSeedMaterial(ReadOnlySpan<Byte>)
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_AddSeedMaterial_ReadOnlySpan_System_Byte__
-  commentId: M:wan24.Crypto.BC.DisposableRngWrapper.AddSeedMaterial(ReadOnlySpan{System.Byte})
-  name.vb: AddSeedMaterial(ReadOnlySpan(Of Byte))
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.AddSeedMaterial(ReadOnlySpan<System.Byte>)
-  fullName.vb: wan24.Crypto.BC.DisposableRngWrapper.AddSeedMaterial(ReadOnlySpan(Of System.Byte))
-  nameWithType: DisposableRngWrapper.AddSeedMaterial(ReadOnlySpan<Byte>)
-  nameWithType.vb: DisposableRngWrapper.AddSeedMaterial(ReadOnlySpan(Of Byte))
-- uid: wan24.Crypto.BC.DisposableRngWrapper.AddSeedMaterial(System.Byte[])
-  name: AddSeedMaterial(Byte[])
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_AddSeedMaterial_System_Byte___
-  commentId: M:wan24.Crypto.BC.DisposableRngWrapper.AddSeedMaterial(System.Byte[])
-  name.vb: AddSeedMaterial(Byte())
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.AddSeedMaterial(System.Byte[])
-  fullName.vb: wan24.Crypto.BC.DisposableRngWrapper.AddSeedMaterial(System.Byte())
-  nameWithType: DisposableRngWrapper.AddSeedMaterial(Byte[])
-  nameWithType.vb: DisposableRngWrapper.AddSeedMaterial(Byte())
-- uid: wan24.Crypto.BC.DisposableRngWrapper.AddSeedMaterial(System.Int64)
-  name: AddSeedMaterial(Int64)
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_AddSeedMaterial_System_Int64_
-  commentId: M:wan24.Crypto.BC.DisposableRngWrapper.AddSeedMaterial(System.Int64)
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.AddSeedMaterial(System.Int64)
-  nameWithType: DisposableRngWrapper.AddSeedMaterial(Int64)
-- uid: wan24.Crypto.BC.DisposableRngWrapper.AddSeedMaterial*
-  name: AddSeedMaterial
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_AddSeedMaterial_
-  commentId: Overload:wan24.Crypto.BC.DisposableRngWrapper.AddSeedMaterial
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.AddSeedMaterial
-  nameWithType: DisposableRngWrapper.AddSeedMaterial
-- uid: wan24.Crypto.BC.DisposableRngWrapper.Dispose(System.Boolean)
-  name: Dispose(Boolean)
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_Dispose_System_Boolean_
-  commentId: M:wan24.Crypto.BC.DisposableRngWrapper.Dispose(System.Boolean)
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.Dispose(System.Boolean)
-  nameWithType: DisposableRngWrapper.Dispose(Boolean)
-- uid: wan24.Crypto.BC.DisposableRngWrapper.Dispose*
-  name: Dispose
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_Dispose_
-  commentId: Overload:wan24.Crypto.BC.DisposableRngWrapper.Dispose
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.Dispose
-  nameWithType: DisposableRngWrapper.Dispose
-- uid: wan24.Crypto.BC.DisposableRngWrapper.DisposeCore
-  name: DisposeCore()
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_DisposeCore
-  commentId: M:wan24.Crypto.BC.DisposableRngWrapper.DisposeCore
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.DisposeCore()
-  nameWithType: DisposableRngWrapper.DisposeCore()
-- uid: wan24.Crypto.BC.DisposableRngWrapper.DisposeCore*
-  name: DisposeCore
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_DisposeCore_
-  commentId: Overload:wan24.Crypto.BC.DisposableRngWrapper.DisposeCore
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.DisposeCore
-  nameWithType: DisposableRngWrapper.DisposeCore
-- uid: wan24.Crypto.BC.DisposableRngWrapper.FillBytes(Span{System.Byte}@)
-  name: FillBytes(in Span<Byte>)
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_FillBytes_Span_System_Byte___
-  commentId: M:wan24.Crypto.BC.DisposableRngWrapper.FillBytes(Span{System.Byte}@)
-  name.vb: FillBytes(ByRef Span(Of Byte))
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.FillBytes(in Span<System.Byte>)
-  fullName.vb: wan24.Crypto.BC.DisposableRngWrapper.FillBytes(ByRef Span(Of System.Byte))
-  nameWithType: DisposableRngWrapper.FillBytes(in Span<Byte>)
-  nameWithType.vb: DisposableRngWrapper.FillBytes(ByRef Span(Of Byte))
-- uid: wan24.Crypto.BC.DisposableRngWrapper.FillBytes*
-  name: FillBytes
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_FillBytes_
-  commentId: Overload:wan24.Crypto.BC.DisposableRngWrapper.FillBytes
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.FillBytes
-  nameWithType: DisposableRngWrapper.FillBytes
-- uid: wan24.Crypto.BC.DisposableRngWrapper.FillBytesAsync(Memory{System.Byte},CancellationToken)
-  name: FillBytesAsync(Memory<Byte>, CancellationToken)
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_FillBytesAsync_Memory_System_Byte__CancellationToken_
-  commentId: M:wan24.Crypto.BC.DisposableRngWrapper.FillBytesAsync(Memory{System.Byte},CancellationToken)
-  name.vb: FillBytesAsync(Memory(Of Byte), CancellationToken)
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.FillBytesAsync(Memory<System.Byte>, CancellationToken)
-  fullName.vb: wan24.Crypto.BC.DisposableRngWrapper.FillBytesAsync(Memory(Of System.Byte), CancellationToken)
-  nameWithType: DisposableRngWrapper.FillBytesAsync(Memory<Byte>, CancellationToken)
-  nameWithType.vb: DisposableRngWrapper.FillBytesAsync(Memory(Of Byte), CancellationToken)
-- uid: wan24.Crypto.BC.DisposableRngWrapper.FillBytesAsync*
-  name: FillBytesAsync
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_FillBytesAsync_
-  commentId: Overload:wan24.Crypto.BC.DisposableRngWrapper.FillBytesAsync
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.FillBytesAsync
-  nameWithType: DisposableRngWrapper.FillBytesAsync
-- uid: wan24.Crypto.BC.DisposableRngWrapper.NextBytes(Span{System.Byte})
-  name: NextBytes(Span<Byte>)
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_NextBytes_Span_System_Byte__
-  commentId: M:wan24.Crypto.BC.DisposableRngWrapper.NextBytes(Span{System.Byte})
-  name.vb: NextBytes(Span(Of Byte))
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.NextBytes(Span<System.Byte>)
-  fullName.vb: wan24.Crypto.BC.DisposableRngWrapper.NextBytes(Span(Of System.Byte))
-  nameWithType: DisposableRngWrapper.NextBytes(Span<Byte>)
-  nameWithType.vb: DisposableRngWrapper.NextBytes(Span(Of Byte))
-- uid: wan24.Crypto.BC.DisposableRngWrapper.NextBytes(System.Byte[])
-  name: NextBytes(Byte[])
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_NextBytes_System_Byte___
-  commentId: M:wan24.Crypto.BC.DisposableRngWrapper.NextBytes(System.Byte[])
-  name.vb: NextBytes(Byte())
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.NextBytes(System.Byte[])
-  fullName.vb: wan24.Crypto.BC.DisposableRngWrapper.NextBytes(System.Byte())
-  nameWithType: DisposableRngWrapper.NextBytes(Byte[])
-  nameWithType.vb: DisposableRngWrapper.NextBytes(Byte())
-- uid: wan24.Crypto.BC.DisposableRngWrapper.NextBytes(System.Byte[],System.Int32,System.Int32)
-  name: NextBytes(Byte[], Int32, Int32)
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_NextBytes_System_Byte___System_Int32_System_Int32_
-  commentId: M:wan24.Crypto.BC.DisposableRngWrapper.NextBytes(System.Byte[],System.Int32,System.Int32)
-  name.vb: NextBytes(Byte(), Int32, Int32)
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.NextBytes(System.Byte[], System.Int32, System.Int32)
-  fullName.vb: wan24.Crypto.BC.DisposableRngWrapper.NextBytes(System.Byte(), System.Int32, System.Int32)
-  nameWithType: DisposableRngWrapper.NextBytes(Byte[], Int32, Int32)
-  nameWithType.vb: DisposableRngWrapper.NextBytes(Byte(), Int32, Int32)
-- uid: wan24.Crypto.BC.DisposableRngWrapper.NextBytes*
-  name: NextBytes
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_NextBytes_
-  commentId: Overload:wan24.Crypto.BC.DisposableRngWrapper.NextBytes
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.NextBytes
-  nameWithType: DisposableRngWrapper.NextBytes
-- uid: wan24.Crypto.BC.DisposableRngWrapper.RNG
-  name: RNG
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_RNG
-  commentId: P:wan24.Crypto.BC.DisposableRngWrapper.RNG
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.RNG
-  nameWithType: DisposableRngWrapper.RNG
-- uid: wan24.Crypto.BC.DisposableRngWrapper.RNG*
-  name: RNG
-  href: api/wan24.Crypto.BC.DisposableRngWrapper.html#wan24_Crypto_BC_DisposableRngWrapper_RNG_
-  commentId: Overload:wan24.Crypto.BC.DisposableRngWrapper.RNG
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.DisposableRngWrapper.RNG
-  nameWithType: DisposableRngWrapper.RNG
 - uid: wan24.Crypto.BC.Extensions
   name: Extensions
   href: api/wan24.Crypto.BC.Extensions.html
@@ -1865,19 +1345,3 @@ references:
   commentId: T:wan24.Crypto.BC.XSalsa20Rng
   fullName: wan24.Crypto.BC.XSalsa20Rng
   nameWithType: XSalsa20Rng
-- uid: wan24.Crypto.BC.XSalsa20Rng.#ctor(wan24.Crypto.ISeedableRng@,System.Nullable{System.Int32}@,System.Nullable{System.Int32}@)
-  name: XSalsa20Rng(in ISeedableRng, in Nullable<Int32>, in Nullable<Int32>)
-  href: api/wan24.Crypto.BC.XSalsa20Rng.html#wan24_Crypto_BC_XSalsa20Rng__ctor_wan24_Crypto_ISeedableRng__System_Nullable_System_Int32___System_Nullable_System_Int32___
-  commentId: M:wan24.Crypto.BC.XSalsa20Rng.#ctor(wan24.Crypto.ISeedableRng@,System.Nullable{System.Int32}@,System.Nullable{System.Int32}@)
-  name.vb: XSalsa20Rng(ByRef ISeedableRng, ByRef Nullable(Of Int32), ByRef Nullable(Of Int32))
-  fullName: wan24.Crypto.BC.XSalsa20Rng.XSalsa20Rng(in wan24.Crypto.ISeedableRng, in System.Nullable<System.Int32>, in System.Nullable<System.Int32>)
-  fullName.vb: wan24.Crypto.BC.XSalsa20Rng.XSalsa20Rng(ByRef wan24.Crypto.ISeedableRng, ByRef System.Nullable(Of System.Int32), ByRef System.Nullable(Of System.Int32))
-  nameWithType: XSalsa20Rng.XSalsa20Rng(in ISeedableRng, in Nullable<Int32>, in Nullable<Int32>)
-  nameWithType.vb: XSalsa20Rng.XSalsa20Rng(ByRef ISeedableRng, ByRef Nullable(Of Int32), ByRef Nullable(Of Int32))
-- uid: wan24.Crypto.BC.XSalsa20Rng.#ctor*
-  name: XSalsa20Rng
-  href: api/wan24.Crypto.BC.XSalsa20Rng.html#wan24_Crypto_BC_XSalsa20Rng__ctor_
-  commentId: Overload:wan24.Crypto.BC.XSalsa20Rng.#ctor
-  isSpec: "True"
-  fullName: wan24.Crypto.BC.XSalsa20Rng.XSalsa20Rng
-  nameWithType: XSalsa20Rng.XSalsa20Rng
