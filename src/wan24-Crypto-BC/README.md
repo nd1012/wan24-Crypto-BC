@@ -33,6 +33,11 @@ NTRUSign is currently not implemented, 'cause it'd require the using code to
 be GPL licensed. This algorithm may be included in a separate package which is 
 licensed using the GPL license (to avoid misunderstandings) in the future.
 
+**NOTE**: SPHINCS+ and NTRUEncrypt key serialization uses a custom serializer 
+at present, which will change in the future, as soon as Bouncy Castle 
+implemented a (working) serializer (again). This change will require a manual 
+key conversion from the current serialization format.
+
 ## How to get it
 
 This library is available as 
@@ -117,26 +122,6 @@ cryptography, in case you didn't define other post quantum algorithms already:
 - NTRUEncrypt (key exchange)
 - CRYSTALS-Dilithium (signature)
 
-For using other algorithms instead:
-
-```cs
-// CRYSTALS-Kyber
-HybridAlgorithmHelper.SignatureAlgorithm = 
-    AsymmetricHelper.GetAlgorithm(AsymmetricKyberAlgorithm.ALGORITHM_NAME);
-
-// FALCON
-HybridAlgorithmHelper.SignatureAlgorithm = 
-    AsymmetricHelper.GetAlgorithm(AsymmetricFalconAlgorithm.ALGORITHM_NAME);
-
-// SPHINCS+
-HybridAlgorithmHelper.SignatureAlgorithm = 
-    AsymmetricHelper.GetAlgorithm(AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME);
-
-// FrodoKEM
-HybridAlgorithmHelper.KeyExchangeAlgorithm = 
-    AsymmetricHelper.GetAlgorithm(AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME);
-```
-
 The counter algorithm will come in effect, if you use asymmetric keys for 
 encryption:
 
@@ -165,8 +150,9 @@ SignatureContainer signature = dataToSign.Sign(yourNormalPrivateKey, options: op
 
 For CRYSTALS-Kyber and CRYSTALS-Dilithium the non-AES parameters are being 
 used, since the AES parameter sets have been deprecated. When using SPHINCS+, 
-the Haraka F hashing parameters will be used. For FrodoKEM the AES parameters 
-will be used.
+the Haraka simple hashing parameters will be used (since the Haraka robust 
+hashing parameters have been reprecated). For FrodoKEM the AES parameters will 
+be used.
 
 ## Random data provider
 
