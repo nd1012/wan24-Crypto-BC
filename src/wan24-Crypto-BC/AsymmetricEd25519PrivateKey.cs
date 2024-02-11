@@ -35,6 +35,21 @@ namespace wan24.Crypto.BC
         /// <param name="keys">Keys</param>
         public AsymmetricEd25519PrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricEd25519Algorithm.ALGORITHM_NAME, keys) { }
 
+        /// <summary>
+        /// Create a XEd25519 private key instance
+        /// </summary>
+        /// <returns>XEd25519 private key (don't forget to dispose!)</returns>
+        public AsymmetricXEd25519PrivateKey CreateXEd25519PrivateKey()
+        {
+            EnsureUndisposed();
+            if (Keys is null) throw new InvalidOperationException();
+            using SecureByteArrayRefStruct privateKey = new(((Ed25519PrivateKeyParameters)Keys.Private).GetEncoded());
+            return new(new AsymmetricCipherKeyPair(
+                new Ed25519PublicKeyParameters(((Ed25519PublicKeyParameters)Keys.Public).GetEncoded()),
+                new Ed25519PrivateKeyParameters(privateKey.Array)
+                ));
+        }
+
         /// <inheritdoc/>
         protected override Ed25519PublicKeyParameters GetPublicKey(Ed25519PrivateKeyParameters privateKey) => privateKey.GeneratePublicKey();
 

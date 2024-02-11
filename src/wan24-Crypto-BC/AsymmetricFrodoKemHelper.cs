@@ -14,9 +14,9 @@ namespace wan24.Crypto.BC
         /// <returns>Key size in bits</returns>
         public static int GetKeySize(this FrodoParameters param)
         {
-            if (param == FrodoParameters.frodokem19888r3) return 128;
-            if (param == FrodoParameters.frodokem31296r3) return 192;
-            if (param == FrodoParameters.frodokem43088r3) return 256;
+            if (param == FrodoParameters.frodokem640aes) return 128;
+            if (param == FrodoParameters.frodokem976aes) return 192;
+            if (param == FrodoParameters.frodokem1344aes) return 256;
             throw new ArgumentException("Invalid FrodoKEM parameters", nameof(param));
         }
 
@@ -27,9 +27,9 @@ namespace wan24.Crypto.BC
         /// <returns>Parameters</returns>
         public static FrodoParameters GetParameters(int keySize) => keySize switch
         {
-            128 => FrodoParameters.frodokem19888r3,
-            192 => FrodoParameters.frodokem31296r3,
-            256 => FrodoParameters.frodokem43088r3,
+            128 => FrodoParameters.frodokem640aes,
+            192 => FrodoParameters.frodokem976aes,
+            256 => FrodoParameters.frodokem1344aes,
             _ => throw new ArgumentException("Invalid key size", nameof(keySize))
         };
     }

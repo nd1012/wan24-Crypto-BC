@@ -18,6 +18,8 @@ the `wan24-Crypto` library with these algorithms:
 | Ed448 | 9 | ED448 |
 | X25519 | 10 | X25519 |
 | X448 | 11 | X448 |
+| XEd25519 | 12 | XED25519 |
+| XEd448 | 13 | XED448 |
 | **Symmetric** |  |  |
 | ChaCha20 | 1 | CHACHA20 |
 | XSalsa20 | 2 | XSALSA20 |
@@ -27,13 +29,14 @@ the `wan24-Crypto` library with these algorithms:
 | Twofish 256 CBC (ISO10126 padding) | 7 | TWOFISH256CBC |
 | Twofish 256 GCM AEAD (128 bit MAC) | 8 | TWOFISH256GCM |
 
-**NOTE**: FrodoKEM and NTRUEncrypt are currently disabled, 'cause there seems 
-to be a bug (missing code) in the Bouncy Castle library for 
-exporting/importing private keys (at last).
-
 NTRUSign is currently not implemented, 'cause it'd require the using code to 
 be GPL licensed. This algorithm may be included in a separate package which is 
 licensed using the GPL license (to avoid misunderstandings) in the future.
+
+**NOTE**: SPHINCS+ and NTRUEncrypt key serialization uses a custom serializer 
+at present, which will change in the future, as soon as Bouncy Castle 
+implemented a (working) serializer (again). This change will require a manual 
+key conversion from the current serialization format.
 
 ## How to get it
 
@@ -119,26 +122,6 @@ cryptography, in case you didn't define other post quantum algorithms already:
 - NTRUEncrypt (key exchange)
 - CRYSTALS-Dilithium (signature)
 
-For using other algorithms instead:
-
-```cs
-// CRYSTALS-Kyber
-HybridAlgorithmHelper.SignatureAlgorithm = 
-    AsymmetricHelper.GetAlgorithm(AsymmetricKyberAlgorithm.ALGORITHM_NAME);
-
-// FALCON
-HybridAlgorithmHelper.SignatureAlgorithm = 
-    AsymmetricHelper.GetAlgorithm(AsymmetricFalconAlgorithm.ALGORITHM_NAME);
-
-// SPHINCS+
-HybridAlgorithmHelper.SignatureAlgorithm = 
-    AsymmetricHelper.GetAlgorithm(AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME);
-
-// FrodoKEM
-HybridAlgorithmHelper.KeyExchangeAlgorithm = 
-    AsymmetricHelper.GetAlgorithm(AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME);
-```
-
 The counter algorithm will come in effect, if you use asymmetric keys for 
 encryption:
 
@@ -165,9 +148,11 @@ SignatureContainer signature = dataToSign.Sign(yourNormalPrivateKey, options: op
 
 ## Algorithm parameters used
 
-For CRYSTALS-Kyber and CRYSTALS-Dilithium the AES parameters are being used. 
-When using SPHINCS+, the Haraka F hashing parameters will be used. For 
-FrodoKEM the AES parameters will be used.
+For CRYSTALS-Kyber and CRYSTALS-Dilithium the non-AES parameters are being 
+used, since the AES parameter sets have been deprecated. When using SPHINCS+, 
+the Haraka simple hashing parameters will be used (since the Haraka robust 
+hashing parameters have been reprecated). For FrodoKEM the AES parameters will 
+be used.
 
 ## Random data provider
 
@@ -245,3 +230,17 @@ generation.
 The Ed448 signature is context based, but currently only an empty byte array 
 is being used as context data. Instead of a context you should use the purpose 
 free text, which can be given to the signature methods of `wan24-Crypto`.
+
+XEd25519 and XEd448 convert the private Ed25519/448 key to X25519/448 for key 
+exchange. The private key stores only the Ed25519/448 information, while the 
+public key stores both, the Ed25519/448 and the X25519/448 informations (and 
+therefor require a custom serialization format). You can derive Ed25519/448 
+private keys from a XEd25519/448 private key, and XEd25519/448 private keys 
+from a Ed25519/448 private key.
+
+Using the `ToX25519/448PrivateKey` extension methods for the 
+`Ed25519/448PrivateKeyParameters` a conversion to X25519/448 is possible now 
+(if you want to use the Bouncy Castle API directly).
+
+**WARNING**: Different Ed25519/448 keys may convert to equal X25519/448 keys, 
+so be aware of possible collisions!

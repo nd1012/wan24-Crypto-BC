@@ -1,4 +1,12 @@
-﻿using System.Security.Cryptography;
+﻿using Org.BouncyCastle.Crypto;
+using Org.BouncyCastle.Pqc.Crypto.Crystals.Dilithium;
+using Org.BouncyCastle.Pqc.Crypto.Crystals.Kyber;
+using Org.BouncyCastle.Pqc.Crypto.Falcon;
+using Org.BouncyCastle.Pqc.Crypto.Frodo;
+using Org.BouncyCastle.Pqc.Crypto.Ntru;
+using Org.BouncyCastle.Pqc.Crypto.SphincsPlus;
+using Org.BouncyCastle.Pqc.Crypto.Utilities;
+using System.Security.Cryptography;
 using wan24.Core;
 using wan24.Crypto;
 using wan24.Crypto.BC;

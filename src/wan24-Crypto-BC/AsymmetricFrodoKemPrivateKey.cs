@@ -1,4 +1,6 @@
-﻿using Org.BouncyCastle.Crypto;
+﻿using Org.BouncyCastle.Asn1.Pkcs;
+using Org.BouncyCastle.Asn1.X509;
+using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Pqc.Crypto.Frodo;
 using Org.BouncyCastle.Pqc.Crypto.Utilities;
 using wan24.Core;
@@ -40,6 +42,7 @@ namespace wan24.Crypto.BC
         /// <inheritdoc/>
         protected override byte[] SerializeKeyData()
         {
+            // Custom serialization required, because there seems to be no way to derive the public key from the private key
             try
             {
                 EnsureUndisposed();
@@ -48,10 +51,11 @@ namespace wan24.Crypto.BC
                 {
                     CleanReturned = true
                 };
-                using SecureByteArray privateKey = new((Keys.Private as FrodoPrivateKeyParameters)!.GetPrivateKey());
-                using SecureByteArray publicKey = new((Keys.Public as FrodoPublicKeyParameters)!.GetPublicKey());
+                PrivateKeyInfo privateKeyInfo = PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo(Keys.Private);
+                using SecureByteArray privateKey = new(privateKeyInfo.GetDerEncoded());
+                SubjectPublicKeyInfo publicKeyInfo = PqcSubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(Keys.Public);
+                using SecureByteArray publicKey = new(publicKeyInfo.GetDerEncoded());
                 ms.WriteSerializerVersion()
-                    .WriteNumber(Bits)
                     .WriteBytes(privateKey.Array)
                     .WriteBytes(publicKey.Array);
                 return ms.ToArray();
@@ -78,9 +82,10 @@ namespace wan24.Crypto.BC
                 {
                     using MemoryStream ms = new(KeyData.Array);
                     int ssv = ms.ReadSerializerVersion();
-                    FrodoParameters param = AsymmetricFrodoKemHelper.GetParameters(ms.ReadNumber<int>(ssv));
-                    privateKey = new(param, ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
-                    publicKey = new(param, ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    using SecureByteArrayRefStruct privateKeyInfo = new(ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    privateKey = PqcPrivateKeyFactory.CreateKey(privateKeyInfo.Array) as FrodoPrivateKeyParameters ?? throw new InvalidDataException("Invalid private FrodoKEM key");
+                    using SecureByteArrayRefStruct publicKeyInfo = new(ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    publicKey = PqcPublicKeyFactory.CreateKey(publicKeyInfo.Array) as FrodoPublicKeyParameters ?? throw new InvalidDataException("Invalid public FrodoKEM key");
                     Keys = new(publicKey, privateKey);
                 }
                 catch
