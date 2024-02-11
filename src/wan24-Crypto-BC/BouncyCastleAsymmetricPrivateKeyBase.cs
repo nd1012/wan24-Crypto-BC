@@ -88,7 +88,7 @@ namespace wan24.Crypto.BC
         }
 
         /// <inheritdoc/>
-        public sealed override tPublic PublicKey
+        public override tPublic PublicKey
         {
             get
             {

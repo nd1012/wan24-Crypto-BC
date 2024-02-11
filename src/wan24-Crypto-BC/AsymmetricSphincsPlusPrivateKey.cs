@@ -1,8 +1,8 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Pqc.Crypto.SphincsPlus;
-using Org.BouncyCastle.Pqc.Crypto.Utilities;
 using System.Reflection;
 using wan24.Core;
+using wan24.StreamSerializerExtensions;
 
 namespace wan24.Crypto.BC
 {
@@ -38,6 +38,69 @@ namespace wan24.Crypto.BC
 
         /// <inheritdoc/>
         protected override SphincsPlusPublicKeyParameters GetPublicKey(SphincsPlusPrivateKeyParameters privateKey) => new(privateKey.Parameters, privateKey.GetPublicKey());
+
+        /// <inheritdoc/>
+        protected override byte[] SerializeKeyData()
+        {
+            try
+            {
+                EnsureUndisposed();
+                if (Keys == null) throw new InvalidOperationException();
+                using MemoryPoolStream ms = new()
+                {
+                    CleanReturned = true
+                };
+                using SecureByteArray privateKey = new((Keys.Private as SphincsPlusPrivateKeyParameters)!.GetEncoded());
+                using SecureByteArray publicKey = new((Keys.Public as SphincsPlusPublicKeyParameters)!.GetEncoded());
+                ms.WriteSerializerVersion()
+                    .WriteNumber(Bits)
+                    .WriteBytes(privateKey.Array)
+                    .WriteBytes(publicKey.Array);
+                return ms.ToArray();
+            }
+            catch (CryptographicException)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
+        /// <inheritdoc/>
+        protected override void DeserializeKeyData()
+        {
+            try
+            {
+                EnsureUndisposed();
+                SphincsPlusPrivateKeyParameters? privateKey = null;
+                SphincsPlusPublicKeyParameters? publicKey = null;
+                try
+                {
+                    using MemoryStream ms = new(KeyData.Array);
+                    int ssv = ms.ReadSerializerVersion();
+                    SphincsPlusParameters param = AsymmetricSphincsPlusHelper.GetParameters(ms.ReadNumber<int>(ssv));
+                    privateKey = new(param, ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    publicKey = new(param, ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    Keys = new(publicKey, privateKey);
+                }
+                catch
+                {
+                    privateKey?.ClearPrivateByteArrayFields();
+                    publicKey?.ClearPrivateByteArrayFields();
+                    throw;
+                }
+            }
+            catch (CryptographicException)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
 
         /// <inheritdoc/>
         protected override void Dispose(bool disposing)

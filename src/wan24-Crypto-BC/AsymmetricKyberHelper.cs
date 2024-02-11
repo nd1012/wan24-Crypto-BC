@@ -27,8 +27,8 @@ namespace wan24.Crypto.BC
         /// <returns>Parameters</returns>
         public static KyberParameters GetParameters(int keySize) => keySize switch
         {
-            512 => KyberParameters.kyber512_aes,
-            768 => KyberParameters.kyber768_aes,
+            512 => KyberParameters.kyber512,
+            768 => KyberParameters.kyber768,
             1024 => KyberParameters.kyber1024,
             _ => throw new ArgumentException("Invalid key size", nameof(keySize))
         };

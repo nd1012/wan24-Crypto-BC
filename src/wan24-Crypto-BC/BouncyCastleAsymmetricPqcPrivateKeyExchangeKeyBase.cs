@@ -64,6 +64,9 @@ namespace wan24.Crypto.BC
         }
 
         /// <inheritdoc/>
+        (byte[] Key, byte[] KeyExchangeData) IKeyExchange.GetKeyExchangeData() => GetKeyExchangeData();
+
+        /// <inheritdoc/>
         public override byte[] DeriveKey(byte[] keyExchangeData)
         {
             try

@@ -14,9 +14,9 @@ namespace wan24.Crypto.BC
         /// <returns>Key size in bits</returns>
         public static int GetKeySize(this DilithiumParameters param)
         {
-            if (param == DilithiumParameters.Dilithium2Aes) return 512;
-            if (param == DilithiumParameters.Dilithium3Aes) return 768;
-            if (param == DilithiumParameters.Dilithium5Aes) return 1024;
+            if (param == DilithiumParameters.Dilithium2) return 512;
+            if (param == DilithiumParameters.Dilithium3) return 768;
+            if (param == DilithiumParameters.Dilithium5) return 1024;
             throw new ArgumentException("Invalid CRYSTALS-Dilithium parameters", nameof(param));
         }
 
@@ -27,9 +27,9 @@ namespace wan24.Crypto.BC
         /// <returns>Parameters</returns>
         public static DilithiumParameters GetParameters(int keySize) => keySize switch
         {
-            512 => DilithiumParameters.Dilithium2Aes,
-            768 => DilithiumParameters.Dilithium3Aes,
-            1024 => DilithiumParameters.Dilithium5Aes,
+            512 => DilithiumParameters.Dilithium2,
+            768 => DilithiumParameters.Dilithium3,
+            1024 => DilithiumParameters.Dilithium5,
             _ => throw new ArgumentException("Invalid key size", nameof(keySize))
         };
     }

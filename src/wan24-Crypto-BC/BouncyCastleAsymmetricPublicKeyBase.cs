@@ -67,7 +67,7 @@ namespace wan24.Crypto.BC
                 try
                 {
                     EnsureUndisposed();
-                    if (_PublicKey == null) DeserializeKeyData();
+                    if (_PublicKey is null) DeserializeKeyData();
                     return _PublicKey!;
                 }
                 catch (CryptographicException)

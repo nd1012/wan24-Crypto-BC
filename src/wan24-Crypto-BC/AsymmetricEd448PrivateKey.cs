@@ -1,7 +1,6 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Crypto.Signers;
-using Org.BouncyCastle.Tls.Crypto;
 using wan24.Core;
 
 namespace wan24.Crypto.BC
@@ -55,6 +54,21 @@ namespace wan24.Crypto.BC
                     throw CryptographicException.From(ex);
                 }
             }
+        }
+
+        /// <summary>
+        /// Create a XEd448 private key instance
+        /// </summary>
+        /// <returns>XEd448 private key (don't forget to dispose!)</returns>
+        public AsymmetricXEd448PrivateKey CreateXEd448PrivateKey()
+        {
+            EnsureUndisposed();
+            if (Keys is null) throw new InvalidOperationException();
+            using SecureByteArrayRefStruct privateKey = new(((Ed448PrivateKeyParameters)Keys.Private).GetEncoded());
+            return new(new AsymmetricCipherKeyPair(
+                new Ed448PublicKeyParameters(((Ed448PublicKeyParameters)Keys.Public).GetEncoded()),
+                new Ed448PrivateKeyParameters(privateKey.Array)
+                ));
         }
 
         /// <inheritdoc/>
