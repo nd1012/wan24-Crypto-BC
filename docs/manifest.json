@@ -1,6 +1,5 @@
 {
-  "homepages": [],
-  "source_base_path": "D:/P/wan24-Crypto-BC/src/wan24-Crypto-BC Docs",
+  "source_base_path": "/home/runner/work/wan24-Crypto-BC/wan24-Crypto-BC/src/wan24-Crypto-BC Docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -8,11 +7,9 @@
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
-          "relative_path": "api/index.html",
-          "hash": "uY7D/cmOOYDEpPz3Zl2hdyH+yuAVbKvCKWTHIRCrwDk="
+          "relative_path": "api/index.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -20,23 +17,82 @@
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "eCIVy1qliaPEiLMWEe4xBX5oVjM7W/lxmfra0MyytV4="
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/wan24.Crypto.BC..yml",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC..html",
-          "hash": "8OFId4cPAoIu3Mg96CDPqLCtzkkzxE5Mc1XJarO892w="
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanPrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanPrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanPublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanPublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricBcEcDsaPrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricBcEcDsaPrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricBcEcDsaPublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricBcEcDsaPublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html"
+        }
+      },
       "version": ""
     },
     {
@@ -44,11 +100,99 @@
       "source_relative_path": "api/wan24.Crypto.BC.AsymmetricDilithiumHelper.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.AsymmetricDilithiumHelper.html",
-          "hash": "7K8NvBixjuS+Bxt7Mr34hX6K/rbkCOgUXzyGr6CJnMU="
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricDilithiumHelper.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricDilithiumPublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricDilithiumPublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricEd25519Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricEd25519Algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricEd25519PrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricEd25519PrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricEd25519PublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricEd25519PublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricEd448Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricEd448Algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricEd448PrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricEd448PrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricEd448PublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricEd448PublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html"
+        }
+      },
       "version": ""
     },
     {
@@ -56,11 +200,39 @@
       "source_relative_path": "api/wan24.Crypto.BC.AsymmetricFalconHelper.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.AsymmetricFalconHelper.html",
-          "hash": "bHMoKIASg4FhrMlAn8/T1wzR7OQxlKUJPx3Ir2x1NTE="
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricFalconHelper.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricFalconPrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricFalconPrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricFalconPublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricFalconPublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html"
+        }
+      },
       "version": ""
     },
     {
@@ -68,11 +240,39 @@
       "source_relative_path": "api/wan24.Crypto.BC.AsymmetricFrodoKemHelper.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.AsymmetricFrodoKemHelper.html",
-          "hash": "rt6hG5UFTUafXmbc1dwWdF5NxVykJF6f6yrtzEw/ONY="
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricFrodoKemHelper.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html"
+        }
+      },
       "version": ""
     },
     {
@@ -80,11 +280,59 @@
       "source_relative_path": "api/wan24.Crypto.BC.AsymmetricKyberHelper.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.AsymmetricKyberHelper.html",
-          "hash": "iV/OYsKa7C4o2r/Ial3XywLPcBtEm4WrOUGdenkoq1g="
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricKyberHelper.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricKyberPrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricKyberPrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricKyberPublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricKyberPublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricNtruEncryptPrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricNtruEncryptPrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricNtruEncryptPublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricNtruEncryptPublicKey.html"
+        }
+      },
       "version": ""
     },
     {
@@ -92,11 +340,19 @@
       "source_relative_path": "api/wan24.Crypto.BC.AsymmetricNtruHelper.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.AsymmetricNtruHelper.html",
-          "hash": "GrBTaA7Bdb9I/KH/9HExuURy/lVwL8rymovO9oIcY4Q="
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricNtruHelper.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html"
+        }
+      },
       "version": ""
     },
     {
@@ -104,11 +360,149 @@
       "source_relative_path": "api/wan24.Crypto.BC.AsymmetricSphincsPlusHelper.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.AsymmetricSphincsPlusHelper.html",
-          "hash": "CTUowo3RnoLhcnNeLQlCFvspw0auz+/WHw+BfIJLIpQ="
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricSphincsPlusHelper.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricX25519Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricX25519Algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricX25519PrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricX25519PrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricX25519PublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricX25519PublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricX448Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricX448Algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricX448PrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricX448PrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricX448PublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricX448PublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricXEd25519Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricXEd25519Algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricXEd25519PrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricXEd25519PrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricXEd25519PublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricXEd25519PublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricXEd448Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricXEd448Algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricXEd448PrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricXEd448PrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricXEd448PublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricXEd448PublicKey.html"
+        }
+      },
       "version": ""
     },
     {
@@ -116,11 +510,9 @@
       "source_relative_path": "api/wan24.Crypto.BC.BcEllipticCurves.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.BcEllipticCurves.html",
-          "hash": "0fXWMc9rm7AU2ZoG5TarEX0ya+sl6TOcljXaj8u3cik="
+          "relative_path": "api/wan24.Crypto.BC.BcEllipticCurves.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -128,11 +520,9 @@
       "source_relative_path": "api/wan24.Crypto.BC.Bootstrap.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.Bootstrap.html",
-          "hash": "FiLivIdXVDcBHSr/lxFePEhx+gXKn/AhxmBeCxdB8xQ="
+          "relative_path": "api/wan24.Crypto.BC.Bootstrap.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -140,11 +530,189 @@
       "source_relative_path": "api/wan24.Crypto.BC.BouncyCastle.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.BouncyCastle.html",
-          "hash": "IuWxcRjHsXoPTM7meHSIftevwP5TXuzx3qM24Uw2OhM="
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastle.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAeadCipherAlgorithmBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAeadCipherAlgorithmBase-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateKeyBase-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateKeyBase-5.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase-6.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2-6.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPublicKeyBase-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPublicKeyBase-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase-4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase2-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase2-4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateKeyBase-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateKeyBase-5.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase-7.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateSignatureKeyBase-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateSignatureKeyBase-6.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricPqcPublicKeyBase-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricPqcPublicKeyBase-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricPqcPublicSignatureKeyBase-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricPqcPublicSignatureKeyBase-4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricPublicKeyBase-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricPublicKeyBase-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleBufferedCipherAlgorithmBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleBufferedCipherAlgorithmBase-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleCipherAlgorithmBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleCipherAlgorithmBase-1.html"
+        }
+      },
       "version": ""
     },
     {
@@ -152,11 +720,9 @@
       "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleCryptoTransform.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html",
-          "hash": "31jrAUFdg/CN/kNSO6YK4ei1LsKf89PEeBLZSpBAAcg="
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -164,11 +730,19 @@
       "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html",
-          "hash": "USJE8VNnhyNbjTJfleR4DFyICvX1ftvY1ykGXaWWWlQ="
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleHashAlgorithmBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleHashAlgorithmBase-1.html"
+        }
+      },
       "version": ""
     },
     {
@@ -176,11 +750,19 @@
       "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html",
-          "hash": "4AjJOPM/OjgBr/eZDqVO9JLgCyY0j5gXjH4junVrdtM="
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleHmacAlgorithmBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleHmacAlgorithmBase-1.html"
+        }
+      },
       "version": ""
     },
     {
@@ -188,11 +770,9 @@
       "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleRandomGenerator.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.BouncyCastleRandomGenerator.html",
-          "hash": "1hJcYrdhJzqJ3GP0dMktDznC7RcRc+osfpmVJkcAPLA="
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleRandomGenerator.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -200,11 +780,19 @@
       "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleRngWrapper.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.BouncyCastleRngWrapper.html",
-          "hash": "XDpWQWMxUiCBUKctv5Sfo9soOM80lXOLUgIAb6TRKOE="
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleRngWrapper.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase-1.html"
+        }
+      },
       "version": ""
     },
     {
@@ -212,11 +800,9 @@
       "source_relative_path": "api/wan24.Crypto.BC.ChaCha20Rng.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.ChaCha20Rng.html",
-          "hash": "oSGgAaCZrSZgWOizl7jxijS1UvSUc83Ab+NVcVtx0m8="
+          "relative_path": "api/wan24.Crypto.BC.ChaCha20Rng.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -224,11 +810,89 @@
       "source_relative_path": "api/wan24.Crypto.BC.DisposableRngWrapper.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.DisposableRngWrapper.html",
-          "hash": "lZnMAOmBCEh7DNdTMorFnhGETUw2MQsYxxhDz3kbJSw="
+          "relative_path": "api/wan24.Crypto.BC.DisposableRngWrapper.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html"
+        }
+      },
       "version": ""
     },
     {
@@ -236,11 +900,59 @@
       "source_relative_path": "api/wan24.Crypto.BC.Extensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.Extensions.html",
-          "hash": "wxyfI/o7CA1INdCuglrDKN3oWMs7WU+Fha9ldNYYTz8="
+          "relative_path": "api/wan24.Crypto.BC.Extensions.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.HashBcSha3_256Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.HashBcSha3_256Algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.HashBcSha3_384Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.HashBcSha3_384Algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.HashBcSha3_512Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.HashBcSha3_512Algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.HashBcShake128Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.HashBcShake128Algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.HashBcShake256Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.HashBcShake256Algorithm.html"
+        }
+      },
       "version": ""
     },
     {
@@ -248,11 +960,39 @@
       "source_relative_path": "api/wan24.Crypto.BC.IBouncyCastleRng.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.IBouncyCastleRng.html",
-          "hash": "bZXES7hO1gPGy3uP4eHs479JIFYE7SQuNBdja002PpA="
+          "relative_path": "api/wan24.Crypto.BC.IBouncyCastleRng.html"
         }
       },
-      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.html"
+        }
+      },
       "version": ""
     },
     {
@@ -260,11 +1000,9 @@
       "source_relative_path": "api/wan24.Crypto.BC.RandomDataProvider.SeedEventArgs.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.RandomDataProvider.SeedEventArgs.html",
-          "hash": "wFGukEZo8uq4WbTQJRyexnn5lynFTD97xak9QczRpFU="
+          "relative_path": "api/wan24.Crypto.BC.RandomDataProvider.SeedEventArgs.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -272,11 +1010,9 @@
       "source_relative_path": "api/wan24.Crypto.BC.RandomDataProvider.Seed_Delegate.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.RandomDataProvider.Seed_Delegate.html",
-          "hash": "VQ1hx9vs4Xhn6WJ+qUUUstsUpD+qxBozOvG+OhlrfzE="
+          "relative_path": "api/wan24.Crypto.BC.RandomDataProvider.Seed_Delegate.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -284,11 +1020,9 @@
       "source_relative_path": "api/wan24.Crypto.BC.RandomDataProvider.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.RandomDataProvider.html",
-          "hash": "bE+LHTxtRQkCR56oISdJ4wr5oTZSDdVTiNWH6NlnKLY="
+          "relative_path": "api/wan24.Crypto.BC.RandomDataProvider.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -296,11 +1030,9 @@
       "source_relative_path": "api/wan24.Crypto.BC.StreamCipherRng.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.StreamCipherRng.html",
-          "hash": "lPYPGz5xY2egdeg2sensUzuX4cw9xWuP6XkD/YG2zlg="
+          "relative_path": "api/wan24.Crypto.BC.StreamCipherRng.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -308,11 +1040,9 @@
       "source_relative_path": "api/wan24.Crypto.BC.XSalsa20Rng.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.XSalsa20Rng.html",
-          "hash": "i/r22FKbxvNnPUeFEznVY+iigQNsDP6HutMWVxkJGZQ="
+          "relative_path": "api/wan24.Crypto.BC.XSalsa20Rng.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -320,11 +1050,9 @@
       "source_relative_path": "api/wan24.Crypto.BC.yml",
       "output": {
         ".html": {
-          "relative_path": "api/wan24.Crypto.BC.html",
-          "hash": "m+XDugYGJsADkaRVqF4Xl9FVQJgoYmpb/hHlOuhb01Q="
+          "relative_path": "api/wan24.Crypto.BC.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -332,11 +1060,9 @@
       "source_relative_path": "articles/intro.md",
       "output": {
         ".html": {
-          "relative_path": "articles/intro.html",
-          "hash": "MJK5eHZOozb6LospiBMA86cWsJWCFiv5qVrMbLqNpZg="
+          "relative_path": "articles/intro.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -344,11 +1070,12 @@
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "articles/toc.html",
-          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -356,11 +1083,9 @@
       "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "index.html",
-          "hash": "9F3ZZ4p1fLxxGyaWZRWbbu216TrFFJub0dLBDLY8zgo="
+          "relative_path": "index.html"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -368,58 +1093,15 @@
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
-          "relative_path": "toc.html",
-          "hash": "s+UecGKJLe11K3w4+MJjx6QoiqktkO8teeQG06lk8L0="
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     }
   ],
-  "incremental_info": [
-    {
-      "status": {
-        "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
-        "incrementalPhase": "build",
-        "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
-      },
-      "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 3,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 25,
-          "skipped_file_count": 0
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        }
-      }
-    },
-    {
-      "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
-        "incrementalPhase": "postProcessing",
-        "total_file_count": 0,
-        "skipped_file_count": 0
-      },
-      "processors": {}
-    }
-  ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

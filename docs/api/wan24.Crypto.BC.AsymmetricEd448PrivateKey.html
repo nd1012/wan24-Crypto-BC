@@ -1,0 +1,738 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AsymmetricEd448PrivateKey | wan24-Crypto-BC </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AsymmetricEd448PrivateKey | wan24-Crypto-BC ">
+    
+    <meta name="description" content="Ed448 asymmetric private key">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey">
+
+
+
+  <h1 id="wan24_Crypto_BC_AsymmetricEd448PrivateKey" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey" class="text-break">Class AsymmetricEd448PrivateKey</h1>
+  <div class="markdown level0 summary"><p>Ed448 asymmetric private key</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">DisposableRecordBase</span></div>
+    <div class="level2"><span class="xref">DisposableStreamSerializerRecordBase</span></div>
+    <div class="level3"><span class="xref">AsymmetricKeyBase</span></div>
+    <div class="level4"><span class="xref">AsymmetricPrivateKeyBase</span>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PublicKey.html">AsymmetricEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PrivateKey.html">AsymmetricEd448PrivateKey</a>&gt;</div>
+    <div class="level5"><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html">BouncyCastleAsymmetricPrivateKeyBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PublicKey.html">AsymmetricEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448Algorithm.html">AsymmetricEd448Algorithm</a>, <span class="xref">Ed448PublicKeyParameters</span>, <span class="xref">Ed448PrivateKeyParameters</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PrivateKey.html">AsymmetricEd448PrivateKey</a>&gt;</div>
+    <div class="level6"><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateKeyBase-5.html">BouncyCastleAsymmetricNonPqcPrivateKeyBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PublicKey.html">AsymmetricEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448Algorithm.html">AsymmetricEd448Algorithm</a>, <span class="xref">Ed448PublicKeyParameters</span>, <span class="xref">Ed448PrivateKeyParameters</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PrivateKey.html">AsymmetricEd448PrivateKey</a>&gt;</div>
+    <div class="level7"><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2-6.html">BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PublicKey.html">AsymmetricEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448Algorithm.html">AsymmetricEd448Algorithm</a>, <span class="xref">Ed448PublicKeyParameters</span>, <span class="xref">Ed448PrivateKeyParameters</span>, <span class="xref">Ed448Signer</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PrivateKey.html">AsymmetricEd448PrivateKey</a>&gt;</div>
+    <div class="level8"><span class="xref">AsymmetricEd448PrivateKey</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IWillDispose</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">DisposableRecordBase</span>&gt;</div>
+    <div><span class="xref">IObjectValidatable</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.ivalidatableobject">IValidatableObject</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">DisposableStreamSerializerRecordBase</span>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">AsymmetricKeyBase</span>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">AsymmetricPrivateKeyBase</span>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PublicKey.html">AsymmetricEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PrivateKey.html">AsymmetricEd448PrivateKey</a>&gt;&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html">BouncyCastleAsymmetricPrivateKeyBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PublicKey.html">AsymmetricEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448Algorithm.html">AsymmetricEd448Algorithm</a>, <span class="xref">Ed448PublicKeyParameters</span>, <span class="xref">Ed448PrivateKeyParameters</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PrivateKey.html">AsymmetricEd448PrivateKey</a>&gt;&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateKeyBase-5.html">BouncyCastleAsymmetricNonPqcPrivateKeyBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PublicKey.html">AsymmetricEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448Algorithm.html">AsymmetricEd448Algorithm</a>, <span class="xref">Ed448PublicKeyParameters</span>, <span class="xref">Ed448PrivateKeyParameters</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PrivateKey.html">AsymmetricEd448PrivateKey</a>&gt;&gt;</div>
+    <div><span class="xref">ISignaturePrivateKey</span></div>
+    <div><span class="xref">IAsymmetricPrivateKey</span></div>
+    <div><span class="xref">IAsymmetricKey</span></div>
+    <div><span class="xref">IDisposableObject</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
+    <div><span class="xref">IStreamSerializerVersion</span></div>
+    <div><span class="xref">IStreamSerializer</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2-6.html">BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PublicKey.html">AsymmetricEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448Algorithm.html">AsymmetricEd448Algorithm</a>, <span class="xref">Ed448PublicKeyParameters</span>, <span class="xref">Ed448PrivateKeyParameters</span>, <span class="xref">Ed448Signer</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PrivateKey.html">AsymmetricEd448PrivateKey</a>&gt;&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PrivateKey.html">AsymmetricEd448PrivateKey</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2-6.html#wan24_Crypto_BC_BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2_6_SignHashRaw_System_Byte___">BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, Ed448Signer, AsymmetricEd448PrivateKey&gt;.SignHashRaw(byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html#wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyBase_5_PrivateKey">BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricEd448PrivateKey&gt;.PrivateKey</a>
+    </div>
+    <div>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html#wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyBase_5_PublicKey">BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricEd448PrivateKey&gt;.PublicKey</a>
+    </div>
+    <div>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html#wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyBase_5_Bits">BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricEd448PrivateKey&gt;.Bits</a>
+    </div>
+    <div>
+      <span class="xref">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.GetCopy()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.SignData(byte[], string, CryptoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.SignData(Stream, string, CryptoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.SignDataAsync(Stream, string, CryptoOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.SignHash(byte[], string, CryptoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.SignHashRaw(byte[])</a>
+    </div>
+    <div>
+      <span class="xref">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.GetKeyExchangeData(IAsymmetricPublicKey, CryptoOptions)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.DeriveKey(byte[])</a>
+    </div>
+    <div>
+      <span class="xref">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.DeriveKey(IAsymmetricPublicKey)</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.Equals(AsymmetricKeyBase)</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.Equals(AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.&lt;Clone&gt;$()</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.PublicKey</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.ID</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricKeyBase.VERSION</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricKeyBase.Export()</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricKeyBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">AsymmetricKeyBase.Import&lt;T&gt;(byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">AsymmetricKeyBase.Import(byte[])</a>
+    </div>
+    <div>
+      <span class="xref">AsymmetricKeyBase.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">AsymmetricKeyBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">AsymmetricKeyBase.Equals(DisposableStreamSerializerRecordBase)</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricKeyBase.Equals(AsymmetricKeyBase)</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricKeyBase.&lt;Clone&gt;$()</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricKeyBase.ID</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricKeyBase.Algorithm</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricKeyBase.KeyData</span>
+    </div>
+    <div>
+      <span class="xref">DisposableStreamSerializerRecordBase.BASE_VERSION</span>
+    </div>
+    <div>
+      <span class="xref">DisposableStreamSerializerRecordBase.Equals(DisposableRecordBase)</span>
+    </div>
+    <div>
+      <span class="xref">DisposableRecordBase.RegisterForDispose&lt;T&gt;(in T)</span>
+    </div>
+    <div>
+      <span class="xref">DisposableRecordBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">DisposableRecordBase.DisposeAsync()</span>
+    </div>
+    <div>
+      <span class="xref">DisposableRecordBase.CreateStackInfo</span>
+    </div>
+    <div>
+      <span class="xref">DisposableRecordBase.IsDisposing</span>
+    </div>
+    <div>
+      <span class="xref">DisposableRecordBase.IsDisposed</span>
+    </div>
+    <div>
+      <span class="xref">DisposableRecordBase.OnDisposing</span>
+    </div>
+    <div>
+      <span class="xref">DisposableRecordBase.OnDisposed</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="wan24.html">wan24</a>.<a class="xref" href="wan24.Crypto.html">Crypto</a>.<a class="xref" href="wan24.Crypto.BC.html">BC</a></h6>
+  <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
+  <h5 id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricEd448PrivateKey : BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, Ed448Signer, AsymmetricEd448PrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricEd448PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricEd448PrivateKey&gt;&gt;, ISignaturePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, Ed448Signer, AsymmetricEd448PrivateKey&gt;&gt;, IEquatable&lt;AsymmetricEd448PrivateKey&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd448PrivateKey__ctor.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd448PrivateKey.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd448PrivateKey.cs/#L24">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricEd448PrivateKey__ctor_" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.#ctor*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricEd448PrivateKey__ctor" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.#ctor">AsymmetricEd448PrivateKey()</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsymmetricEd448PrivateKey()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd448PrivateKey__ctor_Org_BouncyCastle_Crypto_AsymmetricCipherKeyPair_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd448PrivateKey.%23ctor(Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd448PrivateKey.cs/#L36">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricEd448PrivateKey__ctor_" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.#ctor*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricEd448PrivateKey__ctor_Org_BouncyCastle_Crypto_AsymmetricCipherKeyPair_" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.#ctor(Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair)">AsymmetricEd448PrivateKey(AsymmetricCipherKeyPair)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsymmetricEd448PrivateKey(AsymmetricCipherKeyPair keys)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AsymmetricCipherKeyPair</span></td>
+        <td><span class="parametername">keys</span></td>
+        <td><p>Keys</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd448PrivateKey__ctor_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd448PrivateKey.%23ctor(System.Byte%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd448PrivateKey.cs/#L30">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricEd448PrivateKey__ctor_" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.#ctor*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricEd448PrivateKey__ctor_System_Byte___" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.#ctor(System.Byte[])">AsymmetricEd448PrivateKey(byte[])</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsymmetricEd448PrivateKey(byte[] keyData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">keyData</span></td>
+        <td><p>Key data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd448PrivateKey_Bits.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd448PrivateKey.Bits%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd448PrivateKey.cs/#L39">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_Bits_" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.Bits*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_Bits" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.Bits">Bits</h4>
+  <div class="markdown level1 summary"><p>Key size in bits</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Bits { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html#wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyBase_5_Bits">BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricEd448PrivateKey&gt;.Bits</a></div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd448PrivateKey_CreateXEd448PrivateKey.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd448PrivateKey.CreateXEd448PrivateKey%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd448PrivateKey.cs/#L63">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_CreateXEd448PrivateKey_" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.CreateXEd448PrivateKey*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_CreateXEd448PrivateKey" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.CreateXEd448PrivateKey">CreateXEd448PrivateKey()</h4>
+  <div class="markdown level1 summary"><p>Create a XEd448 private key instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsymmetricXEd448PrivateKey CreateXEd448PrivateKey()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PrivateKey.html">AsymmetricXEd448PrivateKey</a></td>
+        <td><p>XEd448 private key (don't forget to dispose!)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd448PrivateKey_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd448PrivateKey.Dispose(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd448PrivateKey.cs/#L78">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_Dispose_" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.Dispose*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_Dispose_System_Boolean_" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.Dispose(System.Boolean)">Dispose(bool)</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>Disposing? (may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>, if called from the destructor)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;.Dispose(bool)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd448PrivateKey_DisposeCore.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd448PrivateKey.DisposeCore%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd448PrivateKey.cs/#L85">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_DisposeCore_" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.DisposeCore*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_DisposeCore" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.DisposeCore">DisposeCore()</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task DisposeCore()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.AsymmetricPrivateKeyBase&lt;wan24.Crypto.BC.AsymmetricEd448PublicKey, wan24.Crypto.BC.AsymmetricEd448PrivateKey&gt;.DisposeCore()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd448PrivateKey_GetPublicKey_Org_BouncyCastle_Crypto_Parameters_Ed448PrivateKeyParameters_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd448PrivateKey.GetPublicKey(Org.BouncyCastle.Crypto.Parameters.Ed448PrivateKeyParameters)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd448PrivateKey.cs/#L75">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_GetPublicKey_" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.GetPublicKey*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_GetPublicKey_Org_BouncyCastle_Crypto_Parameters_Ed448PrivateKeyParameters_" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.GetPublicKey(Org.BouncyCastle.Crypto.Parameters.Ed448PrivateKeyParameters)">GetPublicKey(Ed448PrivateKeyParameters)</h4>
+  <div class="markdown level1 summary"><p>Get the public key from a private key</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Ed448PublicKeyParameters GetPublicKey(Ed448PrivateKeyParameters privateKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ed448PrivateKeyParameters</span></td>
+        <td><span class="parametername">privateKey</span></td>
+        <td><p>Private key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ed448PublicKeyParameters</span></td>
+        <td><p>Public key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html#wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyBase_5_GetPublicKey__3_">BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricEd448PrivateKey&gt;.GetPublicKey(Ed448PrivateKeyParameters)</a></div>
+  <h3 id="operators">Operators
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd448PrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricEd448PrivateKey.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd448PrivateKey.op_Explicit(System.Byte%5B%5D)~wan24.Crypto.BC.AsymmetricEd448PrivateKey%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd448PrivateKey.cs/#L101">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_op_Explicit_" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.op_Explicit*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricEd448PrivateKey" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricEd448PrivateKey">explicit operator AsymmetricEd448PrivateKey(byte[])</h4>
+  <div class="markdown level1 summary"><p>Cast from serialized data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator AsymmetricEd448PrivateKey(byte[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PrivateKey.html">AsymmetricEd448PrivateKey</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd448PrivateKey_op_Implicit_wan24_Crypto_BC_AsymmetricEd448PrivateKey__wan24_Crypto_BC_AsymmetricEd448PublicKey.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd448PrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricEd448PrivateKey)~wan24.Crypto.BC.AsymmetricEd448PublicKey%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd448PrivateKey.cs/#L95">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_op_Implicit_" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.op_Implicit*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_op_Implicit_wan24_Crypto_BC_AsymmetricEd448PrivateKey__wan24_Crypto_BC_AsymmetricEd448PublicKey" data-uid="wan24.Crypto.BC.AsymmetricEd448PrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricEd448PrivateKey)~wan24.Crypto.BC.AsymmetricEd448PublicKey">implicit operator AsymmetricEd448PublicKey(AsymmetricEd448PrivateKey)</h4>
+  <div class="markdown level1 summary"><p>Cast to public key</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator AsymmetricEd448PublicKey(AsymmetricEd448PrivateKey privateKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PrivateKey.html">AsymmetricEd448PrivateKey</a></td>
+        <td><span class="parametername">privateKey</span></td>
+        <td><p>Private key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PublicKey.html">AsymmetricEd448PublicKey</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">wan24.Core.IWillDispose</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <span class="xref">wan24.ObjectValidation.IObjectValidatable</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.ivalidatableobject">IValidatableObject</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.ISignaturePrivateKey</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.IAsymmetricPrivateKey</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.IAsymmetricKey</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IDisposableObject</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a>
+  </div>
+  <div>
+      <span class="xref">wan24.StreamSerializerExtensions.IStreamSerializerVersion</span>
+  </div>
+  <div>
+      <span class="xref">wan24.StreamSerializerExtensions.IStreamSerializer</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd448PrivateKey.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd448PrivateKey%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd448PrivateKey.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      (c) 2023 Andreas Zimmermann, wan24.de
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

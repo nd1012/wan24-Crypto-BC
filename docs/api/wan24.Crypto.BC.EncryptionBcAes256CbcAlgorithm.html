@@ -1,0 +1,888 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class EncryptionBcAes256CbcAlgorithm | wan24-Crypto-BC </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class EncryptionBcAes256CbcAlgorithm | wan24-Crypto-BC ">
+    
+    <meta name="description" content="AES-256-CBC symmetric encryption algorithm (using ISO10126 padding; may be used as replacement, if the .NET algorithm isn&#39;t available on the current platform)">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm">
+
+
+
+  <h1 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm" class="text-break">Class EncryptionBcAes256CbcAlgorithm</h1>
+  <div class="markdown level0 summary"><p>AES-256-CBC symmetric encryption algorithm (using ISO10126 padding; may be used as replacement, if the .NET algorithm isn't available on the current platform)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">CryptoAlgorithmBase</span></div>
+    <div class="level2"><span class="xref">EncryptionAlgorithmBase</span></div>
+    <div class="level3"><a class="xref" href="wan24.Crypto.BC.BouncyCastleCipherAlgorithmBase-1.html">BouncyCastleCipherAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html">EncryptionBcAes256CbcAlgorithm</a>&gt;</div>
+    <div class="level4"><a class="xref" href="wan24.Crypto.BC.BouncyCastleBufferedCipherAlgorithmBase-1.html">BouncyCastleBufferedCipherAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html">EncryptionBcAes256CbcAlgorithm</a>&gt;</div>
+    <div class="level5"><span class="xref">EncryptionBcAes256CbcAlgorithm</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">ICryptoAlgorithm</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">CryptoAlgorithmBase</span>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">EncryptionAlgorithmBase</span>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleCipherAlgorithmBase-1.html">BouncyCastleCipherAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html">EncryptionBcAes256CbcAlgorithm</a>&gt;&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleBufferedCipherAlgorithmBase-1.html">BouncyCastleBufferedCipherAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html">EncryptionBcAes256CbcAlgorithm</a>&gt;&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html">EncryptionBcAes256CbcAlgorithm</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleCipherAlgorithmBase_1_Instance">BouncyCastleCipherAlgorithmBase&lt;EncryptionBcAes256CbcAlgorithm&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleCipherAlgorithmBase_1_Register">BouncyCastleCipherAlgorithmBase&lt;EncryptionBcAes256CbcAlgorithm&gt;.Register()</a>
+    </div>
+    <div>
+      <span class="xref">EncryptionAlgorithmBase.EnsureDefaultOptions(CryptoOptions)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.Decrypt(Stream, Stream, byte[], CryptoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.Decrypt(Stream, Stream, IAsymmetricPrivateKey, CryptoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.Decrypt(Stream, Stream, CryptoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.DecryptAsync(Stream, Stream, byte[], CryptoOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.DecryptAsync(Stream, Stream, IAsymmetricPrivateKey, CryptoOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.DecryptAsync(Stream, Stream, CryptoOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.Encrypt(Stream, Stream, byte[], CryptoOptions, MacStreams)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.Encrypt(Stream, Stream, IAsymmetricPrivateKey, CryptoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.Encrypt(Stream, Stream, CryptoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.EncryptAsync(Stream, Stream, byte[], CryptoOptions, MacStreams, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.EncryptAsync(Stream, Stream, IAsymmetricPrivateKey, CryptoOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.EncryptAsync(Stream, Stream, CryptoOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.WriteOptions(Stream, Stream, byte[], CryptoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.WriteOptionsAsync(Stream, Stream, byte[], CryptoOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.ReadOptions(Stream, Stream, byte[], CryptoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.ReadOptionsAsync(Stream, Stream, byte[], CryptoOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.GetEncryptionStream(Stream, Stream, MacStreams, CryptoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.GetEncryptionStreamAsync(Stream, Stream, MacStreams, CryptoOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.GetDecryptionStream(Stream, Stream, CryptoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">EncryptionAlgorithmBase.GetDecryptionStreamAsync(Stream, Stream, CryptoOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">EncryptionAlgorithmBase.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">EncryptionAlgorithmBase.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">EncryptionAlgorithmBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">EncryptionAlgorithmBase.Equals(CryptoAlgorithmBase)</span>
+    </div>
+    <div>
+      <span class="xref">EncryptionAlgorithmBase.Equals(EncryptionAlgorithmBase)</span>
+    </div>
+    <div>
+      <span class="xref">EncryptionAlgorithmBase.&lt;Clone&gt;$()</span>
+    </div>
+    <div>
+      <span class="xref">EncryptionAlgorithmBase.DefaultOptions</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.Name</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.Value</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.UsesTpm</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="wan24.html">wan24</a>.<a class="xref" href="wan24.Crypto.html">Crypto</a>.<a class="xref" href="wan24.Crypto.BC.html">BC</a></h6>
+  <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
+  <h5 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed record EncryptionBcAes256CbcAlgorithm : BouncyCastleBufferedCipherAlgorithmBase&lt;EncryptionBcAes256CbcAlgorithm&gt;, ICryptoAlgorithm, IEquatable&lt;CryptoAlgorithmBase&gt;, IEquatable&lt;EncryptionAlgorithmBase&gt;, IEquatable&lt;BouncyCastleCipherAlgorithmBase&lt;EncryptionBcAes256CbcAlgorithm&gt;&gt;, IEquatable&lt;BouncyCastleBufferedCipherAlgorithmBase&lt;EncryptionBcAes256CbcAlgorithm&gt;&gt;, IEquatable&lt;EncryptionBcAes256CbcAlgorithm&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm__ctor.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L41">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm__ctor_" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.#ctor*"></a>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm__ctor" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.#ctor">EncryptionBcAes256CbcAlgorithm()</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EncryptionBcAes256CbcAlgorithm()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_ALGORITHM_NAME.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.ALGORITHM_NAME%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L16">View Source</a>
+  </span>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_ALGORITHM_NAME" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.ALGORITHM_NAME">ALGORITHM_NAME</h4>
+  <div class="markdown level1 summary"><p>Algorithm name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ALGORITHM_NAME = &quot;AES256CBC&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_ALGORITHM_VALUE.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.ALGORITHM_VALUE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L20">View Source</a>
+  </span>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_ALGORITHM_VALUE" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.ALGORITHM_VALUE">ALGORITHM_VALUE</h4>
+  <div class="markdown level1 summary"><p>Algorithm value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int ALGORITHM_VALUE = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_BLOCK_SIZE.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.BLOCK_SIZE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L32">View Source</a>
+  </span>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_BLOCK_SIZE" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.BLOCK_SIZE">BLOCK_SIZE</h4>
+  <div class="markdown level1 summary"><p>Block size in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BLOCK_SIZE = 16</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_DISPLAY_NAME.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.DISPLAY_NAME%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L36">View Source</a>
+  </span>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_DISPLAY_NAME" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.DISPLAY_NAME">DISPLAY_NAME</h4>
+  <div class="markdown level1 summary"><p>Display name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DISPLAY_NAME = &quot;AES-256-CBC&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_IV_SIZE.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.IV_SIZE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L28">View Source</a>
+  </span>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_IV_SIZE" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.IV_SIZE">IV_SIZE</h4>
+  <div class="markdown level1 summary"><p>IV size in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int IV_SIZE = 16</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_KEY_SIZE.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.KEY_SIZE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L24">View Source</a>
+  </span>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_KEY_SIZE" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.KEY_SIZE">KEY_SIZE</h4>
+  <div class="markdown level1 summary"><p>Key size in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int KEY_SIZE = 32</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_BlockSize.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.BlockSize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L50">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_BlockSize_" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.BlockSize*"></a>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_BlockSize" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.BlockSize">BlockSize</h4>
+  <div class="markdown level1 summary"><p>Block size in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int BlockSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.EncryptionAlgorithmBase.BlockSize</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_DisplayName.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.DisplayName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L59">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_DisplayName_" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.DisplayName*"></a>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_DisplayName" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.DisplayName">DisplayName</h4>
+  <div class="markdown level1 summary"><p>Display name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string DisplayName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.CryptoAlgorithmBase.DisplayName</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_IsPostQuantum.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.IsPostQuantum%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L56">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_IsPostQuantum_" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.IsPostQuantum*"></a>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_IsPostQuantum" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.IsPostQuantum">IsPostQuantum</h4>
+  <div class="markdown level1 summary"><p>Is a post quantum algorithm (&quot;post quantum-safe&quot;)?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsPostQuantum { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.CryptoAlgorithmBase.IsPostQuantum</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_IvSize.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.IvSize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L47">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_IvSize_" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.IvSize*"></a>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_IvSize" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.IvSize">IvSize</h4>
+  <div class="markdown level1 summary"><p>IV size in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int IvSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.EncryptionAlgorithmBase.IvSize</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_KeySize.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.KeySize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L44">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_KeySize_" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.KeySize*"></a>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_KeySize" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.KeySize">KeySize</h4>
+  <div class="markdown level1 summary"><p>Key size in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int KeySize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.EncryptionAlgorithmBase.KeySize</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_RequireMacAuthentication.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.RequireMacAuthentication%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L53">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_RequireMacAuthentication_" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.RequireMacAuthentication*"></a>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_RequireMacAuthentication" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.RequireMacAuthentication">RequireMacAuthentication</h4>
+  <div class="markdown level1 summary"><p>Is a MAC authentication required?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool RequireMacAuthentication { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.EncryptionAlgorithmBase.RequireMacAuthentication</span></div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_CreateAes_wan24_Crypto_CryptoOptions_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.CreateAes(wan24.Crypto.CryptoOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L76">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_CreateAes_" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.CreateAes*"></a>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_CreateAes_wan24_Crypto_CryptoOptions_" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.CreateAes(wan24.Crypto.CryptoOptions)">CreateAes(CryptoOptions)</h4>
+  <div class="markdown level1 summary"><p>Create the AES engine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AesEngine CreateAes(CryptoOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CryptoOptions</span></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Options</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AesEngine</span></td>
+        <td><p>AES instance (not yet initialized)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_CreateCipher_System_Boolean_wan24_Crypto_CryptoOptions_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.CreateCipher(System.Boolean%2Cwan24.Crypto.CryptoOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L68">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_CreateCipher_" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.CreateCipher*"></a>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_CreateCipher_System_Boolean_wan24_Crypto_CryptoOptions_" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.CreateCipher(System.Boolean,wan24.Crypto.CryptoOptions)">CreateCipher(bool, CryptoOptions)</h4>
+  <div class="markdown level1 summary"><p>Create the cipher engine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IBufferedCipher CreateCipher(bool forEncryption, CryptoOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">forEncryption</span></td>
+        <td><p>For encryption?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CryptoOptions</span></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Options</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IBufferedCipher</span></td>
+        <td><p>Block cipher</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="wan24.Crypto.BC.BouncyCastleBufferedCipherAlgorithmBase-1.html#wan24_Crypto_BC_BouncyCastleBufferedCipherAlgorithmBase_1_CreateCipher_System_Boolean_wan24_Crypto_CryptoOptions_">BouncyCastleBufferedCipherAlgorithmBase&lt;EncryptionBcAes256CbcAlgorithm&gt;.CreateCipher(bool, CryptoOptions)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_EnsureValidKeyLength_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.EnsureValidKeyLength(System.Byte%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L65">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_EnsureValidKeyLength_" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.EnsureValidKeyLength*"></a>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_EnsureValidKeyLength_System_Byte___" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.EnsureValidKeyLength(System.Byte[])">EnsureValidKeyLength(byte[])</h4>
+  <div class="markdown level1 summary"><p>Ensure a key with a valid length</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override byte[] EnsureValidKeyLength(byte[] key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key (won't be cleared)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><p>Key with a valid length (if the given <code>key</code> had a valid length already, this is a copy; should be cleared)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">EncryptionAlgorithmBase.EnsureValidKeyLength(byte[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_IsKeyLengthValid_System_Int32_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.IsKeyLengthValid(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L62">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_IsKeyLengthValid_" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.IsKeyLengthValid*"></a>
+  <h4 id="wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_IsKeyLengthValid_System_Int32_" data-uid="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.IsKeyLengthValid(System.Int32)">IsKeyLengthValid(int)</h4>
+  <div class="markdown level1 summary"><p>Determine if a key length is valid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsKeyLengthValid(int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">len</span></td>
+        <td><p>Key length in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the key length is valid</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">EncryptionAlgorithmBase.IsKeyLengthValid(int)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">wan24.Crypto.ICryptoAlgorithm</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionBcAes256CbcAlgorithm.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      (c) 2023 Andreas Zimmermann, wan24.de
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
