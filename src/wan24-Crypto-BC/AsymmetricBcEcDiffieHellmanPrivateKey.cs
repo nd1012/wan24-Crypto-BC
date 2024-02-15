@@ -35,6 +35,12 @@ namespace wan24.Crypto.BC
         /// <param name="keys">Keys</param>
         public AsymmetricBcEcDiffieHellmanPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricBcEcDiffieHellmanAlgorithm.ALGORITHM_NAME, keys) { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        public AsymmetricBcEcDiffieHellmanPrivateKey(ECPrivateKeyParameters privateKey) : base(AsymmetricBcEcDiffieHellmanAlgorithm.ALGORITHM_NAME, privateKey) { }
+
         /// <inheritdoc/>
         public override (byte[] Key, byte[] KeyExchangeData) GetKeyExchangeData(IAsymmetricPublicKey? publicKey = null, CryptoOptions? options = null)
         {

@@ -25,6 +25,9 @@ namespace wan24.Crypto.BC
         public AsymmetricFrodoKemPublicKey(FrodoPublicKeyParameters publicKey) : base(AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME, publicKey) { }
 
         /// <inheritdoc/>
+        new public static bool IsBcImportExportImplemented => false;
+
+        /// <inheritdoc/>
         public override int Bits
         {
             get
@@ -32,7 +35,8 @@ namespace wan24.Crypto.BC
                 try
                 {
                     EnsureUndisposed();
-                    return _PublicKey?.Parameters.GetKeySize() ?? throw new InvalidOperationException();
+                    if (_PublicKey is null) throw new InvalidOperationException();
+                    return AsymmetricFrodoKemHelper.GetKeySize(_PublicKey.Parameters);
                 }
                 catch (CryptographicException)
                 {

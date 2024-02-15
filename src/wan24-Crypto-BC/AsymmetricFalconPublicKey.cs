@@ -32,7 +32,8 @@ namespace wan24.Crypto.BC
                 try
                 {
                     EnsureUndisposed();
-                    return _PublicKey?.Parameters.GetKeySize() ?? throw new InvalidOperationException();
+                    if (_PublicKey is null) throw new InvalidOperationException();
+                    return AsymmetricFalconHelper.GetKeySize(_PublicKey.Parameters);
                 }
                 catch (CryptographicException)
                 {

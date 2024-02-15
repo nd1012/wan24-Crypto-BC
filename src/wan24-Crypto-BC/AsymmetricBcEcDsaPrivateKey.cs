@@ -35,6 +35,12 @@ namespace wan24.Crypto.BC
         /// <param name="keys">Keys</param>
         public AsymmetricBcEcDsaPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricBcEcDsaAlgorithm.ALGORITHM_NAME, keys) { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        public AsymmetricBcEcDsaPrivateKey(ECPrivateKeyParameters privateKey) : base(AsymmetricBcEcDsaAlgorithm.ALGORITHM_NAME, privateKey) { }
+
         /// <inheritdoc/>
         protected override ECPublicKeyParameters GetPublicKey(ECPrivateKeyParameters privateKey) => new(privateKey.Parameters.G.Multiply(privateKey.D), privateKey.Parameters);
 

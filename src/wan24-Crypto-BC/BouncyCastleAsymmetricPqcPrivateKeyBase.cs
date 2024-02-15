@@ -40,6 +40,28 @@ namespace wan24.Crypto.BC
         /// <param name="keys">Keys</param>
         protected BouncyCastleAsymmetricPqcPrivateKeyBase(string algorithm, AsymmetricCipherKeyPair keys) : base(algorithm, keys) { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="algorithm">Algorithm name</param>
+        /// <param name="privateKey">Private key</param>
+        protected BouncyCastleAsymmetricPqcPrivateKeyBase(string algorithm, tPrivateKey privateKey) : base(algorithm, privateKey) { }
+
+        /// <inheritdoc/>
+        public override byte[] ExportBc()
+        {
+            try
+            {
+                EnsureUndisposed();
+                if (Keys is null) throw new InvalidOperationException();
+                return PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo(Keys.Private).GetDerEncoded();
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
         /// <inheritdoc/>
         protected override byte[] SerializeKeyData()
         {
@@ -96,14 +118,16 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
-                if (Keys == null) throw new InvalidOperationException();
+                if (Keys is null) throw new InvalidOperationException();
                 using MemoryPoolStream ms = new()
                 {
                     CleanReturned = true
                 };
+                using SecureByteArrayRefStruct privateKey = new(PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo(Keys.Private).GetDerEncoded());
+                using SecureByteArrayRefStruct publicKey = new(PqcSubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(Keys.Public).GetDerEncoded());
                 ms.WriteSerializerVersion()
-                    .WriteBytes(PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo(Keys.Private).GetDerEncoded())
-                    .WriteBytes(PqcSubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(Keys.Public).GetDerEncoded());
+                    .WriteBytes(privateKey)
+                    .WriteBytes(publicKey);
                 return ms.ToArray();
             }
             catch (CryptographicException)
@@ -128,8 +152,10 @@ namespace wan24.Crypto.BC
                 {
                     using MemoryStream ms = new(KeyData.Array);
                     int ssv = ms.ReadSerializerVersion();
-                    privateKey = (tPrivateKey)PqcPrivateKeyFactory.CreateKey(ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
-                    publicKey = (tPublicKey)PqcPublicKeyFactory.CreateKey(ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    using SecureByteArrayRefStruct privateKeyInfo = new(ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    using SecureByteArrayRefStruct publicKeyInfo = new(ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    privateKey = (tPrivateKey)PqcPrivateKeyFactory.CreateKey(privateKeyInfo);
+                    publicKey = (tPublicKey)PqcPublicKeyFactory.CreateKey(publicKeyInfo);
                     Keys = new(publicKey, privateKey);
                 }
                 catch
@@ -142,6 +168,21 @@ namespace wan24.Crypto.BC
             catch (CryptographicException)
             {
                 throw;
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
+        /// <inheritdoc/>
+        new public static tFinal ImportBc(in byte[] keyInfo)
+        {
+            try
+            {
+                return (tFinal)(Activator.CreateInstance(typeof(tFinal), PqcPrivateKeyFactory.CreateKey(keyInfo) as tPrivateKey
+                    ?? throw new InvalidDataException($"Failed to deserialize {typeof(tPrivateKey)} from the given key data"))
+                    ?? throw new InvalidProgramException($"Failed to instance {typeof(tFinal)}"));
             }
             catch (Exception ex)
             {

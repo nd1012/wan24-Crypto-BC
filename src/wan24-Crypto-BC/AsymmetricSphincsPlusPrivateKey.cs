@@ -36,6 +36,12 @@ namespace wan24.Crypto.BC
         /// <param name="keys">Keys</param>
         public AsymmetricSphincsPlusPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME, keys) { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        public AsymmetricSphincsPlusPrivateKey(SphincsPlusPrivateKeyParameters privateKey) : base(AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME, privateKey) { }
+
         /// <inheritdoc/>
         protected override SphincsPlusPublicKeyParameters GetPublicKey(SphincsPlusPrivateKeyParameters privateKey) => new(privateKey.Parameters, privateKey.GetPublicKey());
 
@@ -55,6 +61,7 @@ namespace wan24.Crypto.BC
                 ms.WriteSerializerVersion()
                     .WriteNumber(Bits)
                     .WriteBytes(privateKey.Array)
+                    //TODO Don't include SPHINCS+ public key in serialized data
                     .WriteBytes(publicKey.Array);
                 return ms.ToArray();
             }
@@ -81,7 +88,8 @@ namespace wan24.Crypto.BC
                     using MemoryStream ms = new(KeyData.Array);
                     int ssv = ms.ReadSerializerVersion();
                     SphincsPlusParameters param = AsymmetricSphincsPlusHelper.GetParameters(ms.ReadNumber<int>(ssv));
-                    privateKey = new(param, ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    using SecureByteArrayRefStruct privateKeyInfo = new(ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    privateKey = new(param, privateKeyInfo.Array);
                     publicKey = new(param, ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
                     Keys = new(publicKey, privateKey);
                 }

@@ -34,6 +34,12 @@ namespace wan24.Crypto.BC
         /// <param name="keys">Keys</param>
         public AsymmetricX25519PrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricX25519Algorithm.ALGORITHM_NAME, keys) { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        public AsymmetricX25519PrivateKey(X25519PrivateKeyParameters privateKey) : base(AsymmetricX25519Algorithm.ALGORITHM_NAME, privateKey) { }
+
         /// <inheritdoc/>
         public override (byte[] Key, byte[] KeyExchangeData) GetKeyExchangeData(IAsymmetricPublicKey? publicKey = null, CryptoOptions? options = null)
         {

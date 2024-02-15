@@ -1,5 +1,8 @@
 ﻿using Org.BouncyCastle.Pqc.Crypto.SphincsPlus;
 
+
+//FIXME Switch to SPHINCS+ Shake parameters, 'cause they've been approved in the FIPS standard
+
 namespace wan24.Crypto.BC
 {
     /// <summary>

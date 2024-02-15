@@ -49,9 +49,9 @@ namespace wan24.Crypto.BC
         /// </summary>
         static AsymmetricKyberAlgorithm() => _AllowedKeySizes = new List<int>()
         {
-            512,
-            768,
-            1024
+            512,// 128 bit security
+            768,// 192 bit security
+            1024// 256 bit security
         }.AsReadOnly();
 
         /// <summary>

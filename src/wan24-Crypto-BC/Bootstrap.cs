@@ -1,5 +1,7 @@
 ﻿using wan24.Core;
 
+//TODO Use SNTRUP as default key exchange algorithm in a newer version
+
 [assembly: Bootstrapper(typeof(wan24.Crypto.BC.Bootstrap), nameof(wan24.Crypto.BC.Bootstrap.Boot))]
 
 namespace wan24.Crypto.BC
@@ -19,9 +21,7 @@ namespace wan24.Crypto.BC
             AsymmetricHelper.Algorithms[AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME] = AsymmetricFrodoKemAlgorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricDilithiumAlgorithm.ALGORITHM_NAME] = AsymmetricDilithiumAlgorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricFalconAlgorithm.ALGORITHM_NAME] = AsymmetricFalconAlgorithm.Instance;
-            //FIXME PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo fails with Frodo*KeyParameters !? (waiting for an update of the NuGet package at present)
             AsymmetricHelper.Algorithms[AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME] = AsymmetricSphincsPlusAlgorithm.Instance;
-            //FIXME PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo doesn't support NtruPrivateKeyParameters !? (waiting for a fix and an update of the NuGet package at present)
             AsymmetricHelper.Algorithms[AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME] = AsymmetricNtruEncryptAlgorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricEd25519Algorithm.ALGORITHM_NAME] = AsymmetricEd25519Algorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricEd448Algorithm.ALGORITHM_NAME] = AsymmetricEd448Algorithm.Instance;
@@ -29,6 +29,10 @@ namespace wan24.Crypto.BC
             AsymmetricHelper.Algorithms[AsymmetricX448Algorithm.ALGORITHM_NAME] = AsymmetricX448Algorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricXEd25519Algorithm.ALGORITHM_NAME] = AsymmetricXEd25519Algorithm.Instance;
             AsymmetricHelper.Algorithms[AsymmetricXEd448Algorithm.ALGORITHM_NAME] = AsymmetricXEd448Algorithm.Instance;
+            AsymmetricHelper.Algorithms[AsymmetricSNtruPrimeAlgorithm.ALGORITHM_NAME] = AsymmetricSNtruPrimeAlgorithm.Instance;
+            AsymmetricHelper.Algorithms[AsymmetricBikeAlgorithm.ALGORITHM_NAME] = AsymmetricBikeAlgorithm.Instance;
+            AsymmetricHelper.Algorithms[AsymmetricHqcAlgorithm.ALGORITHM_NAME] = AsymmetricHqcAlgorithm.Instance;
+            AsymmetricHelper.Algorithms[AsymmetricPicnicAlgorithm.ALGORITHM_NAME] = AsymmetricPicnicAlgorithm.Instance;
             // ChaCha20
             EncryptionHelper.Algorithms[EncryptionChaCha20Algorithm.ALGORITHM_NAME] = EncryptionChaCha20Algorithm.Instance;
             CryptoProfiles.Registered[EncryptionChaCha20Algorithm.PROFILE_CHACHA20_RAW] = new CryptoOptions()

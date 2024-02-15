@@ -9,15 +9,15 @@ namespace wan24.Crypto.BC
     public static class BcEllipticCurves
     {
         /// <summary>
-        /// secp256r1 curve (NIST P-256)
+        /// secp256r1 curve (NIST P-256, 128 bit security)
         /// </summary>
         public static readonly ECDomainParameters SECP256R1_CURVE = new(SecNamedCurves.GetByOid(SecObjectIdentifiers.SecP256r1));
         /// <summary>
-        /// secp384r1 curve (NIST P-384)
+        /// secp384r1 curve (NIST P-384, 192 bit security)
         /// </summary>
         public static readonly ECDomainParameters SECP384R1_CURVE = new(SecNamedCurves.GetByOid(SecObjectIdentifiers.SecP384r1));
         /// <summary>
-        /// secp521r1 curve (NIST P-521)
+        /// secp521r1 curve (NIST P-521, 260 bit security)
         /// </summary>
         public static readonly ECDomainParameters SECP521R1_CURVE = new(SecNamedCurves.GetByOid(SecObjectIdentifiers.SecP521r1));
 

@@ -1,4 +1,4 @@
-﻿using Org.BouncyCastle.Pqc.Crypto.Crystals.Dilithium;
+﻿using Org.BouncyCastle.Pqc.Crypto.Picnic;
 using System.Collections.ObjectModel;
 
 namespace wan24.Crypto.BC
@@ -6,30 +6,30 @@ namespace wan24.Crypto.BC
     /// <summary>
     /// CRYSTALS-Dilithium asymmetric algorithm
     /// </summary>
-    public sealed record class AsymmetricDilithiumAlgorithm
+    public sealed record class AsymmetricPicnicAlgorithm
         : BouncyCastleAsymmetricAlgorithmBase<
-            AsymmetricDilithiumPublicKey,
-            AsymmetricDilithiumPrivateKey,
-            DilithiumKeyPairGenerator,
-            DilithiumKeyGenerationParameters,
-            DilithiumParameters,
-            DilithiumPublicKeyParameters,
-            DilithiumPrivateKeyParameters,
-            AsymmetricDilithiumAlgorithm
+            AsymmetricPicnicPublicKey,
+            AsymmetricPicnicPrivateKey,
+            PicnicKeyPairGenerator,
+            PicnicKeyGenerationParameters,
+            PicnicParameters,
+            PicnicPublicKeyParameters,
+            PicnicPrivateKeyParameters,
+            AsymmetricPicnicAlgorithm
             >
     {
         /// <summary>
         /// Algorithm name
         /// </summary>
-        public const string ALGORITHM_NAME = "CRYSTALSDILITHIUM";
+        public const string ALGORITHM_NAME = "PICNIC";
         /// <summary>
         /// Algorithm value
         /// </summary>
-        public const int ALGORITHM_VALUE = 3;
+        public const int ALGORITHM_VALUE = 17;
         /// <summary>
         /// Default key size in bits
         /// </summary>
-        public const int DEFAULT_KEY_SIZE = 1024;
+        public const int DEFAULT_KEY_SIZE = 128;
         /// <summary>
         /// Algorithm usages
         /// </summary>
@@ -37,7 +37,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Display name
         /// </summary>
-        public const string DISPLAY_NAME = "CRYSTALS-Dilithium";
+        public const string DISPLAY_NAME = "Picnic";
 
         /// <summary>
         /// Allowed key sizes in bits
@@ -47,17 +47,17 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Static constructor
         /// </summary>
-        static AsymmetricDilithiumAlgorithm() => _AllowedKeySizes = new List<int>()
+        static AsymmetricPicnicAlgorithm() => _AllowedKeySizes = new List<int>()
         {
-            512,// 128 bit security
-            768,// 192 bit security
-            1024// 256 bit security
+            128,// 128 bit security
+            192,// 192 bit security
+            256// 256 bit security
         }.AsReadOnly();
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricDilithiumAlgorithm()
+        public AsymmetricPicnicAlgorithm()
             : base(ALGORITHM_NAME, ALGORITHM_VALUE, USAGES, isEllipticCurveAlgorithm: false, _AllowedKeySizes, isPostQuantum: true, DEFAULT_KEY_SIZE)
         { }
 
@@ -65,6 +65,6 @@ namespace wan24.Crypto.BC
         public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
-        protected override DilithiumParameters GetEngineParameters(CryptoOptions options) => AsymmetricDilithiumHelper.GetParameters(options.AsymmetricKeyBits);
+        protected override PicnicParameters GetEngineParameters(CryptoOptions options) => AsymmetricPicnicHelper.GetParameters(options.AsymmetricKeyBits);
     }
 }

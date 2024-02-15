@@ -34,6 +34,12 @@ namespace wan24.Crypto.BC
         /// <param name="keys">Keys</param>
         public AsymmetricDilithiumPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricDilithiumAlgorithm.ALGORITHM_NAME, keys) { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        public AsymmetricDilithiumPrivateKey(DilithiumPrivateKeyParameters privateKey) : base(AsymmetricDilithiumAlgorithm.ALGORITHM_NAME, privateKey) { }
+
         /// <inheritdoc/>
         protected override DilithiumPublicKeyParameters GetPublicKey(DilithiumPrivateKeyParameters privateKey) => new(privateKey.Parameters, privateKey.Rho, privateKey.T1);
 

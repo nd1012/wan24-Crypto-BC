@@ -12,14 +12,18 @@ the `wan24-Crypto` library with these algorithms:
 | CRYSTALS-Dilithium | 3 | CRYSTALSDILITHIUM |
 | FALCON | 4 | FALCON |
 | SPHINCS+ | 5 | SPHINCSPLUS |
-| FrodoKEM* | 6 | FRODOKEM |
-| NTRUEncrypt* | 7 | NTRUENCRYPT |
+| FrodoKEM | 6 | FRODOKEM |
+| NTRUEncrypt | 7 | NTRUENCRYPT |
 | Ed25519 | 8 | ED25519 |
 | Ed448 | 9 | ED448 |
 | X25519 | 10 | X25519 |
 | X448 | 11 | X448 |
 | XEd25519 | 12 | XED25519 |
 | XEd448 | 13 | XED448 |
+| Streamlined NTRU Prime | 14 | SNTRUP |
+| BIKE | 15 | BIKE |
+| HQC | 16 | HQC |
+| Picnic | 17 | PICNIC |
 | **Symmetric** |  |  |
 | ChaCha20 | 1 | CHACHA20 |
 | XSalsa20 | 2 | XSALSA20 |
@@ -29,14 +33,10 @@ the `wan24-Crypto` library with these algorithms:
 | Twofish 256 CBC (ISO10126 padding) | 7 | TWOFISH256CBC |
 | Twofish 256 GCM AEAD (128 bit MAC) | 8 | TWOFISH256GCM |
 
-NTRUSign is currently not implemented, 'cause it'd require the using code to 
-be GPL licensed. This algorithm may be included in a separate package which is 
-licensed using the GPL license (to avoid misunderstandings) in the future.
-
-**NOTE**: SPHINCS+ and NTRUEncrypt key serialization uses a custom serializer 
-at present, which will change in the future, as soon as Bouncy Castle 
-implemented a (working) serializer (again). This change will require a manual 
-key conversion from the current serialization format.
+Main goals of this extension library are to make `wan24-Crypto` usable on all 
+platforms and extend its algorithms by PQC algorithms and other non-PQC 
+algorithms, which are not available from .NET, but implemented in the Bouncy 
+Castle library.
 
 ## How to get it
 
@@ -54,21 +54,7 @@ wan24.Crypto.BC.Bootstrap.Boot();
 
 This will register the algorithms to the `wan24-Crypto` library.
 
-To set Bouncy Castle defaults as `wan24-Crypto` defaults:
-
-```cs
-BouncyCastle.SetDefaults();
-```
-
-Per default the current `wan24-Crypto` default will be set as counter 
-algorithms to `HybridAlgorithmHelper`.
-
-Current Bouncy Castle default algorithms are:
-
-- Key exchange: NTRUEncrypt
-- Signature: CRYSTALS-Dilithium
-- Encryption: Serpent 256 bit CBC
-- PAKE encryption: Serpent 256 bit GCM
+### `wan24-Crypto` algorithm replacement
 
 Some algorithms of the `wan24-Crypto` library are not available on some 
 platforms, that's why they need to be replaced in order to be used:
@@ -95,7 +81,28 @@ BouncyCastle.ReplaceNetAlgorithms();
 
 **NOTE**: The Shake128/256 replacements don't support variable output length 
 and use the default output length of the `wan24-Crypto` implementations 
-instead.
+instead. The `NetShake128/256HashAlgorithmAdapter` can't be replaced for this 
+reason.
+
+### Use as default algorithms
+
+To set Bouncy Castle defaults as `wan24-Crypto` defaults:
+
+```cs
+BouncyCastle.SetDefaults();
+```
+
+Per default the current `wan24-Crypto` default will be set as counter 
+algorithms to `HybridAlgorithmHelper`.
+
+Current Bouncy Castle default algorithms are:
+
+| Usage | Algorithm |
+| ----- | --------- |
+| Key exchange | NTRUEncrypt |
+| Signature | CRYSTALS-Dilithium |
+| Encryption | Serpent 256 bit CBC |
+| PAKE encryption | Serpent 256 bit GCM |
 
 ## Post quantum safety
 
@@ -107,6 +114,10 @@ These asymmetric algorithms are designed for post quantum cryptography:
 - SPHINCS+ (signature)
 - FrodoKEM (key exchange)
 - NTRUEncrypt (key exchange)
+- Streamlined NTRU Prime (key exchange)
+- BIKE (key exchange)
+- HQC (key exchange)
+- Picnic (signature)
 
 Normally you want to use them in hybrid mode and use classical algorithms of 
 the `wan24-Crypto` package as counter algorithm. To do this per default:
@@ -148,11 +159,23 @@ SignatureContainer signature = dataToSign.Sign(yourNormalPrivateKey, options: op
 
 ## Algorithm parameters used
 
-For CRYSTALS-Kyber and CRYSTALS-Dilithium the non-AES parameters are being 
-used, since the AES parameter sets have been deprecated. When using SPHINCS+, 
-the Haraka simple hashing parameters will be used (since the Haraka robust 
-hashing parameters have been reprecated). For FrodoKEM the AES parameters will 
-be used.
+| Algorithm | Parameters |
+| --------- | ---------- |
+| CRYSTALS-Kyber, CRYSTALS-Dilithium | non-AES |
+| SPHINCS+ | Haraka simple* |
+| FrodoKEM | AES* |
+| Picnic | Full |
+
+**NOTE**: CRYSTALS-Kyber and CRYSTALS-Dilithium AES parameters and SPHINCS+ 
+robust parameters are deprecated! SPHINCS+ Haraka parameters are removed from 
+the FIPS standard, so `wan24-Crypto-BC` will switch to Shake parameters 
+instead. Also the FrodoKEM Shake parameters will be used in the next major 
+release, which will require to renew existing keys, which use the AES 
+parameters from the current version of this library.
+
+**WARNING** The PQC standards are in development at the moment, so future 
+incompatible changes are very likely and will be handled in a new major 
+release of this library.
 
 ## Random data provider
 
@@ -186,8 +209,10 @@ bytes of an underlaying PRNG using a random key. The result is a CSRNG. These
 stream ciphers are available with `wan24-Crypto-BC`, but you could use any 
 other stream cipher (but not AEAD implementations!) also:
 
-- ChaCha20 - `ChaCha20Rng`
-- XSalsa20 - `XSalsa20Rng`
+| Stream cipher | RNG |
+| ------------- | --- |
+| ChaCha20 | `ChaCha20Rng` |
+| XSalsa20 | `XSalsa20Rng` |
 
 If you didn't specify an underlaying PRNG, Bouncy Castle's 
 `VmpcRandomGenerator` will be used and seeded using 256 bytes from `RND`.

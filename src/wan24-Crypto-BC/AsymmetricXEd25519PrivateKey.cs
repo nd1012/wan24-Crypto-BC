@@ -40,6 +40,12 @@ namespace wan24.Crypto.BC
         /// <param name="keys">Keys</param>
         public AsymmetricXEd25519PrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricXEd25519Algorithm.ALGORITHM_NAME, keys) { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        public AsymmetricXEd25519PrivateKey(Ed25519PrivateKeyParameters privateKey) : base(AsymmetricXEd25519Algorithm.ALGORITHM_NAME, privateKey) { }
+
         /// <inheritdoc/>
         public override AsymmetricXEd25519PublicKey PublicKey
         {

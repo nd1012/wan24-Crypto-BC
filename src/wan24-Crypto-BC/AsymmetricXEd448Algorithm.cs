@@ -8,7 +8,7 @@ using wan24.Core;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// XEd448 asymmetric algorithm (converts the used Ed448 private key to a X448 private key for key exchange)
+    /// XEd448 asymmetric algorithm (converts the used Ed448 private key to a X448 private key for key exchange; 224 bit security)
     /// </summary>
     public sealed record class AsymmetricXEd448Algorithm
          : BouncyCastleAsymmetricAlgorithmBase<

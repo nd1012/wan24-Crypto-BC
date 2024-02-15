@@ -1,29 +1,31 @@
-﻿using Org.BouncyCastle.Pqc.Crypto.Crystals.Dilithium;
+﻿using Org.BouncyCastle.Pqc.Crypto.Hqc;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// CRYSTALS-Dilithium asymmetric public key
+    /// HQC asymmetric public key
     /// </summary>
-    public sealed record class AsymmetricDilithiumPublicKey
-        : BouncyCastleAsymmetricPqcPublicSignatureKeyBase<AsymmetricDilithiumAlgorithm, DilithiumPublicKeyParameters, DilithiumSigner, AsymmetricDilithiumPublicKey>
+    public sealed record class AsymmetricHqcPublicKey : BouncyCastleAsymmetricPqcPublicKeyBase<AsymmetricHqcAlgorithm, HqcPublicKeyParameters, AsymmetricHqcPublicKey>
     {
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricDilithiumPublicKey() : base(AsymmetricDilithiumAlgorithm.ALGORITHM_NAME) { }
+        public AsymmetricHqcPublicKey() : base(AsymmetricHqcAlgorithm.ALGORITHM_NAME) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="keyData">Key data</param>
-        public AsymmetricDilithiumPublicKey(byte[] keyData) : base(AsymmetricDilithiumAlgorithm.ALGORITHM_NAME, keyData) { }
+        public AsymmetricHqcPublicKey(byte[] keyData) : base(AsymmetricHqcAlgorithm.ALGORITHM_NAME, keyData) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="publicKey">Public key</param>
-        public AsymmetricDilithiumPublicKey(DilithiumPublicKeyParameters publicKey) : base(AsymmetricDilithiumAlgorithm.ALGORITHM_NAME, publicKey) { }
+        public AsymmetricHqcPublicKey(HqcPublicKeyParameters publicKey) : base(AsymmetricHqcAlgorithm.ALGORITHM_NAME, publicKey) { }
+
+        /// <inheritdoc/>
+        new public static bool IsBcImportExportImplemented => false;
 
         /// <inheritdoc/>
         public override int Bits
@@ -34,7 +36,7 @@ namespace wan24.Crypto.BC
                 {
                     EnsureUndisposed();
                     if (_PublicKey is null) throw new InvalidOperationException();
-                    return AsymmetricDilithiumHelper.GetKeySize(_PublicKey.Parameters);
+                    return AsymmetricHqcHelper.GetKeySize(_PublicKey.Parameters);
                 }
                 catch (CryptographicException)
                 {
@@ -51,6 +53,6 @@ namespace wan24.Crypto.BC
         /// Cast from serialized data
         /// </summary>
         /// <param name="data">Data</param>
-        public static explicit operator AsymmetricDilithiumPublicKey(byte[] data) => Import<AsymmetricDilithiumPublicKey>(data);
+        public static explicit operator AsymmetricHqcPublicKey(byte[] data) => Import<AsymmetricHqcPublicKey>(data);
     }
 }

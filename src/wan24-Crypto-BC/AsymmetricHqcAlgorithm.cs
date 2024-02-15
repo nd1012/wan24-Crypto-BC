@@ -1,35 +1,35 @@
-﻿using Org.BouncyCastle.Pqc.Crypto.Ntru;
+﻿using Org.BouncyCastle.Pqc.Crypto.Hqc;
 using System.Collections.ObjectModel;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// NTRUEncrypt asymmetric algorithm
+    /// HQC asymmetric algorithm
     /// </summary>
-    public sealed record class AsymmetricNtruEncryptAlgorithm
+    public sealed record class AsymmetricHqcAlgorithm
         : BouncyCastleAsymmetricAlgorithmBase<
-            AsymmetricNtruEncryptPublicKey,
-            AsymmetricNtruEncryptPrivateKey,
-            NtruKeyPairGenerator,
-            NtruKeyGenerationParameters,
-            NtruParameters,
-            NtruPublicKeyParameters,
-            NtruPrivateKeyParameters,
-            AsymmetricNtruEncryptAlgorithm
+            AsymmetricHqcPublicKey,
+            AsymmetricHqcPrivateKey,
+            HqcKeyPairGenerator,
+            HqcKeyGenerationParameters,
+            HqcParameters,
+            HqcPublicKeyParameters,
+            HqcPrivateKeyParameters,
+            AsymmetricHqcAlgorithm
             >
     {
         /// <summary>
         /// Algorithm name
         /// </summary>
-        public const string ALGORITHM_NAME = "NTRUENCRYPT";
+        public const string ALGORITHM_NAME = "HQC";
         /// <summary>
         /// Algorithm value
         /// </summary>
-        public const int ALGORITHM_VALUE = 7;
+        public const int ALGORITHM_VALUE = 16;
         /// <summary>
         /// Default key size in bits
         /// </summary>
-        public const int DEFAULT_KEY_SIZE = 701;
+        public const int DEFAULT_KEY_SIZE = 256;
         /// <summary>
         /// Algorithm usages
         /// </summary>
@@ -37,7 +37,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Display name
         /// </summary>
-        public const string DISPLAY_NAME = "NTRUEncrypt";
+        public const string DISPLAY_NAME = "HQC";
 
         /// <summary>
         /// Allowed key sizes in bits
@@ -47,18 +47,17 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Static constructor
         /// </summary>
-        static AsymmetricNtruEncryptAlgorithm() => _AllowedKeySizes = new List<int>()
+        static AsymmetricHqcAlgorithm() => _AllowedKeySizes = new List<int>()
         {
-            509,// 128 bit security
-            677,// 192 bit security
-            701,// 256 bit security
-            821// 123 bit security
+            128,// 128 bit security
+            192,// 192 bit security
+            256// 256 bit security
         }.AsReadOnly();
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricNtruEncryptAlgorithm()
+        public AsymmetricHqcAlgorithm()
             : base(ALGORITHM_NAME, ALGORITHM_VALUE, USAGES, isEllipticCurveAlgorithm: false, _AllowedKeySizes, isPostQuantum: true, DEFAULT_KEY_SIZE)
         { }
 
@@ -66,6 +65,6 @@ namespace wan24.Crypto.BC
         public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
-        protected override NtruParameters GetEngineParameters(CryptoOptions options) => AsymmetricNtruHelper.GetParameters(options.AsymmetricKeyBits);
+        protected override HqcParameters GetEngineParameters(CryptoOptions options) => AsymmetricHqcHelper.GetParameters(options.AsymmetricKeyBits);
     }
 }

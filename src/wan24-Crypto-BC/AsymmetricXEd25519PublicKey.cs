@@ -40,6 +40,9 @@ namespace wan24.Crypto.BC
         }
 
         /// <inheritdoc/>
+        new public static bool IsBcImportExportImplemented => false;
+
+        /// <inheritdoc/>
         public override int Bits
         {
             get

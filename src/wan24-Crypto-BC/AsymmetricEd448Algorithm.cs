@@ -8,7 +8,7 @@ using wan24.Core;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// Ed448 asymmetric algorithm
+    /// Ed448 asymmetric algorithm (224 bit security)
     /// </summary>
     public sealed record class AsymmetricEd448Algorithm
          : BouncyCastleAsymmetricAlgorithmBase<

@@ -34,6 +34,12 @@ namespace wan24.Crypto.BC
         /// <param name="keys">Keys</param>
         public AsymmetricFalconPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricFalconAlgorithm.ALGORITHM_NAME, keys) { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        public AsymmetricFalconPrivateKey(FalconPrivateKeyParameters privateKey) : base(AsymmetricFalconAlgorithm.ALGORITHM_NAME, privateKey) { }
+
         /// <inheritdoc/>
         protected override FalconPublicKeyParameters GetPublicKey(FalconPrivateKeyParameters privateKey) => new(privateKey.Parameters, privateKey.GetPublicKey());
 
