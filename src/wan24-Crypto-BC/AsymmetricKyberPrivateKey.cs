@@ -36,6 +36,9 @@ namespace wan24.Crypto.BC
         public AsymmetricKyberPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricKyberAlgorithm.ALGORITHM_NAME, keys) { }
 
         /// <inheritdoc/>
+        new public static bool IsBcImportExportImplemented => false;
+
+        /// <inheritdoc/>
         protected override byte[] SerializeKeyData() => SerializeFullKeyData();
 
         /// <inheritdoc/>

@@ -46,6 +46,9 @@ namespace wan24.Crypto.BC
         public AsymmetricXEd448PublicKey(Ed448PublicKeyParameters publicKey) : base(AsymmetricXEd448Algorithm.ALGORITHM_NAME, publicKey) { }
 
         /// <inheritdoc/>
+        new public static bool IsBcImportExportImplemented => false;
+
+        /// <inheritdoc/>
         public override int Bits
         {
             get

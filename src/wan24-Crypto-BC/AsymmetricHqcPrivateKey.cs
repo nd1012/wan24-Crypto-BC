@@ -1,39 +1,39 @@
 ﻿using Org.BouncyCastle.Crypto;
-using Org.BouncyCastle.Pqc.Crypto.Frodo;
+using Org.BouncyCastle.Pqc.Crypto.Hqc;
 using wan24.Core;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// FrodoKEM asymmetric private key
+    /// HQC asymmetric private key
     /// </summary>
-    public sealed record class AsymmetricFrodoKemPrivateKey
+    public sealed record class AsymmetricHqcPrivateKey
         : BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase<
-            AsymmetricFrodoKemPublicKey, 
-            AsymmetricFrodoKemAlgorithm, 
-            FrodoPublicKeyParameters, 
-            FrodoPrivateKeyParameters, 
-            FrodoKEMGenerator, 
-            FrodoKEMExtractor, 
-            AsymmetricFrodoKemPrivateKey
+            AsymmetricHqcPublicKey,
+            AsymmetricHqcAlgorithm,
+            HqcPublicKeyParameters,
+            HqcPrivateKeyParameters,
+            HqcKemGenerator,
+            HqcKemExtractor,
+            AsymmetricHqcPrivateKey
             >
     {
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricFrodoKemPrivateKey() : base(AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME) { }
+        public AsymmetricHqcPrivateKey() : base(AsymmetricHqcAlgorithm.ALGORITHM_NAME) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="keyData">Key data</param>
-        public AsymmetricFrodoKemPrivateKey(byte[] keyData) : base(AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME, keyData) { }
+        public AsymmetricHqcPrivateKey(byte[] keyData) : base(AsymmetricHqcAlgorithm.ALGORITHM_NAME, keyData) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="keys">Keys</param>
-        public AsymmetricFrodoKemPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME, keys) { }
+        public AsymmetricHqcPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricHqcAlgorithm.ALGORITHM_NAME, keys) { }
 
         /// <inheritdoc/>
         new public static bool IsBcImportExportImplemented => false;
@@ -45,7 +45,7 @@ namespace wan24.Crypto.BC
         protected override void DeserializeKeyData() => DeserializeFullKeyData();
 
         /// <inheritdoc/>
-        protected override FrodoPublicKeyParameters GetPublicKey(FrodoPrivateKeyParameters privateKey) => throw new NotSupportedException();
+        protected override HqcPublicKeyParameters GetPublicKey(HqcPrivateKeyParameters privateKey) => throw new NotSupportedException();
 
         /// <inheritdoc/>
         protected override void Dispose(bool disposing)
@@ -65,12 +65,12 @@ namespace wan24.Crypto.BC
         /// Cast to public key
         /// </summary>
         /// <param name="privateKey">Private key</param>
-        public static implicit operator AsymmetricFrodoKemPublicKey(AsymmetricFrodoKemPrivateKey privateKey) => privateKey.PublicKey;
+        public static implicit operator AsymmetricHqcPublicKey(AsymmetricHqcPrivateKey privateKey) => privateKey.PublicKey;
 
         /// <summary>
         /// Cast from serialized data
         /// </summary>
         /// <param name="data">Data</param>
-        public static explicit operator AsymmetricFrodoKemPrivateKey(byte[] data) => Import<AsymmetricFrodoKemPrivateKey>(data);
+        public static explicit operator AsymmetricHqcPrivateKey(byte[] data) => Import<AsymmetricHqcPrivateKey>(data);
     }
 }

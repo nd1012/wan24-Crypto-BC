@@ -49,8 +49,8 @@ namespace wan24.Crypto.BC
         /// </summary>
         static AsymmetricFalconAlgorithm() => _AllowedKeySizes = new List<int>()
         {
-            512,
-            1024
+            512,// 128 bit security
+            1024// 224 bit security
         }.AsReadOnly();
 
         /// <summary>

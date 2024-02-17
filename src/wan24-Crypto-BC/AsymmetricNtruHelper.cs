@@ -1,5 +1,7 @@
 ﻿using Org.BouncyCastle.Pqc.Crypto.Ntru;
 
+//TODO PqcPrivateKeyInfoFactory.CreatePrivateKeyInfo doesn't support NtruPrivateKeyParameters !? (waiting for a fix and an update of the NuGet package at present)
+
 namespace wan24.Crypto.BC
 {
     /// <summary>

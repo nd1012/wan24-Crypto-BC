@@ -41,6 +41,13 @@ namespace wan24.Crypto.BC
         /// <param name="keys">Keys</param>
         protected BouncyCastleAsymmetricPqcPrivateSignatureKeyBase(string algorithm, AsymmetricCipherKeyPair keys) : base(algorithm, keys) { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="algorithm">Algorithm name</param>
+        /// <param name="privateKey">Private key</param>
+        protected BouncyCastleAsymmetricPqcPrivateSignatureKeyBase(string algorithm, tPrivateKey privateKey) : base(algorithm, privateKey) { }
+
         /// <inheritdoc/>
         public sealed override byte[] SignHashRaw(byte[] hash)
         {

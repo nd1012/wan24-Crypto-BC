@@ -8,7 +8,7 @@ using wan24.Core;
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// XEd25519 asymmetric algorithm (converts the used Ed25519 private key to a X25519 private key for key exchange)
+    /// XEd25519 asymmetric algorithm (converts the used Ed25519 private key to a X25519 private key for key exchange, 128 bit security)
     /// </summary>
     public sealed record class AsymmetricXEd25519Algorithm
          : BouncyCastleAsymmetricAlgorithmBase<

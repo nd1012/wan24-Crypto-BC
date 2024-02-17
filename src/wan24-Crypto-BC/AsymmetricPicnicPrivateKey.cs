@@ -1,39 +1,38 @@
 ﻿using Org.BouncyCastle.Crypto;
-using Org.BouncyCastle.Pqc.Crypto.Frodo;
+using Org.BouncyCastle.Pqc.Crypto.Picnic;
 using wan24.Core;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// FrodoKEM asymmetric private key
+    /// Picnic asymmetric private key
     /// </summary>
-    public sealed record class AsymmetricFrodoKemPrivateKey
-        : BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase<
-            AsymmetricFrodoKemPublicKey, 
-            AsymmetricFrodoKemAlgorithm, 
-            FrodoPublicKeyParameters, 
-            FrodoPrivateKeyParameters, 
-            FrodoKEMGenerator, 
-            FrodoKEMExtractor, 
-            AsymmetricFrodoKemPrivateKey
+    public sealed record class AsymmetricPicnicPrivateKey
+        : BouncyCastleAsymmetricPqcPrivateSignatureKeyBase<
+            AsymmetricPicnicPublicKey,
+            AsymmetricPicnicAlgorithm,
+            PicnicPublicKeyParameters,
+            PicnicPrivateKeyParameters,
+            PicnicSigner,
+            AsymmetricPicnicPrivateKey
             >
     {
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricFrodoKemPrivateKey() : base(AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME) { }
+        public AsymmetricPicnicPrivateKey() : base(AsymmetricPicnicAlgorithm.ALGORITHM_NAME) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="keyData">Key data</param>
-        public AsymmetricFrodoKemPrivateKey(byte[] keyData) : base(AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME, keyData) { }
+        public AsymmetricPicnicPrivateKey(byte[] keyData) : base(AsymmetricPicnicAlgorithm.ALGORITHM_NAME, keyData) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="keys">Keys</param>
-        public AsymmetricFrodoKemPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME, keys) { }
+        public AsymmetricPicnicPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricPicnicAlgorithm.ALGORITHM_NAME, keys) { }
 
         /// <inheritdoc/>
         new public static bool IsBcImportExportImplemented => false;
@@ -45,7 +44,7 @@ namespace wan24.Crypto.BC
         protected override void DeserializeKeyData() => DeserializeFullKeyData();
 
         /// <inheritdoc/>
-        protected override FrodoPublicKeyParameters GetPublicKey(FrodoPrivateKeyParameters privateKey) => throw new NotSupportedException();
+        protected override PicnicPublicKeyParameters GetPublicKey(PicnicPrivateKeyParameters privateKey) => throw new NotSupportedException();
 
         /// <inheritdoc/>
         protected override void Dispose(bool disposing)
@@ -65,12 +64,12 @@ namespace wan24.Crypto.BC
         /// Cast to public key
         /// </summary>
         /// <param name="privateKey">Private key</param>
-        public static implicit operator AsymmetricFrodoKemPublicKey(AsymmetricFrodoKemPrivateKey privateKey) => privateKey.PublicKey;
+        public static implicit operator AsymmetricPicnicPublicKey(AsymmetricPicnicPrivateKey privateKey) => privateKey.PublicKey;
 
         /// <summary>
         /// Cast from serialized data
         /// </summary>
         /// <param name="data">Data</param>
-        public static explicit operator AsymmetricFrodoKemPrivateKey(byte[] data) => Import<AsymmetricFrodoKemPrivateKey>(data);
+        public static explicit operator AsymmetricPicnicPrivateKey(byte[] data) => Import<AsymmetricPicnicPrivateKey>(data);
     }
 }

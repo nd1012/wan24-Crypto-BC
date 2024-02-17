@@ -18,7 +18,7 @@ namespace wan24.Crypto.BC
     /// <typeparam name="tPrivateKey">Private key type</typeparam>
     /// <typeparam name="tFinal">Final type</typeparam>
     public abstract record class BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>
-        : AsymmetricAlgorithmBase<tPublic, tPrivate>
+        : BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>
         where tPublic : BouncyCastleAsymmetricPublicKeyBase<tFinal, tPublicKey, tPublic>, new()
         where tPrivate : BouncyCastleAsymmetricPrivateKeyBase<tPublic, tFinal, tPublicKey, tPrivateKey, tPrivate>, new()
         where tKeyGen : IAsymmetricCipherKeyPairGenerator, new()
@@ -26,6 +26,70 @@ namespace wan24.Crypto.BC
         where tPublicKey : AsymmetricKeyParameter, ICipherParameters
         where tPrivateKey : AsymmetricKeyParameter
         where tFinal : BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>, new()
+    {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="name">Algorithm name</param>
+        /// <param name="value">Algorithm value</param>
+        /// <param name="usages">Algorithm usages</param>
+        /// <param name="isEllipticCurveAlgorithm">Is an elliptic curve algorithm?</param>
+        /// <param name="allowedKeySizes">Allowed key sizes in bits</param>
+        /// <param name="isPostQuantum">Is a post quantum-safe algorithm?</param>
+        /// <param name="defaultKeySize">Default key size in bits</param>
+        protected BouncyCastleAsymmetricAlgorithmBase(
+            string name,
+            int value,
+            AsymmetricAlgorithmUsages usages,
+            bool isEllipticCurveAlgorithm,
+            ReadOnlyCollection<int> allowedKeySizes,
+            bool isPostQuantum,
+            int defaultKeySize
+            )
+            : base(name, value, usages, isEllipticCurveAlgorithm, allowedKeySizes, isPostQuantum, defaultKeySize)
+        { }
+
+        /// <inheritdoc/>
+        public override tPrivate CreateKeyPair(CryptoOptions? options = null)
+        {
+            try
+            {
+                options ??= DefaultOptions;
+                if (!options.AsymmetricKeyBits.In(AllowedKeySizes)) throw new ArgumentException("Invalid key size", nameof(options));
+                tKeyGen keyGen = new();
+                keyGen.Init(CreateKeyGenParameters(new SecureRandom(BouncyCastleRandomGenerator.Instance()), GetEngineParameters(options), options));
+                return Activator.CreateInstance(typeof(tPrivate), keyGen.GenerateKeyPair()) as tPrivate
+                    ?? throw new InvalidProgramException($"Failed to instance asymmetric private key {typeof(tPrivate)}");
+            }
+            catch (CryptographicException)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Base class for a Bouncy Castle asymmetric algorithm
+    /// </summary>
+    /// <typeparam name="tPublic">Public key type</typeparam>
+    /// <typeparam name="tPrivate">Private key type</typeparam>
+    /// <typeparam name="tKeyGenParam">Key generator parameters type</typeparam>
+    /// <typeparam name="tParam">Key parameters type</typeparam>
+    /// <typeparam name="tPublicKey">Public key type</typeparam>
+    /// <typeparam name="tPrivateKey">Private key type</typeparam>
+    /// <typeparam name="tFinal">Final type</typeparam>
+    public abstract record class BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>
+        : AsymmetricAlgorithmBase<tPublic, tPrivate>
+        where tPublic : BouncyCastleAsymmetricPublicKeyBase<tFinal, tPublicKey, tPublic>, new()
+        where tPrivate : BouncyCastleAsymmetricPrivateKeyBase<tPublic, tFinal, tPublicKey, tPrivateKey, tPrivate>, new()
+        where tKeyGenParam : KeyGenerationParameters
+        where tPublicKey : AsymmetricKeyParameter, ICipherParameters
+        where tPrivateKey : AsymmetricKeyParameter
+        where tFinal : BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>, new()
     {
         /// <summary>
         /// Static constructor
@@ -76,28 +140,6 @@ namespace wan24.Crypto.BC
 
         /// <inheritdoc/>
         public sealed override bool IsPostQuantum { get; }
-
-        /// <inheritdoc/>
-        public override tPrivate CreateKeyPair(CryptoOptions? options = null)
-        {
-            try
-            {
-                options ??= DefaultOptions;
-                if (!options.AsymmetricKeyBits.In(AllowedKeySizes)) throw new ArgumentException("Invalid key size", nameof(options));
-                tKeyGen keyGen = new();
-                keyGen.Init(CreateKeyGenParameters(new SecureRandom(BouncyCastleRandomGenerator.Instance()), GetEngineParameters(options), options));
-                return Activator.CreateInstance(typeof(tPrivate), keyGen.GenerateKeyPair()) as tPrivate
-                    ?? throw new InvalidProgramException($"Failed to instance asymmetric private key {typeof(tPrivate)}");
-            }
-            catch (CryptographicException)
-            {
-                throw;
-            }
-            catch (Exception ex)
-            {
-                throw CryptographicException.From(ex);
-            }
-        }
 
         /// <inheritdoc/>
         public override tPrivate DeserializePrivateKeyV1(byte[] keyData) => throw new NotSupportedException();

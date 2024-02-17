@@ -35,6 +35,21 @@ namespace wan24.Crypto.BC
         protected BouncyCastleAsymmetricPqcPublicKeyBase(string algorithm, tPublicKey publicKey) : base(algorithm, publicKey) { }
 
         /// <inheritdoc/>
+        public override byte[] ExportBc()
+        {
+            try
+            {
+                EnsureUndisposed();
+                if (_PublicKey is null) throw new InvalidOperationException();
+                return PqcSubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(_PublicKey).GetDerEncoded();
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
+        /// <inheritdoc/>
         protected override byte[] SerializeKeyData()
         {
             try
@@ -64,6 +79,21 @@ namespace wan24.Crypto.BC
             catch (CryptographicException)
             {
                 throw;
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
+        /// <inheritdoc/>
+        new public static tFinal ImportBc(in byte[] keyInfo)
+        {
+            try
+            {
+                return (tFinal)(Activator.CreateInstance(typeof(tFinal), PqcPublicKeyFactory.CreateKey(keyInfo) as tPublicKey
+                    ?? throw new InvalidDataException())
+                    ?? throw new InvalidProgramException($"Failed to instance {typeof(tFinal)}"));
             }
             catch (Exception ex)
             {

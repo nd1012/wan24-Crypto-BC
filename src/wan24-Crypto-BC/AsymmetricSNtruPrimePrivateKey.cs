@@ -1,40 +1,40 @@
 ﻿using Org.BouncyCastle.Crypto;
-using Org.BouncyCastle.Pqc.Crypto.Ntru;
+using Org.BouncyCastle.Pqc.Crypto.NtruPrime;
 using wan24.Core;
 using wan24.StreamSerializerExtensions;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// NTRUEncrypt asymmetric private key
+    /// Streamlined NTRU Prime asymmetric private key
     /// </summary>
-    public sealed record class AsymmetricNtruEncryptPrivateKey
+    public sealed record class AsymmetricSNtruPrimePrivateKey
         : BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase<
-            AsymmetricNtruEncryptPublicKey,
-            AsymmetricNtruEncryptAlgorithm,
-            NtruPublicKeyParameters,
-            NtruPrivateKeyParameters,
-            NtruKemGenerator,
-            NtruKemExtractor,
-            AsymmetricNtruEncryptPrivateKey
+            AsymmetricSNtruPrimePublicKey,
+            AsymmetricSNtruPrimeAlgorithm,
+            SNtruPrimePublicKeyParameters,
+            SNtruPrimePrivateKeyParameters,
+            SNtruPrimeKemGenerator,
+            SNtruPrimeKemExtractor,
+            AsymmetricSNtruPrimePrivateKey
             >
     {
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricNtruEncryptPrivateKey() : base(AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME) { }
+        public AsymmetricSNtruPrimePrivateKey() : base(AsymmetricSNtruPrimeAlgorithm.ALGORITHM_NAME) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="keyData">Key data</param>
-        public AsymmetricNtruEncryptPrivateKey(byte[] keyData) : base(AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME, keyData) { }
+        public AsymmetricSNtruPrimePrivateKey(byte[] keyData) : base(AsymmetricSNtruPrimeAlgorithm.ALGORITHM_NAME, keyData) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="keys">Keys</param>
-        public AsymmetricNtruEncryptPrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME, keys) { }
+        public AsymmetricSNtruPrimePrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricSNtruPrimeAlgorithm.ALGORITHM_NAME, keys) { }
 
         /// <inheritdoc/>
         new public static bool IsBcImportExportImplemented => false;
@@ -50,8 +50,8 @@ namespace wan24.Crypto.BC
                 {
                     CleanReturned = true
                 };
-                using SecureByteArray privateKey = new((Keys.Private as NtruPrivateKeyParameters)!.PrivateKey);
-                using SecureByteArray publicKey = new((Keys.Public as NtruPublicKeyParameters)!.PublicKey);
+                using SecureByteArray privateKey = new((Keys.Private as SNtruPrimePrivateKeyParameters)!.GetPrivateKey());
+                using SecureByteArray publicKey = new((Keys.Public as SNtruPrimePublicKeyParameters)!.GetPublicKey());
                 ms.WriteSerializerVersion()
                     .WriteNumber(Bits)
                     .WriteBytes(privateKey.Array)
@@ -74,13 +74,13 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
-                NtruPrivateKeyParameters? privateKey = null;
-                NtruPublicKeyParameters? publicKey = null;
+                SNtruPrimePrivateKeyParameters? privateKey = null;
+                SNtruPrimePublicKeyParameters? publicKey = null;
                 try
                 {
                     using MemoryStream ms = new(KeyData.Array);
                     int ssv = ms.ReadSerializerVersion();
-                    NtruParameters param = AsymmetricNtruHelper.GetParameters(ms.ReadNumber<int>(ssv));
+                    SNtruPrimeParameters param = AsymmetricSNtruPrimeHelper.GetParameters(ms.ReadNumber<int>(ssv));
                     privateKey = new(param, ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
                     publicKey = new(param, ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
                     Keys = new(publicKey, privateKey);
@@ -103,7 +103,7 @@ namespace wan24.Crypto.BC
         }
 
         /// <inheritdoc/>
-        protected override NtruPublicKeyParameters GetPublicKey(NtruPrivateKeyParameters privateKey) => throw new NotSupportedException();
+        protected override SNtruPrimePublicKeyParameters GetPublicKey(SNtruPrimePrivateKeyParameters privateKey) => throw new NotSupportedException();
 
         /// <inheritdoc/>
         protected override void Dispose(bool disposing)
@@ -123,12 +123,12 @@ namespace wan24.Crypto.BC
         /// Cast to public key
         /// </summary>
         /// <param name="privateKey">Private key</param>
-        public static implicit operator AsymmetricNtruEncryptPublicKey(AsymmetricNtruEncryptPrivateKey privateKey) => privateKey.PublicKey;
+        public static implicit operator AsymmetricSNtruPrimePublicKey(AsymmetricSNtruPrimePrivateKey privateKey) => privateKey.PublicKey;
 
         /// <summary>
         /// Cast from serialized data
         /// </summary>
         /// <param name="data">Data</param>
-        public static explicit operator AsymmetricNtruEncryptPrivateKey(byte[] data) => Import<AsymmetricNtruEncryptPrivateKey>(data);
+        public static explicit operator AsymmetricSNtruPrimePrivateKey(byte[] data) => Import<AsymmetricSNtruPrimePrivateKey>(data);
     }
 }

@@ -1,5 +1,7 @@
 ﻿using Org.BouncyCastle.Pqc.Crypto.Frodo;
 
+//TODO Use FalconKEM Shake parameter sets in newer version, use key complexity instead of session key size in bits as "key size"
+
 namespace wan24.Crypto.BC
 {
     /// <summary>

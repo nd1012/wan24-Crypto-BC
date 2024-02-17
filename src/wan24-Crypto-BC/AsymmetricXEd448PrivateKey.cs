@@ -40,6 +40,12 @@ namespace wan24.Crypto.BC
         /// <param name="keys">Keys</param>
         public AsymmetricXEd448PrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricXEd448Algorithm.ALGORITHM_NAME, keys) { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        public AsymmetricXEd448PrivateKey(Ed448PrivateKeyParameters privateKey) : base(AsymmetricXEd448Algorithm.ALGORITHM_NAME, privateKey) { }
+
         /// <inheritdoc/>
         public override AsymmetricXEd448PublicKey PublicKey
         {
@@ -49,8 +55,7 @@ namespace wan24.Crypto.BC
                 {
                     EnsureUndisposed();
                     if (Keys is null) throw new InvalidOperationException();
-                    return _PublicKey ??= Activator.CreateInstance(typeof(AsymmetricXEd448PublicKey), Keys.Public, GetX448Key().PublicKey) as AsymmetricXEd448PublicKey
-                        ?? throw new InvalidProgramException($"Failed to instance {typeof(AsymmetricXEd448PublicKey)}");
+                    return _PublicKey ??= new((Keys.Public as Ed448PublicKeyParameters)!, GetX448Key().PublicKey);
                 }
                 catch (CryptographicException)
                 {
@@ -139,6 +144,7 @@ namespace wan24.Crypto.BC
         private AsymmetricX448PrivateKey GetX448Key()
         {
             EnsureUndisposed();
+            if (X448Key is not null) return X448Key;
             if (Keys?.Private is not Ed448PrivateKeyParameters privateKey) throw new InvalidOperationException();
             X448PrivateKeyParameters pk = privateKey.ToX448PrivateKey();
             return X448Key = new(new AsymmetricCipherKeyPair(pk.GeneratePublicKey(), pk));

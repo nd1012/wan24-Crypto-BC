@@ -44,6 +44,13 @@ namespace wan24.Crypto.BC
         /// <param name="keys">Keys</param>
         protected BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase(string algorithm, AsymmetricCipherKeyPair keys) : base(algorithm, keys) { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="algorithm">Algorithm name</param>
+        /// <param name="privateKey">Private key</param>
+        protected BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase(string algorithm, tPrivateKey privateKey) : base(algorithm, privateKey) { }
+
         /// <inheritdoc/>
         public override (byte[] Key, byte[] KeyExchangeData) GetKeyExchangeData(IAsymmetricPublicKey? publicKey = null, CryptoOptions? options = null)
         {

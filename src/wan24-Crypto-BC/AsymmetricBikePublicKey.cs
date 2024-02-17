@@ -1,29 +1,31 @@
-﻿using Org.BouncyCastle.Pqc.Crypto.Crystals.Dilithium;
+﻿using Org.BouncyCastle.Pqc.Crypto.Bike;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// CRYSTALS-Dilithium asymmetric public key
+    /// BIKE asymmetric public key
     /// </summary>
-    public sealed record class AsymmetricDilithiumPublicKey
-        : BouncyCastleAsymmetricPqcPublicSignatureKeyBase<AsymmetricDilithiumAlgorithm, DilithiumPublicKeyParameters, DilithiumSigner, AsymmetricDilithiumPublicKey>
+    public sealed record class AsymmetricBikePublicKey : BouncyCastleAsymmetricPqcPublicKeyBase<AsymmetricBikeAlgorithm, BikePublicKeyParameters, AsymmetricBikePublicKey>
     {
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricDilithiumPublicKey() : base(AsymmetricDilithiumAlgorithm.ALGORITHM_NAME) { }
+        public AsymmetricBikePublicKey() : base(AsymmetricBikeAlgorithm.ALGORITHM_NAME) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="keyData">Key data</param>
-        public AsymmetricDilithiumPublicKey(byte[] keyData) : base(AsymmetricDilithiumAlgorithm.ALGORITHM_NAME, keyData) { }
+        public AsymmetricBikePublicKey(byte[] keyData) : base(AsymmetricBikeAlgorithm.ALGORITHM_NAME, keyData) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="publicKey">Public key</param>
-        public AsymmetricDilithiumPublicKey(DilithiumPublicKeyParameters publicKey) : base(AsymmetricDilithiumAlgorithm.ALGORITHM_NAME, publicKey) { }
+        public AsymmetricBikePublicKey(BikePublicKeyParameters publicKey) : base(AsymmetricBikeAlgorithm.ALGORITHM_NAME, publicKey) { }
+
+        /// <inheritdoc/>
+        new public static bool IsBcImportExportImplemented => false;
 
         /// <inheritdoc/>
         public override int Bits
@@ -34,7 +36,7 @@ namespace wan24.Crypto.BC
                 {
                     EnsureUndisposed();
                     if (_PublicKey is null) throw new InvalidOperationException();
-                    return AsymmetricDilithiumHelper.GetKeySize(_PublicKey.Parameters);
+                    return AsymmetricBikeHelper.GetKeySize(_PublicKey.Parameters);
                 }
                 catch (CryptographicException)
                 {
@@ -51,6 +53,6 @@ namespace wan24.Crypto.BC
         /// Cast from serialized data
         /// </summary>
         /// <param name="data">Data</param>
-        public static explicit operator AsymmetricDilithiumPublicKey(byte[] data) => Import<AsymmetricDilithiumPublicKey>(data);
+        public static explicit operator AsymmetricBikePublicKey(byte[] data) => Import<AsymmetricBikePublicKey>(data);
     }
 }

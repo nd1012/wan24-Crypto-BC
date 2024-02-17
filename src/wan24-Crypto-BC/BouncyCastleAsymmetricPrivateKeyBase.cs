@@ -1,4 +1,6 @@
 ﻿using Org.BouncyCastle.Crypto;
+using Org.BouncyCastle.Pkcs;
+using Org.BouncyCastle.Security;
 
 namespace wan24.Crypto.BC
 {
@@ -48,9 +50,9 @@ namespace wan24.Crypto.BC
         {
             try
             {
-                Keys = keys;
                 if (keys.Public is not tPublicKey) throw new ArgumentException("No valid public key parameters", nameof(keys));
                 if (keys.Private is not tPrivateKey) throw new ArgumentException("No valid private key parameters", nameof(keys));
+                Keys = keys;
                 KeyData = new(SerializeKeyData());
             }
             catch (CryptographicException)
@@ -62,6 +64,33 @@ namespace wan24.Crypto.BC
                 throw CryptographicException.From(ex);
             }
         }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="algorithm">Algorithm name</param>
+        /// <param name="privateKey">Private key</param>
+        protected BouncyCastleAsymmetricPrivateKeyBase(string algorithm, tPrivateKey privateKey) : this(algorithm)
+        {
+            try
+            {
+                Keys = new(GetPublicKey(privateKey), privateKey);
+                KeyData = new(SerializeKeyData());
+            }
+            catch (CryptographicException)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
+        /// <summary>
+        /// Is the key info export/import implemented in the Bouncy Castle library AND <c>wan24-Crypto-BC</c>?
+        /// </summary>
+        public static bool IsBcImportExportImplemented { get; } = true;
 
         /// <summary>
         /// Private key
@@ -114,6 +143,25 @@ namespace wan24.Crypto.BC
         public override int Bits => PublicKey.Bits;
 
         /// <summary>
+        /// Export the key in Bouncy Castle format, if possible
+        /// </summary>
+        /// <returns>Serialized key data (DER encoded; don't forget to clear!)</returns>
+        public virtual byte[] ExportBc()
+        {
+            try
+            {
+                EnsureUndisposed();
+                if (!IsBcImportExportImplemented) throw new NotSupportedException();
+                if (Keys is null) throw new InvalidOperationException();
+                return PrivateKeyInfoFactory.CreatePrivateKeyInfo(Keys.Private).GetDerEncoded();
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
+        /// <summary>
         /// Serialize the key data
         /// </summary>
         /// <returns>Serialized key data</returns>
@@ -141,5 +189,25 @@ namespace wan24.Crypto.BC
         /// <param name="privateKey">Private key</param>
         /// <returns>Public key</returns>
         protected abstract tPublicKey GetPublicKey(tPrivateKey privateKey);
+
+        /// <summary>
+        /// Import a key in Bouncy Castle format (created by <see cref="ExportBc"/>)
+        /// </summary>
+        /// <param name="keyInfo">Serialized key data (created by <see cref="ExportBc"/>; won't be cleared)</param>
+        /// <returns>Key (don't forget to dispose!)</returns>
+        public static tFinal ImportBc(in byte[] keyInfo)
+        {
+            try
+            {
+                if (!IsBcImportExportImplemented) throw new NotSupportedException();
+                return (tFinal)(Activator.CreateInstance(typeof(tFinal), PrivateKeyFactory.CreateKey(keyInfo) as tPrivateKey
+                    ?? throw new InvalidDataException($"Failed to deserialize {typeof(tPrivateKey)} from the given key data"))
+                    ?? throw new InvalidProgramException($"Failed to instance {typeof(tFinal)}"));
+            }
+            catch (Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
     }
 }

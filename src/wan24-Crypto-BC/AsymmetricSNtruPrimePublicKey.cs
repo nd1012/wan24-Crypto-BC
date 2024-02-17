@@ -1,31 +1,31 @@
-﻿using Org.BouncyCastle.Pqc.Crypto.Ntru;
+﻿using Org.BouncyCastle.Pqc.Crypto.NtruPrime;
 using wan24.Core;
 using wan24.StreamSerializerExtensions;
 
 namespace wan24.Crypto.BC
 {
     /// <summary>
-    /// NTRUEncrypt asymmetric public key
+    /// Streamlined NTRU Prime asymmetric public key
     /// </summary>
-    public sealed record class AsymmetricNtruEncryptPublicKey
-        : BouncyCastleAsymmetricPqcPublicKeyBase<AsymmetricNtruEncryptAlgorithm, NtruPublicKeyParameters, AsymmetricNtruEncryptPublicKey>
+    public sealed record class AsymmetricSNtruPrimePublicKey
+        : BouncyCastleAsymmetricPqcPublicKeyBase<AsymmetricSNtruPrimeAlgorithm, SNtruPrimePublicKeyParameters, AsymmetricSNtruPrimePublicKey>
     {
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricNtruEncryptPublicKey() : base(AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME) { }
+        public AsymmetricSNtruPrimePublicKey() : base(AsymmetricSNtruPrimeAlgorithm.ALGORITHM_NAME) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="keyData">Key data</param>
-        public AsymmetricNtruEncryptPublicKey(byte[] keyData) : base(AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME, keyData) { }
+        public AsymmetricSNtruPrimePublicKey(byte[] keyData) : base(AsymmetricSNtruPrimeAlgorithm.ALGORITHM_NAME, keyData) { }
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="publicKey">Public key</param>
-        public AsymmetricNtruEncryptPublicKey(NtruPublicKeyParameters publicKey) : base(AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME, publicKey) { }
+        public AsymmetricSNtruPrimePublicKey(SNtruPrimePublicKeyParameters publicKey) : base(AsymmetricSNtruPrimeAlgorithm.ALGORITHM_NAME, publicKey) { }
 
         /// <inheritdoc/>
         new public static bool IsBcImportExportImplemented => false;
@@ -39,7 +39,7 @@ namespace wan24.Crypto.BC
                 {
                     EnsureUndisposed();
                     if (_PublicKey is null) throw new InvalidOperationException();
-                    return AsymmetricNtruHelper.GetKeySize(_PublicKey.Parameters);
+                    return AsymmetricSNtruPrimeHelper.GetKeySize(_PublicKey.Parameters);
                 }
                 catch (CryptographicException)
                 {
@@ -63,7 +63,7 @@ namespace wan24.Crypto.BC
                 {
                     CleanReturned = true
                 };
-                using SecureByteArray publicKey = new(_PublicKey.PublicKey);
+                using SecureByteArray publicKey = new(_PublicKey.GetPublicKey());
                 ms.WriteSerializerVersion()
                     .WriteNumber(Bits)
                     .WriteBytes(publicKey.Array);
@@ -87,7 +87,7 @@ namespace wan24.Crypto.BC
                 EnsureUndisposed();
                 using MemoryStream ms = new(KeyData.Array);
                 int ssv = ms.ReadSerializerVersion();
-                NtruParameters param = AsymmetricNtruHelper.GetParameters(ms.ReadNumber<int>(ssv));
+                SNtruPrimeParameters param = AsymmetricSNtruPrimeHelper.GetParameters(ms.ReadNumber<int>(ssv));
                 _PublicKey = new(param, ms.ReadBytes(ssv, minLen: 1, maxLen: ushort.MaxValue).Value);
             }
             catch (CryptographicException)
@@ -104,6 +104,6 @@ namespace wan24.Crypto.BC
         /// Cast from serialized data
         /// </summary>
         /// <param name="data">Data</param>
-        public static explicit operator AsymmetricNtruEncryptPublicKey(byte[] data) => Import<AsymmetricNtruEncryptPublicKey>(data);
+        public static explicit operator AsymmetricSNtruPrimePublicKey(byte[] data) => Import<AsymmetricSNtruPrimePublicKey>(data);
     }
 }

@@ -49,9 +49,9 @@ namespace wan24.Crypto.BC
         /// </summary>
         static AsymmetricSphincsPlusAlgorithm() => _AllowedKeySizes = new List<int>()
         {
-            128,
-            192,
-            256
+            128,// 128 bit security
+            192,// 192 bit security
+            256// 256 bit security
         }.AsReadOnly();
 
         /// <summary>

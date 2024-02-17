@@ -40,6 +40,12 @@ namespace wan24.Crypto.BC
         /// <param name="keys">Keys</param>
         public AsymmetricXEd25519PrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricXEd25519Algorithm.ALGORITHM_NAME, keys) { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        public AsymmetricXEd25519PrivateKey(Ed25519PrivateKeyParameters privateKey) : base(AsymmetricXEd25519Algorithm.ALGORITHM_NAME, privateKey) { }
+
         /// <inheritdoc/>
         public override AsymmetricXEd25519PublicKey PublicKey
         {
@@ -49,8 +55,7 @@ namespace wan24.Crypto.BC
                 {
                     EnsureUndisposed();
                     if (Keys is null) throw new InvalidOperationException();
-                    return _PublicKey ??= Activator.CreateInstance(typeof(AsymmetricXEd25519PublicKey), Keys.Public, GetX25519Key().PublicKey) as AsymmetricXEd25519PublicKey
-                        ?? throw new InvalidProgramException($"Failed to instance {typeof(AsymmetricXEd25519PublicKey)}");
+                    return _PublicKey ??= new((Keys.Public as Ed25519PublicKeyParameters)!, GetX25519Key().PublicKey);
                 }
                 catch (CryptographicException)
                 {
@@ -130,6 +135,7 @@ namespace wan24.Crypto.BC
         private AsymmetricX25519PrivateKey GetX25519Key()
         {
             EnsureUndisposed();
+            if (X25519Key is not null) return X25519Key;
             if (Keys?.Private is not Ed25519PrivateKeyParameters privateKey) throw new InvalidOperationException();
             X25519PrivateKeyParameters pk = privateKey.ToX25519PrivateKey();
             return X25519Key = new(new AsymmetricCipherKeyPair(pk.GeneratePublicKey(), pk));

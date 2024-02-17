@@ -36,6 +36,12 @@ namespace wan24.Crypto.BC
         public AsymmetricEd25519PrivateKey(AsymmetricCipherKeyPair keys) : base(AsymmetricEd25519Algorithm.ALGORITHM_NAME, keys) { }
 
         /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="privateKey">Private key</param>
+        public AsymmetricEd25519PrivateKey(Ed25519PrivateKeyParameters privateKey) : base(AsymmetricEd25519Algorithm.ALGORITHM_NAME, privateKey) { }
+
+        /// <summary>
         /// Create a XEd25519 private key instance
         /// </summary>
         /// <returns>XEd25519 private key (don't forget to dispose!)</returns>

@@ -1,4 +1,7 @@
 ﻿using Org.BouncyCastle.Crypto;
+using Org.BouncyCastle.Security;
+using Org.BouncyCastle.X509;
+using wan24.Core;
 
 namespace wan24.Crypto.BC
 {
@@ -58,6 +61,11 @@ namespace wan24.Crypto.BC
         }
 
         /// <summary>
+        /// Is the key info export/import implemented in the Bouncy Castle library AND <c>wan24-Crypto-BC</c>?
+        /// </summary>
+        public static bool IsBcImportExportImplemented { get; } = true;
+
+        /// <summary>
         /// Public key
         /// </summary>
         public tPublicKey PublicKey
@@ -81,13 +89,32 @@ namespace wan24.Crypto.BC
             }
         }
 
+        /// <summary>
+        /// Export the key in Bouncy Castle format, if possible
+        /// </summary>
+        /// <returns>Serialized key data (DER encoded; don't forget to clear!)</returns>
+        public virtual byte[] ExportBc()
+        {
+            try
+            {
+                EnsureUndisposed();
+                if (!IsBcImportExportImplemented) throw new NotSupportedException();
+                if (_PublicKey is null) throw new InvalidOperationException();
+                return SubjectPublicKeyInfoFactory.CreateSubjectPublicKeyInfo(_PublicKey).GetDerEncoded();
+            }
+            catch(Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
+
         /// <inheritdoc/>
         public sealed override IAsymmetricPublicKey GetCopy()
         {
             try
             {
                 EnsureUndisposed();
-                return Activator.CreateInstance(typeof(tFinal), (byte[])KeyData.Array.Clone()) as IAsymmetricPublicKey
+                return Activator.CreateInstance(typeof(tFinal), KeyData.Array.CloneArray()) as IAsymmetricPublicKey
                     ?? throw new InvalidProgramException($"Failed to instance {typeof(tFinal)}");
             }
             catch (Exception ex)
@@ -106,5 +133,25 @@ namespace wan24.Crypto.BC
         /// Deserialize the key data
         /// </summary>
         protected abstract void DeserializeKeyData();
+
+        /// <summary>
+        /// Import a key in Bouncy Castle format (created by <see cref="ExportBc"/>)
+        /// </summary>
+        /// <param name="keyInfo">Serialized key data (created by <see cref="ExportBc"/>; won't be cleared)</param>
+        /// <returns>Key (don't forget to dispose!)</returns>
+        public static tFinal ImportBc(in byte[] keyInfo)
+        {
+            try
+            {
+                if (!IsBcImportExportImplemented) throw new NotSupportedException();
+                return (tFinal)(Activator.CreateInstance(typeof(tFinal), PublicKeyFactory.CreateKey(keyInfo) as tPublicKey
+                    ?? throw new InvalidDataException())
+                    ?? throw new InvalidProgramException($"Failed to instance {typeof(tFinal)}"));
+            }
+            catch(Exception ex)
+            {
+                throw CryptographicException.From(ex);
+            }
+        }
     }
 }
