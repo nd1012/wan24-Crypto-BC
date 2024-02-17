@@ -87,6 +87,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricBikeAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricBikeAlgorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricBikeHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricBikeHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricBikePrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricBikePrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricBikePublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricBikePublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.yml",
       "output": {
         ".html": {
@@ -267,6 +307,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricHqcAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricHqcAlgorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricHqcHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricHqcHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricHqcPrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricHqcPrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricHqcPublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricHqcPublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.yml",
       "output": {
         ".html": {
@@ -341,6 +421,86 @@
       "output": {
         ".html": {
           "relative_path": "api/wan24.Crypto.BC.AsymmetricNtruHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricPicnicAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricPicnicHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricPicnicHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricPicnicPrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricPicnicPrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricPicnicPublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricPicnicPublicKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricSNtruPrimeHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricSNtruPrimeHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.AsymmetricSNtruPrimePublicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.AsymmetricSNtruPrimePublicKey.html"
         }
       },
       "version": ""
@@ -541,6 +701,16 @@
       "output": {
         ".html": {
           "relative_path": "api/wan24.Crypto.BC.BouncyCastleAeadCipherAlgorithmBase-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html"
         }
       },
       "version": ""

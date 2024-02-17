@@ -101,12 +101,12 @@ the <code>wan24-Crypto</code> library with these algorithms:</p>
 <td>SPHINCSPLUS</td>
 </tr>
 <tr>
-<td>FrodoKEM*</td>
+<td>FrodoKEM</td>
 <td>6</td>
 <td>FRODOKEM</td>
 </tr>
 <tr>
-<td>NTRUEncrypt*</td>
+<td>NTRUEncrypt</td>
 <td>7</td>
 <td>NTRUENCRYPT</td>
 </tr>
@@ -129,6 +129,36 @@ the <code>wan24-Crypto</code> library with these algorithms:</p>
 <td>X448</td>
 <td>11</td>
 <td>X448</td>
+</tr>
+<tr>
+<td>XEd25519</td>
+<td>12</td>
+<td>XED25519</td>
+</tr>
+<tr>
+<td>XEd448</td>
+<td>13</td>
+<td>XED448</td>
+</tr>
+<tr>
+<td>Streamlined NTRU Prime</td>
+<td>14</td>
+<td>SNTRUP</td>
+</tr>
+<tr>
+<td>BIKE</td>
+<td>15</td>
+<td>BIKE</td>
+</tr>
+<tr>
+<td>HQC</td>
+<td>16</td>
+<td>HQC</td>
+</tr>
+<tr>
+<td>Picnic</td>
+<td>17</td>
+<td>PICNIC</td>
 </tr>
 <tr>
 <td><strong>Symmetric</strong></td>
@@ -172,12 +202,10 @@ the <code>wan24-Crypto</code> library with these algorithms:</p>
 </tr>
 </tbody>
 </table>
-<p><strong>NOTE</strong>: FrodoKEM and NTRUEncrypt are currently disabled, 'cause there seems
-to be a bug (missing code) in the Bouncy Castle library for
-exporting/importing private keys (at last).</p>
-<p>NTRUSign is currently not implemented, 'cause it'd require the using code to
-be GPL licensed. This algorithm may be included in a separate package which is
-licensed using the GPL license (to avoid misunderstandings) in the future.</p>
+<p>Main goals of this extension library are to make <code>wan24-Crypto</code> usable on all
+platforms and extend its algorithms by PQC algorithms and other non-PQC
+algorithms, which are not available from .NET, but implemented in the Bouncy
+Castle library.</p>
 <h2 id="how-to-get-it">How to get it</h2>
 <p>This library is available as
 <a href="https://www.nuget.org/packages/wan24-Crypto-BC/">NuGet package</a>.</p>
@@ -187,18 +215,7 @@ initialize the Bouncy Castle extension first, before you can use it:</p>
 <pre><code class="lang-cs">wan24.Crypto.BC.Bootstrap.Boot();
 </code></pre>
 <p>This will register the algorithms to the <code>wan24-Crypto</code> library.</p>
-<p>To set Bouncy Castle defaults as <code>wan24-Crypto</code> defaults:</p>
-<pre><code class="lang-cs">BouncyCastle.SetDefaults();
-</code></pre>
-<p>Per default the current <code>wan24-Crypto</code> default will be set as counter
-algorithms to <code>HybridAlgorithmHelper</code>.</p>
-<p>Current Bouncy Castle default algorithms are:</p>
-<ul>
-<li>Key exchange: NTRUEncrypt</li>
-<li>Signature: CRYSTALS-Dilithium</li>
-<li>Encryption: Serpent 256 bit CBC</li>
-<li>PAKE encryption: Serpent 256 bit GCM</li>
-</ul>
+<h3 id="wan24-crypto-algorithm-replacement"><code>wan24-Crypto</code> algorithm replacement</h3>
 <p>Some algorithms of the <code>wan24-Crypto</code> library are not available on some
 platforms, that's why they need to be replaced in order to be used:</p>
 <table>
@@ -260,7 +277,41 @@ platforms, that's why they need to be replaced in order to be used:</p>
 </code></pre>
 <p><strong>NOTE</strong>: The Shake128/256 replacements don't support variable output length
 and use the default output length of the <code>wan24-Crypto</code> implementations
-instead.</p>
+instead. The <code>NetShake128/256HashAlgorithmAdapter</code> can't be replaced for this
+reason.</p>
+<h3 id="use-as-default-algorithms">Use as default algorithms</h3>
+<p>To set Bouncy Castle defaults as <code>wan24-Crypto</code> defaults:</p>
+<pre><code class="lang-cs">BouncyCastle.SetDefaults();
+</code></pre>
+<p>Per default the current <code>wan24-Crypto</code> default will be set as counter
+algorithms to <code>HybridAlgorithmHelper</code>.</p>
+<p>Current Bouncy Castle default algorithms are:</p>
+<table>
+<thead>
+<tr>
+<th>Usage</th>
+<th>Algorithm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key exchange</td>
+<td>NTRUEncrypt</td>
+</tr>
+<tr>
+<td>Signature</td>
+<td>CRYSTALS-Dilithium</td>
+</tr>
+<tr>
+<td>Encryption</td>
+<td>Serpent 256 bit CBC</td>
+</tr>
+<tr>
+<td>PAKE encryption</td>
+<td>Serpent 256 bit GCM</td>
+</tr>
+</tbody>
+</table>
 <h2 id="post-quantum-safety">Post quantum safety</h2>
 <p>These asymmetric algorithms are designed for post quantum cryptography:</p>
 <ul>
@@ -270,6 +321,10 @@ instead.</p>
 <li>SPHINCS+ (signature)</li>
 <li>FrodoKEM (key exchange)</li>
 <li>NTRUEncrypt (key exchange)</li>
+<li>Streamlined NTRU Prime (key exchange)</li>
+<li>BIKE (key exchange)</li>
+<li>HQC (key exchange)</li>
+<li>Picnic (signature)</li>
 </ul>
 <p>Normally you want to use them in hybrid mode and use classical algorithms of
 the <code>wan24-Crypto</code> package as counter algorithm. To do this per default:</p>
@@ -282,23 +337,6 @@ cryptography, in case you didn't define other post quantum algorithms already:</
 <li>NTRUEncrypt (key exchange)</li>
 <li>CRYSTALS-Dilithium (signature)</li>
 </ul>
-<p>For using other algorithms instead:</p>
-<pre><code class="lang-cs">// CRYSTALS-Kyber
-HybridAlgorithmHelper.SignatureAlgorithm = 
-    AsymmetricHelper.GetAlgorithm(AsymmetricKyberAlgorithm.ALGORITHM_NAME);
-
-// FALCON
-HybridAlgorithmHelper.SignatureAlgorithm = 
-    AsymmetricHelper.GetAlgorithm(AsymmetricFalconAlgorithm.ALGORITHM_NAME);
-
-// SPHINCS+
-HybridAlgorithmHelper.SignatureAlgorithm = 
-    AsymmetricHelper.GetAlgorithm(AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME);
-
-// FrodoKEM
-HybridAlgorithmHelper.KeyExchangeAlgorithm = 
-    AsymmetricHelper.GetAlgorithm(AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME);
-</code></pre>
 <p>The counter algorithm will come in effect, if you use asymmetric keys for
 encryption:</p>
 <pre><code class="lang-cs">// Create options having a counter private key
@@ -318,9 +356,41 @@ options.SetCounterPrivateKey(yourDilithiumPrivateKey);
 SignatureContainer signature = dataToSign.Sign(yourNormalPrivateKey, options: options);
 </code></pre>
 <h2 id="algorithm-parameters-used">Algorithm parameters used</h2>
-<p>For CRYSTALS-Kyber and CRYSTALS-Dilithium the AES parameters are being used.
-When using SPHINCS+, the Haraka F hashing parameters will be used. For
-FrodoKEM the AES parameters will be used.</p>
+<table>
+<thead>
+<tr>
+<th>Algorithm</th>
+<th>Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CRYSTALS-Kyber, CRYSTALS-Dilithium</td>
+<td>non-AES</td>
+</tr>
+<tr>
+<td>SPHINCS+</td>
+<td>Haraka simple*</td>
+</tr>
+<tr>
+<td>FrodoKEM</td>
+<td>AES*</td>
+</tr>
+<tr>
+<td>Picnic</td>
+<td>Full</td>
+</tr>
+</tbody>
+</table>
+<p><strong>NOTE</strong>: CRYSTALS-Kyber and CRYSTALS-Dilithium AES parameters and SPHINCS+
+robust parameters are deprecated! SPHINCS+ Haraka parameters are removed from
+the FIPS standard, so <code>wan24-Crypto-BC</code> will switch to Shake parameters
+instead. Also the FrodoKEM Shake parameters will be used in the next major
+release, which will require to renew existing keys, which use the AES
+parameters from the current version of this library.</p>
+<p><strong>WARNING</strong> The PQC standards are in development at the moment, so future
+incompatible changes are very likely and will be handled in a new major
+release of this library.</p>
 <h2 id="random-data-provider">Random data provider</h2>
 <p>The <code>RandomDataProvider</code> is a <code>RandomDataGenerator</code> which provides added seed
 data to <code>OnSeed(Async)</code> attached event handlers. It uses the <code>ChaCha20Rng</code> in
@@ -345,10 +415,24 @@ disappointments.</p>
 bytes of an underlaying PRNG using a random key. The result is a CSRNG. These
 stream ciphers are available with <code>wan24-Crypto-BC</code>, but you could use any
 other stream cipher (but not AEAD implementations!) also:</p>
-<ul>
-<li>ChaCha20 - <code>ChaCha20Rng</code></li>
-<li>XSalsa20 - <code>XSalsa20Rng</code></li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Stream cipher</th>
+<th>RNG</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ChaCha20</td>
+<td><code>ChaCha20Rng</code></td>
+</tr>
+<tr>
+<td>XSalsa20</td>
+<td><code>XSalsa20Rng</code></td>
+</tr>
+</tbody>
+</table>
 <p>If you didn't specify an underlaying PRNG, Bouncy Castle's
 <code>VmpcRandomGenerator</code> will be used and seeded using 256 bytes from <code>RND</code>.</p>
 <p>The final CSRNG implements <code>IRandomGenerator</code> for use with Bouncy Castle, and
@@ -380,6 +464,17 @@ generation.</p>
 <p>The Ed448 signature is context based, but currently only an empty byte array
 is being used as context data. Instead of a context you should use the purpose
 free text, which can be given to the signature methods of <code>wan24-Crypto</code>.</p>
+<p>XEd25519 and XEd448 convert the private Ed25519/448 key to X25519/448 for key
+exchange. The private key stores only the Ed25519/448 information, while the
+public key stores both, the Ed25519/448 and the X25519/448 informations (and
+therefor require a custom serialization format). You can derive Ed25519/448
+private keys from a XEd25519/448 private key, and XEd25519/448 private keys
+from a Ed25519/448 private key.</p>
+<p>Using the <code>ToX25519/448PrivateKey</code> extension methods for the
+<code>Ed25519/448PrivateKeyParameters</code> a conversion to X25519/448 is possible now
+(if you want to use the Bouncy Castle API directly).</p>
+<p><strong>WARNING</strong>: Different Ed25519/448 keys may convert to equal X25519/448 keys,
+so be aware of possible collisions!</p>
 
 </article>
           </div>

@@ -1,0 +1,756 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt; | wan24-Crypto-BC </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt; | wan24-Crypto-BC ">
+    
+    <meta name="description" content="Base class for a Bouncy Castle asymmetric algorithm">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7">
+
+
+
+  <h1 id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7" class="text-break">Class BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt;</h1>
+  <div class="markdown level0 summary"><p>Base class for a Bouncy Castle asymmetric algorithm</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">CryptoAlgorithmBase</span></div>
+    <div class="level2"><span class="xref">AsymmetricAlgorithmBase</span>&lt;tPublic, tPrivate&gt;</div>
+    <div class="level3"><span class="xref">BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt;</span></div>
+      <div class="level4"><a class="xref" href="wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.html">AsymmetricSNtruPrimeAlgorithm</a></div>
+      <div class="level4"><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html">BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt;</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">CryptoAlgorithmBase</span>&gt;</div>
+    <div><span class="xref">IAsymmetricAlgorithm</span></div>
+    <div><span class="xref">ICryptoAlgorithm</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">AsymmetricAlgorithmBase</span>&lt;tPublic, tPrivate&gt;&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html">BouncyCastleAsymmetricAlgorithmBase</a>&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt;&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;._DefaultKeySize</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;._DefaultOptions</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.EnsureDefaultOptions(CryptoOptions)</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.CreateKeyPair(CryptoOptions)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.CreateKeyPairAsync(CryptoOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.DeserializePublicKey(byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.DeserializePrivateKey(byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.DeserializePrivateKeyV1(byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.DeriveKey(byte[], CryptoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.asymmetricalgorithm">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.CanHandleNetAlgorithm(AsymmetricAlgorithm)</a>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.PrintMembers(StringBuilder)</a>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.Equals(CryptoAlgorithmBase)</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.Equals(AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.&lt;Clone&gt;$()</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.EqualityContract</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.PrivateKeyType</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.PublicKeyType</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.DefaultOptions</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.DefaultAlgorithmOptions</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.Usages</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.CanExchangeKey</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.CanSign</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.IsEllipticCurveAlgorithm</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.AllowedKeySizes</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.DefaultKeySize</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">CryptoAlgorithmBase.PrintMembers(StringBuilder)</a>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">CryptoAlgorithmBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.Equals(CryptoAlgorithmBase)</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.&lt;Clone&gt;$()</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.EqualityContract</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.Name</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.Value</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.UsesTpm</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.DisplayName</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="wan24.html">wan24</a>.<a class="xref" href="wan24.Crypto.html">Crypto</a>.<a class="xref" href="wan24.Crypto.BC.html">BC</a></h6>
+  <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
+  <h5 id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract record BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt; : AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;, IEquatable&lt;CryptoAlgorithmBase&gt;, IAsymmetricAlgorithm, ICryptoAlgorithm, IEquatable&lt;AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt;&gt; where tPublic : BouncyCastleAsymmetricPublicKeyBase&lt;tFinal, tPublicKey, tPublic&gt;, new() where tPrivate : BouncyCastleAsymmetricPrivateKeyBase&lt;tPublic, tFinal, tPublicKey, tPrivateKey, tPrivate&gt;, new() where tKeyGenParam : KeyGenerationParameters where tPublicKey : AsymmetricKeyParameter, ICipherParameters where tPrivateKey : AsymmetricKeyParameter where tFinal : BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt;, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">tPublic</span></td>
+        <td><p>Public key type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">tPrivate</span></td>
+        <td><p>Private key type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">tKeyGenParam</span></td>
+        <td><p>Key generator parameters type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">tParam</span></td>
+        <td><p>Key parameters type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">tPublicKey</span></td>
+        <td><p>Public key type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">tPrivateKey</span></td>
+        <td><p>Private key type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">tFinal</span></td>
+        <td><p>Final type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7__ctor_System_String_System_Int32_wan24_Crypto_AsymmetricAlgorithmUsages_System_Boolean_System_Collections_ObjectModel_ReadOnlyCollection_System_Int32__System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase%607.%23ctor(System.String%2CSystem.Int32%2Cwan24.Crypto.AsymmetricAlgorithmUsages%2CSystem.Boolean%2CSystem.Collections.ObjectModel.ReadOnlyCollection%7BSystem.Int32%7D%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleAsymmetricAlgorithmBase.cs/#L109">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7__ctor_" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.#ctor*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7__ctor_System_String_System_Int32_wan24_Crypto_AsymmetricAlgorithmUsages_System_Boolean_System_Collections_ObjectModel_ReadOnlyCollection_System_Int32__System_Boolean_System_Int32_" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.#ctor(System.String,System.Int32,wan24.Crypto.AsymmetricAlgorithmUsages,System.Boolean,System.Collections.ObjectModel.ReadOnlyCollection{System.Int32},System.Boolean,System.Int32)">BouncyCastleAsymmetricAlgorithmBase(string, int, AsymmetricAlgorithmUsages, bool, ReadOnlyCollection&lt;int&gt;, bool, int)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BouncyCastleAsymmetricAlgorithmBase(string name, int value, AsymmetricAlgorithmUsages usages, bool isEllipticCurveAlgorithm, ReadOnlyCollection&lt;int&gt; allowedKeySizes, bool isPostQuantum, int defaultKeySize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Algorithm name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Algorithm value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">AsymmetricAlgorithmUsages</span></td>
+        <td><span class="parametername">usages</span></td>
+        <td><p>Algorithm usages</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isEllipticCurveAlgorithm</span></td>
+        <td><p>Is an elliptic curve algorithm?</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1">ReadOnlyCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">allowedKeySizes</span></td>
+        <td><p>Allowed key sizes in bits</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isPostQuantum</span></td>
+        <td><p>Is a post quantum-safe algorithm?</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">defaultKeySize</span></td>
+        <td><p>Default key size in bits</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_AllowedKeySizes.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase%607.AllowedKeySizes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleAsymmetricAlgorithmBase.cs/#L139">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_AllowedKeySizes_" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.AllowedKeySizes*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_AllowedKeySizes" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.AllowedKeySizes">AllowedKeySizes</h4>
+  <div class="markdown level1 summary"><p>Allowed key sizes in bits</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed ReadOnlyCollection&lt;int&gt; AllowedKeySizes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1">ReadOnlyCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.AllowedKeySizes</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_Instance.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase%607.Instance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleAsymmetricAlgorithmBase.cs/#L130">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_Instance_" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.Instance*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_Instance" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.Instance">Instance</h4>
+  <div class="markdown level1 summary"><p>Singleton instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static tFinal Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">tFinal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_IsEllipticCurveAlgorithm.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase%607.IsEllipticCurveAlgorithm%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleAsymmetricAlgorithmBase.cs/#L136">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_IsEllipticCurveAlgorithm_" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.IsEllipticCurveAlgorithm*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_IsEllipticCurveAlgorithm" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.IsEllipticCurveAlgorithm">IsEllipticCurveAlgorithm</h4>
+  <div class="markdown level1 summary"><p>Is an elliptic curve algorithm?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed bool IsEllipticCurveAlgorithm { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.IsEllipticCurveAlgorithm</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_IsPostQuantum.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase%607.IsPostQuantum%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleAsymmetricAlgorithmBase.cs/#L142">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_IsPostQuantum_" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.IsPostQuantum*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_IsPostQuantum" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.IsPostQuantum">IsPostQuantum</h4>
+  <div class="markdown level1 summary"><p>Is a post quantum algorithm (&quot;post quantum-safe&quot;)?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed bool IsPostQuantum { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.CryptoAlgorithmBase.IsPostQuantum</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_Usages.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase%607.Usages%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleAsymmetricAlgorithmBase.cs/#L133">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_Usages_" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.Usages*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_Usages" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.Usages">Usages</h4>
+  <div class="markdown level1 summary"><p>Key usages</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed AsymmetricAlgorithmUsages Usages { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AsymmetricAlgorithmUsages</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.Usages</span></div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_CreateKeyGenParameters_Org_BouncyCastle_Security_SecureRandom__3_wan24_Crypto_CryptoOptions_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase%607.CreateKeyGenParameters(Org.BouncyCastle.Security.SecureRandom%2C%603%2Cwan24.Crypto.CryptoOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleAsymmetricAlgorithmBase.cs/#L161">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_CreateKeyGenParameters_" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.CreateKeyGenParameters*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_CreateKeyGenParameters_Org_BouncyCastle_Security_SecureRandom__3_wan24_Crypto_CryptoOptions_" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.CreateKeyGenParameters(Org.BouncyCastle.Security.SecureRandom,`3,wan24.Crypto.CryptoOptions)">CreateKeyGenParameters(SecureRandom, tParam, CryptoOptions)</h4>
+  <div class="markdown level1 summary"><p>Create key generator parameters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual tKeyGenParam CreateKeyGenParameters(SecureRandom random, tParam parameters, CryptoOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SecureRandom</span></td>
+        <td><span class="parametername">random</span></td>
+        <td><p>Random</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">tParam</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Engine parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CryptoOptions</span></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Options</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">tKeyGenParam</span></td>
+        <td><p>Key generator parameters</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_DeserializePrivateKeyV1_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase%607.DeserializePrivateKeyV1(System.Byte%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleAsymmetricAlgorithmBase.cs/#L145">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_DeserializePrivateKeyV1_" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.DeserializePrivateKeyV1*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_DeserializePrivateKeyV1_System_Byte___" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.DeserializePrivateKeyV1(System.Byte[])">DeserializePrivateKeyV1(byte[])</h4>
+  <div class="markdown level1 summary"><p>Deserialize library v1 private key data (will be removed in v3)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override tPrivate DeserializePrivateKeyV1(byte[] keyData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">keyData</span></td>
+        <td><p>Key data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">tPrivate</span></td>
+        <td><p>Private key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.DeserializePrivateKeyV1(byte[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_GetEngineParameters_wan24_Crypto_CryptoOptions_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase%607.GetEngineParameters(wan24.Crypto.CryptoOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleAsymmetricAlgorithmBase.cs/#L152">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_GetEngineParameters_" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.GetEngineParameters*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_GetEngineParameters_wan24_Crypto_CryptoOptions_" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.GetEngineParameters(wan24.Crypto.CryptoOptions)">GetEngineParameters(CryptoOptions)</h4>
+  <div class="markdown level1 summary"><p>Get the cipher engine parameters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract tParam GetEngineParameters(CryptoOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CryptoOptions</span></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Options</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">tParam</span></td>
+        <td><p>Parameters</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_Register.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase%607.Register%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleAsymmetricAlgorithmBase.cs/#L168">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_Register_" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.Register*"></a>
+  <h4 id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_Register" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.Register">Register()</h4>
+  <div class="markdown level1 summary"><p>Register the algorithm to the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.cryptography.cryptoconfig">CryptoConfig</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Register()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.IAsymmetricAlgorithm</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.ICryptoAlgorithm</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase%607%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleAsymmetricAlgorithmBase.cs/#L85" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      (c) 2023 Andreas Zimmermann, wan24.de
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

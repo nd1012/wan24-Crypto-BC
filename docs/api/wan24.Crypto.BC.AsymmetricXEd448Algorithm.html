@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class AsymmetricXEd448Algorithm | wan24-Crypto-BC ">
     
-    <meta name="description" content="XEd448 asymmetric algorithm (converts the used Ed448 private key to a X448 private key for key exchange)">
+    <meta name="description" content="XEd448 asymmetric algorithm (converts the used Ed448 private key to a X448 private key for key exchange; 224 bit security)">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -71,7 +71,7 @@
 
 
   <h1 id="wan24_Crypto_BC_AsymmetricXEd448Algorithm" data-uid="wan24.Crypto.BC.AsymmetricXEd448Algorithm" class="text-break">Class AsymmetricXEd448Algorithm</h1>
-  <div class="markdown level0 summary"><p>XEd448 asymmetric algorithm (converts the used Ed448 private key to a X448 private key for key exchange)</p>
+  <div class="markdown level0 summary"><p>XEd448 asymmetric algorithm (converts the used Ed448 private key to a X448 private key for key exchange; 224 bit security)</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -79,8 +79,9 @@
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">CryptoAlgorithmBase</span></div>
     <div class="level2"><span class="xref">AsymmetricAlgorithmBase</span>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PublicKey.html">AsymmetricXEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PrivateKey.html">AsymmetricXEd448PrivateKey</a>&gt;</div>
-    <div class="level3"><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html">BouncyCastleAsymmetricAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PublicKey.html">AsymmetricXEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PrivateKey.html">AsymmetricXEd448PrivateKey</a>, <span class="xref">Ed448KeyPairGenerator</span>, <span class="xref">Ed448KeyGenerationParameters</span>, <span class="xref">AsymmetricKeyParameter</span>, <span class="xref">Ed448PublicKeyParameters</span>, <span class="xref">Ed448PrivateKeyParameters</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448Algorithm.html">AsymmetricXEd448Algorithm</a>&gt;</div>
-    <div class="level4"><span class="xref">AsymmetricXEd448Algorithm</span></div>
+    <div class="level3"><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html">BouncyCastleAsymmetricAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PublicKey.html">AsymmetricXEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PrivateKey.html">AsymmetricXEd448PrivateKey</a>, <span class="xref">Ed448KeyGenerationParameters</span>, <span class="xref">AsymmetricKeyParameter</span>, <span class="xref">Ed448PublicKeyParameters</span>, <span class="xref">Ed448PrivateKeyParameters</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448Algorithm.html">AsymmetricXEd448Algorithm</a>&gt;</div>
+    <div class="level4"><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html">BouncyCastleAsymmetricAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PublicKey.html">AsymmetricXEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PrivateKey.html">AsymmetricXEd448PrivateKey</a>, <span class="xref">Ed448KeyPairGenerator</span>, <span class="xref">Ed448KeyGenerationParameters</span>, <span class="xref">AsymmetricKeyParameter</span>, <span class="xref">Ed448PublicKeyParameters</span>, <span class="xref">Ed448PrivateKeyParameters</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448Algorithm.html">AsymmetricXEd448Algorithm</a>&gt;</div>
+    <div class="level5"><span class="xref">AsymmetricXEd448Algorithm</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -88,34 +89,35 @@
     <div><span class="xref">IAsymmetricAlgorithm</span></div>
     <div><span class="xref">ICryptoAlgorithm</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">AsymmetricAlgorithmBase</span>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PublicKey.html">AsymmetricXEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PrivateKey.html">AsymmetricXEd448PrivateKey</a>&gt;&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html">BouncyCastleAsymmetricAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PublicKey.html">AsymmetricXEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PrivateKey.html">AsymmetricXEd448PrivateKey</a>, <span class="xref">Ed448KeyGenerationParameters</span>, <span class="xref">AsymmetricKeyParameter</span>, <span class="xref">Ed448PublicKeyParameters</span>, <span class="xref">Ed448PrivateKeyParameters</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448Algorithm.html">AsymmetricXEd448Algorithm</a>&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html">BouncyCastleAsymmetricAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PublicKey.html">AsymmetricXEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PrivateKey.html">AsymmetricXEd448PrivateKey</a>, <span class="xref">Ed448KeyPairGenerator</span>, <span class="xref">Ed448KeyGenerationParameters</span>, <span class="xref">AsymmetricKeyParameter</span>, <span class="xref">Ed448PublicKeyParameters</span>, <span class="xref">Ed448PrivateKeyParameters</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448Algorithm.html">AsymmetricXEd448Algorithm</a>&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448Algorithm.html">AsymmetricXEd448Algorithm</a>&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_8_Instance">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyPairGenerator, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.Instance</a>
-    </div>
-    <div>
-      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_8_Usages">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyPairGenerator, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.Usages</a>
-    </div>
-    <div>
-      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_8_IsEllipticCurveAlgorithm">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyPairGenerator, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.IsEllipticCurveAlgorithm</a>
-    </div>
-    <div>
-      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_8_AllowedKeySizes">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyPairGenerator, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.AllowedKeySizes</a>
-    </div>
-    <div>
-      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_8_IsPostQuantum">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyPairGenerator, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.IsPostQuantum</a>
-    </div>
-    <div>
       <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_8_CreateKeyPair_wan24_Crypto_CryptoOptions_">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyPairGenerator, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.CreateKeyPair(CryptoOptions)</a>
     </div>
     <div>
-      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_8_DeserializePrivateKeyV1_System_Byte___">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyPairGenerator, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.DeserializePrivateKeyV1(byte[])</a>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_Instance">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.Instance</a>
     </div>
     <div>
-      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_8_Register">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyPairGenerator, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.Register()</a>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_Usages">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.Usages</a>
+    </div>
+    <div>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_IsEllipticCurveAlgorithm">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.IsEllipticCurveAlgorithm</a>
+    </div>
+    <div>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_AllowedKeySizes">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.AllowedKeySizes</a>
+    </div>
+    <div>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_IsPostQuantum">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.IsPostQuantum</a>
+    </div>
+    <div>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_DeserializePrivateKeyV1_System_Byte___">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.DeserializePrivateKeyV1(byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_Register">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.Register()</a>
     </div>
     <div>
       <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey&gt;.EnsureDefaultOptions(CryptoOptions)</span>
@@ -230,7 +232,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_AsymmetricXEd448Algorithm_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record AsymmetricXEd448Algorithm : BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyPairGenerator, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;, IEquatable&lt;CryptoAlgorithmBase&gt;, IAsymmetricAlgorithm, ICryptoAlgorithm, IEquatable&lt;AsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyPairGenerator, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;&gt;, IEquatable&lt;AsymmetricXEd448Algorithm&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricXEd448Algorithm : BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyPairGenerator, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;, IEquatable&lt;CryptoAlgorithmBase&gt;, IAsymmetricAlgorithm, ICryptoAlgorithm, IEquatable&lt;AsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyPairGenerator, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;&gt;, IEquatable&lt;AsymmetricXEd448Algorithm&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -539,7 +541,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_8_GetEngineParameters_wan24_Crypto_CryptoOptions_">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyPairGenerator, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.GetEngineParameters(CryptoOptions)</a></div>
+  <div><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_GetEngineParameters_wan24_Crypto_CryptoOptions_">BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey, Ed448KeyGenerationParameters, AsymmetricKeyParameter, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448Algorithm&gt;.GetEngineParameters(CryptoOptions)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
@@ -549,6 +551,9 @@
   </div>
   <div>
       <span class="xref">wan24.Crypto.ICryptoAlgorithm</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>

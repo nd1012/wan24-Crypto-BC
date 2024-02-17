@@ -114,6 +114,9 @@
       <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase-6.html#wan24_Crypto_BC_BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase_6_SignHashRaw_System_Byte___">BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519Algorithm, Ed25519PublicKeyParameters, Ed25519PrivateKeyParameters, Ed25519Signer, AsymmetricEd25519PrivateKey&gt;.SignHashRaw(byte[])</a>
     </div>
     <div>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html#wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyBase_5_IsBcImportExportImplemented">BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519Algorithm, Ed25519PublicKeyParameters, Ed25519PrivateKeyParameters, AsymmetricEd25519PrivateKey&gt;.IsBcImportExportImplemented</a>
+    </div>
+    <div>
       <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html#wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyBase_5_PrivateKey">BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519Algorithm, Ed25519PublicKeyParameters, Ed25519PrivateKeyParameters, AsymmetricEd25519PrivateKey&gt;.PrivateKey</a>
     </div>
     <div>
@@ -121,6 +124,12 @@
     </div>
     <div>
       <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html#wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyBase_5_Bits">BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519Algorithm, Ed25519PublicKeyParameters, Ed25519PrivateKeyParameters, AsymmetricEd25519PrivateKey&gt;.Bits</a>
+    </div>
+    <div>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html#wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyBase_5_ExportBc">BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519Algorithm, Ed25519PublicKeyParameters, Ed25519PrivateKeyParameters, AsymmetricEd25519PrivateKey&gt;.ExportBc()</a>
+    </div>
+    <div>
+      <a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html#wan24_Crypto_BC_BouncyCastleAsymmetricPrivateKeyBase_5_ImportBc_System_Byte____">BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519Algorithm, Ed25519PublicKeyParameters, Ed25519PrivateKeyParameters, AsymmetricEd25519PrivateKey&gt;.ImportBc(in byte[])</a>
     </div>
     <div>
       <span class="xref">AsymmetricPrivateKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519PrivateKey&gt;.GetCopy()</span>
@@ -202,6 +211,9 @@
     </div>
     <div>
       <span class="xref">AsymmetricKeyBase.&lt;Clone&gt;$()</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricKeyBase.MaxArrayLength</span>
     </div>
     <div>
       <span class="xref">AsymmetricKeyBase.ID</span>
@@ -315,6 +327,40 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd25519PrivateKey__ctor_Org_BouncyCastle_Crypto_Parameters_Ed25519PrivateKeyParameters_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd25519PrivateKey.%23ctor(Org.BouncyCastle.Crypto.Parameters.Ed25519PrivateKeyParameters)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd25519PrivateKey.cs/#L42">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AsymmetricEd25519PrivateKey__ctor_" data-uid="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.#ctor*"></a>
+  <h4 id="wan24_Crypto_BC_AsymmetricEd25519PrivateKey__ctor_Org_BouncyCastle_Crypto_Parameters_Ed25519PrivateKeyParameters_" data-uid="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.#ctor(Org.BouncyCastle.Crypto.Parameters.Ed25519PrivateKeyParameters)">AsymmetricEd25519PrivateKey(Ed25519PrivateKeyParameters)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsymmetricEd25519PrivateKey(Ed25519PrivateKeyParameters privateKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ed25519PrivateKeyParameters</span></td>
+        <td><span class="parametername">privateKey</span></td>
+        <td><p>Private key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd25519PrivateKey__ctor_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd25519PrivateKey.%23ctor(System.Byte%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -354,7 +400,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd25519PrivateKey_CreateXEd25519PrivateKey.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd25519PrivateKey.CreateXEd25519PrivateKey%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd25519PrivateKey.cs/#L42">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd25519PrivateKey.cs/#L48">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_AsymmetricEd25519PrivateKey_CreateXEd25519PrivateKey_" data-uid="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.CreateXEd25519PrivateKey*"></a>
   <h4 id="wan24_Crypto_BC_AsymmetricEd25519PrivateKey_CreateXEd25519PrivateKey" data-uid="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.CreateXEd25519PrivateKey">CreateXEd25519PrivateKey()</h4>
@@ -386,7 +432,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd25519PrivateKey_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd25519PrivateKey.Dispose(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd25519PrivateKey.cs/#L57">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd25519PrivateKey.cs/#L63">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_AsymmetricEd25519PrivateKey_Dispose_" data-uid="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.Dispose*"></a>
   <h4 id="wan24_Crypto_BC_AsymmetricEd25519PrivateKey_Dispose_System_Boolean_" data-uid="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.Dispose(System.Boolean)">Dispose(bool)</h4>
@@ -422,7 +468,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd25519PrivateKey_DisposeCore.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd25519PrivateKey.DisposeCore%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd25519PrivateKey.cs/#L64">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd25519PrivateKey.cs/#L70">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_AsymmetricEd25519PrivateKey_DisposeCore_" data-uid="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.DisposeCore*"></a>
   <h4 id="wan24_Crypto_BC_AsymmetricEd25519PrivateKey_DisposeCore" data-uid="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.DisposeCore">DisposeCore()</h4>
@@ -455,7 +501,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd25519PrivateKey_GetPublicKey_Org_BouncyCastle_Crypto_Parameters_Ed25519PrivateKeyParameters_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd25519PrivateKey.GetPublicKey(Org.BouncyCastle.Crypto.Parameters.Ed25519PrivateKeyParameters)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd25519PrivateKey.cs/#L54">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd25519PrivateKey.cs/#L60">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_AsymmetricEd25519PrivateKey_GetPublicKey_" data-uid="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.GetPublicKey*"></a>
   <h4 id="wan24_Crypto_BC_AsymmetricEd25519PrivateKey_GetPublicKey_Org_BouncyCastle_Crypto_Parameters_Ed25519PrivateKeyParameters_" data-uid="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.GetPublicKey(Org.BouncyCastle.Crypto.Parameters.Ed25519PrivateKeyParameters)">GetPublicKey(Ed25519PrivateKeyParameters)</h4>
@@ -509,7 +555,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd25519PrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricEd25519PrivateKey.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd25519PrivateKey.op_Explicit(System.Byte%5B%5D)~wan24.Crypto.BC.AsymmetricEd25519PrivateKey%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd25519PrivateKey.cs/#L80">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd25519PrivateKey.cs/#L86">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_AsymmetricEd25519PrivateKey_op_Explicit_" data-uid="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.op_Explicit*"></a>
   <h4 id="wan24_Crypto_BC_AsymmetricEd25519PrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricEd25519PrivateKey" data-uid="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricEd25519PrivateKey">explicit operator AsymmetricEd25519PrivateKey(byte[])</h4>
@@ -558,7 +604,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricEd25519PrivateKey_op_Implicit_wan24_Crypto_BC_AsymmetricEd25519PrivateKey__wan24_Crypto_BC_AsymmetricEd25519PublicKey.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricEd25519PrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricEd25519PrivateKey)~wan24.Crypto.BC.AsymmetricEd25519PublicKey%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd25519PrivateKey.cs/#L74">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricEd25519PrivateKey.cs/#L80">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_AsymmetricEd25519PrivateKey_op_Implicit_" data-uid="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.op_Implicit*"></a>
   <h4 id="wan24_Crypto_BC_AsymmetricEd25519PrivateKey_op_Implicit_wan24_Crypto_BC_AsymmetricEd25519PrivateKey__wan24_Crypto_BC_AsymmetricEd25519PublicKey" data-uid="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricEd25519PrivateKey)~wan24.Crypto.BC.AsymmetricEd25519PublicKey">implicit operator AsymmetricEd25519PublicKey(AsymmetricEd25519PrivateKey)</h4>
