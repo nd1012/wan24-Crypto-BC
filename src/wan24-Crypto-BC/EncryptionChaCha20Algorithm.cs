@@ -40,7 +40,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Constructor
         /// </summary>
-        public EncryptionChaCha20Algorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
+        private EncryptionChaCha20Algorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
 
         /// <inheritdoc/>
         public override int KeySize => KEY_SIZE;

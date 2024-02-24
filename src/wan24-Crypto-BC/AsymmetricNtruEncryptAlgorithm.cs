@@ -1,5 +1,5 @@
 ﻿using Org.BouncyCastle.Pqc.Crypto.Ntru;
-using System.Collections.ObjectModel;
+using System.Collections.Frozen;
 
 namespace wan24.Crypto.BC
 {
@@ -42,7 +42,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Allowed key sizes in bits
         /// </summary>
-        private static readonly ReadOnlyCollection<int> _AllowedKeySizes;
+        private static readonly FrozenSet<int> _AllowedKeySizes;
 
         /// <summary>
         /// Static constructor
@@ -53,12 +53,12 @@ namespace wan24.Crypto.BC
             677,// 192 bit security
             701,// 256 bit security
             821// 123 bit security
-        }.AsReadOnly();
+        }.ToFrozenSet();
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricNtruEncryptAlgorithm()
+        private AsymmetricNtruEncryptAlgorithm()
             : base(ALGORITHM_NAME, ALGORITHM_VALUE, USAGES, isEllipticCurveAlgorithm: false, _AllowedKeySizes, isPostQuantum: true, DEFAULT_KEY_SIZE)
         { }
 

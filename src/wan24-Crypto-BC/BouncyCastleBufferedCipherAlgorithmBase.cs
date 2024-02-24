@@ -8,7 +8,7 @@ namespace wan24.Crypto.BC
     /// Base class for a Bouncy Castle buffered block cipher
     /// </summary>
     /// <typeparam name="T">Final type</typeparam>
-    public abstract record class BouncyCastleBufferedCipherAlgorithmBase<T> : BouncyCastleCipherAlgorithmBase<T> where T : BouncyCastleBufferedCipherAlgorithmBase<T>, new()
+    public abstract record class BouncyCastleBufferedCipherAlgorithmBase<T> : BouncyCastleCipherAlgorithmBase<T> where T : BouncyCastleBufferedCipherAlgorithmBase<T>
     {
         /// <summary>
         /// Constructor

@@ -1,5 +1,5 @@
 ﻿using Org.BouncyCastle.Pqc.Crypto.Picnic;
-using System.Collections.ObjectModel;
+using System.Collections.Frozen;
 
 namespace wan24.Crypto.BC
 {
@@ -42,7 +42,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Allowed key sizes in bits
         /// </summary>
-        private static readonly ReadOnlyCollection<int> _AllowedKeySizes;
+        private static readonly FrozenSet<int> _AllowedKeySizes;
 
         /// <summary>
         /// Static constructor
@@ -52,12 +52,12 @@ namespace wan24.Crypto.BC
             128,// 128 bit security
             192,// 192 bit security
             256// 256 bit security
-        }.AsReadOnly();
+        }.ToFrozenSet();
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricPicnicAlgorithm()
+        private AsymmetricPicnicAlgorithm()
             : base(ALGORITHM_NAME, ALGORITHM_VALUE, USAGES, isEllipticCurveAlgorithm: false, _AllowedKeySizes, isPostQuantum: true, DEFAULT_KEY_SIZE)
         { }
 
