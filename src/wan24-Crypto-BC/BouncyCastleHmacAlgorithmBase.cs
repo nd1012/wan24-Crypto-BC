@@ -6,12 +6,12 @@ namespace wan24.Crypto.BC
     /// Base class for a Bouncy Castle MAC algorithm
     /// </summary>
     /// <typeparam name="T">Final type</typeparam>
-    public abstract record class BouncyCastleHmacAlgorithmBase<T> : MacAlgorithmBase where T : BouncyCastleHmacAlgorithmBase<T>, new()
+    public abstract record class BouncyCastleHmacAlgorithmBase<T> : MacAlgorithmBase where T : BouncyCastleHmacAlgorithmBase<T>
     {
         /// <summary>
         /// Static constructor
         /// </summary>
-        static BouncyCastleHmacAlgorithmBase() => Instance = new();
+        static BouncyCastleHmacAlgorithmBase() => Instance = (T)Activator.CreateInstance(typeof(T), nonPublic: true)!;
 
         /// <summary>
         /// Constructor

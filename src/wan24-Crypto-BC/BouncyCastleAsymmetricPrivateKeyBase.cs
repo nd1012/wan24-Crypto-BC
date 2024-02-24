@@ -14,7 +14,7 @@ namespace wan24.Crypto.BC
     /// <typeparam name="tFinal">Final type</typeparam>
     public abstract record class BouncyCastleAsymmetricPrivateKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal> : AsymmetricPrivateKeyBase<tPublic, tFinal>
         where tPublic : BouncyCastleAsymmetricPublicKeyBase<tAlgo, tPublicKey, tPublic>, new()
-        where tAlgo : IAsymmetricAlgorithm, new()
+        where tAlgo : IAsymmetricAlgorithm
         where tPublicKey : AsymmetricKeyParameter, ICipherParameters
         where tPrivateKey : AsymmetricKeyParameter
         where tFinal : BouncyCastleAsymmetricPrivateKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal>, new()

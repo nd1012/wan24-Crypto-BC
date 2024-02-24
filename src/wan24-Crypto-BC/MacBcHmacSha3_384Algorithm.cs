@@ -30,7 +30,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Constructor
         /// </summary>
-        public MacBcHmacSha3_384Algorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
+        private MacBcHmacSha3_384Algorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
 
         /// <inheritdoc/>
         public override int MacLength => MAC_LENGTH;

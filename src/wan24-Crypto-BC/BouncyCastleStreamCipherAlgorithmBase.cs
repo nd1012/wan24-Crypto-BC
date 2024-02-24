@@ -9,12 +9,12 @@ namespace wan24.Crypto.BC
     /// Base class for a Bouncy Castle stream cipher
     /// </summary>
     /// <typeparam name="T">Final type</typeparam>
-    public abstract record class BouncyCastleStreamCipherAlgorithmBase<T> : EncryptionAlgorithmBase where T : BouncyCastleStreamCipherAlgorithmBase<T>, new()
+    public abstract record class BouncyCastleStreamCipherAlgorithmBase<T> : EncryptionAlgorithmBase where T : BouncyCastleStreamCipherAlgorithmBase<T>
     {
         /// <summary>
         /// Static constructor
         /// </summary>
-        static BouncyCastleStreamCipherAlgorithmBase() => Instance = new();
+        static BouncyCastleStreamCipherAlgorithmBase() => Instance = (T)Activator.CreateInstance(typeof(T), nonPublic: true)!;
 
         /// <summary>
         /// Constructor

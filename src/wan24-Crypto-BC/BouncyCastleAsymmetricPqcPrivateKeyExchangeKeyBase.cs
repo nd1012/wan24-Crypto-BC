@@ -17,7 +17,7 @@ namespace wan24.Crypto.BC
     public abstract record class BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal>
         : BouncyCastleAsymmetricPqcPrivateKeyBase<tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal>, IKeyExchangePrivateKey
         where tPublic : BouncyCastleAsymmetricPqcPublicKeyBase<tAlgo, tPublicKey, tPublic>, new()
-        where tAlgo : IAsymmetricAlgorithm, new()
+        where tAlgo : IAsymmetricAlgorithm
         where tPublicKey : AsymmetricKeyParameter, ICipherParameters
         where tPrivateKey : AsymmetricKeyParameter
         where tGenerator : class, IEncapsulatedSecretGenerator

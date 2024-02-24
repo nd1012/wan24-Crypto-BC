@@ -9,7 +9,7 @@ namespace wan24.Crypto.BC
     /// Base class for a Bouncy Castle AEAD stream cipher
     /// </summary>
     /// <typeparam name="T">Final type</typeparam>
-    public abstract record class BouncyCastleAeadCipherAlgorithmBase<T> : BouncyCastleCipherAlgorithmBase<T> where T : BouncyCastleAeadCipherAlgorithmBase<T>, new()
+    public abstract record class BouncyCastleAeadCipherAlgorithmBase<T> : BouncyCastleCipherAlgorithmBase<T> where T : BouncyCastleAeadCipherAlgorithmBase<T>
     {
         /// <summary>
         /// Constructor

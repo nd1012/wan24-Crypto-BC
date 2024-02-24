@@ -28,7 +28,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Constructor
         /// </summary>
-        public HashBcShake256Algorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
+        private HashBcShake256Algorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
 
         /// <inheritdoc/>
         public override int HashLength => HASH_LENGTH;

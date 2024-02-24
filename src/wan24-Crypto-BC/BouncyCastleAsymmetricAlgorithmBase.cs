@@ -1,6 +1,6 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Security;
-using System.Collections.ObjectModel;
+using System.Collections.Frozen;
 using System.Security.Cryptography;
 using wan24.Core;
 
@@ -25,7 +25,7 @@ namespace wan24.Crypto.BC
         where tKeyGenParam : KeyGenerationParameters
         where tPublicKey : AsymmetricKeyParameter, ICipherParameters
         where tPrivateKey : AsymmetricKeyParameter
-        where tFinal : BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>, new()
+        where tFinal : BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>
     {
         /// <summary>
         /// Constructor
@@ -42,7 +42,7 @@ namespace wan24.Crypto.BC
             int value,
             AsymmetricAlgorithmUsages usages,
             bool isEllipticCurveAlgorithm,
-            ReadOnlyCollection<int> allowedKeySizes,
+            FrozenSet<int> allowedKeySizes,
             bool isPostQuantum,
             int defaultKeySize
             )
@@ -89,12 +89,12 @@ namespace wan24.Crypto.BC
         where tKeyGenParam : KeyGenerationParameters
         where tPublicKey : AsymmetricKeyParameter, ICipherParameters
         where tPrivateKey : AsymmetricKeyParameter
-        where tFinal : BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>, new()
+        where tFinal : BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>
     {
         /// <summary>
         /// Static constructor
         /// </summary>
-        static BouncyCastleAsymmetricAlgorithmBase() => Instance = new();
+        static BouncyCastleAsymmetricAlgorithmBase() => Instance = (tFinal)Activator.CreateInstance(typeof(tFinal), nonPublic: true)!;
 
         /// <summary>
         /// Constructor
@@ -111,7 +111,7 @@ namespace wan24.Crypto.BC
             int value,
             AsymmetricAlgorithmUsages usages,
             bool isEllipticCurveAlgorithm,
-            ReadOnlyCollection<int> allowedKeySizes,
+            FrozenSet<int> allowedKeySizes,
             bool isPostQuantum,
             int defaultKeySize
             )
@@ -136,7 +136,7 @@ namespace wan24.Crypto.BC
         public sealed override bool IsEllipticCurveAlgorithm { get; }
 
         /// <inheritdoc/>
-        public sealed override ReadOnlyCollection<int> AllowedKeySizes { get; }
+        public sealed override FrozenSet<int> AllowedKeySizes { get; }
 
         /// <inheritdoc/>
         public sealed override bool IsPostQuantum { get; }

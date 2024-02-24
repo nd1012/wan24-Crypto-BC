@@ -1,5 +1,5 @@
 ﻿using Org.BouncyCastle.Pqc.Crypto.Frodo;
-using System.Collections.ObjectModel;
+using System.Collections.Frozen;
 
 namespace wan24.Crypto.BC
 {
@@ -42,7 +42,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Allowed key sizes in bits
         /// </summary>
-        private static readonly ReadOnlyCollection<int> _AllowedKeySizes;
+        private static readonly FrozenSet<int> _AllowedKeySizes;
 
         /// <summary>
         /// Static constructor
@@ -52,12 +52,12 @@ namespace wan24.Crypto.BC
             128,
             192,
             256
-        }.AsReadOnly();
+        }.ToFrozenSet();
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricFrodoKemAlgorithm()
+        private AsymmetricFrodoKemAlgorithm()
             : base(ALGORITHM_NAME, ALGORITHM_VALUE, USAGES, isEllipticCurveAlgorithm: false, _AllowedKeySizes, isPostQuantum: true, DEFAULT_KEY_SIZE)
         { }
 

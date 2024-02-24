@@ -2,7 +2,7 @@
 using Org.BouncyCastle.Crypto.Generators;
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Security;
-using System.Collections.ObjectModel;
+using System.Collections.Frozen;
 using wan24.Core;
 
 namespace wan24.Crypto.BC
@@ -46,7 +46,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Allowed key sizes in bits
         /// </summary>
-        private static readonly ReadOnlyCollection<int> _AllowedKeySizes;
+        private static readonly FrozenSet<int> _AllowedKeySizes;
 
         /// <summary>
         /// Static constructor
@@ -54,12 +54,12 @@ namespace wan24.Crypto.BC
         static AsymmetricEd25519Algorithm() => _AllowedKeySizes = new List<int>()
         {
             256
-        }.AsReadOnly();
+        }.ToFrozenSet();
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public AsymmetricEd25519Algorithm()
+        private AsymmetricEd25519Algorithm()
             : base(ALGORITHM_NAME, ALGORITHM_VALUE, USAGES, isEllipticCurveAlgorithm: true, _AllowedKeySizes, isPostQuantum: false, DEFAULT_KEY_SIZE)
         { }
 

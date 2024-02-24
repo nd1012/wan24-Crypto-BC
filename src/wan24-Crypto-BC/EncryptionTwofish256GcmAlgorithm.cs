@@ -41,7 +41,7 @@ namespace wan24.Crypto.BC
         /// <summary>
         /// Constructor
         /// </summary>
-        public EncryptionTwofish256GcmAlgorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
+        private EncryptionTwofish256GcmAlgorithm() : base(ALGORITHM_NAME, ALGORITHM_VALUE) { }
 
         /// <inheritdoc/>
         public override int KeySize => KEY_SIZE;
