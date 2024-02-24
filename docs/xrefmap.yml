@@ -13,25 +13,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm
   fullName: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm
   nameWithType: AsymmetricBcEcDiffieHellmanAlgorithm
-- uid: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.#ctor
-  name: AsymmetricBcEcDiffieHellmanAlgorithm()
-  href: api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDiffieHellmanAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.AsymmetricBcEcDiffieHellmanAlgorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.New()
-  nameWithType: AsymmetricBcEcDiffieHellmanAlgorithm.AsymmetricBcEcDiffieHellmanAlgorithm()
-  nameWithType.vb: AsymmetricBcEcDiffieHellmanAlgorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.#ctor*
-  name: AsymmetricBcEcDiffieHellmanAlgorithm
-  href: api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDiffieHellmanAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.AsymmetricBcEcDiffieHellmanAlgorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.New
-  nameWithType: AsymmetricBcEcDiffieHellmanAlgorithm.AsymmetricBcEcDiffieHellmanAlgorithm
-  nameWithType.vb: AsymmetricBcEcDiffieHellmanAlgorithm.New
 - uid: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDiffieHellmanAlgorithm_ALGORITHM_NAME
@@ -352,25 +333,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm
   fullName: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm
   nameWithType: AsymmetricBcEcDsaAlgorithm
-- uid: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.#ctor
-  name: AsymmetricBcEcDsaAlgorithm()
-  href: api/wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDsaAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.AsymmetricBcEcDsaAlgorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.New()
-  nameWithType: AsymmetricBcEcDsaAlgorithm.AsymmetricBcEcDsaAlgorithm()
-  nameWithType.vb: AsymmetricBcEcDsaAlgorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.#ctor*
-  name: AsymmetricBcEcDsaAlgorithm
-  href: api/wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDsaAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.AsymmetricBcEcDsaAlgorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.New
-  nameWithType: AsymmetricBcEcDsaAlgorithm.AsymmetricBcEcDsaAlgorithm
-  nameWithType.vb: AsymmetricBcEcDsaAlgorithm.New
 - uid: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDsaAlgorithm_ALGORITHM_NAME
@@ -701,25 +663,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricBikeAlgorithm
   fullName: wan24.Crypto.BC.AsymmetricBikeAlgorithm
   nameWithType: AsymmetricBikeAlgorithm
-- uid: wan24.Crypto.BC.AsymmetricBikeAlgorithm.#ctor
-  name: AsymmetricBikeAlgorithm()
-  href: api/wan24.Crypto.BC.AsymmetricBikeAlgorithm.html#wan24_Crypto_BC_AsymmetricBikeAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricBikeAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricBikeAlgorithm.AsymmetricBikeAlgorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricBikeAlgorithm.New()
-  nameWithType: AsymmetricBikeAlgorithm.AsymmetricBikeAlgorithm()
-  nameWithType.vb: AsymmetricBikeAlgorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricBikeAlgorithm.#ctor*
-  name: AsymmetricBikeAlgorithm
-  href: api/wan24.Crypto.BC.AsymmetricBikeAlgorithm.html#wan24_Crypto_BC_AsymmetricBikeAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricBikeAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricBikeAlgorithm.AsymmetricBikeAlgorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricBikeAlgorithm.New
-  nameWithType: AsymmetricBikeAlgorithm.AsymmetricBikeAlgorithm
-  nameWithType.vb: AsymmetricBikeAlgorithm.New
 - uid: wan24.Crypto.BC.AsymmetricBikeAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricBikeAlgorithm.html#wan24_Crypto_BC_AsymmetricBikeAlgorithm_ALGORITHM_NAME
@@ -1067,25 +1010,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricDilithiumAlgorithm
   fullName: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm
   nameWithType: AsymmetricDilithiumAlgorithm
-- uid: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.#ctor
-  name: AsymmetricDilithiumAlgorithm()
-  href: api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html#wan24_Crypto_BC_AsymmetricDilithiumAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.AsymmetricDilithiumAlgorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.New()
-  nameWithType: AsymmetricDilithiumAlgorithm.AsymmetricDilithiumAlgorithm()
-  nameWithType.vb: AsymmetricDilithiumAlgorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.#ctor*
-  name: AsymmetricDilithiumAlgorithm
-  href: api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html#wan24_Crypto_BC_AsymmetricDilithiumAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.AsymmetricDilithiumAlgorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.New
-  nameWithType: AsymmetricDilithiumAlgorithm.AsymmetricDilithiumAlgorithm
-  nameWithType.vb: AsymmetricDilithiumAlgorithm.New
 - uid: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html#wan24_Crypto_BC_AsymmetricDilithiumAlgorithm_ALGORITHM_NAME
@@ -1390,25 +1314,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricEd25519Algorithm
   fullName: wan24.Crypto.BC.AsymmetricEd25519Algorithm
   nameWithType: AsymmetricEd25519Algorithm
-- uid: wan24.Crypto.BC.AsymmetricEd25519Algorithm.#ctor
-  name: AsymmetricEd25519Algorithm()
-  href: api/wan24.Crypto.BC.AsymmetricEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricEd25519Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricEd25519Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricEd25519Algorithm.AsymmetricEd25519Algorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricEd25519Algorithm.New()
-  nameWithType: AsymmetricEd25519Algorithm.AsymmetricEd25519Algorithm()
-  nameWithType.vb: AsymmetricEd25519Algorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricEd25519Algorithm.#ctor*
-  name: AsymmetricEd25519Algorithm
-  href: api/wan24.Crypto.BC.AsymmetricEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricEd25519Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricEd25519Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricEd25519Algorithm.AsymmetricEd25519Algorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricEd25519Algorithm.New
-  nameWithType: AsymmetricEd25519Algorithm.AsymmetricEd25519Algorithm
-  nameWithType.vb: AsymmetricEd25519Algorithm.New
 - uid: wan24.Crypto.BC.AsymmetricEd25519Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricEd25519Algorithm_ALGORITHM_NAME
@@ -1707,25 +1612,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricEd448Algorithm
   fullName: wan24.Crypto.BC.AsymmetricEd448Algorithm
   nameWithType: AsymmetricEd448Algorithm
-- uid: wan24.Crypto.BC.AsymmetricEd448Algorithm.#ctor
-  name: AsymmetricEd448Algorithm()
-  href: api/wan24.Crypto.BC.AsymmetricEd448Algorithm.html#wan24_Crypto_BC_AsymmetricEd448Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricEd448Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricEd448Algorithm.AsymmetricEd448Algorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricEd448Algorithm.New()
-  nameWithType: AsymmetricEd448Algorithm.AsymmetricEd448Algorithm()
-  nameWithType.vb: AsymmetricEd448Algorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricEd448Algorithm.#ctor*
-  name: AsymmetricEd448Algorithm
-  href: api/wan24.Crypto.BC.AsymmetricEd448Algorithm.html#wan24_Crypto_BC_AsymmetricEd448Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricEd448Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricEd448Algorithm.AsymmetricEd448Algorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricEd448Algorithm.New
-  nameWithType: AsymmetricEd448Algorithm.AsymmetricEd448Algorithm
-  nameWithType.vb: AsymmetricEd448Algorithm.New
 - uid: wan24.Crypto.BC.AsymmetricEd448Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricEd448Algorithm.html#wan24_Crypto_BC_AsymmetricEd448Algorithm_ALGORITHM_NAME
@@ -2037,25 +1923,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricFalconAlgorithm
   fullName: wan24.Crypto.BC.AsymmetricFalconAlgorithm
   nameWithType: AsymmetricFalconAlgorithm
-- uid: wan24.Crypto.BC.AsymmetricFalconAlgorithm.#ctor
-  name: AsymmetricFalconAlgorithm()
-  href: api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html#wan24_Crypto_BC_AsymmetricFalconAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricFalconAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricFalconAlgorithm.AsymmetricFalconAlgorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricFalconAlgorithm.New()
-  nameWithType: AsymmetricFalconAlgorithm.AsymmetricFalconAlgorithm()
-  nameWithType.vb: AsymmetricFalconAlgorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricFalconAlgorithm.#ctor*
-  name: AsymmetricFalconAlgorithm
-  href: api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html#wan24_Crypto_BC_AsymmetricFalconAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricFalconAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricFalconAlgorithm.AsymmetricFalconAlgorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricFalconAlgorithm.New
-  nameWithType: AsymmetricFalconAlgorithm.AsymmetricFalconAlgorithm
-  nameWithType.vb: AsymmetricFalconAlgorithm.New
 - uid: wan24.Crypto.BC.AsymmetricFalconAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html#wan24_Crypto_BC_AsymmetricFalconAlgorithm_ALGORITHM_NAME
@@ -2360,25 +2227,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm
   fullName: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm
   nameWithType: AsymmetricFrodoKemAlgorithm
-- uid: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.#ctor
-  name: AsymmetricFrodoKemAlgorithm()
-  href: api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html#wan24_Crypto_BC_AsymmetricFrodoKemAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.AsymmetricFrodoKemAlgorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.New()
-  nameWithType: AsymmetricFrodoKemAlgorithm.AsymmetricFrodoKemAlgorithm()
-  nameWithType.vb: AsymmetricFrodoKemAlgorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.#ctor*
-  name: AsymmetricFrodoKemAlgorithm
-  href: api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html#wan24_Crypto_BC_AsymmetricFrodoKemAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.AsymmetricFrodoKemAlgorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.New
-  nameWithType: AsymmetricFrodoKemAlgorithm.AsymmetricFrodoKemAlgorithm
-  nameWithType.vb: AsymmetricFrodoKemAlgorithm.New
 - uid: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html#wan24_Crypto_BC_AsymmetricFrodoKemAlgorithm_ALGORITHM_NAME
@@ -2726,25 +2574,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricHqcAlgorithm
   fullName: wan24.Crypto.BC.AsymmetricHqcAlgorithm
   nameWithType: AsymmetricHqcAlgorithm
-- uid: wan24.Crypto.BC.AsymmetricHqcAlgorithm.#ctor
-  name: AsymmetricHqcAlgorithm()
-  href: api/wan24.Crypto.BC.AsymmetricHqcAlgorithm.html#wan24_Crypto_BC_AsymmetricHqcAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricHqcAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricHqcAlgorithm.AsymmetricHqcAlgorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricHqcAlgorithm.New()
-  nameWithType: AsymmetricHqcAlgorithm.AsymmetricHqcAlgorithm()
-  nameWithType.vb: AsymmetricHqcAlgorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricHqcAlgorithm.#ctor*
-  name: AsymmetricHqcAlgorithm
-  href: api/wan24.Crypto.BC.AsymmetricHqcAlgorithm.html#wan24_Crypto_BC_AsymmetricHqcAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricHqcAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricHqcAlgorithm.AsymmetricHqcAlgorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricHqcAlgorithm.New
-  nameWithType: AsymmetricHqcAlgorithm.AsymmetricHqcAlgorithm
-  nameWithType.vb: AsymmetricHqcAlgorithm.New
 - uid: wan24.Crypto.BC.AsymmetricHqcAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricHqcAlgorithm.html#wan24_Crypto_BC_AsymmetricHqcAlgorithm_ALGORITHM_NAME
@@ -3092,25 +2921,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricKyberAlgorithm
   fullName: wan24.Crypto.BC.AsymmetricKyberAlgorithm
   nameWithType: AsymmetricKyberAlgorithm
-- uid: wan24.Crypto.BC.AsymmetricKyberAlgorithm.#ctor
-  name: AsymmetricKyberAlgorithm()
-  href: api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html#wan24_Crypto_BC_AsymmetricKyberAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricKyberAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricKyberAlgorithm.AsymmetricKyberAlgorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricKyberAlgorithm.New()
-  nameWithType: AsymmetricKyberAlgorithm.AsymmetricKyberAlgorithm()
-  nameWithType.vb: AsymmetricKyberAlgorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricKyberAlgorithm.#ctor*
-  name: AsymmetricKyberAlgorithm
-  href: api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html#wan24_Crypto_BC_AsymmetricKyberAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricKyberAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricKyberAlgorithm.AsymmetricKyberAlgorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricKyberAlgorithm.New
-  nameWithType: AsymmetricKyberAlgorithm.AsymmetricKyberAlgorithm
-  nameWithType.vb: AsymmetricKyberAlgorithm.New
 - uid: wan24.Crypto.BC.AsymmetricKyberAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html#wan24_Crypto_BC_AsymmetricKyberAlgorithm_ALGORITHM_NAME
@@ -3458,25 +3268,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm
   fullName: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm
   nameWithType: AsymmetricNtruEncryptAlgorithm
-- uid: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.#ctor
-  name: AsymmetricNtruEncryptAlgorithm()
-  href: api/wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html#wan24_Crypto_BC_AsymmetricNtruEncryptAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.AsymmetricNtruEncryptAlgorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.New()
-  nameWithType: AsymmetricNtruEncryptAlgorithm.AsymmetricNtruEncryptAlgorithm()
-  nameWithType.vb: AsymmetricNtruEncryptAlgorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.#ctor*
-  name: AsymmetricNtruEncryptAlgorithm
-  href: api/wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html#wan24_Crypto_BC_AsymmetricNtruEncryptAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.AsymmetricNtruEncryptAlgorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.New
-  nameWithType: AsymmetricNtruEncryptAlgorithm.AsymmetricNtruEncryptAlgorithm
-  nameWithType.vb: AsymmetricNtruEncryptAlgorithm.New
 - uid: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html#wan24_Crypto_BC_AsymmetricNtruEncryptAlgorithm_ALGORITHM_NAME
@@ -3850,25 +3641,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricPicnicAlgorithm
   fullName: wan24.Crypto.BC.AsymmetricPicnicAlgorithm
   nameWithType: AsymmetricPicnicAlgorithm
-- uid: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.#ctor
-  name: AsymmetricPicnicAlgorithm()
-  href: api/wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html#wan24_Crypto_BC_AsymmetricPicnicAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricPicnicAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.AsymmetricPicnicAlgorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.New()
-  nameWithType: AsymmetricPicnicAlgorithm.AsymmetricPicnicAlgorithm()
-  nameWithType.vb: AsymmetricPicnicAlgorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.#ctor*
-  name: AsymmetricPicnicAlgorithm
-  href: api/wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html#wan24_Crypto_BC_AsymmetricPicnicAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricPicnicAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.AsymmetricPicnicAlgorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.New
-  nameWithType: AsymmetricPicnicAlgorithm.AsymmetricPicnicAlgorithm
-  nameWithType.vb: AsymmetricPicnicAlgorithm.New
 - uid: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html#wan24_Crypto_BC_AsymmetricPicnicAlgorithm_ALGORITHM_NAME
@@ -4203,25 +3975,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm
   fullName: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm
   nameWithType: AsymmetricSNtruPrimeAlgorithm
-- uid: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.#ctor
-  name: AsymmetricSNtruPrimeAlgorithm()
-  href: api/wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.html#wan24_Crypto_BC_AsymmetricSNtruPrimeAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.AsymmetricSNtruPrimeAlgorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.New()
-  nameWithType: AsymmetricSNtruPrimeAlgorithm.AsymmetricSNtruPrimeAlgorithm()
-  nameWithType.vb: AsymmetricSNtruPrimeAlgorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.#ctor*
-  name: AsymmetricSNtruPrimeAlgorithm
-  href: api/wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.html#wan24_Crypto_BC_AsymmetricSNtruPrimeAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.AsymmetricSNtruPrimeAlgorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.New
-  nameWithType: AsymmetricSNtruPrimeAlgorithm.AsymmetricSNtruPrimeAlgorithm
-  nameWithType.vb: AsymmetricSNtruPrimeAlgorithm.New
 - uid: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.html#wan24_Crypto_BC_AsymmetricSNtruPrimeAlgorithm_ALGORITHM_NAME
@@ -4611,25 +4364,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm
   fullName: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm
   nameWithType: AsymmetricSphincsPlusAlgorithm
-- uid: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.#ctor
-  name: AsymmetricSphincsPlusAlgorithm()
-  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html#wan24_Crypto_BC_AsymmetricSphincsPlusAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.AsymmetricSphincsPlusAlgorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.New()
-  nameWithType: AsymmetricSphincsPlusAlgorithm.AsymmetricSphincsPlusAlgorithm()
-  nameWithType.vb: AsymmetricSphincsPlusAlgorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.#ctor*
-  name: AsymmetricSphincsPlusAlgorithm
-  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html#wan24_Crypto_BC_AsymmetricSphincsPlusAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.AsymmetricSphincsPlusAlgorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.New
-  nameWithType: AsymmetricSphincsPlusAlgorithm.AsymmetricSphincsPlusAlgorithm
-  nameWithType.vb: AsymmetricSphincsPlusAlgorithm.New
 - uid: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html#wan24_Crypto_BC_AsymmetricSphincsPlusAlgorithm_ALGORITHM_NAME
@@ -4986,25 +4720,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricX25519Algorithm
   fullName: wan24.Crypto.BC.AsymmetricX25519Algorithm
   nameWithType: AsymmetricX25519Algorithm
-- uid: wan24.Crypto.BC.AsymmetricX25519Algorithm.#ctor
-  name: AsymmetricX25519Algorithm()
-  href: api/wan24.Crypto.BC.AsymmetricX25519Algorithm.html#wan24_Crypto_BC_AsymmetricX25519Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricX25519Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricX25519Algorithm.AsymmetricX25519Algorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricX25519Algorithm.New()
-  nameWithType: AsymmetricX25519Algorithm.AsymmetricX25519Algorithm()
-  nameWithType.vb: AsymmetricX25519Algorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricX25519Algorithm.#ctor*
-  name: AsymmetricX25519Algorithm
-  href: api/wan24.Crypto.BC.AsymmetricX25519Algorithm.html#wan24_Crypto_BC_AsymmetricX25519Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricX25519Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricX25519Algorithm.AsymmetricX25519Algorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricX25519Algorithm.New
-  nameWithType: AsymmetricX25519Algorithm.AsymmetricX25519Algorithm
-  nameWithType.vb: AsymmetricX25519Algorithm.New
 - uid: wan24.Crypto.BC.AsymmetricX25519Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricX25519Algorithm.html#wan24_Crypto_BC_AsymmetricX25519Algorithm_ALGORITHM_NAME
@@ -5328,25 +5043,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricX448Algorithm
   fullName: wan24.Crypto.BC.AsymmetricX448Algorithm
   nameWithType: AsymmetricX448Algorithm
-- uid: wan24.Crypto.BC.AsymmetricX448Algorithm.#ctor
-  name: AsymmetricX448Algorithm()
-  href: api/wan24.Crypto.BC.AsymmetricX448Algorithm.html#wan24_Crypto_BC_AsymmetricX448Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricX448Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricX448Algorithm.AsymmetricX448Algorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricX448Algorithm.New()
-  nameWithType: AsymmetricX448Algorithm.AsymmetricX448Algorithm()
-  nameWithType.vb: AsymmetricX448Algorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricX448Algorithm.#ctor*
-  name: AsymmetricX448Algorithm
-  href: api/wan24.Crypto.BC.AsymmetricX448Algorithm.html#wan24_Crypto_BC_AsymmetricX448Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricX448Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricX448Algorithm.AsymmetricX448Algorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricX448Algorithm.New
-  nameWithType: AsymmetricX448Algorithm.AsymmetricX448Algorithm
-  nameWithType.vb: AsymmetricX448Algorithm.New
 - uid: wan24.Crypto.BC.AsymmetricX448Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricX448Algorithm.html#wan24_Crypto_BC_AsymmetricX448Algorithm_ALGORITHM_NAME
@@ -5683,25 +5379,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricXEd25519Algorithm
   fullName: wan24.Crypto.BC.AsymmetricXEd25519Algorithm
   nameWithType: AsymmetricXEd25519Algorithm
-- uid: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.#ctor
-  name: AsymmetricXEd25519Algorithm()
-  href: api/wan24.Crypto.BC.AsymmetricXEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricXEd25519Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricXEd25519Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.AsymmetricXEd25519Algorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.New()
-  nameWithType: AsymmetricXEd25519Algorithm.AsymmetricXEd25519Algorithm()
-  nameWithType.vb: AsymmetricXEd25519Algorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.#ctor*
-  name: AsymmetricXEd25519Algorithm
-  href: api/wan24.Crypto.BC.AsymmetricXEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricXEd25519Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricXEd25519Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.AsymmetricXEd25519Algorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.New
-  nameWithType: AsymmetricXEd25519Algorithm.AsymmetricXEd25519Algorithm
-  nameWithType.vb: AsymmetricXEd25519Algorithm.New
 - uid: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricXEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricXEd25519Algorithm_ALGORITHM_NAME
@@ -6158,25 +5835,6 @@ references:
   commentId: T:wan24.Crypto.BC.AsymmetricXEd448Algorithm
   fullName: wan24.Crypto.BC.AsymmetricXEd448Algorithm
   nameWithType: AsymmetricXEd448Algorithm
-- uid: wan24.Crypto.BC.AsymmetricXEd448Algorithm.#ctor
-  name: AsymmetricXEd448Algorithm()
-  href: api/wan24.Crypto.BC.AsymmetricXEd448Algorithm.html#wan24_Crypto_BC_AsymmetricXEd448Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.AsymmetricXEd448Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.AsymmetricXEd448Algorithm.AsymmetricXEd448Algorithm()
-  fullName.vb: wan24.Crypto.BC.AsymmetricXEd448Algorithm.New()
-  nameWithType: AsymmetricXEd448Algorithm.AsymmetricXEd448Algorithm()
-  nameWithType.vb: AsymmetricXEd448Algorithm.New()
-- uid: wan24.Crypto.BC.AsymmetricXEd448Algorithm.#ctor*
-  name: AsymmetricXEd448Algorithm
-  href: api/wan24.Crypto.BC.AsymmetricXEd448Algorithm.html#wan24_Crypto_BC_AsymmetricXEd448Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.AsymmetricXEd448Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.AsymmetricXEd448Algorithm.AsymmetricXEd448Algorithm
-  fullName.vb: wan24.Crypto.BC.AsymmetricXEd448Algorithm.New
-  nameWithType: AsymmetricXEd448Algorithm.AsymmetricXEd448Algorithm
-  nameWithType.vb: AsymmetricXEd448Algorithm.New
 - uid: wan24.Crypto.BC.AsymmetricXEd448Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.AsymmetricXEd448Algorithm.html#wan24_Crypto_BC_AsymmetricXEd448Algorithm_ALGORITHM_NAME
@@ -6871,15 +6529,15 @@ references:
   fullName.vb: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal)
   nameWithType: BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>
   nameWithType.vb: BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal)
-- uid: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.#ctor(System.String,System.Int32,wan24.Crypto.AsymmetricAlgorithmUsages,System.Boolean,System.Collections.ObjectModel.ReadOnlyCollection{System.Int32},System.Boolean,System.Int32)
-  name: BouncyCastleAsymmetricAlgorithmBase(string, int, AsymmetricAlgorithmUsages, bool, ReadOnlyCollection<int>, bool, int)
-  href: api/wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7__ctor_System_String_System_Int32_wan24_Crypto_AsymmetricAlgorithmUsages_System_Boolean_System_Collections_ObjectModel_ReadOnlyCollection_System_Int32__System_Boolean_System_Int32_
-  commentId: M:wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.#ctor(System.String,System.Int32,wan24.Crypto.AsymmetricAlgorithmUsages,System.Boolean,System.Collections.ObjectModel.ReadOnlyCollection{System.Int32},System.Boolean,System.Int32)
-  name.vb: New(String, Integer, AsymmetricAlgorithmUsages, Boolean, ReadOnlyCollection(Of Integer), Boolean, Integer)
-  fullName: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>.BouncyCastleAsymmetricAlgorithmBase(string, int, wan24.Crypto.AsymmetricAlgorithmUsages, bool, System.Collections.ObjectModel.ReadOnlyCollection<int>, bool, int)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal).New(String, Integer, wan24.Crypto.AsymmetricAlgorithmUsages, Boolean, System.Collections.ObjectModel.ReadOnlyCollection(Of Integer), Boolean, Integer)
-  nameWithType: BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>.BouncyCastleAsymmetricAlgorithmBase(string, int, AsymmetricAlgorithmUsages, bool, ReadOnlyCollection<int>, bool, int)
-  nameWithType.vb: BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal).New(String, Integer, AsymmetricAlgorithmUsages, Boolean, ReadOnlyCollection(Of Integer), Boolean, Integer)
+- uid: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.#ctor(System.String,System.Int32,wan24.Crypto.AsymmetricAlgorithmUsages,System.Boolean,System.Collections.Frozen.FrozenSet{System.Int32},System.Boolean,System.Int32)
+  name: BouncyCastleAsymmetricAlgorithmBase(string, int, AsymmetricAlgorithmUsages, bool, FrozenSet<int>, bool, int)
+  href: api/wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7__ctor_System_String_System_Int32_wan24_Crypto_AsymmetricAlgorithmUsages_System_Boolean_System_Collections_Frozen_FrozenSet_System_Int32__System_Boolean_System_Int32_
+  commentId: M:wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.#ctor(System.String,System.Int32,wan24.Crypto.AsymmetricAlgorithmUsages,System.Boolean,System.Collections.Frozen.FrozenSet{System.Int32},System.Boolean,System.Int32)
+  name.vb: New(String, Integer, AsymmetricAlgorithmUsages, Boolean, FrozenSet(Of Integer), Boolean, Integer)
+  fullName: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>.BouncyCastleAsymmetricAlgorithmBase(string, int, wan24.Crypto.AsymmetricAlgorithmUsages, bool, System.Collections.Frozen.FrozenSet<int>, bool, int)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal).New(String, Integer, wan24.Crypto.AsymmetricAlgorithmUsages, Boolean, System.Collections.Frozen.FrozenSet(Of Integer), Boolean, Integer)
+  nameWithType: BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>.BouncyCastleAsymmetricAlgorithmBase(string, int, AsymmetricAlgorithmUsages, bool, FrozenSet<int>, bool, int)
+  nameWithType.vb: BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal).New(String, Integer, AsymmetricAlgorithmUsages, Boolean, FrozenSet(Of Integer), Boolean, Integer)
 - uid: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`7.#ctor*
   name: BouncyCastleAsymmetricAlgorithmBase
   href: api/wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7__ctor_
@@ -7053,15 +6711,15 @@ references:
   fullName.vb: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal)
   nameWithType: BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>
   nameWithType.vb: BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal)
-- uid: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`8.#ctor(System.String,System.Int32,wan24.Crypto.AsymmetricAlgorithmUsages,System.Boolean,System.Collections.ObjectModel.ReadOnlyCollection{System.Int32},System.Boolean,System.Int32)
-  name: BouncyCastleAsymmetricAlgorithmBase(string, int, AsymmetricAlgorithmUsages, bool, ReadOnlyCollection<int>, bool, int)
-  href: api/wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_8__ctor_System_String_System_Int32_wan24_Crypto_AsymmetricAlgorithmUsages_System_Boolean_System_Collections_ObjectModel_ReadOnlyCollection_System_Int32__System_Boolean_System_Int32_
-  commentId: M:wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`8.#ctor(System.String,System.Int32,wan24.Crypto.AsymmetricAlgorithmUsages,System.Boolean,System.Collections.ObjectModel.ReadOnlyCollection{System.Int32},System.Boolean,System.Int32)
-  name.vb: New(String, Integer, AsymmetricAlgorithmUsages, Boolean, ReadOnlyCollection(Of Integer), Boolean, Integer)
-  fullName: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>.BouncyCastleAsymmetricAlgorithmBase(string, int, wan24.Crypto.AsymmetricAlgorithmUsages, bool, System.Collections.ObjectModel.ReadOnlyCollection<int>, bool, int)
-  fullName.vb: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal).New(String, Integer, wan24.Crypto.AsymmetricAlgorithmUsages, Boolean, System.Collections.ObjectModel.ReadOnlyCollection(Of Integer), Boolean, Integer)
-  nameWithType: BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>.BouncyCastleAsymmetricAlgorithmBase(string, int, AsymmetricAlgorithmUsages, bool, ReadOnlyCollection<int>, bool, int)
-  nameWithType.vb: BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal).New(String, Integer, AsymmetricAlgorithmUsages, Boolean, ReadOnlyCollection(Of Integer), Boolean, Integer)
+- uid: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`8.#ctor(System.String,System.Int32,wan24.Crypto.AsymmetricAlgorithmUsages,System.Boolean,System.Collections.Frozen.FrozenSet{System.Int32},System.Boolean,System.Int32)
+  name: BouncyCastleAsymmetricAlgorithmBase(string, int, AsymmetricAlgorithmUsages, bool, FrozenSet<int>, bool, int)
+  href: api/wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_8__ctor_System_String_System_Int32_wan24_Crypto_AsymmetricAlgorithmUsages_System_Boolean_System_Collections_Frozen_FrozenSet_System_Int32__System_Boolean_System_Int32_
+  commentId: M:wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`8.#ctor(System.String,System.Int32,wan24.Crypto.AsymmetricAlgorithmUsages,System.Boolean,System.Collections.Frozen.FrozenSet{System.Int32},System.Boolean,System.Int32)
+  name.vb: New(String, Integer, AsymmetricAlgorithmUsages, Boolean, FrozenSet(Of Integer), Boolean, Integer)
+  fullName: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>.BouncyCastleAsymmetricAlgorithmBase(string, int, wan24.Crypto.AsymmetricAlgorithmUsages, bool, System.Collections.Frozen.FrozenSet<int>, bool, int)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal).New(String, Integer, wan24.Crypto.AsymmetricAlgorithmUsages, Boolean, System.Collections.Frozen.FrozenSet(Of Integer), Boolean, Integer)
+  nameWithType: BouncyCastleAsymmetricAlgorithmBase<tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal>.BouncyCastleAsymmetricAlgorithmBase(string, int, AsymmetricAlgorithmUsages, bool, FrozenSet<int>, bool, int)
+  nameWithType.vb: BouncyCastleAsymmetricAlgorithmBase(Of tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal).New(String, Integer, AsymmetricAlgorithmUsages, Boolean, FrozenSet(Of Integer), Boolean, Integer)
 - uid: wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase`8.#ctor*
   name: BouncyCastleAsymmetricAlgorithmBase
   href: api/wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html#wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_8__ctor_
@@ -10328,25 +9986,6 @@ references:
   commentId: T:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm
   fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm
   nameWithType: EncryptionAes256GcmAlgorithm
-- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.#ctor
-  name: EncryptionAes256GcmAlgorithm()
-  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.EncryptionAes256GcmAlgorithm()
-  fullName.vb: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.New()
-  nameWithType: EncryptionAes256GcmAlgorithm.EncryptionAes256GcmAlgorithm()
-  nameWithType.vb: EncryptionAes256GcmAlgorithm.New()
-- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.#ctor*
-  name: EncryptionAes256GcmAlgorithm
-  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.EncryptionAes256GcmAlgorithm
-  fullName.vb: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.New
-  nameWithType: EncryptionAes256GcmAlgorithm.EncryptionAes256GcmAlgorithm
-  nameWithType.vb: EncryptionAes256GcmAlgorithm.New
 - uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_ALGORITHM_NAME
@@ -10534,25 +10173,6 @@ references:
   commentId: T:wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm
   fullName: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm
   nameWithType: EncryptionBcAes256CbcAlgorithm
-- uid: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.#ctor
-  name: EncryptionBcAes256CbcAlgorithm()
-  href: api/wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.EncryptionBcAes256CbcAlgorithm()
-  fullName.vb: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.New()
-  nameWithType: EncryptionBcAes256CbcAlgorithm.EncryptionBcAes256CbcAlgorithm()
-  nameWithType.vb: EncryptionBcAes256CbcAlgorithm.New()
-- uid: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.#ctor*
-  name: EncryptionBcAes256CbcAlgorithm
-  href: api/wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.EncryptionBcAes256CbcAlgorithm
-  fullName.vb: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.New
-  nameWithType: EncryptionBcAes256CbcAlgorithm.EncryptionBcAes256CbcAlgorithm
-  nameWithType.vb: EncryptionBcAes256CbcAlgorithm.New
 - uid: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_ALGORITHM_NAME
@@ -10734,25 +10354,6 @@ references:
   commentId: T:wan24.Crypto.BC.EncryptionChaCha20Algorithm
   fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm
   nameWithType: EncryptionChaCha20Algorithm
-- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.#ctor
-  name: EncryptionChaCha20Algorithm()
-  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.EncryptionChaCha20Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.EncryptionChaCha20Algorithm()
-  fullName.vb: wan24.Crypto.BC.EncryptionChaCha20Algorithm.New()
-  nameWithType: EncryptionChaCha20Algorithm.EncryptionChaCha20Algorithm()
-  nameWithType.vb: EncryptionChaCha20Algorithm.New()
-- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.#ctor*
-  name: EncryptionChaCha20Algorithm
-  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.EncryptionChaCha20Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.EncryptionChaCha20Algorithm
-  fullName.vb: wan24.Crypto.BC.EncryptionChaCha20Algorithm.New
-  nameWithType: EncryptionChaCha20Algorithm.EncryptionChaCha20Algorithm
-  nameWithType.vb: EncryptionChaCha20Algorithm.New
 - uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_ALGORITHM_NAME
@@ -10940,25 +10541,6 @@ references:
   commentId: T:wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm
   fullName: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm
   nameWithType: EncryptionSerpent256CbcAlgorithm
-- uid: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.#ctor
-  name: EncryptionSerpent256CbcAlgorithm()
-  href: api/wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256CbcAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.EncryptionSerpent256CbcAlgorithm()
-  fullName.vb: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.New()
-  nameWithType: EncryptionSerpent256CbcAlgorithm.EncryptionSerpent256CbcAlgorithm()
-  nameWithType.vb: EncryptionSerpent256CbcAlgorithm.New()
-- uid: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.#ctor*
-  name: EncryptionSerpent256CbcAlgorithm
-  href: api/wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256CbcAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.EncryptionSerpent256CbcAlgorithm
-  fullName.vb: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.New
-  nameWithType: EncryptionSerpent256CbcAlgorithm.EncryptionSerpent256CbcAlgorithm
-  nameWithType.vb: EncryptionSerpent256CbcAlgorithm.New
 - uid: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256CbcAlgorithm_ALGORITHM_NAME
@@ -11162,25 +10744,6 @@ references:
   commentId: T:wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm
   fullName: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm
   nameWithType: EncryptionSerpent256GcmAlgorithm
-- uid: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.#ctor
-  name: EncryptionSerpent256GcmAlgorithm()
-  href: api/wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256GcmAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.EncryptionSerpent256GcmAlgorithm()
-  fullName.vb: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.New()
-  nameWithType: EncryptionSerpent256GcmAlgorithm.EncryptionSerpent256GcmAlgorithm()
-  nameWithType.vb: EncryptionSerpent256GcmAlgorithm.New()
-- uid: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.#ctor*
-  name: EncryptionSerpent256GcmAlgorithm
-  href: api/wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256GcmAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.EncryptionSerpent256GcmAlgorithm
-  fullName.vb: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.New
-  nameWithType: EncryptionSerpent256GcmAlgorithm.EncryptionSerpent256GcmAlgorithm
-  nameWithType.vb: EncryptionSerpent256GcmAlgorithm.New
 - uid: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256GcmAlgorithm_ALGORITHM_NAME
@@ -11368,25 +10931,6 @@ references:
   commentId: T:wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm
   fullName: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm
   nameWithType: EncryptionTwofish256CbcAlgorithm
-- uid: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.#ctor
-  name: EncryptionTwofish256CbcAlgorithm()
-  href: api/wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256CbcAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.EncryptionTwofish256CbcAlgorithm()
-  fullName.vb: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.New()
-  nameWithType: EncryptionTwofish256CbcAlgorithm.EncryptionTwofish256CbcAlgorithm()
-  nameWithType.vb: EncryptionTwofish256CbcAlgorithm.New()
-- uid: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.#ctor*
-  name: EncryptionTwofish256CbcAlgorithm
-  href: api/wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256CbcAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.EncryptionTwofish256CbcAlgorithm
-  fullName.vb: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.New
-  nameWithType: EncryptionTwofish256CbcAlgorithm.EncryptionTwofish256CbcAlgorithm
-  nameWithType.vb: EncryptionTwofish256CbcAlgorithm.New
 - uid: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256CbcAlgorithm_ALGORITHM_NAME
@@ -11590,25 +11134,6 @@ references:
   commentId: T:wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm
   fullName: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm
   nameWithType: EncryptionTwofish256GcmAlgorithm
-- uid: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.#ctor
-  name: EncryptionTwofish256GcmAlgorithm()
-  href: api/wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256GcmAlgorithm__ctor
-  commentId: M:wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.EncryptionTwofish256GcmAlgorithm()
-  fullName.vb: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.New()
-  nameWithType: EncryptionTwofish256GcmAlgorithm.EncryptionTwofish256GcmAlgorithm()
-  nameWithType.vb: EncryptionTwofish256GcmAlgorithm.New()
-- uid: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.#ctor*
-  name: EncryptionTwofish256GcmAlgorithm
-  href: api/wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256GcmAlgorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.EncryptionTwofish256GcmAlgorithm
-  fullName.vb: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.New
-  nameWithType: EncryptionTwofish256GcmAlgorithm.EncryptionTwofish256GcmAlgorithm
-  nameWithType.vb: EncryptionTwofish256GcmAlgorithm.New
 - uid: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256GcmAlgorithm_ALGORITHM_NAME
@@ -11796,25 +11321,6 @@ references:
   commentId: T:wan24.Crypto.BC.EncryptionXSalsa20Algorithm
   fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm
   nameWithType: EncryptionXSalsa20Algorithm
-- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.#ctor
-  name: EncryptionXSalsa20Algorithm()
-  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.EncryptionXSalsa20Algorithm()
-  fullName.vb: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.New()
-  nameWithType: EncryptionXSalsa20Algorithm.EncryptionXSalsa20Algorithm()
-  nameWithType.vb: EncryptionXSalsa20Algorithm.New()
-- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.#ctor*
-  name: EncryptionXSalsa20Algorithm
-  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.EncryptionXSalsa20Algorithm
-  fullName.vb: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.New
-  nameWithType: EncryptionXSalsa20Algorithm.EncryptionXSalsa20Algorithm
-  nameWithType.vb: EncryptionXSalsa20Algorithm.New
 - uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_ALGORITHM_NAME
@@ -12063,25 +11569,6 @@ references:
   commentId: T:wan24.Crypto.BC.HashBcSha3_256Algorithm
   fullName: wan24.Crypto.BC.HashBcSha3_256Algorithm
   nameWithType: HashBcSha3_256Algorithm
-- uid: wan24.Crypto.BC.HashBcSha3_256Algorithm.#ctor
-  name: HashBcSha3_256Algorithm()
-  href: api/wan24.Crypto.BC.HashBcSha3_256Algorithm.html#wan24_Crypto_BC_HashBcSha3_256Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.HashBcSha3_256Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.HashBcSha3_256Algorithm.HashBcSha3_256Algorithm()
-  fullName.vb: wan24.Crypto.BC.HashBcSha3_256Algorithm.New()
-  nameWithType: HashBcSha3_256Algorithm.HashBcSha3_256Algorithm()
-  nameWithType.vb: HashBcSha3_256Algorithm.New()
-- uid: wan24.Crypto.BC.HashBcSha3_256Algorithm.#ctor*
-  name: HashBcSha3_256Algorithm
-  href: api/wan24.Crypto.BC.HashBcSha3_256Algorithm.html#wan24_Crypto_BC_HashBcSha3_256Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.HashBcSha3_256Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.HashBcSha3_256Algorithm.HashBcSha3_256Algorithm
-  fullName.vb: wan24.Crypto.BC.HashBcSha3_256Algorithm.New
-  nameWithType: HashBcSha3_256Algorithm.HashBcSha3_256Algorithm
-  nameWithType.vb: HashBcSha3_256Algorithm.New
 - uid: wan24.Crypto.BC.HashBcSha3_256Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.HashBcSha3_256Algorithm.html#wan24_Crypto_BC_HashBcSha3_256Algorithm_ALGORITHM_NAME
@@ -12167,25 +11654,6 @@ references:
   commentId: T:wan24.Crypto.BC.HashBcSha3_384Algorithm
   fullName: wan24.Crypto.BC.HashBcSha3_384Algorithm
   nameWithType: HashBcSha3_384Algorithm
-- uid: wan24.Crypto.BC.HashBcSha3_384Algorithm.#ctor
-  name: HashBcSha3_384Algorithm()
-  href: api/wan24.Crypto.BC.HashBcSha3_384Algorithm.html#wan24_Crypto_BC_HashBcSha3_384Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.HashBcSha3_384Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.HashBcSha3_384Algorithm.HashBcSha3_384Algorithm()
-  fullName.vb: wan24.Crypto.BC.HashBcSha3_384Algorithm.New()
-  nameWithType: HashBcSha3_384Algorithm.HashBcSha3_384Algorithm()
-  nameWithType.vb: HashBcSha3_384Algorithm.New()
-- uid: wan24.Crypto.BC.HashBcSha3_384Algorithm.#ctor*
-  name: HashBcSha3_384Algorithm
-  href: api/wan24.Crypto.BC.HashBcSha3_384Algorithm.html#wan24_Crypto_BC_HashBcSha3_384Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.HashBcSha3_384Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.HashBcSha3_384Algorithm.HashBcSha3_384Algorithm
-  fullName.vb: wan24.Crypto.BC.HashBcSha3_384Algorithm.New
-  nameWithType: HashBcSha3_384Algorithm.HashBcSha3_384Algorithm
-  nameWithType.vb: HashBcSha3_384Algorithm.New
 - uid: wan24.Crypto.BC.HashBcSha3_384Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.HashBcSha3_384Algorithm.html#wan24_Crypto_BC_HashBcSha3_384Algorithm_ALGORITHM_NAME
@@ -12271,25 +11739,6 @@ references:
   commentId: T:wan24.Crypto.BC.HashBcSha3_512Algorithm
   fullName: wan24.Crypto.BC.HashBcSha3_512Algorithm
   nameWithType: HashBcSha3_512Algorithm
-- uid: wan24.Crypto.BC.HashBcSha3_512Algorithm.#ctor
-  name: HashBcSha3_512Algorithm()
-  href: api/wan24.Crypto.BC.HashBcSha3_512Algorithm.html#wan24_Crypto_BC_HashBcSha3_512Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.HashBcSha3_512Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.HashBcSha3_512Algorithm.HashBcSha3_512Algorithm()
-  fullName.vb: wan24.Crypto.BC.HashBcSha3_512Algorithm.New()
-  nameWithType: HashBcSha3_512Algorithm.HashBcSha3_512Algorithm()
-  nameWithType.vb: HashBcSha3_512Algorithm.New()
-- uid: wan24.Crypto.BC.HashBcSha3_512Algorithm.#ctor*
-  name: HashBcSha3_512Algorithm
-  href: api/wan24.Crypto.BC.HashBcSha3_512Algorithm.html#wan24_Crypto_BC_HashBcSha3_512Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.HashBcSha3_512Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.HashBcSha3_512Algorithm.HashBcSha3_512Algorithm
-  fullName.vb: wan24.Crypto.BC.HashBcSha3_512Algorithm.New
-  nameWithType: HashBcSha3_512Algorithm.HashBcSha3_512Algorithm
-  nameWithType.vb: HashBcSha3_512Algorithm.New
 - uid: wan24.Crypto.BC.HashBcSha3_512Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.HashBcSha3_512Algorithm.html#wan24_Crypto_BC_HashBcSha3_512Algorithm_ALGORITHM_NAME
@@ -12375,25 +11824,6 @@ references:
   commentId: T:wan24.Crypto.BC.HashBcShake128Algorithm
   fullName: wan24.Crypto.BC.HashBcShake128Algorithm
   nameWithType: HashBcShake128Algorithm
-- uid: wan24.Crypto.BC.HashBcShake128Algorithm.#ctor
-  name: HashBcShake128Algorithm()
-  href: api/wan24.Crypto.BC.HashBcShake128Algorithm.html#wan24_Crypto_BC_HashBcShake128Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.HashBcShake128Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.HashBcShake128Algorithm.HashBcShake128Algorithm()
-  fullName.vb: wan24.Crypto.BC.HashBcShake128Algorithm.New()
-  nameWithType: HashBcShake128Algorithm.HashBcShake128Algorithm()
-  nameWithType.vb: HashBcShake128Algorithm.New()
-- uid: wan24.Crypto.BC.HashBcShake128Algorithm.#ctor*
-  name: HashBcShake128Algorithm
-  href: api/wan24.Crypto.BC.HashBcShake128Algorithm.html#wan24_Crypto_BC_HashBcShake128Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.HashBcShake128Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.HashBcShake128Algorithm.HashBcShake128Algorithm
-  fullName.vb: wan24.Crypto.BC.HashBcShake128Algorithm.New
-  nameWithType: HashBcShake128Algorithm.HashBcShake128Algorithm
-  nameWithType.vb: HashBcShake128Algorithm.New
 - uid: wan24.Crypto.BC.HashBcShake128Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.HashBcShake128Algorithm.html#wan24_Crypto_BC_HashBcShake128Algorithm_ALGORITHM_NAME
@@ -12479,25 +11909,6 @@ references:
   commentId: T:wan24.Crypto.BC.HashBcShake256Algorithm
   fullName: wan24.Crypto.BC.HashBcShake256Algorithm
   nameWithType: HashBcShake256Algorithm
-- uid: wan24.Crypto.BC.HashBcShake256Algorithm.#ctor
-  name: HashBcShake256Algorithm()
-  href: api/wan24.Crypto.BC.HashBcShake256Algorithm.html#wan24_Crypto_BC_HashBcShake256Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.HashBcShake256Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.HashBcShake256Algorithm.HashBcShake256Algorithm()
-  fullName.vb: wan24.Crypto.BC.HashBcShake256Algorithm.New()
-  nameWithType: HashBcShake256Algorithm.HashBcShake256Algorithm()
-  nameWithType.vb: HashBcShake256Algorithm.New()
-- uid: wan24.Crypto.BC.HashBcShake256Algorithm.#ctor*
-  name: HashBcShake256Algorithm
-  href: api/wan24.Crypto.BC.HashBcShake256Algorithm.html#wan24_Crypto_BC_HashBcShake256Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.HashBcShake256Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.HashBcShake256Algorithm.HashBcShake256Algorithm
-  fullName.vb: wan24.Crypto.BC.HashBcShake256Algorithm.New
-  nameWithType: HashBcShake256Algorithm.HashBcShake256Algorithm
-  nameWithType.vb: HashBcShake256Algorithm.New
 - uid: wan24.Crypto.BC.HashBcShake256Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.HashBcShake256Algorithm.html#wan24_Crypto_BC_HashBcShake256Algorithm_ALGORITHM_NAME
@@ -12589,25 +12000,6 @@ references:
   commentId: T:wan24.Crypto.BC.MacBcHmacSha3_256Algorithm
   fullName: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm
   nameWithType: MacBcHmacSha3_256Algorithm
-- uid: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.#ctor
-  name: MacBcHmacSha3_256Algorithm()
-  href: api/wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.html#wan24_Crypto_BC_MacBcHmacSha3_256Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.MacBcHmacSha3_256Algorithm()
-  fullName.vb: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.New()
-  nameWithType: MacBcHmacSha3_256Algorithm.MacBcHmacSha3_256Algorithm()
-  nameWithType.vb: MacBcHmacSha3_256Algorithm.New()
-- uid: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.#ctor*
-  name: MacBcHmacSha3_256Algorithm
-  href: api/wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.html#wan24_Crypto_BC_MacBcHmacSha3_256Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.MacBcHmacSha3_256Algorithm
-  fullName.vb: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.New
-  nameWithType: MacBcHmacSha3_256Algorithm.MacBcHmacSha3_256Algorithm
-  nameWithType.vb: MacBcHmacSha3_256Algorithm.New
 - uid: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.html#wan24_Crypto_BC_MacBcHmacSha3_256Algorithm_ALGORITHM_NAME
@@ -12693,25 +12085,6 @@ references:
   commentId: T:wan24.Crypto.BC.MacBcHmacSha3_384Algorithm
   fullName: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm
   nameWithType: MacBcHmacSha3_384Algorithm
-- uid: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.#ctor
-  name: MacBcHmacSha3_384Algorithm()
-  href: api/wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.html#wan24_Crypto_BC_MacBcHmacSha3_384Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.MacBcHmacSha3_384Algorithm()
-  fullName.vb: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.New()
-  nameWithType: MacBcHmacSha3_384Algorithm.MacBcHmacSha3_384Algorithm()
-  nameWithType.vb: MacBcHmacSha3_384Algorithm.New()
-- uid: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.#ctor*
-  name: MacBcHmacSha3_384Algorithm
-  href: api/wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.html#wan24_Crypto_BC_MacBcHmacSha3_384Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.MacBcHmacSha3_384Algorithm
-  fullName.vb: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.New
-  nameWithType: MacBcHmacSha3_384Algorithm.MacBcHmacSha3_384Algorithm
-  nameWithType.vb: MacBcHmacSha3_384Algorithm.New
 - uid: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.html#wan24_Crypto_BC_MacBcHmacSha3_384Algorithm_ALGORITHM_NAME
@@ -12797,25 +12170,6 @@ references:
   commentId: T:wan24.Crypto.BC.MacBcHmacSha3_512Algorithm
   fullName: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm
   nameWithType: MacBcHmacSha3_512Algorithm
-- uid: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.#ctor
-  name: MacBcHmacSha3_512Algorithm()
-  href: api/wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.html#wan24_Crypto_BC_MacBcHmacSha3_512Algorithm__ctor
-  commentId: M:wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.#ctor
-  name.vb: New()
-  fullName: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.MacBcHmacSha3_512Algorithm()
-  fullName.vb: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.New()
-  nameWithType: MacBcHmacSha3_512Algorithm.MacBcHmacSha3_512Algorithm()
-  nameWithType.vb: MacBcHmacSha3_512Algorithm.New()
-- uid: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.#ctor*
-  name: MacBcHmacSha3_512Algorithm
-  href: api/wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.html#wan24_Crypto_BC_MacBcHmacSha3_512Algorithm__ctor_
-  commentId: Overload:wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.MacBcHmacSha3_512Algorithm
-  fullName.vb: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.New
-  nameWithType: MacBcHmacSha3_512Algorithm.MacBcHmacSha3_512Algorithm
-  nameWithType.vb: MacBcHmacSha3_512Algorithm.New
 - uid: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.ALGORITHM_NAME
   name: ALGORITHM_NAME
   href: api/wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.html#wan24_Crypto_BC_MacBcHmacSha3_512Algorithm_ALGORITHM_NAME
