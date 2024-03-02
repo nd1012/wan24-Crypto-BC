@@ -76,6 +76,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.GetEngineParameters
   nameWithType: AsymmetricBcEcDiffieHellmanAlgorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDiffieHellmanAlgorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricBcEcDiffieHellmanAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDiffieHellmanAlgorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricBcEcDiffieHellmanAlgorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDiffieHellmanAlgorithm_USAGES
@@ -396,6 +409,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.GetEngineParameters
   nameWithType: AsymmetricBcEcDsaAlgorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDsaAlgorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricBcEcDsaAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDsaAlgorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricBcEcDsaAlgorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDsaAlgorithm_USAGES
@@ -713,6 +739,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricBikeAlgorithm.GetEngineParameters
   nameWithType: AsymmetricBikeAlgorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricBikeAlgorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricBikeAlgorithm.html#wan24_Crypto_BC_AsymmetricBikeAlgorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricBikeAlgorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricBikeAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricBikeAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricBikeAlgorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricBikeAlgorithm.html#wan24_Crypto_BC_AsymmetricBikeAlgorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricBikeAlgorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricBikeAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricBikeAlgorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricBikeAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricBikeAlgorithm.html#wan24_Crypto_BC_AsymmetricBikeAlgorithm_USAGES
@@ -1060,6 +1099,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.GetEngineParameters
   nameWithType: AsymmetricDilithiumAlgorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html#wan24_Crypto_BC_AsymmetricDilithiumAlgorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricDilithiumAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html#wan24_Crypto_BC_AsymmetricDilithiumAlgorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricDilithiumAlgorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html#wan24_Crypto_BC_AsymmetricDilithiumAlgorithm_USAGES
@@ -1380,6 +1432,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricEd25519Algorithm.GetEngineParameters
   nameWithType: AsymmetricEd25519Algorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricEd25519Algorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricEd25519Algorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricEd25519Algorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricEd25519Algorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricEd25519Algorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricEd25519Algorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricEd25519Algorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricEd25519Algorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricEd25519Algorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricEd25519Algorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricEd25519Algorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricEd25519Algorithm_USAGES
@@ -1678,6 +1743,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricEd448Algorithm.GetEngineParameters
   nameWithType: AsymmetricEd448Algorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricEd448Algorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricEd448Algorithm.html#wan24_Crypto_BC_AsymmetricEd448Algorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricEd448Algorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricEd448Algorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricEd448Algorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricEd448Algorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricEd448Algorithm.html#wan24_Crypto_BC_AsymmetricEd448Algorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricEd448Algorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricEd448Algorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricEd448Algorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricEd448Algorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricEd448Algorithm.html#wan24_Crypto_BC_AsymmetricEd448Algorithm_USAGES
@@ -1973,6 +2051,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricFalconAlgorithm.GetEngineParameters
   nameWithType: AsymmetricFalconAlgorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricFalconAlgorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html#wan24_Crypto_BC_AsymmetricFalconAlgorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricFalconAlgorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricFalconAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricFalconAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricFalconAlgorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html#wan24_Crypto_BC_AsymmetricFalconAlgorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricFalconAlgorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricFalconAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricFalconAlgorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricFalconAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html#wan24_Crypto_BC_AsymmetricFalconAlgorithm_USAGES
@@ -2277,6 +2368,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.GetEngineParameters
   nameWithType: AsymmetricFrodoKemAlgorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html#wan24_Crypto_BC_AsymmetricFrodoKemAlgorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricFrodoKemAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html#wan24_Crypto_BC_AsymmetricFrodoKemAlgorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricFrodoKemAlgorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html#wan24_Crypto_BC_AsymmetricFrodoKemAlgorithm_USAGES
@@ -2624,6 +2728,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricHqcAlgorithm.GetEngineParameters
   nameWithType: AsymmetricHqcAlgorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricHqcAlgorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricHqcAlgorithm.html#wan24_Crypto_BC_AsymmetricHqcAlgorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricHqcAlgorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricHqcAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricHqcAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricHqcAlgorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricHqcAlgorithm.html#wan24_Crypto_BC_AsymmetricHqcAlgorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricHqcAlgorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricHqcAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricHqcAlgorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricHqcAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricHqcAlgorithm.html#wan24_Crypto_BC_AsymmetricHqcAlgorithm_USAGES
@@ -2971,6 +3088,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricKyberAlgorithm.GetEngineParameters
   nameWithType: AsymmetricKyberAlgorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricKyberAlgorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html#wan24_Crypto_BC_AsymmetricKyberAlgorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricKyberAlgorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricKyberAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricKyberAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricKyberAlgorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html#wan24_Crypto_BC_AsymmetricKyberAlgorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricKyberAlgorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricKyberAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricKyberAlgorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricKyberAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html#wan24_Crypto_BC_AsymmetricKyberAlgorithm_USAGES
@@ -3318,6 +3448,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.GetEngineParameters
   nameWithType: AsymmetricNtruEncryptAlgorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html#wan24_Crypto_BC_AsymmetricNtruEncryptAlgorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricNtruEncryptAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html#wan24_Crypto_BC_AsymmetricNtruEncryptAlgorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricNtruEncryptAlgorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html#wan24_Crypto_BC_AsymmetricNtruEncryptAlgorithm_USAGES
@@ -3691,6 +3834,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.GetEngineParameters
   nameWithType: AsymmetricPicnicAlgorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html#wan24_Crypto_BC_AsymmetricPicnicAlgorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricPicnicAlgorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricPicnicAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html#wan24_Crypto_BC_AsymmetricPicnicAlgorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricPicnicAlgorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricPicnicAlgorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html#wan24_Crypto_BC_AsymmetricPicnicAlgorithm_USAGES
@@ -4041,6 +4197,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.GetEngineParameters
   nameWithType: AsymmetricSNtruPrimeAlgorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.html#wan24_Crypto_BC_AsymmetricSNtruPrimeAlgorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricSNtruPrimeAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.html#wan24_Crypto_BC_AsymmetricSNtruPrimeAlgorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricSNtruPrimeAlgorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.html#wan24_Crypto_BC_AsymmetricSNtruPrimeAlgorithm_USAGES
@@ -4414,6 +4583,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.GetEngineParameters
   nameWithType: AsymmetricSphincsPlusAlgorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html#wan24_Crypto_BC_AsymmetricSphincsPlusAlgorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricSphincsPlusAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html#wan24_Crypto_BC_AsymmetricSphincsPlusAlgorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricSphincsPlusAlgorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html#wan24_Crypto_BC_AsymmetricSphincsPlusAlgorithm_USAGES
@@ -4786,6 +4968,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricX25519Algorithm.GetEngineParameters
   nameWithType: AsymmetricX25519Algorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricX25519Algorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricX25519Algorithm.html#wan24_Crypto_BC_AsymmetricX25519Algorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricX25519Algorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricX25519Algorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricX25519Algorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricX25519Algorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricX25519Algorithm.html#wan24_Crypto_BC_AsymmetricX25519Algorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricX25519Algorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricX25519Algorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricX25519Algorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricX25519Algorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricX25519Algorithm.html#wan24_Crypto_BC_AsymmetricX25519Algorithm_USAGES
@@ -5109,6 +5304,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricX448Algorithm.GetEngineParameters
   nameWithType: AsymmetricX448Algorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricX448Algorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricX448Algorithm.html#wan24_Crypto_BC_AsymmetricX448Algorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricX448Algorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricX448Algorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricX448Algorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricX448Algorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricX448Algorithm.html#wan24_Crypto_BC_AsymmetricX448Algorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricX448Algorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricX448Algorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricX448Algorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricX448Algorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricX448Algorithm.html#wan24_Crypto_BC_AsymmetricX448Algorithm_USAGES
@@ -5445,6 +5653,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.GetEngineParameters
   nameWithType: AsymmetricXEd25519Algorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricXEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricXEd25519Algorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricXEd25519Algorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricXEd25519Algorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricXEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricXEd25519Algorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricXEd25519Algorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricXEd25519Algorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricXEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricXEd25519Algorithm_USAGES
@@ -5901,6 +6122,19 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricXEd448Algorithm.GetEngineParameters
   nameWithType: AsymmetricXEd448Algorithm.GetEngineParameters
+- uid: wan24.Crypto.BC.AsymmetricXEd448Algorithm.IsPublicKeyStandardFormat
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricXEd448Algorithm.html#wan24_Crypto_BC_AsymmetricXEd448Algorithm_IsPublicKeyStandardFormat
+  commentId: P:wan24.Crypto.BC.AsymmetricXEd448Algorithm.IsPublicKeyStandardFormat
+  fullName: wan24.Crypto.BC.AsymmetricXEd448Algorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricXEd448Algorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricXEd448Algorithm.IsPublicKeyStandardFormat*
+  name: IsPublicKeyStandardFormat
+  href: api/wan24.Crypto.BC.AsymmetricXEd448Algorithm.html#wan24_Crypto_BC_AsymmetricXEd448Algorithm_IsPublicKeyStandardFormat_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricXEd448Algorithm.IsPublicKeyStandardFormat
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricXEd448Algorithm.IsPublicKeyStandardFormat
+  nameWithType: AsymmetricXEd448Algorithm.IsPublicKeyStandardFormat
 - uid: wan24.Crypto.BC.AsymmetricXEd448Algorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricXEd448Algorithm.html#wan24_Crypto_BC_AsymmetricXEd448Algorithm_USAGES

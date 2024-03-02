@@ -2,71 +2,100 @@
 <!--[if IE]><![endif]-->
 <html>
 
-  <head>
-    <meta charset="utf-8">
+    <head>
+      <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title>Namespace wan24.Crypto.BC | wan24-Crypto-BC </title>
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Namespace wan24.Crypto.BC | wan24-Crypto-BC ">
-    
-    
+      <meta name="generator" content="docfx ">
+  
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
-      <link rel="stylesheet" href="../styles/docfx.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
       <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    <meta property="docfx:newtab" content="true">
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
+  
+  <meta property="docfx:rel" content="../">
+  <meta property="docfx:newtab" content="true">
+    </head>
+    <body>
+        <!-- Header required for docfx anchor scroll to work -->
+        <header id="head"></header>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
 
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+            <a class="brand" href="../index.html">
+              <img src="../logo.svg" alt="" class="logomark">
+              <span class="brand-title"></span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../logo.svg" alt="" class="logomark">
+                          <span class="brand-title"></span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
                 </div>
-              </form>
-            </div>
-          </div>
-        </nav>
+                <div class="footer">
+  (c) 2023 Andreas Zimmermann, wan24.de
+  
+                </div>            </nav>
 
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
+            <main class="main-panel">
 
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="wan24.Crypto.BC">
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                         <div id="contribution">
+                         </div>
+
+                    <article class="content wrap" id="_content" data-uid="wan24.Crypto.BC">
 
   <h1 id="wan24_Crypto_BC" data-uid="wan24.Crypto.BC" class="text-break">Namespace wan24.Crypto.BC</h1>
   <div class="markdown level0 summary"></div>
@@ -75,405 +104,390 @@
     <h3 id="classes">
 Classes
 </h3>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.html">AsymmetricBcEcDiffieHellmanAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.html">AsymmetricBcEcDiffieHellmanAlgorithm</a></h5>
       <section><p>EC Diffie Hellman asymmetric algorithm (may be used as replacement, if the .NET algorithm isn't available on the current platform)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanPrivateKey.html">AsymmetricBcEcDiffieHellmanPrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanPrivateKey.html">AsymmetricBcEcDiffieHellmanPrivateKey</a></h5>
       <section><p>EC Diffie Hellman asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanPublicKey.html">AsymmetricBcEcDiffieHellmanPublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanPublicKey.html">AsymmetricBcEcDiffieHellmanPublicKey</a></h5>
       <section><p>EC Diffie Hellman asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.html">AsymmetricBcEcDsaAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.html">AsymmetricBcEcDsaAlgorithm</a></h5>
       <section><p>EC DSA asymmetric algorithm (may be used as replacement, if the .NET algorithm isn't available on the current platform)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDsaPrivateKey.html">AsymmetricBcEcDsaPrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDsaPrivateKey.html">AsymmetricBcEcDsaPrivateKey</a></h5>
       <section><p>Asymmetric EC DSA private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDsaPublicKey.html">AsymmetricBcEcDsaPublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDsaPublicKey.html">AsymmetricBcEcDsaPublicKey</a></h5>
       <section><p>Asymmetric EC DSA public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricBikeAlgorithm.html">AsymmetricBikeAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricBikeAlgorithm.html">AsymmetricBikeAlgorithm</a></h5>
       <section><p>BIKE asymmetric algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricBikeHelper.html">AsymmetricBikeHelper</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricBikeHelper.html">AsymmetricBikeHelper</a></h5>
       <section><p>BIKE asymmetric algorithm helper</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricBikePrivateKey.html">AsymmetricBikePrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricBikePrivateKey.html">AsymmetricBikePrivateKey</a></h5>
       <section><p>BIKE asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricBikePublicKey.html">AsymmetricBikePublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricBikePublicKey.html">AsymmetricBikePublicKey</a></h5>
       <section><p>BIKE asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html">AsymmetricDilithiumAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html">AsymmetricDilithiumAlgorithm</a></h5>
       <section><p>CRYSTALS-Dilithium asymmetric algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricDilithiumHelper.html">AsymmetricDilithiumHelper</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricDilithiumHelper.html">AsymmetricDilithiumHelper</a></h5>
       <section><p>CRYSTALS-Dilithium helper</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.html">AsymmetricDilithiumPrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricDilithiumPrivateKey.html">AsymmetricDilithiumPrivateKey</a></h5>
       <section><p>CRYSTALS-Dilithium asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricDilithiumPublicKey.html">AsymmetricDilithiumPublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricDilithiumPublicKey.html">AsymmetricDilithiumPublicKey</a></h5>
       <section><p>CRYSTALS-Dilithium asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricEd25519Algorithm.html">AsymmetricEd25519Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricEd25519Algorithm.html">AsymmetricEd25519Algorithm</a></h5>
       <section><p>Ed25519 asymmetric algorithm (128 bit security)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.html">AsymmetricEd25519PrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricEd25519PrivateKey.html">AsymmetricEd25519PrivateKey</a></h5>
       <section><p>Ed25519 asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricEd25519PublicKey.html">AsymmetricEd25519PublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricEd25519PublicKey.html">AsymmetricEd25519PublicKey</a></h5>
       <section><p>Ed25519 asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricEd448Algorithm.html">AsymmetricEd448Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricEd448Algorithm.html">AsymmetricEd448Algorithm</a></h5>
       <section><p>Ed448 asymmetric algorithm (224 bit security)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PrivateKey.html">AsymmetricEd448PrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PrivateKey.html">AsymmetricEd448PrivateKey</a></h5>
       <section><p>Ed448 asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PublicKey.html">AsymmetricEd448PublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PublicKey.html">AsymmetricEd448PublicKey</a></h5>
       <section><p>Ed448 asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricFalconAlgorithm.html">AsymmetricFalconAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricFalconAlgorithm.html">AsymmetricFalconAlgorithm</a></h5>
       <section><p>FALCON asymmetric algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricFalconHelper.html">AsymmetricFalconHelper</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricFalconHelper.html">AsymmetricFalconHelper</a></h5>
       <section><p>Asymmetric FALCON algorithm helper</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricFalconPrivateKey.html">AsymmetricFalconPrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricFalconPrivateKey.html">AsymmetricFalconPrivateKey</a></h5>
       <section><p>Asymmetric FALCON private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricFalconPublicKey.html">AsymmetricFalconPublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricFalconPublicKey.html">AsymmetricFalconPublicKey</a></h5>
       <section><p>Asymmetric FALCON public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html">AsymmetricFrodoKemAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html">AsymmetricFrodoKemAlgorithm</a></h5>
       <section><p>FrodoKEM asymmetric algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricFrodoKemHelper.html">AsymmetricFrodoKemHelper</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricFrodoKemHelper.html">AsymmetricFrodoKemHelper</a></h5>
       <section><p>FrodoKEM helper</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.html">AsymmetricFrodoKemPrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricFrodoKemPrivateKey.html">AsymmetricFrodoKemPrivateKey</a></h5>
       <section><p>FrodoKEM asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.html">AsymmetricFrodoKemPublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricFrodoKemPublicKey.html">AsymmetricFrodoKemPublicKey</a></h5>
       <section><p>FrodoKEM asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricHqcAlgorithm.html">AsymmetricHqcAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricHqcAlgorithm.html">AsymmetricHqcAlgorithm</a></h5>
       <section><p>HQC asymmetric algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricHqcHelper.html">AsymmetricHqcHelper</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricHqcHelper.html">AsymmetricHqcHelper</a></h5>
       <section><p>HQC asymmetric algorithm helper</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricHqcPrivateKey.html">AsymmetricHqcPrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricHqcPrivateKey.html">AsymmetricHqcPrivateKey</a></h5>
       <section><p>HQC asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricHqcPublicKey.html">AsymmetricHqcPublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricHqcPublicKey.html">AsymmetricHqcPublicKey</a></h5>
       <section><p>HQC asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricKyberAlgorithm.html">AsymmetricKyberAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricKyberAlgorithm.html">AsymmetricKyberAlgorithm</a></h5>
       <section><p>CRYSTALS-Kyber asymmetric algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricKyberHelper.html">AsymmetricKyberHelper</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricKyberHelper.html">AsymmetricKyberHelper</a></h5>
       <section><p>CRYSTALS-Kyber asymmetric algorithm helper</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricKyberPrivateKey.html">AsymmetricKyberPrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricKyberPrivateKey.html">AsymmetricKyberPrivateKey</a></h5>
       <section><p>CRYSTALS-Kyber asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricKyberPublicKey.html">AsymmetricKyberPublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricKyberPublicKey.html">AsymmetricKyberPublicKey</a></h5>
       <section><p>CRYSTALS-Kyber asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html">AsymmetricNtruEncryptAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html">AsymmetricNtruEncryptAlgorithm</a></h5>
       <section><p>NTRUEncrypt asymmetric algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptPrivateKey.html">AsymmetricNtruEncryptPrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptPrivateKey.html">AsymmetricNtruEncryptPrivateKey</a></h5>
       <section><p>NTRUEncrypt asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptPublicKey.html">AsymmetricNtruEncryptPublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptPublicKey.html">AsymmetricNtruEncryptPublicKey</a></h5>
       <section><p>NTRUEncrypt asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricNtruHelper.html">AsymmetricNtruHelper</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricNtruHelper.html">AsymmetricNtruHelper</a></h5>
       <section><p>NTRU helper</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html">AsymmetricPicnicAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html">AsymmetricPicnicAlgorithm</a></h5>
       <section><p>CRYSTALS-Dilithium asymmetric algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicHelper.html">AsymmetricPicnicHelper</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicHelper.html">AsymmetricPicnicHelper</a></h5>
       <section><p>Picnic helper</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicPrivateKey.html">AsymmetricPicnicPrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicPrivateKey.html">AsymmetricPicnicPrivateKey</a></h5>
       <section><p>Picnic asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicPublicKey.html">AsymmetricPicnicPublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicPublicKey.html">AsymmetricPicnicPublicKey</a></h5>
       <section><p>Picnic asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.html">AsymmetricSNtruPrimeAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.html">AsymmetricSNtruPrimeAlgorithm</a></h5>
       <section><p>Streamlined NTRU Prime asymmetric algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricSNtruPrimeHelper.html">AsymmetricSNtruPrimeHelper</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricSNtruPrimeHelper.html">AsymmetricSNtruPrimeHelper</a></h5>
       <section><p>Streamlined NTRU Prime helper</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.html">AsymmetricSNtruPrimePrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.html">AsymmetricSNtruPrimePrivateKey</a></h5>
       <section><p>Streamlined NTRU Prime asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricSNtruPrimePublicKey.html">AsymmetricSNtruPrimePublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricSNtruPrimePublicKey.html">AsymmetricSNtruPrimePublicKey</a></h5>
       <section><p>Streamlined NTRU Prime asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html">AsymmetricSphincsPlusAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html">AsymmetricSphincsPlusAlgorithm</a></h5>
       <section><p>SPHINCS+ asymmetric algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricSphincsPlusHelper.html">AsymmetricSphincsPlusHelper</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricSphincsPlusHelper.html">AsymmetricSphincsPlusHelper</a></h5>
       <section><p>SPHINCS+ asymmetric algorithm helper</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.html">AsymmetricSphincsPlusPrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricSphincsPlusPrivateKey.html">AsymmetricSphincsPlusPrivateKey</a></h5>
       <section><p>SPHINCS+ asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.html">AsymmetricSphincsPlusPublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricSphincsPlusPublicKey.html">AsymmetricSphincsPlusPublicKey</a></h5>
       <section><p>SPHINCS+ asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricX25519Algorithm.html">AsymmetricX25519Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricX25519Algorithm.html">AsymmetricX25519Algorithm</a></h5>
       <section><p>X25519 asymmetric algorithm (128 bit security))</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricX25519PrivateKey.html">AsymmetricX25519PrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricX25519PrivateKey.html">AsymmetricX25519PrivateKey</a></h5>
       <section><p>X25519 asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricX25519PublicKey.html">AsymmetricX25519PublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricX25519PublicKey.html">AsymmetricX25519PublicKey</a></h5>
       <section><p>X25519 asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricX448Algorithm.html">AsymmetricX448Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricX448Algorithm.html">AsymmetricX448Algorithm</a></h5>
       <section><p>X448 asymmetric algorithm (224 bit security))</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricX448PrivateKey.html">AsymmetricX448PrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricX448PrivateKey.html">AsymmetricX448PrivateKey</a></h5>
       <section><p>X448 asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricX448PublicKey.html">AsymmetricX448PublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricX448PublicKey.html">AsymmetricX448PublicKey</a></h5>
       <section><p>X448 asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricXEd25519Algorithm.html">AsymmetricXEd25519Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricXEd25519Algorithm.html">AsymmetricXEd25519Algorithm</a></h5>
       <section><p>XEd25519 asymmetric algorithm (converts the used Ed25519 private key to a X25519 private key for key exchange, 128 bit security)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricXEd25519PrivateKey.html">AsymmetricXEd25519PrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricXEd25519PrivateKey.html">AsymmetricXEd25519PrivateKey</a></h5>
       <section><p>XEd25519 asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricXEd25519PublicKey.html">AsymmetricXEd25519PublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricXEd25519PublicKey.html">AsymmetricXEd25519PublicKey</a></h5>
       <section><p>XEd25519 asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448Algorithm.html">AsymmetricXEd448Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448Algorithm.html">AsymmetricXEd448Algorithm</a></h5>
       <section><p>XEd448 asymmetric algorithm (converts the used Ed448 private key to a X448 private key for key exchange; 224 bit security)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PrivateKey.html">AsymmetricXEd448PrivateKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PrivateKey.html">AsymmetricXEd448PrivateKey</a></h5>
       <section><p>XEd448 asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PublicKey.html">AsymmetricXEd448PublicKey</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.AsymmetricXEd448PublicKey.html">AsymmetricXEd448PublicKey</a></h5>
       <section><p>XEd448 asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BcEllipticCurves.html">BcEllipticCurves</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BcEllipticCurves.html">BcEllipticCurves</a></h5>
       <section><p>Bouncy Castle elliptic curves</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.Bootstrap.html">Bootstrap</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.Bootstrap.html">Bootstrap</a></h5>
       <section><p>Bootstrapper</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastle.html">BouncyCastle</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastle.html">BouncyCastle</a></h5>
       <section><p>Bouncy Castle helper</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAeadCipherAlgorithmBase-1.html">BouncyCastleAeadCipherAlgorithmBase&lt;T&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAeadCipherAlgorithmBase-1.html">BouncyCastleAeadCipherAlgorithmBase&lt;T&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle AEAD stream cipher</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html">BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html">BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle asymmetric algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html">BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html">BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGen, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle asymmetric algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateKeyBase-5.html">BouncyCastleAsymmetricNonPqcPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateKeyBase-5.html">BouncyCastleAsymmetricNonPqcPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle asymmetric non-PQC private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2-6.html">BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tSigner, tFinal&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2-6.html">BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tSigner, tFinal&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle asymmetric non-PQC private signature key (which requires a context constructor parameter)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase-6.html">BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tSigner, tFinal&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase-6.html">BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tSigner, tFinal&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle asymmetric non-PQC private signature key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPublicKeyBase-3.html">BouncyCastleAsymmetricNonPqcPublicKeyBase&lt;tAlgo, tPublicKey, tFinal&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPublicKeyBase-3.html">BouncyCastleAsymmetricNonPqcPublicKeyBase&lt;tAlgo, tPublicKey, tFinal&gt;</a></h5>
       <section><p>Base class fo a Bouncy Castle asymmetric non-PQC public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase2-4.html">BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase2&lt;tAlgo, tPublicKey, tSigner, tFinal&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase2-4.html">BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase2&lt;tAlgo, tPublicKey, tSigner, tFinal&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle asymmetric non-PQC public signature key (which requires a context constructor parameter)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase-4.html">BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase&lt;tAlgo, tPublicKey, tSigner, tFinal&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase-4.html">BouncyCastleAsymmetricNonPqcPublicSignatureKeyBase&lt;tAlgo, tPublicKey, tSigner, tFinal&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle asymmetric non-PQC public signature key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateKeyBase-5.html">BouncyCastleAsymmetricPqcPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateKeyBase-5.html">BouncyCastleAsymmetricPqcPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle asymmetric PQC private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase-7.html">BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase-7.html">BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle asymmetric PQC private key exchange key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateSignatureKeyBase-6.html">BouncyCastleAsymmetricPqcPrivateSignatureKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tSigner, tFinal&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateSignatureKeyBase-6.html">BouncyCastleAsymmetricPqcPrivateSignatureKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tSigner, tFinal&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle asymmetric PQC private signature key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPublicKeyBase-3.html">BouncyCastleAsymmetricPqcPublicKeyBase&lt;tAlgo, tPublicKey, tFinal&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPublicKeyBase-3.html">BouncyCastleAsymmetricPqcPublicKeyBase&lt;tAlgo, tPublicKey, tFinal&gt;</a></h5>
       <section><p>Base class fo a Bouncy Castle asymmetric PQC public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPublicSignatureKeyBase-4.html">BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;tAlgo, tPublicKey, tSigner, tFinal&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPublicSignatureKeyBase-4.html">BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;tAlgo, tPublicKey, tSigner, tFinal&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle asymmetric PQC public signature key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html">BouncyCastleAsymmetricPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPrivateKeyBase-5.html">BouncyCastleAsymmetricPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle asymmetric private key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPublicKeyBase-3.html">BouncyCastleAsymmetricPublicKeyBase&lt;tAlgo, tPublicKey, tFinal&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPublicKeyBase-3.html">BouncyCastleAsymmetricPublicKeyBase&lt;tAlgo, tPublicKey, tFinal&gt;</a></h5>
       <section><p>Base class fo a Bouncy Castle asymmetric public key</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase-1.html">BouncyCastleBlockCipherAlgorithmBase&lt;T&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase-1.html">BouncyCastleBlockCipherAlgorithmBase&lt;T&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle block cipher</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleBufferedCipherAlgorithmBase-1.html">BouncyCastleBufferedCipherAlgorithmBase&lt;T&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleBufferedCipherAlgorithmBase-1.html">BouncyCastleBufferedCipherAlgorithmBase&lt;T&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle buffered block cipher</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleCipherAlgorithmBase-1.html">BouncyCastleCipherAlgorithmBase&lt;T&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleCipherAlgorithmBase-1.html">BouncyCastleCipherAlgorithmBase&lt;T&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle cipher</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleCryptoTransform.html">BouncyCastleCryptoTransform</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleCryptoTransform.html">BouncyCastleCryptoTransform</a></h5>
       <section><p>Bouncy Castle crypto transform</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleHashAlgorithm.html">BouncyCastleHashAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleHashAlgorithm.html">BouncyCastleHashAlgorithm</a></h5>
       <section><p>Bouncy Castle hash algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleHashAlgorithmBase-1.html">BouncyCastleHashAlgorithmBase&lt;T&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleHashAlgorithmBase-1.html">BouncyCastleHashAlgorithmBase&lt;T&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle hash algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html">BouncyCastleHmacAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html">BouncyCastleHmacAlgorithm</a></h5>
       <section><p>Bouncy Castle HMAC algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleHmacAlgorithmBase-1.html">BouncyCastleHmacAlgorithmBase&lt;T&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleHmacAlgorithmBase-1.html">BouncyCastleHmacAlgorithmBase&lt;T&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle MAC algorithm</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleRandomGenerator.html">BouncyCastleRandomGenerator</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleRandomGenerator.html">BouncyCastleRandomGenerator</a></h5>
       <section><p>Random number generator for Bouncy Castle, which adopts <span class="xref">wan24.Crypto.RND</span></p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleRngWrapper.html">BouncyCastleRngWrapper</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleRngWrapper.html">BouncyCastleRngWrapper</a></h5>
       <section><p>Bouncy Castle RNG wrapper for <code>wan24-Crypto</code></p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase-1.html">BouncyCastleStreamCipherAlgorithmBase&lt;T&gt;</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase-1.html">BouncyCastleStreamCipherAlgorithmBase&lt;T&gt;</a></h5>
       <section><p>Base class for a Bouncy Castle stream cipher</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.ChaCha20Rng.html">ChaCha20Rng</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.ChaCha20Rng.html">ChaCha20Rng</a></h5>
       <section><p>ChaCha20 CSRNG</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.DisposableRngWrapper.html">DisposableRngWrapper</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.DisposableRngWrapper.html">DisposableRngWrapper</a></h5>
       <section><p>Bouncy Castle disposable RNG wrapper for <code>wan24-Crypto</code></p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html">EncryptionAes256GcmAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html">EncryptionAes256GcmAlgorithm</a></h5>
       <section><p>AES-256-GCM AEAD symmetric encryption algorithm (using 128 bit MAC)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html">EncryptionBcAes256CbcAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html">EncryptionBcAes256CbcAlgorithm</a></h5>
       <section><p>AES-256-CBC symmetric encryption algorithm (using ISO10126 padding; may be used as replacement, if the .NET algorithm isn't available on the current platform)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.EncryptionChaCha20Algorithm.html">EncryptionChaCha20Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.EncryptionChaCha20Algorithm.html">EncryptionChaCha20Algorithm</a></h5>
       <section><p>ChaCha20 symmetric encryption algorithm (using 256 bit key)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.html">EncryptionSerpent256CbcAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.html">EncryptionSerpent256CbcAlgorithm</a></h5>
       <section><p>Serpent 256 CBC symmetric encryption algorithm (using ISO10126 padding)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.html">EncryptionSerpent256GcmAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.html">EncryptionSerpent256GcmAlgorithm</a></h5>
       <section><p>Serpent 256 GCM symmetric encryption algorithm (using 128 bit MAC)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.html">EncryptionTwofish256CbcAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.html">EncryptionTwofish256CbcAlgorithm</a></h5>
       <section><p>Twofish 256 CBC symmetric encryption algorithm (using ISO10126 padding)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.html">EncryptionTwofish256GcmAlgorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.html">EncryptionTwofish256GcmAlgorithm</a></h5>
       <section><p>Twofish 256 GCM symmetric encryption algorithm (using 128 bit MAC)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html">EncryptionXSalsa20Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html">EncryptionXSalsa20Algorithm</a></h5>
       <section><p>XSalsa20 symmetric encryption algorithm (using 256 bit key)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.Extensions.html">Extensions</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.Extensions.html">Extensions</a></h5>
       <section><p>Extension methods</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.HashBcSha3_256Algorithm.html">HashBcSha3_256Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.HashBcSha3_256Algorithm.html">HashBcSha3_256Algorithm</a></h5>
       <section><p>SHA3-256 hash algorithm (may be used as replacement, if the .NET algorithm isn't available on the current platform)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.HashBcSha3_384Algorithm.html">HashBcSha3_384Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.HashBcSha3_384Algorithm.html">HashBcSha3_384Algorithm</a></h5>
       <section><p>SHA3-384 hash algorithm (may be used as replacement, if the .NET algorithm isn't available on the current platform)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.HashBcSha3_512Algorithm.html">HashBcSha3_512Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.HashBcSha3_512Algorithm.html">HashBcSha3_512Algorithm</a></h5>
       <section><p>SHA3-512 hash algorithm (may be used as replacement, if the .NET algorithm isn't available on the current platform)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.HashBcShake128Algorithm.html">HashBcShake128Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.HashBcShake128Algorithm.html">HashBcShake128Algorithm</a></h5>
       <section><p>Shake128 hash algorithm (may be used as replacement, if the .NET algorithm isn't available on the current platform)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.HashBcShake256Algorithm.html">HashBcShake256Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.HashBcShake256Algorithm.html">HashBcShake256Algorithm</a></h5>
       <section><p>Shake256 hash algorithm (may be used as replacement, if the .NET algorithm isn't available on the current platform)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.html">MacBcHmacSha3_256Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.html">MacBcHmacSha3_256Algorithm</a></h5>
       <section><p>HMAC-SHA3-256 MAC algorithm (may be used as replacement, if the .NET algorithm isn't available on the current platform)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.html">MacBcHmacSha3_384Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.html">MacBcHmacSha3_384Algorithm</a></h5>
       <section><p>HMAC-SHA3-384 MAC algorithm (may be used as replacement, if the .NET algorithm isn't available on the current platform)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.html">MacBcHmacSha3_512Algorithm</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.html">MacBcHmacSha3_512Algorithm</a></h5>
       <section><p>HMAC-SHA3-512 MAC algorithm (may be used as replacement, if the .NET algorithm isn't available on the current platform)</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.RandomDataProvider.html">RandomDataProvider</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.RandomDataProvider.html">RandomDataProvider</a></h5>
       <section><p>Random data provider</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.RandomDataProvider.SeedEventArgs.html">RandomDataProvider.SeedEventArgs</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.RandomDataProvider.SeedEventArgs.html">RandomDataProvider.SeedEventArgs</a></h5>
       <section><p><a class="xref" href="wan24.Crypto.BC.RandomDataProvider.html#wan24_Crypto_BC_RandomDataProvider_OnSeed">OnSeed</a> event arguments</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.StreamCipherRng.html">StreamCipherRng</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.StreamCipherRng.html">StreamCipherRng</a></h5>
       <section><p>Stream cipher CSRNG</p>
 </section>
-      <h4><a class="xref" href="wan24.Crypto.BC.XSalsa20Rng.html">XSalsa20Rng</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.XSalsa20Rng.html">XSalsa20Rng</a></h5>
       <section><p>XSalsa20 CSRNG</p>
 </section>
     <h3 id="interfaces">
 Interfaces
 </h3>
-      <h4><a class="xref" href="wan24.Crypto.BC.IBouncyCastleRng.html">IBouncyCastleRng</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.IBouncyCastleRng.html">IBouncyCastleRng</a></h5>
       <section><p>Interface for a seedable Bouncy Castle supporting RNG</p>
 </section>
     <h3 id="delegates">
 Delegates
 </h3>
-      <h4><a class="xref" href="wan24.Crypto.BC.RandomDataProvider.Seed_Delegate.html">RandomDataProvider.Seed_Delegate</a></h4>
+      <h5><a class="xref" href="wan24.Crypto.BC.RandomDataProvider.Seed_Delegate.html">RandomDataProvider.Seed_Delegate</a></h5>
       <section><p>Delegate for a seed handler</p>
 </section>
 
 
 </article>
-          </div>
+                </div>
 
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In this article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+                <div class="copyright-footer">
+                    <span>(c) 2023 Andreas Zimmermann, wan24.de</span>
+                </div>
+            </main>
         </div>
-      </div>
 
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-      (c) 2023 Andreas Zimmermann, wan24.de
-      
-          </div>
-        </div>
-      </footer>
-    </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
-  </body>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
 </html>
