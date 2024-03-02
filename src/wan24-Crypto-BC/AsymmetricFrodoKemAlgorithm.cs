@@ -65,6 +65,9 @@ namespace wan24.Crypto.BC
         public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
+        public override bool IsPublicKeyStandardFormat => true;
+
+        /// <inheritdoc/>
         protected override FrodoParameters GetEngineParameters(CryptoOptions options) => AsymmetricFrodoKemHelper.GetParameters(options.AsymmetricKeyBits);
     }
 }

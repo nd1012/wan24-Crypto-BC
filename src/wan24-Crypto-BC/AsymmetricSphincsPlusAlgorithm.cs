@@ -65,6 +65,9 @@ namespace wan24.Crypto.BC
         public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
+        public override bool IsPublicKeyStandardFormat => false;
+
+        /// <inheritdoc/>
         protected override SphincsPlusParameters GetEngineParameters(CryptoOptions options) => AsymmetricSphincsPlusHelper.GetParameters(options.AsymmetricKeyBits);
     }
 }
