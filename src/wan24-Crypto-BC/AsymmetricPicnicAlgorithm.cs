@@ -65,6 +65,9 @@ namespace wan24.Crypto.BC
         public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
+        public override bool IsPublicKeyStandardFormat => true;
+
+        /// <inheritdoc/>
         protected override PicnicParameters GetEngineParameters(CryptoOptions options) => AsymmetricPicnicHelper.GetParameters(options.AsymmetricKeyBits);
     }
 }

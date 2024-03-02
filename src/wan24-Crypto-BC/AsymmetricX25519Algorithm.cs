@@ -64,6 +64,12 @@ namespace wan24.Crypto.BC
         { }
 
         /// <inheritdoc/>
+        public override string DisplayName => DISPLAY_NAME;
+
+        /// <inheritdoc/>
+        public override bool IsPublicKeyStandardFormat => true;
+
+        /// <inheritdoc/>
         public override AsymmetricX25519PrivateKey CreateKeyPair(CryptoOptions? options = null)
         {
             try
@@ -83,9 +89,6 @@ namespace wan24.Crypto.BC
                 throw CryptographicException.From(ex);
             }
         }
-
-        /// <inheritdoc/>
-        public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
         protected override AsymmetricKeyParameter GetEngineParameters(CryptoOptions options) => throw new NotSupportedException();

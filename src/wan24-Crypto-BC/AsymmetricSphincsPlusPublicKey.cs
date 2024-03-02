@@ -1,4 +1,5 @@
 ﻿using Org.BouncyCastle.Pqc.Crypto.SphincsPlus;
+using System.Security.Cryptography.X509Certificates;
 using wan24.Core;
 using wan24.StreamSerializerExtensions;
 
@@ -60,9 +61,9 @@ namespace wan24.Crypto.BC
                     CleanReturned = true
                 };
                 using SecureByteArray publicKey = new(_PublicKey.GetEncoded());
-                ms.WriteSerializerVersion()
-                    .WriteNumber(Bits)
-                    .WriteBytes(publicKey.Array);
+                ms.Write(Bits);
+                ms.Write(publicKey.Length);
+                ms.Write(publicKey.Span);
                 return ms.ToArray();
             }
             catch (CryptographicException)
@@ -82,9 +83,13 @@ namespace wan24.Crypto.BC
             {
                 EnsureUndisposed();
                 using MemoryStream ms = new(KeyData.Array);
-                int ssv = ms.ReadSerializerVersion();
-                SphincsPlusParameters param = AsymmetricSphincsPlusHelper.GetParameters(ms.ReadNumber<int>(ssv));
-                _PublicKey = new(param, ms.ReadBytes(ssv, minLen: 1, maxLen: ushort.MaxValue).Value);
+                SphincsPlusParameters param = AsymmetricSphincsPlusHelper.GetParameters(ms.ReadInt());
+                int len = ms.ReadInt();
+                if (len < 1 || len > MaxArrayLength) throw new InvalidDataException($"Invalid key length {len}");
+                byte[] buffer = new byte[len];
+                ms.ReadExactly(buffer);
+                _PublicKey = new(param, buffer);
+                if (ms.Length != ms.Position) throw new InvalidDataException("Didn't use all key data");
             }
             catch (CryptographicException)
             {

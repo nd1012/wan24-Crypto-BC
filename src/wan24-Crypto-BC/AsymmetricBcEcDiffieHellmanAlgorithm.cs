@@ -67,6 +67,9 @@ namespace wan24.Crypto.BC
         public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
+        public override bool IsPublicKeyStandardFormat => true;
+
+        /// <inheritdoc/>
         protected override ECKeyGenerationParameters CreateKeyGenParameters(SecureRandom random, ECDomainParameters parameters, CryptoOptions options)
             => new(parameters, random);
 

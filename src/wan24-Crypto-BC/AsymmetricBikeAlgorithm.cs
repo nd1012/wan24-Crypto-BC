@@ -65,6 +65,9 @@ namespace wan24.Crypto.BC
         public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
+        public override bool IsPublicKeyStandardFormat => true;
+
+        /// <inheritdoc/>
         protected override BikeParameters GetEngineParameters(CryptoOptions options) => AsymmetricBikeHelper.GetParameters(options.AsymmetricKeyBits);
     }
 }

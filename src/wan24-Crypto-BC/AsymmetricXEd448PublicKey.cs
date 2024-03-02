@@ -95,9 +95,10 @@ namespace wan24.Crypto.BC
                     CleanReturned = true
                 };
                 using SecureByteArrayRefStruct publicKey = new(_PublicKey.GetEncoded());
-                ms.WriteSerializerVersion()
-                    .WriteBytes(publicKey.Array)
-                    .WriteBytes(_PublicKey2.KeyData.Array);
+                ms.WriteByte((byte)publicKey.Length);
+                ms.Write(publicKey.Span);
+                ms.WriteByte((byte)_PublicKey2.KeyData.Length);
+                ms.Write(_PublicKey2.KeyData.Span);
                 return ms.ToArray();
             }
             catch (CryptographicException)
@@ -117,9 +118,16 @@ namespace wan24.Crypto.BC
             {
                 EnsureUndisposed();
                 using MemoryStream ms = new(KeyData.Array);
-                int ssv = ms.ReadSerializerVersion();
-                _PublicKey = new(ms.ReadBytes(ssv, minLen: 1, maxLen: ushort.MaxValue).Value);
-                _PublicKey2 = new(ms.ReadBytes(ssv, minLen: 1, maxLen: ushort.MaxValue).Value);
+                int len = ms.ReadByte();
+                if (len < 1 || len > MaxArrayLength) throw new InvalidDataException($"Invalid key length {len}");
+                using RentedArrayRefStruct<byte> buffer = new(MaxArrayLength, clean: false);
+                ms.ReadExactly(buffer.Span[..len]);
+                _PublicKey = new(buffer.Span[..len].ToArray());
+                len = ms.ReadByte();
+                if (len < 1 || len > MaxArrayLength) throw new InvalidDataException($"Invalid second key length {len}");
+                ms.ReadExactly(buffer.Span[..len]);
+                _PublicKey2 = new(buffer.Span[..len].ToArray());
+                if (ms.Length != ms.Position) throw new InvalidDataException("Didn't use all key data");
             }
             catch (CryptographicException)
             {

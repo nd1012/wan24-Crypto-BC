@@ -66,6 +66,9 @@ namespace wan24.Crypto.BC
         public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
+        public override bool IsPublicKeyStandardFormat => false;
+
+        /// <inheritdoc/>
         protected override NtruParameters GetEngineParameters(CryptoOptions options) => AsymmetricNtruHelper.GetParameters(options.AsymmetricKeyBits);
     }
 }

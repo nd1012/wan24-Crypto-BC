@@ -69,6 +69,9 @@ namespace wan24.Crypto.BC
         public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
+        public override bool IsPublicKeyStandardFormat => false;
+
+        /// <inheritdoc/>
         public override AsymmetricSNtruPrimePrivateKey CreateKeyPair(CryptoOptions? options = null)
         {
             try

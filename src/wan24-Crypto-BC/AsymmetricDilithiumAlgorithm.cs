@@ -65,6 +65,9 @@ namespace wan24.Crypto.BC
         public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
+        public override bool IsPublicKeyStandardFormat => true;
+
+        /// <inheritdoc/>
         protected override DilithiumParameters GetEngineParameters(CryptoOptions options) => AsymmetricDilithiumHelper.GetParameters(options.AsymmetricKeyBits);
     }
 }

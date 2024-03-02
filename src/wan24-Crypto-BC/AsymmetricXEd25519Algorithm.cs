@@ -63,6 +63,11 @@ namespace wan24.Crypto.BC
             : base(ALGORITHM_NAME, ALGORITHM_VALUE, USAGES, isEllipticCurveAlgorithm: true, _AllowedKeySizes, isPostQuantum: false, DEFAULT_KEY_SIZE)
         { }
 
+        /// <inheritdoc/>
+        public override string DisplayName => DISPLAY_NAME;
+
+        /// <inheritdoc/>
+        public override bool IsPublicKeyStandardFormat => false;
 
         /// <inheritdoc/>
         public override AsymmetricXEd25519PrivateKey CreateKeyPair(CryptoOptions? options = null)
@@ -84,9 +89,6 @@ namespace wan24.Crypto.BC
                 throw CryptographicException.From(ex);
             }
         }
-
-        /// <inheritdoc/>
-        public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
         protected override AsymmetricKeyParameter GetEngineParameters(CryptoOptions options) => throw new NotSupportedException();
