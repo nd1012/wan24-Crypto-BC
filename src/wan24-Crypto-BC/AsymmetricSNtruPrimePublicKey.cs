@@ -64,9 +64,9 @@ namespace wan24.Crypto.BC
                     CleanReturned = true
                 };
                 using SecureByteArray publicKey = new(_PublicKey.GetPublicKey());
-                ms.WriteSerializerVersion()
-                    .WriteNumber(Bits)
-                    .WriteBytes(publicKey.Array);
+                ms.Write(Bits);
+                ms.Write(publicKey.Length);
+                ms.Write(publicKey.Span);
                 return ms.ToArray();
             }
             catch (CryptographicException)
@@ -86,9 +86,13 @@ namespace wan24.Crypto.BC
             {
                 EnsureUndisposed();
                 using MemoryStream ms = new(KeyData.Array);
-                int ssv = ms.ReadSerializerVersion();
-                SNtruPrimeParameters param = AsymmetricSNtruPrimeHelper.GetParameters(ms.ReadNumber<int>(ssv));
-                _PublicKey = new(param, ms.ReadBytes(ssv, minLen: 1, maxLen: ushort.MaxValue).Value);
+                SNtruPrimeParameters param = AsymmetricSNtruPrimeHelper.GetParameters(ms.ReadInt());
+                int len = ms.ReadInt();
+                if (len < 1 || len > MaxArrayLength) throw new InvalidDataException($"Invalid key length {len}");
+                byte[] buffer = new byte[len];
+                ms.ReadExactly(buffer);
+                _PublicKey = new(param, buffer);
+                if (ms.Length != ms.Position) throw new InvalidDataException("Didn't use all key data");
             }
             catch (CryptographicException)
             {
