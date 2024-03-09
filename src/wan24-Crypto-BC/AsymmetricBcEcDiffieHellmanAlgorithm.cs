@@ -74,6 +74,10 @@ namespace wan24.Crypto.BC
             => new(parameters, random);
 
         /// <inheritdoc/>
-        protected override ECDomainParameters GetEngineParameters(CryptoOptions options) => BcEllipticCurves.GetCurve(options.AsymmetricKeyBits);
+        protected override ECDomainParameters GetEngineParameters(CryptoOptions options)
+        {
+            EnsureAllowedCurve(options.AsymmetricKeyBits);
+            return BcEllipticCurves.GetCurve(options.AsymmetricKeyBits);
+        }
     }
 }

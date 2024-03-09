@@ -54,6 +54,7 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
+                Algorithm.EnsureAllowed();
                 tSigner signer = new();
                 signer.Init(forSigning: true, PrivateKey);
                 return signer.GenerateSignature(hash);

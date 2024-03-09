@@ -3,6 +3,7 @@ using Org.BouncyCastle.Crypto.Generators;
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Security;
 using System.Collections.Frozen;
+using System.Security;
 using wan24.Core;
 
 namespace wan24.Crypto.BC
@@ -75,6 +76,7 @@ namespace wan24.Crypto.BC
         {
             try
             {
+                EnsureAllowed();
                 options ??= DefaultOptions;
                 if (!options.AsymmetricKeyBits.In(AllowedKeySizes)) throw new ArgumentException("Invalid key size", nameof(options));
                 Ed448KeyPairGenerator keyGen = new();

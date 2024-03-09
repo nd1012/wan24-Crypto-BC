@@ -53,6 +53,8 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
+                Algorithm.EnsureAllowed();
+                EnsureAllowedCurve();
                 tSigner signer = Activator.CreateInstance(typeof(tSigner), Array.Empty<byte>()) as tSigner
                     ?? throw CryptographicException.From(new InvalidProgramException($"Failed to instance {typeof(tSigner)}"));
                 signer.Init(forSigning: true, PrivateKey);

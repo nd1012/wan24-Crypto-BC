@@ -67,7 +67,7 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
-                if (CryptoHelper.StrictPostQuantumSafety) throw new InvalidOperationException($"Post quantum safety-forced - {Algorithm.Name} isn't post quantum");
+                Algorithm.EnsureAllowed();
                 publicKey ??= options?.PublicKey ?? options?.PrivateKey?.PublicKey ?? PublicKey;
                 if (publicKey is not AsymmetricX448PublicKey key) throw new ArgumentException($"Public {Algorithm.Name} key required", nameof(publicKey));
                 return (DeriveKey(publicKey), PublicKey.KeyData.Array.CloneArray());
@@ -87,7 +87,7 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
-                if (CryptoHelper.StrictPostQuantumSafety) throw new InvalidOperationException($"Post quantum safety-forced - {Algorithm.Name} isn't post quantum");
+                EnsurePqcRequirement();
                 using AsymmetricX448PublicKey publicKey = new(keyExchangeData);
                 return DeriveKey(publicKey as IAsymmetricPublicKey);
             }
@@ -103,7 +103,7 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
-                if (CryptoHelper.StrictPostQuantumSafety) throw new InvalidOperationException($"Post quantum safety-forced - {Algorithm.Name} isn't post quantum");
+                EnsurePqcRequirement();
                 if (publicKey is not AsymmetricX448PublicKey key) throw new ArgumentException($"Public {Algorithm.Name} key required", nameof(publicKey));
                 X448Agreement agreement = new();
                 agreement.Init(PrivateKey);

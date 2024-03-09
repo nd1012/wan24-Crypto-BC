@@ -43,6 +43,7 @@ namespace wan24.Crypto.BC
             Algorithm = algorithm;
             try
             {
+                algorithm.EnsureAllowed();
                 if (algorithm.BlockSize != 1) throw new ArgumentException("Stream cipher required", nameof(algorithm));
                 if (bufferSize.HasValue && bufferSize.Value < Algorithm.IvSize)
                     throw new ArgumentOutOfRangeException(nameof(bufferSize), $"Min. buffer size for {algorithm.DisplayName} is {algorithm.IvSize} byte");

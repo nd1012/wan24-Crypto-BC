@@ -26,7 +26,7 @@ namespace wan24.Crypto.BC
         /// </summary>
         /// <param name="curve">Curve name</param>
         /// <returns>Key size in bits</returns>
-        public static int GetKeySize(ECDomainParameters curve)
+        public static int GetKeySize(in ECDomainParameters curve)
         {
             if (curve.Equals(SECP256R1_CURVE)) return EllipticCurves.SECP256R1_KEY_SIZE;
             if (curve.Equals(SECP384R1_CURVE)) return EllipticCurves.SECP384R1_KEY_SIZE;
@@ -39,12 +39,25 @@ namespace wan24.Crypto.BC
         /// </summary>
         /// <param name="bits">Key size in bits</param>
         /// <returns>Curve name</returns>
-        public static ECDomainParameters GetCurve(int bits) => bits switch
+        public static ECDomainParameters GetCurve(in int bits) => bits switch
         {
             EllipticCurves.SECP256R1_KEY_SIZE => SECP256R1_CURVE,
             EllipticCurves.SECP384R1_KEY_SIZE => SECP384R1_CURVE,
             EllipticCurves.SECP521R1_KEY_SIZE => SECP521R1_CURVE,
             _ => throw new ArgumentException("Unknown key size", nameof(bits))
         };
+
+        /// <summary>
+        /// Determine if an elliptic curve is allowed
+        /// </summary>
+        /// <param name="curve">Curve</param>
+        /// <returns>If the elliptic curve is allowed</returns>
+        public static bool IsCurveAllowed(in ECDomainParameters curve) => EllipticCurves.IsCurveAllowed(GetKeySize(curve));
+
+        /// <summary>
+        /// Deny an elliptic curve
+        /// </summary>
+        /// <param name="curve">Curve</param>
+        public static void DenyCurve(in ECDomainParameters curve) => EllipticCurves.DenyCurve(GetKeySize(curve));
     }
 }
