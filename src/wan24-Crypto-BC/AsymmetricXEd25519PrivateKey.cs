@@ -86,7 +86,7 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
-                if (CryptoHelper.StrictPostQuantumSafety) throw new InvalidOperationException($"Post quantum safety-forced - {Algorithm.Name} isn't post quantum");
+                Algorithm.EnsureAllowed();
                 publicKey ??= options?.PublicKey ?? options?.PrivateKey?.PublicKey ?? PublicKey;
                 if (publicKey is not AsymmetricXEd25519PublicKey key) throw new ArgumentException($"Public {Algorithm.Name} key required", nameof(publicKey));
                 return GetX25519Key().GetKeyExchangeData(key._PublicKey2 ?? throw new InvalidOperationException(), options);

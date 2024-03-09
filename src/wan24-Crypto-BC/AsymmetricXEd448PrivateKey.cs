@@ -1,6 +1,7 @@
 ﻿using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Crypto.Signers;
+using System.Security;
 using wan24.Core;
 
 namespace wan24.Crypto.BC
@@ -95,7 +96,7 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
-                if (CryptoHelper.StrictPostQuantumSafety) throw new InvalidOperationException($"Post quantum safety-forced - {Algorithm.Name} isn't post quantum");
+                Algorithm.EnsureAllowed();
                 publicKey ??= options?.PublicKey ?? options?.PrivateKey?.PublicKey ?? PublicKey;
                 if (publicKey is not AsymmetricXEd448PublicKey key) throw new ArgumentException($"Public {Algorithm.Name} key required", nameof(publicKey));
                 return GetX448Key().GetKeyExchangeData(key._PublicKey2 ?? throw new InvalidOperationException(), options);

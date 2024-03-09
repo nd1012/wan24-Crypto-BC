@@ -74,6 +74,7 @@ namespace wan24.Crypto.BC
         {
             try
             {
+                EnsureAllowed();
                 options ??= DefaultOptions;
                 if (!options.AsymmetricKeyBits.In(AllowedKeySizes)) throw new ArgumentException("Invalid key size", nameof(options));
                 X25519KeyPairGenerator keyGen = new();

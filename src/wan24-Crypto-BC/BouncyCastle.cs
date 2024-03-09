@@ -1,4 +1,8 @@
-﻿namespace wan24.Crypto.BC
+﻿
+//TODO Add v2 SEIPD encryption algorithms as an alternate to AEAD
+//TODO Add Argon2 S2K KDF algorithm
+
+namespace wan24.Crypto.BC
 {
     /// <summary>
     /// Bouncy Castle helper

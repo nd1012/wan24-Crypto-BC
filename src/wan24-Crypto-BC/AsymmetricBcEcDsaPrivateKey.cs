@@ -66,7 +66,8 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
-                if (CryptoHelper.StrictPostQuantumSafety) throw new InvalidOperationException($"Post quantum safety-forced - {Algorithm.Name} isn't post quantum");
+                Algorithm.EnsureAllowed();
+                EnsureAllowedCurve();
                 DsaDigestSigner signer = new(new ECDsaSigner(), new NullDigest());
                 signer.Init(forSigning: true, PrivateKey);
                 signer.BlockUpdate(hash);

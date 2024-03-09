@@ -53,6 +53,8 @@ namespace wan24.Crypto.BC
             try
             {
                 EnsureUndisposed();
+                Algorithm.EnsureAllowed();
+                EnsureAllowedCurve();
                 tSigner signer = new();
                 signer.Init(forSigning: true, PrivateKey);
                 signer.BlockUpdate(hash);

@@ -31,6 +31,7 @@ namespace wan24.Crypto.BC
         {
             try
             {
+                EnsureAllowed();
                 IBufferedCipher cipher = CreateCipher(forEncryption: true, options);
                 byte[] iv = CreateIvBytes();
                 cipher.Init(forEncryption: true, CreateParameters(iv, options));
@@ -52,6 +53,7 @@ namespace wan24.Crypto.BC
         {
             try
             {
+                EnsureAllowed();
                 IBufferedCipher cipher = CreateCipher(forEncryption: true, options);
                 byte[] iv = CreateIvBytes();
                 cipher.Init(forEncryption: true, CreateParameters(iv, options));
