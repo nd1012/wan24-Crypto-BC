@@ -118,6 +118,7 @@
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">CryptoAlgorithmBase</span>&gt;</div>
     <div><span class="xref">IAsymmetricAlgorithm</span></div>
     <div><span class="xref">ICryptoAlgorithm</span></div>
+    <div><span class="xref">IStatusProvider</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">AsymmetricAlgorithmBase</span>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicPublicKey.html">AsymmetricPicnicPublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicPrivateKey.html">AsymmetricPicnicPrivateKey</a>&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html">BouncyCastleAsymmetricAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicPublicKey.html">AsymmetricPicnicPublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicPrivateKey.html">AsymmetricPicnicPrivateKey</a>, <span class="xref">PicnicKeyGenerationParameters</span>, <span class="xref">PicnicParameters</span>, <span class="xref">PicnicPublicKeyParameters</span>, <span class="xref">PicnicPrivateKeyParameters</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html">AsymmetricPicnicAlgorithm</a>&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html">BouncyCastleAsymmetricAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicPublicKey.html">AsymmetricPicnicPublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicPrivateKey.html">AsymmetricPicnicPrivateKey</a>, <span class="xref">PicnicKeyPairGenerator</span>, <span class="xref">PicnicKeyGenerationParameters</span>, <span class="xref">PicnicParameters</span>, <span class="xref">PicnicPublicKeyParameters</span>, <span class="xref">PicnicPrivateKeyParameters</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html">AsymmetricPicnicAlgorithm</a>&gt;&gt;</div>
@@ -151,6 +152,9 @@
     </div>
     <div>
       <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricPicnicPublicKey, AsymmetricPicnicPrivateKey&gt;.EnsureDefaultOptions(CryptoOptions)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">AsymmetricAlgorithmBase&lt;AsymmetricPicnicPublicKey, AsymmetricPicnicPrivateKey&gt;.EnsureAllowed(in bool)</a>
     </div>
     <div>
       <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricPicnicPublicKey, AsymmetricPicnicPrivateKey&gt;.CreateKeyPair(CryptoOptions)</span>
@@ -225,6 +229,18 @@
       <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricPicnicPublicKey, AsymmetricPicnicPrivateKey&gt;.DefaultKeySize</span>
     </div>
     <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricPicnicPublicKey, AsymmetricPicnicPrivateKey&gt;.IsDenied</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricPicnicPublicKey, AsymmetricPicnicPrivateKey&gt;.KeyPool</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricPicnicPublicKey, AsymmetricPicnicPrivateKey&gt;.State</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">CryptoAlgorithmBase.EnsureAllowed(in bool)</a>
+    </div>
+    <div>
       <span class="xref">CryptoAlgorithmBase.ToString()</span>
     </div>
     <div>
@@ -252,6 +268,12 @@
       <span class="xref">CryptoAlgorithmBase.UsesTpm</span>
     </div>
     <div>
+      <span class="xref">CryptoAlgorithmBase.IsSupported</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.State</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
@@ -265,7 +287,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_AsymmetricPicnicAlgorithm_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record AsymmetricPicnicAlgorithm : BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricPicnicPublicKey, AsymmetricPicnicPrivateKey, PicnicKeyPairGenerator, PicnicKeyGenerationParameters, PicnicParameters, PicnicPublicKeyParameters, PicnicPrivateKeyParameters, AsymmetricPicnicAlgorithm&gt;, IEquatable&lt;CryptoAlgorithmBase&gt;, IAsymmetricAlgorithm, ICryptoAlgorithm, IEquatable&lt;AsymmetricAlgorithmBase&lt;AsymmetricPicnicPublicKey, AsymmetricPicnicPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricPicnicPublicKey, AsymmetricPicnicPrivateKey, PicnicKeyGenerationParameters, PicnicParameters, PicnicPublicKeyParameters, PicnicPrivateKeyParameters, AsymmetricPicnicAlgorithm&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricPicnicPublicKey, AsymmetricPicnicPrivateKey, PicnicKeyPairGenerator, PicnicKeyGenerationParameters, PicnicParameters, PicnicPublicKeyParameters, PicnicPrivateKeyParameters, AsymmetricPicnicAlgorithm&gt;&gt;, IEquatable&lt;AsymmetricPicnicAlgorithm&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricPicnicAlgorithm : BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricPicnicPublicKey, AsymmetricPicnicPrivateKey, PicnicKeyPairGenerator, PicnicKeyGenerationParameters, PicnicParameters, PicnicPublicKeyParameters, PicnicPrivateKeyParameters, AsymmetricPicnicAlgorithm&gt;, IEquatable&lt;CryptoAlgorithmBase&gt;, IAsymmetricAlgorithm, ICryptoAlgorithm, IStatusProvider, IEquatable&lt;AsymmetricAlgorithmBase&lt;AsymmetricPicnicPublicKey, AsymmetricPicnicPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricPicnicPublicKey, AsymmetricPicnicPrivateKey, PicnicKeyGenerationParameters, PicnicParameters, PicnicPublicKeyParameters, PicnicPrivateKeyParameters, AsymmetricPicnicAlgorithm&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricPicnicPublicKey, AsymmetricPicnicPrivateKey, PicnicKeyPairGenerator, PicnicKeyGenerationParameters, PicnicParameters, PicnicPublicKeyParameters, PicnicPrivateKeyParameters, AsymmetricPicnicAlgorithm&gt;&gt;, IEquatable&lt;AsymmetricPicnicAlgorithm&gt;</code></pre>
   </div>
   <h3 id="fields">Fields
 </h3>
@@ -550,6 +572,9 @@
   </div>
   <div>
       <span class="xref">wan24.Crypto.ICryptoAlgorithm</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IStatusProvider</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>

@@ -135,6 +135,7 @@
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     <div><span class="xref">IStreamSerializerVersion</span></div>
     <div><span class="xref">IStreamSerializer</span></div>
+    <div><span class="xref">IStatusProvider</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPublicSignatureKeyBase-4.html">BouncyCastleAsymmetricPqcPublicSignatureKeyBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html">AsymmetricPicnicAlgorithm</a>, <span class="xref">PicnicPublicKeyParameters</span>, <span class="xref">PicnicSigner</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicPublicKey.html">AsymmetricPicnicPublicKey</a>&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricPicnicPublicKey.html">AsymmetricPicnicPublicKey</a>&gt;</div>
   </div>
@@ -219,6 +220,9 @@
       <span class="xref">AsymmetricKeyBase.KeyData</span>
     </div>
     <div>
+      <span class="xref">AsymmetricKeyBase.State</span>
+    </div>
+    <div>
       <span class="xref">DisposableStreamSerializerRecordBase.BASE_VERSION</span>
     </div>
     <div>
@@ -262,7 +266,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_AsymmetricPicnicPublicKey_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record AsymmetricPicnicPublicKey : BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;AsymmetricPicnicAlgorithm, PicnicPublicKeyParameters, PicnicSigner, AsymmetricPicnicPublicKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPublicKeyBase&gt;, IEquatable&lt;BouncyCastleAsymmetricPublicKeyBase&lt;AsymmetricPicnicAlgorithm, PicnicPublicKeyParameters, AsymmetricPicnicPublicKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPublicKeyBase&lt;AsymmetricPicnicAlgorithm, PicnicPublicKeyParameters, AsymmetricPicnicPublicKey&gt;&gt;, ISignaturePublicKey, IAsymmetricPublicKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IEquatable&lt;BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;AsymmetricPicnicAlgorithm, PicnicPublicKeyParameters, PicnicSigner, AsymmetricPicnicPublicKey&gt;&gt;, IEquatable&lt;AsymmetricPicnicPublicKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricPicnicPublicKey : BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;AsymmetricPicnicAlgorithm, PicnicPublicKeyParameters, PicnicSigner, AsymmetricPicnicPublicKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPublicKeyBase&gt;, IEquatable&lt;BouncyCastleAsymmetricPublicKeyBase&lt;AsymmetricPicnicAlgorithm, PicnicPublicKeyParameters, AsymmetricPicnicPublicKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPublicKeyBase&lt;AsymmetricPicnicAlgorithm, PicnicPublicKeyParameters, AsymmetricPicnicPublicKey&gt;&gt;, ISignaturePublicKey, IAsymmetricPublicKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IEquatable&lt;BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;AsymmetricPicnicAlgorithm, PicnicPublicKeyParameters, PicnicSigner, AsymmetricPicnicPublicKey&gt;&gt;, IEquatable&lt;AsymmetricPicnicPublicKey&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -487,6 +491,9 @@
   </div>
   <div>
       <span class="xref">wan24.StreamSerializerExtensions.IStreamSerializer</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IStatusProvider</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>

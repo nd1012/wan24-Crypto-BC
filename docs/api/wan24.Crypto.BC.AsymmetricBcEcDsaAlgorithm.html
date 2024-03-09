@@ -118,6 +118,7 @@
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">CryptoAlgorithmBase</span>&gt;</div>
     <div><span class="xref">IAsymmetricAlgorithm</span></div>
     <div><span class="xref">ICryptoAlgorithm</span></div>
+    <div><span class="xref">IStatusProvider</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">AsymmetricAlgorithmBase</span>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDsaPublicKey.html">AsymmetricBcEcDsaPublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDsaPrivateKey.html">AsymmetricBcEcDsaPrivateKey</a>&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html">BouncyCastleAsymmetricAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDsaPublicKey.html">AsymmetricBcEcDsaPublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDsaPrivateKey.html">AsymmetricBcEcDsaPrivateKey</a>, <span class="xref">ECKeyGenerationParameters</span>, <span class="xref">ECDomainParameters</span>, <span class="xref">ECPublicKeyParameters</span>, <span class="xref">ECPrivateKeyParameters</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.html">AsymmetricBcEcDsaAlgorithm</a>&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html">BouncyCastleAsymmetricAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDsaPublicKey.html">AsymmetricBcEcDsaPublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDsaPrivateKey.html">AsymmetricBcEcDsaPrivateKey</a>, <span class="xref">ECKeyPairGenerator</span>, <span class="xref">ECKeyGenerationParameters</span>, <span class="xref">ECDomainParameters</span>, <span class="xref">ECPublicKeyParameters</span>, <span class="xref">ECPrivateKeyParameters</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.html">AsymmetricBcEcDsaAlgorithm</a>&gt;&gt;</div>
@@ -151,6 +152,9 @@
     </div>
     <div>
       <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricBcEcDsaPublicKey, AsymmetricBcEcDsaPrivateKey&gt;.EnsureDefaultOptions(CryptoOptions)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">AsymmetricAlgorithmBase&lt;AsymmetricBcEcDsaPublicKey, AsymmetricBcEcDsaPrivateKey&gt;.EnsureAllowed(in bool)</a>
     </div>
     <div>
       <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricBcEcDsaPublicKey, AsymmetricBcEcDsaPrivateKey&gt;.CreateKeyPair(CryptoOptions)</span>
@@ -225,6 +229,18 @@
       <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricBcEcDsaPublicKey, AsymmetricBcEcDsaPrivateKey&gt;.DefaultKeySize</span>
     </div>
     <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricBcEcDsaPublicKey, AsymmetricBcEcDsaPrivateKey&gt;.IsDenied</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricBcEcDsaPublicKey, AsymmetricBcEcDsaPrivateKey&gt;.KeyPool</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricBcEcDsaPublicKey, AsymmetricBcEcDsaPrivateKey&gt;.State</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">CryptoAlgorithmBase.EnsureAllowed(in bool)</a>
+    </div>
+    <div>
       <span class="xref">CryptoAlgorithmBase.ToString()</span>
     </div>
     <div>
@@ -252,6 +268,12 @@
       <span class="xref">CryptoAlgorithmBase.UsesTpm</span>
     </div>
     <div>
+      <span class="xref">CryptoAlgorithmBase.IsSupported</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.State</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
@@ -265,7 +287,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_AsymmetricBcEcDsaAlgorithm_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record AsymmetricBcEcDsaAlgorithm : BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricBcEcDsaPublicKey, AsymmetricBcEcDsaPrivateKey, ECKeyPairGenerator, ECKeyGenerationParameters, ECDomainParameters, ECPublicKeyParameters, ECPrivateKeyParameters, AsymmetricBcEcDsaAlgorithm&gt;, IEquatable&lt;CryptoAlgorithmBase&gt;, IAsymmetricAlgorithm, ICryptoAlgorithm, IEquatable&lt;AsymmetricAlgorithmBase&lt;AsymmetricBcEcDsaPublicKey, AsymmetricBcEcDsaPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricBcEcDsaPublicKey, AsymmetricBcEcDsaPrivateKey, ECKeyGenerationParameters, ECDomainParameters, ECPublicKeyParameters, ECPrivateKeyParameters, AsymmetricBcEcDsaAlgorithm&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricBcEcDsaPublicKey, AsymmetricBcEcDsaPrivateKey, ECKeyPairGenerator, ECKeyGenerationParameters, ECDomainParameters, ECPublicKeyParameters, ECPrivateKeyParameters, AsymmetricBcEcDsaAlgorithm&gt;&gt;, IEquatable&lt;AsymmetricBcEcDsaAlgorithm&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricBcEcDsaAlgorithm : BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricBcEcDsaPublicKey, AsymmetricBcEcDsaPrivateKey, ECKeyPairGenerator, ECKeyGenerationParameters, ECDomainParameters, ECPublicKeyParameters, ECPrivateKeyParameters, AsymmetricBcEcDsaAlgorithm&gt;, IEquatable&lt;CryptoAlgorithmBase&gt;, IAsymmetricAlgorithm, ICryptoAlgorithm, IStatusProvider, IEquatable&lt;AsymmetricAlgorithmBase&lt;AsymmetricBcEcDsaPublicKey, AsymmetricBcEcDsaPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricBcEcDsaPublicKey, AsymmetricBcEcDsaPrivateKey, ECKeyGenerationParameters, ECDomainParameters, ECPublicKeyParameters, ECPrivateKeyParameters, AsymmetricBcEcDsaAlgorithm&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricBcEcDsaPublicKey, AsymmetricBcEcDsaPrivateKey, ECKeyPairGenerator, ECKeyGenerationParameters, ECDomainParameters, ECPublicKeyParameters, ECPrivateKeyParameters, AsymmetricBcEcDsaAlgorithm&gt;&gt;, IEquatable&lt;AsymmetricBcEcDsaAlgorithm&gt;</code></pre>
   </div>
   <h3 id="fields">Fields
 </h3>
@@ -614,6 +636,9 @@
   </div>
   <div>
       <span class="xref">wan24.Crypto.ICryptoAlgorithm</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IStatusProvider</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>

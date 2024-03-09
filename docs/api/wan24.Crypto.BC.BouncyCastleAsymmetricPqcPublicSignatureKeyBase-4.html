@@ -138,6 +138,7 @@
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     <div><span class="xref">IStreamSerializerVersion</span></div>
     <div><span class="xref">IStreamSerializer</span></div>
+    <div><span class="xref">IStatusProvider</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPublicSignatureKeyBase-4.html">BouncyCastleAsymmetricPqcPublicSignatureKeyBase</a>&lt;tAlgo, tPublicKey, tSigner, tFinal&gt;&gt;</div>
   </div>
   <div class="inheritedMembers">
@@ -227,6 +228,12 @@
       <span class="xref">AsymmetricKeyBase.Export()</span>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">AsymmetricKeyBase.EnsurePqcRequirement(in bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">AsymmetricKeyBase.EnsureAllowedCurve(in bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">AsymmetricKeyBase.Serialize(Stream)</a>
     </div>
     <div>
@@ -264,6 +271,9 @@
     </div>
     <div>
       <span class="xref">AsymmetricKeyBase.KeyData</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricKeyBase.State</span>
     </div>
     <div>
       <span class="xref">DisposableStreamSerializerRecordBase.BASE_VERSION</span>
@@ -354,7 +364,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_BouncyCastleAsymmetricPqcPublicSignatureKeyBase_4_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract record BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;tAlgo, tPublicKey, tSigner, tFinal&gt; : BouncyCastleAsymmetricPqcPublicKeyBase&lt;tAlgo, tPublicKey, tFinal&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPublicKeyBase&gt;, IEquatable&lt;BouncyCastleAsymmetricPublicKeyBase&lt;tAlgo, tPublicKey, tFinal&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPublicKeyBase&lt;tAlgo, tPublicKey, tFinal&gt;&gt;, ISignaturePublicKey, IAsymmetricPublicKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IEquatable&lt;BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;tAlgo, tPublicKey, tSigner, tFinal&gt;&gt; where tAlgo : IAsymmetricAlgorithm where tPublicKey : AsymmetricKeyParameter, ICipherParameters where tSigner : class, IMessageSigner, new() where tFinal : BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;tAlgo, tPublicKey, tSigner, tFinal&gt;, new()</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract record BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;tAlgo, tPublicKey, tSigner, tFinal&gt; : BouncyCastleAsymmetricPqcPublicKeyBase&lt;tAlgo, tPublicKey, tFinal&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPublicKeyBase&gt;, IEquatable&lt;BouncyCastleAsymmetricPublicKeyBase&lt;tAlgo, tPublicKey, tFinal&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPublicKeyBase&lt;tAlgo, tPublicKey, tFinal&gt;&gt;, ISignaturePublicKey, IAsymmetricPublicKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IEquatable&lt;BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;tAlgo, tPublicKey, tSigner, tFinal&gt;&gt; where tAlgo : IAsymmetricAlgorithm where tPublicKey : AsymmetricKeyParameter, ICipherParameters where tSigner : class, IMessageSigner, new() where tFinal : BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;tAlgo, tPublicKey, tSigner, tFinal&gt;, new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -672,6 +682,9 @@
   </div>
   <div>
       <span class="xref">wan24.StreamSerializerExtensions.IStreamSerializer</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IStatusProvider</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>

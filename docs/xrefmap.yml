@@ -6521,14 +6521,30 @@ references:
   commentId: T:wan24.Crypto.BC.BcEllipticCurves
   fullName: wan24.Crypto.BC.BcEllipticCurves
   nameWithType: BcEllipticCurves
-- uid: wan24.Crypto.BC.BcEllipticCurves.GetCurve(System.Int32)
-  name: GetCurve(int)
-  href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_GetCurve_System_Int32_
-  commentId: M:wan24.Crypto.BC.BcEllipticCurves.GetCurve(System.Int32)
+- uid: wan24.Crypto.BC.BcEllipticCurves.DenyCurve(Org.BouncyCastle.Crypto.Parameters.ECDomainParameters@)
+  name: DenyCurve(in ECDomainParameters)
+  href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_DenyCurve_Org_BouncyCastle_Crypto_Parameters_ECDomainParameters__
+  commentId: M:wan24.Crypto.BC.BcEllipticCurves.DenyCurve(Org.BouncyCastle.Crypto.Parameters.ECDomainParameters@)
+  name.vb: DenyCurve(ECDomainParameters)
+  fullName: wan24.Crypto.BC.BcEllipticCurves.DenyCurve(in Org.BouncyCastle.Crypto.Parameters.ECDomainParameters)
+  fullName.vb: wan24.Crypto.BC.BcEllipticCurves.DenyCurve(Org.BouncyCastle.Crypto.Parameters.ECDomainParameters)
+  nameWithType: BcEllipticCurves.DenyCurve(in ECDomainParameters)
+  nameWithType.vb: BcEllipticCurves.DenyCurve(ECDomainParameters)
+- uid: wan24.Crypto.BC.BcEllipticCurves.DenyCurve*
+  name: DenyCurve
+  href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_DenyCurve_
+  commentId: Overload:wan24.Crypto.BC.BcEllipticCurves.DenyCurve
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BcEllipticCurves.DenyCurve
+  nameWithType: BcEllipticCurves.DenyCurve
+- uid: wan24.Crypto.BC.BcEllipticCurves.GetCurve(System.Int32@)
+  name: GetCurve(in int)
+  href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_GetCurve_System_Int32__
+  commentId: M:wan24.Crypto.BC.BcEllipticCurves.GetCurve(System.Int32@)
   name.vb: GetCurve(Integer)
-  fullName: wan24.Crypto.BC.BcEllipticCurves.GetCurve(int)
+  fullName: wan24.Crypto.BC.BcEllipticCurves.GetCurve(in int)
   fullName.vb: wan24.Crypto.BC.BcEllipticCurves.GetCurve(Integer)
-  nameWithType: BcEllipticCurves.GetCurve(int)
+  nameWithType: BcEllipticCurves.GetCurve(in int)
   nameWithType.vb: BcEllipticCurves.GetCurve(Integer)
 - uid: wan24.Crypto.BC.BcEllipticCurves.GetCurve*
   name: GetCurve
@@ -6537,12 +6553,15 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.BcEllipticCurves.GetCurve
   nameWithType: BcEllipticCurves.GetCurve
-- uid: wan24.Crypto.BC.BcEllipticCurves.GetKeySize(Org.BouncyCastle.Crypto.Parameters.ECDomainParameters)
-  name: GetKeySize(ECDomainParameters)
-  href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_GetKeySize_Org_BouncyCastle_Crypto_Parameters_ECDomainParameters_
-  commentId: M:wan24.Crypto.BC.BcEllipticCurves.GetKeySize(Org.BouncyCastle.Crypto.Parameters.ECDomainParameters)
-  fullName: wan24.Crypto.BC.BcEllipticCurves.GetKeySize(Org.BouncyCastle.Crypto.Parameters.ECDomainParameters)
-  nameWithType: BcEllipticCurves.GetKeySize(ECDomainParameters)
+- uid: wan24.Crypto.BC.BcEllipticCurves.GetKeySize(Org.BouncyCastle.Crypto.Parameters.ECDomainParameters@)
+  name: GetKeySize(in ECDomainParameters)
+  href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_GetKeySize_Org_BouncyCastle_Crypto_Parameters_ECDomainParameters__
+  commentId: M:wan24.Crypto.BC.BcEllipticCurves.GetKeySize(Org.BouncyCastle.Crypto.Parameters.ECDomainParameters@)
+  name.vb: GetKeySize(ECDomainParameters)
+  fullName: wan24.Crypto.BC.BcEllipticCurves.GetKeySize(in Org.BouncyCastle.Crypto.Parameters.ECDomainParameters)
+  fullName.vb: wan24.Crypto.BC.BcEllipticCurves.GetKeySize(Org.BouncyCastle.Crypto.Parameters.ECDomainParameters)
+  nameWithType: BcEllipticCurves.GetKeySize(in ECDomainParameters)
+  nameWithType.vb: BcEllipticCurves.GetKeySize(ECDomainParameters)
 - uid: wan24.Crypto.BC.BcEllipticCurves.GetKeySize*
   name: GetKeySize
   href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_GetKeySize_
@@ -6550,6 +6569,22 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.BcEllipticCurves.GetKeySize
   nameWithType: BcEllipticCurves.GetKeySize
+- uid: wan24.Crypto.BC.BcEllipticCurves.IsCurveAllowed(Org.BouncyCastle.Crypto.Parameters.ECDomainParameters@)
+  name: IsCurveAllowed(in ECDomainParameters)
+  href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_IsCurveAllowed_Org_BouncyCastle_Crypto_Parameters_ECDomainParameters__
+  commentId: M:wan24.Crypto.BC.BcEllipticCurves.IsCurveAllowed(Org.BouncyCastle.Crypto.Parameters.ECDomainParameters@)
+  name.vb: IsCurveAllowed(ECDomainParameters)
+  fullName: wan24.Crypto.BC.BcEllipticCurves.IsCurveAllowed(in Org.BouncyCastle.Crypto.Parameters.ECDomainParameters)
+  fullName.vb: wan24.Crypto.BC.BcEllipticCurves.IsCurveAllowed(Org.BouncyCastle.Crypto.Parameters.ECDomainParameters)
+  nameWithType: BcEllipticCurves.IsCurveAllowed(in ECDomainParameters)
+  nameWithType.vb: BcEllipticCurves.IsCurveAllowed(ECDomainParameters)
+- uid: wan24.Crypto.BC.BcEllipticCurves.IsCurveAllowed*
+  name: IsCurveAllowed
+  href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_IsCurveAllowed_
+  commentId: Overload:wan24.Crypto.BC.BcEllipticCurves.IsCurveAllowed
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BcEllipticCurves.IsCurveAllowed
+  nameWithType: BcEllipticCurves.IsCurveAllowed
 - uid: wan24.Crypto.BC.BcEllipticCurves.SECP256R1_CURVE
   name: SECP256R1_CURVE
   href: api/wan24.Crypto.BC.BcEllipticCurves.html#wan24_Crypto_BC_BcEllipticCurves_SECP256R1_CURVE

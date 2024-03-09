@@ -118,6 +118,7 @@
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">CryptoAlgorithmBase</span>&gt;</div>
     <div><span class="xref">IAsymmetricAlgorithm</span></div>
     <div><span class="xref">ICryptoAlgorithm</span></div>
+    <div><span class="xref">IStatusProvider</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">AsymmetricAlgorithmBase</span>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptPublicKey.html">AsymmetricNtruEncryptPublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptPrivateKey.html">AsymmetricNtruEncryptPrivateKey</a>&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html">BouncyCastleAsymmetricAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptPublicKey.html">AsymmetricNtruEncryptPublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptPrivateKey.html">AsymmetricNtruEncryptPrivateKey</a>, <span class="xref">NtruKeyGenerationParameters</span>, <span class="xref">NtruParameters</span>, <span class="xref">NtruPublicKeyParameters</span>, <span class="xref">NtruPrivateKeyParameters</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html">AsymmetricNtruEncryptAlgorithm</a>&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-8.html">BouncyCastleAsymmetricAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptPublicKey.html">AsymmetricNtruEncryptPublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptPrivateKey.html">AsymmetricNtruEncryptPrivateKey</a>, <span class="xref">NtruKeyPairGenerator</span>, <span class="xref">NtruKeyGenerationParameters</span>, <span class="xref">NtruParameters</span>, <span class="xref">NtruPublicKeyParameters</span>, <span class="xref">NtruPrivateKeyParameters</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html">AsymmetricNtruEncryptAlgorithm</a>&gt;&gt;</div>
@@ -151,6 +152,9 @@
     </div>
     <div>
       <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey&gt;.EnsureDefaultOptions(CryptoOptions)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">AsymmetricAlgorithmBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey&gt;.EnsureAllowed(in bool)</a>
     </div>
     <div>
       <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey&gt;.CreateKeyPair(CryptoOptions)</span>
@@ -225,6 +229,18 @@
       <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey&gt;.DefaultKeySize</span>
     </div>
     <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey&gt;.IsDenied</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey&gt;.KeyPool</span>
+    </div>
+    <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey&gt;.State</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">CryptoAlgorithmBase.EnsureAllowed(in bool)</a>
+    </div>
+    <div>
       <span class="xref">CryptoAlgorithmBase.ToString()</span>
     </div>
     <div>
@@ -252,6 +268,12 @@
       <span class="xref">CryptoAlgorithmBase.UsesTpm</span>
     </div>
     <div>
+      <span class="xref">CryptoAlgorithmBase.IsSupported</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.State</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
@@ -265,7 +287,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_AsymmetricNtruEncryptAlgorithm_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record AsymmetricNtruEncryptAlgorithm : BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey, NtruKeyPairGenerator, NtruKeyGenerationParameters, NtruParameters, NtruPublicKeyParameters, NtruPrivateKeyParameters, AsymmetricNtruEncryptAlgorithm&gt;, IEquatable&lt;CryptoAlgorithmBase&gt;, IAsymmetricAlgorithm, ICryptoAlgorithm, IEquatable&lt;AsymmetricAlgorithmBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey, NtruKeyGenerationParameters, NtruParameters, NtruPublicKeyParameters, NtruPrivateKeyParameters, AsymmetricNtruEncryptAlgorithm&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey, NtruKeyPairGenerator, NtruKeyGenerationParameters, NtruParameters, NtruPublicKeyParameters, NtruPrivateKeyParameters, AsymmetricNtruEncryptAlgorithm&gt;&gt;, IEquatable&lt;AsymmetricNtruEncryptAlgorithm&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricNtruEncryptAlgorithm : BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey, NtruKeyPairGenerator, NtruKeyGenerationParameters, NtruParameters, NtruPublicKeyParameters, NtruPrivateKeyParameters, AsymmetricNtruEncryptAlgorithm&gt;, IEquatable&lt;CryptoAlgorithmBase&gt;, IAsymmetricAlgorithm, ICryptoAlgorithm, IStatusProvider, IEquatable&lt;AsymmetricAlgorithmBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey, NtruKeyGenerationParameters, NtruParameters, NtruPublicKeyParameters, NtruPrivateKeyParameters, AsymmetricNtruEncryptAlgorithm&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey, NtruKeyPairGenerator, NtruKeyGenerationParameters, NtruParameters, NtruPublicKeyParameters, NtruPrivateKeyParameters, AsymmetricNtruEncryptAlgorithm&gt;&gt;, IEquatable&lt;AsymmetricNtruEncryptAlgorithm&gt;</code></pre>
   </div>
   <h3 id="fields">Fields
 </h3>
@@ -550,6 +572,9 @@
   </div>
   <div>
       <span class="xref">wan24.Crypto.ICryptoAlgorithm</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IStatusProvider</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>

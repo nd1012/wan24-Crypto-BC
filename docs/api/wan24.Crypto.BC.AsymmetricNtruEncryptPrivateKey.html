@@ -135,6 +135,7 @@
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     <div><span class="xref">IStreamSerializerVersion</span></div>
     <div><span class="xref">IStreamSerializer</span></div>
+    <div><span class="xref">IStatusProvider</span></div>
     <div><span class="xref">IKeyExchange</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase-7.html">BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptPublicKey.html">AsymmetricNtruEncryptPublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html">AsymmetricNtruEncryptAlgorithm</a>, <span class="xref">NtruPublicKeyParameters</span>, <span class="xref">NtruPrivateKeyParameters</span>, <span class="xref">NtruKemGenerator</span>, <span class="xref">NtruKemExtractor</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptPrivateKey.html">AsymmetricNtruEncryptPrivateKey</a>&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricNtruEncryptPrivateKey.html">AsymmetricNtruEncryptPrivateKey</a>&gt;</div>
@@ -265,6 +266,9 @@
       <span class="xref">AsymmetricKeyBase.KeyData</span>
     </div>
     <div>
+      <span class="xref">AsymmetricKeyBase.State</span>
+    </div>
+    <div>
       <span class="xref">DisposableStreamSerializerRecordBase.BASE_VERSION</span>
     </div>
     <div>
@@ -308,7 +312,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_AsymmetricNtruEncryptPrivateKey_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record AsymmetricNtruEncryptPrivateKey : BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptAlgorithm, NtruPublicKeyParameters, NtruPrivateKeyParameters, NtruKemGenerator, NtruKemExtractor, AsymmetricNtruEncryptPrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptAlgorithm, NtruPublicKeyParameters, NtruPrivateKeyParameters, AsymmetricNtruEncryptPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptAlgorithm, NtruPublicKeyParameters, NtruPrivateKeyParameters, AsymmetricNtruEncryptPrivateKey&gt;&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IKeyExchange, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptAlgorithm, NtruPublicKeyParameters, NtruPrivateKeyParameters, NtruKemGenerator, NtruKemExtractor, AsymmetricNtruEncryptPrivateKey&gt;&gt;, IEquatable&lt;AsymmetricNtruEncryptPrivateKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricNtruEncryptPrivateKey : BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptAlgorithm, NtruPublicKeyParameters, NtruPrivateKeyParameters, NtruKemGenerator, NtruKemExtractor, AsymmetricNtruEncryptPrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptAlgorithm, NtruPublicKeyParameters, NtruPrivateKeyParameters, AsymmetricNtruEncryptPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptAlgorithm, NtruPublicKeyParameters, NtruPrivateKeyParameters, AsymmetricNtruEncryptPrivateKey&gt;&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IKeyExchange, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricNtruEncryptPublicKey, AsymmetricNtruEncryptAlgorithm, NtruPublicKeyParameters, NtruPrivateKeyParameters, NtruKemGenerator, NtruKemExtractor, AsymmetricNtruEncryptPrivateKey&gt;&gt;, IEquatable&lt;AsymmetricNtruEncryptPrivateKey&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -754,6 +758,9 @@
   </div>
   <div>
       <span class="xref">wan24.StreamSerializerExtensions.IStreamSerializer</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IStatusProvider</span>
   </div>
   <div>
       <span class="xref">wan24.Crypto.IKeyExchange</span>

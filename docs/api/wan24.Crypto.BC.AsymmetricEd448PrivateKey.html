@@ -135,6 +135,7 @@
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     <div><span class="xref">IStreamSerializerVersion</span></div>
     <div><span class="xref">IStreamSerializer</span></div>
+    <div><span class="xref">IStatusProvider</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2-6.html">BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PublicKey.html">AsymmetricEd448PublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448Algorithm.html">AsymmetricEd448Algorithm</a>, <span class="xref">Ed448PublicKeyParameters</span>, <span class="xref">Ed448PrivateKeyParameters</span>, <span class="xref">Ed448Signer</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PrivateKey.html">AsymmetricEd448PrivateKey</a>&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricEd448PrivateKey.html">AsymmetricEd448PrivateKey</a>&gt;</div>
   </div>
@@ -255,6 +256,9 @@
       <span class="xref">AsymmetricKeyBase.KeyData</span>
     </div>
     <div>
+      <span class="xref">AsymmetricKeyBase.State</span>
+    </div>
+    <div>
       <span class="xref">DisposableStreamSerializerRecordBase.BASE_VERSION</span>
     </div>
     <div>
@@ -298,7 +302,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_AsymmetricEd448PrivateKey_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record AsymmetricEd448PrivateKey : BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, Ed448Signer, AsymmetricEd448PrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricEd448PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricEd448PrivateKey&gt;&gt;, ISignaturePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, Ed448Signer, AsymmetricEd448PrivateKey&gt;&gt;, IEquatable&lt;AsymmetricEd448PrivateKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricEd448PrivateKey : BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, Ed448Signer, AsymmetricEd448PrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricEd448PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateKeyBase&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricEd448PrivateKey&gt;&gt;, ISignaturePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2&lt;AsymmetricEd448PublicKey, AsymmetricEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, Ed448Signer, AsymmetricEd448PrivateKey&gt;&gt;, IEquatable&lt;AsymmetricEd448PrivateKey&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -761,6 +765,9 @@
   </div>
   <div>
       <span class="xref">wan24.StreamSerializerExtensions.IStreamSerializer</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IStatusProvider</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>

@@ -134,6 +134,7 @@
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     <div><span class="xref">IStreamSerializerVersion</span></div>
     <div><span class="xref">IStreamSerializer</span></div>
+    <div><span class="xref">IStatusProvider</span></div>
     <div><span class="xref">IKeyExchange</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricX25519PrivateKey.html">AsymmetricX25519PrivateKey</a>&gt;</div>
   </div>
@@ -254,6 +255,9 @@
       <span class="xref">AsymmetricKeyBase.KeyData</span>
     </div>
     <div>
+      <span class="xref">AsymmetricKeyBase.State</span>
+    </div>
+    <div>
       <span class="xref">DisposableStreamSerializerRecordBase.BASE_VERSION</span>
     </div>
     <div>
@@ -297,7 +301,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_AsymmetricX25519PrivateKey_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record AsymmetricX25519PrivateKey : BouncyCastleAsymmetricNonPqcPrivateKeyBase&lt;AsymmetricX25519PublicKey, AsymmetricX25519Algorithm, X25519PublicKeyParameters, X25519PrivateKeyParameters, AsymmetricX25519PrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricX25519PublicKey, AsymmetricX25519PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricX25519PublicKey, AsymmetricX25519Algorithm, X25519PublicKeyParameters, X25519PrivateKeyParameters, AsymmetricX25519PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateKeyBase&lt;AsymmetricX25519PublicKey, AsymmetricX25519Algorithm, X25519PublicKeyParameters, X25519PrivateKeyParameters, AsymmetricX25519PrivateKey&gt;&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IKeyExchange, IEquatable&lt;AsymmetricX25519PrivateKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricX25519PrivateKey : BouncyCastleAsymmetricNonPqcPrivateKeyBase&lt;AsymmetricX25519PublicKey, AsymmetricX25519Algorithm, X25519PublicKeyParameters, X25519PrivateKeyParameters, AsymmetricX25519PrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricX25519PublicKey, AsymmetricX25519PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricX25519PublicKey, AsymmetricX25519Algorithm, X25519PublicKeyParameters, X25519PrivateKeyParameters, AsymmetricX25519PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateKeyBase&lt;AsymmetricX25519PublicKey, AsymmetricX25519Algorithm, X25519PublicKeyParameters, X25519PrivateKeyParameters, AsymmetricX25519PrivateKey&gt;&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IKeyExchange, IEquatable&lt;AsymmetricX25519PrivateKey&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -845,6 +849,9 @@
   </div>
   <div>
       <span class="xref">wan24.StreamSerializerExtensions.IStreamSerializer</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IStatusProvider</span>
   </div>
   <div>
       <span class="xref">wan24.Crypto.IKeyExchange</span>

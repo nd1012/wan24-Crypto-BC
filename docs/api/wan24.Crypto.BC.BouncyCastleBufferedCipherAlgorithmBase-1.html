@@ -118,6 +118,7 @@
   <div class="implements">
     <h5>Implements</h5>
     <div><span class="xref">ICryptoAlgorithm</span></div>
+    <div><span class="xref">IStatusProvider</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">CryptoAlgorithmBase</span>&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">EncryptionAlgorithmBase</span>&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleCipherAlgorithmBase-1.html">BouncyCastleCipherAlgorithmBase</a>&lt;T&gt;&gt;</div>
@@ -148,6 +149,9 @@
     </div>
     <div>
       <span class="xref">EncryptionAlgorithmBase.EnsureDefaultOptions(CryptoOptions)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">EncryptionAlgorithmBase.EnsureAllowed(in bool)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">EncryptionAlgorithmBase.EnsureValidKeyLength(byte[])</a>
@@ -276,6 +280,15 @@
       <span class="xref">EncryptionAlgorithmBase.DefaultOptions</span>
     </div>
     <div>
+      <span class="xref">EncryptionAlgorithmBase.IsDenied</span>
+    </div>
+    <div>
+      <span class="xref">EncryptionAlgorithmBase.State</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">CryptoAlgorithmBase.EnsurePqcRequirement(in bool)</a>
+    </div>
+    <div>
       <span class="xref">CryptoAlgorithmBase.Name</span>
     </div>
     <div>
@@ -286,6 +299,9 @@
     </div>
     <div>
       <span class="xref">CryptoAlgorithmBase.UsesTpm</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.IsSupported</span>
     </div>
     <div>
       <span class="xref">CryptoAlgorithmBase.DisplayName</span>
@@ -307,7 +323,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_BouncyCastleBufferedCipherAlgorithmBase_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract record BouncyCastleBufferedCipherAlgorithmBase&lt;T&gt; : BouncyCastleCipherAlgorithmBase&lt;T&gt;, ICryptoAlgorithm, IEquatable&lt;CryptoAlgorithmBase&gt;, IEquatable&lt;EncryptionAlgorithmBase&gt;, IEquatable&lt;BouncyCastleCipherAlgorithmBase&lt;T&gt;&gt;, IEquatable&lt;BouncyCastleBufferedCipherAlgorithmBase&lt;T&gt;&gt; where T : BouncyCastleBufferedCipherAlgorithmBase&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract record BouncyCastleBufferedCipherAlgorithmBase&lt;T&gt; : BouncyCastleCipherAlgorithmBase&lt;T&gt;, ICryptoAlgorithm, IStatusProvider, IEquatable&lt;CryptoAlgorithmBase&gt;, IEquatable&lt;EncryptionAlgorithmBase&gt;, IEquatable&lt;BouncyCastleCipherAlgorithmBase&lt;T&gt;&gt;, IEquatable&lt;BouncyCastleBufferedCipherAlgorithmBase&lt;T&gt;&gt; where T : BouncyCastleBufferedCipherAlgorithmBase&lt;T&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -672,6 +688,9 @@
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">wan24.Crypto.ICryptoAlgorithm</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IStatusProvider</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>

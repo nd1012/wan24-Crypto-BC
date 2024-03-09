@@ -115,6 +115,7 @@
   <div class="implements">
     <h5>Implements</h5>
     <div><span class="xref">ICryptoAlgorithm</span></div>
+    <div><span class="xref">IStatusProvider</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">CryptoAlgorithmBase</span>&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">MacAlgorithmBase</span>&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleHmacAlgorithmBase-1.html">BouncyCastleHmacAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.html">MacBcHmacSha3_512Algorithm</a>&gt;&gt;</div>
@@ -171,6 +172,12 @@
       <span class="xref">MacAlgorithmBase.DefaultOptions</span>
     </div>
     <div>
+      <span class="xref">MacAlgorithmBase.State</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">CryptoAlgorithmBase.EnsureAllowed(in bool)</a>
+    </div>
+    <div>
       <span class="xref">CryptoAlgorithmBase.Name</span>
     </div>
     <div>
@@ -178,6 +185,9 @@
     </div>
     <div>
       <span class="xref">CryptoAlgorithmBase.UsesTpm</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.IsSupported</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
@@ -193,7 +203,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_MacBcHmacSha3_512Algorithm_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record MacBcHmacSha3_512Algorithm : BouncyCastleHmacAlgorithmBase&lt;MacBcHmacSha3_512Algorithm&gt;, ICryptoAlgorithm, IEquatable&lt;CryptoAlgorithmBase&gt;, IEquatable&lt;MacAlgorithmBase&gt;, IEquatable&lt;BouncyCastleHmacAlgorithmBase&lt;MacBcHmacSha3_512Algorithm&gt;&gt;, IEquatable&lt;MacBcHmacSha3_512Algorithm&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record MacBcHmacSha3_512Algorithm : BouncyCastleHmacAlgorithmBase&lt;MacBcHmacSha3_512Algorithm&gt;, ICryptoAlgorithm, IStatusProvider, IEquatable&lt;CryptoAlgorithmBase&gt;, IEquatable&lt;MacAlgorithmBase&gt;, IEquatable&lt;BouncyCastleHmacAlgorithmBase&lt;MacBcHmacSha3_512Algorithm&gt;&gt;, IEquatable&lt;MacBcHmacSha3_512Algorithm&gt;</code></pre>
   </div>
   <h3 id="fields">Fields
 </h3>
@@ -481,6 +491,9 @@
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">wan24.Crypto.ICryptoAlgorithm</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IStatusProvider</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>

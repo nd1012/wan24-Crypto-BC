@@ -115,6 +115,7 @@
   <div class="implements">
     <h5>Implements</h5>
     <div><span class="xref">ICryptoAlgorithm</span></div>
+    <div><span class="xref">IStatusProvider</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">CryptoAlgorithmBase</span>&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">HashAlgorithmBase</span>&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleHashAlgorithmBase-1.html">BouncyCastleHashAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.HashBcSha3_256Algorithm.html">HashBcSha3_256Algorithm</a>&gt;&gt;</div>
@@ -174,6 +175,12 @@
       <span class="xref">HashAlgorithmBase.DefaultOptions</span>
     </div>
     <div>
+      <span class="xref">HashAlgorithmBase.State</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">CryptoAlgorithmBase.EnsureAllowed(in bool)</a>
+    </div>
+    <div>
       <span class="xref">CryptoAlgorithmBase.Name</span>
     </div>
     <div>
@@ -181,6 +188,9 @@
     </div>
     <div>
       <span class="xref">CryptoAlgorithmBase.UsesTpm</span>
+    </div>
+    <div>
+      <span class="xref">CryptoAlgorithmBase.IsSupported</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
@@ -196,7 +206,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_HashBcSha3_256Algorithm_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record HashBcSha3_256Algorithm : BouncyCastleHashAlgorithmBase&lt;HashBcSha3_256Algorithm&gt;, ICryptoAlgorithm, IEquatable&lt;CryptoAlgorithmBase&gt;, IEquatable&lt;HashAlgorithmBase&gt;, IEquatable&lt;BouncyCastleHashAlgorithmBase&lt;HashBcSha3_256Algorithm&gt;&gt;, IEquatable&lt;HashBcSha3_256Algorithm&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record HashBcSha3_256Algorithm : BouncyCastleHashAlgorithmBase&lt;HashBcSha3_256Algorithm&gt;, ICryptoAlgorithm, IStatusProvider, IEquatable&lt;CryptoAlgorithmBase&gt;, IEquatable&lt;HashAlgorithmBase&gt;, IEquatable&lt;BouncyCastleHashAlgorithmBase&lt;HashBcSha3_256Algorithm&gt;&gt;, IEquatable&lt;HashBcSha3_256Algorithm&gt;</code></pre>
   </div>
   <h3 id="fields">Fields
 </h3>
@@ -478,6 +488,9 @@
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">wan24.Crypto.ICryptoAlgorithm</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IStatusProvider</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>

@@ -135,6 +135,7 @@
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     <div><span class="xref">IStreamSerializerVersion</span></div>
     <div><span class="xref">IStreamSerializer</span></div>
+    <div><span class="xref">IStatusProvider</span></div>
     <div><span class="xref">IKeyExchange</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase-7.html">BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricBikePublicKey.html">AsymmetricBikePublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricBikeAlgorithm.html">AsymmetricBikeAlgorithm</a>, <span class="xref">BikePublicKeyParameters</span>, <span class="xref">BikePrivateKeyParameters</span>, <span class="xref">BikeKemGenerator</span>, <span class="xref">BikeKemExtractor</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricBikePrivateKey.html">AsymmetricBikePrivateKey</a>&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricBikePrivateKey.html">AsymmetricBikePrivateKey</a>&gt;</div>
@@ -265,6 +266,9 @@
       <span class="xref">AsymmetricKeyBase.KeyData</span>
     </div>
     <div>
+      <span class="xref">AsymmetricKeyBase.State</span>
+    </div>
+    <div>
       <span class="xref">DisposableStreamSerializerRecordBase.BASE_VERSION</span>
     </div>
     <div>
@@ -308,7 +312,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_AsymmetricBikePrivateKey_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record AsymmetricBikePrivateKey : BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricBikePublicKey, AsymmetricBikeAlgorithm, BikePublicKeyParameters, BikePrivateKeyParameters, BikeKemGenerator, BikeKemExtractor, AsymmetricBikePrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricBikePublicKey, AsymmetricBikePrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricBikePublicKey, AsymmetricBikeAlgorithm, BikePublicKeyParameters, BikePrivateKeyParameters, AsymmetricBikePrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyBase&lt;AsymmetricBikePublicKey, AsymmetricBikeAlgorithm, BikePublicKeyParameters, BikePrivateKeyParameters, AsymmetricBikePrivateKey&gt;&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IKeyExchange, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricBikePublicKey, AsymmetricBikeAlgorithm, BikePublicKeyParameters, BikePrivateKeyParameters, BikeKemGenerator, BikeKemExtractor, AsymmetricBikePrivateKey&gt;&gt;, IEquatable&lt;AsymmetricBikePrivateKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricBikePrivateKey : BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricBikePublicKey, AsymmetricBikeAlgorithm, BikePublicKeyParameters, BikePrivateKeyParameters, BikeKemGenerator, BikeKemExtractor, AsymmetricBikePrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricBikePublicKey, AsymmetricBikePrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricBikePublicKey, AsymmetricBikeAlgorithm, BikePublicKeyParameters, BikePrivateKeyParameters, AsymmetricBikePrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyBase&lt;AsymmetricBikePublicKey, AsymmetricBikeAlgorithm, BikePublicKeyParameters, BikePrivateKeyParameters, AsymmetricBikePrivateKey&gt;&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IKeyExchange, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricBikePublicKey, AsymmetricBikeAlgorithm, BikePublicKeyParameters, BikePrivateKeyParameters, BikeKemGenerator, BikeKemExtractor, AsymmetricBikePrivateKey&gt;&gt;, IEquatable&lt;AsymmetricBikePrivateKey&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -754,6 +758,9 @@
   </div>
   <div>
       <span class="xref">wan24.StreamSerializerExtensions.IStreamSerializer</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IStatusProvider</span>
   </div>
   <div>
       <span class="xref">wan24.Crypto.IKeyExchange</span>

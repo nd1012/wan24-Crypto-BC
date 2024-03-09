@@ -135,6 +135,7 @@
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     <div><span class="xref">IStreamSerializerVersion</span></div>
     <div><span class="xref">IStreamSerializer</span></div>
+    <div><span class="xref">IStatusProvider</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateSignatureKeyBase-6.html">BouncyCastleAsymmetricPqcPrivateSignatureKeyBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricFalconPublicKey.html">AsymmetricFalconPublicKey</a>, <a class="xref" href="wan24.Crypto.BC.AsymmetricFalconAlgorithm.html">AsymmetricFalconAlgorithm</a>, <span class="xref">FalconPublicKeyParameters</span>, <span class="xref">FalconPrivateKeyParameters</span>, <span class="xref">FalconSigner</span>, <a class="xref" href="wan24.Crypto.BC.AsymmetricFalconPrivateKey.html">AsymmetricFalconPrivateKey</a>&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.AsymmetricFalconPrivateKey.html">AsymmetricFalconPrivateKey</a>&gt;</div>
   </div>
@@ -258,6 +259,9 @@
       <span class="xref">AsymmetricKeyBase.KeyData</span>
     </div>
     <div>
+      <span class="xref">AsymmetricKeyBase.State</span>
+    </div>
+    <div>
       <span class="xref">DisposableStreamSerializerRecordBase.BASE_VERSION</span>
     </div>
     <div>
@@ -301,7 +305,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_AsymmetricFalconPrivateKey_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record AsymmetricFalconPrivateKey : BouncyCastleAsymmetricPqcPrivateSignatureKeyBase&lt;AsymmetricFalconPublicKey, AsymmetricFalconAlgorithm, FalconPublicKeyParameters, FalconPrivateKeyParameters, FalconSigner, AsymmetricFalconPrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricFalconPublicKey, AsymmetricFalconPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricFalconPublicKey, AsymmetricFalconAlgorithm, FalconPublicKeyParameters, FalconPrivateKeyParameters, AsymmetricFalconPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyBase&lt;AsymmetricFalconPublicKey, AsymmetricFalconAlgorithm, FalconPublicKeyParameters, FalconPrivateKeyParameters, AsymmetricFalconPrivateKey&gt;&gt;, ISignaturePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateSignatureKeyBase&lt;AsymmetricFalconPublicKey, AsymmetricFalconAlgorithm, FalconPublicKeyParameters, FalconPrivateKeyParameters, FalconSigner, AsymmetricFalconPrivateKey&gt;&gt;, IEquatable&lt;AsymmetricFalconPrivateKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricFalconPrivateKey : BouncyCastleAsymmetricPqcPrivateSignatureKeyBase&lt;AsymmetricFalconPublicKey, AsymmetricFalconAlgorithm, FalconPublicKeyParameters, FalconPrivateKeyParameters, FalconSigner, AsymmetricFalconPrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricFalconPublicKey, AsymmetricFalconPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricFalconPublicKey, AsymmetricFalconAlgorithm, FalconPublicKeyParameters, FalconPrivateKeyParameters, AsymmetricFalconPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyBase&lt;AsymmetricFalconPublicKey, AsymmetricFalconAlgorithm, FalconPublicKeyParameters, FalconPrivateKeyParameters, AsymmetricFalconPrivateKey&gt;&gt;, ISignaturePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateSignatureKeyBase&lt;AsymmetricFalconPublicKey, AsymmetricFalconAlgorithm, FalconPublicKeyParameters, FalconPrivateKeyParameters, FalconSigner, AsymmetricFalconPrivateKey&gt;&gt;, IEquatable&lt;AsymmetricFalconPrivateKey&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -697,6 +701,9 @@
   </div>
   <div>
       <span class="xref">wan24.StreamSerializerExtensions.IStreamSerializer</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IStatusProvider</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
