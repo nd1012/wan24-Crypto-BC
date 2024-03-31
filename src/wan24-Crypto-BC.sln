@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wan24-Crypto-BC", "wan24-Cr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wan24-Crypto-BC Tests", "wan24-Crypto-BC Tests\wan24-Crypto-BC Tests.csproj", "{19293508-BC9C-4429-AB47-270C3C7ACE78}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wan24-Crypto-BC Docs", "wan24-Crypto-BC Docs\wan24-Crypto-BC Docs.csproj", "{02DC0681-9170-4421-AC4E-801AF746388F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wan24-Core", "..\..\wan24-Core\src\Wan24-Core\Wan24-Core.csproj", "{678B09FC-7C24-4801-AF72-1800E4C7CD38}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wan24-Crypto", "..\..\wan24-Crypto\src\wan24-Crypto\wan24-Crypto.csproj", "{C77DD1B2-571E-4BA2-94E7-7F9073F084B9}"
@@ -40,9 +38,6 @@ Global
 		{19293508-BC9C-4429-AB47-270C3C7ACE78}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19293508-BC9C-4429-AB47-270C3C7ACE78}.Trunk|Any CPU.ActiveCfg = Trunk|Any CPU
 		{19293508-BC9C-4429-AB47-270C3C7ACE78}.Trunk|Any CPU.Build.0 = Trunk|Any CPU
-		{02DC0681-9170-4421-AC4E-801AF746388F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{02DC0681-9170-4421-AC4E-801AF746388F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{02DC0681-9170-4421-AC4E-801AF746388F}.Trunk|Any CPU.ActiveCfg = Trunk|Any CPU
 		{678B09FC-7C24-4801-AF72-1800E4C7CD38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{678B09FC-7C24-4801-AF72-1800E4C7CD38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{678B09FC-7C24-4801-AF72-1800E4C7CD38}.Trunk|Any CPU.ActiveCfg = Debug|Any CPU
