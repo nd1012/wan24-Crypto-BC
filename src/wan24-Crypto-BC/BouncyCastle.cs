@@ -97,5 +97,18 @@ namespace wan24.Crypto.BC
                     break;
             }
         }
+
+        /// <summary>
+        /// Register (HMAC)SHA3-* algorithms to <see cref="CryptoAppConfig"/> (replace the .NET defaults!)
+        /// </summary>
+        public static void RegisterNetAlgrithms()
+        {
+            HashBcSha3_256Algorithm.SHA3_256.Register();
+            HashBcSha3_384Algorithm.SHA3_384.Register();
+            HashBcSha3_512Algorithm.SHA3_512.Register();
+            MacBcHmacSha3_256Algorithm.HMACSHA3_256.Register();
+            MacBcHmacSha3_384Algorithm.HMACSHA3_384.Register();
+            MacBcHmacSha3_512Algorithm.HMACSHA3_512.Register();
+        }
     }
 }
