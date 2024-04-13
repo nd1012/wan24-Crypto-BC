@@ -6628,19 +6628,19 @@ references:
   commentId: T:wan24.Crypto.BC.BouncyCastle
   fullName: wan24.Crypto.BC.BouncyCastle
   nameWithType: BouncyCastle
-- uid: wan24.Crypto.BC.BouncyCastle.RegisterNetAlgrithms
-  name: RegisterNetAlgrithms()
-  href: api/wan24.Crypto.BC.BouncyCastle.html#wan24_Crypto_BC_BouncyCastle_RegisterNetAlgrithms
-  commentId: M:wan24.Crypto.BC.BouncyCastle.RegisterNetAlgrithms
-  fullName: wan24.Crypto.BC.BouncyCastle.RegisterNetAlgrithms()
-  nameWithType: BouncyCastle.RegisterNetAlgrithms()
-- uid: wan24.Crypto.BC.BouncyCastle.RegisterNetAlgrithms*
-  name: RegisterNetAlgrithms
-  href: api/wan24.Crypto.BC.BouncyCastle.html#wan24_Crypto_BC_BouncyCastle_RegisterNetAlgrithms_
-  commentId: Overload:wan24.Crypto.BC.BouncyCastle.RegisterNetAlgrithms
+- uid: wan24.Crypto.BC.BouncyCastle.RegisterNetAlgorithms
+  name: RegisterNetAlgorithms()
+  href: api/wan24.Crypto.BC.BouncyCastle.html#wan24_Crypto_BC_BouncyCastle_RegisterNetAlgorithms
+  commentId: M:wan24.Crypto.BC.BouncyCastle.RegisterNetAlgorithms
+  fullName: wan24.Crypto.BC.BouncyCastle.RegisterNetAlgorithms()
+  nameWithType: BouncyCastle.RegisterNetAlgorithms()
+- uid: wan24.Crypto.BC.BouncyCastle.RegisterNetAlgorithms*
+  name: RegisterNetAlgorithms
+  href: api/wan24.Crypto.BC.BouncyCastle.html#wan24_Crypto_BC_BouncyCastle_RegisterNetAlgorithms_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastle.RegisterNetAlgorithms
   isSpec: "True"
-  fullName: wan24.Crypto.BC.BouncyCastle.RegisterNetAlgrithms
-  nameWithType: BouncyCastle.RegisterNetAlgrithms
+  fullName: wan24.Crypto.BC.BouncyCastle.RegisterNetAlgorithms
+  nameWithType: BouncyCastle.RegisterNetAlgorithms
 - uid: wan24.Crypto.BC.BouncyCastle.ReplaceNetAlgorithms
   name: ReplaceNetAlgorithms()
   href: api/wan24.Crypto.BC.BouncyCastle.html#wan24_Crypto_BC_BouncyCastle_ReplaceNetAlgorithms
