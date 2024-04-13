@@ -40,6 +40,17 @@ namespace wan24.Crypto.BC
         public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
-        protected override HashAlgorithm GetHashAlgorithmInt(CryptoOptions? options) => new BouncyCastleHashAlgorithm(new Sha3Digest(HASH_LENGTH << 3));
+        protected override HashAlgorithm GetHashAlgorithmInt(CryptoOptions? options) => new SHA3_512();
+
+        /// <summary>
+        /// SHA3-512
+        /// </summary>
+        public sealed class SHA3_512() : BouncyCastleHashAlgorithm(new Sha3Digest(HASH_LENGTH << 3))
+        {
+            /// <summary>
+            /// Register to the <see cref="CryptoConfig"/>
+            /// </summary>
+            public static void Register() => CryptoConfig.AddAlgorithm(typeof(SHA3_512), ALGORITHM_NAME);
+        }
     }
 }

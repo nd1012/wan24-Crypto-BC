@@ -10,12 +10,12 @@ namespace wan24.Crypto.BC
     /// Constructor
     /// </remarks>
     /// <param name="digest">Digest</param>
-    public sealed class BouncyCastleHashAlgorithm(IDigest digest) : HashAlgorithm()
+    public class BouncyCastleHashAlgorithm(IDigest digest) : HashAlgorithm()
     {
         /// <summary>
         /// Digest
         /// </summary>
-        private readonly IDigest Digest = digest;
+        protected readonly IDigest Digest = digest;
 
         /// <inheritdoc/>
         public override int HashSize => Digest.GetDigestSize() << 3;

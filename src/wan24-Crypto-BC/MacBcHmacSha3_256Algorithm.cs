@@ -42,11 +42,23 @@ namespace wan24.Crypto.BC
         public override string DisplayName => DISPLAY_NAME;
 
         /// <inheritdoc/>
-        protected override KeyedHashAlgorithm GetMacAlgorithmInt(byte[] pwd, CryptoOptions? options)
+        protected override KeyedHashAlgorithm GetMacAlgorithmInt(byte[] pwd, CryptoOptions? options) => new HMACSHA3_256(pwd);
+
+        /// <summary>
+        /// HMACSHA3-256
+        /// </summary>
+        public sealed class HMACSHA3_256 : BouncyCastleHmacAlgorithm
         {
-            HMac mac = new(new Sha3Digest(MAC_LENGTH << 3));
-            mac.Init(new KeyParameter(pwd));
-            return new BouncyCastleHmacAlgorithm(mac);
+            /// <summary>
+            /// Constructor
+            /// </summary>
+            /// <param name="pwd">Password</param>
+            public HMACSHA3_256(byte[] pwd) : base(new HMac(new Sha3Digest(MAC_LENGTH << 3))) => Mac.Init(new KeyParameter(pwd));
+
+            /// <summary>
+            /// Register to the <see cref="CryptoConfig"/>
+            /// </summary>
+            public static void Register() => CryptoConfig.AddAlgorithm(typeof(HMACSHA3_256), "HMACSHA3-256");
         }
     }
 }

@@ -10,12 +10,12 @@ namespace wan24.Crypto.BC
     /// Constructor
     /// </remarks>
     /// <param name="mac">MAC</param>
-    public sealed class BouncyCastleHmacAlgorithm(IMac mac) : KeyedHashAlgorithm()
+    public class BouncyCastleHmacAlgorithm(IMac mac) : KeyedHashAlgorithm()
     {
         /// <summary>
         /// MAC
         /// </summary>
-        private readonly IMac Mac = mac;
+        protected readonly IMac Mac = mac;
 
         /// <inheritdoc/>
         public override void Initialize() => Mac.Reset();
