@@ -84,6 +84,30 @@ and use the default output length of the `wan24-Crypto` implementations
 instead. The `NetShake128/256HashAlgorithmAdapter` can't be replaced for this 
 reason.
 
+In order to override the .NET default SHA3 hash and HMAC algorithms, you can 
+call:
+
+```cs
+BouncyCastle.RegisterNetAlgorithms();
+```
+
+This will use Bouncy Castle SHA3 implementations for the .NET implemented SHA3 
+hash algorithms:
+
+| Name | Type |
+| ---- | ---- |
+| SHA3-256 | `HashBcSha3_256.SHA3_256` |
+| SHA3-384 | `HashBcSha3_384.SHA3_384` |
+| SHA3-512 | `HashBcSha3_512.SHA3_512` |
+| HMACSHA3-256 | `MacBcHmacSha3_256.HMACSHA3_256` |
+| HMACSHA3-384 | `MacBcHmacSha3_384.HMACSHA3_384` |
+| HMACSHA3-512 | `MacBcHmacSha3_512.HMACSHA3_512` |
+
+This step is required, if you want to ensure that whenever a .NET crypto type 
+or any 3rd party crypto type requests a SHA3 hash or HMAC instance using the 
+static `HashAlgorithm.Create("NAME")` or `KeyedHashAlgorithm.Create("NAME")` 
+methods.
+
 ### Use as default algorithms
 
 To set Bouncy Castle defaults as `wan24-Crypto` defaults:
