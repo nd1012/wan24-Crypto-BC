@@ -6628,6 +6628,19 @@ references:
   commentId: T:wan24.Crypto.BC.BouncyCastle
   fullName: wan24.Crypto.BC.BouncyCastle
   nameWithType: BouncyCastle
+- uid: wan24.Crypto.BC.BouncyCastle.RegisterNetAlgrithms
+  name: RegisterNetAlgrithms()
+  href: api/wan24.Crypto.BC.BouncyCastle.html#wan24_Crypto_BC_BouncyCastle_RegisterNetAlgrithms
+  commentId: M:wan24.Crypto.BC.BouncyCastle.RegisterNetAlgrithms
+  fullName: wan24.Crypto.BC.BouncyCastle.RegisterNetAlgrithms()
+  nameWithType: BouncyCastle.RegisterNetAlgrithms()
+- uid: wan24.Crypto.BC.BouncyCastle.RegisterNetAlgrithms*
+  name: RegisterNetAlgrithms
+  href: api/wan24.Crypto.BC.BouncyCastle.html#wan24_Crypto_BC_BouncyCastle_RegisterNetAlgrithms_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastle.RegisterNetAlgrithms
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastle.RegisterNetAlgrithms
+  nameWithType: BouncyCastle.RegisterNetAlgrithms
 - uid: wan24.Crypto.BC.BouncyCastle.ReplaceNetAlgorithms
   name: ReplaceNetAlgorithms()
   href: api/wan24.Crypto.BC.BouncyCastle.html#wan24_Crypto_BC_BouncyCastle_ReplaceNetAlgorithms
@@ -9127,6 +9140,12 @@ references:
   fullName.vb: wan24.Crypto.BC.BouncyCastleHashAlgorithm.New
   nameWithType: BouncyCastleHashAlgorithm.BouncyCastleHashAlgorithm
   nameWithType.vb: BouncyCastleHashAlgorithm.New
+- uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Digest
+  name: Digest
+  href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_Digest
+  commentId: F:wan24.Crypto.BC.BouncyCastleHashAlgorithm.Digest
+  fullName: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Digest
+  nameWithType: BouncyCastleHashAlgorithm.Digest
 - uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm.Dispose(System.Boolean)
   name: Dispose(bool)
   href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html#wan24_Crypto_BC_BouncyCastleHashAlgorithm_Dispose_System_Boolean_
@@ -9377,6 +9396,12 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Initialize
   nameWithType: BouncyCastleHmacAlgorithm.Initialize
+- uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Mac
+  name: Mac
+  href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_Mac
+  commentId: F:wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Mac
+  fullName: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.Mac
+  nameWithType: BouncyCastleHmacAlgorithm.Mac
 - uid: wan24.Crypto.BC.BouncyCastleHmacAlgorithm.TryHashFinal(System.Span{System.Byte},System.Int32@)
   name: TryHashFinal(Span<byte>, out int)
   href: api/wan24.Crypto.BC.BouncyCastleHmacAlgorithm.html#wan24_Crypto_BC_BouncyCastleHmacAlgorithm_TryHashFinal_System_Span_System_Byte__System_Int32__
@@ -11917,6 +11942,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.HashBcSha3_256Algorithm.IsPostQuantum
   nameWithType: HashBcSha3_256Algorithm.IsPostQuantum
+- uid: wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256
+  name: HashBcSha3_256Algorithm.SHA3_256
+  href: api/wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.html
+  commentId: T:wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256
+  fullName: wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256
+  nameWithType: HashBcSha3_256Algorithm.SHA3_256
+- uid: wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.#ctor
+  name: SHA3_256()
+  href: api/wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.html#wan24_Crypto_BC_HashBcSha3_256Algorithm_SHA3_256__ctor
+  commentId: M:wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.#ctor
+  name.vb: New()
+  fullName: wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.SHA3_256()
+  fullName.vb: wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.New()
+  nameWithType: HashBcSha3_256Algorithm.SHA3_256.SHA3_256()
+  nameWithType.vb: HashBcSha3_256Algorithm.SHA3_256.New()
+- uid: wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.#ctor*
+  name: SHA3_256
+  href: api/wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.html#wan24_Crypto_BC_HashBcSha3_256Algorithm_SHA3_256__ctor_
+  commentId: Overload:wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.SHA3_256
+  fullName.vb: wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.New
+  nameWithType: HashBcSha3_256Algorithm.SHA3_256.SHA3_256
+  nameWithType.vb: HashBcSha3_256Algorithm.SHA3_256.New
+- uid: wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.Register
+  name: Register()
+  href: api/wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.html#wan24_Crypto_BC_HashBcSha3_256Algorithm_SHA3_256_Register
+  commentId: M:wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.Register
+  fullName: wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.Register()
+  nameWithType: HashBcSha3_256Algorithm.SHA3_256.Register()
+- uid: wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.Register*
+  name: Register
+  href: api/wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.html#wan24_Crypto_BC_HashBcSha3_256Algorithm_SHA3_256_Register_
+  commentId: Overload:wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.Register
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.Register
+  nameWithType: HashBcSha3_256Algorithm.SHA3_256.Register
 - uid: wan24.Crypto.BC.HashBcSha3_384Algorithm
   name: HashBcSha3_384Algorithm
   href: api/wan24.Crypto.BC.HashBcSha3_384Algorithm.html
@@ -12002,6 +12065,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.HashBcSha3_384Algorithm.IsPostQuantum
   nameWithType: HashBcSha3_384Algorithm.IsPostQuantum
+- uid: wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384
+  name: HashBcSha3_384Algorithm.SHA3_384
+  href: api/wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.html
+  commentId: T:wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384
+  fullName: wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384
+  nameWithType: HashBcSha3_384Algorithm.SHA3_384
+- uid: wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.#ctor
+  name: SHA3_384()
+  href: api/wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.html#wan24_Crypto_BC_HashBcSha3_384Algorithm_SHA3_384__ctor
+  commentId: M:wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.#ctor
+  name.vb: New()
+  fullName: wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.SHA3_384()
+  fullName.vb: wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.New()
+  nameWithType: HashBcSha3_384Algorithm.SHA3_384.SHA3_384()
+  nameWithType.vb: HashBcSha3_384Algorithm.SHA3_384.New()
+- uid: wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.#ctor*
+  name: SHA3_384
+  href: api/wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.html#wan24_Crypto_BC_HashBcSha3_384Algorithm_SHA3_384__ctor_
+  commentId: Overload:wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.SHA3_384
+  fullName.vb: wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.New
+  nameWithType: HashBcSha3_384Algorithm.SHA3_384.SHA3_384
+  nameWithType.vb: HashBcSha3_384Algorithm.SHA3_384.New
+- uid: wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.Register
+  name: Register()
+  href: api/wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.html#wan24_Crypto_BC_HashBcSha3_384Algorithm_SHA3_384_Register
+  commentId: M:wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.Register
+  fullName: wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.Register()
+  nameWithType: HashBcSha3_384Algorithm.SHA3_384.Register()
+- uid: wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.Register*
+  name: Register
+  href: api/wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.html#wan24_Crypto_BC_HashBcSha3_384Algorithm_SHA3_384_Register_
+  commentId: Overload:wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.Register
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.Register
+  nameWithType: HashBcSha3_384Algorithm.SHA3_384.Register
 - uid: wan24.Crypto.BC.HashBcSha3_512Algorithm
   name: HashBcSha3_512Algorithm
   href: api/wan24.Crypto.BC.HashBcSha3_512Algorithm.html
@@ -12087,6 +12188,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.HashBcSha3_512Algorithm.IsPostQuantum
   nameWithType: HashBcSha3_512Algorithm.IsPostQuantum
+- uid: wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512
+  name: HashBcSha3_512Algorithm.SHA3_512
+  href: api/wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.html
+  commentId: T:wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512
+  fullName: wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512
+  nameWithType: HashBcSha3_512Algorithm.SHA3_512
+- uid: wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.#ctor
+  name: SHA3_512()
+  href: api/wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.html#wan24_Crypto_BC_HashBcSha3_512Algorithm_SHA3_512__ctor
+  commentId: M:wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.#ctor
+  name.vb: New()
+  fullName: wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.SHA3_512()
+  fullName.vb: wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.New()
+  nameWithType: HashBcSha3_512Algorithm.SHA3_512.SHA3_512()
+  nameWithType.vb: HashBcSha3_512Algorithm.SHA3_512.New()
+- uid: wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.#ctor*
+  name: SHA3_512
+  href: api/wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.html#wan24_Crypto_BC_HashBcSha3_512Algorithm_SHA3_512__ctor_
+  commentId: Overload:wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.SHA3_512
+  fullName.vb: wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.New
+  nameWithType: HashBcSha3_512Algorithm.SHA3_512.SHA3_512
+  nameWithType.vb: HashBcSha3_512Algorithm.SHA3_512.New
+- uid: wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.Register
+  name: Register()
+  href: api/wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.html#wan24_Crypto_BC_HashBcSha3_512Algorithm_SHA3_512_Register
+  commentId: M:wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.Register
+  fullName: wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.Register()
+  nameWithType: HashBcSha3_512Algorithm.SHA3_512.Register()
+- uid: wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.Register*
+  name: Register
+  href: api/wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.html#wan24_Crypto_BC_HashBcSha3_512Algorithm_SHA3_512_Register_
+  commentId: Overload:wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.Register
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.Register
+  nameWithType: HashBcSha3_512Algorithm.SHA3_512.Register
 - uid: wan24.Crypto.BC.HashBcShake128Algorithm
   name: HashBcShake128Algorithm
   href: api/wan24.Crypto.BC.HashBcShake128Algorithm.html
@@ -12316,6 +12455,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.GetMacAlgorithmInt
   nameWithType: MacBcHmacSha3_256Algorithm.GetMacAlgorithmInt
+- uid: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256
+  name: MacBcHmacSha3_256Algorithm.HMACSHA3_256
+  href: api/wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.html
+  commentId: T:wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256
+  fullName: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256
+  nameWithType: MacBcHmacSha3_256Algorithm.HMACSHA3_256
+- uid: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.#ctor(System.Byte[])
+  name: HMACSHA3_256(byte[])
+  href: api/wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.html#wan24_Crypto_BC_MacBcHmacSha3_256Algorithm_HMACSHA3_256__ctor_System_Byte___
+  commentId: M:wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.#ctor(System.Byte[])
+  name.vb: New(Byte())
+  fullName: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.HMACSHA3_256(byte[])
+  fullName.vb: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.New(Byte())
+  nameWithType: MacBcHmacSha3_256Algorithm.HMACSHA3_256.HMACSHA3_256(byte[])
+  nameWithType.vb: MacBcHmacSha3_256Algorithm.HMACSHA3_256.New(Byte())
+- uid: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.#ctor*
+  name: HMACSHA3_256
+  href: api/wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.html#wan24_Crypto_BC_MacBcHmacSha3_256Algorithm_HMACSHA3_256__ctor_
+  commentId: Overload:wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.HMACSHA3_256
+  fullName.vb: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.New
+  nameWithType: MacBcHmacSha3_256Algorithm.HMACSHA3_256.HMACSHA3_256
+  nameWithType.vb: MacBcHmacSha3_256Algorithm.HMACSHA3_256.New
+- uid: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.Register
+  name: Register()
+  href: api/wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.html#wan24_Crypto_BC_MacBcHmacSha3_256Algorithm_HMACSHA3_256_Register
+  commentId: M:wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.Register
+  fullName: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.Register()
+  nameWithType: MacBcHmacSha3_256Algorithm.HMACSHA3_256.Register()
+- uid: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.Register*
+  name: Register
+  href: api/wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.html#wan24_Crypto_BC_MacBcHmacSha3_256Algorithm_HMACSHA3_256_Register_
+  commentId: Overload:wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.Register
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.Register
+  nameWithType: MacBcHmacSha3_256Algorithm.HMACSHA3_256.Register
 - uid: wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.IsPostQuantum
   name: IsPostQuantum
   href: api/wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.html#wan24_Crypto_BC_MacBcHmacSha3_256Algorithm_IsPostQuantum
@@ -12401,6 +12578,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.GetMacAlgorithmInt
   nameWithType: MacBcHmacSha3_384Algorithm.GetMacAlgorithmInt
+- uid: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384
+  name: MacBcHmacSha3_384Algorithm.HMACSHA3_384
+  href: api/wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.html
+  commentId: T:wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384
+  fullName: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384
+  nameWithType: MacBcHmacSha3_384Algorithm.HMACSHA3_384
+- uid: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.#ctor(System.Byte[])
+  name: HMACSHA3_384(byte[])
+  href: api/wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.html#wan24_Crypto_BC_MacBcHmacSha3_384Algorithm_HMACSHA3_384__ctor_System_Byte___
+  commentId: M:wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.#ctor(System.Byte[])
+  name.vb: New(Byte())
+  fullName: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.HMACSHA3_384(byte[])
+  fullName.vb: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.New(Byte())
+  nameWithType: MacBcHmacSha3_384Algorithm.HMACSHA3_384.HMACSHA3_384(byte[])
+  nameWithType.vb: MacBcHmacSha3_384Algorithm.HMACSHA3_384.New(Byte())
+- uid: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.#ctor*
+  name: HMACSHA3_384
+  href: api/wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.html#wan24_Crypto_BC_MacBcHmacSha3_384Algorithm_HMACSHA3_384__ctor_
+  commentId: Overload:wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.HMACSHA3_384
+  fullName.vb: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.New
+  nameWithType: MacBcHmacSha3_384Algorithm.HMACSHA3_384.HMACSHA3_384
+  nameWithType.vb: MacBcHmacSha3_384Algorithm.HMACSHA3_384.New
+- uid: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.Register
+  name: Register()
+  href: api/wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.html#wan24_Crypto_BC_MacBcHmacSha3_384Algorithm_HMACSHA3_384_Register
+  commentId: M:wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.Register
+  fullName: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.Register()
+  nameWithType: MacBcHmacSha3_384Algorithm.HMACSHA3_384.Register()
+- uid: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.Register*
+  name: Register
+  href: api/wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.html#wan24_Crypto_BC_MacBcHmacSha3_384Algorithm_HMACSHA3_384_Register_
+  commentId: Overload:wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.Register
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.Register
+  nameWithType: MacBcHmacSha3_384Algorithm.HMACSHA3_384.Register
 - uid: wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.IsPostQuantum
   name: IsPostQuantum
   href: api/wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.html#wan24_Crypto_BC_MacBcHmacSha3_384Algorithm_IsPostQuantum
@@ -12486,6 +12701,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.GetMacAlgorithmInt
   nameWithType: MacBcHmacSha3_512Algorithm.GetMacAlgorithmInt
+- uid: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512
+  name: MacBcHmacSha3_512Algorithm.HMACSHA3_512
+  href: api/wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.html
+  commentId: T:wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512
+  fullName: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512
+  nameWithType: MacBcHmacSha3_512Algorithm.HMACSHA3_512
+- uid: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.#ctor(System.Byte[])
+  name: HMACSHA3_512(byte[])
+  href: api/wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.html#wan24_Crypto_BC_MacBcHmacSha3_512Algorithm_HMACSHA3_512__ctor_System_Byte___
+  commentId: M:wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.#ctor(System.Byte[])
+  name.vb: New(Byte())
+  fullName: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.HMACSHA3_512(byte[])
+  fullName.vb: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.New(Byte())
+  nameWithType: MacBcHmacSha3_512Algorithm.HMACSHA3_512.HMACSHA3_512(byte[])
+  nameWithType.vb: MacBcHmacSha3_512Algorithm.HMACSHA3_512.New(Byte())
+- uid: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.#ctor*
+  name: HMACSHA3_512
+  href: api/wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.html#wan24_Crypto_BC_MacBcHmacSha3_512Algorithm_HMACSHA3_512__ctor_
+  commentId: Overload:wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.HMACSHA3_512
+  fullName.vb: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.New
+  nameWithType: MacBcHmacSha3_512Algorithm.HMACSHA3_512.HMACSHA3_512
+  nameWithType.vb: MacBcHmacSha3_512Algorithm.HMACSHA3_512.New
+- uid: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.Register
+  name: Register()
+  href: api/wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.html#wan24_Crypto_BC_MacBcHmacSha3_512Algorithm_HMACSHA3_512_Register
+  commentId: M:wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.Register
+  fullName: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.Register()
+  nameWithType: MacBcHmacSha3_512Algorithm.HMACSHA3_512.Register()
+- uid: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.Register*
+  name: Register
+  href: api/wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.html#wan24_Crypto_BC_MacBcHmacSha3_512Algorithm_HMACSHA3_512_Register_
+  commentId: Overload:wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.Register
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.Register
+  nameWithType: MacBcHmacSha3_512Algorithm.HMACSHA3_512.Register
 - uid: wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.IsPostQuantum
   name: IsPostQuantum
   href: api/wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.html#wan24_Crypto_BC_MacBcHmacSha3_512Algorithm_IsPostQuantum

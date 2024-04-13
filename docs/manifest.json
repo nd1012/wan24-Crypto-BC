@@ -24,11 +24,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
         ".json": {
           "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
         }
       },
       "version": ""
@@ -1085,6 +1085,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.HashBcSha3_256Algorithm.SHA3_256.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/wan24.Crypto.BC.HashBcSha3_256Algorithm.yml",
       "output": {
         ".html": {
@@ -1095,10 +1105,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.HashBcSha3_384Algorithm.SHA3_384.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/wan24.Crypto.BC.HashBcSha3_384Algorithm.yml",
       "output": {
         ".html": {
           "relative_path": "api/wan24.Crypto.BC.HashBcSha3_384Algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.HashBcSha3_512Algorithm.SHA3_512.html"
         }
       },
       "version": ""
@@ -1145,6 +1175,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.HMACSHA3_256.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/wan24.Crypto.BC.MacBcHmacSha3_256Algorithm.yml",
       "output": {
         ".html": {
@@ -1155,10 +1195,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.HMACSHA3_384.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.yml",
       "output": {
         ".html": {
           "relative_path": "api/wan24.Crypto.BC.MacBcHmacSha3_384Algorithm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.MacBcHmacSha3_512Algorithm.HMACSHA3_512.html"
         }
       },
       "version": ""
@@ -1247,11 +1307,11 @@
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "articles/toc.html"
-        },
         ".json": {
           "relative_path": "articles/toc.json"
+        },
+        ".html": {
+          "relative_path": "articles/toc.html"
         }
       },
       "version": ""
@@ -1270,11 +1330,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
         ".json": {
           "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
         }
       },
       "version": ""
