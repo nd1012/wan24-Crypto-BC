@@ -1,6 +1,8 @@
 ﻿using wan24.Core;
 
 //TODO Use SNTRUP as default key exchange algorithm in a newer version
+//TODO Add KMAC
+//TODO Use KMAC as .NET algorithm replacement from .NET 9+
 
 [assembly: Bootstrapper(typeof(wan24.Crypto.BC.Bootstrap), nameof(wan24.Crypto.BC.Bootstrap.Boot))]
 
