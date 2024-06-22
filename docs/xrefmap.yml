@@ -6515,6 +6515,388 @@ references:
   fullName.vb: wan24.Crypto.BC.AsymmetricXEd448PublicKey.CType
   nameWithType: AsymmetricXEd448PublicKey.explicit operator
   nameWithType.vb: AsymmetricXEd448PublicKey.CType
+- uid: wan24.Crypto.BC.AutoSeedRng
+  name: AutoSeedRng
+  href: api/wan24.Crypto.BC.AutoSeedRng.html
+  commentId: T:wan24.Crypto.BC.AutoSeedRng
+  fullName: wan24.Crypto.BC.AutoSeedRng
+  nameWithType: AutoSeedRng
+- uid: wan24.Crypto.BC.AutoSeedRng.#ctor(wan24.Crypto.IRng@,System.Int32@,wan24.Crypto.BC.AutoSeedRngTypes@,System.TimeSpan@,wan24.Crypto.BC.IBouncyCastleRng@,System.Nullable{System.Int32}@,System.Threading.Tasks.TaskScheduler@,System.Threading.CancellationToken@)
+  name: AutoSeedRng(in IRng, in int, in AutoSeedRngTypes, in TimeSpan, in IBouncyCastleRng?, in int?, in TaskScheduler?, in CancellationToken)
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng__ctor_wan24_Crypto_IRng__System_Int32__wan24_Crypto_BC_AutoSeedRngTypes__System_TimeSpan__wan24_Crypto_BC_IBouncyCastleRng__System_Nullable_System_Int32___System_Threading_Tasks_TaskScheduler__System_Threading_CancellationToken__
+  commentId: M:wan24.Crypto.BC.AutoSeedRng.#ctor(wan24.Crypto.IRng@,System.Int32@,wan24.Crypto.BC.AutoSeedRngTypes@,System.TimeSpan@,wan24.Crypto.BC.IBouncyCastleRng@,System.Nullable{System.Int32}@,System.Threading.Tasks.TaskScheduler@,System.Threading.CancellationToken@)
+  name.vb: New(IRng, Integer, AutoSeedRngTypes, TimeSpan, IBouncyCastleRng, Integer?, TaskScheduler, CancellationToken)
+  fullName: wan24.Crypto.BC.AutoSeedRng.AutoSeedRng(in wan24.Crypto.IRng, in int, in wan24.Crypto.BC.AutoSeedRngTypes, in System.TimeSpan, in wan24.Crypto.BC.IBouncyCastleRng?, in int?, in System.Threading.Tasks.TaskScheduler?, in System.Threading.CancellationToken)
+  fullName.vb: wan24.Crypto.BC.AutoSeedRng.New(wan24.Crypto.IRng, Integer, wan24.Crypto.BC.AutoSeedRngTypes, System.TimeSpan, wan24.Crypto.BC.IBouncyCastleRng, Integer?, System.Threading.Tasks.TaskScheduler, System.Threading.CancellationToken)
+  nameWithType: AutoSeedRng.AutoSeedRng(in IRng, in int, in AutoSeedRngTypes, in TimeSpan, in IBouncyCastleRng?, in int?, in TaskScheduler?, in CancellationToken)
+  nameWithType.vb: AutoSeedRng.New(IRng, Integer, AutoSeedRngTypes, TimeSpan, IBouncyCastleRng, Integer?, TaskScheduler, CancellationToken)
+- uid: wan24.Crypto.BC.AutoSeedRng.#ctor*
+  name: AutoSeedRng
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng__ctor_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: wan24.Crypto.BC.AutoSeedRng.AutoSeedRng
+  fullName.vb: wan24.Crypto.BC.AutoSeedRng.New
+  nameWithType: AutoSeedRng.AutoSeedRng
+  nameWithType.vb: AutoSeedRng.New
+- uid: wan24.Crypto.BC.AutoSeedRng.AddSeed(System.ReadOnlySpan{System.Byte})
+  name: AddSeed(ReadOnlySpan<byte>)
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_AddSeed_System_ReadOnlySpan_System_Byte__
+  commentId: M:wan24.Crypto.BC.AutoSeedRng.AddSeed(System.ReadOnlySpan{System.Byte})
+  name.vb: AddSeed(ReadOnlySpan(Of Byte))
+  fullName: wan24.Crypto.BC.AutoSeedRng.AddSeed(System.ReadOnlySpan<byte>)
+  fullName.vb: wan24.Crypto.BC.AutoSeedRng.AddSeed(System.ReadOnlySpan(Of Byte))
+  nameWithType: AutoSeedRng.AddSeed(ReadOnlySpan<byte>)
+  nameWithType.vb: AutoSeedRng.AddSeed(ReadOnlySpan(Of Byte))
+- uid: wan24.Crypto.BC.AutoSeedRng.AddSeed*
+  name: AddSeed
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_AddSeed_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.AddSeed
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.AddSeed
+  nameWithType: AutoSeedRng.AddSeed
+- uid: wan24.Crypto.BC.AutoSeedRng.AddSeedAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)
+  name: AddSeedAsync(ReadOnlyMemory<byte>, CancellationToken)
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_AddSeedAsync_System_ReadOnlyMemory_System_Byte__System_Threading_CancellationToken_
+  commentId: M:wan24.Crypto.BC.AutoSeedRng.AddSeedAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)
+  name.vb: AddSeedAsync(ReadOnlyMemory(Of Byte), CancellationToken)
+  fullName: wan24.Crypto.BC.AutoSeedRng.AddSeedAsync(System.ReadOnlyMemory<byte>, System.Threading.CancellationToken)
+  fullName.vb: wan24.Crypto.BC.AutoSeedRng.AddSeedAsync(System.ReadOnlyMemory(Of Byte), System.Threading.CancellationToken)
+  nameWithType: AutoSeedRng.AddSeedAsync(ReadOnlyMemory<byte>, CancellationToken)
+  nameWithType.vb: AutoSeedRng.AddSeedAsync(ReadOnlyMemory(Of Byte), CancellationToken)
+- uid: wan24.Crypto.BC.AutoSeedRng.AddSeedAsync*
+  name: AddSeedAsync
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_AddSeedAsync_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.AddSeedAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.AddSeedAsync
+  nameWithType: AutoSeedRng.AddSeedAsync
+- uid: wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(System.Byte[])
+  name: AddSeedMaterial(byte[])
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_AddSeedMaterial_System_Byte___
+  commentId: M:wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(System.Byte[])
+  name.vb: AddSeedMaterial(Byte())
+  fullName: wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(byte[])
+  fullName.vb: wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(Byte())
+  nameWithType: AutoSeedRng.AddSeedMaterial(byte[])
+  nameWithType.vb: AutoSeedRng.AddSeedMaterial(Byte())
+- uid: wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(System.Int64)
+  name: AddSeedMaterial(long)
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_AddSeedMaterial_System_Int64_
+  commentId: M:wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(System.Int64)
+  name.vb: AddSeedMaterial(Long)
+  fullName: wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(long)
+  fullName.vb: wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(Long)
+  nameWithType: AutoSeedRng.AddSeedMaterial(long)
+  nameWithType.vb: AutoSeedRng.AddSeedMaterial(Long)
+- uid: wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(System.ReadOnlySpan{System.Byte})
+  name: AddSeedMaterial(ReadOnlySpan<byte>)
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_AddSeedMaterial_System_ReadOnlySpan_System_Byte__
+  commentId: M:wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(System.ReadOnlySpan{System.Byte})
+  name.vb: AddSeedMaterial(ReadOnlySpan(Of Byte))
+  fullName: wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(System.ReadOnlySpan<byte>)
+  fullName.vb: wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(System.ReadOnlySpan(Of Byte))
+  nameWithType: AutoSeedRng.AddSeedMaterial(ReadOnlySpan<byte>)
+  nameWithType.vb: AutoSeedRng.AddSeedMaterial(ReadOnlySpan(Of Byte))
+- uid: wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial*
+  name: AddSeedMaterial
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_AddSeedMaterial_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial
+  nameWithType: AutoSeedRng.AddSeedMaterial
+- uid: wan24.Crypto.BC.AutoSeedRng.AutoSeedingRngEvent_Delegate
+  name: AutoSeedRng.AutoSeedingRngEvent_Delegate
+  href: api/wan24.Crypto.BC.AutoSeedRng.AutoSeedingRngEvent_Delegate.html
+  commentId: T:wan24.Crypto.BC.AutoSeedRng.AutoSeedingRngEvent_Delegate
+  fullName: wan24.Crypto.BC.AutoSeedRng.AutoSeedingRngEvent_Delegate
+  nameWithType: AutoSeedRng.AutoSeedingRngEvent_Delegate
+- uid: wan24.Crypto.BC.AutoSeedRng.Dispose(System.Boolean)
+  name: Dispose(bool)
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_Dispose_System_Boolean_
+  commentId: M:wan24.Crypto.BC.AutoSeedRng.Dispose(System.Boolean)
+  name.vb: Dispose(Boolean)
+  fullName: wan24.Crypto.BC.AutoSeedRng.Dispose(bool)
+  fullName.vb: wan24.Crypto.BC.AutoSeedRng.Dispose(Boolean)
+  nameWithType: AutoSeedRng.Dispose(bool)
+  nameWithType.vb: AutoSeedRng.Dispose(Boolean)
+- uid: wan24.Crypto.BC.AutoSeedRng.Dispose*
+  name: Dispose
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_Dispose_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.Dispose
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.Dispose
+  nameWithType: AutoSeedRng.Dispose
+- uid: wan24.Crypto.BC.AutoSeedRng.DisposeCore
+  name: DisposeCore()
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_DisposeCore
+  commentId: M:wan24.Crypto.BC.AutoSeedRng.DisposeCore
+  fullName: wan24.Crypto.BC.AutoSeedRng.DisposeCore()
+  nameWithType: AutoSeedRng.DisposeCore()
+- uid: wan24.Crypto.BC.AutoSeedRng.DisposeCore*
+  name: DisposeCore
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_DisposeCore_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.DisposeCore
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.DisposeCore
+  nameWithType: AutoSeedRng.DisposeCore
+- uid: wan24.Crypto.BC.AutoSeedRng.DisposeRng
+  name: DisposeRng
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_DisposeRng
+  commentId: P:wan24.Crypto.BC.AutoSeedRng.DisposeRng
+  fullName: wan24.Crypto.BC.AutoSeedRng.DisposeRng
+  nameWithType: AutoSeedRng.DisposeRng
+- uid: wan24.Crypto.BC.AutoSeedRng.DisposeRng*
+  name: DisposeRng
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_DisposeRng_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.DisposeRng
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.DisposeRng
+  nameWithType: AutoSeedRng.DisposeRng
+- uid: wan24.Crypto.BC.AutoSeedRng.DisposeSeedProvider
+  name: DisposeSeedProvider
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_DisposeSeedProvider
+  commentId: P:wan24.Crypto.BC.AutoSeedRng.DisposeSeedProvider
+  fullName: wan24.Crypto.BC.AutoSeedRng.DisposeSeedProvider
+  nameWithType: AutoSeedRng.DisposeSeedProvider
+- uid: wan24.Crypto.BC.AutoSeedRng.DisposeSeedProvider*
+  name: DisposeSeedProvider
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_DisposeSeedProvider_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.DisposeSeedProvider
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.DisposeSeedProvider
+  nameWithType: AutoSeedRng.DisposeSeedProvider
+- uid: wan24.Crypto.BC.AutoSeedRng.FillBytes(System.Span{System.Byte}@)
+  name: FillBytes(in Span<byte>)
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_FillBytes_System_Span_System_Byte___
+  commentId: M:wan24.Crypto.BC.AutoSeedRng.FillBytes(System.Span{System.Byte}@)
+  name.vb: FillBytes(Span(Of Byte))
+  fullName: wan24.Crypto.BC.AutoSeedRng.FillBytes(in System.Span<byte>)
+  fullName.vb: wan24.Crypto.BC.AutoSeedRng.FillBytes(System.Span(Of Byte))
+  nameWithType: AutoSeedRng.FillBytes(in Span<byte>)
+  nameWithType.vb: AutoSeedRng.FillBytes(Span(Of Byte))
+- uid: wan24.Crypto.BC.AutoSeedRng.FillBytes*
+  name: FillBytes
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_FillBytes_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.FillBytes
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.FillBytes
+  nameWithType: AutoSeedRng.FillBytes
+- uid: wan24.Crypto.BC.AutoSeedRng.FillBytesAsync(System.Memory{System.Byte},System.Threading.CancellationToken)
+  name: FillBytesAsync(Memory<byte>, CancellationToken)
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_FillBytesAsync_System_Memory_System_Byte__System_Threading_CancellationToken_
+  commentId: M:wan24.Crypto.BC.AutoSeedRng.FillBytesAsync(System.Memory{System.Byte},System.Threading.CancellationToken)
+  name.vb: FillBytesAsync(Memory(Of Byte), CancellationToken)
+  fullName: wan24.Crypto.BC.AutoSeedRng.FillBytesAsync(System.Memory<byte>, System.Threading.CancellationToken)
+  fullName.vb: wan24.Crypto.BC.AutoSeedRng.FillBytesAsync(System.Memory(Of Byte), System.Threading.CancellationToken)
+  nameWithType: AutoSeedRng.FillBytesAsync(Memory<byte>, CancellationToken)
+  nameWithType.vb: AutoSeedRng.FillBytesAsync(Memory(Of Byte), CancellationToken)
+- uid: wan24.Crypto.BC.AutoSeedRng.FillBytesAsync*
+  name: FillBytesAsync
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_FillBytesAsync_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.FillBytesAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.FillBytesAsync
+  nameWithType: AutoSeedRng.FillBytesAsync
+- uid: wan24.Crypto.BC.AutoSeedRng.LastException
+  name: LastException
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_LastException
+  commentId: P:wan24.Crypto.BC.AutoSeedRng.LastException
+  fullName: wan24.Crypto.BC.AutoSeedRng.LastException
+  nameWithType: AutoSeedRng.LastException
+- uid: wan24.Crypto.BC.AutoSeedRng.LastException*
+  name: LastException
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_LastException_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.LastException
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.LastException
+  nameWithType: AutoSeedRng.LastException
+- uid: wan24.Crypto.BC.AutoSeedRng.NextBytes(System.Byte[])
+  name: NextBytes(byte[])
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_NextBytes_System_Byte___
+  commentId: M:wan24.Crypto.BC.AutoSeedRng.NextBytes(System.Byte[])
+  name.vb: NextBytes(Byte())
+  fullName: wan24.Crypto.BC.AutoSeedRng.NextBytes(byte[])
+  fullName.vb: wan24.Crypto.BC.AutoSeedRng.NextBytes(Byte())
+  nameWithType: AutoSeedRng.NextBytes(byte[])
+  nameWithType.vb: AutoSeedRng.NextBytes(Byte())
+- uid: wan24.Crypto.BC.AutoSeedRng.NextBytes(System.Byte[],System.Int32,System.Int32)
+  name: NextBytes(byte[], int, int)
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_NextBytes_System_Byte___System_Int32_System_Int32_
+  commentId: M:wan24.Crypto.BC.AutoSeedRng.NextBytes(System.Byte[],System.Int32,System.Int32)
+  name.vb: NextBytes(Byte(), Integer, Integer)
+  fullName: wan24.Crypto.BC.AutoSeedRng.NextBytes(byte[], int, int)
+  fullName.vb: wan24.Crypto.BC.AutoSeedRng.NextBytes(Byte(), Integer, Integer)
+  nameWithType: AutoSeedRng.NextBytes(byte[], int, int)
+  nameWithType.vb: AutoSeedRng.NextBytes(Byte(), Integer, Integer)
+- uid: wan24.Crypto.BC.AutoSeedRng.NextBytes(System.Span{System.Byte})
+  name: NextBytes(Span<byte>)
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_NextBytes_System_Span_System_Byte__
+  commentId: M:wan24.Crypto.BC.AutoSeedRng.NextBytes(System.Span{System.Byte})
+  name.vb: NextBytes(Span(Of Byte))
+  fullName: wan24.Crypto.BC.AutoSeedRng.NextBytes(System.Span<byte>)
+  fullName.vb: wan24.Crypto.BC.AutoSeedRng.NextBytes(System.Span(Of Byte))
+  nameWithType: AutoSeedRng.NextBytes(Span<byte>)
+  nameWithType.vb: AutoSeedRng.NextBytes(Span(Of Byte))
+- uid: wan24.Crypto.BC.AutoSeedRng.NextBytes*
+  name: NextBytes
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_NextBytes_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.NextBytes
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.NextBytes
+  nameWithType: AutoSeedRng.NextBytes
+- uid: wan24.Crypto.BC.AutoSeedRng.OnSeedError
+  name: OnSeedError
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_OnSeedError
+  commentId: E:wan24.Crypto.BC.AutoSeedRng.OnSeedError
+  fullName: wan24.Crypto.BC.AutoSeedRng.OnSeedError
+  nameWithType: AutoSeedRng.OnSeedError
+- uid: wan24.Crypto.BC.AutoSeedRng.RaiseOnSeedError
+  name: RaiseOnSeedError()
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_RaiseOnSeedError
+  commentId: M:wan24.Crypto.BC.AutoSeedRng.RaiseOnSeedError
+  fullName: wan24.Crypto.BC.AutoSeedRng.RaiseOnSeedError()
+  nameWithType: AutoSeedRng.RaiseOnSeedError()
+- uid: wan24.Crypto.BC.AutoSeedRng.RaiseOnSeedError*
+  name: RaiseOnSeedError
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_RaiseOnSeedError_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.RaiseOnSeedError
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.RaiseOnSeedError
+  nameWithType: AutoSeedRng.RaiseOnSeedError
+- uid: wan24.Crypto.BC.AutoSeedRng.Rng
+  name: Rng
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_Rng
+  commentId: P:wan24.Crypto.BC.AutoSeedRng.Rng
+  fullName: wan24.Crypto.BC.AutoSeedRng.Rng
+  nameWithType: AutoSeedRng.Rng
+- uid: wan24.Crypto.BC.AutoSeedRng.Rng*
+  name: Rng
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_Rng_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.Rng
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.Rng
+  nameWithType: AutoSeedRng.Rng
+- uid: wan24.Crypto.BC.AutoSeedRng.SeedAsync
+  name: SeedAsync()
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedAsync
+  commentId: M:wan24.Crypto.BC.AutoSeedRng.SeedAsync
+  fullName: wan24.Crypto.BC.AutoSeedRng.SeedAsync()
+  nameWithType: AutoSeedRng.SeedAsync()
+- uid: wan24.Crypto.BC.AutoSeedRng.SeedAsync*
+  name: SeedAsync
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedAsync_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.SeedAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.SeedAsync
+  nameWithType: AutoSeedRng.SeedAsync
+- uid: wan24.Crypto.BC.AutoSeedRng.SeedEvent
+  name: SeedEvent
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedEvent
+  commentId: F:wan24.Crypto.BC.AutoSeedRng.SeedEvent
+  fullName: wan24.Crypto.BC.AutoSeedRng.SeedEvent
+  nameWithType: AutoSeedRng.SeedEvent
+- uid: wan24.Crypto.BC.AutoSeedRng.SeedInterval
+  name: SeedInterval
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedInterval
+  commentId: P:wan24.Crypto.BC.AutoSeedRng.SeedInterval
+  fullName: wan24.Crypto.BC.AutoSeedRng.SeedInterval
+  nameWithType: AutoSeedRng.SeedInterval
+- uid: wan24.Crypto.BC.AutoSeedRng.SeedInterval*
+  name: SeedInterval
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedInterval_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.SeedInterval
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.SeedInterval
+  nameWithType: AutoSeedRng.SeedInterval
+- uid: wan24.Crypto.BC.AutoSeedRng.SeedLength
+  name: SeedLength
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedLength
+  commentId: P:wan24.Crypto.BC.AutoSeedRng.SeedLength
+  fullName: wan24.Crypto.BC.AutoSeedRng.SeedLength
+  nameWithType: AutoSeedRng.SeedLength
+- uid: wan24.Crypto.BC.AutoSeedRng.SeedLength*
+  name: SeedLength
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedLength_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.SeedLength
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.SeedLength
+  nameWithType: AutoSeedRng.SeedLength
+- uid: wan24.Crypto.BC.AutoSeedRng.SeedProvider
+  name: SeedProvider
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedProvider
+  commentId: P:wan24.Crypto.BC.AutoSeedRng.SeedProvider
+  fullName: wan24.Crypto.BC.AutoSeedRng.SeedProvider
+  nameWithType: AutoSeedRng.SeedProvider
+- uid: wan24.Crypto.BC.AutoSeedRng.SeedProvider*
+  name: SeedProvider
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedProvider_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.SeedProvider
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.SeedProvider
+  nameWithType: AutoSeedRng.SeedProvider
+- uid: wan24.Crypto.BC.AutoSeedRng.SeedTask
+  name: SeedTask
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedTask
+  commentId: F:wan24.Crypto.BC.AutoSeedRng.SeedTask
+  fullName: wan24.Crypto.BC.AutoSeedRng.SeedTask
+  nameWithType: AutoSeedRng.SeedTask
+- uid: wan24.Crypto.BC.AutoSeedRng.SeedTimeoutCancellation
+  name: SeedTimeoutCancellation
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedTimeoutCancellation
+  commentId: F:wan24.Crypto.BC.AutoSeedRng.SeedTimeoutCancellation
+  fullName: wan24.Crypto.BC.AutoSeedRng.SeedTimeoutCancellation
+  nameWithType: AutoSeedRng.SeedTimeoutCancellation
+- uid: wan24.Crypto.BC.AutoSeedRng.SeedingType
+  name: SeedingType
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedingType
+  commentId: P:wan24.Crypto.BC.AutoSeedRng.SeedingType
+  fullName: wan24.Crypto.BC.AutoSeedRng.SeedingType
+  nameWithType: AutoSeedRng.SeedingType
+- uid: wan24.Crypto.BC.AutoSeedRng.SeedingType*
+  name: SeedingType
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedingType_
+  commentId: Overload:wan24.Crypto.BC.AutoSeedRng.SeedingType
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AutoSeedRng.SeedingType
+  nameWithType: AutoSeedRng.SeedingType
+- uid: wan24.Crypto.BC.AutoSeedRng._SeedInterval
+  name: _SeedInterval
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng__SeedInterval
+  commentId: F:wan24.Crypto.BC.AutoSeedRng._SeedInterval
+  fullName: wan24.Crypto.BC.AutoSeedRng._SeedInterval
+  nameWithType: AutoSeedRng._SeedInterval
+- uid: wan24.Crypto.BC.AutoSeedRng._Seeding
+  name: _Seeding
+  href: api/wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng__Seeding
+  commentId: F:wan24.Crypto.BC.AutoSeedRng._Seeding
+  fullName: wan24.Crypto.BC.AutoSeedRng._Seeding
+  nameWithType: AutoSeedRng._Seeding
+- uid: wan24.Crypto.BC.AutoSeedRngTypes
+  name: AutoSeedRngTypes
+  href: api/wan24.Crypto.BC.AutoSeedRngTypes.html
+  commentId: T:wan24.Crypto.BC.AutoSeedRngTypes
+  fullName: wan24.Crypto.BC.AutoSeedRngTypes
+  nameWithType: AutoSeedRngTypes
+- uid: wan24.Crypto.BC.AutoSeedRngTypes.AfterRndConsumed
+  name: AfterRndConsumed
+  href: api/wan24.Crypto.BC.AutoSeedRngTypes.html#wan24_Crypto_BC_AutoSeedRngTypes_AfterRndConsumed
+  commentId: F:wan24.Crypto.BC.AutoSeedRngTypes.AfterRndConsumed
+  fullName: wan24.Crypto.BC.AutoSeedRngTypes.AfterRndConsumed
+  nameWithType: AutoSeedRngTypes.AfterRndConsumed
+- uid: wan24.Crypto.BC.AutoSeedRngTypes.Interval
+  name: Interval
+  href: api/wan24.Crypto.BC.AutoSeedRngTypes.html#wan24_Crypto_BC_AutoSeedRngTypes_Interval
+  commentId: F:wan24.Crypto.BC.AutoSeedRngTypes.Interval
+  fullName: wan24.Crypto.BC.AutoSeedRngTypes.Interval
+  nameWithType: AutoSeedRngTypes.Interval
+- uid: wan24.Crypto.BC.AutoSeedRngTypes.Permanent
+  name: Permanent
+  href: api/wan24.Crypto.BC.AutoSeedRngTypes.html#wan24_Crypto_BC_AutoSeedRngTypes_Permanent
+  commentId: F:wan24.Crypto.BC.AutoSeedRngTypes.Permanent
+  fullName: wan24.Crypto.BC.AutoSeedRngTypes.Permanent
+  nameWithType: AutoSeedRngTypes.Permanent
 - uid: wan24.Crypto.BC.BcEllipticCurves
   name: BcEllipticCurves
   href: api/wan24.Crypto.BC.BcEllipticCurves.html

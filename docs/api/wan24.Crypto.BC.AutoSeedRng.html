@@ -1,0 +1,1330 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AutoSeedRng | wan24-Crypto-BC </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AutoSeedRng | wan24-Crypto-BC ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  <meta property="docfx:newtab" content="true">
+    </head>
+    <body>
+        <!-- Header required for docfx anchor scroll to work -->
+        <header id="head"></header>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="../index.html">
+              <img src="../logo.svg" alt="" class="logomark">
+              <span class="brand-title"></span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../logo.svg" alt="" class="logomark">
+                          <span class="brand-title"></span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+  (c) 2023 Andreas Zimmermann, wan24.de
+  
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                         <div id="contribution">
+                               <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                         </div>
+
+                    <article class="content wrap" id="_content" data-uid="wan24.Crypto.BC.AutoSeedRng">
+
+
+
+  <h1 id="wan24_Crypto_BC_AutoSeedRng" data-uid="wan24.Crypto.BC.AutoSeedRng" class="text-break">Class AutoSeedRng</h1>
+  <div class="markdown level0 summary"><p>Automatic seeding RNG</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">DisposableBase</span></div>
+    <div class="level2"><span class="xref">DisposableRngBase</span></div>
+    <div class="level3"><span class="xref">AutoSeedRng</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IWillDispose</span></div>
+    <div><span class="xref">IDisposableObject</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
+    <div><a class="xref" href="wan24.Crypto.BC.IBouncyCastleRng.html">IBouncyCastleRng</a></div>
+    <div><span class="xref">IRandomGenerator</span></div>
+    <div><span class="xref">ISeedableRng</span></div>
+    <div><span class="xref">IRng</span></div>
+    <div><span class="xref">ISeedConsumer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">DisposableRngBase.GetBytes(in int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">DisposableRngBase.GetBytesAsync(int, CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.DisposeSyncObject</span>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.AsyncDisposing</span>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.AllowFinalizer</span>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.DisposeObjects</span>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.StackInfo</span>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.RegisterForDispose&lt;T&gt;(in T)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">DisposableBase.EnsureUndisposed(in bool, in bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">DisposableBase.LockDisposing(in TimeSpan, in CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">DisposableBase.LockDisposingAsync(TimeSpan, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">DisposableBase.TryLockDisposing(out SemaphoreSyncContext, in TimeSpan, in CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">DisposableBase.TryLockDisposingAsync(TimeSpan, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">DisposableBase.IfUndisposed&lt;T&gt;(in T, in bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">DisposableBase.IfUndisposed(in Action, in bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">DisposableBase.IfUndisposed&lt;T&gt;(in Func&lt;T&gt;, in bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">DisposableBase.IfUndisposedNullable&lt;T&gt;(in Func&lt;T&gt;, in bool)</a>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.DisposeAttributes()</span>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.DisposeAttributesAsync()</span>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.DisposeAsync()</span>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.CreateStackInfo</span>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.DestructorDisposing</span>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.IsDisposing</span>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.IsDisposed</span>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.OnDisposing</span>
+    </div>
+    <div>
+      <span class="xref">DisposableBase.OnDisposed</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="wan24.html">wan24</a>.<a class="xref" href="wan24.Crypto.html">Crypto</a>.<a class="xref" href="wan24.Crypto.BC.html">BC</a></h6>
+  <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
+  <h5 id="wan24_Crypto_BC_AutoSeedRng_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AutoSeedRng : DisposableRngBase, IWillDispose, IDisposableObject, IDisposable, IAsyncDisposable, IBouncyCastleRng, IRandomGenerator, ISeedableRng, IRng, ISeedConsumer</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng__ctor_wan24_Crypto_IRng__System_Int32__wan24_Crypto_BC_AutoSeedRngTypes__System_TimeSpan__wan24_Crypto_BC_IBouncyCastleRng__System_Nullable_System_Int32___System_Threading_Tasks_TaskScheduler__System_Threading_CancellationToken__.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.%23ctor(wan24.Crypto.IRng%40%2CSystem.Int32%40%2Cwan24.Crypto.BC.AutoSeedRngTypes%40%2CSystem.TimeSpan%40%2Cwan24.Crypto.BC.IBouncyCastleRng%40%2CSystem.Nullable%7BSystem.Int32%7D%40%2CSystem.Threading.Tasks.TaskScheduler%40%2CSystem.Threading.CancellationToken%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L45">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng__ctor_" data-uid="wan24.Crypto.BC.AutoSeedRng.#ctor*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng__ctor_wan24_Crypto_IRng__System_Int32__wan24_Crypto_BC_AutoSeedRngTypes__System_TimeSpan__wan24_Crypto_BC_IBouncyCastleRng__System_Nullable_System_Int32___System_Threading_Tasks_TaskScheduler__System_Threading_CancellationToken__" data-uid="wan24.Crypto.BC.AutoSeedRng.#ctor(wan24.Crypto.IRng@,System.Int32@,wan24.Crypto.BC.AutoSeedRngTypes@,System.TimeSpan@,wan24.Crypto.BC.IBouncyCastleRng@,System.Nullable{System.Int32}@,System.Threading.Tasks.TaskScheduler@,System.Threading.CancellationToken@)">AutoSeedRng(in IRng, in int, in AutoSeedRngTypes, in TimeSpan, in IBouncyCastleRng?, in int?, in TaskScheduler?, in CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutoSeedRng(in IRng seedProvider, in int seedLength = 256, in AutoSeedRngTypes seedingType = AutoSeedRngTypes.AfterRndConsumed, in TimeSpan seedInterval = default, in IBouncyCastleRng? rng = null, in int? initialSeedLength = null, in TaskScheduler? taskScheduler = null, in CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IRng</span></td>
+        <td><span class="parametername">seedProvider</span></td>
+        <td><p>Seed provider (will be disposed, if <a class="xref" href="wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_DisposeSeedProvider">DisposeSeedProvider</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">seedLength</span></td>
+        <td><p>Seed length to get from <code>seedProvider</code>&gt; and feed to <code>rng</code> in bytes</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="wan24.Crypto.BC.AutoSeedRngTypes.html">AutoSeedRngTypes</a></td>
+        <td><span class="parametername">seedingType</span></td>
+        <td><p>Seeding type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">seedInterval</span></td>
+        <td><p>Seeding interval (must be greater than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan.zero">Zero</a>; has only an effect if see <code>seedingType</code>&gt; is
+<a class="xref" href="wan24.Crypto.BC.AutoSeedRngTypes.html#wan24_Crypto_BC_AutoSeedRngTypes_Interval">Interval</a>; using 10 seconds as default)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="wan24.Crypto.BC.IBouncyCastleRng.html">IBouncyCastleRng</a></td>
+        <td><span class="parametername">rng</span></td>
+        <td><p>RNG to use (gets initial seed during construction unless <code>initialSeedLength</code> is lower than one; using <span class="xref">Org.BouncyCastle.Crypto.Prng.VmpcRandomGenerator</span> per
+default; will be disposed, if <a class="xref" href="wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_DisposeRng">DisposeRng</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">initialSeedLength</span></td>
+        <td><p><code>prng</code> initial seed lenght in bytes (<code>0</code> to skip initial seed; using <code>seedLength</code> as default)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.taskscheduler">TaskScheduler</a></td>
+        <td><span class="parametername">taskScheduler</span></td>
+        <td><p>Task scheduler to use for the background seeding task</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token to use for the background seeding task</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_SeedEvent.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.SeedEvent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L18">View Source</a>
+  </span>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_SeedEvent" data-uid="wan24.Crypto.BC.AutoSeedRng.SeedEvent">SeedEvent</h4>
+  <div class="markdown level1 summary"><p>Seed event (raised when should add seed)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ResetEvent SeedEvent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ResetEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_SeedTask.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.SeedTask%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L14">View Source</a>
+  </span>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_SeedTask" data-uid="wan24.Crypto.BC.AutoSeedRng.SeedTask">SeedTask</h4>
+  <div class="markdown level1 summary"><p>Seed background task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly Task SeedTask</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_SeedTimeoutCancellation.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.SeedTimeoutCancellation%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L22">View Source</a>
+  </span>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_SeedTimeoutCancellation" data-uid="wan24.Crypto.BC.AutoSeedRng.SeedTimeoutCancellation">SeedTimeoutCancellation</h4>
+  <div class="markdown level1 summary"><p>Seed timeout cancellation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly CancellationTokenSource SeedTimeoutCancellation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng__SeedInterval.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng._SeedInterval%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L30">View Source</a>
+  </span>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng__SeedInterval" data-uid="wan24.Crypto.BC.AutoSeedRng._SeedInterval">_SeedInterval</h4>
+  <div class="markdown level1 summary"><p>Seeding interval</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TimeSpan _SeedInterval</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng__Seeding.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng._Seeding%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L26">View Source</a>
+  </span>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng__Seeding" data-uid="wan24.Crypto.BC.AutoSeedRng._Seeding">_Seeding</h4>
+  <div class="markdown level1 summary"><p>Seeding type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AutoSeedRngTypes _Seeding</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="wan24.Crypto.BC.AutoSeedRngTypes.html">AutoSeedRngTypes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_DisposeRng.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.DisposeRng%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L109">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_DisposeRng_" data-uid="wan24.Crypto.BC.AutoSeedRng.DisposeRng*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_DisposeRng" data-uid="wan24.Crypto.BC.AutoSeedRng.DisposeRng">DisposeRng</h4>
+  <div class="markdown level1 summary"><p>If to dispose the <a class="xref" href="wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_Rng">Rng</a> when disposing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DisposeRng { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_DisposeSeedProvider.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.DisposeSeedProvider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L99">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_DisposeSeedProvider_" data-uid="wan24.Crypto.BC.AutoSeedRng.DisposeSeedProvider*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_DisposeSeedProvider" data-uid="wan24.Crypto.BC.AutoSeedRng.DisposeSeedProvider">DisposeSeedProvider</h4>
+  <div class="markdown level1 summary"><p>If to dispose the <a class="xref" href="wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedProvider">SeedProvider</a> when disposing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DisposeSeedProvider { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_LastException.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.LastException%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L157">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_LastException_" data-uid="wan24.Crypto.BC.AutoSeedRng.LastException*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_LastException" data-uid="wan24.Crypto.BC.AutoSeedRng.LastException">LastException</h4>
+  <div class="markdown level1 summary"><p>Last exception of the seeding background task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Exception? LastException { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_Rng.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.Rng%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L104">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_Rng_" data-uid="wan24.Crypto.BC.AutoSeedRng.Rng*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_Rng" data-uid="wan24.Crypto.BC.AutoSeedRng.Rng">Rng</h4>
+  <div class="markdown level1 summary"><p>RNG (used for seeding and as RNG; will be disposed, if <a class="xref" href="wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_DisposeRng">DisposeRng</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBouncyCastleRng Rng { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="wan24.Crypto.BC.IBouncyCastleRng.html">IBouncyCastleRng</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_SeedInterval.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.SeedInterval%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L141">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_SeedInterval_" data-uid="wan24.Crypto.BC.AutoSeedRng.SeedInterval*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_SeedInterval" data-uid="wan24.Crypto.BC.AutoSeedRng.SeedInterval">SeedInterval</h4>
+  <div class="markdown level1 summary"><p>Seed interval (must be greater than <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan.zero">Zero</a>; has only an effect if see <a class="xref" href="wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedingType">SeedingType</a> is <a class="xref" href="wan24.Crypto.BC.AutoSeedRngTypes.html#wan24_Crypto_BC_AutoSeedRngTypes_Interval">Interval</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan SeedInterval { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_SeedLength.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.SeedLength%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L94">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_SeedLength_" data-uid="wan24.Crypto.BC.AutoSeedRng.SeedLength*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_SeedLength" data-uid="wan24.Crypto.BC.AutoSeedRng.SeedLength">SeedLength</h4>
+  <div class="markdown level1 summary"><p>Seed length to get from <a class="xref" href="wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_SeedProvider">SeedProvider</a> and feed to <a class="xref" href="wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_Rng">Rng</a> in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SeedLength { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_SeedProvider.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.SeedProvider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L89">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_SeedProvider_" data-uid="wan24.Crypto.BC.AutoSeedRng.SeedProvider*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_SeedProvider" data-uid="wan24.Crypto.BC.AutoSeedRng.SeedProvider">SeedProvider</h4>
+  <div class="markdown level1 summary"><p>Seed provider (will be disposed, if <a class="xref" href="wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_DisposeSeedProvider">DisposeSeedProvider</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRng SeedProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IRng</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_SeedingType.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.SeedingType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L114">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_SeedingType_" data-uid="wan24.Crypto.BC.AutoSeedRng.SeedingType*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_SeedingType" data-uid="wan24.Crypto.BC.AutoSeedRng.SeedingType">SeedingType</h4>
+  <div class="markdown level1 summary"><p>Seeding type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutoSeedRngTypes SeedingType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="wan24.Crypto.BC.AutoSeedRngTypes.html">AutoSeedRngTypes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_AddSeed_System_ReadOnlySpan_System_Byte__.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.AddSeed(System.ReadOnlySpan%7BSystem.Byte%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L233">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_AddSeed_" data-uid="wan24.Crypto.BC.AutoSeedRng.AddSeed*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_AddSeed_System_ReadOnlySpan_System_Byte__" data-uid="wan24.Crypto.BC.AutoSeedRng.AddSeed(System.ReadOnlySpan{System.Byte})">AddSeed(ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"><p>Add seed to the RNG</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSeed(ReadOnlySpan&lt;byte&gt; seed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">seed</span></td>
+        <td><p>Seed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_AddSeedAsync_System_ReadOnlyMemory_System_Byte__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.AddSeedAsync(System.ReadOnlyMemory%7BSystem.Byte%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L240">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_AddSeedAsync_" data-uid="wan24.Crypto.BC.AutoSeedRng.AddSeedAsync*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_AddSeedAsync_System_ReadOnlyMemory_System_Byte__System_Threading_CancellationToken_" data-uid="wan24.Crypto.BC.AutoSeedRng.AddSeedAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)">AddSeedAsync(ReadOnlyMemory&lt;byte&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Add seed to the RNG</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddSeedAsync(ReadOnlyMemory&lt;byte&gt; seed, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlymemory-1">ReadOnlyMemory</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">seed</span></td>
+        <td><p>Seed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_AddSeedMaterial_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(System.Byte%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L212">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_AddSeedMaterial_" data-uid="wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_AddSeedMaterial_System_Byte___" data-uid="wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(System.Byte[])">AddSeedMaterial(byte[])</h4>
+  <div class="markdown level1 summary"><p>Add more seed material to the generator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSeedMaterial(byte[] seed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">seed</span></td>
+        <td><p>A byte array to be mixed into the generator's state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_AddSeedMaterial_System_Int64_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(System.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L226">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_AddSeedMaterial_" data-uid="wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_AddSeedMaterial_System_Int64_" data-uid="wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(System.Int64)">AddSeedMaterial(long)</h4>
+  <div class="markdown level1 summary"><p>Add more seed material to the generator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSeedMaterial(long seed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">seed</span></td>
+        <td><p>A long value to be mixed into the generator's state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_AddSeedMaterial_System_ReadOnlySpan_System_Byte__.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(System.ReadOnlySpan%7BSystem.Byte%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L219">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_AddSeedMaterial_" data-uid="wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_AddSeedMaterial_System_ReadOnlySpan_System_Byte__" data-uid="wan24.Crypto.BC.AutoSeedRng.AddSeedMaterial(System.ReadOnlySpan{System.Byte})">AddSeedMaterial(ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSeedMaterial(ReadOnlySpan&lt;byte&gt; seed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">seed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.Dispose(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L311">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_Dispose_" data-uid="wan24.Crypto.BC.AutoSeedRng.Dispose*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_Dispose_System_Boolean_" data-uid="wan24.Crypto.BC.AutoSeedRng.Dispose(System.Boolean)">Dispose(bool)</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>Disposing? (may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>, if called from the destructor)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">DisposableBase.Dispose(bool)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_DisposeCore.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.DisposeCore%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L323">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_DisposeCore_" data-uid="wan24.Crypto.BC.AutoSeedRng.DisposeCore*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_DisposeCore" data-uid="wan24.Crypto.BC.AutoSeedRng.DisposeCore">DisposeCore()</h4>
+  <div class="markdown level1 summary"><p>Dispose</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task DisposeCore()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Core.DisposableBase.DisposeCore()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_FillBytes_System_Span_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.FillBytes(System.Span%7BSystem.Byte%7D%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L160">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_FillBytes_" data-uid="wan24.Crypto.BC.AutoSeedRng.FillBytes*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_FillBytes_System_Span_System_Byte___" data-uid="wan24.Crypto.BC.AutoSeedRng.FillBytes(System.Span{System.Byte}@)">FillBytes(in Span&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"><p>Fill random bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Span&lt;byte&gt; FillBytes(in Span&lt;byte&gt; buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>Buffer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><p>Random bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">DisposableRngBase.FillBytes(in Span&lt;byte&gt;)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_FillBytesAsync_System_Memory_System_Byte__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.FillBytesAsync(System.Memory%7BSystem.Byte%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L174">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_FillBytesAsync_" data-uid="wan24.Crypto.BC.AutoSeedRng.FillBytesAsync*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_FillBytesAsync_System_Memory_System_Byte__System_Threading_CancellationToken_" data-uid="wan24.Crypto.BC.AutoSeedRng.FillBytesAsync(System.Memory{System.Byte},System.Threading.CancellationToken)">FillBytesAsync(Memory&lt;byte&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Fill random bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;Memory&lt;byte&gt;&gt; FillBytesAsync(Memory&lt;byte&gt; buffer, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.memory-1">Memory</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>Buffer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.memory-1">Memory</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;&gt;</td>
+        <td><p>Random bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.memory-1">DisposableRngBase.FillBytesAsync(Memory&lt;byte&gt;, CancellationToken)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_NextBytes_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.NextBytes(System.Byte%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L188">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_NextBytes_" data-uid="wan24.Crypto.BC.AutoSeedRng.NextBytes*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_NextBytes_System_Byte___" data-uid="wan24.Crypto.BC.AutoSeedRng.NextBytes(System.Byte[])">NextBytes(byte[])</h4>
+  <div class="markdown level1 summary"><p>Fill byte array with random values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void NextBytes(byte[] bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td><p>Array to be filled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_NextBytes_System_Byte___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.NextBytes(System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L196">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_NextBytes_" data-uid="wan24.Crypto.BC.AutoSeedRng.NextBytes*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_NextBytes_System_Byte___System_Int32_System_Int32_" data-uid="wan24.Crypto.BC.AutoSeedRng.NextBytes(System.Byte[],System.Int32,System.Int32)">NextBytes(byte[], int, int)</h4>
+  <div class="markdown level1 summary"><p>Fill byte array with random values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void NextBytes(byte[] bytes, int start, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td><p>Array to receive bytes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>Index to start filling at.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">len</span></td>
+        <td><p>Length of segment to fill.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_NextBytes_System_Span_System_Byte__.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.NextBytes(System.Span%7BSystem.Byte%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L204">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_NextBytes_" data-uid="wan24.Crypto.BC.AutoSeedRng.NextBytes*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_NextBytes_System_Span_System_Byte__" data-uid="wan24.Crypto.BC.AutoSeedRng.NextBytes(System.Span{System.Byte})">NextBytes(Span&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void NextBytes(Span&lt;byte&gt; bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_RaiseOnSeedError.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.RaiseOnSeedError%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L347">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_RaiseOnSeedError_" data-uid="wan24.Crypto.BC.AutoSeedRng.RaiseOnSeedError*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_RaiseOnSeedError" data-uid="wan24.Crypto.BC.AutoSeedRng.RaiseOnSeedError">RaiseOnSeedError()</h4>
+  <div class="markdown level1 summary"><p>Raise the <a class="xref" href="wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_OnSeedError">OnSeedError</a> event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RaiseOnSeedError()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_SeedAsync.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.SeedAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L249">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_AutoSeedRng_SeedAsync_" data-uid="wan24.Crypto.BC.AutoSeedRng.SeedAsync*"></a>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_SeedAsync" data-uid="wan24.Crypto.BC.AutoSeedRng.SeedAsync">SeedAsync()</h4>
+  <div class="markdown level1 summary"><p>Background seeding</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task SeedAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AutoSeedRng_OnSeedError.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AutoSeedRng.OnSeedError%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AutoSeedRng.cs/#L343">View Source</a>
+  </span>
+  <h4 id="wan24_Crypto_BC_AutoSeedRng_OnSeedError" data-uid="wan24.Crypto.BC.AutoSeedRng.OnSeedError">OnSeedError</h4>
+  <div class="markdown level1 summary"><p>Raised on seed error (see <a class="xref" href="wan24.Crypto.BC.AutoSeedRng.html#wan24_Crypto_BC_AutoSeedRng_LastException">LastException</a>; this instance will be disposed after raising the event)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AutoSeedRng.AutoSeedingRngEvent_Delegate? OnSeedError</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="wan24.Crypto.BC.AutoSeedRng.html">AutoSeedRng</a>.<a class="xref" href="wan24.Crypto.BC.AutoSeedRng.AutoSeedingRngEvent_Delegate.html">AutoSeedingRngEvent_Delegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">wan24.Core.IWillDispose</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IDisposableObject</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a>
+  </div>
+  <div>
+      <a class="xref" href="wan24.Crypto.BC.IBouncyCastleRng.html">IBouncyCastleRng</a>
+  </div>
+  <div>
+      <span class="xref">Org.BouncyCastle.Crypto.Prng.IRandomGenerator</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.ISeedableRng</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.IRng</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.ISeedConsumer</span>
+  </div>
+
+</article>
+                </div>
+
+                <div class="copyright-footer">
+                    <span>(c) 2023 Andreas Zimmermann, wan24.de</span>
+                </div>
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+</html>

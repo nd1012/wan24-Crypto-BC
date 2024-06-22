@@ -120,6 +120,7 @@
     <div><span class="xref">IDisposableObject</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
+    <div><span class="xref">IExportUserActions</span></div>
     <div><a class="xref" href="wan24.Crypto.BC.IBouncyCastleRng.html">IBouncyCastleRng</a></div>
     <div><span class="xref">IRandomGenerator</span></div>
     <div><span class="xref">ISeedableRng</span></div>
@@ -385,7 +386,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_RandomDataProvider_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RandomDataProvider : RandomDataGenerator, IWillDispose, IServiceWorker, IHostedService, IDisposableObject, IDisposable, IAsyncDisposable, IBouncyCastleRng, IRandomGenerator, ISeedableRng, IRng, ISeedConsumer</code></pre>
+    <pre><code class="lang-csharp hljs">public class RandomDataProvider : RandomDataGenerator, IWillDispose, IServiceWorker, IHostedService, IDisposableObject, IDisposable, IAsyncDisposable, IExportUserActions, IBouncyCastleRng, IRandomGenerator, ISeedableRng, IRng, ISeedConsumer</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -1463,6 +1464,9 @@
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IExportUserActions</span>
   </div>
   <div>
       <a class="xref" href="wan24.Crypto.BC.IBouncyCastleRng.html">IBouncyCastleRng</a>
