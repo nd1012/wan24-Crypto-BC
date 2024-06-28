@@ -9,7 +9,7 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageId>wan24-Crypto-BC</PackageId>
     <Title>wan24-Crypto-BC</Title>
-    <Version>3.8.0</Version>
+    <Version>3.9.0</Version>
     <Authors>nd1012</Authors>
     <Company>Andreas Zimmermann, wan24.de</Company>
     <Product>wan24-Crypto-BC</Product>
