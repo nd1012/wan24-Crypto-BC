@@ -895,6 +895,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleBackupRng.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleBackupRng.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase-1.yml",
       "output": {
         ".html": {
@@ -929,6 +939,16 @@
       "output": {
         ".html": {
           "relative_path": "api/wan24.Crypto.BC.BouncyCastleCryptoTransform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html"
         }
       },
       "version": ""
@@ -1009,6 +1029,26 @@
       "output": {
         ".html": {
           "relative_path": "api/wan24.Crypto.BC.ChaCha20Rng.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html"
         }
       },
       "version": ""

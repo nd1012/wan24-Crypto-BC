@@ -8877,6 +8877,208 @@ references:
   fullName.vb: wan24.Crypto.BC.BouncyCastleAsymmetricPublicKeyBase(Of tAlgo, tPublicKey, tFinal)._PublicKey
   nameWithType: BouncyCastleAsymmetricPublicKeyBase<tAlgo, tPublicKey, tFinal>._PublicKey
   nameWithType.vb: BouncyCastleAsymmetricPublicKeyBase(Of tAlgo, tPublicKey, tFinal)._PublicKey
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng
+  name: BouncyCastleBackupRng
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html
+  commentId: T:wan24.Crypto.BC.BouncyCastleBackupRng
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng
+  nameWithType: BouncyCastleBackupRng
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.#ctor(wan24.Crypto.BC.IBouncyCastleRng[])
+  name: BouncyCastleBackupRng(params IBouncyCastleRng[])
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng__ctor_wan24_Crypto_BC_IBouncyCastleRng___
+  commentId: M:wan24.Crypto.BC.BouncyCastleBackupRng.#ctor(wan24.Crypto.BC.IBouncyCastleRng[])
+  name.vb: New(ParamArray IBouncyCastleRng())
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.BouncyCastleBackupRng(params wan24.Crypto.BC.IBouncyCastleRng[])
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBackupRng.New(ParamArray wan24.Crypto.BC.IBouncyCastleRng())
+  nameWithType: BouncyCastleBackupRng.BouncyCastleBackupRng(params IBouncyCastleRng[])
+  nameWithType.vb: BouncyCastleBackupRng.New(ParamArray IBouncyCastleRng())
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.#ctor*
+  name: BouncyCastleBackupRng
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng__ctor_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleBackupRng.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.BouncyCastleBackupRng
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBackupRng.New
+  nameWithType: BouncyCastleBackupRng.BouncyCastleBackupRng
+  nameWithType.vb: BouncyCastleBackupRng.New
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeed(System.ReadOnlySpan{System.Byte})
+  name: AddSeed(ReadOnlySpan<byte>)
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_AddSeed_System_ReadOnlySpan_System_Byte__
+  commentId: M:wan24.Crypto.BC.BouncyCastleBackupRng.AddSeed(System.ReadOnlySpan{System.Byte})
+  name.vb: AddSeed(ReadOnlySpan(Of Byte))
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeed(System.ReadOnlySpan<byte>)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeed(System.ReadOnlySpan(Of Byte))
+  nameWithType: BouncyCastleBackupRng.AddSeed(ReadOnlySpan<byte>)
+  nameWithType.vb: BouncyCastleBackupRng.AddSeed(ReadOnlySpan(Of Byte))
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeed*
+  name: AddSeed
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_AddSeed_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleBackupRng.AddSeed
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeed
+  nameWithType: BouncyCastleBackupRng.AddSeed
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)
+  name: AddSeedAsync(ReadOnlyMemory<byte>, CancellationToken)
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_AddSeedAsync_System_ReadOnlyMemory_System_Byte__System_Threading_CancellationToken_
+  commentId: M:wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)
+  name.vb: AddSeedAsync(ReadOnlyMemory(Of Byte), CancellationToken)
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedAsync(System.ReadOnlyMemory<byte>, System.Threading.CancellationToken)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedAsync(System.ReadOnlyMemory(Of Byte), System.Threading.CancellationToken)
+  nameWithType: BouncyCastleBackupRng.AddSeedAsync(ReadOnlyMemory<byte>, CancellationToken)
+  nameWithType.vb: BouncyCastleBackupRng.AddSeedAsync(ReadOnlyMemory(Of Byte), CancellationToken)
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedAsync*
+  name: AddSeedAsync
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_AddSeedAsync_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedAsync
+  nameWithType: BouncyCastleBackupRng.AddSeedAsync
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedMaterial(System.Byte[])
+  name: AddSeedMaterial(byte[])
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_AddSeedMaterial_System_Byte___
+  commentId: M:wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedMaterial(System.Byte[])
+  name.vb: AddSeedMaterial(Byte())
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedMaterial(byte[])
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedMaterial(Byte())
+  nameWithType: BouncyCastleBackupRng.AddSeedMaterial(byte[])
+  nameWithType.vb: BouncyCastleBackupRng.AddSeedMaterial(Byte())
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedMaterial(System.Int64)
+  name: AddSeedMaterial(long)
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_AddSeedMaterial_System_Int64_
+  commentId: M:wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedMaterial(System.Int64)
+  name.vb: AddSeedMaterial(Long)
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedMaterial(long)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedMaterial(Long)
+  nameWithType: BouncyCastleBackupRng.AddSeedMaterial(long)
+  nameWithType.vb: BouncyCastleBackupRng.AddSeedMaterial(Long)
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedMaterial(System.ReadOnlySpan{System.Byte})
+  name: AddSeedMaterial(ReadOnlySpan<byte>)
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_AddSeedMaterial_System_ReadOnlySpan_System_Byte__
+  commentId: M:wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedMaterial(System.ReadOnlySpan{System.Byte})
+  name.vb: AddSeedMaterial(ReadOnlySpan(Of Byte))
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedMaterial(System.ReadOnlySpan<byte>)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedMaterial(System.ReadOnlySpan(Of Byte))
+  nameWithType: BouncyCastleBackupRng.AddSeedMaterial(ReadOnlySpan<byte>)
+  nameWithType.vb: BouncyCastleBackupRng.AddSeedMaterial(ReadOnlySpan(Of Byte))
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedMaterial*
+  name: AddSeedMaterial
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_AddSeedMaterial_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedMaterial
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.AddSeedMaterial
+  nameWithType: BouncyCastleBackupRng.AddSeedMaterial
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.FillBytes(System.Span{System.Byte}@)
+  name: FillBytes(in Span<byte>)
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_FillBytes_System_Span_System_Byte___
+  commentId: M:wan24.Crypto.BC.BouncyCastleBackupRng.FillBytes(System.Span{System.Byte}@)
+  name.vb: FillBytes(Span(Of Byte))
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.FillBytes(in System.Span<byte>)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBackupRng.FillBytes(System.Span(Of Byte))
+  nameWithType: BouncyCastleBackupRng.FillBytes(in Span<byte>)
+  nameWithType.vb: BouncyCastleBackupRng.FillBytes(Span(Of Byte))
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.FillBytes*
+  name: FillBytes
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_FillBytes_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleBackupRng.FillBytes
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.FillBytes
+  nameWithType: BouncyCastleBackupRng.FillBytes
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.FillBytesAsync(System.Memory{System.Byte},System.Threading.CancellationToken)
+  name: FillBytesAsync(Memory<byte>, CancellationToken)
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_FillBytesAsync_System_Memory_System_Byte__System_Threading_CancellationToken_
+  commentId: M:wan24.Crypto.BC.BouncyCastleBackupRng.FillBytesAsync(System.Memory{System.Byte},System.Threading.CancellationToken)
+  name.vb: FillBytesAsync(Memory(Of Byte), CancellationToken)
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.FillBytesAsync(System.Memory<byte>, System.Threading.CancellationToken)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBackupRng.FillBytesAsync(System.Memory(Of Byte), System.Threading.CancellationToken)
+  nameWithType: BouncyCastleBackupRng.FillBytesAsync(Memory<byte>, CancellationToken)
+  nameWithType.vb: BouncyCastleBackupRng.FillBytesAsync(Memory(Of Byte), CancellationToken)
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.FillBytesAsync*
+  name: FillBytesAsync
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_FillBytesAsync_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleBackupRng.FillBytesAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.FillBytesAsync
+  nameWithType: BouncyCastleBackupRng.FillBytesAsync
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.GetBytes(System.Int32@)
+  name: GetBytes(in int)
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_GetBytes_System_Int32__
+  commentId: M:wan24.Crypto.BC.BouncyCastleBackupRng.GetBytes(System.Int32@)
+  name.vb: GetBytes(Integer)
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.GetBytes(in int)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBackupRng.GetBytes(Integer)
+  nameWithType: BouncyCastleBackupRng.GetBytes(in int)
+  nameWithType.vb: BouncyCastleBackupRng.GetBytes(Integer)
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.GetBytes*
+  name: GetBytes
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_GetBytes_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleBackupRng.GetBytes
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.GetBytes
+  nameWithType: BouncyCastleBackupRng.GetBytes
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.GetBytesAsync(System.Int32,System.Threading.CancellationToken)
+  name: GetBytesAsync(int, CancellationToken)
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_GetBytesAsync_System_Int32_System_Threading_CancellationToken_
+  commentId: M:wan24.Crypto.BC.BouncyCastleBackupRng.GetBytesAsync(System.Int32,System.Threading.CancellationToken)
+  name.vb: GetBytesAsync(Integer, CancellationToken)
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.GetBytesAsync(int, System.Threading.CancellationToken)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBackupRng.GetBytesAsync(Integer, System.Threading.CancellationToken)
+  nameWithType: BouncyCastleBackupRng.GetBytesAsync(int, CancellationToken)
+  nameWithType.vb: BouncyCastleBackupRng.GetBytesAsync(Integer, CancellationToken)
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.GetBytesAsync*
+  name: GetBytesAsync
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_GetBytesAsync_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleBackupRng.GetBytesAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.GetBytesAsync
+  nameWithType: BouncyCastleBackupRng.GetBytesAsync
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.NextBytes(System.Byte[])
+  name: NextBytes(byte[])
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_NextBytes_System_Byte___
+  commentId: M:wan24.Crypto.BC.BouncyCastleBackupRng.NextBytes(System.Byte[])
+  name.vb: NextBytes(Byte())
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.NextBytes(byte[])
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBackupRng.NextBytes(Byte())
+  nameWithType: BouncyCastleBackupRng.NextBytes(byte[])
+  nameWithType.vb: BouncyCastleBackupRng.NextBytes(Byte())
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.NextBytes(System.Byte[],System.Int32,System.Int32)
+  name: NextBytes(byte[], int, int)
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_NextBytes_System_Byte___System_Int32_System_Int32_
+  commentId: M:wan24.Crypto.BC.BouncyCastleBackupRng.NextBytes(System.Byte[],System.Int32,System.Int32)
+  name.vb: NextBytes(Byte(), Integer, Integer)
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.NextBytes(byte[], int, int)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBackupRng.NextBytes(Byte(), Integer, Integer)
+  nameWithType: BouncyCastleBackupRng.NextBytes(byte[], int, int)
+  nameWithType.vb: BouncyCastleBackupRng.NextBytes(Byte(), Integer, Integer)
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.NextBytes(System.Span{System.Byte})
+  name: NextBytes(Span<byte>)
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_NextBytes_System_Span_System_Byte__
+  commentId: M:wan24.Crypto.BC.BouncyCastleBackupRng.NextBytes(System.Span{System.Byte})
+  name.vb: NextBytes(Span(Of Byte))
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.NextBytes(System.Span<byte>)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleBackupRng.NextBytes(System.Span(Of Byte))
+  nameWithType: BouncyCastleBackupRng.NextBytes(Span<byte>)
+  nameWithType.vb: BouncyCastleBackupRng.NextBytes(Span(Of Byte))
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.NextBytes*
+  name: NextBytes
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_NextBytes_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleBackupRng.NextBytes
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.NextBytes
+  nameWithType: BouncyCastleBackupRng.NextBytes
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.RNGs
+  name: RNGs
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_RNGs
+  commentId: P:wan24.Crypto.BC.BouncyCastleBackupRng.RNGs
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.RNGs
+  nameWithType: BouncyCastleBackupRng.RNGs
+- uid: wan24.Crypto.BC.BouncyCastleBackupRng.RNGs*
+  name: RNGs
+  href: api/wan24.Crypto.BC.BouncyCastleBackupRng.html#wan24_Crypto_BC_BouncyCastleBackupRng_RNGs_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleBackupRng.RNGs
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleBackupRng.RNGs
+  nameWithType: BouncyCastleBackupRng.RNGs
 - uid: wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase`1
   name: BouncyCastleBlockCipherAlgorithmBase<T>
   href: api/wan24.Crypto.BC.BouncyCastleBlockCipherAlgorithmBase-1.html
@@ -9497,6 +9699,247 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.BouncyCastleCryptoTransform.TransformFinalBlock
   nameWithType: BouncyCastleCryptoTransform.TransformFinalBlock
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor
+  name: BouncyCastleEntropyMonitor
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html
+  commentId: T:wan24.Crypto.BC.BouncyCastleEntropyMonitor
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor
+  nameWithType: BouncyCastleEntropyMonitor
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.#ctor(wan24.Crypto.BC.IBouncyCastleRng@)
+  name: BouncyCastleEntropyMonitor(in IBouncyCastleRng)
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor__ctor_wan24_Crypto_BC_IBouncyCastleRng__
+  commentId: M:wan24.Crypto.BC.BouncyCastleEntropyMonitor.#ctor(wan24.Crypto.BC.IBouncyCastleRng@)
+  name.vb: New(IBouncyCastleRng)
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.BouncyCastleEntropyMonitor(in wan24.Crypto.BC.IBouncyCastleRng)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleEntropyMonitor.New(wan24.Crypto.BC.IBouncyCastleRng)
+  nameWithType: BouncyCastleEntropyMonitor.BouncyCastleEntropyMonitor(in IBouncyCastleRng)
+  nameWithType.vb: BouncyCastleEntropyMonitor.New(IBouncyCastleRng)
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.#ctor*
+  name: BouncyCastleEntropyMonitor
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor__ctor_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleEntropyMonitor.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.BouncyCastleEntropyMonitor
+  fullName.vb: wan24.Crypto.BC.BouncyCastleEntropyMonitor.New
+  nameWithType: BouncyCastleEntropyMonitor.BouncyCastleEntropyMonitor
+  nameWithType.vb: BouncyCastleEntropyMonitor.New
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeed(System.ReadOnlySpan{System.Byte})
+  name: AddSeed(ReadOnlySpan<byte>)
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_AddSeed_System_ReadOnlySpan_System_Byte__
+  commentId: M:wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeed(System.ReadOnlySpan{System.Byte})
+  name.vb: AddSeed(ReadOnlySpan(Of Byte))
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeed(System.ReadOnlySpan<byte>)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeed(System.ReadOnlySpan(Of Byte))
+  nameWithType: BouncyCastleEntropyMonitor.AddSeed(ReadOnlySpan<byte>)
+  nameWithType.vb: BouncyCastleEntropyMonitor.AddSeed(ReadOnlySpan(Of Byte))
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeed*
+  name: AddSeed
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_AddSeed_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeed
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeed
+  nameWithType: BouncyCastleEntropyMonitor.AddSeed
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)
+  name: AddSeedAsync(ReadOnlyMemory<byte>, CancellationToken)
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_AddSeedAsync_System_ReadOnlyMemory_System_Byte__System_Threading_CancellationToken_
+  commentId: M:wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)
+  name.vb: AddSeedAsync(ReadOnlyMemory(Of Byte), CancellationToken)
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedAsync(System.ReadOnlyMemory<byte>, System.Threading.CancellationToken)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedAsync(System.ReadOnlyMemory(Of Byte), System.Threading.CancellationToken)
+  nameWithType: BouncyCastleEntropyMonitor.AddSeedAsync(ReadOnlyMemory<byte>, CancellationToken)
+  nameWithType.vb: BouncyCastleEntropyMonitor.AddSeedAsync(ReadOnlyMemory(Of Byte), CancellationToken)
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedAsync*
+  name: AddSeedAsync
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_AddSeedAsync_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedAsync
+  nameWithType: BouncyCastleEntropyMonitor.AddSeedAsync
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedMaterial(System.Byte[])
+  name: AddSeedMaterial(byte[])
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_AddSeedMaterial_System_Byte___
+  commentId: M:wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedMaterial(System.Byte[])
+  name.vb: AddSeedMaterial(Byte())
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedMaterial(byte[])
+  fullName.vb: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedMaterial(Byte())
+  nameWithType: BouncyCastleEntropyMonitor.AddSeedMaterial(byte[])
+  nameWithType.vb: BouncyCastleEntropyMonitor.AddSeedMaterial(Byte())
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedMaterial(System.Int64)
+  name: AddSeedMaterial(long)
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_AddSeedMaterial_System_Int64_
+  commentId: M:wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedMaterial(System.Int64)
+  name.vb: AddSeedMaterial(Long)
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedMaterial(long)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedMaterial(Long)
+  nameWithType: BouncyCastleEntropyMonitor.AddSeedMaterial(long)
+  nameWithType.vb: BouncyCastleEntropyMonitor.AddSeedMaterial(Long)
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedMaterial(System.ReadOnlySpan{System.Byte})
+  name: AddSeedMaterial(ReadOnlySpan<byte>)
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_AddSeedMaterial_System_ReadOnlySpan_System_Byte__
+  commentId: M:wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedMaterial(System.ReadOnlySpan{System.Byte})
+  name.vb: AddSeedMaterial(ReadOnlySpan(Of Byte))
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedMaterial(System.ReadOnlySpan<byte>)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedMaterial(System.ReadOnlySpan(Of Byte))
+  nameWithType: BouncyCastleEntropyMonitor.AddSeedMaterial(ReadOnlySpan<byte>)
+  nameWithType.vb: BouncyCastleEntropyMonitor.AddSeedMaterial(ReadOnlySpan(Of Byte))
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedMaterial*
+  name: AddSeedMaterial
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_AddSeedMaterial_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedMaterial
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.AddSeedMaterial
+  nameWithType: BouncyCastleEntropyMonitor.AddSeedMaterial
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.Algorithms
+  name: Algorithms
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_Algorithms
+  commentId: P:wan24.Crypto.BC.BouncyCastleEntropyMonitor.Algorithms
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.Algorithms
+  nameWithType: BouncyCastleEntropyMonitor.Algorithms
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.Algorithms*
+  name: Algorithms
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_Algorithms_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleEntropyMonitor.Algorithms
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.Algorithms
+  nameWithType: BouncyCastleEntropyMonitor.Algorithms
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.FillBytes(System.Span{System.Byte}@)
+  name: FillBytes(in Span<byte>)
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_FillBytes_System_Span_System_Byte___
+  commentId: M:wan24.Crypto.BC.BouncyCastleEntropyMonitor.FillBytes(System.Span{System.Byte}@)
+  name.vb: FillBytes(Span(Of Byte))
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.FillBytes(in System.Span<byte>)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleEntropyMonitor.FillBytes(System.Span(Of Byte))
+  nameWithType: BouncyCastleEntropyMonitor.FillBytes(in Span<byte>)
+  nameWithType.vb: BouncyCastleEntropyMonitor.FillBytes(Span(Of Byte))
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.FillBytes*
+  name: FillBytes
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_FillBytes_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleEntropyMonitor.FillBytes
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.FillBytes
+  nameWithType: BouncyCastleEntropyMonitor.FillBytes
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.FillBytesAsync(System.Memory{System.Byte},System.Threading.CancellationToken)
+  name: FillBytesAsync(Memory<byte>, CancellationToken)
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_FillBytesAsync_System_Memory_System_Byte__System_Threading_CancellationToken_
+  commentId: M:wan24.Crypto.BC.BouncyCastleEntropyMonitor.FillBytesAsync(System.Memory{System.Byte},System.Threading.CancellationToken)
+  name.vb: FillBytesAsync(Memory(Of Byte), CancellationToken)
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.FillBytesAsync(System.Memory<byte>, System.Threading.CancellationToken)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleEntropyMonitor.FillBytesAsync(System.Memory(Of Byte), System.Threading.CancellationToken)
+  nameWithType: BouncyCastleEntropyMonitor.FillBytesAsync(Memory<byte>, CancellationToken)
+  nameWithType.vb: BouncyCastleEntropyMonitor.FillBytesAsync(Memory(Of Byte), CancellationToken)
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.FillBytesAsync*
+  name: FillBytesAsync
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_FillBytesAsync_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleEntropyMonitor.FillBytesAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.FillBytesAsync
+  nameWithType: BouncyCastleEntropyMonitor.FillBytesAsync
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.GetBytes(System.Int32@)
+  name: GetBytes(in int)
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_GetBytes_System_Int32__
+  commentId: M:wan24.Crypto.BC.BouncyCastleEntropyMonitor.GetBytes(System.Int32@)
+  name.vb: GetBytes(Integer)
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.GetBytes(in int)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleEntropyMonitor.GetBytes(Integer)
+  nameWithType: BouncyCastleEntropyMonitor.GetBytes(in int)
+  nameWithType.vb: BouncyCastleEntropyMonitor.GetBytes(Integer)
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.GetBytes*
+  name: GetBytes
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_GetBytes_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleEntropyMonitor.GetBytes
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.GetBytes
+  nameWithType: BouncyCastleEntropyMonitor.GetBytes
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.GetBytesAsync(System.Int32,System.Threading.CancellationToken)
+  name: GetBytesAsync(int, CancellationToken)
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_GetBytesAsync_System_Int32_System_Threading_CancellationToken_
+  commentId: M:wan24.Crypto.BC.BouncyCastleEntropyMonitor.GetBytesAsync(System.Int32,System.Threading.CancellationToken)
+  name.vb: GetBytesAsync(Integer, CancellationToken)
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.GetBytesAsync(int, System.Threading.CancellationToken)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleEntropyMonitor.GetBytesAsync(Integer, System.Threading.CancellationToken)
+  nameWithType: BouncyCastleEntropyMonitor.GetBytesAsync(int, CancellationToken)
+  nameWithType.vb: BouncyCastleEntropyMonitor.GetBytesAsync(Integer, CancellationToken)
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.GetBytesAsync*
+  name: GetBytesAsync
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_GetBytesAsync_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleEntropyMonitor.GetBytesAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.GetBytesAsync
+  nameWithType: BouncyCastleEntropyMonitor.GetBytesAsync
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.MaxRetries
+  name: MaxRetries
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_MaxRetries
+  commentId: P:wan24.Crypto.BC.BouncyCastleEntropyMonitor.MaxRetries
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.MaxRetries
+  nameWithType: BouncyCastleEntropyMonitor.MaxRetries
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.MaxRetries*
+  name: MaxRetries
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_MaxRetries_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleEntropyMonitor.MaxRetries
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.MaxRetries
+  nameWithType: BouncyCastleEntropyMonitor.MaxRetries
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.MinRndlength
+  name: MinRndlength
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_MinRndlength
+  commentId: P:wan24.Crypto.BC.BouncyCastleEntropyMonitor.MinRndlength
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.MinRndlength
+  nameWithType: BouncyCastleEntropyMonitor.MinRndlength
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.MinRndlength*
+  name: MinRndlength
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_MinRndlength_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleEntropyMonitor.MinRndlength
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.MinRndlength
+  nameWithType: BouncyCastleEntropyMonitor.MinRndlength
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.NextBytes(System.Byte[])
+  name: NextBytes(byte[])
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_NextBytes_System_Byte___
+  commentId: M:wan24.Crypto.BC.BouncyCastleEntropyMonitor.NextBytes(System.Byte[])
+  name.vb: NextBytes(Byte())
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.NextBytes(byte[])
+  fullName.vb: wan24.Crypto.BC.BouncyCastleEntropyMonitor.NextBytes(Byte())
+  nameWithType: BouncyCastleEntropyMonitor.NextBytes(byte[])
+  nameWithType.vb: BouncyCastleEntropyMonitor.NextBytes(Byte())
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.NextBytes(System.Byte[],System.Int32,System.Int32)
+  name: NextBytes(byte[], int, int)
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_NextBytes_System_Byte___System_Int32_System_Int32_
+  commentId: M:wan24.Crypto.BC.BouncyCastleEntropyMonitor.NextBytes(System.Byte[],System.Int32,System.Int32)
+  name.vb: NextBytes(Byte(), Integer, Integer)
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.NextBytes(byte[], int, int)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleEntropyMonitor.NextBytes(Byte(), Integer, Integer)
+  nameWithType: BouncyCastleEntropyMonitor.NextBytes(byte[], int, int)
+  nameWithType.vb: BouncyCastleEntropyMonitor.NextBytes(Byte(), Integer, Integer)
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.NextBytes(System.Span{System.Byte})
+  name: NextBytes(Span<byte>)
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_NextBytes_System_Span_System_Byte__
+  commentId: M:wan24.Crypto.BC.BouncyCastleEntropyMonitor.NextBytes(System.Span{System.Byte})
+  name.vb: NextBytes(Span(Of Byte))
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.NextBytes(System.Span<byte>)
+  fullName.vb: wan24.Crypto.BC.BouncyCastleEntropyMonitor.NextBytes(System.Span(Of Byte))
+  nameWithType: BouncyCastleEntropyMonitor.NextBytes(Span<byte>)
+  nameWithType.vb: BouncyCastleEntropyMonitor.NextBytes(Span(Of Byte))
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.NextBytes*
+  name: NextBytes
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_NextBytes_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleEntropyMonitor.NextBytes
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.NextBytes
+  nameWithType: BouncyCastleEntropyMonitor.NextBytes
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.RNG
+  name: RNG
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_RNG
+  commentId: P:wan24.Crypto.BC.BouncyCastleEntropyMonitor.RNG
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.RNG
+  nameWithType: BouncyCastleEntropyMonitor.RNG
+- uid: wan24.Crypto.BC.BouncyCastleEntropyMonitor.RNG*
+  name: RNG
+  href: api/wan24.Crypto.BC.BouncyCastleEntropyMonitor.html#wan24_Crypto_BC_BouncyCastleEntropyMonitor_RNG_
+  commentId: Overload:wan24.Crypto.BC.BouncyCastleEntropyMonitor.RNG
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.BouncyCastleEntropyMonitor.RNG
+  nameWithType: BouncyCastleEntropyMonitor.RNG
 - uid: wan24.Crypto.BC.BouncyCastleHashAlgorithm
   name: BouncyCastleHashAlgorithm
   href: api/wan24.Crypto.BC.BouncyCastleHashAlgorithm.html
@@ -10457,6 +10900,507 @@ references:
   fullName.vb: wan24.Crypto.BC.ChaCha20Rng.New
   nameWithType: ChaCha20Rng.ChaCha20Rng
   nameWithType.vb: ChaCha20Rng.New
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng
+  name: DisposableBouncyCastleBackupRng
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html
+  commentId: T:wan24.Crypto.BC.DisposableBouncyCastleBackupRng
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng
+  nameWithType: DisposableBouncyCastleBackupRng
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.#ctor(wan24.Crypto.BC.IBouncyCastleRng[])
+  name: DisposableBouncyCastleBackupRng(params IBouncyCastleRng[])
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng__ctor_wan24_Crypto_BC_IBouncyCastleRng___
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.#ctor(wan24.Crypto.BC.IBouncyCastleRng[])
+  name.vb: New(ParamArray IBouncyCastleRng())
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.DisposableBouncyCastleBackupRng(params wan24.Crypto.BC.IBouncyCastleRng[])
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.New(ParamArray wan24.Crypto.BC.IBouncyCastleRng())
+  nameWithType: DisposableBouncyCastleBackupRng.DisposableBouncyCastleBackupRng(params IBouncyCastleRng[])
+  nameWithType.vb: DisposableBouncyCastleBackupRng.New(ParamArray IBouncyCastleRng())
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.#ctor*
+  name: DisposableBouncyCastleBackupRng
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng__ctor_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.DisposableBouncyCastleBackupRng
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.New
+  nameWithType: DisposableBouncyCastleBackupRng.DisposableBouncyCastleBackupRng
+  nameWithType.vb: DisposableBouncyCastleBackupRng.New
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeed(System.ReadOnlySpan{System.Byte})
+  name: AddSeed(ReadOnlySpan<byte>)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_AddSeed_System_ReadOnlySpan_System_Byte__
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeed(System.ReadOnlySpan{System.Byte})
+  name.vb: AddSeed(ReadOnlySpan(Of Byte))
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeed(System.ReadOnlySpan<byte>)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeed(System.ReadOnlySpan(Of Byte))
+  nameWithType: DisposableBouncyCastleBackupRng.AddSeed(ReadOnlySpan<byte>)
+  nameWithType.vb: DisposableBouncyCastleBackupRng.AddSeed(ReadOnlySpan(Of Byte))
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeed*
+  name: AddSeed
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_AddSeed_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeed
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeed
+  nameWithType: DisposableBouncyCastleBackupRng.AddSeed
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)
+  name: AddSeedAsync(ReadOnlyMemory<byte>, CancellationToken)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_AddSeedAsync_System_ReadOnlyMemory_System_Byte__System_Threading_CancellationToken_
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)
+  name.vb: AddSeedAsync(ReadOnlyMemory(Of Byte), CancellationToken)
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedAsync(System.ReadOnlyMemory<byte>, System.Threading.CancellationToken)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedAsync(System.ReadOnlyMemory(Of Byte), System.Threading.CancellationToken)
+  nameWithType: DisposableBouncyCastleBackupRng.AddSeedAsync(ReadOnlyMemory<byte>, CancellationToken)
+  nameWithType.vb: DisposableBouncyCastleBackupRng.AddSeedAsync(ReadOnlyMemory(Of Byte), CancellationToken)
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedAsync*
+  name: AddSeedAsync
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_AddSeedAsync_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedAsync
+  nameWithType: DisposableBouncyCastleBackupRng.AddSeedAsync
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedMaterial(System.Byte[])
+  name: AddSeedMaterial(byte[])
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_AddSeedMaterial_System_Byte___
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedMaterial(System.Byte[])
+  name.vb: AddSeedMaterial(Byte())
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedMaterial(byte[])
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedMaterial(Byte())
+  nameWithType: DisposableBouncyCastleBackupRng.AddSeedMaterial(byte[])
+  nameWithType.vb: DisposableBouncyCastleBackupRng.AddSeedMaterial(Byte())
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedMaterial(System.Int64)
+  name: AddSeedMaterial(long)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_AddSeedMaterial_System_Int64_
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedMaterial(System.Int64)
+  name.vb: AddSeedMaterial(Long)
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedMaterial(long)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedMaterial(Long)
+  nameWithType: DisposableBouncyCastleBackupRng.AddSeedMaterial(long)
+  nameWithType.vb: DisposableBouncyCastleBackupRng.AddSeedMaterial(Long)
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedMaterial(System.ReadOnlySpan{System.Byte})
+  name: AddSeedMaterial(ReadOnlySpan<byte>)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_AddSeedMaterial_System_ReadOnlySpan_System_Byte__
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedMaterial(System.ReadOnlySpan{System.Byte})
+  name.vb: AddSeedMaterial(ReadOnlySpan(Of Byte))
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedMaterial(System.ReadOnlySpan<byte>)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedMaterial(System.ReadOnlySpan(Of Byte))
+  nameWithType: DisposableBouncyCastleBackupRng.AddSeedMaterial(ReadOnlySpan<byte>)
+  nameWithType.vb: DisposableBouncyCastleBackupRng.AddSeedMaterial(ReadOnlySpan(Of Byte))
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedMaterial*
+  name: AddSeedMaterial
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_AddSeedMaterial_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedMaterial
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.AddSeedMaterial
+  nameWithType: DisposableBouncyCastleBackupRng.AddSeedMaterial
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.Dispose(System.Boolean)
+  name: Dispose(bool)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_Dispose_System_Boolean_
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.Dispose(System.Boolean)
+  name.vb: Dispose(Boolean)
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.Dispose(bool)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.Dispose(Boolean)
+  nameWithType: DisposableBouncyCastleBackupRng.Dispose(bool)
+  nameWithType.vb: DisposableBouncyCastleBackupRng.Dispose(Boolean)
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.Dispose*
+  name: Dispose
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_Dispose_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.Dispose
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.Dispose
+  nameWithType: DisposableBouncyCastleBackupRng.Dispose
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.DisposeCore
+  name: DisposeCore()
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_DisposeCore
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.DisposeCore
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.DisposeCore()
+  nameWithType: DisposableBouncyCastleBackupRng.DisposeCore()
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.DisposeCore*
+  name: DisposeCore
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_DisposeCore_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.DisposeCore
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.DisposeCore
+  nameWithType: DisposableBouncyCastleBackupRng.DisposeCore
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.FillBytes(System.Span{System.Byte}@)
+  name: FillBytes(in Span<byte>)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_FillBytes_System_Span_System_Byte___
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.FillBytes(System.Span{System.Byte}@)
+  name.vb: FillBytes(Span(Of Byte))
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.FillBytes(in System.Span<byte>)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.FillBytes(System.Span(Of Byte))
+  nameWithType: DisposableBouncyCastleBackupRng.FillBytes(in Span<byte>)
+  nameWithType.vb: DisposableBouncyCastleBackupRng.FillBytes(Span(Of Byte))
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.FillBytes*
+  name: FillBytes
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_FillBytes_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.FillBytes
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.FillBytes
+  nameWithType: DisposableBouncyCastleBackupRng.FillBytes
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.FillBytesAsync(System.Memory{System.Byte},System.Threading.CancellationToken)
+  name: FillBytesAsync(Memory<byte>, CancellationToken)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_FillBytesAsync_System_Memory_System_Byte__System_Threading_CancellationToken_
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.FillBytesAsync(System.Memory{System.Byte},System.Threading.CancellationToken)
+  name.vb: FillBytesAsync(Memory(Of Byte), CancellationToken)
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.FillBytesAsync(System.Memory<byte>, System.Threading.CancellationToken)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.FillBytesAsync(System.Memory(Of Byte), System.Threading.CancellationToken)
+  nameWithType: DisposableBouncyCastleBackupRng.FillBytesAsync(Memory<byte>, CancellationToken)
+  nameWithType.vb: DisposableBouncyCastleBackupRng.FillBytesAsync(Memory(Of Byte), CancellationToken)
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.FillBytesAsync*
+  name: FillBytesAsync
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_FillBytesAsync_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.FillBytesAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.FillBytesAsync
+  nameWithType: DisposableBouncyCastleBackupRng.FillBytesAsync
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.GetBytes(System.Int32@)
+  name: GetBytes(in int)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_GetBytes_System_Int32__
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.GetBytes(System.Int32@)
+  name.vb: GetBytes(Integer)
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.GetBytes(in int)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.GetBytes(Integer)
+  nameWithType: DisposableBouncyCastleBackupRng.GetBytes(in int)
+  nameWithType.vb: DisposableBouncyCastleBackupRng.GetBytes(Integer)
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.GetBytes*
+  name: GetBytes
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_GetBytes_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.GetBytes
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.GetBytes
+  nameWithType: DisposableBouncyCastleBackupRng.GetBytes
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.GetBytesAsync(System.Int32,System.Threading.CancellationToken)
+  name: GetBytesAsync(int, CancellationToken)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_GetBytesAsync_System_Int32_System_Threading_CancellationToken_
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.GetBytesAsync(System.Int32,System.Threading.CancellationToken)
+  name.vb: GetBytesAsync(Integer, CancellationToken)
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.GetBytesAsync(int, System.Threading.CancellationToken)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.GetBytesAsync(Integer, System.Threading.CancellationToken)
+  nameWithType: DisposableBouncyCastleBackupRng.GetBytesAsync(int, CancellationToken)
+  nameWithType.vb: DisposableBouncyCastleBackupRng.GetBytesAsync(Integer, CancellationToken)
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.GetBytesAsync*
+  name: GetBytesAsync
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_GetBytesAsync_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.GetBytesAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.GetBytesAsync
+  nameWithType: DisposableBouncyCastleBackupRng.GetBytesAsync
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.NextBytes(System.Byte[])
+  name: NextBytes(byte[])
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_NextBytes_System_Byte___
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.NextBytes(System.Byte[])
+  name.vb: NextBytes(Byte())
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.NextBytes(byte[])
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.NextBytes(Byte())
+  nameWithType: DisposableBouncyCastleBackupRng.NextBytes(byte[])
+  nameWithType.vb: DisposableBouncyCastleBackupRng.NextBytes(Byte())
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.NextBytes(System.Byte[],System.Int32,System.Int32)
+  name: NextBytes(byte[], int, int)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_NextBytes_System_Byte___System_Int32_System_Int32_
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.NextBytes(System.Byte[],System.Int32,System.Int32)
+  name.vb: NextBytes(Byte(), Integer, Integer)
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.NextBytes(byte[], int, int)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.NextBytes(Byte(), Integer, Integer)
+  nameWithType: DisposableBouncyCastleBackupRng.NextBytes(byte[], int, int)
+  nameWithType.vb: DisposableBouncyCastleBackupRng.NextBytes(Byte(), Integer, Integer)
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.NextBytes(System.Span{System.Byte})
+  name: NextBytes(Span<byte>)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_NextBytes_System_Span_System_Byte__
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.NextBytes(System.Span{System.Byte})
+  name.vb: NextBytes(Span(Of Byte))
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.NextBytes(System.Span<byte>)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.NextBytes(System.Span(Of Byte))
+  nameWithType: DisposableBouncyCastleBackupRng.NextBytes(Span<byte>)
+  nameWithType.vb: DisposableBouncyCastleBackupRng.NextBytes(Span(Of Byte))
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.NextBytes*
+  name: NextBytes
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_NextBytes_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.NextBytes
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.NextBytes
+  nameWithType: DisposableBouncyCastleBackupRng.NextBytes
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.RNGs
+  name: RNGs
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_RNGs
+  commentId: P:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.RNGs
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.RNGs
+  nameWithType: DisposableBouncyCastleBackupRng.RNGs
+- uid: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.RNGs*
+  name: RNGs
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleBackupRng.html#wan24_Crypto_BC_DisposableBouncyCastleBackupRng_RNGs_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleBackupRng.RNGs
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleBackupRng.RNGs
+  nameWithType: DisposableBouncyCastleBackupRng.RNGs
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor
+  name: DisposableBouncyCastleEntropyMonitor
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html
+  commentId: T:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor
+  nameWithType: DisposableBouncyCastleEntropyMonitor
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.#ctor(wan24.Crypto.BC.IBouncyCastleRng@)
+  name: DisposableBouncyCastleEntropyMonitor(in IBouncyCastleRng)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor__ctor_wan24_Crypto_BC_IBouncyCastleRng__
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.#ctor(wan24.Crypto.BC.IBouncyCastleRng@)
+  name.vb: New(IBouncyCastleRng)
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.DisposableBouncyCastleEntropyMonitor(in wan24.Crypto.BC.IBouncyCastleRng)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.New(wan24.Crypto.BC.IBouncyCastleRng)
+  nameWithType: DisposableBouncyCastleEntropyMonitor.DisposableBouncyCastleEntropyMonitor(in IBouncyCastleRng)
+  nameWithType.vb: DisposableBouncyCastleEntropyMonitor.New(IBouncyCastleRng)
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.#ctor*
+  name: DisposableBouncyCastleEntropyMonitor
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor__ctor_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.DisposableBouncyCastleEntropyMonitor
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.New
+  nameWithType: DisposableBouncyCastleEntropyMonitor.DisposableBouncyCastleEntropyMonitor
+  nameWithType.vb: DisposableBouncyCastleEntropyMonitor.New
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeed(System.ReadOnlySpan{System.Byte})
+  name: AddSeed(ReadOnlySpan<byte>)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_AddSeed_System_ReadOnlySpan_System_Byte__
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeed(System.ReadOnlySpan{System.Byte})
+  name.vb: AddSeed(ReadOnlySpan(Of Byte))
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeed(System.ReadOnlySpan<byte>)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeed(System.ReadOnlySpan(Of Byte))
+  nameWithType: DisposableBouncyCastleEntropyMonitor.AddSeed(ReadOnlySpan<byte>)
+  nameWithType.vb: DisposableBouncyCastleEntropyMonitor.AddSeed(ReadOnlySpan(Of Byte))
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeed*
+  name: AddSeed
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_AddSeed_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeed
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeed
+  nameWithType: DisposableBouncyCastleEntropyMonitor.AddSeed
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)
+  name: AddSeedAsync(ReadOnlyMemory<byte>, CancellationToken)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_AddSeedAsync_System_ReadOnlyMemory_System_Byte__System_Threading_CancellationToken_
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)
+  name.vb: AddSeedAsync(ReadOnlyMemory(Of Byte), CancellationToken)
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedAsync(System.ReadOnlyMemory<byte>, System.Threading.CancellationToken)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedAsync(System.ReadOnlyMemory(Of Byte), System.Threading.CancellationToken)
+  nameWithType: DisposableBouncyCastleEntropyMonitor.AddSeedAsync(ReadOnlyMemory<byte>, CancellationToken)
+  nameWithType.vb: DisposableBouncyCastleEntropyMonitor.AddSeedAsync(ReadOnlyMemory(Of Byte), CancellationToken)
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedAsync*
+  name: AddSeedAsync
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_AddSeedAsync_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedAsync
+  nameWithType: DisposableBouncyCastleEntropyMonitor.AddSeedAsync
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(System.Byte[])
+  name: AddSeedMaterial(byte[])
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_AddSeedMaterial_System_Byte___
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(System.Byte[])
+  name.vb: AddSeedMaterial(Byte())
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(byte[])
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(Byte())
+  nameWithType: DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(byte[])
+  nameWithType.vb: DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(Byte())
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(System.Int64)
+  name: AddSeedMaterial(long)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_AddSeedMaterial_System_Int64_
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(System.Int64)
+  name.vb: AddSeedMaterial(Long)
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(long)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(Long)
+  nameWithType: DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(long)
+  nameWithType.vb: DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(Long)
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(System.ReadOnlySpan{System.Byte})
+  name: AddSeedMaterial(ReadOnlySpan<byte>)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_AddSeedMaterial_System_ReadOnlySpan_System_Byte__
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(System.ReadOnlySpan{System.Byte})
+  name.vb: AddSeedMaterial(ReadOnlySpan(Of Byte))
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(System.ReadOnlySpan<byte>)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(System.ReadOnlySpan(Of Byte))
+  nameWithType: DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(ReadOnlySpan<byte>)
+  nameWithType.vb: DisposableBouncyCastleEntropyMonitor.AddSeedMaterial(ReadOnlySpan(Of Byte))
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedMaterial*
+  name: AddSeedMaterial
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_AddSeedMaterial_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedMaterial
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.AddSeedMaterial
+  nameWithType: DisposableBouncyCastleEntropyMonitor.AddSeedMaterial
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.Algorithms
+  name: Algorithms
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_Algorithms
+  commentId: P:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.Algorithms
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.Algorithms
+  nameWithType: DisposableBouncyCastleEntropyMonitor.Algorithms
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.Algorithms*
+  name: Algorithms
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_Algorithms_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.Algorithms
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.Algorithms
+  nameWithType: DisposableBouncyCastleEntropyMonitor.Algorithms
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.Dispose(System.Boolean)
+  name: Dispose(bool)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_Dispose_System_Boolean_
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.Dispose(System.Boolean)
+  name.vb: Dispose(Boolean)
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.Dispose(bool)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.Dispose(Boolean)
+  nameWithType: DisposableBouncyCastleEntropyMonitor.Dispose(bool)
+  nameWithType.vb: DisposableBouncyCastleEntropyMonitor.Dispose(Boolean)
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.Dispose*
+  name: Dispose
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_Dispose_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.Dispose
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.Dispose
+  nameWithType: DisposableBouncyCastleEntropyMonitor.Dispose
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.DisposeCore
+  name: DisposeCore()
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_DisposeCore
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.DisposeCore
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.DisposeCore()
+  nameWithType: DisposableBouncyCastleEntropyMonitor.DisposeCore()
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.DisposeCore*
+  name: DisposeCore
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_DisposeCore_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.DisposeCore
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.DisposeCore
+  nameWithType: DisposableBouncyCastleEntropyMonitor.DisposeCore
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.FillBytes(System.Span{System.Byte}@)
+  name: FillBytes(in Span<byte>)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_FillBytes_System_Span_System_Byte___
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.FillBytes(System.Span{System.Byte}@)
+  name.vb: FillBytes(Span(Of Byte))
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.FillBytes(in System.Span<byte>)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.FillBytes(System.Span(Of Byte))
+  nameWithType: DisposableBouncyCastleEntropyMonitor.FillBytes(in Span<byte>)
+  nameWithType.vb: DisposableBouncyCastleEntropyMonitor.FillBytes(Span(Of Byte))
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.FillBytes*
+  name: FillBytes
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_FillBytes_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.FillBytes
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.FillBytes
+  nameWithType: DisposableBouncyCastleEntropyMonitor.FillBytes
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.FillBytesAsync(System.Memory{System.Byte},System.Threading.CancellationToken)
+  name: FillBytesAsync(Memory<byte>, CancellationToken)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_FillBytesAsync_System_Memory_System_Byte__System_Threading_CancellationToken_
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.FillBytesAsync(System.Memory{System.Byte},System.Threading.CancellationToken)
+  name.vb: FillBytesAsync(Memory(Of Byte), CancellationToken)
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.FillBytesAsync(System.Memory<byte>, System.Threading.CancellationToken)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.FillBytesAsync(System.Memory(Of Byte), System.Threading.CancellationToken)
+  nameWithType: DisposableBouncyCastleEntropyMonitor.FillBytesAsync(Memory<byte>, CancellationToken)
+  nameWithType.vb: DisposableBouncyCastleEntropyMonitor.FillBytesAsync(Memory(Of Byte), CancellationToken)
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.FillBytesAsync*
+  name: FillBytesAsync
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_FillBytesAsync_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.FillBytesAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.FillBytesAsync
+  nameWithType: DisposableBouncyCastleEntropyMonitor.FillBytesAsync
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.GetBytes(System.Int32@)
+  name: GetBytes(in int)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_GetBytes_System_Int32__
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.GetBytes(System.Int32@)
+  name.vb: GetBytes(Integer)
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.GetBytes(in int)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.GetBytes(Integer)
+  nameWithType: DisposableBouncyCastleEntropyMonitor.GetBytes(in int)
+  nameWithType.vb: DisposableBouncyCastleEntropyMonitor.GetBytes(Integer)
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.GetBytes*
+  name: GetBytes
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_GetBytes_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.GetBytes
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.GetBytes
+  nameWithType: DisposableBouncyCastleEntropyMonitor.GetBytes
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.GetBytesAsync(System.Int32,System.Threading.CancellationToken)
+  name: GetBytesAsync(int, CancellationToken)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_GetBytesAsync_System_Int32_System_Threading_CancellationToken_
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.GetBytesAsync(System.Int32,System.Threading.CancellationToken)
+  name.vb: GetBytesAsync(Integer, CancellationToken)
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.GetBytesAsync(int, System.Threading.CancellationToken)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.GetBytesAsync(Integer, System.Threading.CancellationToken)
+  nameWithType: DisposableBouncyCastleEntropyMonitor.GetBytesAsync(int, CancellationToken)
+  nameWithType.vb: DisposableBouncyCastleEntropyMonitor.GetBytesAsync(Integer, CancellationToken)
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.GetBytesAsync*
+  name: GetBytesAsync
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_GetBytesAsync_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.GetBytesAsync
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.GetBytesAsync
+  nameWithType: DisposableBouncyCastleEntropyMonitor.GetBytesAsync
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.MaxRetries
+  name: MaxRetries
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_MaxRetries
+  commentId: P:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.MaxRetries
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.MaxRetries
+  nameWithType: DisposableBouncyCastleEntropyMonitor.MaxRetries
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.MaxRetries*
+  name: MaxRetries
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_MaxRetries_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.MaxRetries
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.MaxRetries
+  nameWithType: DisposableBouncyCastleEntropyMonitor.MaxRetries
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.MinRndlength
+  name: MinRndlength
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_MinRndlength
+  commentId: P:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.MinRndlength
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.MinRndlength
+  nameWithType: DisposableBouncyCastleEntropyMonitor.MinRndlength
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.MinRndlength*
+  name: MinRndlength
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_MinRndlength_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.MinRndlength
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.MinRndlength
+  nameWithType: DisposableBouncyCastleEntropyMonitor.MinRndlength
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.NextBytes(System.Byte[])
+  name: NextBytes(byte[])
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_NextBytes_System_Byte___
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.NextBytes(System.Byte[])
+  name.vb: NextBytes(Byte())
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.NextBytes(byte[])
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.NextBytes(Byte())
+  nameWithType: DisposableBouncyCastleEntropyMonitor.NextBytes(byte[])
+  nameWithType.vb: DisposableBouncyCastleEntropyMonitor.NextBytes(Byte())
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.NextBytes(System.Byte[],System.Int32,System.Int32)
+  name: NextBytes(byte[], int, int)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_NextBytes_System_Byte___System_Int32_System_Int32_
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.NextBytes(System.Byte[],System.Int32,System.Int32)
+  name.vb: NextBytes(Byte(), Integer, Integer)
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.NextBytes(byte[], int, int)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.NextBytes(Byte(), Integer, Integer)
+  nameWithType: DisposableBouncyCastleEntropyMonitor.NextBytes(byte[], int, int)
+  nameWithType.vb: DisposableBouncyCastleEntropyMonitor.NextBytes(Byte(), Integer, Integer)
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.NextBytes(System.Span{System.Byte})
+  name: NextBytes(Span<byte>)
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_NextBytes_System_Span_System_Byte__
+  commentId: M:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.NextBytes(System.Span{System.Byte})
+  name.vb: NextBytes(Span(Of Byte))
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.NextBytes(System.Span<byte>)
+  fullName.vb: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.NextBytes(System.Span(Of Byte))
+  nameWithType: DisposableBouncyCastleEntropyMonitor.NextBytes(Span<byte>)
+  nameWithType.vb: DisposableBouncyCastleEntropyMonitor.NextBytes(Span(Of Byte))
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.NextBytes*
+  name: NextBytes
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_NextBytes_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.NextBytes
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.NextBytes
+  nameWithType: DisposableBouncyCastleEntropyMonitor.NextBytes
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.RNG
+  name: RNG
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_RNG
+  commentId: P:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.RNG
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.RNG
+  nameWithType: DisposableBouncyCastleEntropyMonitor.RNG
+- uid: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.RNG*
+  name: RNG
+  href: api/wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.html#wan24_Crypto_BC_DisposableBouncyCastleEntropyMonitor_RNG_
+  commentId: Overload:wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.RNG
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.DisposableBouncyCastleEntropyMonitor.RNG
+  nameWithType: DisposableBouncyCastleEntropyMonitor.RNG
 - uid: wan24.Crypto.BC.DisposableRngWrapper
   name: DisposableRngWrapper
   href: api/wan24.Crypto.BC.DisposableRngWrapper.html
