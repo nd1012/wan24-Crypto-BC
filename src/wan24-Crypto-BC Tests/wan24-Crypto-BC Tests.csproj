@@ -21,6 +21,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
     <PackageReference Include="wan24-Crypto-Shared-Tests" Version="2.4.0" />
   </ItemGroup>
 
