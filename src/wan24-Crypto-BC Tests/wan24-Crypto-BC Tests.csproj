@@ -9,6 +9,7 @@
     <IsPackable>false</IsPackable>
 
     <Configurations>Debug;Release;Trunk</Configurations>
+    <EnablePreviewFeatures Condition="'$(Configuration)' != 'Release'">True</EnablePreviewFeatures>
   </PropertyGroup>
 
   <ItemGroup>
