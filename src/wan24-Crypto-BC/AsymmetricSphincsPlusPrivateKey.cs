@@ -116,8 +116,8 @@ namespace wan24.Crypto.BC
             base.Dispose(disposing);
             if (Keys is null) return;
             //TODO All parameter fields are private :(
-            typeof(SphincsPlusPrivateKeyParameters).GetFieldCached("m_sk", BindingFlags.Instance | BindingFlags.NonPublic)!.GetValue(Keys.Private)!.ClearPrivateByteArrayFields();
-            typeof(SphincsPlusPrivateKeyParameters).GetFieldCached("m_pk", BindingFlags.Instance | BindingFlags.NonPublic)!.GetValue(Keys.Private)!.ClearPrivateByteArrayFields();
+            typeof(SphincsPlusPrivateKeyParameters).GetFieldCached("m_sk", BindingFlags.Instance | BindingFlags.NonPublic)!.Getter!(Keys.Private)!.ClearPrivateByteArrayFields();
+            typeof(SphincsPlusPrivateKeyParameters).GetFieldCached("m_pk", BindingFlags.Instance | BindingFlags.NonPublic)!.Getter!(Keys.Private)!.ClearPrivateByteArrayFields();
         }
 
         /// <inheritdoc/>
@@ -126,8 +126,8 @@ namespace wan24.Crypto.BC
             await base.DisposeCore().DynamicContext();
             if (Keys is null) return;
             //TODO All parameter fields are private :(
-            typeof(SphincsPlusPrivateKeyParameters).GetFieldCached("m_sk", BindingFlags.Instance | BindingFlags.NonPublic)!.GetValue(Keys.Private)!.ClearPrivateByteArrayFields();
-            typeof(SphincsPlusPrivateKeyParameters).GetFieldCached("m_pk", BindingFlags.Instance | BindingFlags.NonPublic)!.GetValue(Keys.Private)!.ClearPrivateByteArrayFields();
+            typeof(SphincsPlusPrivateKeyParameters).GetFieldCached("m_sk", BindingFlags.Instance | BindingFlags.NonPublic)!.Getter!(Keys.Private)!.ClearPrivateByteArrayFields();
+            typeof(SphincsPlusPrivateKeyParameters).GetFieldCached("m_pk", BindingFlags.Instance | BindingFlags.NonPublic)!.Getter!(Keys.Private)!.ClearPrivateByteArrayFields();
         }
 
         /// <summary>

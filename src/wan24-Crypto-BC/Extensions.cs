@@ -35,13 +35,13 @@ namespace wan24.Crypto.BC
         /// <returns>Internal state</returns>
         public static byte[] GetState(this VmpcRandomGenerator rng)
         {
-            byte[] p = (byte[])VmpcRandomGeneratorType.GetFieldCached(P_FIELD, BindingFlags.NonPublic | BindingFlags.Instance)!.GetValue(rng)!,
+            byte[] p = (byte[])VmpcRandomGeneratorType.GetFieldCached(P_FIELD, BindingFlags.NonPublic | BindingFlags.Instance)!.Getter!(rng)!,
                 res = new byte[p.Length + 2];
             lock (p)
             {
                 p.AsSpan().CopyTo(res);
-                p[^2] = (byte)VmpcRandomGeneratorType.GetFieldCached(S_FIELD, BindingFlags.NonPublic | BindingFlags.Instance)!.GetValue(rng)!;
-                p[^1] = (byte)VmpcRandomGeneratorType.GetFieldCached(N_FIELD, BindingFlags.NonPublic | BindingFlags.Instance)!.GetValue(rng)!;
+                p[^2] = (byte)VmpcRandomGeneratorType.GetFieldCached(S_FIELD, BindingFlags.NonPublic | BindingFlags.Instance)!.Getter!(rng)!;
+                p[^1] = (byte)VmpcRandomGeneratorType.GetFieldCached(N_FIELD, BindingFlags.NonPublic | BindingFlags.Instance)!.Getter!(rng)!;
             }
             return res;
         }
@@ -53,13 +53,13 @@ namespace wan24.Crypto.BC
         /// <param name="state">Stored internal state</param>
         public static void RestoreState(this VmpcRandomGenerator rng, ReadOnlySpan<byte> state)
         {
-            byte[] p = (byte[])VmpcRandomGeneratorType.GetFieldCached(P_FIELD, BindingFlags.NonPublic | BindingFlags.Instance)!.GetValue(rng)!;
+            byte[] p = (byte[])VmpcRandomGeneratorType.GetFieldCached(P_FIELD, BindingFlags.NonPublic | BindingFlags.Instance)!.Getter!(rng)!;
             if (state.Length < p.Length + 2) throw new ArgumentOutOfRangeException(nameof(state));
             lock (p)
             {
                 state[..p.Length].CopyTo(p);
-                VmpcRandomGeneratorType.GetFieldCached(S_FIELD, BindingFlags.NonPublic | BindingFlags.Instance)!.SetValue(rng, state[p.Length]);
-                VmpcRandomGeneratorType.GetFieldCached(N_FIELD, BindingFlags.NonPublic | BindingFlags.Instance)!.SetValue(rng, state[p.Length + 1]);
+                VmpcRandomGeneratorType.GetFieldCached(S_FIELD, BindingFlags.NonPublic | BindingFlags.Instance)!.Setter!(rng, state[p.Length]);
+                VmpcRandomGeneratorType.GetFieldCached(N_FIELD, BindingFlags.NonPublic | BindingFlags.Instance)!.Setter!(rng, state[p.Length + 1]);
             }
         }
 
