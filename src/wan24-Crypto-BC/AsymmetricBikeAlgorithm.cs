@@ -31,6 +31,10 @@ namespace wan24.Crypto.BC
         /// </summary>
         public const int DEFAULT_KEY_SIZE = 256;
         /// <summary>
+        /// Maximum key usage count
+        /// </summary>
+        public const long MAX_KEY_USAGE_COUNT = long.MaxValue;
+        /// <summary>
         /// Algorithm usages
         /// </summary>
         public const AsymmetricAlgorithmUsages USAGES = AsymmetricAlgorithmUsages.KeyExchange;
@@ -66,6 +70,9 @@ namespace wan24.Crypto.BC
 
         /// <inheritdoc/>
         public override bool IsPublicKeyStandardFormat => true;
+
+        /// <inheritdoc/>
+        public override long MaxKeyUsageCount => MAX_KEY_USAGE_COUNT;
 
         /// <inheritdoc/>
         protected override BikeParameters GetEngineParameters(CryptoOptions options) => AsymmetricBikeHelper.GetParameters(options.AsymmetricKeyBits);
