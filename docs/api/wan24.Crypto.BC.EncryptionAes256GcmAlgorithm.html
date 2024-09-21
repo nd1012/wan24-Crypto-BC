@@ -118,6 +118,7 @@
     <div><span class="xref">ICryptoAlgorithm</span></div>
     <div><span class="xref">IStatusProvider</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">CryptoAlgorithmBase</span>&gt;</div>
+    <div><span class="xref">ILimitKeyUsageCount</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">EncryptionAlgorithmBase</span>&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleCipherAlgorithmBase-1.html">BouncyCastleCipherAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html">EncryptionAes256GcmAlgorithm</a>&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAeadCipherAlgorithmBase-1.html">BouncyCastleAeadCipherAlgorithmBase</a>&lt;<a class="xref" href="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html">EncryptionAes256GcmAlgorithm</a>&gt;&gt;</div>
@@ -250,7 +251,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record EncryptionAes256GcmAlgorithm : BouncyCastleAeadCipherAlgorithmBase&lt;EncryptionAes256GcmAlgorithm&gt;, ICryptoAlgorithm, IStatusProvider, IEquatable&lt;CryptoAlgorithmBase&gt;, IEquatable&lt;EncryptionAlgorithmBase&gt;, IEquatable&lt;BouncyCastleCipherAlgorithmBase&lt;EncryptionAes256GcmAlgorithm&gt;&gt;, IEquatable&lt;BouncyCastleAeadCipherAlgorithmBase&lt;EncryptionAes256GcmAlgorithm&gt;&gt;, IEquatable&lt;EncryptionAes256GcmAlgorithm&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record EncryptionAes256GcmAlgorithm : BouncyCastleAeadCipherAlgorithmBase&lt;EncryptionAes256GcmAlgorithm&gt;, ICryptoAlgorithm, IStatusProvider, IEquatable&lt;CryptoAlgorithmBase&gt;, ILimitKeyUsageCount, IEquatable&lt;EncryptionAlgorithmBase&gt;, IEquatable&lt;BouncyCastleCipherAlgorithmBase&lt;EncryptionAes256GcmAlgorithm&gt;&gt;, IEquatable&lt;BouncyCastleAeadCipherAlgorithmBase&lt;EncryptionAes256GcmAlgorithm&gt;&gt;, IEquatable&lt;EncryptionAes256GcmAlgorithm&gt;</code></pre>
   </div>
   <h3 id="fields">Fields
 </h3>
@@ -349,7 +350,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_DISPLAY_NAME.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.DISPLAY_NAME%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L35">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L43">View Source</a>
   </span>
   <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_DISPLAY_NAME" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.DISPLAY_NAME">DISPLAY_NAME</h4>
   <div class="markdown level1 summary"><p>Display name</p>
@@ -436,10 +437,70 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_PROFILE_AES256GCM_RAW.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.PROFILE_AES256GCM_RAW%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MAX_CIPHER_DATA_LENGTH.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MAX_CIPHER_DATA_LENGTH%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L35">View Source</a>
+  </span>
+  <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MAX_CIPHER_DATA_LENGTH" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MAX_CIPHER_DATA_LENGTH">MAX_CIPHER_DATA_LENGTH</h4>
+  <div class="markdown level1 summary"><p>Maximum cipher data length in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MAX_CIPHER_DATA_LENGTH = 274877906944</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MAX_KEY_USAGE_COUNT.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MAX_KEY_USAGE_COUNT%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L39">View Source</a>
+  </span>
+  <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MAX_KEY_USAGE_COUNT" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MAX_KEY_USAGE_COUNT">MAX_KEY_USAGE_COUNT</h4>
+  <div class="markdown level1 summary"><p>Maximum key usage count</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const long MAX_KEY_USAGE_COUNT = 10000000</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_PROFILE_AES256GCM_RAW.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.PROFILE_AES256GCM_RAW%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L47">View Source</a>
   </span>
   <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_PROFILE_AES256GCM_RAW" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.PROFILE_AES256GCM_RAW">PROFILE_AES256GCM_RAW</h4>
   <div class="markdown level1 summary"><p>AES-256-GCM raw (without header) and uncompressed profile key</p>
@@ -471,7 +532,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_BlockSize.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.BlockSize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L53">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L61">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_BlockSize_" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.BlockSize*"></a>
   <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_BlockSize" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.BlockSize">BlockSize</h4>
@@ -504,7 +565,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_DisplayName.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.DisplayName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L62">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L70">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_DisplayName_" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.DisplayName*"></a>
   <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_DisplayName" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.DisplayName">DisplayName</h4>
@@ -537,7 +598,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IsPostQuantum.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsPostQuantum%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L59">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L67">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IsPostQuantum_" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsPostQuantum*"></a>
   <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IsPostQuantum" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsPostQuantum">IsPostQuantum</h4>
@@ -570,7 +631,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IvSize.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IvSize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L50">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L58">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IvSize_" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IvSize*"></a>
   <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IvSize" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IvSize">IvSize</h4>
@@ -603,7 +664,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_KeySize.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.KeySize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L47">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L55">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_KeySize_" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.KeySize*"></a>
   <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_KeySize" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.KeySize">KeySize</h4>
@@ -633,10 +694,76 @@
   <div><span class="xref">wan24.Crypto.EncryptionAlgorithmBase.KeySize</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MaxCipherDataLength.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxCipherDataLength%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L73">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MaxCipherDataLength_" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxCipherDataLength*"></a>
+  <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MaxCipherDataLength" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxCipherDataLength">MaxCipherDataLength</h4>
+  <div class="markdown level1 summary"><p>Maximum cipher data length in bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override long MaxCipherDataLength { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.EncryptionAlgorithmBase.MaxCipherDataLength</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MaxKeyUsageCount.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxKeyUsageCount%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L76">View Source</a>
+  </span>
+  <a id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MaxKeyUsageCount_" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxKeyUsageCount*"></a>
+  <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MaxKeyUsageCount" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxKeyUsageCount">MaxKeyUsageCount</h4>
+  <div class="markdown level1 summary"><p>Maximum key usage count (before a fresh key should be used for encrypting more messages)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override long MaxKeyUsageCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">wan24.Crypto.EncryptionAlgorithmBase.MaxKeyUsageCount</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_RequireMacAuthentication.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.RequireMacAuthentication%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L56">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L64">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_RequireMacAuthentication_" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.RequireMacAuthentication*"></a>
   <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_RequireMacAuthentication" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.RequireMacAuthentication">RequireMacAuthentication</h4>
@@ -671,7 +798,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_CreateAes_wan24_Crypto_CryptoOptions_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateAes(wan24.Crypto.CryptoOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L78">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L92">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_CreateAes_" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateAes*"></a>
   <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_CreateAes_wan24_Crypto_CryptoOptions_" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateAes(wan24.Crypto.CryptoOptions)">CreateAes(CryptoOptions)</h4>
@@ -721,7 +848,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_CreateCipher_System_Boolean_wan24_Crypto_CryptoOptions_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateCipher(System.Boolean%2Cwan24.Crypto.CryptoOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L71">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L85">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_CreateCipher_" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateCipher*"></a>
   <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_CreateCipher_System_Boolean_wan24_Crypto_CryptoOptions_" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.CreateCipher(System.Boolean,wan24.Crypto.CryptoOptions)">CreateCipher(bool, CryptoOptions)</h4>
@@ -779,7 +906,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_EnsureValidKeyLength_System_Byte___.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.EnsureValidKeyLength(System.Byte%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L68">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L82">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_EnsureValidKeyLength_" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.EnsureValidKeyLength*"></a>
   <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_EnsureValidKeyLength_System_Byte___" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.EnsureValidKeyLength(System.Byte[])">EnsureValidKeyLength(byte[])</h4>
@@ -831,7 +958,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IsKeyLengthValid_System_Int32_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsKeyLengthValid(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L65">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/EncryptionAes256GcmAlgorithm.cs/#L79">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IsKeyLengthValid_" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsKeyLengthValid*"></a>
   <h4 id="wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_IsKeyLengthValid_System_Int32_" data-uid="wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.IsKeyLengthValid(System.Int32)">IsKeyLengthValid(int)</h4>
@@ -887,6 +1014,9 @@
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.ILimitKeyUsageCount</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>

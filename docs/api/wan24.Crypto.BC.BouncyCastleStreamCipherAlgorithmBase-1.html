@@ -118,6 +118,7 @@
     <div><span class="xref">ICryptoAlgorithm</span></div>
     <div><span class="xref">IStatusProvider</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">CryptoAlgorithmBase</span>&gt;</div>
+    <div><span class="xref">ILimitKeyUsageCount</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">EncryptionAlgorithmBase</span>&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleStreamCipherAlgorithmBase-1.html">BouncyCastleStreamCipherAlgorithmBase</a>&lt;T&gt;&gt;</div>
   </div>
@@ -259,6 +260,12 @@
       <span class="xref">EncryptionAlgorithmBase.RequireMacAuthentication</span>
     </div>
     <div>
+      <span class="xref">EncryptionAlgorithmBase.MaxCipherDataLength</span>
+    </div>
+    <div>
+      <span class="xref">EncryptionAlgorithmBase.MaxKeyUsageCount</span>
+    </div>
+    <div>
       <span class="xref">EncryptionAlgorithmBase.DefaultOptions</span>
     </div>
     <div>
@@ -305,7 +312,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_BouncyCastleStreamCipherAlgorithmBase_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract record BouncyCastleStreamCipherAlgorithmBase&lt;T&gt; : EncryptionAlgorithmBase, ICryptoAlgorithm, IStatusProvider, IEquatable&lt;CryptoAlgorithmBase&gt;, IEquatable&lt;EncryptionAlgorithmBase&gt;, IEquatable&lt;BouncyCastleStreamCipherAlgorithmBase&lt;T&gt;&gt; where T : BouncyCastleStreamCipherAlgorithmBase&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract record BouncyCastleStreamCipherAlgorithmBase&lt;T&gt; : EncryptionAlgorithmBase, ICryptoAlgorithm, IStatusProvider, IEquatable&lt;CryptoAlgorithmBase&gt;, ILimitKeyUsageCount, IEquatable&lt;EncryptionAlgorithmBase&gt;, IEquatable&lt;BouncyCastleStreamCipherAlgorithmBase&lt;T&gt;&gt; where T : BouncyCastleStreamCipherAlgorithmBase&lt;T&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -781,6 +788,9 @@
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.ILimitKeyUsageCount</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>

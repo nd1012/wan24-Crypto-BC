@@ -119,6 +119,7 @@
     <div><span class="xref">IAsymmetricAlgorithm</span></div>
     <div><span class="xref">ICryptoAlgorithm</span></div>
     <div><span class="xref">IStatusProvider</span></div>
+    <div><span class="xref">ILimitKeyUsageCount</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span class="xref">AsymmetricAlgorithmBase</span>&lt;tPublic, tPrivate&gt;&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="wan24.Crypto.BC.BouncyCastleAsymmetricAlgorithmBase-7.html">BouncyCastleAsymmetricAlgorithmBase</a>&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt;&gt;</div>
   </div>
@@ -215,6 +216,9 @@
       <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.AllowedKeySizes</span>
     </div>
     <div>
+      <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.MaxKeyUsageCount</span>
+    </div>
+    <div>
       <span class="xref">AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;.DefaultKeySize</span>
     </div>
     <div>
@@ -288,7 +292,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_BouncyCastleAsymmetricAlgorithmBase_7_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract record BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt; : AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;, IEquatable&lt;CryptoAlgorithmBase&gt;, IAsymmetricAlgorithm, ICryptoAlgorithm, IStatusProvider, IEquatable&lt;AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt;&gt; where tPublic : BouncyCastleAsymmetricPublicKeyBase&lt;tFinal, tPublicKey, tPublic&gt;, new() where tPrivate : BouncyCastleAsymmetricPrivateKeyBase&lt;tPublic, tFinal, tPublicKey, tPrivateKey, tPrivate&gt;, new() where tKeyGenParam : KeyGenerationParameters where tPublicKey : AsymmetricKeyParameter, ICipherParameters where tPrivateKey : AsymmetricKeyParameter where tFinal : BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract record BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt; : AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;, IEquatable&lt;CryptoAlgorithmBase&gt;, IAsymmetricAlgorithm, ICryptoAlgorithm, IStatusProvider, ILimitKeyUsageCount, IEquatable&lt;AsymmetricAlgorithmBase&lt;tPublic, tPrivate&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt;&gt; where tPublic : BouncyCastleAsymmetricPublicKeyBase&lt;tFinal, tPublicKey, tPublic&gt;, new() where tPrivate : BouncyCastleAsymmetricPrivateKeyBase&lt;tPublic, tFinal, tPublicKey, tPrivateKey, tPrivate&gt;, new() where tKeyGenParam : KeyGenerationParameters where tPublicKey : AsymmetricKeyParameter, ICipherParameters where tPrivateKey : AsymmetricKeyParameter where tFinal : BouncyCastleAsymmetricAlgorithmBase&lt;tPublic, tPrivate, tKeyGenParam, tParam, tPublicKey, tPrivateKey, tFinal&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -767,6 +771,9 @@
   </div>
   <div>
       <span class="xref">wan24.Core.IStatusProvider</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Crypto.ILimitKeyUsageCount</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>

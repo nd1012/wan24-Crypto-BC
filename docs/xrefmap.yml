@@ -89,6 +89,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricBcEcDiffieHellmanAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDiffieHellmanAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricBcEcDiffieHellmanAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDiffieHellmanAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricBcEcDiffieHellmanAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDiffieHellmanAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricBcEcDiffieHellmanAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricBcEcDiffieHellmanAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDiffieHellmanAlgorithm_USAGES
@@ -422,6 +441,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricBcEcDsaAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDsaAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricBcEcDsaAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDsaAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricBcEcDsaAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDsaAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricBcEcDsaAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricBcEcDsaAlgorithm.html#wan24_Crypto_BC_AsymmetricBcEcDsaAlgorithm_USAGES
@@ -752,6 +790,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricBikeAlgorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricBikeAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricBikeAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricBikeAlgorithm.html#wan24_Crypto_BC_AsymmetricBikeAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricBikeAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricBikeAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricBikeAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricBikeAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricBikeAlgorithm.html#wan24_Crypto_BC_AsymmetricBikeAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricBikeAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricBikeAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricBikeAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricBikeAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricBikeAlgorithm.html#wan24_Crypto_BC_AsymmetricBikeAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricBikeAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricBikeAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricBikeAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricBikeAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricBikeAlgorithm.html#wan24_Crypto_BC_AsymmetricBikeAlgorithm_USAGES
@@ -1112,6 +1169,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricDilithiumAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html#wan24_Crypto_BC_AsymmetricDilithiumAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricDilithiumAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html#wan24_Crypto_BC_AsymmetricDilithiumAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricDilithiumAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html#wan24_Crypto_BC_AsymmetricDilithiumAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricDilithiumAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricDilithiumAlgorithm.html#wan24_Crypto_BC_AsymmetricDilithiumAlgorithm_USAGES
@@ -1445,6 +1521,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricEd25519Algorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricEd25519Algorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricEd25519Algorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricEd25519Algorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricEd25519Algorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricEd25519Algorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricEd25519Algorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricEd25519Algorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricEd25519Algorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricEd25519Algorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricEd25519Algorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricEd25519Algorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricEd25519Algorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricEd25519Algorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricEd25519Algorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricEd25519Algorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricEd25519Algorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricEd25519Algorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricEd25519Algorithm_USAGES
@@ -1756,6 +1851,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricEd448Algorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricEd448Algorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricEd448Algorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricEd448Algorithm.html#wan24_Crypto_BC_AsymmetricEd448Algorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricEd448Algorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricEd448Algorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricEd448Algorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricEd448Algorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricEd448Algorithm.html#wan24_Crypto_BC_AsymmetricEd448Algorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricEd448Algorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricEd448Algorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricEd448Algorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricEd448Algorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricEd448Algorithm.html#wan24_Crypto_BC_AsymmetricEd448Algorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricEd448Algorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricEd448Algorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricEd448Algorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricEd448Algorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricEd448Algorithm.html#wan24_Crypto_BC_AsymmetricEd448Algorithm_USAGES
@@ -2064,6 +2178,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricFalconAlgorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricFalconAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricFalconAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html#wan24_Crypto_BC_AsymmetricFalconAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricFalconAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricFalconAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricFalconAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricFalconAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html#wan24_Crypto_BC_AsymmetricFalconAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricFalconAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricFalconAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricFalconAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricFalconAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html#wan24_Crypto_BC_AsymmetricFalconAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricFalconAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricFalconAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricFalconAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricFalconAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricFalconAlgorithm.html#wan24_Crypto_BC_AsymmetricFalconAlgorithm_USAGES
@@ -2381,6 +2514,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricFrodoKemAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html#wan24_Crypto_BC_AsymmetricFrodoKemAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricFrodoKemAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html#wan24_Crypto_BC_AsymmetricFrodoKemAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricFrodoKemAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html#wan24_Crypto_BC_AsymmetricFrodoKemAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricFrodoKemAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricFrodoKemAlgorithm.html#wan24_Crypto_BC_AsymmetricFrodoKemAlgorithm_USAGES
@@ -2741,6 +2893,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricHqcAlgorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricHqcAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricHqcAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricHqcAlgorithm.html#wan24_Crypto_BC_AsymmetricHqcAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricHqcAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricHqcAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricHqcAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricHqcAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricHqcAlgorithm.html#wan24_Crypto_BC_AsymmetricHqcAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricHqcAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricHqcAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricHqcAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricHqcAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricHqcAlgorithm.html#wan24_Crypto_BC_AsymmetricHqcAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricHqcAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricHqcAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricHqcAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricHqcAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricHqcAlgorithm.html#wan24_Crypto_BC_AsymmetricHqcAlgorithm_USAGES
@@ -3101,6 +3272,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricKyberAlgorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricKyberAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricKyberAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html#wan24_Crypto_BC_AsymmetricKyberAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricKyberAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricKyberAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricKyberAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricKyberAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html#wan24_Crypto_BC_AsymmetricKyberAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricKyberAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricKyberAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricKyberAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricKyberAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html#wan24_Crypto_BC_AsymmetricKyberAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricKyberAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricKyberAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricKyberAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricKyberAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricKyberAlgorithm.html#wan24_Crypto_BC_AsymmetricKyberAlgorithm_USAGES
@@ -3461,6 +3651,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricNtruEncryptAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html#wan24_Crypto_BC_AsymmetricNtruEncryptAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricNtruEncryptAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html#wan24_Crypto_BC_AsymmetricNtruEncryptAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricNtruEncryptAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html#wan24_Crypto_BC_AsymmetricNtruEncryptAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricNtruEncryptAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricNtruEncryptAlgorithm.html#wan24_Crypto_BC_AsymmetricNtruEncryptAlgorithm_USAGES
@@ -3847,6 +4056,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricPicnicAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html#wan24_Crypto_BC_AsymmetricPicnicAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricPicnicAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricPicnicAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html#wan24_Crypto_BC_AsymmetricPicnicAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricPicnicAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricPicnicAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html#wan24_Crypto_BC_AsymmetricPicnicAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricPicnicAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricPicnicAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricPicnicAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricPicnicAlgorithm.html#wan24_Crypto_BC_AsymmetricPicnicAlgorithm_USAGES
@@ -4210,6 +4438,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricSNtruPrimeAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.html#wan24_Crypto_BC_AsymmetricSNtruPrimeAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricSNtruPrimeAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.html#wan24_Crypto_BC_AsymmetricSNtruPrimeAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricSNtruPrimeAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.html#wan24_Crypto_BC_AsymmetricSNtruPrimeAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricSNtruPrimeAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricSNtruPrimeAlgorithm.html#wan24_Crypto_BC_AsymmetricSNtruPrimeAlgorithm_USAGES
@@ -4596,6 +4843,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricSphincsPlusAlgorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html#wan24_Crypto_BC_AsymmetricSphincsPlusAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricSphincsPlusAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html#wan24_Crypto_BC_AsymmetricSphincsPlusAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricSphincsPlusAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html#wan24_Crypto_BC_AsymmetricSphincsPlusAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricSphincsPlusAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricSphincsPlusAlgorithm.html#wan24_Crypto_BC_AsymmetricSphincsPlusAlgorithm_USAGES
@@ -4981,6 +5247,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricX25519Algorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricX25519Algorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricX25519Algorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricX25519Algorithm.html#wan24_Crypto_BC_AsymmetricX25519Algorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricX25519Algorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricX25519Algorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricX25519Algorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricX25519Algorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricX25519Algorithm.html#wan24_Crypto_BC_AsymmetricX25519Algorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricX25519Algorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricX25519Algorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricX25519Algorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricX25519Algorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricX25519Algorithm.html#wan24_Crypto_BC_AsymmetricX25519Algorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricX25519Algorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricX25519Algorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricX25519Algorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricX25519Algorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricX25519Algorithm.html#wan24_Crypto_BC_AsymmetricX25519Algorithm_USAGES
@@ -5317,6 +5602,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricX448Algorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricX448Algorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricX448Algorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricX448Algorithm.html#wan24_Crypto_BC_AsymmetricX448Algorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricX448Algorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricX448Algorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricX448Algorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricX448Algorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricX448Algorithm.html#wan24_Crypto_BC_AsymmetricX448Algorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricX448Algorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricX448Algorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricX448Algorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricX448Algorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricX448Algorithm.html#wan24_Crypto_BC_AsymmetricX448Algorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricX448Algorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricX448Algorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricX448Algorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricX448Algorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricX448Algorithm.html#wan24_Crypto_BC_AsymmetricX448Algorithm_USAGES
@@ -5666,6 +5970,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricXEd25519Algorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricXEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricXEd25519Algorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricXEd25519Algorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricXEd25519Algorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricXEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricXEd25519Algorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricXEd25519Algorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricXEd25519Algorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricXEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricXEd25519Algorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricXEd25519Algorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricXEd25519Algorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricXEd25519Algorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricXEd25519Algorithm.html#wan24_Crypto_BC_AsymmetricXEd25519Algorithm_USAGES
@@ -6135,6 +6458,25 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.AsymmetricXEd448Algorithm.IsPublicKeyStandardFormat
   nameWithType: AsymmetricXEd448Algorithm.IsPublicKeyStandardFormat
+- uid: wan24.Crypto.BC.AsymmetricXEd448Algorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.AsymmetricXEd448Algorithm.html#wan24_Crypto_BC_AsymmetricXEd448Algorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.AsymmetricXEd448Algorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.AsymmetricXEd448Algorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: AsymmetricXEd448Algorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.AsymmetricXEd448Algorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricXEd448Algorithm.html#wan24_Crypto_BC_AsymmetricXEd448Algorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.AsymmetricXEd448Algorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.AsymmetricXEd448Algorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricXEd448Algorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.AsymmetricXEd448Algorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.AsymmetricXEd448Algorithm.html#wan24_Crypto_BC_AsymmetricXEd448Algorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.AsymmetricXEd448Algorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.AsymmetricXEd448Algorithm.MaxKeyUsageCount
+  nameWithType: AsymmetricXEd448Algorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.AsymmetricXEd448Algorithm.USAGES
   name: USAGES
   href: api/wan24.Crypto.BC.AsymmetricXEd448Algorithm.html#wan24_Crypto_BC_AsymmetricXEd448Algorithm_USAGES
@@ -11768,6 +12110,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.KeySize
   nameWithType: EncryptionAes256GcmAlgorithm.KeySize
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MAX_CIPHER_DATA_LENGTH
+  name: MAX_CIPHER_DATA_LENGTH
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MAX_CIPHER_DATA_LENGTH
+  commentId: F:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MAX_CIPHER_DATA_LENGTH
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MAX_CIPHER_DATA_LENGTH
+  nameWithType: EncryptionAes256GcmAlgorithm.MAX_CIPHER_DATA_LENGTH
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: EncryptionAes256GcmAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxCipherDataLength
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MaxCipherDataLength
+  commentId: P:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxCipherDataLength
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxCipherDataLength
+  nameWithType: EncryptionAes256GcmAlgorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxCipherDataLength*
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MaxCipherDataLength_
+  commentId: Overload:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxCipherDataLength
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxCipherDataLength
+  nameWithType: EncryptionAes256GcmAlgorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxKeyUsageCount
+  nameWithType: EncryptionAes256GcmAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.MaxKeyUsageCount
+  nameWithType: EncryptionAes256GcmAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.PROFILE_AES256GCM_RAW
   name: PROFILE_AES256GCM_RAW
   href: api/wan24.Crypto.BC.EncryptionAes256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionAes256GcmAlgorithm_PROFILE_AES256GCM_RAW
@@ -11955,6 +12335,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.KeySize
   nameWithType: EncryptionBcAes256CbcAlgorithm.KeySize
+- uid: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MAX_CIPHER_DATA_LENGTH
+  name: MAX_CIPHER_DATA_LENGTH
+  href: api/wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_MAX_CIPHER_DATA_LENGTH
+  commentId: F:wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MAX_CIPHER_DATA_LENGTH
+  fullName: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MAX_CIPHER_DATA_LENGTH
+  nameWithType: EncryptionBcAes256CbcAlgorithm.MAX_CIPHER_DATA_LENGTH
+- uid: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: EncryptionBcAes256CbcAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MaxCipherDataLength
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_MaxCipherDataLength
+  commentId: P:wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MaxCipherDataLength
+  fullName: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MaxCipherDataLength
+  nameWithType: EncryptionBcAes256CbcAlgorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MaxCipherDataLength*
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_MaxCipherDataLength_
+  commentId: Overload:wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MaxCipherDataLength
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MaxCipherDataLength
+  nameWithType: EncryptionBcAes256CbcAlgorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MaxKeyUsageCount
+  nameWithType: EncryptionBcAes256CbcAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.MaxKeyUsageCount
+  nameWithType: EncryptionBcAes256CbcAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.RequireMacAuthentication
   name: RequireMacAuthentication
   href: api/wan24.Crypto.BC.EncryptionBcAes256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionBcAes256CbcAlgorithm_RequireMacAuthentication
@@ -12136,6 +12554,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.KeySize
   nameWithType: EncryptionChaCha20Algorithm.KeySize
+- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.MAX_CIPHER_DATA_LENGTH
+  name: MAX_CIPHER_DATA_LENGTH
+  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_MAX_CIPHER_DATA_LENGTH
+  commentId: F:wan24.Crypto.BC.EncryptionChaCha20Algorithm.MAX_CIPHER_DATA_LENGTH
+  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.MAX_CIPHER_DATA_LENGTH
+  nameWithType: EncryptionChaCha20Algorithm.MAX_CIPHER_DATA_LENGTH
+- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.EncryptionChaCha20Algorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: EncryptionChaCha20Algorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.MaxCipherDataLength
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_MaxCipherDataLength
+  commentId: P:wan24.Crypto.BC.EncryptionChaCha20Algorithm.MaxCipherDataLength
+  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.MaxCipherDataLength
+  nameWithType: EncryptionChaCha20Algorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.MaxCipherDataLength*
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_MaxCipherDataLength_
+  commentId: Overload:wan24.Crypto.BC.EncryptionChaCha20Algorithm.MaxCipherDataLength
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.MaxCipherDataLength
+  nameWithType: EncryptionChaCha20Algorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.EncryptionChaCha20Algorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.MaxKeyUsageCount
+  nameWithType: EncryptionChaCha20Algorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.EncryptionChaCha20Algorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionChaCha20Algorithm.MaxKeyUsageCount
+  nameWithType: EncryptionChaCha20Algorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.EncryptionChaCha20Algorithm.PROFILE_CHACHA20_RAW
   name: PROFILE_CHACHA20_RAW
   href: api/wan24.Crypto.BC.EncryptionChaCha20Algorithm.html#wan24_Crypto_BC_EncryptionChaCha20Algorithm_PROFILE_CHACHA20_RAW
@@ -12339,6 +12795,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.KeySize
   nameWithType: EncryptionSerpent256CbcAlgorithm.KeySize
+- uid: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MAX_CIPHER_DATA_LENGTH
+  name: MAX_CIPHER_DATA_LENGTH
+  href: api/wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256CbcAlgorithm_MAX_CIPHER_DATA_LENGTH
+  commentId: F:wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MAX_CIPHER_DATA_LENGTH
+  fullName: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MAX_CIPHER_DATA_LENGTH
+  nameWithType: EncryptionSerpent256CbcAlgorithm.MAX_CIPHER_DATA_LENGTH
+- uid: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256CbcAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: EncryptionSerpent256CbcAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MaxCipherDataLength
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256CbcAlgorithm_MaxCipherDataLength
+  commentId: P:wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MaxCipherDataLength
+  fullName: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MaxCipherDataLength
+  nameWithType: EncryptionSerpent256CbcAlgorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MaxCipherDataLength*
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256CbcAlgorithm_MaxCipherDataLength_
+  commentId: Overload:wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MaxCipherDataLength
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MaxCipherDataLength
+  nameWithType: EncryptionSerpent256CbcAlgorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256CbcAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MaxKeyUsageCount
+  nameWithType: EncryptionSerpent256CbcAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256CbcAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.MaxKeyUsageCount
+  nameWithType: EncryptionSerpent256CbcAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.PROFILE_SERPENT256CBC_RAW
   name: PROFILE_SERPENT256CBC_RAW
   href: api/wan24.Crypto.BC.EncryptionSerpent256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256CbcAlgorithm_PROFILE_SERPENT256CBC_RAW
@@ -12526,6 +13020,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.KeySize
   nameWithType: EncryptionSerpent256GcmAlgorithm.KeySize
+- uid: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MAX_CIPHER_DATA_LENGTH
+  name: MAX_CIPHER_DATA_LENGTH
+  href: api/wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256GcmAlgorithm_MAX_CIPHER_DATA_LENGTH
+  commentId: F:wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MAX_CIPHER_DATA_LENGTH
+  fullName: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MAX_CIPHER_DATA_LENGTH
+  nameWithType: EncryptionSerpent256GcmAlgorithm.MAX_CIPHER_DATA_LENGTH
+- uid: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256GcmAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: EncryptionSerpent256GcmAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MaxCipherDataLength
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256GcmAlgorithm_MaxCipherDataLength
+  commentId: P:wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MaxCipherDataLength
+  fullName: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MaxCipherDataLength
+  nameWithType: EncryptionSerpent256GcmAlgorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MaxCipherDataLength*
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256GcmAlgorithm_MaxCipherDataLength_
+  commentId: Overload:wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MaxCipherDataLength
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MaxCipherDataLength
+  nameWithType: EncryptionSerpent256GcmAlgorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256GcmAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MaxKeyUsageCount
+  nameWithType: EncryptionSerpent256GcmAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256GcmAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.MaxKeyUsageCount
+  nameWithType: EncryptionSerpent256GcmAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.PROFILE_SERPENT256GCM_RAW
   name: PROFILE_SERPENT256GCM_RAW
   href: api/wan24.Crypto.BC.EncryptionSerpent256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionSerpent256GcmAlgorithm_PROFILE_SERPENT256GCM_RAW
@@ -12729,6 +13261,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.KeySize
   nameWithType: EncryptionTwofish256CbcAlgorithm.KeySize
+- uid: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MAX_CIPHER_DATA_LENGTH
+  name: MAX_CIPHER_DATA_LENGTH
+  href: api/wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256CbcAlgorithm_MAX_CIPHER_DATA_LENGTH
+  commentId: F:wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MAX_CIPHER_DATA_LENGTH
+  fullName: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MAX_CIPHER_DATA_LENGTH
+  nameWithType: EncryptionTwofish256CbcAlgorithm.MAX_CIPHER_DATA_LENGTH
+- uid: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256CbcAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: EncryptionTwofish256CbcAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MaxCipherDataLength
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256CbcAlgorithm_MaxCipherDataLength
+  commentId: P:wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MaxCipherDataLength
+  fullName: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MaxCipherDataLength
+  nameWithType: EncryptionTwofish256CbcAlgorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MaxCipherDataLength*
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256CbcAlgorithm_MaxCipherDataLength_
+  commentId: Overload:wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MaxCipherDataLength
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MaxCipherDataLength
+  nameWithType: EncryptionTwofish256CbcAlgorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256CbcAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MaxKeyUsageCount
+  nameWithType: EncryptionTwofish256CbcAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256CbcAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.MaxKeyUsageCount
+  nameWithType: EncryptionTwofish256CbcAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.PROFILE_TWOFISH256CBC_RAW
   name: PROFILE_TWOFISH256CBC_RAW
   href: api/wan24.Crypto.BC.EncryptionTwofish256CbcAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256CbcAlgorithm_PROFILE_TWOFISH256CBC_RAW
@@ -12916,6 +13486,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.KeySize
   nameWithType: EncryptionTwofish256GcmAlgorithm.KeySize
+- uid: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MAX_CIPHER_DATA_LENGTH
+  name: MAX_CIPHER_DATA_LENGTH
+  href: api/wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256GcmAlgorithm_MAX_CIPHER_DATA_LENGTH
+  commentId: F:wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MAX_CIPHER_DATA_LENGTH
+  fullName: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MAX_CIPHER_DATA_LENGTH
+  nameWithType: EncryptionTwofish256GcmAlgorithm.MAX_CIPHER_DATA_LENGTH
+- uid: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256GcmAlgorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: EncryptionTwofish256GcmAlgorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MaxCipherDataLength
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256GcmAlgorithm_MaxCipherDataLength
+  commentId: P:wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MaxCipherDataLength
+  fullName: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MaxCipherDataLength
+  nameWithType: EncryptionTwofish256GcmAlgorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MaxCipherDataLength*
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256GcmAlgorithm_MaxCipherDataLength_
+  commentId: Overload:wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MaxCipherDataLength
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MaxCipherDataLength
+  nameWithType: EncryptionTwofish256GcmAlgorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256GcmAlgorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MaxKeyUsageCount
+  nameWithType: EncryptionTwofish256GcmAlgorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256GcmAlgorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.MaxKeyUsageCount
+  nameWithType: EncryptionTwofish256GcmAlgorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.PROFILE_TWOFISH256GCM_RAW
   name: PROFILE_TWOFISH256GCM_RAW
   href: api/wan24.Crypto.BC.EncryptionTwofish256GcmAlgorithm.html#wan24_Crypto_BC_EncryptionTwofish256GcmAlgorithm_PROFILE_TWOFISH256GCM_RAW
@@ -13103,6 +13711,44 @@ references:
   isSpec: "True"
   fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.KeySize
   nameWithType: EncryptionXSalsa20Algorithm.KeySize
+- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MAX_CIPHER_DATA_LENGTH
+  name: MAX_CIPHER_DATA_LENGTH
+  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_MAX_CIPHER_DATA_LENGTH
+  commentId: F:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MAX_CIPHER_DATA_LENGTH
+  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MAX_CIPHER_DATA_LENGTH
+  nameWithType: EncryptionXSalsa20Algorithm.MAX_CIPHER_DATA_LENGTH
+- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MAX_KEY_USAGE_COUNT
+  name: MAX_KEY_USAGE_COUNT
+  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_MAX_KEY_USAGE_COUNT
+  commentId: F:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MAX_KEY_USAGE_COUNT
+  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MAX_KEY_USAGE_COUNT
+  nameWithType: EncryptionXSalsa20Algorithm.MAX_KEY_USAGE_COUNT
+- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MaxCipherDataLength
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_MaxCipherDataLength
+  commentId: P:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MaxCipherDataLength
+  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MaxCipherDataLength
+  nameWithType: EncryptionXSalsa20Algorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MaxCipherDataLength*
+  name: MaxCipherDataLength
+  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_MaxCipherDataLength_
+  commentId: Overload:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MaxCipherDataLength
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MaxCipherDataLength
+  nameWithType: EncryptionXSalsa20Algorithm.MaxCipherDataLength
+- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MaxKeyUsageCount
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_MaxKeyUsageCount
+  commentId: P:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MaxKeyUsageCount
+  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MaxKeyUsageCount
+  nameWithType: EncryptionXSalsa20Algorithm.MaxKeyUsageCount
+- uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MaxKeyUsageCount*
+  name: MaxKeyUsageCount
+  href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_MaxKeyUsageCount_
+  commentId: Overload:wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MaxKeyUsageCount
+  isSpec: "True"
+  fullName: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.MaxKeyUsageCount
+  nameWithType: EncryptionXSalsa20Algorithm.MaxKeyUsageCount
 - uid: wan24.Crypto.BC.EncryptionXSalsa20Algorithm.PROFILE_XSALSA20_RAW
   name: PROFILE_XSALSA20_RAW
   href: api/wan24.Crypto.BC.EncryptionXSalsa20Algorithm.html#wan24_Crypto_BC_EncryptionXSalsa20Algorithm_PROFILE_XSALSA20_RAW
