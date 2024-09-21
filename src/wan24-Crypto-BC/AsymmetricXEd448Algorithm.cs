@@ -36,6 +36,10 @@ namespace wan24.Crypto.BC
         /// </summary>
         public const int DEFAULT_KEY_SIZE = 456;
         /// <summary>
+        /// Maximum key usage count
+        /// </summary>
+        public const long MAX_KEY_USAGE_COUNT = long.MaxValue;
+        /// <summary>
         /// Algorithm usages
         /// </summary>
         public const AsymmetricAlgorithmUsages USAGES = AsymmetricAlgorithmUsages.Signature | AsymmetricAlgorithmUsages.KeyExchange;
@@ -70,6 +74,9 @@ namespace wan24.Crypto.BC
 
         /// <inheritdoc/>
         public override bool IsPublicKeyStandardFormat => false;
+
+        /// <inheritdoc/>
+        public override long MaxKeyUsageCount => MAX_KEY_USAGE_COUNT;
 
         /// <inheritdoc/>
         public override AsymmetricXEd448PrivateKey CreateKeyPair(CryptoOptions? options = null)

@@ -29,6 +29,14 @@ namespace wan24.Crypto.BC
         /// </summary>
         public const int BLOCK_SIZE = 1;
         /// <summary>
+        /// Maximum cipher data length in bytes
+        /// </summary>
+        public const long MAX_CIPHER_DATA_LENGTH = 274_877_906_944;
+        /// <summary>
+        /// Maximum key usage count
+        /// </summary>
+        public const long MAX_KEY_USAGE_COUNT = 10_000_000;
+        /// <summary>
         /// Display name
         /// </summary>
         public const string DISPLAY_NAME = "ChaCha20";
@@ -59,6 +67,12 @@ namespace wan24.Crypto.BC
 
         /// <inheritdoc/>
         public override string DisplayName => DISPLAY_NAME;
+
+        /// <inheritdoc/>
+        public override long MaxCipherDataLength => MAX_CIPHER_DATA_LENGTH;
+
+        /// <inheritdoc/>
+        public override long MaxKeyUsageCount => MAX_KEY_USAGE_COUNT;
 
         /// <inheritdoc/>
         public override bool IsKeyLengthValid(int len) => len == KEY_SIZE;

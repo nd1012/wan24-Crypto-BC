@@ -58,6 +58,7 @@ namespace wan24.Crypto.BC
             {
                 EnsureUndisposed();
                 Algorithm.EnsureAllowed();
+                options?.KeySuite?.CountAsymmetricKeyUsage(this);
                 publicKey ??= options?.PublicKey ?? options?.PrivateKey?.PublicKey ?? PublicKey;
                 if (publicKey is not tPublic key) throw new ArgumentException($"Public {Algorithm.Name} key required", nameof(publicKey));
                 tGenerator generator = Activator.CreateInstance(typeof(tGenerator), new SecureRandom(BouncyCastleRandomGenerator.Instance())) as tGenerator

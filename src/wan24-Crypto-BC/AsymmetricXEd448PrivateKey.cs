@@ -97,6 +97,7 @@ namespace wan24.Crypto.BC
             {
                 EnsureUndisposed();
                 Algorithm.EnsureAllowed();
+                options?.KeySuite?.CountAsymmetricKeyUsage(this);
                 publicKey ??= options?.PublicKey ?? options?.PrivateKey?.PublicKey ?? PublicKey;
                 if (publicKey is not AsymmetricXEd448PublicKey key) throw new ArgumentException($"Public {Algorithm.Name} key required", nameof(publicKey));
                 return GetX448Key().GetKeyExchangeData(key._PublicKey2 ?? throw new InvalidOperationException(), options);
