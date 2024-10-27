@@ -153,10 +153,17 @@ namespace wan24.Crypto.BC
                 {
                     using MemoryStream ms = new(KeyData.Array);
                     int ssv = ms.ReadSerializerVersion();
-                    using SecureByteArrayRefStruct privateKeyInfo = new(ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
-                    using SecureByteArrayRefStruct publicKeyInfo = new(ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    using RentedMemoryRef<byte> buffer = new(len: ushort.MaxValue, clean: false)
+                    {
+                        Clear = true
+                    };
+                    Memory<byte> bufferMem = buffer.Memory;
+                    Span<byte> bufferSpan = bufferMem.Span;
+                    int red = ms.ReadBytes(bufferMem, ssv, maxLen: ushort.MaxValue);
+                    using SecureByteArrayRefStruct privateKeyInfo = new(bufferSpan[..red].ToArray());
+                    red = ms.ReadBytes(bufferMem, ssv, maxLen: ushort.MaxValue);
                     privateKey = (tPrivateKey)PqcPrivateKeyFactory.CreateKey(privateKeyInfo);
-                    publicKey = (tPublicKey)PqcPublicKeyFactory.CreateKey(publicKeyInfo);
+                    publicKey = (tPublicKey)PqcPublicKeyFactory.CreateKey(bufferSpan[..red].ToArray());
                     Keys = new(publicKey, privateKey);
                 }
                 catch

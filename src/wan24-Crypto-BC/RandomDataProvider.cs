@@ -283,7 +283,7 @@ namespace wan24.Crypto.BC
                 SeedProvider.OnDisposing -= HandleSeedProviderDisposing;
                 SeedProvider.OnSeedAsync -= HandleSeedAsync;
             }
-            await RngSync.DisposeAsync().DynamicContext();
+            RngSync.Dispose();
             await RNG.TryDisposeAsync().DynamicContext();
         }
 
