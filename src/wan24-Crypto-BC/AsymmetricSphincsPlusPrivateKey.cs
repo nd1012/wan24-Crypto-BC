@@ -88,9 +88,17 @@ namespace wan24.Crypto.BC
                     using MemoryStream ms = new(KeyData.Array);
                     int ssv = ms.ReadSerializerVersion();
                     SphincsPlusParameters param = AsymmetricSphincsPlusHelper.GetParameters(ms.ReadNumber<int>(ssv));
-                    using SecureByteArrayRefStruct privateKeyInfo = new(ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    using RentedMemoryRef<byte> buffer = new(len: ushort.MaxValue, clean: false)
+                    {
+                        Clear = true
+                    };
+                    Memory<byte> bufferMem = buffer.Memory;
+                    Span<byte> bufferSpan = bufferMem.Span;
+                    int red = ms.ReadBytes(bufferMem, ssv, maxLen: ushort.MaxValue);
+                    using SecureByteArrayRefStruct privateKeyInfo = new(bufferSpan[..red].ToArray());
                     privateKey = new(param, privateKeyInfo.Array);
-                    publicKey = new(param, ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    red = ms.ReadBytes(bufferMem, ssv, maxLen: ushort.MaxValue);
+                    publicKey = new(param, bufferSpan[..red].ToArray());
                     Keys = new(publicKey, privateKey);
                 }
                 catch

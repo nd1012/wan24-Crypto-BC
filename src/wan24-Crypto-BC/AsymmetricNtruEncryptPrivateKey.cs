@@ -81,8 +81,16 @@ namespace wan24.Crypto.BC
                     using MemoryStream ms = new(KeyData.Array);
                     int ssv = ms.ReadSerializerVersion();
                     NtruParameters param = AsymmetricNtruHelper.GetParameters(ms.ReadNumber<int>(ssv));
-                    privateKey = new(param, ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
-                    publicKey = new(param, ms.ReadBytes(ssv, maxLen: ushort.MaxValue).Value);
+                    using RentedMemoryRef<byte> buffer = new(len: ushort.MaxValue, clean: false)
+                    {
+                        Clear = true
+                    };
+                    Memory<byte> bufferMem = buffer.Memory;
+                    Span<byte> bufferSpan = bufferMem.Span;
+                    int red = ms.ReadBytes(bufferMem, ssv, maxLen: ushort.MaxValue);
+                    privateKey = new(param, bufferSpan[..red].ToArray());
+                    red = ms.ReadBytes(bufferMem, ssv, maxLen: ushort.MaxValue);
+                    publicKey = new(param, bufferSpan[..red].ToArray());
                     Keys = new(publicKey, privateKey);
                 }
                 catch
