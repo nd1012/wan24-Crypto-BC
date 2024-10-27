@@ -136,6 +136,7 @@
     <div><span class="xref">IAsymmetricPrivateKey</span></div>
     <div><span class="xref">IAsymmetricKey</span></div>
     <div><span class="xref">IDisposableObject</span></div>
+    <div><span class="xref">IBasicDisposableObject</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     <div><span class="xref">IStreamSerializerVersion</span></div>
@@ -448,7 +449,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase_7_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract record BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal&gt; : BouncyCastleAsymmetricPqcPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;tPublic, tFinal&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IKeyExchange, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal&gt;&gt; where tPublic : BouncyCastleAsymmetricPqcPublicKeyBase&lt;tAlgo, tPublicKey, tPublic&gt;, new() where tAlgo : IAsymmetricAlgorithm where tPublicKey : AsymmetricKeyParameter, ICipherParameters where tPrivateKey : AsymmetricKeyParameter where tGenerator : class, IEncapsulatedSecretGenerator where tExtractor : class, IEncapsulatedSecretExtractor where tFinal : BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal&gt;, new()</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract record BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal&gt; : BouncyCastleAsymmetricPqcPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;tPublic, tFinal&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IBasicDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IKeyExchange, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal&gt;&gt; where tPublic : BouncyCastleAsymmetricPqcPublicKeyBase&lt;tAlgo, tPublicKey, tPublic&gt;, new() where tAlgo : IAsymmetricAlgorithm where tPublicKey : AsymmetricKeyParameter, ICipherParameters where tPrivateKey : AsymmetricKeyParameter where tGenerator : class, IEncapsulatedSecretGenerator where tExtractor : class, IEncapsulatedSecretExtractor where tFinal : BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tGenerator, tExtractor, tFinal&gt;, new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -845,6 +846,9 @@
   </div>
   <div>
       <span class="xref">wan24.Core.IDisposableObject</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IBasicDisposableObject</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>

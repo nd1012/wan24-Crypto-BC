@@ -131,6 +131,7 @@
     <div><span class="xref">IAsymmetricPrivateKey</span></div>
     <div><span class="xref">IAsymmetricKey</span></div>
     <div><span class="xref">IDisposableObject</span></div>
+    <div><span class="xref">IBasicDisposableObject</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     <div><span class="xref">IStreamSerializerVersion</span></div>
@@ -312,7 +313,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record AsymmetricSNtruPrimePrivateKey : BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricSNtruPrimePublicKey, AsymmetricSNtruPrimeAlgorithm, SNtruPrimePublicKeyParameters, SNtruPrimePrivateKeyParameters, SNtruPrimeKemGenerator, SNtruPrimeKemExtractor, AsymmetricSNtruPrimePrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricSNtruPrimePublicKey, AsymmetricSNtruPrimePrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricSNtruPrimePublicKey, AsymmetricSNtruPrimeAlgorithm, SNtruPrimePublicKeyParameters, SNtruPrimePrivateKeyParameters, AsymmetricSNtruPrimePrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyBase&lt;AsymmetricSNtruPrimePublicKey, AsymmetricSNtruPrimeAlgorithm, SNtruPrimePublicKeyParameters, SNtruPrimePrivateKeyParameters, AsymmetricSNtruPrimePrivateKey&gt;&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IKeyExchange, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricSNtruPrimePublicKey, AsymmetricSNtruPrimeAlgorithm, SNtruPrimePublicKeyParameters, SNtruPrimePrivateKeyParameters, SNtruPrimeKemGenerator, SNtruPrimeKemExtractor, AsymmetricSNtruPrimePrivateKey&gt;&gt;, IEquatable&lt;AsymmetricSNtruPrimePrivateKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricSNtruPrimePrivateKey : BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricSNtruPrimePublicKey, AsymmetricSNtruPrimeAlgorithm, SNtruPrimePublicKeyParameters, SNtruPrimePrivateKeyParameters, SNtruPrimeKemGenerator, SNtruPrimeKemExtractor, AsymmetricSNtruPrimePrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricSNtruPrimePublicKey, AsymmetricSNtruPrimePrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricSNtruPrimePublicKey, AsymmetricSNtruPrimeAlgorithm, SNtruPrimePublicKeyParameters, SNtruPrimePrivateKeyParameters, AsymmetricSNtruPrimePrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyBase&lt;AsymmetricSNtruPrimePublicKey, AsymmetricSNtruPrimeAlgorithm, SNtruPrimePublicKeyParameters, SNtruPrimePrivateKeyParameters, AsymmetricSNtruPrimePrivateKey&gt;&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IBasicDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IKeyExchange, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricSNtruPrimePublicKey, AsymmetricSNtruPrimeAlgorithm, SNtruPrimePublicKeyParameters, SNtruPrimePrivateKeyParameters, SNtruPrimeKemGenerator, SNtruPrimeKemExtractor, AsymmetricSNtruPrimePrivateKey&gt;&gt;, IEquatable&lt;AsymmetricSNtruPrimePrivateKey&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -457,7 +458,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.Dispose(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricSNtruPrimePrivateKey.cs/#L109">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricSNtruPrimePrivateKey.cs/#L117">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_Dispose_" data-uid="wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.Dispose*"></a>
   <h4 id="wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_Dispose_System_Boolean_" data-uid="wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.Dispose(System.Boolean)">Dispose(bool)</h4>
@@ -493,7 +494,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_DisposeCore.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.DisposeCore%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricSNtruPrimePrivateKey.cs/#L116">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricSNtruPrimePrivateKey.cs/#L124">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_DisposeCore_" data-uid="wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.DisposeCore*"></a>
   <h4 id="wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_DisposeCore" data-uid="wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.DisposeCore">DisposeCore()</h4>
@@ -526,7 +527,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_GetPublicKey_Org_BouncyCastle_Pqc_Crypto_NtruPrime_SNtruPrimePrivateKeyParameters_.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.GetPublicKey(Org.BouncyCastle.Pqc.Crypto.NtruPrime.SNtruPrimePrivateKeyParameters)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricSNtruPrimePrivateKey.cs/#L106">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricSNtruPrimePrivateKey.cs/#L114">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_GetPublicKey_" data-uid="wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.GetPublicKey*"></a>
   <h4 id="wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_GetPublicKey_Org_BouncyCastle_Pqc_Crypto_NtruPrime_SNtruPrimePrivateKeyParameters_" data-uid="wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.GetPublicKey(Org.BouncyCastle.Pqc.Crypto.NtruPrime.SNtruPrimePrivateKeyParameters)">GetPublicKey(SNtruPrimePrivateKeyParameters)</h4>
@@ -614,7 +615,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.op_Explicit(System.Byte%5B%5D)~wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricSNtruPrimePrivateKey.cs/#L132">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricSNtruPrimePrivateKey.cs/#L140">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_op_Explicit_" data-uid="wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.op_Explicit*"></a>
   <h4 id="wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_op_Explicit_System_Byte____wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey" data-uid="wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.op_Explicit(System.Byte[])~wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey">explicit operator AsymmetricSNtruPrimePrivateKey(byte[])</h4>
@@ -663,7 +664,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_op_Implicit_wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey__wan24_Crypto_BC_AsymmetricSNtruPrimePublicKey.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey)~wan24.Crypto.BC.AsymmetricSNtruPrimePublicKey%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricSNtruPrimePrivateKey.cs/#L126">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/AsymmetricSNtruPrimePrivateKey.cs/#L134">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_op_Implicit_" data-uid="wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.op_Implicit*"></a>
   <h4 id="wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey_op_Implicit_wan24_Crypto_BC_AsymmetricSNtruPrimePrivateKey__wan24_Crypto_BC_AsymmetricSNtruPrimePublicKey" data-uid="wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey.op_Implicit(wan24.Crypto.BC.AsymmetricSNtruPrimePrivateKey)~wan24.Crypto.BC.AsymmetricSNtruPrimePublicKey">implicit operator AsymmetricSNtruPrimePublicKey(AsymmetricSNtruPrimePrivateKey)</h4>
@@ -746,6 +747,9 @@
   </div>
   <div>
       <span class="xref">wan24.Core.IDisposableObject</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IBasicDisposableObject</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>

@@ -127,6 +127,7 @@
     <div><span class="xref">IAsymmetricPrivateKey</span></div>
     <div><span class="xref">IAsymmetricKey</span></div>
     <div><span class="xref">IDisposableObject</span></div>
+    <div><span class="xref">IBasicDisposableObject</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     <div><span class="xref">IStreamSerializerVersion</span></div>
@@ -422,7 +423,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_BouncyCastleAsymmetricPqcPrivateKeyBase_5_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract record BouncyCastleAsymmetricPqcPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt; : BouncyCastleAsymmetricPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IEquatable&lt;AsymmetricPrivateKeyBase&lt;tPublic, tFinal&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;&gt; where tPublic : BouncyCastleAsymmetricPqcPublicKeyBase&lt;tAlgo, tPublicKey, tPublic&gt;, new() where tAlgo : IAsymmetricAlgorithm where tPublicKey : AsymmetricKeyParameter, ICipherParameters where tPrivateKey : AsymmetricKeyParameter where tFinal : BouncyCastleAsymmetricPqcPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;, new()</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract record BouncyCastleAsymmetricPqcPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt; : BouncyCastleAsymmetricPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IBasicDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IEquatable&lt;AsymmetricPrivateKeyBase&lt;tPublic, tFinal&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;&gt; where tPublic : BouncyCastleAsymmetricPqcPublicKeyBase&lt;tAlgo, tPublicKey, tPublic&gt;, new() where tAlgo : IAsymmetricAlgorithm where tPublicKey : AsymmetricKeyParameter, ICipherParameters where tPrivateKey : AsymmetricKeyParameter where tFinal : BouncyCastleAsymmetricPqcPrivateKeyBase&lt;tPublic, tAlgo, tPublicKey, tPrivateKey, tFinal&gt;, new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -693,7 +694,7 @@
     <a href="https://github.com/nd1012/wan24-Crypto-BC/new/main/apiSpec/new?filename=wan24_Crypto_BC_BouncyCastleAsymmetricPqcPrivateKeyBase_5_ImportBc_System_Byte____.md&amp;value=---%0Auid%3A%20wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateKeyBase%605.ImportBc(System.Byte%5B%5D%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleAsymmetricPqcPrivateKeyBase.cs/#L180">View Source</a>
+    <a href="https://github.com/nd1012/wan24-Crypto-BC/blob/main/src/wan24-Crypto-BC/BouncyCastleAsymmetricPqcPrivateKeyBase.cs/#L187">View Source</a>
   </span>
   <a id="wan24_Crypto_BC_BouncyCastleAsymmetricPqcPrivateKeyBase_5_ImportBc_" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateKeyBase`5.ImportBc*"></a>
   <h4 id="wan24_Crypto_BC_BouncyCastleAsymmetricPqcPrivateKeyBase_5_ImportBc_System_Byte____" data-uid="wan24.Crypto.BC.BouncyCastleAsymmetricPqcPrivateKeyBase`5.ImportBc(System.Byte[]@)">ImportBc(in byte[])</h4>
@@ -830,6 +831,9 @@
   </div>
   <div>
       <span class="xref">wan24.Core.IDisposableObject</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IBasicDisposableObject</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>

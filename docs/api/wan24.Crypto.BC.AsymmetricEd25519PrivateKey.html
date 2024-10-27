@@ -131,6 +131,7 @@
     <div><span class="xref">IAsymmetricPrivateKey</span></div>
     <div><span class="xref">IAsymmetricKey</span></div>
     <div><span class="xref">IDisposableObject</span></div>
+    <div><span class="xref">IBasicDisposableObject</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     <div><span class="xref">IStreamSerializerVersion</span></div>
@@ -305,7 +306,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_AsymmetricEd25519PrivateKey_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record AsymmetricEd25519PrivateKey : BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519Algorithm, Ed25519PublicKeyParameters, Ed25519PrivateKeyParameters, Ed25519Signer, AsymmetricEd25519PrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519Algorithm, Ed25519PublicKeyParameters, Ed25519PrivateKeyParameters, AsymmetricEd25519PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519Algorithm, Ed25519PublicKeyParameters, Ed25519PrivateKeyParameters, AsymmetricEd25519PrivateKey&gt;&gt;, ISignaturePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519Algorithm, Ed25519PublicKeyParameters, Ed25519PrivateKeyParameters, Ed25519Signer, AsymmetricEd25519PrivateKey&gt;&gt;, IEquatable&lt;AsymmetricEd25519PrivateKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricEd25519PrivateKey : BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519Algorithm, Ed25519PublicKeyParameters, Ed25519PrivateKeyParameters, Ed25519Signer, AsymmetricEd25519PrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519Algorithm, Ed25519PublicKeyParameters, Ed25519PrivateKeyParameters, AsymmetricEd25519PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519Algorithm, Ed25519PublicKeyParameters, Ed25519PrivateKeyParameters, AsymmetricEd25519PrivateKey&gt;&gt;, ISignaturePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IBasicDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase&lt;AsymmetricEd25519PublicKey, AsymmetricEd25519Algorithm, Ed25519PublicKeyParameters, Ed25519PrivateKeyParameters, Ed25519Signer, AsymmetricEd25519PrivateKey&gt;&gt;, IEquatable&lt;AsymmetricEd25519PrivateKey&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -721,6 +722,9 @@
   </div>
   <div>
       <span class="xref">wan24.Core.IDisposableObject</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IBasicDisposableObject</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>

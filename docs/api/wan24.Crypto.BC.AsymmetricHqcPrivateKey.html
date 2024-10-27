@@ -131,6 +131,7 @@
     <div><span class="xref">IAsymmetricPrivateKey</span></div>
     <div><span class="xref">IAsymmetricKey</span></div>
     <div><span class="xref">IDisposableObject</span></div>
+    <div><span class="xref">IBasicDisposableObject</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     <div><span class="xref">IStreamSerializerVersion</span></div>
@@ -312,7 +313,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_AsymmetricHqcPrivateKey_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record AsymmetricHqcPrivateKey : BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricHqcPublicKey, AsymmetricHqcAlgorithm, HqcPublicKeyParameters, HqcPrivateKeyParameters, HqcKemGenerator, HqcKemExtractor, AsymmetricHqcPrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricHqcPublicKey, AsymmetricHqcPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricHqcPublicKey, AsymmetricHqcAlgorithm, HqcPublicKeyParameters, HqcPrivateKeyParameters, AsymmetricHqcPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyBase&lt;AsymmetricHqcPublicKey, AsymmetricHqcAlgorithm, HqcPublicKeyParameters, HqcPrivateKeyParameters, AsymmetricHqcPrivateKey&gt;&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IKeyExchange, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricHqcPublicKey, AsymmetricHqcAlgorithm, HqcPublicKeyParameters, HqcPrivateKeyParameters, HqcKemGenerator, HqcKemExtractor, AsymmetricHqcPrivateKey&gt;&gt;, IEquatable&lt;AsymmetricHqcPrivateKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricHqcPrivateKey : BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricHqcPublicKey, AsymmetricHqcAlgorithm, HqcPublicKeyParameters, HqcPrivateKeyParameters, HqcKemGenerator, HqcKemExtractor, AsymmetricHqcPrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricHqcPublicKey, AsymmetricHqcPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricHqcPublicKey, AsymmetricHqcAlgorithm, HqcPublicKeyParameters, HqcPrivateKeyParameters, AsymmetricHqcPrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyBase&lt;AsymmetricHqcPublicKey, AsymmetricHqcAlgorithm, HqcPublicKeyParameters, HqcPrivateKeyParameters, AsymmetricHqcPrivateKey&gt;&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IBasicDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IKeyExchange, IEquatable&lt;BouncyCastleAsymmetricPqcPrivateKeyExchangeKeyBase&lt;AsymmetricHqcPublicKey, AsymmetricHqcAlgorithm, HqcPublicKeyParameters, HqcPrivateKeyParameters, HqcKemGenerator, HqcKemExtractor, AsymmetricHqcPrivateKey&gt;&gt;, IEquatable&lt;AsymmetricHqcPrivateKey&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -746,6 +747,9 @@
   </div>
   <div>
       <span class="xref">wan24.Core.IDisposableObject</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IBasicDisposableObject</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>

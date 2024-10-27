@@ -131,6 +131,7 @@
     <div><span class="xref">IAsymmetricPublicKey</span></div>
     <div><span class="xref">IAsymmetricKey</span></div>
     <div><span class="xref">IDisposableObject</span></div>
+    <div><span class="xref">IBasicDisposableObject</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     <div><span class="xref">IStreamSerializerVersion</span></div>
@@ -266,7 +267,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_AsymmetricDilithiumPublicKey_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record AsymmetricDilithiumPublicKey : BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;AsymmetricDilithiumAlgorithm, DilithiumPublicKeyParameters, DilithiumSigner, AsymmetricDilithiumPublicKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPublicKeyBase&gt;, IEquatable&lt;BouncyCastleAsymmetricPublicKeyBase&lt;AsymmetricDilithiumAlgorithm, DilithiumPublicKeyParameters, AsymmetricDilithiumPublicKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPublicKeyBase&lt;AsymmetricDilithiumAlgorithm, DilithiumPublicKeyParameters, AsymmetricDilithiumPublicKey&gt;&gt;, ISignaturePublicKey, IAsymmetricPublicKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IEquatable&lt;BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;AsymmetricDilithiumAlgorithm, DilithiumPublicKeyParameters, DilithiumSigner, AsymmetricDilithiumPublicKey&gt;&gt;, IEquatable&lt;AsymmetricDilithiumPublicKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricDilithiumPublicKey : BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;AsymmetricDilithiumAlgorithm, DilithiumPublicKeyParameters, DilithiumSigner, AsymmetricDilithiumPublicKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPublicKeyBase&gt;, IEquatable&lt;BouncyCastleAsymmetricPublicKeyBase&lt;AsymmetricDilithiumAlgorithm, DilithiumPublicKeyParameters, AsymmetricDilithiumPublicKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPqcPublicKeyBase&lt;AsymmetricDilithiumAlgorithm, DilithiumPublicKeyParameters, AsymmetricDilithiumPublicKey&gt;&gt;, ISignaturePublicKey, IAsymmetricPublicKey, IAsymmetricKey, IDisposableObject, IBasicDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IEquatable&lt;BouncyCastleAsymmetricPqcPublicSignatureKeyBase&lt;AsymmetricDilithiumAlgorithm, DilithiumPublicKeyParameters, DilithiumSigner, AsymmetricDilithiumPublicKey&gt;&gt;, IEquatable&lt;AsymmetricDilithiumPublicKey&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -479,6 +480,9 @@
   </div>
   <div>
       <span class="xref">wan24.Core.IDisposableObject</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IBasicDisposableObject</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>

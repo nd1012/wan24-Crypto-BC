@@ -133,6 +133,7 @@
     <div><span class="xref">IAsymmetricPrivateKey</span></div>
     <div><span class="xref">IAsymmetricKey</span></div>
     <div><span class="xref">IDisposableObject</span></div>
+    <div><span class="xref">IBasicDisposableObject</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
     <div><span class="xref">IStreamSerializerVersion</span></div>
@@ -304,7 +305,7 @@
   <h6><strong>Assembly</strong>: wan24CryptoBC.dll</h6>
   <h5 id="wan24_Crypto_BC_AsymmetricXEd448PrivateKey_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed record AsymmetricXEd448PrivateKey : BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, Ed448Signer, AsymmetricXEd448PrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateKeyBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448PrivateKey&gt;&gt;, ISignaturePrivateKey, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, Ed448Signer, AsymmetricXEd448PrivateKey&gt;&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IKeyExchange, IEquatable&lt;AsymmetricXEd448PrivateKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed record AsymmetricXEd448PrivateKey : BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, Ed448Signer, AsymmetricXEd448PrivateKey&gt;, IWillDispose, IEquatable&lt;DisposableRecordBase&gt;, IObjectValidatable, IValidatableObject, IEquatable&lt;DisposableStreamSerializerRecordBase&gt;, IEquatable&lt;AsymmetricKeyBase&gt;, IEquatable&lt;AsymmetricPrivateKeyBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricPrivateKeyBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448PrivateKey&gt;&gt;, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateKeyBase&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, AsymmetricXEd448PrivateKey&gt;&gt;, ISignaturePrivateKey, IEquatable&lt;BouncyCastleAsymmetricNonPqcPrivateSignatureKeyBase2&lt;AsymmetricXEd448PublicKey, AsymmetricXEd448Algorithm, Ed448PublicKeyParameters, Ed448PrivateKeyParameters, Ed448Signer, AsymmetricXEd448PrivateKey&gt;&gt;, IKeyExchangePrivateKey, IAsymmetricPrivateKey, IAsymmetricKey, IDisposableObject, IBasicDisposableObject, IDisposable, IAsyncDisposable, IStreamSerializerVersion, IStreamSerializer, IStatusProvider, IKeyExchange, IEquatable&lt;AsymmetricXEd448PrivateKey&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -914,6 +915,9 @@
   </div>
   <div>
       <span class="xref">wan24.Core.IDisposableObject</span>
+  </div>
+  <div>
+      <span class="xref">wan24.Core.IBasicDisposableObject</span>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
